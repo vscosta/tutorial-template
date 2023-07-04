@@ -1,0 +1,1014 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="opt_8macros_8h" kind="file" language="C++">
+    <compoundname>opt.macros.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="opt_8macros_8h_1a6fdb165372fb29b17c4c1e9a41c1383f" prot="public" static="no">
+        <name>SHMMAX</name>
+        <initializer>0x2000000  /* 32 Mbytes: works fine with linux */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="24" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ae4ff5a07c6ff43ed11a3887ef7d524f2" prot="public" static="no">
+        <name>ALIGN</name>
+        <initializer>OOOOPPS!!! Unknown Pointer Sizeof</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="35" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a12940b1c34b0461e7589d37188c006fd" prot="public" static="no">
+        <name>ALIGNMASK</name>
+        <initializer>OOOOPPS!!! Unknown Pointer Sizeof</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="36" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ae43461e5487f7888feac9d0d08f2593c" prot="public" static="no">
+        <name>ADJUST_SIZE</name>
+        <param><defname>SIZE</defname></param>
+        <initializer>((SIZE + OPTYAP_ALIGN) &amp; ALIGNMASK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="39" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ab7e3931759c93e08cfabc18eba882c11" prot="public" static="no">
+        <name>ADJUST_SIZE_TO_PAGE</name>
+        <param><defname>SIZE</defname></param>
+        <initializer>((SIZE) - (SIZE) % <ref refid="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" kindref="member">Yap_page_size</ref> + <ref refid="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" kindref="member">Yap_page_size</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="40" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1acbd2ca3e41f841f340cddde9a5a730eb" prot="public" static="no">
+        <name>PAGE_HEADER</name>
+        <param><defname>STR</defname></param>
+        <initializer>(pg_hd_ptr)((unsigned long int)STR - (unsigned long int)STR % <ref refid="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" kindref="member">Yap_page_size</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="41" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ae3ab58afa027e6f23f0f61a267d46c1f" prot="public" static="no">
+        <name>STRUCT_NEXT</name>
+        <param><defname>STR</defname></param>
+        <initializer>((STR)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="42" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a0bb18028dbf4d79f216fcf45c399eb44" prot="public" static="no">
+        <name>UPDATE_STATS</name>
+        <param><defname>STAT</defname></param>
+        <param><defname>VALUE</defname></param>
+        <initializer>STAT += VALUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="43" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1aaf6a746a665063dae96f942d38c6075d" prot="public" static="no">
+        <name>LOCK_PAGE_ENTRY</name>
+        <param><defname>PG_ENT</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="49" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a30c0bb506d22d567e52260b9a599fcb8" prot="public" static="no">
+        <name>UNLOCK_PAGE_ENTRY</name>
+        <param><defname>PG_ENT</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="50" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a9efa30789288ba81d1080a37c013e29f" prot="public" static="no">
+        <name>ALLOC_BLOCK</name>
+        <param><defname>STR</defname></param>
+        <param><defname>SIZE</defname></param>
+        <param><defname>STR_TYPE</defname></param>
+        <initializer>        { char *block_ptr;                                                                 \
+          if ((block_ptr = Yap_AllocCodeSpace(SIZE + sizeof(CELL))) != NULL)               \
+            *block_ptr = &apos;y&apos;;                                                              \
+          else if ((block_ptr = (char *) malloc(SIZE + sizeof(CELL))) != NULL)             \
+            *block_ptr = &apos;<ref refid="structm" kindref="compound">m</ref>&apos;;                                                              \
+          else                                                                             \
+            Yap_Error(SYSTEM_ERROR_FATAL, TermNil, &quot;ALLOC_BLOCK: malloc error&quot;);                  \
+          block_ptr += sizeof(CELL);                                                       \
+          STR = (STR_TYPE *) block_ptr;                                                    \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="66" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a1206b0961acafecc35c6975dfea65807" prot="public" static="no">
+        <name>FREE_BLOCK</name>
+        <param><defname>STR</defname></param>
+        <initializer>        { char *block_ptr = (char *)(STR) - sizeof(CELL);                                  \
+          if (block_ptr[0] == &apos;y&apos;)                                                         \
+            Yap_FreeCodeSpace(block_ptr);                                                  \
+          else                                                                             \
+            free(block_ptr);                                                               \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="77" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a86029518509b9539321f6d765472b651" prot="public" static="no">
+        <name>INIT_BUCKETS</name>
+        <param><defname>BUCKET_PTR</defname></param>
+        <param><defname>NUM_BUCKETS</defname></param>
+        <initializer>        { int i; void **init_bucket_ptr; 		                                   \
+	  init_bucket_ptr = (void **) BUCKET_PTR;	                                   \
+          for (i = NUM_BUCKETS; i != 0; i--)                                               \
+            *init_bucket_ptr++ = NULL;                                                     \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="86" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1afb821a3381f63e40d307bca48a486a28" prot="public" static="no">
+        <name>ALLOC_BUCKETS</name>
+        <param><defname>BUCKET_PTR</defname></param>
+        <param><defname>NUM_BUCKETS</defname></param>
+        <initializer>        { void **alloc_bucket_ptr;                                                         \
+          ALLOC_BLOCK(alloc_bucket_ptr, NUM_BUCKETS * sizeof(void *), void *);             \
+          INIT_BUCKETS(alloc_bucket_ptr, NUM_BUCKETS);                                     \
+          BUCKET_PTR = (void *) alloc_bucket_ptr;                                          \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="92" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a9b35d35defb5f3a084b1e0f0a14c65df" prot="public" static="no">
+        <name>FREE_BUCKETS</name>
+        <param><defname>BUCKET_PTR</defname></param>
+        <initializer>FREE_BLOCK(BUCKET_PTR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="98" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ac7a63c555d8c9335cf28d205b5a4f1ff" prot="public" static="no">
+        <name>MOVE_PAGES</name>
+        <param><defname>FROM_PG_ENT</defname></param>
+        <param><defname>TO_PG_ENT</defname></param>
+        <initializer>        UPDATE_STATS(PgEnt_strs_in_use(TO_PG_ENT), PgEnt_strs_in_use(FROM_PG_ENT));        \
+        PgEnt_strs_in_use(FROM_PG_ENT) = 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="104" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1af2e247246b5ca6e5572c5883d5ae1cda" prot="public" static="no">
+        <name>DETACH_PAGES</name>
+        <param><defname>_PG_ENT</defname></param>
+        <initializer>        LOCK(PgEnt_lock(GLOBAL##_PG_ENT));                                                 \
+        MOVE_PAGES(LOCAL##_PG_ENT, GLOBAL##_PG_ENT);                                       \
+        UNLOCK(PgEnt_lock(GLOBAL##_PG_ENT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="107" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1aa8677fa4485788e114f370af3c62969c" prot="public" static="no">
+        <name>ATTACH_PAGES</name>
+        <param><defname>_PG_ENT</defname></param>
+        <initializer>        MOVE_PAGES(GLOBAL##_PG_ENT, LOCAL##_PG_ENT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="111" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a6585258ea7f27a7f5b958619e3a0191a" prot="public" static="no">
+        <name>GET_FREE_STRUCT</name>
+        <param><defname>STR</defname></param>
+        <param><defname>STR_TYPE</defname></param>
+        <param><defname>PG_ENT</defname></param>
+        <param><defname>EXTRA_PG_ENT</defname></param>
+        <initializer>        LOCK_PAGE_ENTRY(PG_ENT);                                                           \
+        UPDATE_STATS(PgEnt_strs_in_use(PG_ENT), 1);                                        \
+        UNLOCK_PAGE_ENTRY(PG_ENT);                                                         \
+        ALLOC_BLOCK(STR, sizeof(STR_TYPE), STR_TYPE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="113" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ac07bda34fa3b66358a27a7a2557ba646" prot="public" static="no">
+        <name>GET_NEXT_FREE_STRUCT</name>
+        <param><defname>LOCAL_STR</defname></param>
+        <param><defname>STR</defname></param>
+        <param><defname>STR_TYPE</defname></param>
+        <param><defname>PG_ENT</defname></param>
+        <initializer>        GET_FREE_STRUCT(STR, STR_TYPE, PG_ENT, ___NOT_USED___)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="118" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ac0d81de4f80affa0d2557822d898cf21" prot="public" static="no">
+        <name>PUT_FREE_STRUCT</name>
+        <param><defname>STR</defname></param>
+        <param><defname>STR_TYPE</defname></param>
+        <param><defname>PG_ENT</defname></param>
+        <initializer>        LOCK_PAGE_ENTRY(PG_ENT);                                                           \
+        UPDATE_STATS(PgEnt_strs_in_use(PG_ENT), -1);                                       \
+        UNLOCK_PAGE_ENTRY(PG_ENT);                                                         \
+        FREE_BLOCK(STR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="120" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ac423a076e848eac048f07589ee1b914b" prot="public" static="no">
+        <name>ALLOC_STRUCT</name>
+        <param><defname>STR</defname></param>
+        <param><defname>STR_TYPE</defname></param>
+        <param><defname>_PG_ENT</defname></param>
+        <initializer>        GET_FREE_STRUCT(STR, STR_TYPE, GLOBAL##_PG_ENT, ___NOT_USED___)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="426" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a47ab02e1e6d6b218d8e1dd7da7bfbd86" prot="public" static="no">
+        <name>FREE_STRUCT</name>
+        <param><defname>STR</defname></param>
+        <param><defname>STR_TYPE</defname></param>
+        <param><defname>_PG_ENT</defname></param>
+        <initializer>        PUT_FREE_STRUCT(STR, STR_TYPE, GLOBAL##_PG_ENT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="428" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a9c763885508dd7e36da8d9c1abd29a89" prot="public" static="no">
+        <name>ALLOC_NEXT_STRUCT</name>
+        <param><defname>LOCAL_STR</defname></param>
+        <param><defname>STR</defname></param>
+        <param><defname>STR_TYPE</defname></param>
+        <param><defname>_PG_ENT</defname></param>
+        <initializer>        GET_NEXT_FREE_STRUCT(LOCAL_STR, STR, STR_TYPE, GLOBAL##_PG_ENT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="431" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a21a5fa3a995b7350d76ee752ce74a7d9" prot="public" static="no">
+        <name>ALLOC_TABLE_ENTRY</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structtable__entry" kindref="compound">table_entry</ref>, _pages_tab_ent)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="434" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ad993bc78543d384b988cbec31fa3aa30" prot="public" static="no">
+        <name>FREE_TABLE_ENTRY</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structtable__entry" kindref="compound">table_entry</ref>, _pages_tab_ent)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="435" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a35841111065114479ac615eeb8d03a0a" prot="public" static="no">
+        <name>ALLOC_SUBGOAL_ENTRY</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structsubgoal__entry" kindref="compound">subgoal_entry</ref>, _pages_sg_ent)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="437" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ae996be1bb1d0ca66ba552a2763a81941" prot="public" static="no">
+        <name>FREE_SUBGOAL_ENTRY</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structsubgoal__entry" kindref="compound">subgoal_entry</ref>, _pages_sg_ent)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="438" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ac7f3834c30bdf26c45ecad21e0e0552c" prot="public" static="no">
+        <name>ALLOC_SUBGOAL_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structsubgoal__frame" kindref="compound">subgoal_frame</ref>, _pages_sg_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="440" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a8c1559d8a8370cfb0a1c9b73aacf323f" prot="public" static="no">
+        <name>FREE_SUBGOAL_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structsubgoal__frame" kindref="compound">subgoal_frame</ref>, _pages_sg_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="441" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a945d87ed5ad68d6ef137c856375d2593" prot="public" static="no">
+        <name>ALLOC_DEPENDENCY_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structdependency__frame" kindref="compound">dependency_frame</ref>, _pages_dep_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="443" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a7bdef5421bac659613d7782137bc145a" prot="public" static="no">
+        <name>FREE_DEPENDENCY_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structdependency__frame" kindref="compound">dependency_frame</ref>, _pages_dep_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="444" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a4143148f91ab3a6266417f9b83e68635" prot="public" static="no">
+        <name>ALLOC_SUBGOAL_TRIE_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structsubgoal__trie__node" kindref="compound">subgoal_trie_node</ref>, _pages_sg_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="446" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a036df2f638b266bc1a259a2987833a79" prot="public" static="no">
+        <name>FREE_SUBGOAL_TRIE_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structsubgoal__trie__node" kindref="compound">subgoal_trie_node</ref>, _pages_sg_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="447" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a425f1abb1f2412bd4d4b89903796b66b" prot="public" static="no">
+        <name>ALLOC_SUBGOAL_TRIE_HASH</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structsubgoal__trie__hash" kindref="compound">subgoal_trie_hash</ref>, _pages_sg_hash)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="449" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a7cd7b7718d4a5db22c9e51304e476504" prot="public" static="no">
+        <name>FREE_SUBGOAL_TRIE_HASH</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structsubgoal__trie__hash" kindref="compound">subgoal_trie_hash</ref>, _pages_sg_hash)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="450" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a119f8a8359c34ab34ab2d3c9b36e28fd" prot="public" static="no">
+        <name>ALLOC_ANSWER_TRIE_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structanswer__trie__node" kindref="compound">answer_trie_node</ref>, _pages_ans_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="455" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a87eed1e5573311587e8a9bda764254fc" prot="public" static="no">
+        <name>FREE_ANSWER_TRIE_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structanswer__trie__node" kindref="compound">answer_trie_node</ref>, _pages_ans_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="457" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ad08fff3e19087f09f9dc19408b38714c" prot="public" static="no">
+        <name>ALLOC_ANSWER_TRIE_HASH</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structanswer__trie__hash" kindref="compound">answer_trie_hash</ref>, _pages_ans_hash)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="459" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1acd5ad603659467429df3c1c1738e9a80" prot="public" static="no">
+        <name>FREE_ANSWER_TRIE_HASH</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structanswer__trie__hash" kindref="compound">answer_trie_hash</ref>, _pages_ans_hash)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="460" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a89988ee061220e84e6ab21b013421bd3" prot="public" static="no">
+        <name>ALLOC_ANSWER_REF_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct answer_ref_node, _pages_ans_ref_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="462" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a6d244a63c191a821a2dae0790b051717" prot="public" static="no">
+        <name>FREE_ANSWER_REF_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct answer_ref_node, _pages_ans_ref_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="463" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1afd98343d86cb5509c8d0a36c84ea418f" prot="public" static="no">
+        <name>ALLOC_GLOBAL_TRIE_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structglobal__trie__node" kindref="compound">global_trie_node</ref>, _pages_gt_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="465" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ae4adbe31f99bc2ce09215662145010ef" prot="public" static="no">
+        <name>FREE_GLOBAL_TRIE_NODE</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structglobal__trie__node" kindref="compound">global_trie_node</ref>, _pages_gt_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="466" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1af7430c111950d62684202bc000dc585e" prot="public" static="no">
+        <name>ALLOC_GLOBAL_TRIE_HASH</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structglobal__trie__hash" kindref="compound">global_trie_hash</ref>, _pages_gt_hash)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="468" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ae32bb4979485631ea526ca4e52263448" prot="public" static="no">
+        <name>FREE_GLOBAL_TRIE_HASH</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structglobal__trie__hash" kindref="compound">global_trie_hash</ref>, _pages_gt_hash)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="469" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a80bd2f8681436d87d2b408eaa717d8dc" prot="public" static="no">
+        <name>ALLOC_OR_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structor__frame" kindref="compound">or_frame</ref>, _pages_or_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="471" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1aea56a0466cf26dd0bc4547237b3a057d" prot="public" static="no">
+        <name>FREE_OR_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structor__frame" kindref="compound">or_frame</ref>, _pages_or_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="472" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ae04b04b31e870500995ed8958a192002" prot="public" static="no">
+        <name>ALLOC_QG_SOLUTION_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structquery__goal__solution__frame" kindref="compound">query_goal_solution_frame</ref>, _pages_qg_sol_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="474" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a17e0f1c9591e777b8783c84b6d95e359" prot="public" static="no">
+        <name>FREE_QG_SOLUTION_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structquery__goal__solution__frame" kindref="compound">query_goal_solution_frame</ref>, _pages_qg_sol_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="475" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a991fc899c672e3abf158774be11d274b" prot="public" static="no">
+        <name>ALLOC_QG_ANSWER_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct <ref refid="structquery__goal__answer__frame" kindref="compound">query_goal_answer_frame</ref>, _pages_qg_ans_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="477" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a04a91e40a6808d2c4806aabacee77d99" prot="public" static="no">
+        <name>FREE_QG_ANSWER_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct <ref refid="structquery__goal__answer__frame" kindref="compound">query_goal_answer_frame</ref>, _pages_qg_ans_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="478" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a47fee65fe40764e881d1f0744350f2e8" prot="public" static="no">
+        <name>ALLOC_SUSPENSION_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct suspension_frame, _pages_susp_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="480" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a28e14554e2e01f2924ae3f42be3d0ed6" prot="public" static="no">
+        <name>FREE_SUSPENSION_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>                                        FREE_BLOCK(SuspFr_global_start(STR));                          \
+                                        FREE_STRUCT(STR, struct suspension_frame, _pages_susp_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="481" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a4cfbba924f179ff0cccd1245d349e7cf" prot="public" static="no">
+        <name>ALLOC_TG_SOLUTION_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct table_subgoal_solution_frame, _pages_tg_sol_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="484" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ac74afb071c6193163befc4236c04b807" prot="public" static="no">
+        <name>FREE_TG_SOLUTION_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct table_subgoal_solution_frame, _pages_tg_sol_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="485" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a9a1979eb5429339fe1e34a8ac9793564" prot="public" static="no">
+        <name>ALLOC_TG_ANSWER_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>ALLOC_STRUCT(STR, struct table_subgoal_answer_frame, _pages_tg_ans_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="487" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a0fb4bb77a66440c671ccdf780c697ff7" prot="public" static="no">
+        <name>FREE_TG_ANSWER_FRAME</name>
+        <param><defname>STR</defname></param>
+        <initializer>FREE_STRUCT(STR, struct table_subgoal_answer_frame, _pages_tg_ans_fr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="488" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1acfb039f275856edd97deee7cd0f3326e" prot="public" static="no">
+        <name>BITMAP_empty</name>
+        <param><defname>b</defname></param>
+        <initializer>((b) == 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="496" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a9a5522ae1e4c1f285b5301a7f086c947" prot="public" static="no">
+        <name>BITMAP_member</name>
+        <param><defname>b</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(((b) &amp; (1&lt;&lt;(n))) != 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="497" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1adac502a84e37687fa810e964e9a5ec26" prot="public" static="no">
+        <name>BITMAP_alone</name>
+        <param><defname>b</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((b) == (1&lt;&lt;(n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="498" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a39974c3b97798ea2930fe6d644eabe96" prot="public" static="no">
+        <name>BITMAP_subset</name>
+        <param><defname>b1</defname></param>
+        <param><defname>b2</defname></param>
+        <initializer>(((b1) &amp; (b2)) == b2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="499" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a56c7742713284587d3f0acd6a4b7f8fa" prot="public" static="no">
+        <name>BITMAP_same</name>
+        <param><defname>b1</defname></param>
+        <param><defname>b2</defname></param>
+        <initializer>((b1) == (b2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="500" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a1bfbe15b17844e589230b2f362ed08f8" prot="public" static="no">
+        <name>BITMAP_clear</name>
+        <param><defname>b</defname></param>
+        <initializer>((b) = 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="501" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1afc015100a7b56ab731f59611c3497989" prot="public" static="no">
+        <name>BITMAP_and</name>
+        <param><defname>b1</defname></param>
+        <param><defname>b2</defname></param>
+        <initializer>((b1) &amp;= (b2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="502" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a9e156c403acf76bf1a6469457277caa0" prot="public" static="no">
+        <name>BITMAP_minus</name>
+        <param><defname>b1</defname></param>
+        <param><defname>b2</defname></param>
+        <initializer>((b1) &amp;= ~(b2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="503" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a727b18832e5ea6f68648a0811c821f02" prot="public" static="no">
+        <name>BITMAP_insert</name>
+        <param><defname>b</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((b) |= (1&lt;&lt;(n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="504" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a436a93780c0a6558717626d6569f0f4e" prot="public" static="no">
+        <name>BITMAP_delete</name>
+        <param><defname>b</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((b) &amp;= (~(1&lt;&lt;(n))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="505" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a1ea01daf73b891c998d54959bb3efefb" prot="public" static="no">
+        <name>BITMAP_copy</name>
+        <param><defname>b1</defname></param>
+        <param><defname>b2</defname></param>
+        <initializer>((b1) = (b2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="506" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1aacd661bddba715e970511f2f2f6fcc24" prot="public" static="no">
+        <name>BITMAP_intersection</name>
+        <param><defname>b1</defname></param>
+        <param><defname>b2</defname></param>
+        <param><defname>b3</defname></param>
+        <initializer>((b1) = ((b2) &amp; (b3)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="507" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1ad4b69f946cb38c766a49a140a42c3024" prot="public" static="no">
+        <name>BITMAP_difference</name>
+        <param><defname>b1</defname></param>
+        <param><defname>b2</defname></param>
+        <param><defname>b3</defname></param>
+        <initializer>((b1) = ((b2) &amp; (~(b3))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="508" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a07202c3757c481ae36394c457b78da7a" prot="public" static="no">
+        <name>INFORMATION_MESSAGE</name>
+        <param><defname>MESSAGE</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>  fprintf( stderr, &quot;[ &quot; MESSAGE &quot; ]\n&quot;, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="516" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a49832830c550488a9a1836aa8614143a" prot="public" static="no">
+        <name>ERROR_MESSAGE</name>
+        <param><defname>MESSAGE</defname></param>
+        <initializer>        Yap_Error(SYSTEM_ERROR_INTERNAL, TermNil, MESSAGE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="523" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a4d2f76d2f759c0544337bc69d6ed3b92" prot="public" static="no">
+        <name>TABLING_ERROR_CHECKING</name>
+        <param><defname>PROCEDURE</defname></param>
+        <param><defname>TEST</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="531" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a58fbf17821ba6c61df2fc17f7483d446" prot="public" static="no">
+        <name>YAPOR_ERROR_CHECKING</name>
+        <param><defname>PROCEDURE</defname></param>
+        <param><defname>TEST</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="538" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a4b02b7b6bdd4d30103dd19513a807cc6" prot="public" static="no">
+        <name>OPTYAP_ERROR_CHECKING</name>
+        <param><defname>PROCEDURE</defname></param>
+        <param><defname>TEST</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="545" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a598de1c39b8c7a75e47525251d3f8bc9" prot="public" static="no">
+        <name>INFO_THREADS</name>
+        <param><defname>MESG</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="554" column="10" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8macros_8h_1a3ba0155092a79ca608b02d369e41cddf" prot="public" static="no">
+        <name>INFO_THREADS_MAIN_THREAD</name>
+        <param><defname>MESSAGE</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.macros.h" line="555" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.macros.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <member refid="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" kind="variable"><name>Yap_page_size</name></member>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/opt.macros.h"/>
+  </compounddef>
+</doxygen>

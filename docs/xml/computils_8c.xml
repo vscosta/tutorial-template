@@ -1,0 +1,902 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="computils_8c" kind="file" language="C++">
+    <compoundname>computils.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapCompile_8h" local="yes">YapCompile.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/computils.c</label>
+        <link refid="computils_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>YapCompile.h</label>
+        <link refid="YapCompile_8h_source"/>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="55">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="57">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structmem__blk" prot="public">mem_blk</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="computils_8c_1aad8f12b37c0658b166ca1288cc4f9176" prot="public" static="no">
+        <name>COMPILER_NAMES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="63" column="12" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="computils_8c_1ae24e59114dc8c1167d03a5817606a824" prot="public" static="no">
+        <name>CMEM_BLK_SIZE</name>
+        <initializer>(4*4096)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="87" column="9" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="computils_8c_1a371bb72cba63ee4270f2e8b2a39303ba" prot="public" static="no">
+        <name>FIRST_CMEM_BLK_SIZE</name>
+        <initializer>(16*4096)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="88" column="9" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="computils_8c_1a0b8c5309152b860a73ec9239c9cfdcae" prot="public" static="no">
+        <type>struct <ref refid="structmem__blk" kindref="compound">mem_blk</ref></type>
+        <definition>typedef struct mem_blk MemBlk</definition>
+        <argsstring></argsstring>
+        <name>MemBlk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="85" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="computils_8c_1af726c47c3db74e0b0eb3df2cdbf60f62" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * AllocCMem</definition>
+        <argsstring>(UInt size, struct intermediates *cip)</argsstring>
+        <name>AllocCMem</name>
+        <param>
+          <type>UInt</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="91" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="91" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1ac9cc4373dec605883783db7816b0666c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ReleaseCMem</definition>
+        <argsstring>(struct intermediates *cip)</argsstring>
+        <name>Yap_ReleaseCMem</name>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="159" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="159" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1a6ca695a4719026e67bf16047288ea110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_AllocCMem</definition>
+        <argsstring>(UInt size, struct intermediates *cip)</argsstring>
+        <name>Yap_AllocCMem</name>
+        <param>
+          <type>UInt</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="180" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1a7d7329c7c4430ffdac7c4ba641f03261" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int is_a_test</definition>
+        <argsstring>(Term arg, Term mod)</argsstring>
+        <name>is_a_test</name>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="186" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="186" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1acb8d7135ab97fd331a38930cecff0b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_is_a_test_pred</definition>
+        <argsstring>(Term arg, Term mod)</argsstring>
+        <name>Yap_is_a_test_pred</name>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="229" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1a3a525cff2a51dfe2e08784bdf5c8c7fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_emit</definition>
+        <argsstring>(compiler_vm_op o, Int r1, CELL r2, struct intermediates *cip)</argsstring>
+        <name>Yap_emit</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="235" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="235" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1abf0c1ca35d374feeb440df4adfcdae3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_emit_3ops</definition>
+        <argsstring>(compiler_vm_op o, CELL r1, CELL r2, CELL r3, struct intermediates *cip)</argsstring>
+        <name>Yap_emit_3ops</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r3</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="252" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="252" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1aed9b09c6de5358de1bcbc6e1f8a9f7a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_emit_4ops</definition>
+        <argsstring>(compiler_vm_op o, CELL r1, CELL r2, CELL r3, CELL r4, struct intermediates *cip)</argsstring>
+        <name>Yap_emit_4ops</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r3</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r4</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="271" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="271" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1a5f9edf2235e847144c0dc7f8253229ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_emit_5ops</definition>
+        <argsstring>(compiler_vm_op o, CELL r1, CELL r2, CELL r3, CELL r4, CELL r5, struct intermediates *cip)</argsstring>
+        <name>Yap_emit_5ops</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r3</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r4</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r5</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="291" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="291" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1a8e7ea7ed860a0ff4e2899158bf5ffdd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_emit_6ops</definition>
+        <argsstring>(compiler_vm_op o, CELL r1, CELL r2, CELL r3, CELL r4, CELL r5, CELL r6, struct intermediates *cip)</argsstring>
+        <name>Yap_emit_6ops</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r3</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r4</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r5</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r6</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="312" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="312" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1ab30b0aebaa21386cd9bae518ac186641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_emit_7ops</definition>
+        <argsstring>(compiler_vm_op o, CELL r1, CELL r2, CELL r3, CELL r4, CELL r5, CELL r6, CELL r7, struct intermediates *cip)</argsstring>
+        <name>Yap_emit_7ops</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r3</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r4</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r5</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r6</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r7</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="334" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="334" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1a371eb21b4e336e0b8719bc379ca897f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>CELL * Yap_emit_extra_size</definition>
+        <argsstring>(compiler_vm_op o, CELL r1, int size, struct intermediates *cip)</argsstring>
+        <name>Yap_emit_extra_size</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="357" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="357" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1ad2ecbfb52b76c59dbf3980810c21cd64" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bip_name</definition>
+        <argsstring>(Int op, char *s)</argsstring>
+        <name>bip_name</name>
+        <param>
+          <type>Int</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="375" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="375" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="computils_8c_1a88f95adfd7f66c1fa1ebbf7e68a922b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_bip_name</definition>
+        <argsstring>(Int op, char *s)</argsstring>
+        <name>Yap_bip_name</name>
+        <param>
+          <type>Int</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/computils.c" line="463" column="1" bodyfile="/home/vsc/github/yap/C/computils.c" bodystart="463" bodyend="465"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/computils.c"/>
+  </compounddef>
+</doxygen>

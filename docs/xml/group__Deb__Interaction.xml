@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Deb__Interaction" kind="group">
+    <compoundname>Deb_Interaction</compoundname>
+    <title>Interacting with the debugger</title>
+    <innergroup refid="group__DebSet">Debugger Control</innergroup>
+    <briefdescription>
+<para>YAP includes a procedural debugger, based on Byrd&apos;s four port model. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In this model, execution is seen at the procedure level: each activation of a procedure is seen as a box with control flowing into and out of that box</para>
+<para>In the four port model control is caught at four key points: before entering the procedure, after exiting the procedure (meaning successful evaluation of all queries activated by the procedure), after backtracking but before trying new alternative to the procedure and after failing the procedure Each one of these points is named a port:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="charliteral">Call</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">Exit</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">+</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">descendant(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">offspring(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">).<sp/><sp/></highlight><highlight class="keyword">+</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">offspring</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">descendant(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Z</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">descendant<sp/></highlight><highlight class="keyword">+</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">offspring(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">descendant(</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Z</highlight><highlight class="normal">).<sp/></highlight><highlight class="keyword">+</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">descendant</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="charliteral">Fail</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">|</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">Redo</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">descendant</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>Call</computeroutput></para>
+<para>The call port is activated before initial invocation of procedure Afterwards, execution will try to match the goal with the head of existing clauses for the procedure</para>
+</listitem><listitem><para><computeroutput>Exit</computeroutput></para>
+<para>This port is activated if the procedure succeeds Control will now leave the procedure and return to its ancestor</para>
+</listitem><listitem><para><computeroutput>Redo</computeroutput></para>
+<para>If the goal, or goals, activated after the call port fail then backtracking will eventually return control to this procedure through the redo port</para>
+</listitem><listitem><para><computeroutput>Fail</computeroutput></para>
+<para>If all clauses for this predicate fail, then the invocation fails, and control will try to redo the ancestor of this invocation</para>
+</listitem></itemizedlist>
+</para>
+<para>To start debugging, the user will either call <computeroutput>trace</computeroutput> or spy the relevant procedures, entering debug mode, and start execution of the program When finding the first spy-point, YAP&apos;s debugger will take control and show a message of the form: v <programlisting><codeline><highlight class="normal">(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">)<sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">quicksort([</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">3</highlight><highlight class="normal">],</highlight><highlight class="charliteral">_38</highlight><highlight class="normal">)<sp/>?</highlight></codeline>
+</programlisting></para>
+<para>The debugger message will be shown while creeping, or at spy-points, and it includes four or five fields:</para>
+<para><itemizedlist>
+<listitem><para>The first three characters are used to point out special states of the debugger If the port is exit and the first character is &apos;?&apos;, the current call is non-deterministic, that is, it still has alternatives to be tried If the second character is a <computeroutput>\*</computeroutput>, execution is at a spy-point If the third character is a <computeroutput>&gt;</computeroutput>, execution has returned either from a skip, a fail or a redo command</para>
+</listitem><listitem><para>The second field is the activation number, and uniquely identifies the activation The number will start from 1 and will be incremented for each activation found by the debugger</para>
+</listitem><listitem><para>In the third field, the debugger shows the active port</para>
+</listitem><listitem><para>The fourth field is the goal The goal is written by <computeroutput><ref refid="classwrite__term_23" kindref="compound">write_term/3</ref> </computeroutput> on the standard error stream, using the options given by debugger_print_options</para>
+</listitem></itemizedlist>
+</para>
+<para>If the active port is leashed, the debugger will prompt the user with a <computeroutput>?</computeroutput>, and wait for a command A debugger command is just a character, followed by a return By default, only the call and redo entries are leashed, but the <ref refid="classleash_21" kindref="compound">leash/1</ref> predicate can be used in order to make the debugger stop where needed</para>
+<para>There are several commands available, but the user only needs to remember the help command, which is <computeroutput>h</computeroutput> This command shows all the available options, which are:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>c</computeroutput> - creep</para>
+<para>this command makes YAP continue execution and stop at the next leashed port</para>
+</listitem><listitem><para><computeroutput>return</computeroutput> - creep</para>
+<para>the same as c</para>
+</listitem><listitem><para><computeroutput>l</computeroutput> - leap</para>
+<para>YAP will execute until it meets a port for a spied predicate; this mode keeps all computation history for debugging purposes, so it is more expensive than standard execution Use <computeroutput>k</computeroutput> or <computeroutput>z</computeroutput> for fast execution</para>
+</listitem><listitem><para><computeroutput>k</computeroutput> - quasi-leap</para>
+<para>similar to leap but faster since the computation history is not kept; useful when leap becomes too slow</para>
+</listitem><listitem><para><computeroutput>z</computeroutput> - zip</para>
+</listitem></itemizedlist>
+</para>
+<para><verbatim>same as &lt;tt&gt;k&lt;/tt&gt;
+</verbatim> <computeroutput>s</computeroutput> - skip</para>
+<para>YAP will continue execution without showing any messages until returning to the current activation Spy-points will be ignored in this mode Note that this command keeps all debugging history, use <computeroutput>t</computeroutput> for fast execution This command is meaningless, and therefore illegal, in the fail and exit ports</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>t</computeroutput> - fast-skip</para>
+<para>similar to skip but faster since computation history is not kept; useful if skip becomes slow</para>
+</listitem><listitem><para><computeroutput>f [ _GoalId_]</computeroutput> - fail</para>
+<para>If given no argument, forces YAP to fail the goal, skipping the fail port and backtracking to the parent If <computeroutput>f</computeroutput> receives a goal number as the argument, the command fails all the way to the goal If goal <emphasis>GoalId</emphasis> has completed execution, YAP fails until meeting the first active ancestor</para>
+</listitem><listitem><para><computeroutput>r</computeroutput> [ <emphasis>GoalId</emphasis>] - retry</para>
+<para>This command forces YAP to jump back call to the port Note that any side effects of the goal cannot be undone This command is not available at the call port If <computeroutput>f</computeroutput> receives a goal number as the argument, the command retries goal <emphasis>GoalId</emphasis> instead If goal <emphasis>GoalId</emphasis> has vcompleted execution, YAP fails until meeting the first active ancestor</para>
+</listitem></itemizedlist>
+</para>
+<para>q+ <computeroutput>a</computeroutput> - abort <verbatim>execution will be aborted, and the interpreter will return to the
+</verbatim> top-level YAP disactivates debug mode, but spypoints are not removed</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>n</computeroutput> - nodebug</para>
+<para>stop debugging and continue execution The command will not clear active §spy-points</para>
+</listitem><listitem><para><computeroutput>e</computeroutput> - exit</para>
+<para>leave YAP</para>
+</listitem><listitem><para><computeroutput>h</computeroutput> - help</para>
+<para>show the debugger commands</para>
+</listitem><listitem><para><computeroutput>!</computeroutput> Query</para>
+<para>execute a query YAP will not show the result of the query</para>
+</listitem><listitem><para><computeroutput>b</computeroutput> - break</para>
+<para>break active execution and launch a break level This is the same as <computeroutput>!break</computeroutput></para>
+</listitem><listitem><para><computeroutput>+</computeroutput> - spy this goal</para>
+<para>start spying the active goal The same as <computeroutput>! spy G</computeroutput> where <emphasis>G</emphasis> is the active goal</para>
+</listitem><listitem><para><computeroutput>-</computeroutput> - nospy this goal</para>
+<para>stop spying the active goal The same as <computeroutput>! nospy G</computeroutput> where <emphasis>G</emphasis> is <linebreak/>
+ the active goal</para>
+</listitem><listitem><para><computeroutput>p</computeroutput> - print</para>
+<para>shows the active goal using print/1</para>
+</listitem><listitem><para><computeroutput>d</computeroutput> - display</para>
+<para>shows the active goal using <ref refid="classdisplay_21" kindref="compound">display/1</ref></para>
+</listitem><listitem><para><computeroutput>&lt;Depth</computeroutput> - debugger write depth</para>
+<para>sets the maximum write depth, both for composite terms and lists, that will be used by the debugger For more information about <computeroutput>write_depth/2 </computeroutput> ( (see Input/Output Control))</para>
+</listitem><listitem><para><computeroutput>&lt;</computeroutput> - full term</para>
+<para>resets to the default of ten the debugger&apos;s maximum write depth For more information about <computeroutput>write_depth/2 </computeroutput> ( (see Input/Output Control))</para>
+</listitem><listitem><para><computeroutput>A</computeroutput> - alternatives</para>
+<para>show the list of backtrack points in the current execution</para>
+</listitem><listitem><para><computeroutput>g [ _N_]</computeroutput></para>
+<para>show the list of ancestors in the current debugging environment If it receives <emphasis>N</emphasis>, show the first <emphasis>N</emphasis> ancestors</para>
+</listitem></itemizedlist>
+</para>
+<para>The debugging information, when fast-skip <computeroutput>quasi-leap</computeroutput> is used, will be lost</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

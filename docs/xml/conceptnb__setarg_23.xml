@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptnb__setarg_23" kind="concept">
+    <compoundname>nb_setarg/3</compoundname>
+    <initializer>template&lt;&gt;
+concept nb_setarg/3 =     </initializer>
+    <briefdescription>
+<para><bold>nb_setarg</bold>(+{Arg], + <emphasis>Term</emphasis>, + <emphasis>Value</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Assigns the <emphasis>Arg</emphasis>-th argument of the compound term <emphasis>Term</emphasis> with the given <emphasis>Value</emphasis> as <ref refid="classsetarg_23" kindref="compound">setarg/3</ref> , but on backtracking the assignment is not reversed If <emphasis>Term</emphasis> is not atomic, it is duplicated using <ref refid="classduplicate__term_22" kindref="compound">duplicate_term/2</ref> This predicate uses the same technique as <ref refid="classnb__setval_22" kindref="compound">nb_setval/2</ref> We therefore refer to the description of <ref refid="classnb__setval_22" kindref="compound">nb_setval/2</ref> for details on non-backtrackable assignment of terms This predicate is compatible to GNU-Prolog <computeroutput>setarg(A,T,V,false)</computeroutput>, removing the type-restriction on <emphasis>Value</emphasis> See also <ref refid="classnb__linkarg_23" kindref="compound">nb_linkarg/3</ref> Below is an example for counting the number of solutions of a goal Note that this implementation is thread-safe, reentrant and capable of handling exceptions Realising these features with a traditional implementation based on assert/retract or flag/3 is much more complicated</para>
+<para><programlisting><codeline><highlight class="normal">succeeds_n_times(Goal,<sp/>Times)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal">Counter<sp/>=<sp/>counter(0),</highlight></codeline>
+<codeline><highlight class="normal">(<sp/><sp/><sp/>Goal,</highlight></codeline>
+<codeline><highlight class="normal">arg(1,<sp/>Counter,<sp/>N0),</highlight></codeline>
+<codeline><highlight class="normal">N<sp/>is<sp/>N0<sp/>+<sp/>1,</highlight></codeline>
+<codeline><highlight class="normal">nb_setarg(1,<sp/>Counter,<sp/>N),</highlight></codeline>
+<codeline><highlight class="normal">fail</highlight></codeline>
+<codeline><highlight class="normal">;<sp/><sp/><sp/>arg(1,<sp/>Counter,<sp/>Times)</highlight></codeline>
+<codeline><highlight class="normal">).</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="C/mavar.c" line="359" column="1"/>
+  </compounddef>
+</doxygen>

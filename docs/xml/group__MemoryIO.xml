@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__MemoryIO" kind="group">
+    <compoundname>MemoryIO</compoundname>
+    <title>Memory-Based Streams</title>
+    <innerclass refid="classopen__mem__read__stream_22" prot="public">open_mem_read_stream/2</innerclass>
+    <innerclass refid="classopen__mem__write__stream_21" prot="public">open_mem_write_stream/1</innerclass>
+    <innerclass refid="classpeek__mem__write__stream_23" prot="public">peek_mem_write_stream/3</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__MemoryIO_1ga443340d7d5ae26bb631aa927f7cfcbfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_StrPrefix</definition>
+        <argsstring>(const char *buf, size_t n)</argsstring>
+        <name>Yap_StrPrefix</name>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="45" column="7" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="45" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga7bec390ad91cf3c2910b7c61c1d45311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fill_pads</definition>
+        <argsstring>(int sno, int sno0, int total, format_info *fg USES_REGS)</argsstring>
+        <name>fill_pads</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type><ref refid="structformat__status" kindref="compound">format_info</ref> *fg</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="54" column="5" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="54" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1gad9a9ee54b015370db2015d09f933013c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_set_stream_to_buf</definition>
+        <argsstring>(StreamDesc *st, const char *buf, size_t nchars USES_REGS)</argsstring>
+        <name>Yap_set_stream_to_buf</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t nchars</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="118" column="6" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="118" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga565d3d643e8365dbca956ed76a82bc31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_open_buf_read_stream</definition>
+        <argsstring>(void *spt, const char *buf, size_t nchars, encoding_t *encp, memBufSource src, Atom fname, Term uname)</argsstring>
+        <name>Yap_open_buf_read_stream</name>
+        <param>
+          <type>void *</type>
+          <declname>spt</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nchars</declname>
+        </param>
+        <param>
+          <type>encoding_t *</type>
+          <declname>encp</declname>
+        </param>
+        <param>
+          <type>memBufSource</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>uname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="136" column="5" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="136" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga1a929880ce1559950157b60b6b92861d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int open_mem_read_stream</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>open_mem_read_stream</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="169" column="1" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="169" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga2ac04bf8a87d134e501b9820b1635bb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_open_buf_write_stream</definition>
+        <argsstring>(encoding_t enc)</argsstring>
+        <name>Yap_open_buf_write_stream</name>
+        <param>
+          <type>encoding_t</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="192" column="5" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="192" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga3929cb2347793ce578403295730707cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_OpenBufWriteStream</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Yap_OpenBufWriteStream</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="221" column="5" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga0387d6d83bf4622b8ff5d722962f167c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int open_mem_write_stream</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>open_mem_write_stream</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="233" column="1" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="233" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1gada21b9b2f9cf039a6426cd1027883083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_MemExportStreamPtr</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>Yap_MemExportStreamPtr</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+<para>Yap_PeekMemwriteStream() shows the current buffer for a memory stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sno</parametername>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in-memory stream</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>temporary buffer, discarded by close and may be moved away by other writes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="255" column="6" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="255" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga8b77b9290ec8baaf9efba81a4951511b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int peek_mem_write_stream</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>peek_mem_write_stream</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="286" column="12" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="286" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga57fa29220d404c4a9d309fe096b1d516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_MemOps</definition>
+        <argsstring>(StreamDesc *st)</argsstring>
+        <name>Yap_MemOps</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="325" column="6" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="325" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1gac0538bc88194b8742781f967128951f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int format_synch</definition>
+        <argsstring>(int sno, int sno0, format_info *fg)</argsstring>
+        <name>format_synch</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno0</declname>
+        </param>
+        <param>
+          <type><ref refid="structformat__status" kindref="compound">format_info</ref> *</type>
+          <declname>fg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="331" column="5" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="331" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga43bd6d0776512e079f0a9230a778bf40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_CloseMemoryStream</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>Yap_CloseMemoryStream</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="367" column="6" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="367" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga072e6213d9fcb8ff20e927a7c4c6ff54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitMems</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitMems</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="387" column="6" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="387" bodyend="393"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__MemoryIO_1ga369266c24eacffb87046522897a570d5" prot="public" static="no">
+        <name>_GNU_SOURCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/fmem.c" line="37" column="9" bodyfile="/home/vsc/github/yap/os/fmem.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Support for reading and writing on memory buffers, and therefore, on text. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This code is used by <ref refid="classopen_23" kindref="compound">open/3</ref> and similar routines</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

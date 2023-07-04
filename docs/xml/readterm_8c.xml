@@ -1,0 +1,1925 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="readterm_8c" kind="file" language="C++">
+    <compoundname>readterm.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapError_8h" local="yes">YapError.h</includes>
+    <includes refid="YapEval_8h" local="yes">YapEval.h</includes>
+    <includes refid="YapFlags_8h" local="yes">YapFlags.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="YapArenas_8h" local="yes">YapArenas.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="59">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="55">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="57">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/os/readterm.c</label>
+        <link refid="readterm_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structFEnv" prot="public">FEnv</innerclass>
+    <innerclass refid="structrenv" prot="public">renv</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="readterm_8c_1aa8e0b81a04ffb1a43fe7d38fc0505bc3" prot="public" static="no">
+        <name>strncat</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcat(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="97" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a2c5b8ad33d611ac4e9e9c4e0bd0b069a" prot="public" static="no">
+        <name>strncpy</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcpy(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="100" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a875c2d50ef348f37e02e62cfba84935b" prot="public" static="no">
+        <name>SYSTEM_STAT</name>
+        <initializer>stat</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="116" column="10" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1aed4206f691183f08bbd6e82a8e90d7d9" prot="public" static="no">
+        <name>READ_DEFS</name>
+        <param></param>
+        <initializer>  PAR(&quot;comments&quot;, is_output_list, READ_COMMENTS),                                 \
+      PAR(&quot;module&quot;, isatom, READ_MODULE), PAR(&quot;priority&quot;, nat, READ_PRIORITY), \
+      PAR(&quot;output&quot;, filler, READ_OUTPUT),                                      \
+      PAR(&quot;quasi_quotations&quot;, filler, READ_QUASI_QUOTATIONS),                  \
+      PAR(&quot;term_position&quot;, filler, READ_TERM_POSITION),                        \
+      PAR(&quot;syntax_errors&quot;, synerr, READ_SYNTAX_ERRORS),                        \
+          PAR(&quot;scan&quot;, is_output_list, READ_SCAN),                                \
+          PAR(&quot;singletons&quot;, is_output_list, READ_SINGLETONS),                                \
+          PAR(&quot;variables&quot;, is_output_list, READ_VARIABLES),                                \
+      PAR(&quot;variable_names&quot;, is_output_list, READ_VARIABLE_NAMES),                      \
+      PAR(&quot;character_escapes&quot;, booleanFlag, READ_CHARACTER_ESCAPES),           \
+      PAR(&quot;input_closing_blank&quot;, booleanFlag, READ_INPUT_CLOSING_BLANK),       \
+      PAR(&quot;backquoted_string&quot;, isatom, READ_BACKQUOTED_STRING),                \
+      PAR(&quot;singlequoted_string&quot;, isatom, READ_SINGLEQUOTED_STRING),            \
+      PAR(&quot;doublequoted_string&quot;, isatom, READ_DOUBLEQUOTED_STRING),            \
+      PAR(&quot;var_prefix&quot;, isatom, READ_VAR_PREFIX),                              \
+      PAR(&quot;allow_variable_name_as_functor&quot;, isatom,                            \
+          READ_ALLOW_VARIABLE_NAME_AS_FUNCTOR),                                \
+      PAR(&quot;cycles&quot;, booleanFlag, READ_CYCLES), PAR(NULL, ok, READ_END)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="216" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>z</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="237" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>  { x, y, z }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="243" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1ad4d025ecf1bdbf8b244ca688df8e478d" prot="public" static="no">
+        <name>MSG_SIZE</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="398" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a917967fab539cbe6451676bfac9a81a6" prot="public" static="no">
+        <name>PUSHFET</name>
+        <param><defname>X</defname></param>
+        <initializer>*HR++ = fe-&gt;X</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="744" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1abcc8bda328b12d35d3212950897ef0e1" prot="public" static="no">
+        <name>POPFET</name>
+        <param><defname>X</defname></param>
+        <initializer>fe-&gt;X = *--HR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="745" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1aa30c5de49458e1c493dc631789a42762" prot="public" static="no">
+        <name>READ_CLAUSE_COMMENTS</name>
+        <initializer>READ_COMMENTS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1389" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a421b4e2cb5d677c2d2020c72b2c36d8d" prot="public" static="no">
+        <name>READ_CLAUSE_MODULE</name>
+        <initializer>READ_MODULE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1390" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a364359569ec7499a25268347a363b154" prot="public" static="no">
+        <name>READ_CLAUSE_SCAN</name>
+        <initializer>READ_SCAN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1391" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1ade3986fd69866f6ffee709a2a2fc957e" prot="public" static="no">
+        <name>READ_CLAUSE_VARIABLE_NAMES</name>
+        <initializer>READ_VARIABLE_NAMES</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1392" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1aaa1e8ddba311da3c50e2090692694528" prot="public" static="no">
+        <name>READ_CLAUSE_VARIABLES</name>
+        <initializer>READ_VARIABLES</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1393" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1ae5b7dfbc442558173c4decbd07fbbdb2" prot="public" static="no">
+        <name>READ_CLAUSE_TERM_POSITION</name>
+        <initializer>READ_TERM_POSITION</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1394" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a62ce02b98f095649f2f418292a68ce9a" prot="public" static="no">
+        <name>READ_CLAUSE_SYNTAX_ERRORS</name>
+        <initializer>READ_SYNTAX_ERRORS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1395" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1ace5fec7eb20e8f264859a134c2645e60" prot="public" static="no">
+        <name>READ_CLAUSE_OUTPUT</name>
+        <initializer>READ_OUTPUT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1396" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readterm_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>  { x, y, z }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1400" column="9" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="readterm_8c_1a4178b8fb07bc7ce3ef525776d22715fd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>open_enum_choices</name>
+        <enumvalue id="readterm_8c_1a4178b8fb07bc7ce3ef525776d22715fdacd1ba33cb7ca1b01fefec95de406ca18" prot="public">
+          <name>READ_DEFS</name>
+          <initializer>=()</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="239" column="1" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="enum" id="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692" prot="public" static="no" strong="no">
+        <type></type>
+        <name>parser_state_t</name>
+        <enumvalue id="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692a4edc331f9df873e552bb4c6a86139479" prot="public">
+          <name>YAP_START_PARSING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692a3c1c4810ca6d9199b4f73920345de2e6" prot="public">
+          <name>YAP_SCANNING</name>
+          <briefdescription>
+<para>initialization </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692a136543d4a1b18ada1fc9fd3f03e324b4" prot="public">
+          <name>YAP_SCANNING_ERROR</name>
+          <briefdescription>
+<para>input to list of tokens </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692aa4bd7a3107bc967b3affc48fa6dcf49b" prot="public">
+          <name>YAP_PARSING</name>
+          <briefdescription>
+<para>serious error (eg oom); trying error handling, followd </para>
+          </briefdescription>
+          <detaileddescription>
+<para>by throw, restart or failure </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692abecb6faa87d59eea80169d62885e08eb" prot="public">
+          <name>YAP_PARSING_ERROR</name>
+          <briefdescription>
+<para>list of tokens to term </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692a23c384852f0336fb137041867bc96aae" prot="public">
+          <name>YAP_PARSING_FINISHED</name>
+          <briefdescription>
+<para>oom or syntax error </para>
+          </briefdescription>
+          <detaileddescription>
+<para>exit parser </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="729" column="1" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="729" bodyend="737"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="readterm_8c_1af76e01aac0bcef63cb28dcaf4c38127f" prot="public" static="no">
+        <type>enum open_enum_choices</type>
+        <definition>typedef enum open_enum_choices read_choices_t</definition>
+        <argsstring></argsstring>
+        <name>read_choices_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="239" column="46"/>
+      </memberdef>
+      <memberdef kind="typedef" id="readterm_8c_1acb023ae831f3eb09e63f7ec5935ec6c0" prot="public" static="no">
+        <type>struct <ref refid="structFEnv" kindref="compound">FEnv</ref></type>
+        <definition>typedef struct FEnv FEnv</definition>
+        <argsstring></argsstring>
+        <name>FEnv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="592" column="6"/>
+      </memberdef>
+      <memberdef kind="typedef" id="readterm_8c_1ac70e3743a59fcc5563a712694ce85e9c" prot="public" static="no">
+        <type>struct <ref refid="structrenv" kindref="compound">renv</ref></type>
+        <definition>typedef struct renv REnv</definition>
+        <argsstring></argsstring>
+        <name>REnv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="603" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="readterm_8c_1a207b9b2b6bb4c17d1e0dde7133b1aa83" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structstruct__param" kindref="compound">param_t</ref></type>
+        <definition>const param_t read_defs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>read_defs</name>
+        <initializer>= {READ_DEFS()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="246" column="22" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="readterm_8c_1a7605e65639bec4a2fa45c811146f32f5" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structstruct__param" kindref="compound">param_t</ref></type>
+        <definition>const param_t read_clause_defs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>read_clause_defs</name>
+        <initializer>= {READ_DEFS()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1403" column="22" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="readterm_8c_1aa550b898d07a2db50be60876b4772b60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term is_output_list</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>is_output_list</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="119" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1aed13f54f878901a7fa21f5126bf052fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clean_vars</definition>
+        <argsstring>(VarEntry *p)</argsstring>
+        <name>clean_vars</name>
+        <param>
+          <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="129" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="129" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a0df079afaae3cc6189351203a585f289" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term add_output</definition>
+        <argsstring>(Term t, Term tail)</argsstring>
+        <name>add_output</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="249" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="249" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1ae5425b0656502a8d54821b8fa569334b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term add_names</definition>
+        <argsstring>(Term t, Term tail)</argsstring>
+        <name>add_names</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="265" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="265" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a705cbf5a4382ee11203d53c21c975942" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term add_priority</definition>
+        <argsstring>(Term t, Term tail)</argsstring>
+        <name>add_priority</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="280" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="280" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a612386e9b2ae5d01d7fb6981d6b40633" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term tokToPair</definition>
+        <argsstring>(TokEntry *tok)</argsstring>
+        <name>tokToPair</name>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tok</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="332" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="332" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1aa92fd3ce440f8ef404e94f2e4a8dad5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int scan_stream</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>scan_stream</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="355" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="355" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a60b955b2edb02316087b44b4605bcad2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_syntax_error__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t, int sno, TokEntry *start, TokEntry *err, char *s,...)</argsstring>
+        <name>Yap_syntax_error__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>err</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Syntax Error Handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>tokptr: the sequence of tokens</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>sno: the stream numbet</title><para></para>
+</simplesect>
+Implicit arguments:<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="409" column="6" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="409" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a2e8f152e16aa03be496812647055a33c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structx__el" kindref="compound">xarg</ref> *</type>
+        <definition>static xarg * setClauseReadEnv</definition>
+        <argsstring>(Term opts, FEnv *fe, struct renv *re, int inp_stream)</argsstring>
+        <name>setClauseReadEnv</name>
+        <param>
+          <type>Term</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrenv" kindref="compound">renv</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1406" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1406" bodyend="1474" declfile="/home/vsc/github/yap/os/readterm.c" declline="605" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a961ad1c6bdc39e0d6204019b4f8c719e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structx__el" kindref="compound">xarg</ref> *</type>
+        <definition>static xarg * setReadEnv</definition>
+        <argsstring>(Term opts, FEnv *fe, struct renv *re, int inp_stream)</argsstring>
+        <name>setReadEnv</name>
+        <param>
+          <type>Term</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structrenv" kindref="compound">renv</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="607" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="607" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1ab9c3872a6c6660df4bae1dba62e9c879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_FirstLineInParse</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_FirstLineInParse</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="739" column="5" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="739" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1ac3b5a9fe2430b84e63103af5e2af9f2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void reset_regs</definition>
+        <argsstring>(TokEntry *tokstart, FEnv *fe)</argsstring>
+        <name>reset_regs</name>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="747" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="747" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a73272c72301c74ee11145f5b898755a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term get_variables</definition>
+        <argsstring>(FEnv *fe, TokEntry *tokstart)</argsstring>
+        <name>get_variables</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="770" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="770" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a4a6b78dc309abb806fbfca8767623c38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term get_varnames</definition>
+        <argsstring>(FEnv *fe, TokEntry *tokstart)</argsstring>
+        <name>get_varnames</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="790" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="790" bodyend="811"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a4cbc24da776d312f392847d225e9bc50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term get_singletons</definition>
+        <argsstring>(FEnv *fe, TokEntry *tokstart)</argsstring>
+        <name>get_singletons</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="813" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="813" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a4e81331b697b69427dd01013adbd997c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void warn_singletons</definition>
+        <argsstring>(FEnv *fe, TokEntry *tokstart)</argsstring>
+        <name>warn_singletons</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="833" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="833" bodyend="851"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a46fc5ea923f5838ace80e634a7f67c3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term get_stream_position</definition>
+        <argsstring>(FEnv *fe, TokEntry *tokstart)</argsstring>
+        <name>get_stream_position</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="853" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="853" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a1b288701483f911eba0ddcf89a5fb4f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool is_goal</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>is_goal</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="872" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="872" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a9e9732d218cce7321d8890249a5f9f92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term scan_to_list</definition>
+        <argsstring>(TokEntry *t)</argsstring>
+        <name>scan_to_list</name>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="880" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="880" bodyend="896"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1add6d5a695d22245088819c06f8cf6384" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool complete_processing</definition>
+        <argsstring>(FEnv *fe, TokEntry *tokstart)</argsstring>
+        <name>complete_processing</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="899" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="899" bodyend="943"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a14698bd406acb12c96463b8d3a1637bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool complete_clause_processing</definition>
+        <argsstring>(FEnv *fe, TokEntry *tokstart)</argsstring>
+        <name>complete_clause_processing</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tokstart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="945" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="945" bodyend="988"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1afbba58dfd7dd324eea04eaf9aa20ad8f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692" kindref="member">parser_state_t</ref></type>
+        <definition>static parser_state_t initparser</definition>
+        <argsstring>(Term opts, FEnv *fe, REnv *re, int inp_stream, bool clause)</argsstring>
+        <name>initparser</name>
+        <param>
+          <type>Term</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type><ref refid="structrenv" kindref="compound">REnv</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clause</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1045" column="23" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1045" bodyend="1081" declfile="/home/vsc/github/yap/os/readterm.c" declline="990" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a6ee1b4c9597418173a560eb175929232" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692" kindref="member">parser_state_t</ref></type>
+        <definition>static parser_state_t parse</definition>
+        <argsstring>(REnv *re, FEnv *fe, int inp_stream)</argsstring>
+        <name>parse</name>
+        <param>
+          <type><ref refid="structrenv" kindref="compound">REnv</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1225" column="23" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1225" bodyend="1238" declfile="/home/vsc/github/yap/os/readterm.c" declline="993" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1abd00a26c3db9fcb64554f6b7ae199f4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692" kindref="member">parser_state_t</ref></type>
+        <definition>static parser_state_t scanError</definition>
+        <argsstring>(REnv *re, FEnv *fe, int inp_stream)</argsstring>
+        <name>scanError</name>
+        <param>
+          <type><ref refid="structrenv" kindref="compound">REnv</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1114" column="23" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1114" bodyend="1161" declfile="/home/vsc/github/yap/os/readterm.c" declline="995" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a8a12c671a0da51f64e22471476415e59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692" kindref="member">parser_state_t</ref></type>
+        <definition>static parser_state_t scanEOF</definition>
+        <argsstring>(FEnv *fe, int inp_stream)</argsstring>
+        <name>scanEOF</name>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1001" column="23" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1001" bodyend="1043" declfile="/home/vsc/github/yap/os/readterm.c" declline="997" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a7d43aec779e4d73360fd7d2cc85ea1c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692" kindref="member">parser_state_t</ref></type>
+        <definition>static parser_state_t scan</definition>
+        <argsstring>(REnv *re, FEnv *fe, int inp_stream)</argsstring>
+        <name>scan</name>
+        <param>
+          <type><ref refid="structrenv" kindref="compound">REnv</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1083" column="23" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1083" bodyend="1112" declfile="/home/vsc/github/yap/os/readterm.c" declline="999" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a4bbca028df9574f3d4f083cd68a4bdf7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="readterm_8c_1ac17e6b3235d7cbe140dcdba8dbe69692" kindref="member">parser_state_t</ref></type>
+        <definition>static parser_state_t parseError</definition>
+        <argsstring>(REnv *re, FEnv *fe, int inp_stream)</argsstring>
+        <name>parseError</name>
+        <param>
+          <type><ref refid="structrenv" kindref="compound">REnv</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type><ref refid="structFEnv" kindref="compound">FEnv</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inp_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1163" column="23" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1163" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a940815802ad31e0e4297a088ac020406" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term exit_parser</definition>
+        <argsstring>(int sno, yhandle_t y0, yap_error_descriptor_t *new, yap_error_descriptor_t *old, Term rc)</argsstring>
+        <name>exit_parser</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>yhandle_t</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+<para>dome with the parser, off we go... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1242" column="13" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1242" bodyend="1254"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a1eb8b56ddfe18481afc981104ad841e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_read_term</definition>
+        <argsstring>(int sno, Term opts, bool clause)</argsstring>
+        <name>Yap_read_term</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clause</declname>
+        </param>
+        <briefdescription>
+<para>generic routine to read terms from a stream </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>inp_stream: where we read from </para>
+</listitem>
+<listitem><para>: opts, a list with options </para>
+</listitem>
+<listitem><para>: if called from read_term, arity called from read_clause, -arity</para>
+</listitem>
+</itemizedlist>
+<simplesect kind="return"><para>the term or 0 in case of error</para>
+</simplesect>
+Implementation uses a state machine: default is init, scan, parse, complete </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1271" column="6" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1271" bodyend="1332"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a5064a1847deab89e477cfe502cf74a85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_term2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_term2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1335" column="1" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1335" bodyend="1339"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1aaa9c4e89a8d4b95d5b756cb4465742e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1373" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1373" bodyend="1387"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a9391a36602c23dade1f3e58b568df35b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_clause2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_clause2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1482" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1482" bodyend="1486"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a0387639b908dceb348cb1b3f8c0fb842" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_clause</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_clause</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1511" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1511" bodyend="1523"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1aae7b2ce4a6a9812af4bb9237f949ab96" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int source_location</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>source_location</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1600" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1600" bodyend="1603"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a0d013d218dbc11a18c255ad6396e382c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1616" column="1" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1616" bodyend="1629"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a3b2fbe8901a240bebdf078c17cf53503" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1642" column="1" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1642" bodyend="1648"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a060e9a6e11c78c4dc8eea4fbe995b037" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int style_checker</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>style_checker</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1650" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1650" bodyend="1692"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a7beb1e1bdb2a1c550aa656490474116d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_BufferToTerm</definition>
+        <argsstring>(const char *s, Term opts)</argsstring>
+        <name>Yap_BufferToTerm</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1694" column="6" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1694" bodyend="1708"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1ac408a95f6f1abac351638da47b376269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_UBufferToTerm</definition>
+        <argsstring>(const unsigned char *s, Term opts)</argsstring>
+        <name>Yap_UBufferToTerm</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1710" column="6" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1710" bodyend="1723"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a9952906739bf0268ec285e37353b7cd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API Term</type>
+        <definition>X_API Term Yap_BufferToTermWithPrioBindings</definition>
+        <argsstring>(const char *s, Term ctl, Term bindings, size_t len, int prio)</argsstring>
+        <name>Yap_BufferToTermWithPrioBindings</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>ctl</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>bindings</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1725" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1725" bodyend="1737"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1afd6ae1cb404142a2c9598a17c74dfece" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_term_from_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_term_from_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1755" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1755" bodyend="1777"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a2885405b07dd1273ee2910266238a1a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_term_from_atomic</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_term_from_atomic</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1794" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1794" bodyend="1815"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1af8bfdd47e873127d627744b5deafcaa6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_term_from_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_term_from_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1829" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1829" bodyend="1860"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a11bd559f15198d7c1a0da692a2dab06b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_term_from_chars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_term_from_chars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1874" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1874" bodyend="1893"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a2266b050af6c3b840c8d8ae79e5c963b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_term_from_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_term_from_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1907" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1907" bodyend="1925"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a094be716ff1210e6e6772df61631d5a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_to_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_to_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1929" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1929" bodyend="1943"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1ab702a53b50c3ad07cb9197bd9456407d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atomic_to_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atomic_to_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1945" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1945" bodyend="1962"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1aba49ad4d21e9b3250032197d7071b6d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_to_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_to_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1964" column="12" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1964" bodyend="1977"/>
+      </memberdef>
+      <memberdef kind="function" id="readterm_8c_1a5a3760effa8909631c843f59200b6e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitReadTPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitReadTPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/readterm.c" line="1981" column="6" bodyfile="/home/vsc/github/yap/os/readterm.c" bodystart="1981" bodyend="2002"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>glue code between parser and streams </para>
+    </briefdescription>
+    <detaileddescription>
+<para>for yap refering to: Files and GLOBAL_Streams, Simple Input/Output,</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/readterm.c"/>
+  </compounddef>
+</doxygen>

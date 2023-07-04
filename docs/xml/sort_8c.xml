@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sort_8c" kind="file" language="C++">
+    <compoundname>sort.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapError_8h" local="yes">YapError.h</includes>
+    <includes refid="Yapproto_8h" local="yes">Yapproto.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="amiops_8h" local="yes">amiops.h</includes>
+    <includes refid="Regs_8h" local="yes">Regs.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/sort.c</label>
+        <link refid="sort_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sort_8c_1a506229747564138401f270819f9216a0" prot="public" static="no">
+        <name>M_EVEN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="30" column="9" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sort_8c_1ad9e13f2f0043af26c982bbbada3a863e" prot="public" static="no">
+        <name>M_ODD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="31" column="9" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sort_8c_1ad9234bf29fc13a7c42577b6ffac658d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simple_mergesort</definition>
+        <argsstring>(CELL *, Int, int)</argsstring>
+        <name>simple_mergesort</name>
+        <param>
+          <type>CELL *</type>
+          <defname>pt</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>my_p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="44" column="6" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="44" bodyend="111" declfile="/home/vsc/github/yap/C/sort.c" declline="33" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a095222484ae461175db3a207a10004b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int compact_mergesort</definition>
+        <argsstring>(CELL *, Int, int)</argsstring>
+        <name>compact_mergesort</name>
+        <param>
+          <type>CELL *</type>
+          <defname>pt</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>my_p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="207" column="5" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="207" bodyend="297" declfile="/home/vsc/github/yap/C/sort.c" declline="34" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a7d88211de041e87c167023ce58a44c50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int key_mergesort</definition>
+        <argsstring>(CELL *, Int, int, Functor)</argsstring>
+        <name>key_mergesort</name>
+        <param>
+          <type>CELL *</type>
+          <defname>pt</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>my_p</defname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <defname>FuncDMinus</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="115" column="5" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="115" bodyend="203" declfile="/home/vsc/github/yap/C/sort.c" declline="35" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a3ad0f4233f68b663630ab51e52fe0384" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void adjust_vector</definition>
+        <argsstring>(CELL *, Int)</argsstring>
+        <name>adjust_vector</name>
+        <param>
+          <type>CELL *</type>
+          <defname>pt</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="300" column="1" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="300" bodyend="310" declfile="/home/vsc/github/yap/C/sort.c" declline="36" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a15fbb97c9a2003b0e032c16831dc8c8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_sort</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_sort</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="413" column="1" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="413" bodyend="430" declfile="/home/vsc/github/yap/C/sort.c" declline="37" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a39a240b244fba06f0b252b30504e7869" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_msort</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_msort</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="433" column="1" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="433" bodyend="453" declfile="/home/vsc/github/yap/C/sort.c" declline="38" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1adc4232f6c067a925834c8d57d06d795c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_ksort</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_ksort</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="456" column="1" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="456" bodyend="476" declfile="/home/vsc/github/yap/C/sort.c" declline="39" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a5cbf337a58101c0c20eed468c446e8f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>static ssize_t prepare</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>prepare</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="314" column="16" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="314" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a02d94353557a233635bdafb5d9426fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_MergeSort</definition>
+        <argsstring>(Term l USES_REGS)</argsstring>
+        <name>Yap_MergeSort</name>
+        <param>
+          <type>Term l</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="359" column="6" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="359" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1adb34550e53bfb7883450d5615c7d5604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_SortList</definition>
+        <argsstring>(Term l USES_REGS)</argsstring>
+        <name>Yap_SortList</name>
+        <param>
+          <type>Term l</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="386" column="6" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="386" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="sort_8c_1a92ef4577c469554cb2435ab43560a50b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitSortPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitSortPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/sort.c" line="479" column="1" bodyfile="/home/vsc/github/yap/C/sort.c" bodystart="479" bodyend="484"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/sort.c"/>
+  </compounddef>
+</doxygen>

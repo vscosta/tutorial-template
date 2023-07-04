@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classall_23" kind="class" language="Prolog" prot="public">
+    <compoundname>all/3</compoundname>
+    <briefdescription>
+<para><bold>all</bold>( <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>,+ <emphasis>G</emphasis>,- <emphasis>L</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Similar to <computeroutput>findall( _T_, _G_, _L_)</computeroutput> but eliminate repeated elements Thus, assuming the same clauses as in the above example, the reply to the query</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">all(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">),</highlight><highlight class="charliteral">L</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> would be:</para>
+<para><programlisting><codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">_32</highlight></codeline>
+<codeline><highlight class="charliteral">Y</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">_33</highlight></codeline>
+<codeline><highlight class="charliteral">L</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/>[</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">]</highlight><highlight class="keyword">;</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal"></highlight></codeline>
+</programlisting></para>
+<para>Note that <ref refid="classall_23" kindref="compound">all/3</ref> will fail if no answers are found </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/setof.yap" line="2" column="1" bodyfile="/home/vsc/github/yap/pl/setof.yap" bodystart="2" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

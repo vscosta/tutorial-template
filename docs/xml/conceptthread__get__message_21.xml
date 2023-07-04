@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptthread__get__message_21" kind="concept">
+    <compoundname>thread_get_message/1</compoundname>
+    <initializer>template&lt;&gt;
+concept thread_get_message/1 =     </initializer>
+    <briefdescription>
+<para><bold>thread_get_message</bold>(? <emphasis>Term</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Examines the thread message-queue and if necessary blocks execution until a term that unifies to <emphasis>Term</emphasis> arrives in the queue After a term from the queue has been unified unified to <emphasis>Term</emphasis>, the term is deleted from the queue and this predicate returns</para>
+<para>Please note that not-unifying messages remain in the queue After the following has been executed, thread 1 has the term <computeroutput>gnu</computeroutput> in its queue and continues execution using <emphasis>A</emphasis> is <computeroutput>gnat</computeroutput></para>
+<para><programlisting><codeline><highlight class="keyword">&lt;</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="keyword">&gt;</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">thread_get_message(a(</highlight><highlight class="charliteral">A</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="keyword">&lt;</highlight><highlight class="stringliteral"></highlight><highlight class="normal">thread_get_message<sp/></highlight><highlight class="vhldigit">2</highlight><highlight class="keyword">&gt;</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">thread_send_message(b(gnu)),</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">thread_send_message(a(gnat)),</highlight></codeline>
+</programlisting></para>
+<para>See also <ref refid="classthread__peek__message_21" kindref="compound">thread_peek_message/1</ref> </para>
+    </detaileddescription>
+    <location file="pl/threads.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

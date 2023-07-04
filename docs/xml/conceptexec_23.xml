@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptexec_23" kind="concept">
+    <compoundname>exec/3</compoundname>
+    <initializer>template&lt;&gt;
+concept exec/3 =     </initializer>
+    <briefdescription>
+<para><bold>exec</bold>(+ Command, StandardStreams, -PID) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem></listitem><listitem></listitem><listitem><para>Execute command <emphasis>Command</emphasis> with its standard streams connected to the list [<emphasis>InputStream</emphasis>, <emphasis>OutputStream</emphasis>, <emphasis>ErrorStream</emphasis>] A numeric identifier to the process that executes the command is returned as <emphasis>PID</emphasis> The command is executed by the default shell <computeroutput>bin/sh -c</computeroutput> in Unix</para>
+</listitem><listitem><para>The following example demonstrates the use of <ref refid="classexec_23" kindref="compound">exec/3</ref> to send a command and process its output:</para>
+</listitem><listitem><para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">exec(ls,[std,pipe(</highlight><highlight class="charliteral">S</highlight><highlight class="normal">),null],</highlight><highlight class="charliteral">P</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">exec,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">get0(</highlight><highlight class="charliteral">S</highlight><highlight class="normal">,</highlight><highlight class="charliteral">C</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>(</highlight><highlight class="charliteral">C</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">-</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">close(</highlight><highlight class="charliteral">S</highlight><highlight class="normal">)<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">close<sp/></highlight><highlight class="keyword">;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">put(</highlight><highlight class="charliteral">C</highlight><highlight class="normal">))</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>The streams may be one of standard stream, <computeroutput>std</computeroutput>, null stream, <computeroutput>null</computeroutput>, or <computeroutput>pipe(S)</computeroutput>, where <emphasis>S</emphasis> is a pipe stream Note that it is up to the user to close the pipe</para>
+</listitem><listitem></listitem><listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="library/system.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

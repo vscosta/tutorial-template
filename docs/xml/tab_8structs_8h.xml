@@ -1,0 +1,1327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tab_8structs_8h" kind="file" language="C++">
+    <compoundname>tab.structs.h</compoundname>
+    <innerclass refid="structtable__entry" prot="public">table_entry</innerclass>
+    <innerclass refid="structsubgoal__trie__node" prot="public">subgoal_trie_node</innerclass>
+    <innerclass refid="structanswer__trie__node" prot="public">answer_trie_node</innerclass>
+    <innerclass refid="structglobal__trie__node" prot="public">global_trie_node</innerclass>
+    <innerclass refid="structsubgoal__trie__hash" prot="public">subgoal_trie_hash</innerclass>
+    <innerclass refid="structanswer__trie__hash" prot="public">answer_trie_hash</innerclass>
+    <innerclass refid="structglobal__trie__hash" prot="public">global_trie_hash</innerclass>
+    <innerclass refid="structgenerator__choicept" prot="public">generator_choicept</innerclass>
+    <innerclass refid="structconsumer__choicept" prot="public">consumer_choicept</innerclass>
+    <innerclass refid="structloader__choicept" prot="public">loader_choicept</innerclass>
+    <innerclass refid="structsubgoal__entry" prot="public">subgoal_entry</innerclass>
+    <innerclass refid="structsubgoal__frame" prot="public">subgoal_frame</innerclass>
+    <innerclass refid="structdependency__frame" prot="public">dependency_frame</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="tab_8structs_8h_1a68cd1be0b86f5f95f09327051f071369" prot="public" static="no">
+        <name>TabEnt_lock</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;lock)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="43" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a4d0f40364cd2219f92a5c182c63a3a3a" prot="public" static="no">
+        <name>TabEnt_pe</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;<ref refid="structpred__entry" kindref="compound">pred_entry</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="44" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a0ced42d6bc090d4fc012d9075253eba4" prot="public" static="no">
+        <name>TabEnt_atom</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;pred_atom)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="45" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1afe052b428f1492c3a0f755907e505914" prot="public" static="no">
+        <name>TabEnt_arity</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;pred_arity)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="46" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a42ebe92ba908339fcc7a5019229d132f" prot="public" static="no">
+        <name>TabEnt_flags</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;pred_flags)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="47" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a98eec7e1e2663e0a211a66924bbaa8de" prot="public" static="no">
+        <name>TabEnt_mode</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;execution_mode)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="48" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ada46ce7a1b8b1f1fd35d212b499e3b11" prot="public" static="no">
+        <name>TabEnt_mode_directed</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;mode_directed_array)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="49" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ab33e066b5cacc63c2a8478166422f1df" prot="public" static="no">
+        <name>TabEnt_subgoal_trie</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;subgoal_trie)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="50" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a67659bcde58380b9496b18f429c79bf7" prot="public" static="no">
+        <name>TabEnt_hash_chain</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;hash_chain)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="51" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1af46537cd17b702100e48f47285f5b818" prot="public" static="no">
+        <name>TabEnt_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="52" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a2e353d7c5850baed81fbf21cf1dfc500" prot="public" static="no">
+        <name>TrNode_instr</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;trie_instruction)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="94" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9df6c50519ed0d1251c916bfdbf1e562" prot="public" static="no">
+        <name>TrNode_or_arg</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;or_arg)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="95" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a36795b90dae0a94e24134ba79b1e6364" prot="public" static="no">
+        <name>TrNode_entry</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;entry)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="96" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a81a85118826c580d46e0032f8e52d48f" prot="public" static="no">
+        <name>TrNode_parent</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;parent)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="97" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a5afde440b7558290c718d7628c27c5e2" prot="public" static="no">
+        <name>TrNode_child</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;child)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="98" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a4972cb0f1b0f583038f287aeb38fbc00" prot="public" static="no">
+        <name>TrNode_sg_fr</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;child)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="99" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a346578768b2c7fd3469bf920718d1256" prot="public" static="no">
+        <name>TrNode_sg_ent</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;child)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="100" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9594024cec2ea6e8b5e4cd3123c93a9d" prot="public" static="no">
+        <name>TrNode_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="101" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a683926dba44a5e446fb3c343414b7fb2" prot="public" static="no">
+        <name>TrNode_lock</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;lock)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="102" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a34a2ea647d1fc13186ae15f454595110" prot="public" static="no">
+        <name>RefNode_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;ans_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="118" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a5e83979bf1b521d5ffc0abd96b69116c" prot="public" static="no">
+        <name>RefNode_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="119" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a4ea631f9051da4bbaa232eae86d77e23" prot="public" static="no">
+        <name>RefNode_previous</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;previous)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="120" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1abc676d977aa8ddcf6a5e7408b7640922" prot="public" static="no">
+        <name>Hash_mark</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;mark)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="165" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a3b15d2c542ad59a4e862764914bec63d" prot="public" static="no">
+        <name>Hash_num_buckets</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;number_of_buckets)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="166" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a0c72b916bb4a6572498d0d515283eddf" prot="public" static="no">
+        <name>Hash_buckets</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;buckets)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="167" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1aed76d50fac245734a5060a027651df9e" prot="public" static="no">
+        <name>Hash_num_nodes</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;number_of_nodes)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="168" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a8f5f3a094c3f425b39b7dfb1cbcf8396" prot="public" static="no">
+        <name>Hash_previous</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;previous)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="169" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a50efd12173b03d951e8089c12ea08604" prot="public" static="no">
+        <name>Hash_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="170" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ab84d5a5c8b56ab851b3b77db4897d9b0" prot="public" static="no">
+        <name>SgEnt_lock</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;lock)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="272" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a6ff24a9f17ec1bddb9c1684bdb336d9c" prot="public" static="no">
+        <name>SgEnt_code</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;code_of_subgoal)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="273" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a3a816e97cebdf7ec20ca0a530444b1d4" prot="public" static="no">
+        <name>SgEnt_tab_ent</name>
+        <param><defname>X</defname></param>
+        <initializer>(((X)-&gt;code_of_subgoal)-&gt;y_u.Otapl.te)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="274" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a4cf87eb04124bd10120453a85f7db3bf" prot="public" static="no">
+        <name>SgEnt_arity</name>
+        <param><defname>X</defname></param>
+        <initializer>(((X)-&gt;code_of_subgoal)-&gt;y_u.Otapl.s)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="275" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9f0ea9d4cdc72458565f908f001cea4f" prot="public" static="no">
+        <name>SgEnt_hash_chain</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;hash_chain)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="276" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ab0d0a58eec1090efcae111244dcfc4cf" prot="public" static="no">
+        <name>SgEnt_answer_trie</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;answer_trie)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="277" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a10cb2c7186e3b4d73c4f9b651a5e01fc" prot="public" static="no">
+        <name>SgEnt_first_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;first_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="278" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1af7865f47e44928812b327fd38180a806" prot="public" static="no">
+        <name>SgEnt_last_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;last_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="279" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a0dd9337abd0d3f263b2dfc1078d051e4" prot="public" static="no">
+        <name>SgEnt_mode_directed</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;mode_directed_array)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="280" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a4421db01ff9cb0eca0401683ba9602d3" prot="public" static="no">
+        <name>SgEnt_invalid_chain</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;invalid_chain)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="281" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a777512d57d86f9189bd93f9b155a81e3" prot="public" static="no">
+        <name>SgEnt_try_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;try_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="282" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a973841f0544762f5c735d8061d64b1c1" prot="public" static="no">
+        <name>SgEnt_previous</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;previous)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="283" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1abd2a045350ded5c1df178999b656cb19" prot="public" static="no">
+        <name>SgEnt_gen_top_or_fr</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;top_or_frame_on_generator_branch)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="284" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a46f139b02abee2b07239a78ab21e6675" prot="public" static="no">
+        <name>SgEnt_gen_worker</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;generator_worker)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="285" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9cb15d921b63d56dbf7e0503b26a0647" prot="public" static="no">
+        <name>SgEnt_sg_ent_state</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;state_flag)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="286" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a18151c9a7f7d67bb4444e4eeabac9cac" prot="public" static="no">
+        <name>SgEnt_active_workers</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;active_workers)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="287" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ab77e4ab07db4ce0d93c7905970f3d082" prot="public" static="no">
+        <name>SgEnt_sg_fr</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;<ref refid="structsubgoal__frame" kindref="compound">subgoal_frame</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="288" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a956e11ae965c7ab2c7bb0f0e90ed3a2f" prot="public" static="no">
+        <name>SUBGOAL_ENTRY</name>
+        <param><defname>X</defname></param>
+        <initializer>(X)-&gt;subgoal_entry.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="315" column="10" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1aa8e81c65c468cfaea92cc8dcf9b617be" prot="public" static="no">
+        <name>SgFr_lock</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) lock)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="317" column="11" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ae77001930533716ab4da06c12dd3e811" prot="public" static="no">
+        <name>SgFr_code</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) code_of_subgoal)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="318" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a19f953cad08bf6fd894b2eaca5c05e59" prot="public" static="no">
+        <name>SgFr_tab_ent</name>
+        <param><defname>X</defname></param>
+        <initializer>((SUBGOAL_ENTRY(X) code_of_subgoal)-&gt;y_u.Otapl.te)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="319" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a11c23df71a535f63b4e29c001bfb4cb4" prot="public" static="no">
+        <name>SgFr_arity</name>
+        <param><defname>X</defname></param>
+        <initializer>((SUBGOAL_ENTRY(X) code_of_subgoal)-&gt;y_u.Otapl.s)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="320" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1aa701851517e4022f6eef4ad980d2c474" prot="public" static="no">
+        <name>SgFr_hash_chain</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) hash_chain)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="321" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1afdf49f9990304996d5a2460753cdde9f" prot="public" static="no">
+        <name>SgFr_answer_trie</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) answer_trie)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="322" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9deb97bb32551087a74df1d179432b42" prot="public" static="no">
+        <name>SgFr_first_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) first_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="323" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ab624b38014d61a9974c2ebd1e52cb459" prot="public" static="no">
+        <name>SgFr_last_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) last_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="324" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a39125aece486e925ea3a5eb5fb76069c" prot="public" static="no">
+        <name>SgFr_mode_directed</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) mode_directed_array)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="325" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1aedce05a37eac449581d0cd7717028897" prot="public" static="no">
+        <name>SgFr_invalid_chain</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) invalid_chain)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="326" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a72d6097fb581057cf42a3dc6f0a93921" prot="public" static="no">
+        <name>SgFr_try_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) try_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="327" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a860070f96218b0e668639ed41dcccab2" prot="public" static="no">
+        <name>SgFr_previous</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) previous)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="328" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a3a4e61f0583a17fcb23a85bf147ae164" prot="public" static="no">
+        <name>SgFr_gen_top_or_fr</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) top_or_frame_on_generator_branch)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="329" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a28780183b8a3e4d9c1b95130ca3fcf32" prot="public" static="no">
+        <name>SgFr_gen_worker</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) generator_worker)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="330" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a74650841167906ff97580c83caf6973a" prot="public" static="no">
+        <name>SgFr_sg_ent_state</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) state_flag)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="331" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1aab3cd641dd7946637afd5abad4a90e5d" prot="public" static="no">
+        <name>SgFr_active_workers</name>
+        <param><defname>X</defname></param>
+        <initializer>(SUBGOAL_ENTRY(X) active_workers)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="332" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a6c982b5533c0d507056585562126652c" prot="public" static="no">
+        <name>SgFr_sg_ent</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;<ref refid="structsubgoal__entry" kindref="compound">subgoal_entry</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="334" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a49f8a61116d3b6d30504d3ad6a44b36a" prot="public" static="no">
+        <name>SgFr_batched_last_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;batched_last_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="335" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1acfbe205738d701a3a839e16a08aa8c32" prot="public" static="no">
+        <name>SgFr_batched_cached_answers</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;batched_cached_answers)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="336" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ab01b83818577dc9fe55c4216c6e1d85d" prot="public" static="no">
+        <name>SgFr_state</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;state_flag)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="337" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a85c6a7a11f53b10261bba122db019da2" prot="public" static="no">
+        <name>SgFr_gen_cp</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;generator_choice_point)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="338" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ae9ef47c94a9990b81a9a87da18444f87" prot="public" static="no">
+        <name>SgFr_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="339" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a6b6c1672ac6867b5d5a3d446521abb49" prot="public" static="no">
+        <name>DepFr_lock</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;lock)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="400" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a7606c9da6b1f3770074472e0827e8279" prot="public" static="no">
+        <name>DepFr_leader_dep_is_on_stack</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;leader_dependency_is_on_stack)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="401" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a8b23746a1382840fc6f4621fec15de96" prot="public" static="no">
+        <name>DepFr_top_or_fr</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;top_or_frame)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="402" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ade197894ff745afcf22b545c425f1331" prot="public" static="no">
+        <name>DepFr_timestamp</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;timestamp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="403" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a340dfe1b5e1cef00b652219a6dca3113" prot="public" static="no">
+        <name>DepFr_external</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;generator_is_external)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="404" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1af31709302c451d9503591482fddc2955" prot="public" static="no">
+        <name>DepFr_backchain_cp</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;backchain_choice_point)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="405" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a1eb537468101046015d5b8f41871c534" prot="public" static="no">
+        <name>DepFr_leader_cp</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;leader_choice_point)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="406" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a962e7369a506ce65b381bd391d081670" prot="public" static="no">
+        <name>DepFr_cons_cp</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;consumer_choice_point)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="407" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a209fe841351a95a1db625d8020e5c0fb" prot="public" static="no">
+        <name>DepFr_last_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;last_consumed_answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="408" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a5d237a129a5f2f695ce1c9a03b52f6b1" prot="public" static="no">
+        <name>DepFr_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="409" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9919d1d55f04090227545201700c68ec" prot="public" static="no">
+        <name>SuspFr_top_or_fr_on_stack</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;top_or_frame_on_stack)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="453" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a7315770706e4a810c46c14aac0a7cb76" prot="public" static="no">
+        <name>SuspFr_top_dep_fr</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;top_dependency_frame)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="454" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ada62ead046a3b5c1ce5453b3cfaabb52" prot="public" static="no">
+        <name>SuspFr_top_sg_fr</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;top_subgoal_frame)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="455" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9247b39f9db13d8d3642fa6a39266b4d" prot="public" static="no">
+        <name>SuspFr_global_reg</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;global_block.resume_register)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="456" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a98181619b9e498911572db8bf4238b6d" prot="public" static="no">
+        <name>SuspFr_global_start</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;global_block.block_start)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="457" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1aec74c196818708cb3f0ac1b2635fb958" prot="public" static="no">
+        <name>SuspFr_global_size</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;global_block.block_size)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="458" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1add1e57c346a7d32f099ed0bf9127bdaa" prot="public" static="no">
+        <name>SuspFr_local_reg</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;local_block.resume_register)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="459" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ab8827981a405a714b41874e6af23de7a" prot="public" static="no">
+        <name>SuspFr_local_start</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;local_block.block_start)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="460" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a9aaf5afb2660d73e9b910d0007ecb773" prot="public" static="no">
+        <name>SuspFr_local_size</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;local_block.block_size)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="461" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ad716b7e751cc601396175a7611a492cf" prot="public" static="no">
+        <name>SuspFr_trail_reg</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;trail_block.resume_register)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="462" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a57a3848d0328fe1058e6bf8cd742d5d1" prot="public" static="no">
+        <name>SuspFr_trail_start</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;trail_block.block_start)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="463" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1ad5aa54056f497e88357020e89e9837a7" prot="public" static="no">
+        <name>SuspFr_trail_size</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;trail_block.block_size)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="464" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8structs_8h_1a706e4ef5e3dab3771239f674b33d001e" prot="public" static="no">
+        <name>SuspFr_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="465" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>subgoal_state_flag</name>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdca116652e306a92bc60ca5a021300d0260" prot="public">
+          <name>incomplete</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdcaa872b33b9a2e258cf2e93a4990030d67" prot="public">
+          <name>ready_external</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdca620a31d3a677faaa9e000fb23967a473" prot="public">
+          <name>ready</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdcaf9bff0865a5664764e313004e59887bb" prot="public">
+          <name>evaluating</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdcaef0b13bcf8ce1950bdda75bc1abaa8df" prot="public">
+          <name>complete</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdca4da58934af4f77adfb94c5b54c1085ec" prot="public">
+          <name>complete_in_use</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdca15811e707a07e25d42bf32def0a1a565" prot="public">
+          <name>compiled</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tab_8structs_8h_1a125c8d14e47d4abbbb4e0bbfac061bdca62631c3442e3b4cf51a2f4473cd70ce1" prot="public">
+          <name>compiled_in_use</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="223" column="1" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="223" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tab_8structs_8h_1a14e9db06ef39254d66d4ef23b455dfd9" prot="public" static="no">
+        <type>struct <ref refid="structtable__entry" kindref="compound">table_entry</ref> *</type>
+        <definition>typedef struct table_entry * tab_ent_ptr</definition>
+        <argsstring></argsstring>
+        <name>tab_ent_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="41" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1a14067cb298e5eaaf4cf17c103d163756" prot="public" static="no">
+        <type>struct <ref refid="structsubgoal__trie__node" kindref="compound">subgoal_trie_node</ref> *</type>
+        <definition>typedef struct subgoal_trie_node * sg_node_ptr</definition>
+        <argsstring></argsstring>
+        <name>sg_node_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="68" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1aaad2dbc77258d7ada78cb7b3e02bde43" prot="public" static="no">
+        <type>struct <ref refid="structanswer__trie__node" kindref="compound">answer_trie_node</ref> *</type>
+        <definition>typedef struct answer_trie_node * ans_node_ptr</definition>
+        <argsstring></argsstring>
+        <name>ans_node_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="82" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1ad53034f56444345b8370f8cfd25b0cd9" prot="public" static="no">
+        <type>struct <ref refid="structglobal__trie__node" kindref="compound">global_trie_node</ref> *</type>
+        <definition>typedef struct global_trie_node * gt_node_ptr</definition>
+        <argsstring></argsstring>
+        <name>gt_node_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="92" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1a005a245d3fd435d26b08a80c16a82616" prot="public" static="no">
+        <type>struct <ref refid="structsubgoal__trie__hash" kindref="compound">subgoal_trie_hash</ref> *</type>
+        <definition>typedef struct subgoal_trie_hash * sg_hash_ptr</definition>
+        <argsstring></argsstring>
+        <name>sg_hash_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="138" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1a5c91c7affcf3d954e3c9c8a02bb7adf0" prot="public" static="no">
+        <type>struct <ref refid="structanswer__trie__hash" kindref="compound">answer_trie_hash</ref> *</type>
+        <definition>typedef struct answer_trie_hash * ans_hash_ptr</definition>
+        <argsstring></argsstring>
+        <name>ans_hash_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="151" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1af479fe28e0f6e23f775b562cf5c26c7f" prot="public" static="no">
+        <type>struct <ref refid="structglobal__trie__hash" kindref="compound">global_trie_hash</ref> *</type>
+        <definition>typedef struct global_trie_hash * gt_hash_ptr</definition>
+        <argsstring></argsstring>
+        <name>gt_hash_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="163" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1a46563757e9d6152620f08118ac171613" prot="public" static="no">
+        <type>struct <ref refid="structsubgoal__entry" kindref="compound">subgoal_entry</ref> *</type>
+        <definition>typedef struct subgoal_entry* sg_ent_ptr</definition>
+        <argsstring></argsstring>
+        <name>sg_ent_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="270" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1aa87603164ae685766600e8c633df27be" prot="public" static="no">
+        <type>struct <ref refid="structsubgoal__frame" kindref="compound">subgoal_frame</ref> *</type>
+        <definition>typedef struct subgoal_frame * sg_fr_ptr</definition>
+        <argsstring></argsstring>
+        <name>sg_fr_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="309" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tab_8structs_8h_1a8b3bc9ae1611e31621ffbd2f8016cd7e" prot="public" static="no">
+        <type>struct <ref refid="structdependency__frame" kindref="compound">dependency_frame</ref> *</type>
+        <definition>typedef struct dependency_frame * dep_fr_ptr</definition>
+        <argsstring></argsstring>
+        <name>dep_fr_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="398" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/tab.structs.h"/>
+  </compounddef>
+</doxygen>

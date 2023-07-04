@@ -1,0 +1,3019 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="newm_8c" kind="file" language="C++">
+    <compoundname>newm.c</compoundname>
+    <includes local="yes">YapConfig.h</includes>
+    <includes refid="YapInterface_8h" local="yes">YapInterface.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="17">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="4">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="16">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="18">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="3">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/matrix/newm.c</label>
+        <link refid="newm_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="8">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="9">
+        <label>config.h</label>
+      </node>
+      <node id="20">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structm" prot="public">m</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="newm_8c_1a2d1929791f457e8f5010751e3b767558" prot="public" static="no">
+        <name>MAX_DIMS</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="42" column="9" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="newm_8c_1acff8ff03d775201042c1fe85b4bb7cc8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mat_data_type</name>
+        <enumvalue id="newm_8c_1acff8ff03d775201042c1fe85b4bb7cc8a04a8b9445fcf8babb8ae35b6c79eafd9" prot="public">
+          <name>INT_MATRIX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1acff8ff03d775201042c1fe85b4bb7cc8a19e22b33fc0669ce00c780c896f3beaa" prot="public">
+          <name>FLOAT_MATRIX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="44" column="1" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="newm_8c_1a7476ff4addfa21d925965e6f0097d3fa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mat_type</name>
+        <enumvalue id="newm_8c_1a7476ff4addfa21d925965e6f0097d3faa699bed2ec664898fede7f753f625ae00" prot="public">
+          <name>MAT_TYPE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a7476ff4addfa21d925965e6f0097d3faae43b07c5bcd9bc5d69fd89ee8e3f2a2c" prot="public">
+          <name>MAT_BASE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a7476ff4addfa21d925965e6f0097d3faa29994163f331814cf3849986e5e4f9b3" prot="public">
+          <name>MAT_NDIMS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a7476ff4addfa21d925965e6f0097d3faaaa45c51bbda4a2fad6473cea3db7a3d3" prot="public">
+          <name>MAT_SIZE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a7476ff4addfa21d925965e6f0097d3faa594b933a5c1cd7dcdfe24f13b6ffd9c8" prot="public">
+          <name>MAT_ALIGN</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a7476ff4addfa21d925965e6f0097d3faa7aca18846c311907665297b9fc07ce5d" prot="public">
+          <name>MAT_DIMS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="46" column="1" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="enum" id="newm_8c_1a290e469f41d7741ed85804133516ab50" prot="public" static="no" strong="no">
+        <type></type>
+        <name>op_type</name>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50a81e27f031c4b0c6181437c348f0323fc" prot="public">
+          <name>MAT_PLUS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50ac1ebf84caaf023ae067333067e0faab0" prot="public">
+          <name>MAT_SUB</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50a69098a4978acd4518cec4205278c2117" prot="public">
+          <name>MAT_TIMES</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50a0054aa0f4d87bbf2e478b71f08149800" prot="public">
+          <name>MAT_DIV</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50a88d842bca69953e3858c69c7acab086c" prot="public">
+          <name>MAT_IDIV</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50abc10165c54b1a32d20a74ccc0f4f5e8b" prot="public">
+          <name>MAT_ZDIV</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50ae4828d61a1ed4072914d86d959cd71e0" prot="public">
+          <name>MAT_LOG</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="newm_8c_1a290e469f41d7741ed85804133516ab50a54551b4fa3bb2dca96791421f110f46e" prot="public">
+          <name>MAT_EXP</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="55" column="1" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="55" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="newm_8c_1a9480fb6219a92787ed73787b1091d2dd" prot="public" static="no">
+        <type>struct <ref refid="structm" kindref="compound">m</ref></type>
+        <definition>typedef struct m M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="76" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="newm_8c_1a81b7d74e4b5765ff6e61377803e62827" prot="public" static="no" mutable="no">
+        <type>YAP_Functor</type>
+        <definition>YAP_Functor FunctorM</definition>
+        <argsstring></argsstring>
+        <name>FunctorM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="80" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="newm_8c_1a792ce8feaedaa717fa8df306a6cff58e" prot="public" static="no" mutable="no">
+        <type>YAP_Functor</type>
+        <definition>YAP_Functor FunctorFloats</definition>
+        <argsstring></argsstring>
+        <name>FunctorFloats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="80" column="22" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="newm_8c_1a7a34496947f12e1c2347fc765ea49a71" prot="public" static="no" mutable="no">
+        <type>YAP_Atom</type>
+        <definition>YAP_Atom AtomC</definition>
+        <argsstring></argsstring>
+        <name>AtomC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="81" column="10" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="newm_8c_1ac0b0c3aee213ad707f0aca644bd5a90e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int *</type>
+        <definition>static YAP_Int * matrix_long_data</definition>
+        <argsstring>(int *mat, int ndims)</argsstring>
+        <name>matrix_long_data</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="83" column="16" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a5793bca2436480236e34e8453134c9e2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>static double * matrix_double_data</definition>
+        <argsstring>(int *mat, int ndims)</argsstring>
+        <name>matrix_double_data</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="87" column="15" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ab7f7fda5fc53d2de48c5351da28a326b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int matrix_get_offset</definition>
+        <argsstring>(int *mat, int *indx)</argsstring>
+        <name>matrix_get_offset</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="91" column="21" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="91" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a1fef20025f30688d37e9c732d70a564f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_get_index</definition>
+        <argsstring>(int *mat, unsigned int offset, int *indx)</argsstring>
+        <name>matrix_get_index</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="107" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="107" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a286caa8c8cbb434ccd45b8be6c5977bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t GET_OFFSET</definition>
+        <argsstring>(YAP_Term t, M *mat)</argsstring>
+        <name>GET_OFFSET</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kindref="member">M</ref> *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="118" column="15" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="118" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a7124e8508a49b960a4e47567426daa99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_next_index</definition>
+        <argsstring>(int *dims, int ndims, int *indx)</argsstring>
+        <name>matrix_next_index</name>
+        <param>
+          <type>int *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="137" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="137" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae5654fd6fb04dd92703b497777def7f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool GET_MATRIX</definition>
+        <argsstring>(YAP_Term inp, M *o)</argsstring>
+        <name>GET_MATRIX</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>inp</declname>
+        </param>
+        <param>
+          <type><ref refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kindref="member">M</ref> *</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="151" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="151" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a4c0a66e0ecea6569d3f045328e6b4d75" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term new_int_matrix</definition>
+        <argsstring>(int ndims, int dims[], YAP_Int data[])</argsstring>
+        <name>new_int_matrix</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dims</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>data</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="182" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="182" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a2a211dccd5b446fe35e308cce646d120" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term new_float_matrix</definition>
+        <argsstring>(int ndims, int dims[], double data[])</argsstring>
+        <name>new_float_matrix</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dims</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>data</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="218" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="218" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a3b99afef5d465f819648d0ea2d898db3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool scan_dims</definition>
+        <argsstring>(int ndims, YAP_Term tl, int dims[MAX_DIMS])</argsstring>
+        <name>scan_dims</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dims</declname>
+          <array>[MAX_DIMS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="252" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="252" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae2e7a931847f46a7482935f43c6c8848" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool scan_dims_args</definition>
+        <argsstring>(int ndims, YAP_Term tl, int dims[MAX_DIMS])</argsstring>
+        <name>scan_dims_args</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dims</declname>
+          <array>[MAX_DIMS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="282" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="282" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ac0722ee03c562429c05daf55643ff1df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool cp_int_matrix</definition>
+        <argsstring>(YAP_Term tl, YAP_Term matrix)</argsstring>
+        <name>cp_int_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tl</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="304" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="304" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a6b0fae25ea843566f0f5198a583a8496" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool cp_float_matrix</definition>
+        <argsstring>(YAP_Term tl, YAP_Term matrix)</argsstring>
+        <name>cp_float_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tl</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="332" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="332" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae573b77cdcdd9d4ff789d235b9cc80d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool set_int_matrix</definition>
+        <argsstring>(YAP_Term matrix, YAP_Int set)</argsstring>
+        <name>set_int_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="363" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="363" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a245e6ec6b3dfc7d88775750d960ff505" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool set_float_matrix</definition>
+        <argsstring>(YAP_Term matrix, double set)</argsstring>
+        <name>set_float_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="374" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="374" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a00c16d33010d8fe1a20b4bbd83e92a12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_ints_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_ints_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="385" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="385" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a0425e28489c929b0b4077de4118697e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_ints_matrix_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_ints_matrix_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="402" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="402" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a3973c514399e0a87196e6fc68dffacf5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_floats_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_floats_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="423" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="423" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aade39386bbe555abec5224726df53ae5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_floats_matrix_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_floats_matrix_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="437" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="437" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a4dcfe9b0eadae03eff73b21785f652f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term float_matrix_to_list</definition>
+        <argsstring>(int *mat)</argsstring>
+        <name>float_matrix_to_list</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="455" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="455" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aba3bd80c7f4f7951576fd35c980d9025" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term mk_int_list</definition>
+        <argsstring>(int nelems, int *data)</argsstring>
+        <name>mk_int_list</name>
+        <param>
+          <type>int</type>
+          <declname>nelems</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="466" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="466" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1acaa472ac86926e17b241c71351c18e49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term mk_int_list2</definition>
+        <argsstring>(int nelems, int base, int *data)</argsstring>
+        <name>mk_int_list2</name>
+        <param>
+          <type>int</type>
+          <declname>nelems</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="481" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="481" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a09878eff22928bdedb54f1b1a0fd1664" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term mk_rep_int_list</definition>
+        <argsstring>(int nelems, int data)</argsstring>
+        <name>mk_rep_int_list</name>
+        <param>
+          <type>int</type>
+          <declname>nelems</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="496" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="496" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a0a8819ec455af828d8877e33e7907adb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term mk_long_list</definition>
+        <argsstring>(int nelems, YAP_Int *data)</argsstring>
+        <name>mk_long_list</name>
+        <param>
+          <type>int</type>
+          <declname>nelems</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="511" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="511" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a8b8196d6d83f25020b773c64c82a43d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term long_matrix_to_list</definition>
+        <argsstring>(int *mat)</argsstring>
+        <name>long_matrix_to_list</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="526" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="526" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a4fedd97c0dc55b04904b62ddadb8003f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term matrix_access</definition>
+        <argsstring>(int *mat, int *indx)</argsstring>
+        <name>matrix_access</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="537" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="537" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1af1635b51ede051af88c4b5241c7dea60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_float_set</definition>
+        <argsstring>(int *mat, int *indx, double nval)</argsstring>
+        <name>matrix_float_set</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="545" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="545" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1adb75dac8a4520061d9f21765875eec1d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_set</definition>
+        <argsstring>(int *mat, int *indx, YAP_Int nval)</argsstring>
+        <name>matrix_long_set</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="552" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="552" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a6d32321707b9cf7f3f4d389147368e19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_float_set_all</definition>
+        <argsstring>(int *mat, double nval)</argsstring>
+        <name>matrix_float_set_all</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="557" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="557" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ad4f0aa3987c3808dd3a6db0611a8cfa9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_set_all</definition>
+        <argsstring>(int *mat, YAP_Int nval)</argsstring>
+        <name>matrix_long_set_all</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="565" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="565" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a682b68f5777ca76b9bb23fa922f8f68f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_float_add</definition>
+        <argsstring>(int *mat, int *indx, double nval)</argsstring>
+        <name>matrix_float_add</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="577" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="577" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1abf6ed836aa65ebf65651a57e9f0fc8b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_add</definition>
+        <argsstring>(int *mat, int *indx, YAP_Int nval)</argsstring>
+        <name>matrix_long_add</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="585" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="585" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ad9a83e7b70c9712618698ee3fd1504fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_inc</definition>
+        <argsstring>(int *mat, int *indx)</argsstring>
+        <name>matrix_inc</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="591" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="591" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a5f60d186c513873540a3dce9fa8adf53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_dec</definition>
+        <argsstring>(int *mat, int *indx)</argsstring>
+        <name>matrix_dec</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="599" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="599" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a7b4095964340d28adb4b2734bee9ff1d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term matrix_inc2</definition>
+        <argsstring>(int *mat, int *indx)</argsstring>
+        <name>matrix_inc2</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="607" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="607" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a6ae31e4845e9278c1c646025af0211ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term matrix_dec2</definition>
+        <argsstring>(int *mat, int *indx)</argsstring>
+        <name>matrix_dec2</name>
+        <param>
+          <type>int *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="624" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="624" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ab50e73c45a07c8883058e7c083a05bd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set2</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="642" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="642" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a0cd6a091edf7716cc765d66c96991822" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="678" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="678" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae33d265a6e309b54169ad96762806018" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_add</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_add</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="723" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="723" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a1318baa17d1ecc5bb27e98b6d07bfed5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="759" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="759" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1adb67aa7f53f84df0c5d9f53438600828" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="776" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="776" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a9ad459116015eaa4eb5e88577c481f5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool do_matrix_access2</definition>
+        <argsstring>(void)</argsstring>
+        <name>do_matrix_access2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="800" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="800" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a8afcefa7744f96d99363fa9ae056d4a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool do_matrix_inc</definition>
+        <argsstring>(void)</argsstring>
+        <name>do_matrix_inc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="818" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="818" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a18b794a75e19e83b90bb23912e965a78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool do_matrix_dec</definition>
+        <argsstring>(void)</argsstring>
+        <name>do_matrix_dec</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="833" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="833" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae5a83cbd9bb1bc42abb6ad52978c87b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool do_matrix_inc2</definition>
+        <argsstring>(void)</argsstring>
+        <name>do_matrix_inc2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="848" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="848" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a87f6efa5167e647be86ad3244d0abc63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool do_matrix_dec2</definition>
+        <argsstring>(void)</argsstring>
+        <name>do_matrix_dec2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="863" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="863" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a0235b113094c8df18e824b07c0a71eed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_to_list</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_to_list</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="878" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="878" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a89e27af184a12200785907498ba901e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set_base</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set_base</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="894" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="894" bodyend="904"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a1b94b3e06420152226fabdf03188ba48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_dims</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_dims</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="906" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="906" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ac56aa30a1c574ae5aa66612d1e0e2202" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_dims3</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_dims3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="919" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="919" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a91213f3b3165ac98f9b779d9faadf05a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="933" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="933" bodyend="942"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a75c3033587f2d6cdb47acdbdf1d4bce8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_ndims</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_ndims</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="944" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="944" bodyend="953"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aab9325bcef5187b7aa819113d0b1e01c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_type</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_type</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="955" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="955" bodyend="970"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ac0df8b29621e26ed23e778510ddac8d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_arg_to_offset</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_arg_to_offset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="972" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="972" bodyend="988"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a9aa18a4e0a6adafbae1ceee84d08adb6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_offset_to_arg</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_offset_to_arg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="990" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="990" bodyend="1008"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a3bfc79a497f9ffdceba354c8029acef3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int scan_max_long</definition>
+        <argsstring>(int sz, YAP_Int *data)</argsstring>
+        <name>scan_max_long</name>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1010" column="21" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1010" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aa328976f87a71694a04d4927cb21d4b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int scan_max_float</definition>
+        <argsstring>(int sz, double *data)</argsstring>
+        <name>scan_max_float</name>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1022" column="21" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1022" bodyend="1032"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a49e3bb1619d51b1dc42d271e003e741c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int scan_min_long</definition>
+        <argsstring>(int sz, YAP_Int *data)</argsstring>
+        <name>scan_min_long</name>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1034" column="21" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1034" bodyend="1044"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a5d3a69e3c614eb9c540fd73d6c8250d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int scan_min_float</definition>
+        <argsstring>(int sz, double *data)</argsstring>
+        <name>scan_min_float</name>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1046" column="21" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1046" bodyend="1056"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a87ac27edd135546dd72995ed7c413995" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_max</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_max</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1058" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1058" bodyend="1078"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a3715f141c8b58a3d326055798ccc394f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_maxarg</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_maxarg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1080" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1080" bodyend="1100"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a220c38403de72a05839b0fd86b6fcb1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_min</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_min</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1102" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1102" bodyend="1122"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aff4294062818e452dc1416fae68c9bde" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_log_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_log_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1124" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1124" bodyend="1143"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a5c50abc4d428781406ca06c0548bd307" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_log_all2</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_log_all2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1145" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1145" bodyend="1198"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae6777296aede1cadd3a8d08457c2c047" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_exp_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_exp_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1200" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1200" bodyend="1219"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a44ac7930fef35c543bff4633c43b0c06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_exp2_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_exp2_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1221" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1221" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1afa559491fa80485aa4d23b9599d5a506" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_exp_all2</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_exp_all2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1248" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1248" bodyend="1301"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1acda47cc3ba99262f887f3463e97dd93d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_minarg</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_minarg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1303" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1303" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a1537f67c570cca1ad4bed1f317a05398" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1325" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1325" bodyend="1362"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae555fefcfd614a07c54fe3feacf1dcd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_lines</definition>
+        <argsstring>(int total, int nlines, YAP_Int *mat0, YAP_Int *matf)</argsstring>
+        <name>add_int_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1364" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1364" bodyend="1376"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ac294bc797c346642c842c3606070945e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_double_lines</definition>
+        <argsstring>(int total, int nlines, double *mat0, double *matf)</argsstring>
+        <name>add_double_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1378" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1378" bodyend="1390"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ac622d1877cf7c08af0f995010ecb4ace" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_agg_lines</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_agg_lines</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1392" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1392" bodyend="1441"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ab69247eef92313f737dac042945a2f4a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_cols</definition>
+        <argsstring>(int total, int nlines, YAP_Int *mat0, YAP_Int *matf)</argsstring>
+        <name>add_int_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1443" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1443" bodyend="1455"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aacb8db140cd0bf066e8cecbe08d111e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_double_cols</definition>
+        <argsstring>(int total, int nlines, double *mat0, double *matf)</argsstring>
+        <name>add_double_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1457" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1457" bodyend="1468"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae4407ac2a5659a6df4f4b0ee42db7a09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_agg_cols</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_agg_cols</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1470" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1470" bodyend="1519"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a3abff08c5733a3b891039c13dd330d04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_int_by_lines</definition>
+        <argsstring>(int total, int nlines, YAP_Int *mat1, YAP_Int *mat2, double *ndata)</argsstring>
+        <name>div_int_by_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1521" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1521" bodyend="1527"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a2b7107c9c01992dd9be84a6f99e0686e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_int_by_dlines</definition>
+        <argsstring>(int total, int nlines, YAP_Int *mat1, double *mat2, double *ndata)</argsstring>
+        <name>div_int_by_dlines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1529" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1529" bodyend="1535"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a2a1ca740eb49e07f606b5e410aa6f992" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_float_long_by_lines</definition>
+        <argsstring>(int total, int nlines, double *mat1, YAP_Int *mat2, double *ndata)</argsstring>
+        <name>div_float_long_by_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1537" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1537" bodyend="1543"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a3718af90e1f6bc896af6245095dd3ee6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_float_by_lines</definition>
+        <argsstring>(int total, int nlines, double *mat1, double *mat2, double *ndata)</argsstring>
+        <name>div_float_by_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1545" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1545" bodyend="1551"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a63893e55f37347ee15884c0c7f049e53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op_to_lines</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op_to_lines</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1553" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1553" bodyend="1642"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a52fa483a15118e9c5aad0bb342232dfa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_add_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_add_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1644" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1644" bodyend="1651"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a5b18a2b82ee2b68470c4627c4acf7520" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_add_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_add_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1653" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1653" bodyend="1660"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a23d3f91db284282a000ae3c4d1ff8aca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_add_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_add_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1662" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1662" bodyend="1669"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ac26d4e5235a45a3de8fe2ff4f54ced79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_sub_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_sub_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1671" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1671" bodyend="1678"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a96cdbf25ee1be5de284c378f091fe280" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_sub_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_sub_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1680" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1680" bodyend="1687"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aab9332ad2ad95dafd6eb0946a52a4057" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_rsub_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_double_rsub_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1689" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1689" bodyend="1696"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ab0e93043b22c2e326ec397d9fae13b1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_sub_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_sub_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1698" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1698" bodyend="1705"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a355fba05c1ae76b224f91ff87885a906" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_mult_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_mult_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1707" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1707" bodyend="1714"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aab3166c564ace8c64d9ee15c80d284e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_mult_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_mult_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1716" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1716" bodyend="1723"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a6f6142949a69d602442c011ff413455f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_mult_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_mult_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1725" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1725" bodyend="1732"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aa3b77a6a7b6bc29ef44b72ad651fba5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_div_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_div_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1734" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1734" bodyend="1741"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aa51e08215c86bd4319a5d4c61098a3da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_div_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_div_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1743" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1743" bodyend="1750"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a16ea079c093ae0ce6e59a170c46ec4ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_div2_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_double_div2_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1752" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1752" bodyend="1759"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ad96e7847058ee5f6e12a725c4df574bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_div_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_div_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1761" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1761" bodyend="1768"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a1bc087730050b2c67d597285882db892" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_zdiv_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_zdiv_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1770" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1770" bodyend="1780"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a9d057a0735a56d08be89b39b5e81e34e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_zdiv_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_zdiv_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1782" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1782" bodyend="1792"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a548269d5e5a2e61a4f27deb7c8298f9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_zdiv2_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_double_zdiv2_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1794" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1794" bodyend="1804"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a9465df1ce3fb39ba543838d47edd9fe5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_zdiv_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_zdiv_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1806" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1806" bodyend="1817"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1abb29025670f08407d3666e5294a98b84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="1819" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="1819" bodyend="2007"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a182d915df672087afd6f0372a867ee9d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_by_cols</definition>
+        <argsstring>(int total, int nlines, YAP_Int *mat1, YAP_Int *mat2, YAP_Int *ndata)</argsstring>
+        <name>add_int_by_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2009" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2009" bodyend="2015"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a0eecb974a363fc01b136d381304a5b56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_by_dcols</definition>
+        <argsstring>(int total, int nlines, YAP_Int *mat1, double *mat2, double *ndata)</argsstring>
+        <name>add_int_by_dcols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2017" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2017" bodyend="2023"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae4db27ede73b827825eeff8c36f362b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_double_by_cols</definition>
+        <argsstring>(int total, int nlines, double *mat1, double *mat2, double *ndata)</argsstring>
+        <name>add_double_by_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2025" column="13" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2025" bodyend="2033"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a2d4736eb5764b0f3fa795ec9f1214518" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op_to_cols</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op_to_cols</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2035" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2035" bodyend="2112"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ab6ccd10fb27b4945c47f7c1c14c30470" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op_to_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op_to_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2114" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2114" bodyend="2277"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a6484627581ef4b54bb71d8d2841382e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_transpose</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_transpose</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2282" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2282" bodyend="2357"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aa70bc63a29fd30a6488ab21f7a43a7b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_select</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_select</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2362" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2362" bodyend="2457"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ad6671c86e03e1ad4a9c3b3be1dc8f1dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_column</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_column</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2461" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2461" bodyend="2524"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a8b611043b268065d3759e68a8d8f310c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2528" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2528" bodyend="2611"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a03002f812fc350b730041b4a0ccfbb38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out_several</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out_several</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2615" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2615" bodyend="2704"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a8ad2fe8e9f959f383336679a1ec3e79b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out_logs</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out_logs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2708" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2708" bodyend="2791"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a9676bc4953e492587016dd557983ccc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out_logs_several</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out_logs_several</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2795" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2795" bodyend="2886"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a5f399a6d6f00e738c2e55bbda1d6eac5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_expand</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_expand</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2891" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2891" bodyend="2986"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a1c179fb942480e5649766936e1550cc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set_all_that_disagree</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set_all_that_disagree</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="2991" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="2991" bodyend="3066"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a1d974af6c4ba90930bdc2fb30805415e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_m</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_m</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3068" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3068" bodyend="3106"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ae3a5142c880629d3d3a06160ac4c7a64" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool is_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>is_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3108" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3108" bodyend="3118"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a5c6fd5816fb857f9a93d13d974a35a7e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool get_float_from_address</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_float_from_address</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3120" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3120" bodyend="3125"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ab01242e72f51704d41b3a048ddfc70d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool set_float_from_address</definition>
+        <argsstring>(void)</argsstring>
+        <name>set_float_from_address</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3127" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3127" bodyend="3138"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ad9b8a5e03277b5b4f6d398c851b43e9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool address_op_to_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>address_op_to_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3141" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3141" bodyend="3194"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1adfadad2c23b26eb2c45269c3fa268cd7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool address_to_list</definition>
+        <argsstring>(void)</argsstring>
+        <name>address_to_list</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3196" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3196" bodyend="3204"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1abd873e63669d08cad67d5f5cc9174849" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool address_to_max</definition>
+        <argsstring>(void)</argsstring>
+        <name>address_to_max</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3206" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3206" bodyend="3214"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a194e507c420479f06a3c16e73e8b6d2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool address_to_min</definition>
+        <argsstring>(void)</argsstring>
+        <name>address_to_min</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3216" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3216" bodyend="3224"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1a850dcdffcf6d689df63966187f8d5c36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool address_set_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>address_set_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3226" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3226" bodyend="3238"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1ab76657619ace9b433ad1a4d9fa50a839" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool address_to_sum</definition>
+        <argsstring>(void)</argsstring>
+        <name>address_to_sum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3240" column="17" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3240" bodyend="3260"/>
+      </memberdef>
+      <memberdef kind="function" id="newm_8c_1aad3a153bc95f5cb3379eea480b4b0023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void init_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/newm.c" line="3266" column="12" bodyfile="/home/vsc/github/yap/library/matrix/newm.c" bodystart="3266" bodyend="3330" declfile="/home/vsc/github/yap/library/matrix/newm.c" declline="3264" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/matrix/newm.c"/>
+  </compounddef>
+</doxygen>

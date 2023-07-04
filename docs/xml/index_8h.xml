@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="index_8h" kind="file" language="C++">
+    <compoundname>index.h</compoundname>
+    <includedby refid="index_8c" local="yes">/home/vsc/github/yap/C/index.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/index.c</label>
+        <link refid="index_8c"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/index.h</label>
+        <link refid="index_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structStructClauseDef" prot="public">StructClauseDef</innerclass>
+    <innerclass refid="structGroupDef" prot="public">GroupDef</innerclass>
+    <innerclass refid="structAtomSwiEntry" prot="public">AtomSwiEntry</innerclass>
+    <innerclass refid="structFuncSwiEntry" prot="public">FuncSwiEntry</innerclass>
+    <innerclass refid="structTypeSwitch" prot="public">TypeSwitch</innerclass>
+    <innerclass refid="structistack__entry" prot="public">istack_entry</innerclass>
+    <innerclass refid="structpath__stack__entry" prot="public">path_stack_entry</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="index_8h_1a6d47ba330221c03505267844589de009" prot="public" static="no">
+        <name>MaxOptions</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="30" column="9" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="index_8h_1abdd17b0b86decfa677420a29eadbe6c4" prot="public" static="no">
+        <name>MIN_HASH_ENTRIES</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="34" column="9" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="index_8h_1a52f7ff3c0f79c8692dbd2fab70256529" prot="public" static="no">
+        <name>HASH_SHIFT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="36" column="9" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="index_8h_1ab86fe642d7efcbb8e5341481dde000a5" prot="public" static="no">
+        <name>MAX_REG_COPIES</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="91" column="9" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="index_8h_1a7779c063078eaa5226ed859abfd539d4" prot="public" static="no">
+        <name>MAX_ISTACK_DEPTH</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="116" column="9" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656" prot="public" static="no" strong="no">
+        <type></type>
+        <name>clause_type_enum</name>
+        <enumvalue id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656ad240b0f8b471477aa6a1e9cdb24d75a7" prot="public">
+          <name>pair_clause</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656ae1fd0cab819609ea1039e1d0e8bb98b8" prot="public">
+          <name>struct_clause</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656aa73eae85382141b31c6779bb5e7b1b39" prot="public">
+          <name>atom_clause</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656a6f42d071363ef305da90d2142131ad8a" prot="public">
+          <name>int_clause</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656a79b641f14d10e3baf010b11a0d4a97b9" prot="public">
+          <name>flt_clause</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656a3d7665ce7ef9994b6d21884564438212" prot="public">
+          <name>lgint_clause</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1a20dd1b558d49cdc615a9b3d901e65656a6804f8b7308bccea3b5bd19b3ecee107" prot="public">
+          <name>dbref_clause</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="19" column="1" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="index_8h_1a069ea6d07fc7cede07662c1453ed8808" prot="public" static="no" strong="no">
+        <type></type>
+        <name>add2index_entries</name>
+        <enumvalue id="index_8h_1a069ea6d07fc7cede07662c1453ed8808a31a8e8550f39b84dd0f1b89e8f308003" prot="public">
+          <name>pc_entry</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1a069ea6d07fc7cede07662c1453ed8808a80ce0bddb1802d8331fdc8a23899ab21" prot="public">
+          <name>block_entry</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="99" column="1" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="index_8h_1ac78ce5d114a5eb223b286f4263f06090" prot="public" static="no" strong="no">
+        <type></type>
+        <name>expand_values</name>
+        <enumvalue id="index_8h_1ac78ce5d114a5eb223b286f4263f06090a1418c4911c72f0c5ae1eed401facb41a" prot="public">
+          <name>REFRESH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1ac78ce5d114a5eb223b286f4263f06090a8466a35073ee3c6cd699be32652cbd13" prot="public">
+          <name>RECORDA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="index_8h_1ac78ce5d114a5eb223b286f4263f06090a780beb9b6d417fe02e6b5d00dfb0776c" prot="public">
+          <name>RECORDZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="118" column="1" bodyfile="/home/vsc/github/yap/H/index.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="index_8h_1ae39dff0d4bd67f9f7389ebcbca600190" prot="public" static="no">
+        <type>enum clause_type_enum</type>
+        <definition>typedef enum clause_type_enum clause_type</definition>
+        <argsstring></argsstring>
+        <name>clause_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="27" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="index_8h_1a0f21b2ae420f627209c43a8baff61ee0" prot="public" static="no">
+        <type>struct <ref refid="structStructClauseDef" kindref="compound">StructClauseDef</ref></type>
+        <definition>typedef struct StructClauseDef ClauseDef</definition>
+        <argsstring></argsstring>
+        <name>ClauseDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/index.h" line="52" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/index.h"/>
+  </compounddef>
+</doxygen>

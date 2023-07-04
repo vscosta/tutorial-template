@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptprint__message__lines_23" kind="concept">
+    <compoundname>print_message_lines/3</compoundname>
+    <initializer>template&lt;&gt;
+concept print_message_lines/3 =     </initializer>
+    <briefdescription>
+<para><bold>print_message_lines</bold>(+ <emphasis>Stream</emphasis>, + <emphasis>Prefix__, + _Lines</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Quintus/SICStus/SWI compatibility predicate to print message lines using a prefix</para>
+<para>Print a message (see <ref refid="classprint__message_22" kindref="compound">print_message/2</ref> ) that has been translated to a list of message elements The elements of this list are:</para>
+<para><itemizedlist>
+<listitem><para><emphasis>Format</emphasis>-_Args_ Where <emphasis>Format</emphasis> is an atom and <emphasis>Args</emphasis> is a list of format argument Handed to <computeroutput>format/3 </computeroutput></para>
+</listitem><listitem><para><computeroutput>flush</computeroutput> If this appears as the last element, <emphasis>stream</emphasis> is flushed (see <computeroutput><ref refid="classflush__output_21" kindref="compound">flush_output/1</ref> </computeroutput>) and no final newline is generated</para>
+</listitem><listitem><para><computeroutput>at_same_line</computeroutput> If this appears as first element, no prefix is printed for the line and the line-position is not forced to 0 (see <computeroutput><ref refid="classformat_21" kindref="compound">format/1</ref> </computeroutput>, <computeroutput>~N</computeroutput>)</para>
+</listitem><listitem><para><computeroutput>prefix</computeroutput>(<emphasis>Prefix</emphasis>) define a prefix_ for the next line, say <lsquo/><rsquo/>&apos;` will be seen as an empty prefix (see <computeroutput><ref refid="classformat_21" kindref="compound">format/1</ref> </computeroutput>, <computeroutput>~N</computeroutput>)+ <computeroutput>&lt;Format&gt;</computeroutput> Handed to <computeroutput>format/3 </computeroutput> as <computeroutput>format(Stream, Format, [])</computeroutput>, may get confused with other commands</para>
+</listitem><listitem><para>nl A new line is started and if the message is not complete the <emphasis>Prefix</emphasis> is printed too </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pl/messages.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

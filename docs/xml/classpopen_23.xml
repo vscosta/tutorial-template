@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classpopen_23" kind="class" language="Prolog" prot="public">
+    <compoundname>popen/3</compoundname>
+    <briefdescription>
+<para><bold>popen</bold>( +Command, +TYPE, -Stream) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides the functionaluty of the Unix <computeroutput>popen</computeroutput> function It opens a process by creating a pipe, forking and invoking <emphasis>Command</emphasis> on a * the child process Since a pipe is by definition unidirectional the <emphasis>Type</emphasis> argument may be <computeroutput>read</computeroutput> or <computeroutput>write</computeroutput>, not both The stream should be closed using <ref refid="classclose_21" kindref="compound">close/1</ref> , there is no need for a special <computeroutput>pclose</computeroutput> command<itemizedlist>
+<listitem><para>The following example demonstrates the use of <ref refid="classpopen_23" kindref="compound">popen/3</ref> to process the output of a command, note that <ref refid="classpopen_23" kindref="compound">popen/3</ref> works as a simplified interface to the <ref refid="classexec_23" kindref="compound">exec/3</ref> command:</para>
+</listitem><listitem><para><programlisting><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">popen(ls,read,</highlight><highlight class="charliteral">X</highlight><highlight class="normal">),</highlight><highlight class="stringliteral"></highlight><highlight class="normal">popen,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">get0(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">C</highlight><highlight class="normal">),<sp/>(</highlight><highlight class="charliteral">C</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">-</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,<sp/>!<sp/></highlight><highlight class="keyword">;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">put(</highlight><highlight class="charliteral">C</highlight><highlight class="normal">)).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;C:\\cygwin\\home\\administrator&apos;</highlight><highlight class="normal"><sp/>?</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>The implementation of <ref refid="classpopen_23" kindref="compound">popen/3</ref> relies on <ref refid="classexec_23" kindref="compound">exec/3</ref></para>
+</listitem><listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/system.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/library/system.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

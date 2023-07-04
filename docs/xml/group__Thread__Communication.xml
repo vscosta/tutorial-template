@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Thread__Communication" kind="group">
+    <compoundname>Thread_Communication</compoundname>
+    <title>Thread communication</title>
+    <innerclass refid="classmessage__queue__create_21" prot="public">message_queue_create/1</innerclass>
+    <innerclass refid="classmessage__queue__destroy_21" prot="public">message_queue_destroy/1</innerclass>
+    <innerclass refid="classthread__send__message_21" prot="public">thread_send_message/1</innerclass>
+    <innerclass refid="classthread__send__message_22" prot="public">thread_send_message/2</innerclass>
+    <innerclass refid="classthread__get__message_21" prot="public">thread_get_message/1</innerclass>
+    <innerclass refid="classthread__get__message_22" prot="public">thread_get_message/2</innerclass>
+    <innerclass refid="classthread__peek__message_21" prot="public">thread_peek_message/1</innerclass>
+    <innerclass refid="classthread__peek__message_22" prot="public">thread_peek_message/2</innerclass>
+    <briefdescription>
+<para>Prolog threads can exchange data using dynamic predicates, database records, and other globally shared data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These provide no suitable means to wait for data or a condition as they can only be checked in an expensive polling loop <emphasis>Message queues</emphasis> provide a means for threads to wait for data or conditions without using the CPU</para>
+<para>Each thread has a message-queue attached to it that is identified by the thread Additional queues are created using <computeroutput>message_queue_create/2 </computeroutput></para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="hash_8c" kind="file" language="C++">
+    <compoundname>hash.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="hash_8h" local="yes">hash.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/mpi/hash.c</label>
+        <link refid="hash_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>hash.h</label>
+        <link refid="hash_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="hash_8c_1a00f85e35d2a8a9683b3eb529e7bf2f78" prot="public" static="no">
+        <name>BUCKET</name>
+        <param><defname>table</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>table-&gt;buckets[i]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="27" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hash_8c_1a93501e6d911299918f50ae3f4975aba9" prot="public" static="no">
+        <name>HASHSIZE</name>
+        <param><defname>table</defname></param>
+        <initializer>table-&gt;size</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="28" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="hash_8c_1a2b038c3ecd9ecfae59fed2ee37201892" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int mhash</definition>
+        <argsstring>(hashtable, ulong)</argsstring>
+        <name>mhash</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <defname>table</defname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="119" column="12" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="119" bodyend="122" declfile="/home/vsc/github/yap/library/mpi/hash.c" declline="30" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a974401dca4c0b0f1f2f47fbd61c9b02a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structbucket" kindref="compound">hashnode</ref> *</type>
+        <definition>static hashnode * hash_lookup</definition>
+        <argsstring>(hashtable, ulong)</argsstring>
+        <name>hash_lookup</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <defname>table</defname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="34" column="17" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="34" bodyend="42" declfile="/home/vsc/github/yap/library/mpi/hash.c" declline="31" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1aabf94b356efd07bc71d929f6e13a7e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__ptr_t</type>
+        <definition>__ptr_t get_next_object</definition>
+        <argsstring>(hashtable table, ulong key)</argsstring>
+        <name>get_next_object</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="43" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a7d7bdfe44f78f044897d01c6d08b23fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__ptr_t</type>
+        <definition>__ptr_t delete</definition>
+        <argsstring>(hashtable table, ulong key)</argsstring>
+        <name>delete</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="57" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="57" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a14d84d1e82aca936701a97e8d6711b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__ptr_t</type>
+        <definition>__ptr_t replace_object</definition>
+        <argsstring>(hashtable table, ulong key, __ptr_t newobj)</argsstring>
+        <name>replace_object</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>__ptr_t</type>
+          <declname>newobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="80" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="80" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a64c3ec83ab7eed4a60ac4538d50cc5ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__ptr_t</type>
+        <definition>__ptr_t get_object</definition>
+        <argsstring>(hashtable table, ulong key)</argsstring>
+        <name>get_object</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="93" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="93" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1af08883537de6e61f5edef2f233807f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+        <definition>hashtable new_hashtable</definition>
+        <argsstring>(ulong hashsize)</argsstring>
+        <name>new_hashtable</name>
+        <param>
+          <type>ulong</type>
+          <declname>hashsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="102" column="11" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="102" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a757dbcaf733a256ac0ef2119af63f807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int insere</definition>
+        <argsstring>(hashtable table, ulong key, __ptr_t obj)</argsstring>
+        <name>insere</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>__ptr_t</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="125" column="5" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="125" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a96dc7677f9e3ddec8e5fb3e6a942224f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_hashtable</definition>
+        <argsstring>(hashtable table)</argsstring>
+        <name>free_hashtable</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="140" column="6" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="140" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a8e39ff23ff79e6e0f7a9a230b7a04216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_hash_traversal</definition>
+        <argsstring>(hashtable table)</argsstring>
+        <name>init_hash_traversal</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="161" column="6" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1ac1499de743ca13ea3369437dc733be7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__ptr_t</type>
+        <definition>__ptr_t next_hash_object</definition>
+        <argsstring>(hashtable table)</argsstring>
+        <name>next_hash_object</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="168" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="168" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="hash_8c_1a3290ea12c9cd41d531b0ec2c22b04dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__ptr_t</type>
+        <definition>__ptr_t next_hashnode</definition>
+        <argsstring>(hashtable table)</argsstring>
+        <name>next_hashnode</name>
+        <param>
+          <type><ref refid="structhashtable__s" kindref="compound">hashtable</ref></type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/mpi/hash.c" line="194" column="9" bodyfile="/home/vsc/github/yap/library/mpi/hash.c" bodystart="194" bodyend="215"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/mpi/hash.c"/>
+  </compounddef>
+</doxygen>

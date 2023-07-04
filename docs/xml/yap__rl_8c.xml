@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="yap__rl_8c" kind="file" language="C++">
+    <compoundname>yap_rl.c</compoundname>
+    <includes local="no">time.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="range__list_8h" local="yes">range_list.h</includes>
+    <includes refid="YapInterface_8h" local="no">YapInterface.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="7">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="5">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>range_list.h</label>
+        <link refid="range__list_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/rltree/yap_rl.c</label>
+        <link refid="yap__rl_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="2">
+        <label>time.h</label>
+      </node>
+      <node id="21">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structyap__back__data__type" prot="public">yap_back_data_type</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="yap__rl_8c_1a8b323cae6207428c2ed6c919b3dc6815" prot="public" static="no">
+        <name>IDTYPE</name>
+        <initializer>YAP_Int</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="30" column="10" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="yap__rl_8c_1a2701a28383b832accdb79fe7827fa3bd" prot="public" static="no">
+        <name>PTR2ID</name>
+        <param><defname>ptr</defname></param>
+        <initializer>((IDTYPE)(ptr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="31" column="10" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="yap__rl_8c_1a3860d151445d7da275b243fd5a346a8e" prot="public" static="no">
+        <name>ID2PTR</name>
+        <param><defname>id</defname></param>
+        <initializer>((<ref refid="structrl__struct" kindref="compound">RL_Tree</ref>*)(id))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="32" column="10" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="yap__rl_8c_1af8193fb52c927ac7ce12cd7dc267938e" prot="public" static="no">
+        <name>STORE_TREE_SIZE</name>
+        <param><defname>tree</defname></param>
+        <initializer>tree_mem=tree-&gt;mem_alloc</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="39" column="9" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="yap__rl_8c_1a7213d5de65c14f976a2fa5627d4d04a2" prot="public" static="no">
+        <name>UPDATE_MEM_USAGE</name>
+        <param><defname>tree</defname></param>
+        <initializer>memory_usage+=(tree-&gt;mem_alloc&gt;0?tree-&gt;mem_alloc-tree_mem:0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="40" column="9" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="yap__rl_8c_1a79d2f90b9e5ed3a7659a8c2b36d032e3" prot="public" static="no">
+        <name>FREE_MEM_USAGE</name>
+        <param><defname>tree</defname></param>
+        <initializer>(memory_usage-=tree-&gt;mem_alloc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="41" column="9" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="yap__rl_8c_1a12abfc58ef9254b722c8e1982ab62492" prot="public" static="no">
+        <name>ADD_MEM_USAGE</name>
+        <param><defname>tree</defname></param>
+        <initializer>(memory_usage+=tree-&gt;mem_alloc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="42" column="9" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="yap__rl_8c_1a10473840c7448be5b5df50e4c754ac01" prot="public" static="no" mutable="no">
+        <type>unsigned long int</type>
+        <definition>unsigned long int memory_usage</definition>
+        <argsstring></argsstring>
+        <name>memory_usage</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="36" column="19" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="yap__rl_8c_1ac98248adad1166d9fa20b6bbf6ebf1b0" prot="public" static="no" mutable="no">
+        <type>unsigned long int</type>
+        <definition>unsigned long int tree_mem</definition>
+        <argsstring></argsstring>
+        <name>tree_mem</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="37" column="19" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="yap__rl_8c_1a216e71d47387744a4566a22828cb1159" prot="public" static="no" mutable="no">
+        <type><ref refid="structyap__back__data__type" kindref="compound">yap_back_data_type</ref> *</type>
+        <definition>yap_back_data_type* back_data</definition>
+        <argsstring></argsstring>
+        <name>back_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="369" column="20" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="yap__rl_8c_1a4954b6fd82d8ab27afacc007d9e4560f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="48" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="48" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1a4af5f2b7402e2947b1baa69d4da1f323" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_copy</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_copy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="79" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="79" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1adb8e73f1a7f03de1e1609e61fc7d057b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="117" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="117" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1ab26da729e53bb30ce9db03df2365a43e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_mem_usage</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_mem_usage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="143" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="143" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1a613a532a60f8ab3c0706fd0598121b21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_free</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_free</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="157" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="157" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1a5a2eb294d15f6dc8198373acf8317ae5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_set_in</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_set_in</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="184" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="184" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1aefeb6f3a899b11f0294a85249a568902" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_set_out</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_set_out</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="247" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="247" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1acf238935cfc2ff8f4e0e873e3d1c6b2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_freeze</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_freeze</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="278" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="278" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1acd78a1203c795e032dece69291e7aa11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_set_all_in</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_set_all_in</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="309" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="309" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1ac7828585f3ed20738d7ef56e27508e49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_print</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_print</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="341" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="341" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1a75dbc345cda0461ab4c44c0bc7cb56a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_b_in2</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_b_in2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="377" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="377" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1a6985ffbe5d9a917a065f539df7011574" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool rl_b_in1</definition>
+        <argsstring>(void)</argsstring>
+        <name>rl_b_in1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="398" column="1" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="398" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="yap__rl_8c_1a979cf9022363b0ec03bedccc646c4413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_rl</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_rl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/rltree/yap_rl.c" line="431" column="6" bodyfile="/home/vsc/github/yap/library/rltree/yap_rl.c" bodystart="431" bodyend="452" declfile="/home/vsc/github/yap/library/rltree/yap_rl.c" declline="429" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/rltree/yap_rl.c"/>
+  </compounddef>
+</doxygen>

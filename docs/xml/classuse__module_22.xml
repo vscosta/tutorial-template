@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classuse__module_22" kind="class" language="Prolog" prot="public">
+    <compoundname>use_module/2</compoundname>
+    <briefdescription>
+<para><bold>use_module</bold>(+Files, +Imports) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>loads a module file but only imports the named predicates</para>
+<para>This predicate loads the file specified by <emphasis>Files</emphasis>, importing their public predicates specified by <emphasis>Imports</emphasis> into the current type-in module It is implemented as if by:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">use_module(</highlight><highlight class="charliteral">Files</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Imports</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">load_files(</highlight><highlight class="charliteral">Files</highlight><highlight class="normal">,<sp/>[if(not_loaded),must_be_module(true),imports(</highlight><highlight class="charliteral">Imports</highlight><highlight class="normal">)])</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>The <emphasis>Imports</emphasis> argument may be use to specify which predicates one wants to load It can also be used to give the predicates a different name As an example, the graphs library is implemented on top of the red-black trees library, and some predicates are just aliases:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">rb_min/3</highlight><highlight class="stringliteral"></highlight><highlight class="normal">rb_max/3</highlight><highlight class="stringliteral"></highlight><highlight class="normal">use_module(library(rbtrees),<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@ref<sp/><sp/><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>min_assoc,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@ref<sp/><sp/><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>max_assoc,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>...])</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Unfortunately it is still not possible to change argument order</para>
+<para>loads a module file but only imports the named predicates</para>
+<para>This predicate loads the file specified by <emphasis>Files</emphasis>, importing their public predicates specified by <emphasis>Imports</emphasis> into the current type-in module It is implemented as if by:</para>
+<para><programlisting><codeline><highlight class="normal">use_module(Files,<sp/>Imports)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>load_files(Files,<sp/>[if(not_loaded),must_be_module(true),imports(Imports)]).</highlight></codeline>
+</programlisting></para>
+<para>The <emphasis>Imports</emphasis> argument may be use to specify which predicates one wants to load It can also be used to give the predicates a different name As an example, the graphs library is implemented on top of the red-black trees library, and some predicates are just aliases:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/>use_module(library(rbtrees),<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@ref<sp/>rb_min/3<sp/><sp/>as<sp/>min_assoc,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@ref<sp/>rb_max/3<sp/><sp/>as<sp/>max_assoc,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>...]).</highlight></codeline>
+</programlisting></para>
+<para>Unfortunately it is still not possible to change argument order</para>
+<para><itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/modules.md" line="306" column="1" bodyfile="/home/vsc/github/yap/docs/md/modules.md" bodystart="306" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

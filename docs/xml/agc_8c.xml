@@ -1,0 +1,2026 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="agc_8c" kind="file" language="C++">
+    <compoundname>agc.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="Foreign_8h" local="yes">Foreign.h</includes>
+    <includes refid="alloc_8h" local="yes">alloc.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <includes refid="attvar_8h" local="yes">attvar.h</includes>
+    <includes refid="rheap_8h" local="yes">rheap.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/agc.c</label>
+        <link refid="agc_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Foreign.h</label>
+        <link refid="Foreign_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>attvar.h</label>
+        <link refid="attvar_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>ratoms.h</label>
+        <link refid="ratoms_8h_source"/>
+      </node>
+      <node id="69">
+        <label>rhstruct.h</label>
+        <link refid="rhstruct_8h_source"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>rlocals.h</label>
+        <link refid="rlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="67">
+        <label>rclause.h</label>
+        <link refid="rclause_8h_source"/>
+      </node>
+      <node id="60">
+        <label>rheap.h</label>
+        <link refid="rheap_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="66">
+        <label>trim_trail.h</label>
+        <link refid="trim__trail_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="55">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="57">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="agc_8c_1a17cbd69a539ec200fb9edb702bcbb750" prot="public" static="no">
+        <name>AtomMarkedBit</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="39" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a747d5d75f847f25fe030b1bfb2d20098" prot="public" static="no">
+        <name>IsOldCode</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="107" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ab4784506e6c114e095c8872e233d000a" prot="public" static="no">
+        <name>IsOldCodeCellPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="108" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a0db453e742c37c7000c832b302f071fa" prot="public" static="no">
+        <name>IsOldDelay</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="109" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a7d8f8adfb0ea3e260fd23a00246e9926" prot="public" static="no">
+        <name>IsOldDelayPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="110" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1afb1655e1c073aaa2659a171fd458d5df" prot="public" static="no">
+        <name>IsOldLocalInTR</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="111" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a493e796881c8a07ad937203a3b65c551" prot="public" static="no">
+        <name>IsOldLocalInTRPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="112" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a160da2d78b0771df3ae053146fc7e7e0" prot="public" static="no">
+        <name>IsOldGlobal</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="113" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ae3ced468bcbbb11718637d37c8dfa794" prot="public" static="no">
+        <name>IsOldGlobalPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="114" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a429356ea471a690ff5cf703b78923f83" prot="public" static="no">
+        <name>IsOldTrail</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="115" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ac13ccfa9ee8f5ec091024ac90ff69354" prot="public" static="no">
+        <name>IsOldTrailPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="116" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a698c21fdc0edbc9f0cec20d1ada2cca9" prot="public" static="no">
+        <name>CharP</name>
+        <param><defname>X</defname></param>
+        <initializer>((char *)(X))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="118" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a266d1a97bb2c8c301f28dffca540be12" prot="public" static="no">
+        <name>REINIT_LOCK</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="120" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a727de9fe9f2b900c08e3842e45ba3a32" prot="public" static="no">
+        <name>REINIT_RWLOCK</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="121" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a7c9c57e4afdc786242e592c8e3087961" prot="public" static="no">
+        <name>BlobTypeAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="122" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1aadc5bac9adc7cfcd52efc7bcd986a72e" prot="public" static="no">
+        <name>NoAGCAtomAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="123" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a3997fc1a691f6ec1283c0e1a576c96a9" prot="public" static="no">
+        <name>OrArgAdjust</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="124" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a914d1ca562e2de2ab26e622d94570b56" prot="public" static="no">
+        <name>TabEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="125" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a972756e0e40b8518a155f00a8bd7ac70" prot="public" static="no">
+        <name>IntegerAdjust</name>
+        <param><defname>D</defname></param>
+        <initializer>(D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="126" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a7c5479875e3433255460c73cc0955ed4" prot="public" static="no">
+        <name>AddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="127" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a9d25f526cfa5973606a5397277a0a9a2" prot="public" static="no">
+        <name>MFileAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="128" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a9435607b420fbc001239e55b42410a79" prot="public" static="no">
+        <name>CodeVarAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="129" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ac68938bedacc64b88b649e2938527b76" prot="public" static="no">
+        <name>ConstantAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="130" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ab474f28b9e5638fbf42fccca59b84ddd" prot="public" static="no">
+        <name>ArityAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="131" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1aa89eddd38bba027c131fa9fa88a9bc0d" prot="public" static="no">
+        <name>DoubleInCodeAdjust</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="132" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1af58d3672b33ed7ff9f932d05ce02eca6" prot="public" static="no">
+        <name>IntegerInCodeAdjust</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="133" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a97f15e4eec5ca7e2dbd159427cc96c1c" prot="public" static="no">
+        <name>OpcodeAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="134" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a6aac16d2f1cc578eb5705b2e010a931f" prot="public" static="no">
+        <name>ModuleAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="135" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a811423b699580c19b08496c2d3605225" prot="public" static="no">
+        <name>ExternalFunctionAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="136" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1af3fee8cad73af71c4187a104ad1e45fa" prot="public" static="no">
+        <name>DBRecordAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="137" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a72d82f3252bb107ef0a2b94940ee95d9" prot="public" static="no">
+        <name>PredEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="138" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1aed2865ca34de404597be9a20308d1392" prot="public" static="no">
+        <name>ModEntryPtrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="139" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a6087ae50332cd53cb89f0ceae42486b1" prot="public" static="no">
+        <name>AtomEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="140" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a0eb97241e6f2b6545b7c2d8efcbc4111" prot="public" static="no">
+        <name>GlobalEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="141" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ac02ae4009d58c7eb1d0c29034f93d4c6" prot="public" static="no">
+        <name>BlobTermInCodeAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="142" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1af90557e23321f1ccaa6b6ae6690866c8" prot="public" static="no">
+        <name>CellPtoHeapAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="143" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ae4b9e40ad7e8fc787cc5569c6370733d" prot="public" static="no">
+        <name>PtoAtomHashEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="144" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a09c8e2d2eec2aabbeb57cd60524312b8" prot="public" static="no">
+        <name>CellPtoHeapCellAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="145" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a44be8f785a24cc0dad922f6f70a97711" prot="public" static="no">
+        <name>CellPtoTRAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="146" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a33b12007f4da9ff2b14522b9bbee2c5d" prot="public" static="no">
+        <name>CodeAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="147" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1aac11b6b0664858a2f0c819504f5072b0" prot="public" static="no">
+        <name>ConsultObjAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="148" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a2b269ebdc1625ada211e9fbf779956d5" prot="public" static="no">
+        <name>DelayAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="149" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a884d357bad94732a42045e7022b33310" prot="public" static="no">
+        <name>DelayAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="150" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a29290557f434761cd55269a2c397c3bd" prot="public" static="no">
+        <name>GlobalAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="151" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a0192fccc7fd4629f25557d941ec3c696" prot="public" static="no">
+        <name>DBRefAdjust</name>
+        <param><defname>P</defname></param>
+        <param><defname>REF</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="152" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a9f15cb5692319c0362c1fb7e3542f14c" prot="public" static="no">
+        <name>DBRefPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="153" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a62000cca5658a563d73d0d4cd7d6a87d" prot="public" static="no">
+        <name>DBTermAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="154" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ade19a3f0d3d89c2d69fd139e2f58c2f0" prot="public" static="no">
+        <name>LUIndexAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="155" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a027f50bf440d47672c52ed98f7e43e93" prot="public" static="no">
+        <name>SIndexAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="156" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a9ac77c52ebedfecc93eb16ef5b6da140" prot="public" static="no">
+        <name>LocalAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="157" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a95e05694add3038d9358576dd48d1acc" prot="public" static="no">
+        <name>GlobalAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="158" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ab4057df3f92866a7123f66a51a298fc7" prot="public" static="no">
+        <name>OpListAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="159" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a55fa68ce19da8c784946f54644c91af3" prot="public" static="no">
+        <name>PtoLUCAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="160" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a8717f3823ea10e2df9b2b2d15b9ef661" prot="public" static="no">
+        <name>PtoStCAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="161" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ae49381c0109b5e531e21bbbfae946b02" prot="public" static="no">
+        <name>PtoArrayEAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="162" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a075b59c1e2818b92e993e1113459a537" prot="public" static="no">
+        <name>PtoArraySAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="163" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ac5104ce9509f270108f9c28dc3f24076" prot="public" static="no">
+        <name>PtoGlobalEAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="164" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a21fab9dd55ac44e9c33e29c3655a62c9" prot="public" static="no">
+        <name>PtoDelayAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="165" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a464232e5374f3a88c0afa2299b3b1ded" prot="public" static="no">
+        <name>PtoGloAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="166" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a75e3974d9b63c471500eb01ff035bac1" prot="public" static="no">
+        <name>PtoLocAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="167" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1aeb62c0eb2194666511810f5d13d4f6ea" prot="public" static="no">
+        <name>PtoHeapCellAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="168" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1aa5915c0c6ee6432904060349bea81c3b" prot="public" static="no">
+        <name>TermToGlobalAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="169" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a43addf9b70d4d73a504adeb579ce12df" prot="public" static="no">
+        <name>PtoOpAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="170" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a1064a7187194d2fc3fe8a63e2bbd234b" prot="public" static="no">
+        <name>PtoLUClauseAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="171" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ac2fefa9d8b2b46c26c28c17b13edfe66" prot="public" static="no">
+        <name>PtoLUIndexAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="172" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a029f60239f76e2094d05c718a7126479" prot="public" static="no">
+        <name>PtoDBTLAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="173" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a03556a35fd3454a5bb417f7b53f8149d" prot="public" static="no">
+        <name>PtoPredAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="174" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a7d1c674f519de140c5d5cdb3d3055fb6" prot="public" static="no">
+        <name>PtoPtoPredAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="175" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1aa755a41475eeb7207caabd31132b078e" prot="public" static="no">
+        <name>OpRTableAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="176" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a023568f90bae0d43b24ec6a0358e5a0f" prot="public" static="no">
+        <name>OpEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="177" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ad929255400694afd96b968f2b6198b76" prot="public" static="no">
+        <name>PropAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="178" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a56ada60f6f9d7fa633d7e31d3710e00e" prot="public" static="no">
+        <name>TrailAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="179" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a2c84d5b7c8b66d7b2f6b9bf7186603c0" prot="public" static="no">
+        <name>XAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="180" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ae542fa1d708b1979fed2d19d89a5febc" prot="public" static="no">
+        <name>YAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="181" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a524a457695b14516acb75d23e0bffd3f" prot="public" static="no">
+        <name>HoldEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="182" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1abc1963c33b9dcd6907e81eb8aa026007" prot="public" static="no">
+        <name>CodeCharPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="183" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a08ccc472fbefdd67764ee9afbac29e7b" prot="public" static="no">
+        <name>CodeConstCharPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="184" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1af03aa5bdb7b74184e1f1588829b7dc2b" prot="public" static="no">
+        <name>CodeVoidPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="185" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1ad64775c3875544242b936016b9647b70" prot="public" static="no">
+        <name>HaltHookAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="186" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1abeb5af372a8a40763b199453af6bb743" prot="public" static="no">
+        <name>recompute_mask</name>
+        <param><defname>dbr</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="188" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a0cbfb4d5967664b7aac820b97e1b693a" prot="public" static="no">
+        <name>rehash</name>
+        <param><defname>oldcode</defname></param>
+        <param><defname>NOfE</defname></param>
+        <param><defname>KindOfEntries</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="190" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agc_8c_1a624e97c5c9558360585c2a604dd0e6ea" prot="public" static="no">
+        <name>RestoreSWIHash</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="192" column="9" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="agc_8c_1adfa019902ae262d052fc6fcfab2a8dce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreEntries</definition>
+        <argsstring>(PropEntry *, int USES_REGS)</argsstring>
+        <name>RestoreEntries</name>
+        <param>
+          <type><ref refid="structPropEntryStruct" kindref="compound">PropEntry</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="35" column="14" declfile="/home/vsc/github/yap/C/agc.c" declline="35" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a4a30c0305ee1664b3b378c648c565ef9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CleanCode</definition>
+        <argsstring>(PredEntry *USES_REGS)</argsstring>
+        <name>CleanCode</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="36" column="14" declfile="/home/vsc/github/yap/C/agc.c" declline="36" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a78e31b2837d0ce566f793b9104df164d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreDBTerm</definition>
+        <argsstring>(DBTerm *dbr, bool src, int attachments USES_REGS)</argsstring>
+        <name>RestoreDBTerm</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+          <declname>dbr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int attachments</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="37" column="14" declfile="/home/vsc/github/yap/C/agc.c" declline="37" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a93729b5484fd496a6812ca21c3df1d77" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MarkAtomEntry</definition>
+        <argsstring>(AtomEntry *ae)</argsstring>
+        <name>MarkAtomEntry</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="42" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1abc75af7df085e9e2803d35edd59ab7b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AtomResetMark</definition>
+        <argsstring>(AtomEntry *ae)</argsstring>
+        <name>AtomResetMark</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="50" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="50" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1ac7e77dbd3c8fd1d7c7faf741d5dd7839" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom CleanAtomMarkedBit</definition>
+        <argsstring>(Atom a)</argsstring>
+        <name>CleanAtomMarkedBit</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="62" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1ac720c0991a7032c4d8dde80e849b8488" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>static Functor FuncAdjust</definition>
+        <argsstring>(Functor f)</argsstring>
+        <name>FuncAdjust</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="71" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="71" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1adee2632446c5732d10fc7c9cb8eb79f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term AtomTermAdjust</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>AtomTermAdjust</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="82" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1afd76541127f36c3e83407226122de809" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term TermToGlobalOrAtomAdjust</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>TermToGlobalOrAtomAdjust</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="90" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a34ec8275ebafb98cc4594ae9700133e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom AtomAdjust</definition>
+        <argsstring>(Atom a)</argsstring>
+        <name>AtomAdjust</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="98" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="98" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a79d609533a1f88d7038efefdc24314bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AdjustTermFlag</definition>
+        <argsstring>(flag_term *tarr, UInt i)</argsstring>
+        <name>AdjustTermFlag</name>
+        <param>
+          <type><ref refid="YapFlags_8h_1abd0dc36ba859d11ad5b19378f944958c" kindref="member">flag_term</ref> *</type>
+          <declname>tarr</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="195" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="195" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a12dc21eca60fb2396f1f26f025e7e52a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreFlags</definition>
+        <argsstring>(UInt NFlags)</argsstring>
+        <name>RestoreFlags</name>
+        <param>
+          <type>UInt</type>
+          <declname>NFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="204" column="13" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="204" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a85fefcf12ccf720be9307087894fd855" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreHashPreds</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>RestoreHashPreds</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="223" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a996b49c8e2ce61f351dff09f2d573a42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void init_reg_copies</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>init_reg_copies</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="228" column="13" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="228" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a04dcaf63c27c06fd634eaff92480db61" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreAtomList</definition>
+        <argsstring>(Atom atm USES_REGS)</argsstring>
+        <name>RestoreAtomList</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref> atm</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="244" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="244" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1adf2d767dd1ba54a1ffdf7d0580fa3943" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_trail</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>mark_trail</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="259" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="259" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1aadecd458325fee8371fb41d283a8ed38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_registers</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>mark_registers</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="279" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="279" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a34d03fd4c0c51789623daa267ac86b30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_local</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>mark_local</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="297" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="297" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a440d041818270f8854d50ba077cfba17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * mark_global_cell</definition>
+        <argsstring>(CELL *pt)</argsstring>
+        <name>mark_global_cell</name>
+        <param>
+          <type>CELL *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="323" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="323" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a5d8b3301c7c788cdddd5199646f7ba32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_global</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>mark_global</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="385" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="385" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a2fca7bd1ee1fe9e53ab360eca417dc99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_stacks</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>mark_stacks</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="400" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="400" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a6ca7c0d204814241e7a829857626db39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clean_atom_list</definition>
+        <argsstring>(AtomHashEntry *HashPtr)</argsstring>
+        <name>clean_atom_list</name>
+        <param>
+          <type><ref refid="structatom__hash__entry" kindref="compound">AtomHashEntry</ref> *</type>
+          <declname>HashPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="409" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="409" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1add3e792f8ba02b0ccb33cdec1c61da14" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clean_atoms</definition>
+        <argsstring>(void)</argsstring>
+        <name>clean_atoms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="452" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="452" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a7fe6da1a36e36c325f4cc4c4f8614b19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atom_gc</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_gc</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="472" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="472" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1ae18e863b4b6461dabf19ffb6294c9593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_atom_gc</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Yap_atom_gc</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="517" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="517" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a17f73b2544ab4f787ab5acb59268fb0e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_atom_gc</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_atom_gc</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="523" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="523" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1aae0773f8869f25fe9a72085de80ad14a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_inform_agc</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_inform_agc</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="532" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="532" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="agc_8c_1a67653d355cc5713f6f0c144634c39bf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_init_agc</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_init_agc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/agc.c" line="546" column="1" bodyfile="/home/vsc/github/yap/C/agc.c" bodystart="546" bodyend="550"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/agc.c"/>
+  </compounddef>
+</doxygen>

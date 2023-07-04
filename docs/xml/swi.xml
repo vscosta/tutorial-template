@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="swi" kind="page">
+    <compoundname>swi</compoundname>
+    <title>Using SWI Prolog code.</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>YAP has been designed to be as compatible as possible with other Prolog systems, originally with C-Prologx and SICStus Prolog~x More recent work on YAP has striven at making YAP compatible with the ISO-Prolog standardx , and with Jan Wielemaker&apos;s SWI-Prologx</para>
+<para>SWI-Prolog and YAP have collaborated at improved compatibility x This resulted in Prolog extensions such as the <computeroutput>dialect</computeroutput> feature YAP currently supports most of the SWI-Prolog foreign interface The following SWI libraries have been adapted to YAP:</para>
+<para><itemizedlist>
+<listitem><para>aggregate</para>
+</listitem><listitem><para>base64</para>
+</listitem><listitem><para>broadcast</para>
+</listitem><listitem><para>ctypes</para>
+</listitem><listitem><para>date</para>
+</listitem><listitem><para>prolog_debug</para>
+</listitem><listitem><para>prolog_edit</para>
+</listitem><listitem><para>error</para>
+</listitem><listitem><para>nb_set</para>
+</listitem><listitem><para>prolog_operator</para>
+</listitem><listitem><para>swi_option</para>
+</listitem><listitem><para>pairs</para>
+</listitem><listitem><para>pio</para>
+</listitem><listitem><para>predicate_options,</para>
+</listitem><listitem><para>predopts</para>
+</listitem><listitem><para>prolog_clause</para>
+</listitem><listitem><para>prolog_colour</para>
+</listitem><listitem><para>prolog_source</para>
+</listitem><listitem><para>prolog_xref</para>
+</listitem><listitem><para>pure_input</para>
+</listitem><listitem><para>quasi_quotations</para>
+</listitem><listitem><para>read_util</para>
+</listitem><listitem><para>record</para>
+</listitem><listitem><para>settings</para>
+</listitem><listitem><para>shlib</para>
+</listitem><listitem><para>thread_pool</para>
+</listitem><listitem><para>url</para>
+</listitem><listitem><para>utf8</para>
+</listitem><listitem><para>win_menu</para>
+</listitem><listitem><para>www_browser <programlisting><codeline><highlight class="normal">Note<sp/>that<sp/>in<sp/>general<sp/>SWI<sp/>code<sp/>may<sp/>be<sp/>from<sp/>an<sp/>earlier<sp/>version<sp/>than<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">one<sp/>available<sp/>with<sp/>SWI-Prolog.<sp/>SWI-Prolog<sp/>are<sp/>obviously<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">responsible<sp/>for<sp/>any<sp/>incompatibilities<sp/>and/or<sp/>bugs<sp/>in<sp/>the<sp/>YAP<sp/>port.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>do<sp/>refer<sp/>to<sp/>the<sp/>SWI-Prolog<sp/>home<sp/>page:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;http://www.swi-prolog.org&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">for<sp/>more<sp/>information<sp/>on<sp/>SWI-Prolog<sp/>and<sp/>the<sp/>SWI<sp/>packages.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Compatibility<sp/>with<sp/>the<sp/>C-Prolog<sp/>interpreter<sp/>{#ChYProlog}</highlight></codeline>
+<codeline><highlight class="normal">-------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">YAP<sp/>was<sp/>designed<sp/>so<sp/>that<sp/>most<sp/>C-Prolog<sp/>programs<sp/>should<sp/>run<sp/>under<sp/>YAP</highlight></codeline>
+<codeline><highlight class="normal">without<sp/>changes.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>most<sp/>important<sp/>difference<sp/>between<sp/>YAP<sp/>and<sp/>C-Prolog<sp/>is<sp/>that,<sp/>being</highlight></codeline>
+<codeline><highlight class="normal">YAP<sp/>a<sp/>compiler,<sp/>some<sp/>changes<sp/>should<sp/>be<sp/>made<sp/>if<sp/>predicates<sp/>such<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">@ref<sp/>assert/1<sp/>,<sp/>@ref<sp/>clause/1<sp/><sp/>and<sp/>@ref<sp/>retract/1<sp/><sp/>are<sp/>used.<sp/>First</highlight></codeline>
+<codeline><highlight class="normal">predicates<sp/>which<sp/>will<sp/>change<sp/>during<sp/>execution<sp/>should<sp/>be<sp/>declared<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">`dynamic`<sp/>by<sp/>using<sp/>commands<sp/>like:</highlight></codeline>
+</programlisting> :- dynamic f/n <programlisting><codeline><highlight class="normal"><sp/>where<sp/>`f`<sp/>is<sp/>the<sp/>predicate<sp/>name<sp/>and<sp/>n<sp/>is<sp/>the<sp/>arity<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">predicate.<sp/>Note<sp/>that<sp/><sp/>several<sp/>such<sp/>predicates<sp/>can<sp/>be<sp/>declared<sp/>in<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">single<sp/>command:</highlight></codeline>
+</programlisting> :- dynamic f/2 , ..., g/1 <programlisting><codeline><highlight class="normal">Primitive<sp/>predicates<sp/>such<sp/>as<sp/>`retract`<sp/>apply<sp/>only<sp/>to<sp/>dynamic</highlight></codeline>
+<codeline><highlight class="normal">predicates.<sp/><sp/>Finally<sp/>note<sp/>that<sp/>not<sp/>all<sp/>the<sp/>C-Prolog<sp/>primitive<sp/>predicates</highlight></codeline>
+<codeline><highlight class="normal">are<sp/>implemented<sp/>in<sp/>YAP.<sp/>They<sp/>can<sp/>easily<sp/>be<sp/>detected<sp/>using<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">`unknown`<sp/>system<sp/>predicate<sp/>provided<sp/>by<sp/>YAP.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Last,<sp/>by<sp/>default<sp/>YAP<sp/>enables<sp/>character<sp/>escapes<sp/>in<sp/>strings.<sp/>You<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">disable<sp/>the<sp/>special<sp/>interpretation<sp/>for<sp/>the<sp/>escape<sp/>character<sp/>by<sp/>using:</highlight></codeline>
+</programlisting> :- yap_flag(character_escapes,off) <programlisting><codeline><highlight class="normal">or<sp/>by<sp/>using:</highlight></codeline>
+</programlisting> :- yap_flag(language,cprolog) ```</para>
+</listitem></itemizedlist>
+</para>
+<sect1 id="swi_1autotoc_md10">
+<title>Compatibility with the Quintus and SICStus Prolog systems</title>
+<para>The Quintus Prolog system was the first Prolog compiler to use Warren&apos;s Abstract Machine This system was very influential in the Prolog community Quintus Prolog implemented compilation into an abstract machine code, which was then emulated Quintus Prolog also included several new built-ins, an extensive library, and in later releases a garbage collector The SICStus Prolog system, developed at SICS (Swedish Institute of Computer Science), is an emulator based Prolog system largely compatible with Quintus Prolog SICStus Prolog has evolved through several versions The current version includes several extensions, such as an object implementation, co-routining, and constraints</para>
+<para>Both YAP and SICStus Prolog obey the Edinburgh Syntax and are based on the WAM Even so, there are major important differences:</para>
+<para><itemizedlist>
+<listitem><para>Differently from SICStus Prolog, both consulted and dynamic code in YAP are compiled, not interpreted All code in YAP is compiled</para>
+</listitem><listitem><para>The following SICStus Prolog v3 built-ins are not (currently) implemented in YAP (note that this is only a partial list): stream_interrupt/3 , reinitialize/0 , help/0 , help/1 , trimcore/0 , and require/1</para>
+</listitem><listitem><para>The <ref refid="classconsult_21" kindref="compound">consult/1</ref> predicate in YAP follows C-Prolog semantics That is, it adds clauses to the data base, even for preexisting procedures This is different from <ref refid="classconsult_21" kindref="compound">consult/1</ref> in SICStus Prolog or SWI-Prolog</para>
+</listitem><listitem><para>This list is incomplete</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="swi_1autotoc_md11">
+<title>Compatibility with the ISO Prolog standard</title>
+<para>The Prolog standard was developed by ISO/IEC JTC1/SC22/WG17, the international standardization working group for the programming language Prolog The book &quot;Prolog: The Standard&quot; by Deransart, Ed-Dbali and Cervoni gives a complete description of this standard Development in YAP from YAP4.1.6 onwards have striven at making YAP compatible with ISO Prolog As such:</para>
+<para><itemizedlist>
+<listitem><para>YAP now supports all of the built-ins required by the ISO-standard, and,</para>
+</listitem><listitem><para>Error-handling is as required by the standard</para>
+</listitem></itemizedlist>
+</para>
+<para>YAP by default is not fully ISO standard compliant You can set the language flag to <computeroutput>iso</computeroutput> to obtain better compatibility Setting this flag changes the following:</para>
+<para><itemizedlist>
+<listitem><para>By default, YAP implements the <ref refid="classatom__chars_22" kindref="compound">atom_chars/2</ref> (see Testing Terms), and <ref refid="classnumber__chars_22" kindref="compound">number_chars/2</ref> , (see Testing Terms), built-ins as per the original Quintus Prolog definition, and not as per the ISO definition</para>
+</listitem></itemizedlist>
+</para>
+<para>Calling <computeroutput>set_prolog_flag(to_chars_mode,iso)</computeroutput> will switch YAP to use the ISO definition for <ref refid="classatom__chars_22" kindref="compound">atom_chars/2</ref> and <ref refid="classnumber__chars_22" kindref="compound">number_chars/2</ref></para>
+<para><itemizedlist>
+<listitem><para>By default, YAP allows executable goals in directives In ISO mode most directives can only be called from top level (the exceptions are <ref refid="classset__prolog__flag_22" kindref="compound">set_prolog_flag/2</ref> and <ref refid="classop_23" kindref="compound">op/3</ref> )</para>
+</listitem><listitem><para>Error checking for meta-calls under ISO Prolog mode is stricter than by default</para>
+</listitem><listitem><para>The strict_iso flag automatically enables the ISO Prolog standard This feature should disable all features not present in the standard</para>
+</listitem></itemizedlist>
+</para>
+<para>The following incompatibilities between YAP and the ISO standard are known to still exist (please check Ulrich Neumerkel&apos;s page for more details):</para>
+<para><itemizedlist>
+<listitem>
+<para>Currently, YAP does not handle overflow errors in integer operations, and handles floating-point errors only in some architectures Otherwise, YAP follows IEEE arithmetic</para>
+<para>Please inform the authors on other incompatibilities that may still exist </para>
+</listitem>
+</itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/swi.md"/>
+  </compounddef>
+</doxygen>

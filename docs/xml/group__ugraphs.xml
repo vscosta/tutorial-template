@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__ugraphs" kind="group">
+    <compoundname>ugraphs</compoundname>
+    <title>Unweighted Graphs</title>
+    <innerclass refid="classvertices__edges__to__ugraph_23" prot="public">vertices_edges_to_ugraph/3</innerclass>
+    <innerclass refid="classadd__edges_23" prot="public">add_edges/3</innerclass>
+    <innerclass refid="classadd__vertices_23" prot="public">add_vertices/3</innerclass>
+    <innerclass refid="classcomplement_22" prot="public">complement/2</innerclass>
+    <innerclass refid="classcompose_23" prot="public">compose/3</innerclass>
+    <innerclass refid="classdel__edges_23" prot="public">del_edges/3</innerclass>
+    <innerclass refid="classdel__vertices_23" prot="public">del_vertices/3</innerclass>
+    <innerclass refid="classedges_22" prot="public">edges/2</innerclass>
+    <innerclass refid="classneighbors_23" prot="public">neighbors/3</innerclass>
+    <innerclass refid="classneighbours_23" prot="public">neighbours/3</innerclass>
+    <innerclass refid="classreachable_23" prot="public">reachable/3</innerclass>
+    <innerclass refid="classtop__sort_23" prot="public">top_sort/3</innerclass>
+    <innerclass refid="classtop__sort_22" prot="public">top_sort/2</innerclass>
+    <innerclass refid="classtransitive__closure_22" prot="public">transitive_closure/2</innerclass>
+    <innerclass refid="classvertices_22" prot="public">vertices/2</innerclass>
+    <innerclass refid="classtranspose_22" prot="public">transpose/2</innerclass>
+    <innerclass refid="classraakau_23" prot="public">raakau/3</innerclass>
+    <briefdescription>
+<para>The following graph manipulation routines are based in code originally written by Richard O&apos;Keefe. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The code was then extended to be compatible with the SICStus Prolog ugraphs library The routines assume directed graphs, undirected graphs may be implemented by using two edges Graphs are represented in one of two ways:</para>
+<para><itemizedlist>
+<listitem><para>The P-representation of a graph is a list of (from-to) vertex pairs, where the pairs can be in any old order This form is convenient for input/output</para>
+</listitem></itemizedlist>
+</para>
+<para>The S-representation of a graph is a list of (vertex-neighbors) pairs, where the pairs are in standard order (as produced by keysort) and the neighbors of each vertex are also in standard order (as produced by sort) This form is convenient for many calculations</para>
+<para>These built-ins are available once included with the <computeroutput>use_module(library(ugraphs))</computeroutput> command</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

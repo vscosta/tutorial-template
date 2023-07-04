@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structconsumer__choicept" kind="struct" language="C++" prot="public">
+    <compoundname>consumer_choicept</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structconsumer__choicept_1ace7a4fd46475ed1a576e4d6995a680e8" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structchoicept" kindref="compound">choicept</ref></type>
+        <definition>struct choicept cp</definition>
+        <argsstring></argsstring>
+        <name>cp</name>
+        <qualifiedname>consumer_choicept::cp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="202" column="17" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconsumer__choicept_1abccee3fb921d1d85cbf9b34295f5eab3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdependency__frame" kindref="compound">dependency_frame</ref> *</type>
+        <definition>struct dependency_frame* cp_dep_fr</definition>
+        <argsstring></argsstring>
+        <name>cp_dep_fr</name>
+        <qualifiedname>consumer_choicept::cp_dep_fr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="203" column="25" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>AtomEntryStruct</label>
+        <link refid="structAtomEntryStruct"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>NextOfAE</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>PropsOfAE</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>blob</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>DB_STRUCT</label>
+        <link refid="structDB__STRUCT"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Code</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Next</edgelabel>
+          <edgelabel>Prev</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>DBT</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>DB_TERM</label>
+        <link refid="structDB__TERM"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>NextDBT</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DBRefs</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FunctorEntryStruct</label>
+        <link refid="structFunctorEntryStruct"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+          <edgelabel>PropsOfFE</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>NameOfFE</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PropEntryStruct</label>
+        <link refid="structPropEntryStruct"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>answer_trie_node</label>
+        <link refid="structanswer__trie__node"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>child</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>atom_blob</label>
+        <link refid="structatom__blob"/>
+      </node>
+      <node id="2">
+        <label>choicept</label>
+        <link refid="structchoicept"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cp_b</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cp_ap</edgelabel>
+          <edgelabel>cp_cp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>consumer_choicept</label>
+        <link refid="structconsumer__choicept"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cp</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>cp_dep_fr</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dependency_frame</label>
+        <link refid="structdependency__frame"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>backchain_choice_point</edgelabel>
+          <edgelabel>consumer_choice_point</edgelabel>
+          <edgelabel>leader_choice_point</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>last_consumed_answer</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>logic_upd_clause</label>
+        <link refid="structlogic__upd__clause"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Id</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+          <edgelabel>ClExt</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ClSource</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClOwner</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClNext</edgelabel>
+          <edgelabel>ClPrev</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>logic_upd_index</label>
+        <link refid="structlogic__upd__index"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ChildIndex</edgelabel>
+          <edgelabel>ParentIndex</edgelabel>
+          <edgelabel>PrevSiblingIndex</edgelabel>
+          <edgelabel>SiblingIndex</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pred_entry</label>
+        <link refid="structpred__entry"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CodeOfPred</edgelabel>
+          <edgelabel>FirstClause</edgelabel>
+          <edgelabel>LastClause</edgelabel>
+          <edgelabel>MetaEntryOfPred</edgelabel>
+          <edgelabel>TrueCodeOfPred</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>FunctorOfPred</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>OwnerFile</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>StatisticsForPred</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>NextPredOfHash</edgelabel>
+          <edgelabel>NextPredOfModule</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>profile_data</label>
+        <link refid="structprofile__data"/>
+      </node>
+      <node id="11">
+        <label>struct_dbentry</label>
+        <link refid="structstruct__dbentry"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>FunctorOfDB</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>F0</edgelabel>
+          <edgelabel>First</edgelabel>
+          <edgelabel>L0</edgelabel>
+          <edgelabel>Last</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>yami</label>
+        <link refid="structyami"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>F</edgelabel>
+          <edgelabel>T</edgelabel>
+          <edgelabel>d</edgelabel>
+          <edgelabel>f</edgelabel>
+          <edgelabel>l</edgelabel>
+          <edgelabel>l1</edgelabel>
+          <edgelabel>l2</edgelabel>
+          <edgelabel>l3</edgelabel>
+          <edgelabel>l4</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClBase</edgelabel>
+          <edgelabel>d</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>I</edgelabel>
+          <edgelabel>block</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>p0</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/OPTYap/tab.structs.h" line="201" column="1" bodyfile="/home/vsc/github/yap/OPTYap/tab.structs.h" bodystart="201" bodyend="207"/>
+    <listofallmembers>
+      <member refid="structconsumer__choicept_1ace7a4fd46475ed1a576e4d6995a680e8" prot="public" virt="non-virtual"><scope>consumer_choicept</scope><name>cp</name></member>
+      <member refid="structconsumer__choicept_1abccee3fb921d1d85cbf9b34295f5eab3" prot="public" virt="non-virtual"><scope>consumer_choicept</scope><name>cp_dep_fr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

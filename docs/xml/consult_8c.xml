@@ -1,0 +1,1060 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="consult_8c" kind="file" language="C++">
+    <compoundname>consult.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="Yapproto_8h" local="yes">Yapproto.h</includes>
+    <includes refid="YapEval_8h" local="yes">YapEval.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="tracer_8h" local="yes">tracer.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes refid="heapgc_8h" local="no">heapgc.h</includes>
+    <includes refid="iopreds_8h" local="no">iopreds.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/consult.c</label>
+        <link refid="consult_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="63">
+        <label>heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="55">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="57">
+        <label>tracer.h</label>
+        <link refid="tracer_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="59">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="61">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="62">
+        <label>assert.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="consult_8c_1a44c72a4434aed76fc18d26916e31d19f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void retract_all</definition>
+        <argsstring>(PredEntry *, int)</argsstring>
+        <name>retract_all</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>in_use</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="65" column="13" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="65" bodyend="139" declfile="/home/vsc/github/yap/C/consult.c" declline="29" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a846dd65f6bcfb8e3ffc023b9a47424ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void expand_consult</definition>
+        <argsstring>(void)</argsstring>
+        <name>expand_consult</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="278" column="13" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="278" bodyend="310" declfile="/home/vsc/github/yap/C/consult.c" declline="30" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a48d0c8ebf705bbfd95052ce21ca2ed58" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_startconsult</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_startconsult</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="366" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="366" bodyend="378" declfile="/home/vsc/github/yap/C/consult.c" declline="31" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1acae5197d39d119affac824c5a4183ada" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_showconslultlev</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_showconslultlev</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="380" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="380" bodyend="386" declfile="/home/vsc/github/yap/C/consult.c" declline="32" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1af7711fcf1ad5d310ef3051bc6a79ac4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitConsultStack</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitConsultStack</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="34" column="13" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="34" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a3c99c218cb18de8f69732ae7ef05853d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_ConsultingFile</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Yap_ConsultingFile</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>List of consulted files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts at:<itemizedlist>
+<listitem><para>Low - highest address</para>
+</listitem><listitem><para>Sp - top of stack</para>
+</listitem><listitem><para>Base - frame for file being compiled</para>
+</listitem><listitem><para>Size</para>
+</listitem></itemizedlist>
+</para>
+<para>we should have: Sp &gt; Low-Size Sp &gt;= Base &gt;= Low </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="47" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="47" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a7e9149dd0a9ddab1e0335f2442eb6543" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void addcl_permission_error</definition>
+        <argsstring>(AtomEntry *ap, Int Arity, int in_use)</argsstring>
+        <name>addcl_permission_error</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>in_use</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="141" column="13" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="141" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a414071fc8a80b0dcc9853f2fde1b4541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_not_was_reconsulted</definition>
+        <argsstring>(PredEntry *p, Term t, int mode)</argsstring>
+        <name>Yap_not_was_reconsulted</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="164" column="5" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="164" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1ac839d35ae167467b4f0720c16c55a8a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int parent_stream_file</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>parent_stream_file</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="215" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="215" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a88a26d3671e77a5ff3ac2e58c67357ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int parent_source_module</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>parent_source_module</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="223" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="223" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1af28bb792493de75a8785056e6627bf1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int parent_stream_line</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>parent_stream_line</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="232" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="232" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a6cf3d8f3ba671cd9fd454b465bd0a2b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int grandparent_source_module</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>grandparent_source_module</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="240" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="240" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a0918e5ffc5f7d5b604787c3efa993b49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void end_consult</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>end_consult</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="253" column="13" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="253" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a8a101b30e3e1ba3d3838828fd15bfb60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ResetConsultStack</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ResetConsultStack</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="313" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="313" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a99dfdb174b4de8b1ee5a22e366498a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_init_consult</definition>
+        <argsstring>(int mode, const char *filename, int sno, const char *encoding)</argsstring>
+        <name>Yap_init_consult</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="324" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="324" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a0bea2b99d3838cfb058e42d7cb18877e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_end_consult</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_end_consult</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="390" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="390" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a10ac7044f2075ce21db1766426c200d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_endconsult</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_endconsult</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="395" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1af5cc5fa802faebac78b883e9249479cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void purge_clauses</definition>
+        <argsstring>(PredEntry *pred)</argsstring>
+        <name>purge_clauses</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="401" column="13" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="401" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a2e233fa6382d94abb11b6bbd7cf40834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_Abolish</definition>
+        <argsstring>(PredEntry *pred)</argsstring>
+        <name>Yap_Abolish</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="413" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="413" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a90ad4ea82235f64553ce8d8ca3ca953e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_discontiguous</definition>
+        <argsstring>(PredEntry *ap, Term mode USES_REGS)</argsstring>
+        <name>Yap_discontiguous</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>Term mode</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="419" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="419" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1aec4c9a4d0a383c8543b3491064454096" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int get_must_be_module</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>get_must_be_module</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="451" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="451" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a3dfbcbdc5e56cf2a72b92bc00c5f9e5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int set_must_be_module</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>set_must_be_module</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="457" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="457" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1ad7184b3986ed54c09fa5e17a3fa8b09d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_is_discontiguous</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_is_discontiguous</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="466" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="466" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a3c81890453baf0b55595c903d606e890" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_new_discontiguous</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_new_discontiguous</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="480" column="5" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="480" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a9ded2bfa3b428b4d31807914674a9847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_multiple</definition>
+        <argsstring>(PredEntry *ap, Term mode USES_REGS)</argsstring>
+        <name>Yap_multiple</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>Term mode</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="517" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="517" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1ae7dd4c858d4ae63580328a2c22f370cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int new_multifile</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>new_multifile</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="538" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="538" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a3b7b3ee23a83cfb9497004f7aeb0552e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_is_multifile</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_is_multifile</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="584" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="584" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1adc7c5f33c44ec74a3780e1456d18cbd0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_purge_clauses</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_purge_clauses</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="599" column="12" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="599" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1a652a4aabb0fd34b5eccb5a7deacb892a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int being_consulted</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>being_consulted</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="641" column="5" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="641" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="consult_8c_1ae1756c8b3543c1bae2b0aae403f8a417" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitConsult</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitConsult</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/consult.c" line="831" column="6" bodyfile="/home/vsc/github/yap/C/consult.c" bodystart="831" bodyend="865"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/consult.c"/>
+  </compounddef>
+</doxygen>

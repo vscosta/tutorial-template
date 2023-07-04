@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__DebImplementation" kind="group">
+    <compoundname>DebImplementation</compoundname>
+    <title>Implementation of the Debugger</title>
+    <innerclass refid="classop" prot="private">op</innerclass>
+    <innerclass refid="classtrace__goal_24" prot="public">trace_goal/4</innerclass>
+    <briefdescription>
+<para>Prolog code to do debugging. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>The debugger is an interpreter with main predicates:<itemizedlist>
+<listitem><para>$trace: this is the API</para>
+</listitem><listitem><para>trace_goal: reduce a query to a goal</para>
+</listitem><listitem><para>trace_goal: execute:<itemizedlist>
+<listitem><para>using the source, Luke</para>
+</listitem><listitem><para>hooking into the WAM procedure call mechanism</para>
+</listitem><listitem><para>asking Prolog to do it (system_library-builtins)</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem></listitem><listitem><para>|flag | description | initial | possible values | -------------------------------------------------------------<mdash/></para>
+</listitem><listitem><para>| spy_gn | last goal number | 1 | 1...</para>
+</listitem><listitem><para>| spy_trace | trace | 0 | 0, 1</para>
+</listitem><listitem><para>| spy_status | step | creep | creep,leap,skip</para>
+</listitem><listitem><para>| ... | | stop at goal | -1 | Integer &gt;= 1</para>
+</listitem><listitem><para>| ... | | stop at spy-points | stop | stop,</para>
+</listitem><listitem></listitem><listitem></listitem><listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

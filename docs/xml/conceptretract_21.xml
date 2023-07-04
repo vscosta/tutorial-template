@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptretract_21" kind="concept">
+    <compoundname>retract/1</compoundname>
+    <initializer>template&lt;&gt;
+concept retract/1 =     </initializer>
+    <briefdescription>
+<para><bold>retract</bold>(+ <emphasis>C</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>Erases the first clause in the program that matches <emphasis>C</emphasis>, where <emphasis>C</emphasis> is:<itemizedlist>
+<listitem><para><computeroutput>H :- B</computeroutput>: <emphasis>H</emphasis> should be bound to a goal, <emphasis>H</emphasis> may be unbound;</para>
+</listitem><listitem><para><computeroutput>H</computeroutput> is the same as <computeroutput>H :- true</computeroutput> obs:</para>
+</listitem><listitem><para><ref refid="classretract_21" kindref="compound">retract/1</ref> can only retract one clause; see <ref refid="classretractall_21" kindref="compound">retractall/1</ref> for a version of retract.1 that can retract several clauses</para>
+</listitem><listitem><para>you can use retract((H:-_)) to retract clauses based on the head;</para>
+</listitem><listitem><para>you may use module prefixes over the whole clause, and over the head</para>
+</listitem><listitem><para>the module system guarantees that system calls and calls to goals in the same module do not have a module prefix;</para>
+</listitem><listitem><para><emphasis>H</emphasis> must refer to a dynamic predicate;</para>
+</listitem><listitem><para>if you retract all the clauses for a dynamic predicate, the predicate will still be dynamic and is not considered undefined</para>
+</listitem></itemizedlist>
+</para>
+<para>YAP Extension:<itemizedlist>
+<listitem><para>If you call retract on an undefined predicate, the predicate is marked as dynamic </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pl/preddyns.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

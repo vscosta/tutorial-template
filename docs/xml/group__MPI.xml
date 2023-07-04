@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__MPI" kind="group">
+    <compoundname>MPI</compoundname>
+    <title>Interface</title>
+    <innerclass refid="classmpi__comm__rank_21" prot="public">mpi_comm_rank/1</innerclass>
+    <innerclass refid="classmpi__comm__size_21" prot="public">mpi_comm_size/1</innerclass>
+    <innerclass refid="classmpi__finalize_20" prot="private">mpi_finalize/0</innerclass>
+    <innerclass refid="classmpi__gc_20" prot="private">mpi_gc/0</innerclass>
+    <innerclass refid="classmpi__irecv_24" prot="public">mpi_irecv/4</innerclass>
+    <innerclass refid="classmpi__isend_24" prot="public">mpi_isend/4</innerclass>
+    <innerclass refid="classmpi__msg__size_22" prot="public">mpi_msg_size/2</innerclass>
+    <innerclass refid="classmpi__recv_23" prot="public">mpi_recv/3</innerclass>
+    <innerclass refid="classmpi__send_23" prot="public">mpi_send/3</innerclass>
+    <innerclass refid="classmpi__version_22" prot="public">mpi_version/2</innerclass>
+    <innerclass refid="classmpi__wait__recv_23" prot="public">mpi_wait_recv/3</innerclass>
+    <briefdescription>
+<para>This library provides a set of utilities for interfacing with MPI. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The following routines are available once included with the <computeroutput>use_module(library(lam_mpi))</computeroutput> command The yap binaryshould be invoked using the mpiexec or mpirun commands (see OPENMPI or MPICH manual for more details)</para>
+<para>The following features are available:</para>
+<para><itemizedlist>
+<listitem><para>synchroneous send, broadcast, and receive Term size is managed by the library</para>
+</listitem><listitem><para>asynchroneous send and broadcast: these operations must be completed by an mpi_test ot mpi_wait</para>
+</listitem><listitem><para>asynchroneous receive: size of the data buffer must be provided to the library; data is available at a test or wait call</para>
+</listitem><listitem><para>intialization, barriers, and finalization</para>
+</listitem></itemizedlist>
+</para>
+<para>Note that synchroneous and asynchroneous send receive can be combined, eg: async send and symc receive</para>
+<para>The examples directory shows examples of these techniques</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

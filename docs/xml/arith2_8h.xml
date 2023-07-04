@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="arith2_8h" kind="file" language="C++">
+    <compoundname>arith2.h</compoundname>
+    <includes refid="YapEval_8h" local="no">YapEval.h</includes>
+    <includedby refid="absmi_8c" local="yes">/home/vsc/github/yap/C/absmi.c</includedby>
+    <includedby refid="arith2_8c" local="yes">/home/vsc/github/yap/C/arith2.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/arith2.h</label>
+        <link refid="arith2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/absmi.c</label>
+        <link refid="absmi_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/arith2.c</label>
+        <link refid="arith2_8c"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/arith2.h</label>
+        <link refid="arith2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="arith2_8h_1a33ca980d90cfcf379fb598b682a9957b" prot="public" static="no">
+        <name>DO_MULTI</name>
+        <param></param>
+        <initializer>  {                                                                            \
+    int64_t w = (int64_t)i1 * i2;                                              \
+    if (w &gt;= 0) {                                                              \
+      if ((w | ((int64_t)(2 ^ 31) - 1)) != ((int64_t)(2 ^ 31) - 1))            \
+        goto overflow;                                                         \
+    } else {                                                                   \
+      if ((-w | ((int64_t)(2 ^ 31) - 1)) != ((int64_t)(2 ^ 31) - 1))           \
+        goto overflow;                                                         \
+    }                                                                          \
+    z = w;                                                                     \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="75" column="9" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="arith2_8h_1a398096255c9d1892d2738a94f69b3a3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term sub_int</definition>
+        <argsstring>(Int i, Int j USES_REGS)</argsstring>
+        <name>sub_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int j</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="24" column="20" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="24" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1af38dfadfb810c7f5fd142756b2b0abcc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int SLR</definition>
+        <argsstring>(Int i, Int shift)</argsstring>
+        <name>SLR</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="36" column="19" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1a68f375dd45e8eed92ca613b8e044ee76" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int clrsb</definition>
+        <argsstring>(Int i)</argsstring>
+        <name>clrsb</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="104" column="12" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="104" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1a8e120bccec1935ea389f9356d7381b67" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term do_sll</definition>
+        <argsstring>(Int i, Int j USES_REGS)</argsstring>
+        <name>do_sll</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int j</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="140" column="20" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="140" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1ae9003e5b14cedbe1a45fa8ffe7d00997" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_minus</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_minus</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="157" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="157" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1a9ad3158db466682cfcda4b9852db37ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_times</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_times</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="207" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="207" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1add94da55966e6ba9a975dcf866d264b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_div</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_div</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="257" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="257" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1a83be1b1b2e276b6bdd8f6f6ee4128382" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_and</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_and</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="304" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="304" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1a5fe5ac97e52c0e83795b6b5bb1035b0a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_or</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_or</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="340" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="340" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1a1f2ef6bfb1c557d8f1abcb5f89677f76" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_xor</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_xor</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="376" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="376" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1a96df641d1ce4df168e667b0272790a6a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_sll</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_sll</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="412" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="412" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="arith2_8h_1ac40ad3733a4bf828731da46e6af99faa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_slr</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_slr</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/arith2.h" line="456" column="13" bodyfile="/home/vsc/github/yap/H/arith2.h" bodystart="456" bodyend="498"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/arith2.h"/>
+  </compounddef>
+</doxygen>

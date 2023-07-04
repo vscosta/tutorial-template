@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__ExceptionDescriptors" kind="group">
+    <compoundname>ExceptionDescriptors</compoundname>
+    <title>Exception Descriptor Manipulation</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga739b86419c074f47242d055446484a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * Yap_PeekException</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_PeekException</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>is an error active? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1274" column="24" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1274" bodyend="1280"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gaf9baf98fc19fcd8dc4911370e9e3d042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * Yap_GetException</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_GetException</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>clone Active Error </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1285" column="24" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1285" bodyend="1291"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga5c48af7e0f0ebb396f1d5fac9823b90f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_PrintException</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>Yap_PrintException</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>print descriptor to user_output/stdout </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1296" column="6" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1296" bodyend="1304"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga7cbc225536c6eca32cae2659c3fb1814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_RaiseException</definition>
+        <argsstring>()</argsstring>
+        <name>Yap_RaiseException</name>
+        <briefdescription>
+<para>let&apos;s go </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1309" column="6" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1309" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga1de83e1bd9791cd7755cc1823e73995f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_ResetException</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>Yap_ResetException</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>v * clean up (notice that the code ensures ActiveError exists on exit </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1321" column="6" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1321" bodyend="1329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gac83dd1bf7cdf7db4aba4c50099dc3bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_RestartException</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>Yap_RestartException</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>clean up (notice that the code ensures ActiveError exists on exit </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1334" column="6" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1334" bodyend="1341"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga9d7a974b631fa96be213131fa475b670" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>transform an exception into Prolog shape (dictionary or list) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1345" column="12" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1345" bodyend="1358"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gacbaac84074c315c57f6b1f76b0131eef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int print_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>print_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1360" column="12" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1360" bodyend="1383"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga20d46193fccccb0741f944e3576d3591" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int query_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>query_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1385" column="12" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1385" bodyend="1403"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga9dff473479147558289150943238cbb5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int set_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>set_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1405" column="12" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1405" bodyend="1424"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga8889074e877dd1dc5c297b7f5b808860" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int drop_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>drop_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1426" column="12" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1426" bodyend="1438"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga2f41cda50ed4179c215cea2e29a8ce92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int new_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>new_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1440" column="12" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1440" bodyend="1443"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gae2b1896a2bb302aa6852ee9b4a0c0bfc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int user_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>user_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1446" column="12" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1446" bodyend="1465"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gada64d5e97531bdb364db168a12af2ca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_get_exception</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_get_exception</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1467" column="6" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1467" bodyend="1472"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga73cfd0e0589f0e716f37508ab7db7194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yap_error_number</type>
+        <definition>yap_error_number Yap_errorNumber</definition>
+        <argsstring>(yap_error_class_number c, const char *s, const char *s2)</argsstring>
+        <name>Yap_errorNumber</name>
+        <param>
+          <type>yap_error_class_number</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>given a string(s, lookup for a corresponding error class r numbe </para>
+        </briefdescription>
+        <detaileddescription>
+<para>given a string(s) and class context, lookup for a corresponding error number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1478" column="18" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1478" bodyend="1497"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga1f8c68bc74b8e666f2312f37875be34a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * event</definition>
+        <argsstring>(Term t, yap_error_descriptor_t *i)</argsstring>
+        <name>event</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/errors.c" line="1499" column="24" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="1499" bodyend="1504"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manipulate error/throw descriptors. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Notice that if the argument is an error descriptor, and you pass NULL, they always expect it to refer the current Active error descriptor</para>
+<para>Notice that if the argument is an error descriptor, and you pass NULL, they always expect it to refer the current Active error descriptor </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

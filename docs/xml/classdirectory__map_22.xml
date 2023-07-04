@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classdirectory__map_22" kind="class" language="Prolog" prot="public">
+    <compoundname>directory_map/2</compoundname>
+    <briefdescription>
+<para><bold>directory_map</bold>(+ <emphasis>Dir</emphasis>, 1:<emphasis>P</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Given a directory <emphasis>Dir</emphasis>, <ref refid="classdirectory__map_22" kindref="compound">directory_map/2</ref> visits all files in <emphasis>Dir</emphasis>, and verifies whether <computeroutput>P(F)</computeroutput> holds, where <emphasis>F</emphasis> is the file&apos;s absolute path</para>
+<para><programlisting><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">directory_map(</highlight><highlight class="stringliteral">&apos;.&apos;</highlight><highlight class="normal">,<sp/>process)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>The predicates performs a left-recursive traversal It does not protect against file system errors and it does not check for symbolic links </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/system.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/library/system.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

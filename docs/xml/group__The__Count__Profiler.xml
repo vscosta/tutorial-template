@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__The__Count__Profiler" kind="group">
+    <compoundname>The_Count_Profiler</compoundname>
+    <title>The Count Profiler</title>
+    <innerclass refid="classprofile__data_23" prot="public">profile_data/3</innerclass>
+    <innerclass refid="classshowprofres_20" prot="private">showprofres/0</innerclass>
+    <innerclass refid="classshowprofres_21" prot="public">showprofres/1</innerclass>
+    <briefdescription>
+<para>The count profiler works by incrementing counters at procedure entry or backtracking. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It provides exact information:</para>
+<para><itemizedlist>
+<listitem><para>Profiling works for both static and dynamic predicates</para>
+</listitem><listitem><para>Currently only information on entries and retries to a predicate are maintained This may change in the future</para>
+</listitem><listitem><para>As an example, the following user-level program gives a list of the most often called procedures in a program The procedure list_profile/0 shows all procedures, irrespective of module, and the procedure list_profile/1 shows the procedures being used in a specific module</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/>get<sp/>number<sp/>of<sp/>calls<sp/>for<sp/>each<sp/>profiled<sp/>procedure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">setof(</highlight><highlight class="charliteral">D</highlight><highlight class="keyword">-</highlight><highlight class="normal">[</highlight><highlight class="charliteral">M</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">P</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">D1</highlight><highlight class="normal">],(current_module(</highlight><highlight class="charliteral">M</highlight><highlight class="normal">),profile_data(</highlight><highlight class="charliteral">M</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">P</highlight><highlight class="normal">,calls,</highlight><highlight class="charliteral">D</highlight><highlight class="normal">),profile_data(</highlight><highlight class="charliteral">M</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">P</highlight><highlight class="normal">,retries,</highlight><highlight class="charliteral">D1</highlight><highlight class="normal">)),</highlight><highlight class="charliteral">LP</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/>output<sp/>so<sp/>that<sp/>the<sp/>most<sp/>often<sp/>called</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/>predicates<sp/>will<sp/>come<sp/>last:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write_profile_data(</highlight><highlight class="charliteral">LP</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">list_profile(</highlight><highlight class="charliteral">Module</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/>get<sp/>number<sp/>of<sp/>calls<sp/>for<sp/>each<sp/>profiled<sp/>procedure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">setof(</highlight><highlight class="charliteral">D</highlight><highlight class="keyword">-</highlight><highlight class="normal">[</highlight><highlight class="charliteral">Module</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">P</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">D1</highlight><highlight class="normal">],(profile_data(</highlight><highlight class="charliteral">Module</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">P</highlight><highlight class="normal">,calls,</highlight><highlight class="charliteral">D</highlight><highlight class="normal">),profile_data(</highlight><highlight class="charliteral">Module</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">P</highlight><highlight class="normal">,retries,</highlight><highlight class="charliteral">D1</highlight><highlight class="normal">)),</highlight><highlight class="charliteral">LP</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/>output<sp/>so<sp/>that<sp/>the<sp/>most<sp/>often<sp/>called</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/>predicates<sp/>will<sp/>come<sp/>last:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write_profile_data(</highlight><highlight class="charliteral">LP</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">write_profile_data([]).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write_profile_data([</highlight><highlight class="charliteral">D</highlight><highlight class="keyword">-</highlight><highlight class="normal">[</highlight><highlight class="charliteral">M</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">P</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">R</highlight><highlight class="normal">]</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">SLP</highlight><highlight class="normal">])<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/>swap<sp/>the<sp/>two<sp/>calls<sp/>if<sp/>you<sp/>want<sp/>the<sp/>most<sp/>often</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">%<sp/><sp/>called<sp/>predicates<sp/>first.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">format(</highlight><highlight class="stringliteral">&apos;~a:~w:<sp/>~32+~t~d~12+~t~d~12+~n&apos;</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="charliteral">M</highlight><highlight class="normal">,</highlight><highlight class="charliteral">P</highlight><highlight class="normal">,</highlight><highlight class="charliteral">D</highlight><highlight class="normal">,</highlight><highlight class="charliteral">R</highlight><highlight class="normal">]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write_profile_data(</highlight><highlight class="charliteral">SLP</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>These are the current predicates to access and clear profiling data:</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

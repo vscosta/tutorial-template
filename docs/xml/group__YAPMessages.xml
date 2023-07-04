@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__YAPMessages" kind="group">
+    <compoundname>YAPMessages</compoundname>
+    <title>Message Handling</title>
+    <innerclass refid="classmessage__hook_23" prot="public">message_hook/3</innerclass>
+    <innerclass refid="classmessage__to__string_22" prot="public">message_to_string/2</innerclass>
+    <innerclass refid="classtranslate__message_23" prot="public">translate_message/3</innerclass>
+    <innerclass refid="classprint__message__lines_23" prot="public">print_message_lines/3</innerclass>
+    <innerclass refid="classprint__message_22" prot="public">print_message/2</innerclass>
+    <innerclass refid="classprint__warning_21" prot="public">print_warning/1</innerclass>
+    <briefdescription>
+<para>The interaction between YAP and the user relies on YAP&apos;s ability to portray messages. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These messages range from prompts to error information All message processing is performed through the builtin <ref refid="classprint__message_22" kindref="compound">print_message/2</ref> , in two steps:</para>
+<para><itemizedlist>
+<listitem><para>The message is processed into a list of commands</para>
+</listitem><listitem><para>The commands in the list are sent to the <computeroutput>format/3 </computeroutput> builtin in sequence</para>
+</listitem></itemizedlist>
+</para>
+<para>The first argument to <ref refid="classprint__message_22" kindref="compound">print_message/2</ref> specifies the importance of the message The options are:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>error</computeroutput> error handling</para>
+</listitem><listitem><para><computeroutput>warning</computeroutput> compilation and run-time warnings,</para>
+</listitem><listitem><para><computeroutput>informational</computeroutput> generic informational messages</para>
+</listitem><listitem><para><computeroutput>help</computeroutput> help messages (not currently implemented in YAP)</para>
+</listitem><listitem><para><computeroutput>query</computeroutput> query used in query processing (not currently implemented in YAP)</para>
+</listitem><listitem><para><computeroutput>silent</computeroutput>,M,Na,Ar,File, FilePos]], [nl, nl] messages that do not produce output but that can be intercepted by hooks</para>
+</listitem></itemizedlist>
+</para>
+<para>The next table shows the main predicates and hooks associated to message handling in YAP:</para>
+<para>An error record comsists of An ISO compatible descriptor of the format</para>
+<para>error(errror_kind(Culprit,..), In)</para>
+<para>In YAP, the info field describes:</para>
+<para><itemizedlist>
+<listitem><para>what() more detauls on the event</para>
+</listitem><listitem><para>input_stream, may be one of;<itemizedlist>
+<listitem><para>loop_stream</para>
+</listitem><listitem><para>file()</para>
+</listitem><listitem><para>non e</para>
+</listitem><listitem><para>prolog_source(_) a record containing file, line, predicate, and clause that activated the goal, or a list therof YAP tries to search for the user code generatinng the error</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>c_source(0), a record containing the line of C-code thhat caused the event This is reported under systm debugging mode, or if this is user code</para>
+<para><itemizedlist>
+<listitem><para>stream_source() - a record containg data on the the I/O stream datum causisng the evwnt</para>
+</listitem><listitem><para>user_message () - text on the event</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="utarray_8h" kind="file" language="C++">
+    <compoundname>utarray.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="udi__private_8h" local="yes">/home/vsc/github/yap/H/udi_private.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/utarray.h</label>
+        <link refid="utarray_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/udi.c</label>
+        <link refid="udi_8c_source"/>
+      </node>
+      <node id="2">
+        <label>/home/vsc/github/yap/H/udi_private.h</label>
+        <link refid="udi__private_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/utarray.h</label>
+        <link refid="utarray_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structUT__icd" prot="public">UT_icd</innerclass>
+    <innerclass refid="structUT__array" prot="public">UT_array</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="utarray_8h_1a7442b085b33c91368adc20b36602bfc5" prot="public" static="no">
+        <name>UTARRAY_VERSION</name>
+        <initializer>1.9.7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="30" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1aba676506c7d380e55c095e6ee9d830fb" prot="public" static="no">
+        <name>_UNUSED_</name>
+        <initializer>= {sizeof(int),NULL,NULL,NULL}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="35" column="10" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1ab012ce14774deb45e0f0a576e216f41d" prot="public" static="no">
+        <name>oom</name>
+        <param></param>
+        <initializer>exit(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="42" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a876a07aa86d42369209660089779b3f1" prot="public" static="no">
+        <name>utarray_init</name>
+        <param><defname>a</defname></param>
+        <param><defname>_icd</defname></param>
+        <initializer>  do {                                             \
+  memset(a,0,sizeof(<ref refid="structUT__array" kindref="compound">UT_array</ref>));                                               \
+  (a)-&gt;icd=*_icd;                                                             \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="60" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1aebaf1379bb55304646512b6204e36d2f" prot="public" static="no">
+        <name>utarray_done</name>
+        <param><defname>a</defname></param>
+        <initializer>  do {                                                  \
+  if ((a)-&gt;n) {                                                               \
+    if ((a)-&gt;icd.dtor) {                                                      \
+      size_t _ut_i;                                                           \
+      for(_ut_i=0; _ut_i &lt; (a)-&gt;i; _ut_i++) {                                 \
+        (a)-&gt;icd.dtor(utarray_eltptr(a,_ut_i));                               \
+      }                                                                       \
+    }                                                                         \
+    free((a)-&gt;d);                                                             \
+  }                                                                           \
+  (a)-&gt;n=0;                                                                   \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="65" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1ae77eaae3983dd3489a48c3f64d8629e1" prot="public" static="no">
+        <name>utarray_new</name>
+        <param><defname>a</defname></param>
+        <param><defname>_icd</defname></param>
+        <initializer>  do {                                              \
+  a=(<ref refid="structUT__array" kindref="compound">UT_array</ref>*)malloc(sizeof(<ref refid="structUT__array" kindref="compound">UT_array</ref>));                                      \
+  utarray_init(a,_icd);                                                       \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="78" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a7e164b0f422d10addff80ea79005366a" prot="public" static="no">
+        <name>utarray_free</name>
+        <param><defname>a</defname></param>
+        <initializer>  do {                                                  \
+  utarray_done(a);                                                            \
+  free(a);                                                                    \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="83" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1af768b94d8ef77ffec7c7ad008203198c" prot="public" static="no">
+        <name>utarray_reserve</name>
+        <param><defname>a</defname></param>
+        <param><defname>by</defname></param>
+        <initializer>  do {                                            \
+  if (((a)-&gt;i+by) &gt; ((a)-&gt;n)) {                                               \
+    while(((a)-&gt;i+by) &gt; ((a)-&gt;n)) { (a)-&gt;n = ((a)-&gt;n ? (2*(a)-&gt;n) : 8); }     \
+    if ( ((a)-&gt;d=(char*)realloc((a)-&gt;d, (a)-&gt;n*(a)-&gt;icd.sz)) == NULL) oom();  \
+  }                                                                           \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="88" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a1caf314c033f7bf7947144b97a8ce644" prot="public" static="no">
+        <name>utarray_push_back</name>
+        <param><defname>a</defname></param>
+        <param><defname>p</defname></param>
+        <initializer>  do {                                           \
+  utarray_reserve(a,1);                                                       \
+  if ((a)-&gt;icd.copy) { (a)-&gt;icd.copy( _utarray_eltptr(a,(a)-&gt;i++), p); }      \
+  else { memcpy(_utarray_eltptr(a,(a)-&gt;i++), p, (a)-&gt;icd.sz); };              \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="95" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1ac78b30e680847649ecae5a35fa88ec0a" prot="public" static="no">
+        <name>utarray_pop_back</name>
+        <param><defname>a</defname></param>
+        <initializer>  do {                                              \
+  if ((a)-&gt;icd.dtor) { (a)-&gt;icd.dtor( _utarray_eltptr(a,--((a)-&gt;i))); }       \
+  else { (a)-&gt;i--; }                                                          \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="101" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a72878f0a60f8c4f8c124eefa0f22f9e0" prot="public" static="no">
+        <name>utarray_extend_back</name>
+        <param><defname>a</defname></param>
+        <initializer>  do {                                           \
+  utarray_reserve(a,1);                                                       \
+  if ((a)-&gt;icd.init) { (a)-&gt;icd.init(_utarray_eltptr(a,(a)-&gt;i)); }            \
+  else { memset(_utarray_eltptr(a,(a)-&gt;i),0,(a)-&gt;icd.sz); }                   \
+  (a)-&gt;i++;                                                                   \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="106" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a6835764436d25a0010366f77134184df" prot="public" static="no">
+        <name>utarray_len</name>
+        <param><defname>a</defname></param>
+        <initializer>((a)-&gt;i)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="113" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a407f1fb4f0a12596e30b5f3003bed5d0" prot="public" static="no">
+        <name>utarray_eltptr</name>
+        <param><defname>a</defname></param>
+        <param><defname>j</defname></param>
+        <initializer>(((j) &lt; (a)-&gt;i) ? _utarray_eltptr(a,j) : NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="115" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1ab51376440f7face8aa2640db39347da8" prot="public" static="no">
+        <name>_utarray_eltptr</name>
+        <param><defname>a</defname></param>
+        <param><defname>j</defname></param>
+        <initializer>((char*)((a)-&gt;d + ((a)-&gt;icd.sz*(j) )))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="116" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a8a52307523696a4902069e96af18a307" prot="public" static="no">
+        <name>utarray_insert</name>
+        <param><defname>a</defname></param>
+        <param><defname>p</defname></param>
+        <param><defname>j</defname></param>
+        <initializer>  do {                                            \
+  utarray_reserve(a,1);                                                       \
+  if (j &gt; (a)-&gt;i) break;                                                      \
+  if ((j) &lt; (a)-&gt;i) {                                                         \
+    memmove( _utarray_eltptr(a,(j)+1), _utarray_eltptr(a,j),                  \
+             ((a)-&gt;i - (j))*((a)-&gt;icd.sz));                                   \
+  }                                                                           \
+  if ((a)-&gt;icd.copy) { (a)-&gt;icd.copy( _utarray_eltptr(a,j), p); }             \
+  else { memcpy(_utarray_eltptr(a,j), p, (a)-&gt;icd.sz); };                     \
+  (a)-&gt;i++;                                                                   \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="118" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a0e9a9ff0b74876bae1f156fe105b9d40" prot="public" static="no">
+        <name>utarray_inserta</name>
+        <param><defname>a</defname></param>
+        <param><defname>w</defname></param>
+        <param><defname>j</defname></param>
+        <initializer>  do {                                           \
+  if (utarray_len(w) == 0) break;                                             \
+  if (j &gt; (a)-&gt;i) break;                                                      \
+  utarray_reserve(a,utarray_len(w));                                          \
+  if ((j) &lt; (a)-&gt;i) {                                                         \
+    memmove(_utarray_eltptr(a,(j)+utarray_len(w)),                            \
+            _utarray_eltptr(a,j),                                             \
+            ((a)-&gt;i - (j))*((a)-&gt;icd.sz));                                    \
+  }                                                                           \
+  if ((a)-&gt;icd.copy) {                                                        \
+    size_t _ut_i;                                                             \
+    for(_ut_i=0;_ut_i&lt;(w)-&gt;i;_ut_i++) {                                       \
+      (a)-&gt;icd.copy(_utarray_eltptr(a,j+_ut_i), _utarray_eltptr(w,_ut_i));    \
+    }                                                                         \
+  } else {                                                                    \
+    memcpy(_utarray_eltptr(a,j), _utarray_eltptr(w,0),                        \
+           utarray_len(w)*((a)-&gt;icd.sz));                                     \
+  }                                                                           \
+  (a)-&gt;i += utarray_len(w);                                                   \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="130" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a99dc9103176f98abd0216bfe3034a77f" prot="public" static="no">
+        <name>utarray_resize</name>
+        <param><defname>dst</defname></param>
+        <param><defname>num</defname></param>
+        <initializer>  do {                                          \
+  size_t _ut_i;                                                               \
+  if (dst-&gt;i &gt; (size_t)(num)) {                                               \
+    if ((dst)-&gt;icd.dtor) {                                                    \
+      for(_ut_i=num; _ut_i &lt; dst-&gt;i; _ut_i++) {                               \
+        (dst)-&gt;icd.dtor(utarray_eltptr(dst,_ut_i));                           \
+      }                                                                       \
+    }                                                                         \
+  } else if (dst-&gt;i &lt; (size_t)(num)) {                                        \
+    utarray_reserve(dst,num-dst-&gt;i);                                          \
+    if ((dst)-&gt;icd.init) {                                                    \
+      for(_ut_i=dst-&gt;i; _ut_i &lt; num; _ut_i++) {                               \
+        (dst)-&gt;icd.init(utarray_eltptr(dst,_ut_i));                           \
+      }                                                                       \
+    } else {                                                                  \
+      memset(_utarray_eltptr(dst,dst-&gt;i),0,(dst)-&gt;icd.sz*(num-dst-&gt;i));       \
+    }                                                                         \
+  }                                                                           \
+  dst-&gt;i = num;                                                               \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="151" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1af7c2e07fcf8b550deb67c4b052700576" prot="public" static="no">
+        <name>utarray_concat</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <initializer>  do {                                          \
+  utarray_inserta((dst),(src),utarray_len(dst));                              \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="172" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a68330a98218d6e59a0907fe69191d247" prot="public" static="no">
+        <name>utarray_erase</name>
+        <param><defname>a</defname></param>
+        <param><defname>pos</defname></param>
+        <param><defname>len</defname></param>
+        <initializer>  do {                                         \
+  if ((a)-&gt;icd.dtor) {                                                        \
+    size_t _ut_i;                                                             \
+    for(_ut_i=0; _ut_i &lt; len; _ut_i++) {                                      \
+      (a)-&gt;icd.dtor(utarray_eltptr((a),pos+_ut_i));                           \
+    }                                                                         \
+  }                                                                           \
+  if ((a)-&gt;i &gt; (pos+len)) {                                                   \
+    memmove( _utarray_eltptr((a),pos), _utarray_eltptr((a),pos+len),          \
+            (((a)-&gt;i)-(pos+len))*((a)-&gt;icd.sz));                              \
+  }                                                                           \
+  (a)-&gt;i -= (len);                                                            \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="176" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a9377e4db75742fa2cec167ee180da76f" prot="public" static="no">
+        <name>utarray_renew</name>
+        <param><defname>a</defname></param>
+        <param><defname>u</defname></param>
+        <initializer>  do {                                               \
+  if (a) utarray_clear(a); \
+  else utarray_new((a),(u));   \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="190" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1acdd108cb975da5f59839b98f9a26d417" prot="public" static="no">
+        <name>utarray_clear</name>
+        <param><defname>a</defname></param>
+        <initializer>  do {                                                 \
+  if ((a)-&gt;i &gt; 0) {                                                           \
+    if ((a)-&gt;icd.dtor) {                                                      \
+      size_t _ut_i;                                                           \
+      for(_ut_i=0; _ut_i &lt; (a)-&gt;i; _ut_i++) {                                 \
+        (a)-&gt;icd.dtor(utarray_eltptr(a,_ut_i));                               \
+      }                                                                       \
+    }                                                                         \
+    (a)-&gt;i = 0;                                                               \
+  }                                                                           \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="195" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1abc68be76f03d375a20e883f343b510d7" prot="public" static="no">
+        <name>utarray_sort</name>
+        <param><defname>a</defname></param>
+        <param><defname>cmp</defname></param>
+        <initializer>  do {                                              \
+  qsort((a)-&gt;d, (a)-&gt;i, (a)-&gt;icd.sz, cmp);                                    \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="207" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a032dd46022cad25668e1b256c9972eb9" prot="public" static="no">
+        <name>utarray_find</name>
+        <param><defname>a</defname></param>
+        <param><defname>v</defname></param>
+        <param><defname>cmp</defname></param>
+        <initializer>bsearch((v),(a)-&gt;d,(a)-&gt;i,(a)-&gt;icd.sz,cmp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="211" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1af37fa0110f7e6af3a903d13273a09f4c" prot="public" static="no">
+        <name>utarray_front</name>
+        <param><defname>a</defname></param>
+        <initializer>(((a)-&gt;i) ? (_utarray_eltptr(a,0)) : NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="213" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a0868b1bd40410cfc6964e2912325e64e" prot="public" static="no">
+        <name>utarray_next</name>
+        <param><defname>a</defname></param>
+        <param><defname>e</defname></param>
+        <initializer>(((e)==NULL) ? utarray_front(a) : ((((a)-&gt;i) &gt; (utarray_eltidx(a,e)+1)) ? _utarray_eltptr(a,utarray_eltidx(a,e)+1) : NULL))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="214" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1af2f290ec356df31c649d99e6aa54587f" prot="public" static="no">
+        <name>utarray_prev</name>
+        <param><defname>a</defname></param>
+        <param><defname>e</defname></param>
+        <initializer>(((e)==NULL) ? utarray_back(a) : ((utarray_eltidx(a,e) &gt; 0) ? _utarray_eltptr(a,utarray_eltidx(a,e)-1) : NULL))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="215" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1a3e39b1ab884d8275f1446a00935bc2e5" prot="public" static="no">
+        <name>utarray_back</name>
+        <param><defname>a</defname></param>
+        <initializer>(((a)-&gt;i) ? (_utarray_eltptr(a,(a)-&gt;i-1)) : NULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="216" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utarray_8h_1af29c01aad687e8674c0f3ca93fa74bff" prot="public" static="no">
+        <name>utarray_eltidx</name>
+        <param><defname>a</defname></param>
+        <param><defname>e</defname></param>
+        <initializer>(((char*)(e) &gt;= (char*)((a)-&gt;d)) ? (((char*)(e) - (char*)((a)-&gt;d))/(a)-&gt;icd.sz) : -1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="217" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="utarray_8h_1ad931ba49cf13f7303667ed0d8a6e5d93" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() ctor_f(void *dst, const void *src)</definition>
+        <argsstring>(void *dst, const void *src)</argsstring>
+        <name>ctor_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="44" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="utarray_8h_1a500c5b77d5cc17d65406e75636778aab" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() dtor_f(void *elt)</definition>
+        <argsstring>(void *elt)</argsstring>
+        <name>dtor_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="45" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="utarray_8h_1aeb7c14b677a2d1e28df69df28be4b462" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() init_f(void *elt)</definition>
+        <argsstring>(void *elt)</argsstring>
+        <name>init_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="46" column="9" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="utarray_8h_1a09b44613ec150392262e4c9d46088d07" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structUT__icd" kindref="compound">UT_icd</ref> ut_str_icd</type>
+        <definition>const UT_icd ut_ptr_icd _UNUSED_</definition>
+        <argsstring></argsstring>
+        <name>_UNUSED_</name>
+        <initializer>= {sizeof(char*),NULL,utarray_str_cpy,utarray_str_dtor}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="228" column="32" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utarray_8h_1a9bdb9c3646dc79c563fee689207e1b1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void utarray_str_cpy</definition>
+        <argsstring>(void *dst, const void *src)</argsstring>
+        <name>utarray_str_cpy</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="220" column="13" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="utarray_8h_1a5f5111707e875fd01f66f105aec26c54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void utarray_str_dtor</definition>
+        <argsstring>(void *elt)</argsstring>
+        <name>utarray_str_dtor</name>
+        <param>
+          <type>void *</type>
+          <declname>elt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/utarray.h" line="224" column="13" bodyfile="/home/vsc/github/yap/H/utarray.h" bodystart="224" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/utarray.h"/>
+  </compounddef>
+</doxygen>

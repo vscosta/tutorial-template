@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptunknown__predicate__handler_23" kind="concept">
+    <compoundname>unknown_predicate_handler/3</compoundname>
+    <initializer>template&lt;&gt;
+concept unknown_predicate_handler/3 =     </initializer>
+    <briefdescription>
+<para><bold>unknown_predicate_handler</bold>(+ <emphasis>Call</emphasis>, + <emphasis>M</emphasis>, - <emphasis>N</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In YAP, the default action on undefined predicates is to output an <computeroutput>error</computeroutput> message Alternatives are to silently <computeroutput>fail</computeroutput>, or to print a <computeroutput>warning</computeroutput> message and then fail This follows the ISO Prolog standard where the default action is <computeroutput>error</computeroutput></para>
+<para>The user:unknown_predicate_handler/3 hook was first introduced in SICStus Prolog It allows redefining the answer for specifici calls As an example if undefined/1 is:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">undefined(</highlight><highlight class="charliteral">A</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">format(</highlight><highlight class="stringliteral">&apos;Undefined<sp/>predicate:<sp/>~w~n&apos;</highlight><highlight class="normal">,[</highlight><highlight class="charliteral">A</highlight><highlight class="normal">]),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">format.</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert(user</highlight><highlight class="keyword">:</highlight><highlight class="normal">unknown_predicate_handler(</highlight><highlight class="charliteral">U</highlight><highlight class="normal">,</highlight><highlight class="charliteral">M</highlight><highlight class="normal">,undefined(</highlight><highlight class="charliteral">M</highlight><highlight class="keyword">:</highlight><highlight class="charliteral">U</highlight><highlight class="normal">))<sp/>)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert<sp/></highlight><highlight class="charliteral">Undefined</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> Undefined predicate: ``` followed by the failure of that call </para>
+    </detaileddescription>
+    <location file="pl/undefined.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

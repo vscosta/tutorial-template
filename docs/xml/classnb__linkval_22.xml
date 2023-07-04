@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classnb__linkval_22" kind="class" language="Prolog" prot="public">
+    <compoundname>nb_linkval/2</compoundname>
+    <briefdescription>
+<para><bold>nb_linkval</bold>(+ <emphasis>Name</emphasis>, + <emphasis>Value</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Associates the term  _Value_ with the atom  _Name_ without
+copying it. This is a fast special-purpose variation of @ref nb_setval/2 
+intended for expert users only because the semantics on backtracking
+to a point before creating the link are poorly defined for compound
+terms. The principal term is always left untouched, but backtracking
+behaviour on arguments is undone if the original assignment was
+trailed and left alone otherwise, which implies that the history
+that created the term affects the behaviour on backtracking. Please
+consider the following example:
+
+```
+demo_nb_linkval :-
+T = nice(N),
+(   N = world,
+nb_linkval(myvar, T),
+fail
+;   nb_getval(myvar, V),
+writeln(V)
+).
+```
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/mavar.c" line="538" column="1" bodyfile="/home/vsc/github/yap/C/mavar.c" bodystart="538" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

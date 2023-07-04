@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptwhen_22" kind="concept">
+    <compoundname>when/2</compoundname>
+    <initializer>template&lt;&gt;
+concept when/2 =     </initializer>
+    <briefdescription>
+<para><bold>when</bold>(+ <emphasis>C</emphasis>,: <emphasis>G</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Delay execution of goal <emphasis>G</emphasis> until the conditions <emphasis>C</emphasis> are satisfied The conditions are of the following form:</para>
+<para><itemizedlist>
+<listitem><para><emphasis>C1</emphasis>, <emphasis>C2</emphasis> Delay until both conditions <emphasis>C1</emphasis> and <emphasis>C2</emphasis> are satisfied</para>
+</listitem><listitem><para><emphasis>C1</emphasis>; <emphasis>C2</emphasis> Delay until either condition <emphasis>C1</emphasis> or condition <emphasis>C2</emphasis> is satisfied</para>
+</listitem><listitem><para>?=( <emphasis>V1</emphasis>, <emphasis>C2</emphasis>) Delay until terms <emphasis>V1</emphasis> and <emphasis>V1</emphasis> have been unified</para>
+</listitem><listitem><para>nonvar( <emphasis>V</emphasis>) Delay until variable <emphasis>V</emphasis> is bound</para>
+</listitem><listitem><para>ground( <emphasis>V</emphasis>) Delay until variable <emphasis>V</emphasis> is ground</para>
+</listitem></itemizedlist>
+</para>
+<para>Note that <ref refid="classwhen_22" kindref="compound">when/2</ref> will fail if the conditions fail </para>
+    </detaileddescription>
+    <location file="pl/corout.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

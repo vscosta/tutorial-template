@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Call__Counting" kind="group">
+    <compoundname>Call_Counting</compoundname>
+    <title>Counting Calls</title>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Predicates compiled with YAP&apos;s flag call_counting set to <computeroutput>on</computeroutput> update counters on the numbers of calls and of retries Counters are actually decreasing counters, so that they can be used as timers Three counters are available:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>calls</computeroutput>: number of predicate calls since execution started or since system was reset;</para>
+</listitem><listitem><para><computeroutput>retries</computeroutput>: number of retries for predicates called since execution started or since counters were reset;</para>
+</listitem><listitem><para><computeroutput>calls_and_retries</computeroutput>: count both on predicate calls and retries</para>
+</listitem></itemizedlist>
+</para>
+<para>These counters can be used to find out how many calls a certain goal takes to execute They can also be used as timers</para>
+<para>The code for the call counters piggybacks on the profiling code Therefore, activating the call counters also activates the profiling counters</para>
+<para>These are the predicates that access and manipulate the call counters</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

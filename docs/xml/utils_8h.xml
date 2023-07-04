@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="utils_8h" kind="file" language="C++">
+    <compoundname>utils.h</compoundname>
+    <includes local="no">assert.h</includes>
+    <includedby refid="regcomp_8c" local="yes">/home/vsc/github/yap/library/regex/regcomp.c</includedby>
+    <includedby refid="regerror_8c" local="yes">/home/vsc/github/yap/library/regex/regerror.c</includedby>
+    <includedby refid="regexec_8c" local="yes">/home/vsc/github/yap/library/regex/regexec.c</includedby>
+    <includedby refid="regfree_8c" local="yes">/home/vsc/github/yap/library/regex/regfree.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/regex/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>assert.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/library/regex/regcomp.c</label>
+        <link refid="regcomp_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/library/regex/regerror.c</label>
+        <link refid="regerror_8c"/>
+      </node>
+      <node id="4">
+        <label>/home/vsc/github/yap/library/regex/regexec.c</label>
+        <link refid="regexec_8c_source"/>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/library/regex/regfree.c</label>
+        <link refid="regfree_8c_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/regex/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="utils_8h_1a86dc91d509b741fbaa09d2797137250f" prot="public" static="no">
+        <name>DUPMAX</name>
+        <initializer>_POSIX2_RE_DUP_MAX	/* xxx is this right? */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/utils.h" line="44" column="10" bodyfile="/home/vsc/github/yap/library/regex/utils.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utils_8h_1a956e2723d559858d08644ac99146e910" prot="public" static="no">
+        <name>INFINITY</name>
+        <initializer>(DUPMAX + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/utils.h" line="46" column="10" bodyfile="/home/vsc/github/yap/library/regex/utils.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utils_8h_1a1fa2460e32327ade49189c95740bc1b5" prot="public" static="no">
+        <name>NC</name>
+        <initializer>(CHAR_MAX - CHAR_MIN + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/utils.h" line="47" column="9" bodyfile="/home/vsc/github/yap/library/regex/utils.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utils_8h_1a8de3ed741dadc9c979a4ff17c0a9116e" prot="public" static="no">
+        <name>NDEBUG</name>
+        <initializer>/* no assertions please */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/utils.h" line="53" column="9" bodyfile="/home/vsc/github/yap/library/regex/utils.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="utils_8h_1af3307af5922c72924a837559c801a8a4" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char uch</definition>
+        <argsstring></argsstring>
+        <name>uch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/utils.h" line="48" column="23" bodyfile="/home/vsc/github/yap/library/regex/utils.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/regex/utils.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptsplit__unquoted_23" kind="concept">
+    <compoundname>split_unquoted/3</compoundname>
+    <initializer>template&lt;&gt;
+concept split_unquoted/3 =     </initializer>
+    <briefdescription>
+<para><bold>split_unquoted</bold>(+ <emphasis>Line</emphasis>,+ <emphasis>Separators</emphasis>,- <emphasis>Split</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Unify <emphasis>Words</emphasis> with a set of strings obtained from <emphasis>Line</emphasis> by using the character codes in <emphasis>Separators</emphasis> as separators, but treat text wi thin double quotes as a single unit As an example, consider:</para>
+<para><programlisting><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">split(</highlight><highlight class="stringliteral">&quot;Hello<sp/>*<sp/>I<sp/>\&quot;am<sp/>free\&quot;&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>*&quot;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">S</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">S</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/>[</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;I&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;am<sp/>free&quot;</highlight><highlight class="normal">]<sp/>?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal"></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="library/lineutils.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

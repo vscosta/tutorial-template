@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classwith__output__to_22" kind="class" language="Prolog" prot="public">
+    <compoundname>with_output_to/2</compoundname>
+    <briefdescription>
+<para><bold>with_output_to</bold>(+ <emphasis>Ouput</emphasis>,: <emphasis>Goal</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Run <emphasis>Goal</emphasis> as <ref refid="classonce_21" kindref="compound">once/1</ref> , while characters written to the current output are sent to <emphasis>Output</emphasis> The predicate was introduced by SWI-Prolog</para>
+<para>The example below defines the DCG rule <computeroutput>term/3 </computeroutput> to insert a term in the output:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/>term(Term,<sp/>In,<sp/>Tail)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>with_output_to(codes(In,<sp/>Tail),<sp/>write(Term)).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">?-<sp/>phrase(term(hello),<sp/>X).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>[104,<sp/>101,<sp/>108,<sp/>108,<sp/>111]</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>A Stream handle or alias Temporary switch current output to the given stream Redirection using <ref refid="classwith__output__to_22" kindref="compound">with_output_to/2</ref> guarantees the original output is restored, also if Goal fails or raises an exception See also <ref refid="classcall__cleanup_22" kindref="compound">call_cleanup/2</ref></para>
+</listitem><listitem><para>atom(- <emphasis>Atom</emphasis>) Create an atom from the emitted characters Applications should generally avoid creating atoms by breaking and concatenating other atoms as the creation of large numbers of intermediate atoms puts pressure on the atom table and the data-base This may lead to collisions in the hash tables used to implement atoms, and may result in frequent calls to the garbage collector In multi-threaded applications, access to the atom table is controlled by locks This predicate supports creating the therms by expanding difference-list</para>
+</listitem><listitem><para>string(- <emphasis>String</emphasis>) Create a string-object, notice that strings are atomic objects</para>
+</listitem><listitem><para>codes(- <emphasis>Codes</emphasis>) Create a list of character codes from the emitted characters, similar to <ref refid="classatom__codes_22" kindref="compound">atom_codes/2</ref></para>
+</listitem><listitem><para>codes(- <emphasis>Codes</emphasis>, - <emphasis>Tail</emphasis>) Create a list of character codes as a difference-list</para>
+</listitem><listitem><para>chars(- <emphasis>Chars</emphasis>) Create a list of one-character-atoms codes from the emitted characters, similar to <ref refid="classatom__chars_22" kindref="compound">atom_chars/2</ref></para>
+</listitem><listitem><para>chars(- <emphasis>Chars</emphasis>, - <emphasis>Tail</emphasis>) Create a list of one-character-atoms as a difference-list </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/format.c" line="1089" column="1" bodyfile="/home/vsc/github/yap/os/format.c" bodystart="1089" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

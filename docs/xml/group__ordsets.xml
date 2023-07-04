@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__ordsets" kind="group">
+    <compoundname>ordsets</compoundname>
+    <title>Ordered Sets</title>
+    <innerclass refid="classord__add__element_23" prot="public">ord_add_element/3</innerclass>
+    <innerclass refid="classord__del__element_23" prot="public">ord_del_element/3</innerclass>
+    <innerclass refid="classord__disjoint_22" prot="public">ord_disjoint/2</innerclass>
+    <innerclass refid="classord__insert_23" prot="public">ord_insert/3</innerclass>
+    <innerclass refid="classord__intersect_22" prot="public">ord_intersect/2</innerclass>
+    <innerclass refid="classord__intersection_23" prot="public">ord_intersection/3</innerclass>
+    <innerclass refid="classord__intersection_24" prot="public">ord_intersection/4</innerclass>
+    <innerclass refid="classord__member_22" prot="public">ord_member/2</innerclass>
+    <innerclass refid="classord__seteq_22" prot="public">ord_seteq/2</innerclass>
+    <innerclass refid="classord__setproduct_23" prot="public">ord_setproduct/3</innerclass>
+    <innerclass refid="classord__subset_22" prot="public">ord_subset/2</innerclass>
+    <innerclass refid="classord__subtract_23" prot="public">ord_subtract/3</innerclass>
+    <innerclass refid="classord__symdiff_23" prot="public">ord_symdiff/3</innerclass>
+    <innerclass refid="classord__union_23" prot="public">ord_union/3</innerclass>
+    <innerclass refid="classord__union_24" prot="public">ord_union/4</innerclass>
+    <innerclass refid="classord__union_22" prot="public">ord_union/2</innerclass>
+    <innerclass refid="classlist__to__ord__set_22" prot="public">list_to_ord_set/2</innerclass>
+    <briefdescription>
+<para>The following ordered set manipulation routines are available once included with the <computeroutput>use_module(library(ordsets))</computeroutput> command. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An ordered set is represented by a list having unique and ordered elements Output arguments are guaranteed to be ordered sets, if the relevant inputs are This is a slightly patched version of Richard O&apos;Keefe&apos;s original library</para>
+<para>In this module, sets are represented by ordered lists with no duplicates Thus {c,r,a,f,t} would be [a,c,f,r,t] The ordering is defined by the &lt; family of term comparison predicates, which is the ordering used by <ref refid="classsort_22" kindref="compound">sort/2</ref> and <ref refid="classsetof_23" kindref="compound">setof/3</ref></para>
+<para>The benefit of the ordered representation is that the elementary set operations can be done in time proportional to the Sum of the argument sizes rather than their Product Some of the unordered set routines, such as <ref refid="classmember_22" kindref="compound">member/2</ref> , <ref refid="classlength_22" kindref="compound">length/2</ref> , <ref refid="classselect_23" kindref="compound">select/3</ref> can be used unchanged The main difficulty with the ordered representation is remembering to use it!</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

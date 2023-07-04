@@ -1,0 +1,3635 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="amasm_8c" kind="file" language="C++">
+    <compoundname>amasm.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="YapCompile_8h" local="yes">YapCompile.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/amasm.c</label>
+        <link refid="amasm_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapCompile.h</label>
+        <link refid="YapCompile_8h_source"/>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="54">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="58">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="60">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structcmp__op__info__struct" prot="public">cmp_op_info_struct</innerclass>
+    <innerclass refid="structclause__info__struct" prot="public">clause_info_struct</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="amasm_8c_1ac139a0d080ec0978e6a0d46a07d95548" prot="public" static="no">
+        <name>TYPE_XX</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="206" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a5964d62e5cd7cb531ed216870757fde8" prot="public" static="no">
+        <name>TYPE_CX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="207" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a02d15b7b252c03d26a8768d6bd8eab8c" prot="public" static="no">
+        <name>TYPE_XC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="208" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1aa54eeb05d2041c303ad1c6f1dba441e9" prot="public" static="no">
+        <name>GONEXT</name>
+        <param><defname>TYPE</defname></param>
+        <initializer>code_p = ((<ref refid="structyami" kindref="compound">yamop</ref> *)(&amp;(code_p-&gt;y_u.TYPE.next)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="318" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1ac52d9e18d1110117148797b0d7ff050d" prot="public" static="no">
+        <name>is_void_var</name>
+        <param></param>
+        <initializer>(((<ref refid="structVENTRY" kindref="compound">Ventry</ref> *)(cip-&gt;cpc-&gt;rnd1))-&gt;KindOfVE == VoidVar)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="348" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a838adb1405d1759506e4befae84b3c19" prot="public" static="no">
+        <name>is_a_void</name>
+        <param><defname>X</defname></param>
+        <initializer>(((<ref refid="structVENTRY" kindref="compound">Ventry</ref> *)(X))-&gt;KindOfVE == VoidVar)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="349" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a428b5689641634e974ead9ae1315a48f" prot="public" static="no">
+        <name>is_temp_var</name>
+        <param></param>
+        <initializer>(((<ref refid="structVENTRY" kindref="compound">Ventry</ref> *)(cip-&gt;cpc-&gt;rnd1))-&gt;KindOfVE == TempVar)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="351" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a79a7d6f988bc26d0196a19de94736ef8" prot="public" static="no">
+        <name>is_atemp_var</name>
+        <param><defname>p</defname></param>
+        <initializer>(((<ref refid="structVENTRY" kindref="compound">Ventry</ref> *)(p-&gt;rnd1))-&gt;KindOfVE == TempVar)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="352" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1adc16fa185fc37972ecb30be18a4fde49" prot="public" static="no">
+        <name>no_ref_var</name>
+        <param></param>
+        <initializer>(((<ref refid="structVENTRY" kindref="compound">Ventry</ref> *)(cip-&gt;cpc-&gt;rnd1))-&gt;NoOfVE == 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="354" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a884d980f193b5e0e6125fd79ef15ed32" prot="public" static="no">
+        <name>no_ref</name>
+        <param><defname>X</defname></param>
+        <initializer>(((<ref refid="structVENTRY" kindref="compound">Ventry</ref> *)(X))-&gt;NoOfVE == 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="355" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1ac656dd06719beb82d405b394bcd24310" prot="public" static="no">
+        <name>NEXTOPC</name>
+        <initializer>(cip-&gt;cpc-&gt;nextInst-&gt;op)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2208" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1aa3ea6947c0c689af1ca1d123fb4668b0" prot="public" static="no">
+        <name>TRYCODE</name>
+        <param><defname>G</defname></param>
+        <param><defname>P</defname></param>
+        <initializer>  a_try((G), Unsigned(cip-&gt;code_addr) + cip-&gt;label_offset[cip-&gt;cpc-&gt;rnd1],     \
+        LOCAL_IPredArity, code_p, pass_no, cip)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2854" column="10" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a3d4d5c7eaf2f9d67bc5752de27aa80d1" prot="public" static="no">
+        <name>TABLE_TRYCODE</name>
+        <param><defname>G</defname></param>
+        <initializer>  a_try((G), (CELL)emit_ilabel(cip-&gt;cpc-&gt;rnd1, cip), LOCAL_IPredArity, code_p, \
+        pass_no, cip)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2857" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amasm_8c_1a113238b4a78c7fa88585be28a28da402" prot="public" static="no">
+        <name>DEFAULT_NLABELS</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="3772" column="9" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="3772" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="amasm_8c_1abb5d43fbb9a556069806c4050e10e8f6" prot="public" static="no">
+        <type>struct <ref refid="structcmp__op__info__struct" kindref="compound">cmp_op_info_struct</ref></type>
+        <definition>typedef struct cmp_op_info_struct cmp_op_info</definition>
+        <argsstring></argsstring>
+        <name>cmp_op_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="215" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amasm_8c_1ab528fd0aba48da7b65188efc36fcccbe" prot="public" static="no">
+        <type>struct <ref refid="structclause__info__struct" kindref="compound">clause_info_struct</ref></type>
+        <definition>typedef struct clause_info_struct clause_info</definition>
+        <argsstring></argsstring>
+        <name>clause_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="220" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="amasm_8c_1a917e4cd6b72e606783fb1410653e3278" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>OPREG</type>
+        <definition>static OPREG Var_Ref</definition>
+        <argsstring>(Ventry *, int)</argsstring>
+        <name>Var_Ref</name>
+        <param>
+          <type><ref refid="structVENTRY" kindref="compound">Ventry</ref> *</type>
+          <defname>ve</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>is_y_var</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="328" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="328" bodyend="346" declfile="/home/vsc/github/yap/C/amasm.c" declline="222" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a65aad85c076024087193158f888a7cad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>wamreg</type>
+        <definition>static wamreg emit_xreg</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>emit_xreg</name>
+        <param>
+          <type>CELL</type>
+          <defname>w</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="365" column="22" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="365" bodyend="365" declfile="/home/vsc/github/yap/C/amasm.c" declline="223" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1abe0eb508c6f3da0ab14329887ef51d9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>yslot</type>
+        <definition>static yslot emit_yreg</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>emit_yreg</name>
+        <param>
+          <type>CELL</type>
+          <defname>w</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="367" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="367" bodyend="367" declfile="/home/vsc/github/yap/C/amasm.c" declline="224" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1afc6361ed4b4f7466b633d147cb65e28d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>wamreg</type>
+        <definition>static wamreg emit_x</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>emit_x</name>
+        <param>
+          <type>CELL</type>
+          <defname>xarg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="369" column="22" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="369" bodyend="379" declfile="/home/vsc/github/yap/C/amasm.c" declline="225" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ae3a21365ac20b11984122e5372353040" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>yslot</type>
+        <definition>static yslot emit_y</definition>
+        <argsstring>(Ventry *)</argsstring>
+        <name>emit_y</name>
+        <param>
+          <type><ref refid="structVENTRY" kindref="compound">Ventry</ref> *</type>
+          <defname>ve</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="320" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="320" bodyend="326" declfile="/home/vsc/github/yap/C/amasm.c" declline="226" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a97745c5e108f4e8065572df9cb7cb933" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * emit_a</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>emit_a</name>
+        <param>
+          <type>CELL</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="383" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="383" bodyend="383" declfile="/home/vsc/github/yap/C/amasm.c" declline="227" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ada9ee2b6b11301785750c8dd7a0e4ff2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * emit_bmlabel</definition>
+        <argsstring>(CELL, struct intermediates *)</argsstring>
+        <name>emit_bmlabel</name>
+        <param>
+          <type>CELL</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="228" column="13" declfile="/home/vsc/github/yap/C/amasm.c" declline="228" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a7fa6d3c86cf8c64660e84657ff2503f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * emit_ilabel</definition>
+        <argsstring>(CELL, struct intermediates *)</argsstring>
+        <name>emit_ilabel</name>
+        <param>
+          <type>CELL</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="229" column="14" declfile="/home/vsc/github/yap/C/amasm.c" declline="229" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac113bb5f1a815175204fbabed499db7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>static Functor emit_f</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>emit_f</name>
+        <param>
+          <type>CELL</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="404" column="23" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="404" bodyend="404" declfile="/home/vsc/github/yap/C/amasm.c" declline="230" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aeab1d5686ce1faf1ea7c3feec11fd973" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL</type>
+        <definition>static CELL emit_c</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>emit_c</name>
+        <param>
+          <type>CELL</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="406" column="20" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="406" bodyend="406" declfile="/home/vsc/github/yap/C/amasm.c" declline="231" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac96d64868c128d66dfdc974c91d73fec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>COUNT</type>
+        <definition>static COUNT emit_count</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>emit_count</name>
+        <param>
+          <type>CELL</type>
+          <defname>count</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="408" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="408" bodyend="408" declfile="/home/vsc/github/yap/C/amasm.c" declline="232" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa0568bf50dff9ae733e46bf43f7f9c0c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>OPCODE</type>
+        <definition>static OPCODE emit_op</definition>
+        <argsstring>(op_numbers)</argsstring>
+        <name>emit_op</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>op</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="423" column="22" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="423" bodyend="423" declfile="/home/vsc/github/yap/C/amasm.c" declline="233" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1afbee1ebed333ff55868ce2321184d606" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_cle</definition>
+        <argsstring>(op_numbers, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_cle</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="461" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="461" bodyend="473" declfile="/home/vsc/github/yap/C/amasm.c" declline="234" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac069bbf012b17d3665bf07b9c940a169" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_e</definition>
+        <argsstring>(op_numbers, yamop *, int)</argsstring>
+        <name>a_e</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="475" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="475" bodyend="481" declfile="/home/vsc/github/yap/C/amasm.c" declline="235" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ad5b4771c366007a1b52db9088767db45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ue</definition>
+        <argsstring>(op_numbers, op_numbers, yamop *, int)</argsstring>
+        <name>a_ue</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodew</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="504" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="504" bodyend="512" declfile="/home/vsc/github/yap/C/amasm.c" declline="236" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a8604a4ee2ac4f712ac12cfcef3db30f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_v</definition>
+        <argsstring>(op_numbers, op_numbers, yamop *, int, struct PSEUDO *)</argsstring>
+        <name>a_v</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodex</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodey</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <defname>cpc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="523" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="523" bodyend="544" declfile="/home/vsc/github/yap/C/amasm.c" declline="237" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa2b3a26351bfff9e5eb617e430c0c95f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_uv</definition>
+        <argsstring>(Ventry *, op_numbers, op_numbers, op_numbers, op_numbers, yamop *, int)</argsstring>
+        <name>a_uv</name>
+        <param>
+          <type><ref refid="structVENTRY" kindref="compound">Ventry</ref> *</type>
+          <defname>ve</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodex</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodexw</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodey</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodeyw</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="574" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="574" bodyend="597" declfile="/home/vsc/github/yap/C/amasm.c" declline="238" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac694bfcb5e1dbf73f39620bb0e7facb8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_vr</definition>
+        <argsstring>(op_numbers, op_numbers, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_vr</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodex</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodey</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="624" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="624" bodyend="787" declfile="/home/vsc/github/yap/C/amasm.c" declline="240" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a2ac0e93a23c1b49f0b7112c83fe4944b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_rv</definition>
+        <argsstring>(op_numbers, op_numbers, OPREG, yamop *, int, struct PSEUDO *)</argsstring>
+        <name>a_rv</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodex</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodey</defname>
+        </param>
+        <param>
+          <type>OPREG</type>
+          <defname>var_offset</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <defname>cpc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="789" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="789" bodyend="811" declfile="/home/vsc/github/yap/C/amasm.c" declline="242" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1abdb0f9393296bb5b5ad011a574eb171a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_vv</definition>
+        <argsstring>(op_numbers, op_numbers, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_vv</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodew</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="599" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="599" bodyend="622" declfile="/home/vsc/github/yap/C/amasm.c" declline="244" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af401d2cc47df9652a0d78cc5f450ecde" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_glist</definition>
+        <argsstring>(int *, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_glist</name>
+        <param>
+          <type>int *</type>
+          <defname>do_not_optimise_uatomp</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2162" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2162" bodyend="2206" declfile="/home/vsc/github/yap/C/amasm.c" declline="246" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ad1e77ca17ccce5cc5b0d4805bb810c32" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void a_pair</definition>
+        <argsstring>(CELL *, int, struct intermediates *)</argsstring>
+        <name>a_pair</name>
+        <param>
+          <type>CELL *</type>
+          <defname>seq_ptr</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="857" column="20" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="857" bodyend="865" declfile="/home/vsc/github/yap/C/amasm.c" declline="247" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1adb4b10b02059d7024d25b09518249514" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_f</definition>
+        <argsstring>(CELL, op_numbers, yamop *, int)</argsstring>
+        <name>a_f</name>
+        <param>
+          <type>CELL</type>
+          <defname>rnd1</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="901" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="901" bodyend="912" declfile="/home/vsc/github/yap/C/amasm.c" declline="248" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a06611b7ec34df18206e15d094d51745d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_c</definition>
+        <argsstring>(CELL, op_numbers, yamop *, int)</argsstring>
+        <name>a_c</name>
+        <param>
+          <type>CELL</type>
+          <defname>rnd1</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="928" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="928" bodyend="936" declfile="/home/vsc/github/yap/C/amasm.c" declline="249" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a59fca17912924b0affeca6999beea94c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_uc</definition>
+        <argsstring>(CELL, op_numbers, op_numbers, yamop *, int)</argsstring>
+        <name>a_uc</name>
+        <param>
+          <type>CELL</type>
+          <defname>rnd1</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode_w</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="938" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="938" bodyend="947" declfile="/home/vsc/github/yap/C/amasm.c" declline="250" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a89213687cc09406c3f5bf7631471334e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_n</definition>
+        <argsstring>(op_numbers, int, yamop *, int)</argsstring>
+        <name>a_n</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>count</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="867" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="867" bodyend="875" declfile="/home/vsc/github/yap/C/amasm.c" declline="251" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a0f3f93c12944ec97cdbf845b86d55c2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_un</definition>
+        <argsstring>(op_numbers, op_numbers, int, yamop *, int)</argsstring>
+        <name>a_un</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodew</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>count</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="890" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="890" bodyend="899" declfile="/home/vsc/github/yap/C/amasm.c" declline="252" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a2d4e3cfe7b9a6643507a6f9fc40c79e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_nc</definition>
+        <argsstring>(CELL, op_numbers, int, yamop *, int)</argsstring>
+        <name>a_nc</name>
+        <param>
+          <type>CELL</type>
+          <defname>rnd1</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1086" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1086" bodyend="1095" declfile="/home/vsc/github/yap/C/amasm.c" declline="253" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af98405c5693db6038622446b343e75e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_unc</definition>
+        <argsstring>(CELL, op_numbers, op_numbers, int, yamop *, int)</argsstring>
+        <name>a_unc</name>
+        <param>
+          <type>CELL</type>
+          <defname>rnd1</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcodew</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1097" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1097" bodyend="1107" declfile="/home/vsc/github/yap/C/amasm.c" declline="254" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a96f9cc6a7f746729c524471268cac799" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_r</definition>
+        <argsstring>(CELL, op_numbers, yamop *, int)</argsstring>
+        <name>a_r</name>
+        <param>
+          <type>CELL</type>
+          <defname>arnd2</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1275" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1275" bodyend="1283" declfile="/home/vsc/github/yap/C/amasm.c" declline="255" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a44366c547abf3da5d01e8438b8b85397" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_p</definition>
+        <argsstring>(op_numbers, clause_info *, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_p</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <defname>clinfo</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1318" column="1" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1318" bodyend="1446" declfile="/home/vsc/github/yap/C/amasm.c" declline="256" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa36f92a738aab0866b535e7d7068c8cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_pl</definition>
+        <argsstring>(op_numbers, PredEntry *, yamop *, int)</argsstring>
+        <name>a_pl</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <defname>pred</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1479" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1479" bodyend="1487" declfile="/home/vsc/github/yap/C/amasm.c" declline="258" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a573a783c38abd3c000f9f3cb9bd51bbe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_l</definition>
+        <argsstring>(CELL, op_numbers, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_l</name>
+        <param>
+          <type>CELL</type>
+          <defname>rnd1</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1296" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1296" bodyend="1305" declfile="/home/vsc/github/yap/C/amasm.c" declline="259" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ab80863da01d7c1f6002bbe051bb0d68b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_hx</definition>
+        <argsstring>(op_numbers, union clause_obj *, int, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_hx</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>union <ref refid="unionclause__obj" kindref="compound">clause_obj</ref> *</type>
+          <defname>cl_u</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>log_update</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1773" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1773" bodyend="1804" declfile="/home/vsc/github/yap/C/amasm.c" declline="260" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a047ce79657d5f84f3e4977affef75079" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_if</definition>
+        <argsstring>(op_numbers, union clause_obj *, int, yamop *, int, struct intermediates *cip)</argsstring>
+        <name>a_if</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>union <ref refid="unionclause__obj" kindref="compound">clause_obj</ref> *</type>
+          <defname>cl_u</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>log_update</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1806" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1806" bodyend="1835" declfile="/home/vsc/github/yap/C/amasm.c" declline="262" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ab6c1fcf68b8f78afe418eaa31f0e9a8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_cut</definition>
+        <argsstring>(clause_info *, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_cut</name>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <defname>clinfo</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1851" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1851" bodyend="1865" declfile="/home/vsc/github/yap/C/amasm.c" declline="264" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a0e9b1ddf1cd02b926e61e301ce6ac730" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_try</definition>
+        <argsstring>(op_numbers, CELL, CELL, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_try</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <defname>lab</defname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <defname>opr</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1872" column="1" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1872" bodyend="2002" declfile="/home/vsc/github/yap/C/amasm.c" declline="271" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af45601f90071e07285065bb50afa1747" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_either</definition>
+        <argsstring>(op_numbers, CELL, CELL, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_either</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <defname>opr</defname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <defname>lab</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2009" column="1" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2009" bodyend="2033" declfile="/home/vsc/github/yap/C/amasm.c" declline="273" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aefc80a3db6cfeb18d8912052b7f05a03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_gl</definition>
+        <argsstring>(op_numbers, yamop *, int, struct PSEUDO *, struct intermediates *USES_REGS)</argsstring>
+        <name>a_gl</name>
+        <param>
+          <type>op_numbers</type>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="276" column="14" declfile="/home/vsc/github/yap/C/amasm.c" declline="276" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a430d70298a6ced932fa393915906188d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>COUNT</type>
+        <definition>static COUNT compile_cmp_flags</definition>
+        <argsstring>(unsigned char *)</argsstring>
+        <name>compile_cmp_flags</name>
+        <param>
+          <type>unsigned char *</type>
+          <defname>s0</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1491" column="1" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1491" bodyend="1520" declfile="/home/vsc/github/yap/C/amasm.c" declline="278" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a443904561f60bdb56f103e9b0e8fc397" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_igl</definition>
+        <argsstring>(CELL, op_numbers, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_igl</name>
+        <param>
+          <type>CELL</type>
+          <defname>rnd1</defname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1601" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1601" bodyend="1609" declfile="/home/vsc/github/yap/C/amasm.c" declline="279" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a4d6b90c53f83577a8dfa63d055e9bd64" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_xigl</definition>
+        <argsstring>(op_numbers, yamop *, int, struct PSEUDO *)</argsstring>
+        <name>a_xigl</name>
+        <param>
+          <type>op_numbers</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <defname>cpc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1611" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1611" bodyend="1621" declfile="/home/vsc/github/yap/C/amasm.c" declline="280" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a1fb6317d5d61a6534035885c9cbd9732" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ucons</definition>
+        <argsstring>(int *, compiler_vm_op, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_ucons</name>
+        <param>
+          <type>int *</type>
+          <defname>do_not_optimise_uatomp</defname>
+        </param>
+        <param>
+          <type>compiler_vm_op</type>
+          <defname>opcode</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2049" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2049" bodyend="2090" declfile="/home/vsc/github/yap/C/amasm.c" declline="281" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a2b999be05504d324833c6d01c6f0eff9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_uvar</definition>
+        <argsstring>(yamop *, int, struct intermediates *)</argsstring>
+        <name>a_uvar</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2092" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2092" bodyend="2136" declfile="/home/vsc/github/yap/C/amasm.c" declline="283" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af0af84e3cc86b66a265ef8a1d46bf405" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_wvar</definition>
+        <argsstring>(yamop *, int, struct intermediates *)</argsstring>
+        <name>a_wvar</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2138" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2138" bodyend="2160" declfile="/home/vsc/github/yap/C/amasm.c" declline="284" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a805edb0c32842c5c938751a951629e81" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * do_pass</definition>
+        <argsstring>(int, yamop **, int, int *, int *, struct intermediates *, UInt USES_REGS)</argsstring>
+        <name>do_pass</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> **</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="285" column="14" declfile="/home/vsc/github/yap/C/amasm.c" declline="285" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac8d7e0c867243a59ffd8aa35022616b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * check_alloc</definition>
+        <argsstring>(clause_info *, yamop *, int, struct intermediates *)</argsstring>
+        <name>check_alloc</name>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <defname>clinfo</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1285" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1285" bodyend="1294" declfile="/home/vsc/github/yap/C/amasm.c" declline="294" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a8a031f93e6954e5c0e8850db92993dc3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_deallocate</definition>
+        <argsstring>(clause_info *, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_deallocate</name>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <defname>clinfo</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2210" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2210" bodyend="2223" declfile="/home/vsc/github/yap/C/amasm.c" declline="295" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a2c0c509bfcf98447fd00d2bd03f9ca62" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_bmap</definition>
+        <argsstring>(yamop *, int, struct PSEUDO *)</argsstring>
+        <name>a_bmap</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <defname>cpc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2225" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2225" bodyend="2231" declfile="/home/vsc/github/yap/C/amasm.c" declline="296" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ad9f88e15061f57e004550bcf4db478ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void a_fetch_vv</definition>
+        <argsstring>(cmp_op_info *, int, struct intermediates *)</argsstring>
+        <name>a_fetch_vv</name>
+        <param>
+          <type><ref refid="structcmp__op__info__struct" kindref="compound">cmp_op_info</ref> *</type>
+          <defname>cmp_info</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2258" column="13" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2258" bodyend="2284" declfile="/home/vsc/github/yap/C/amasm.c" declline="297" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a2b033d770f8efc0137b6668e19da805e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void a_fetch_cv</definition>
+        <argsstring>(cmp_op_info *, int, struct intermediates *)</argsstring>
+        <name>a_fetch_cv</name>
+        <param>
+          <type><ref refid="structcmp__op__info__struct" kindref="compound">cmp_op_info</ref> *</type>
+          <defname>cmp_info</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2306" column="13" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2306" bodyend="2324" declfile="/home/vsc/github/yap/C/amasm.c" declline="298" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a533924ad3738c49b445684172a6fdd3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void a_fetch_vc</definition>
+        <argsstring>(cmp_op_info *, int, struct intermediates *)</argsstring>
+        <name>a_fetch_vc</name>
+        <param>
+          <type><ref refid="structcmp__op__info__struct" kindref="compound">cmp_op_info</ref> *</type>
+          <defname>cmp_info</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2286" column="13" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2286" bodyend="2304" declfile="/home/vsc/github/yap/C/amasm.c" declline="299" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac7f0c81716b7706577234c31f8707491" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_f2</definition>
+        <argsstring>(cmp_op_info *, yamop *, int, struct intermediates *)</argsstring>
+        <name>a_f2</name>
+        <param>
+          <type><ref refid="structcmp__op__info__struct" kindref="compound">cmp_op_info</ref> *</type>
+          <defname>cmp_info</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pass_no</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <defname>cip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2326" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2326" bodyend="2806" declfile="/home/vsc/github/yap/C/amasm.c" declline="300" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa1f3c3bcfa521e59b7ac1d7834863b27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structprofile__data" kindref="compound">profile_data</ref> *</type>
+        <definition>profile_data * Yap_initProfiler</definition>
+        <argsstring>(PredEntry *p)</argsstring>
+        <name>Yap_initProfiler</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="302" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="302" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa43b9fe6820202b381adc7c79b325540" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * fill_a</definition>
+        <argsstring>(CELL a, yamop *code_p, int pass_no)</argsstring>
+        <name>fill_a</name>
+        <param>
+          <type>CELL</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="357" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="357" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a4837a04776e7912016f24e88420f9a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wamreg</type>
+        <definition>wamreg Yap_emit_x</definition>
+        <argsstring>(CELL xarg)</argsstring>
+        <name>Yap_emit_x</name>
+        <param>
+          <type>CELL</type>
+          <declname>xarg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="381" column="8" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="381" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aab5e30109961f1674edaca5d8726dd5c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct <ref refid="structpred__entry" kindref="compound">pred_entry</ref> *</type>
+        <definition>static struct pred_entry * emit_pe</definition>
+        <argsstring>(struct pred_entry *a)</argsstring>
+        <name>emit_pe</name>
+        <param>
+          <type>struct <ref refid="structpred__entry" kindref="compound">pred_entry</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="385" column="31" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="385" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aba71eabf4f982211260706ca8ddca4bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * emit_ilabel</definition>
+        <argsstring>(register CELL addr, struct intermediates *cip)</argsstring>
+        <name>emit_ilabel</name>
+        <param>
+          <type>register CELL</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="387" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="387" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af2ff737e609eb260505f56d6b98f779b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * emit_bmlabel</definition>
+        <argsstring>(register CELL addr, struct intermediates *cip)</argsstring>
+        <name>emit_bmlabel</name>
+        <param>
+          <type>register CELL</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="396" column="20" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="396" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a2711ad6b6490ede1dd3aa20727110898" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPCODE</type>
+        <definition>static OPCODE opcode</definition>
+        <argsstring>(op_numbers op)</argsstring>
+        <name>opcode</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="425" column="15" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="425" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a375fb9dbf9aa42d3b7afa633ce964852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPCODE</type>
+        <definition>OPCODE Yap_opcode</definition>
+        <argsstring>(op_numbers op)</argsstring>
+        <name>Yap_opcode</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="428" column="1" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="428" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa940ddbca1571b322a9eaf3bd54092ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_clref</definition>
+        <argsstring>(CELL clause_code, int pass_no)</argsstring>
+        <name>add_clref</name>
+        <param>
+          <type>CELL</type>
+          <declname>clause_code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="430" column="13" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="430" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af73759e30cef1b336a3666043d39fd6d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_to_dbtermsl</definition>
+        <argsstring>(struct intermediates *cip, Term t)</argsstring>
+        <name>add_to_dbtermsl</name>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="437" column="13" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="437" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a7b05968143c3ee562f3fcab22e7512fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_lucl</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip, clause_info *cla)</argsstring>
+        <name>a_lucl</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <declname>cla</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="443" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="443" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a37b6c42fe4fa731986d0fb26eaa80f30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_p0</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, PredEntry *p0)</argsstring>
+        <name>a_p0</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="483" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="483" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a75842fdac135a12d9c76be0ff167b642" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_lp</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_lp</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="493" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="493" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a5213e4549b7ab84318178d474f5ba824" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * emit_fail</definition>
+        <argsstring>(struct intermediates *cip)</argsstring>
+        <name>emit_fail</name>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="514" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="514" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a9d35106d92f1d67867854babe7a9c054" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_vp</definition>
+        <argsstring>(op_numbers opcodex, op_numbers opcodey, yamop *code_p, int pass_no, struct PSEUDO *cpc, clause_info *clinfo)</argsstring>
+        <name>a_vp</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcodex</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcodey</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <declname>clinfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="546" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="546" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a23b2613a401357189f649b033cfc18e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_uf</definition>
+        <argsstring>(CELL rnd1, op_numbers opcode, op_numbers opcodew, yamop *code_p, int pass_no)</argsstring>
+        <name>a_uf</name>
+        <param>
+          <type>CELL</type>
+          <declname>rnd1</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcodew</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="914" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="914" bodyend="926"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a33b9c56dfa9081ccb7d9a08fd70ba685" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_wblob</definition>
+        <argsstring>(CELL rnd1, op_numbers opcode, int *clause_has_blobsp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_wblob</name>
+        <param>
+          <type>CELL</type>
+          <declname>rnd1</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_blobsp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="949" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="949" bodyend="960"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aee2134d874821548c1604bf631be47f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ensure_space</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip, clause_info *clinfo)</argsstring>
+        <name>a_ensure_space</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <declname>clinfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="962" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="962" bodyend="975"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a079608c8481a01068853e18175525124" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_wdbt</definition>
+        <argsstring>(CELL rnd1, op_numbers opcode, int *clause_has_dbtermp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_wdbt</name>
+        <param>
+          <type>CELL</type>
+          <declname>rnd1</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_dbtermp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="977" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="977" bodyend="988"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a1436c7c0673795600d3609d1306a9b02" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ublob</definition>
+        <argsstring>(CELL rnd1, op_numbers opcode, op_numbers opcode_w, int *clause_has_blobsp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_ublob</name>
+        <param>
+          <type>CELL</type>
+          <declname>rnd1</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode_w</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_blobsp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="990" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="990" bodyend="1002"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af8eac3c0589cd367bcafd0c4d59117b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ustring</definition>
+        <argsstring>(CELL rnd1, op_numbers opcode, op_numbers opcode_w, int *clause_has_blobsp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_ustring</name>
+        <param>
+          <type>CELL</type>
+          <declname>rnd1</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode_w</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_blobsp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1005" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1005" bodyend="1018"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a8d1fcf8bed8a2ea408bb2494988879a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_udbt</definition>
+        <argsstring>(CELL rnd1, op_numbers opcode, op_numbers opcode_w, int *clause_has_dbtermp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_udbt</name>
+        <param>
+          <type>CELL</type>
+          <declname>rnd1</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode_w</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_dbtermp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1020" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1020" bodyend="1032"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a22c6e26e62d1988db10e14d9a3c04d7f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ud</definition>
+        <argsstring>(op_numbers opcode, op_numbers opcode_w, yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_ud</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode_w</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1034" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1034" bodyend="1047"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa31b6fd1ca354eb4fdcaf89020f46476" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ui</definition>
+        <argsstring>(op_numbers opcode, op_numbers opcode_w, yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_ui</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode_w</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1049" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1049" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1acbee474faf9c417637b9257d309a2876" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_wd</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_wd</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1061" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1061" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a152ff4213a2e95f798d105574ec0f0bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_wi</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_wi</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1075" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1075" bodyend="1084"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ab5717d69f4d41bf8e248725a373ed66a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_rf</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_rf</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1109" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1109" bodyend="1119"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a494c0c4cbf9fbe9a74a879112bffc09e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_rd</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_rd</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1121" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1121" bodyend="1134"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a4726574f84154e36358cf82122ca80eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ri</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_ri</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1136" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1136" bodyend="1146"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a5065016681e8d3de96d9b967991eac61" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_rc</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_rc</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1148" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1148" bodyend="1231"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a510ead4526c68912458568ce6a9b4092" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_rb</definition>
+        <argsstring>(op_numbers opcode, int *clause_has_blobsp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_rb</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_blobsp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1233" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1233" bodyend="1245"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a3d143d14f6205ad29a3213b709d7934a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_rstring</definition>
+        <argsstring>(op_numbers opcode, int *clause_has_blobsp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_rstring</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_blobsp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1247" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1247" bodyend="1259"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a05049b1b28a6fde31fcbf6dc6134015b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_dbt</definition>
+        <argsstring>(op_numbers opcode, int *clause_has_dbtermp, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_dbt</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_dbtermp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1261" column="21" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1261" bodyend="1273"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aeff87e039c29c656294f91df73ea3599" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_il</definition>
+        <argsstring>(CELL rnd1, op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_il</name>
+        <param>
+          <type>CELL</type>
+          <declname>rnd1</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1307" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1307" bodyend="1315"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a5ae93108ab90b4f7925fc33649e699d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_empty_call</definition>
+        <argsstring>(clause_info *clinfo, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_empty_call</name>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <declname>clinfo</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>oops, our environment is crap</para>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1452" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1452" bodyend="1477"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a1816825c93db9376cbd214d11f87a0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>COUNT</type>
+        <definition>COUNT Yap_compile_cmp_flags</definition>
+        <argsstring>(PredEntry *pred)</argsstring>
+        <name>Yap_compile_cmp_flags</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1523" column="1" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1523" bodyend="1526"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1af58a6987d737d989559a2db2784c8384" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_bfunc</definition>
+        <argsstring>(CELL a1, CELL a2, PredEntry *pred, clause_info *clinfo, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_bfunc</name>
+        <param>
+          <type>CELL</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type><ref refid="structclause__info__struct" kindref="compound">clause_info</ref> *</type>
+          <declname>clinfo</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1528" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1528" bodyend="1599"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aa40d0ab29ade3b88dcb40ab6c1dcadbf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int is_switch_on_list</definition>
+        <argsstring>(op_numbers opcode, struct intermediates *cip)</argsstring>
+        <name>is_switch_on_list</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1624" column="12" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1624" bodyend="1663"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1abc7aca52a112d6f2ad33ec801ca8c903" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_4sw</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_4sw</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1665" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1665" bodyend="1706"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a5eb495d4d43b0a1154728e97ed840f20" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_4sw_x</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_4sw_x</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1708" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1708" bodyend="1727"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ab0ca5c6ad0d76fea949d41a41e5baace" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_4sw_s</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_4sw_s</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1729" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1729" bodyend="1748"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1abcbada78396178898a467273e232909e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void init_log_upd_table</definition>
+        <argsstring>(LogUpdIndex *ic, union clause_obj *cl_u)</argsstring>
+        <name>init_log_upd_table</name>
+        <param>
+          <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+          <declname>ic</declname>
+        </param>
+        <param>
+          <type>union <ref refid="unionclause__obj" kindref="compound">clause_obj</ref> *</type>
+          <declname>cl_u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1750" column="13" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1750" bodyend="1764"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a96610643a43ea0f7633998a99d82448d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void init_static_table</definition>
+        <argsstring>(StaticIndex *ic, union clause_obj *cl_u)</argsstring>
+        <name>init_static_table</name>
+        <param>
+          <type><ref refid="structstatic__index" kindref="compound">StaticIndex</ref> *</type>
+          <declname>ic</declname>
+        </param>
+        <param>
+          <type>union <ref refid="unionclause__obj" kindref="compound">clause_obj</ref> *</type>
+          <declname>cl_u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1766" column="13" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1766" bodyend="1771"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a3f3ad813fe2309720f676bf8f412fbd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_ifnot</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_ifnot</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="1837" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1837" bodyend="1849"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a03542c505cda8791953dd0da5a000320" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_gl</definition>
+        <argsstring>(op_numbers opcode, yamop *code_p, int pass_no, struct PSEUDO *cpc, struct intermediates *cip USES_REGS)</argsstring>
+        <name>a_gl</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *cip</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2035" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2035" bodyend="2043"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a2e1541fe0f463f00f496411015bf4717" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_bregs</definition>
+        <argsstring>(yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>a_bregs</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2233" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2233" bodyend="2240"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a3df87df01dcf54d898d9e621f91f8f76" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * copy_blob</definition>
+        <argsstring>(yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>copy_blob</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2242" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2242" bodyend="2248"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac1b8bd198631632ba07c25a9be1a9a8f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * copy_string</definition>
+        <argsstring>(yamop *code_p, int pass_no, struct PSEUDO *cpc)</argsstring>
+        <name>copy_string</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structPSEUDO" kindref="compound">PSEUDO</ref> *</type>
+          <declname>cpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2250" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2250" bodyend="2256"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1a4f942f0d7c1f27309430fcb9942ee106" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * a_special_label</definition>
+        <argsstring>(yamop *code_p, int pass_no, struct intermediates *cip)</argsstring>
+        <name>a_special_label</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2808" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2808" bodyend="2843"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1acfdd8bdbdf1869a5eb4e70bd51fa3f95" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * do_pass</definition>
+        <argsstring>(int pass_no, yamop **entry_codep, int assembling, int *clause_has_blobsp, int *clause_has_dbtermp, struct intermediates *cip, UInt size USES_REGS)</argsstring>
+        <name>do_pass</name>
+        <param>
+          <type>int</type>
+          <declname>pass_no</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> **</type>
+          <declname>entry_codep</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>assembling</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_blobsp</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clause_has_dbtermp</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <param>
+          <type>UInt size</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="2862" column="14" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="2862" bodyend="3702"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1aebe65fdffb2f3703170f46e2f31d939a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        <definition>static DBTerm * fetch_clause_space</definition>
+        <argsstring>(Term *tp, UInt size, struct intermediates *cip, UInt *osizep USES_REGS)</argsstring>
+        <name>fetch_clause_space</name>
+        <param>
+          <type>Term *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <param>
+          <type>UInt *osizep</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="3704" column="15" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="3704" bodyend="3755"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ad6483b9ff041a772bcc38a67b5af7ce9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdbterm__list" kindref="compound">DBTermList</ref> *</type>
+        <definition>static DBTermList * init_dbterms_list</definition>
+        <argsstring>(yamop *code_p, PredEntry *ap)</argsstring>
+        <name>init_dbterms_list</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code_p</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="3757" column="19" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="3757" bodyend="3770"/>
+      </memberdef>
+      <memberdef kind="function" id="amasm_8c_1ac9b82e3687c278c7537d357d517b5a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>yamop * Yap_assemble</definition>
+        <argsstring>(int mode, Term t, PredEntry *ap, int is_fact, struct intermediates *cip, UInt max_label)</argsstring>
+        <name>Yap_assemble</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>is_fact</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structintermediates" kindref="compound">intermediates</ref> *</type>
+          <declname>cip</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>max_label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/amasm.c" line="3774" column="7" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="3774" bodyend="3901"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/amasm.c"/>
+  </compounddef>
+</doxygen>

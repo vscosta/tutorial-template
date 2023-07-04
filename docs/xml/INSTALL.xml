@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="INSTALL" kind="page">
+    <compoundname>INSTALL</compoundname>
+    <title>Installing YAP</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="INSTALL_1download">
+<title>Downloading YAP</title>
+<para>The latest development version of Yap-7 is available source-only through GIT repositories The main reference repository is at</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://github.com/vscosta/yap">github</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para>Please just use <computeroutput>git clone</computeroutput> to obtain the distribution Ie, to download YAP from the command line please type:</para>
+<para><programlisting><codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/vscosta/yap-6.3<sp/>yap</highlight></codeline>
+</programlisting></para>
+<para>The first argument is the repository, the last argument is the (optional) target directory</para>
+<para>There are a variety of graphical interfaces to <computeroutput>git</computeroutput>, including GitHub&apos;s own <ulink url="https://desktop.github.com/">GitHub Desktop</ulink> that supports Microsoft Windows and Apple OSX A list with GUI applications, editor integration, and much more can be found at the <ulink url="https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools">git Wiki</ulink>,</para>
+<sect2 id="INSTALL_1autotoc_md1">
+<title>Download Options</title>
+<para>It may be useful to know:</para>
+<para><itemizedlist>
+<listitem><para>If you are have limited bandwith or disk spaceq, consider using <computeroutput>git clone --depth XX</computeroutput> to only include the last <computeroutput>XX</computeroutput> commits</para>
+</listitem><listitem><para>Older versions of YAP were distributed with modules YAP-7.4.0xs is a single package, and it does not need <computeroutput>git submodule</computeroutput></para>
+</listitem><listitem><para>The GitHub site includes a number of companion packages for YAP, including <ulink url="https://github.com/vscosta/doxygen-yap">doxygen-yap</ulink>, a version of doxygen adapted to Prolog that was used to generate these documents</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="INSTALL_1CompilingYAP">
+<title>## CompilingYAP</title>
+<para>YAP-7.4.0 is a <ulink url="https://www.cmake.org">cmake</ulink> based system We use <computeroutput>cmake</computeroutput> because it supports mosts popular software, can generate Makefiles, Ninja, Apple&apos;s XCode, VisualStudio and ANdroid Studio, and because it includes packaging suppport, The steps required to install core YAP under <computeroutput>cmake</computeroutput>:</para>
+<sect2 id="INSTALL_1autotoc_md2">
+<title>&lt;tt&gt;C/C++&lt;/tt&gt; compiler</title>
+<para><emphasis>Status as of early 2017</emphasis></para>
+<para>YAP should compile well under the <ulink url="https://gcc.gnu.org/">GNU-CC</ulink> and the [C-LANG]<ulink url="https://clang.llvm.org/()">https://clang.llvm.org/()</ulink> families, that are available across most configurations It sshould also compile well undder Intel <computeroutput>icc</computeroutput></para>
+<para>We do not recommend using Microoft&apos;s VC++ To the best of our knowledge MSC does not support threaded emulation, which YAP recquires for performance, You can still use the IDE, and experiment with the c-lang plugin</para>
+<para>YAP compiles cleanly under cross-compilers, and we have used the crosss-compilation system <ulink url="http://mxe.cc/">mxe</ulink> system with good results</para>
+</sect2>
+<sect2 id="INSTALL_1autotoc_md3">
+<title>&lt;tt&gt;cmake&lt;/tt&gt;</title>
+<para>All Linux and BSD distributions include <computeroutput>cmake</computeroutput>, so does <ulink url="https://brew.sh/">Homebrew</ulink> and <ulink url="https://www.macports.org/">MacPorts</ulink> for the Mac, and <ulink url="http://www.msys2.org/">MSYS2</ulink> and <ulink url="http://www.cygwin.org/">cygwin</ulink> for WIN32 Android Studio has native support for <computeroutput>cmake</computeroutput>since 2.1, although we advise to use 2.2 Last, there are excellent plugins for the Visual Codes In case you need a recent version, consider using pre-compiled binaries at the <ulink url="https://www.cmake.org">CMake site</ulink></para>
+<para>If you have an older Linux you may need to compile from source, available at GitHub</para>
+</sect2>
+<sect2 id="INSTALL_1autotoc_md4">
+<title>Ensure that you have other necessary packages installed:</title>
+<para><itemizedlist>
+<listitem><para>YAP requires [gmp]{<ulink url="https://gmplib.org/">https://gmplib.org/</ulink>} for infinite precision integer and rational Please ensure the development pacakage is installed in Linux: `(lib)gmp-dev(el) In the Mac and WIN32, you can obtain GMPlib from the pakage collections mentioned above</para>
+<para>The [MPIR]{<ulink url="http://mpir.org">http://mpir.org</ulink>} library is compatible with GMPlib, and has good support for VC++</para>
+</listitem><listitem><para>The [readline]() library provides line-editing and command history In Linux, make sure you have the development package</para>
+<para>Readline is disabled by default in WIN32 OSX is distributed with a line editing library that includes a subset of readline We advise against using that library</para>
+</listitem><listitem><para>To use YAP as a library in [Python]() you need the [SWIG]() interface generator and python3-dev SWIG and Python binaries can be easily obtained for all these platfors<itemizedlist>
+<listitem><para>make sure to install Python-3, and not Python-2,</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="INSTALL_1autotoc_md5">
+<title>Compile and Install</title>
+<para>1: Create a directory, say <computeroutput>Build</computeroutput> and <computeroutput>cd</computeroutput> to the directory (<computeroutput>cd Build</computeroutput>) *YAP should not be compiled at its root directory, some packages do not allow for that</para>
+<para>2: Run <computeroutput>cmake ../</computeroutput> from within <computeroutput>Build</computeroutput> (or equivalent)</para>
+<para>3: Run <computeroutput>make</computeroutput> from within <computeroutput>Build</computeroutput> (or equivalent)</para>
+<para>4: If the compilation succeeds, try <computeroutput>/yap</computeroutput> This is your executable</para>
+<para>5: If you feel satisfied with the result, do <computeroutput>make install</computeroutput><itemizedlist>
+<listitem><para>In most systems you will need to be superuser in order to do <computeroutput>make install</computeroutput> and <computeroutput>make info</computeroutput> on the standard directories</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="INSTALL_1autotoc_md6">
+<title>Tuning the Functionality of YAP</title>
+<para>By default, YAP supports tabling, depth first search, and most features found in modern Prologs In some cases, you may want to suport extra features, or reduce system size <computeroutput>cmake</computeroutput>provides an graphical interface for doing so From the commmand line, a typical example could be:</para>
+<para><programlisting><codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=Release<sp/>-DCMAKE_INSTALL_PREFIX=~<sp/>/users/vsc/src/yap</highlight></codeline>
+</programlisting></para>
+<para>The first argument says that this is a release, compiled with full optimisation The second argument says YAP should install under the ~ drectory In this case, YAP will add the binaries to /users/vsc/bin, include files to <computeroutput>/users/vsc/include/Yap</computeroutput>, Prolog files to <computeroutput>/users/vsc/share/Yap</computeroutput>, and ay DLL to <computeroutput>/users/vsc/lib/Yap</computeroutput></para>
+<para>Options include:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>CMAKE_BUILD_TYPE</computeroutput>: the two main options are <computeroutput>Debug</computeroutput>, for system development, and Release to use the system</para>
+</listitem><listitem><para><computeroutput>CMAKE_INSTALL_PREFIX</computeroutput>: where to install YAP, by default <computeroutput>/usr/local</computeroutput></para>
+</listitem><listitem><para>WITH_DEPTH_LIMIT allows depth limited evaluation, say for implementing iterative deepening (default)</para>
+</listitem><listitem><para><computeroutput>WITH_CALL_TRACER</computeroutput> allows support for tracing all calls, retries, and backtracks in the system This can help in debugging your application, but results in performance loss (enabled in Debug)</para>
+</listitem><listitem><para><computeroutput>WITH_WAM_PROFILER</computeroutput> allows profiling of abstract machine instructions This is useful when developing YAP, should not be so useful for normal users (not currently supportted)</para>
+</listitem><listitem><para><computeroutput>WITH_YAP_CONDOR</computeroutput> allows using the Condor system that support High Throughput Computing (HTC) on large collections of distributively owned computing resources (not yet available)</para>
+</listitem><listitem><para><computeroutput>WITH_TABLING</computeroutput> allows tabling support (default)</para>
+</listitem><listitem><para><computeroutput>WITH_YAPOR_COPY</computeroutput> allows or-parallelism according to the Muse-based, YapOR model This option is still highly experimental</para>
+</listitem><listitem><para><computeroutput>WITH_GMP</computeroutput> give a path to where one can find the <computeroutput>GMP</computeroutput> library if not installed in the default path It is highly advised to have GMP in your compilation environment</para>
+</listitem><listitem><para><computeroutput>WITH_READLINE</computeroutput> give a path to where one can find the <computeroutput>readline</computeroutput> library if not installed in the default path It is highly advised in Unix-like environments but not useful in Windows</para>
+</listitem><listitem><para><computeroutput>-WITH_Threads</computeroutput> allows using of the multi-threading predicates provided by YAP</para>
+</listitem></itemizedlist>
+</para>
+<para>You may also want to use a different compilation environment As an example:</para>
+<para><programlisting><codeline><highlight class="normal">cmake<sp/>-GXcode<sp/>..</highlight></codeline>
+</programlisting></para>
+<para>will generate files for compilation of YAP within Apple&apos;s Xcode IDE You can also use <computeroutput>xcodebuild</computeroutput> from the command line</para>
+<para>Bext follow instructions to fully compile YAP:</para>
+<sect2 id="INSTALL_1autotoc_md7">
+<title>Compilation Notes for OSX/Brew</title>
+<para>Next follows a detailed description of a full install of YAP, including all the packages that YAP can use:</para>
+<para><orderedlist>
+<listitem><para>Install the XCode toolkit from the Apple App Store (you may have to register as a developer)</para>
+</listitem><listitem><para>Install a package manager, such as <ulink url="http://brew.sh">brew</ulink>,</para>
+</listitem><listitem><para>You will need <computeroutput>cmake</computeroutput> and <computeroutput>gmp</computeroutput>: both are available in brew</para>
+</listitem><listitem><para>other brew packages you may want to install: <computeroutput>gecode</computeroutput>, <computeroutput>libxml2</computeroutput>, <computeroutput>openssl</computeroutput>, <computeroutput>mariadb</computeroutput>, <computeroutput>openmpi</computeroutput>, <computeroutput>postgresql</computeroutput>, <computeroutput>raptor</computeroutput>, <computeroutput>sqlite3</computeroutput>, <computeroutput>swig</computeroutput>, <computeroutput>unixodbc</computeroutput> Note that some of them may be preconditions to other packages</para>
+</listitem><listitem><para>to install <ulink url="http://vlsi.colorado.edu/~fabio/CUDD">cudd</ulink>, a package used by ProbLog and cplint, just use: <programlisting><codeline><highlight class="normal">brew<sp/>tap<sp/>mht208/formal</highlight></codeline>
+<codeline><highlight class="normal">brew<sp/>install<sp/>cudd</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>To use <ulink url="https://www.r-project.org">R</ulink>, you must download the <computeroutput>R</computeroutput> distribution from one of the many <computeroutput>R</computeroutput> mirrors</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>To use <ulink url="https://www.java.com">Java</ulink>, you should download the Oracle distributed JDK</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>When installing <ulink url="https://www.python.org">Python</ulink>, verify which python you are using</para>
+</listitem><listitem><para>There may be conflict between original OSX and the brew packages (eg, <computeroutput>openssl</computeroutput>, <computeroutput>python</computeroutput>, and <computeroutput>sqlite3</computeroutput> If you prefer leaning on brew: <programlisting><codeline><highlight class="normal">cmake<sp/>-DOPENSSL_ROOT_DIR=/usr/local/opt/openssl<sp/>..</highlight></codeline>
+</programlisting></para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="INSTALL_1autotoc_md8">
+<title>Compilation Notes for Android</title>
+<para>Next we present the compilation process for Android The environment is an OSX, but steps should be similar for Linux machines We assume you have downloaded both the Android NDK and the Android SDK</para>
+<para><orderedlist>
+<listitem><para>Reserve a directory for compilation: <programlisting><codeline><highlight class="normal">mkdir<sp/>android</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>android</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>Get the <ulink url="https://github.com/Rupan/gmp">GMP-android</ulink> port</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>Call <computeroutput>cmake</computeroutput>: ~~~~~ export ANDROID_NDK=/Volumes/Transcend/vsc/android-ndk-r11c; \ export ANDROID_SDK=/Volumes/Transcend/vsc/AndroidSDK;\ export ANDROID_PORT=1;\ export PATH=$PATH:/Volumes/Transcend/vsc/AndroidSDK/tools/;\ cmake \ -DGMP_INCLUDE_DIRS=/Users/vsc/github/gmp/armeabi-v7a \ -DGMP_LIBRARIES=/Users/vsc/github/gmp/armeabi-v7a/libgmp.so\ -DCMAKE_TOOLCHAIN_FILE=/users/vsc/github/yap-6.3/cmake/android.toolchain.cmake \ -DANDROID_ABI=armeabi-v7a -DANDROID_NATIVE_API_LEVEL=android-23 \ &amp;&amp; make -j ``` </para>
+</listitem></orderedlist>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/build/INSTALL.md"/>
+  </compounddef>
+</doxygen>

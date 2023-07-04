@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__heaps" kind="group">
+    <compoundname>heaps</compoundname>
+    <title>Heaps</title>
+    <innerclass refid="classadd__to__heap_24" prot="public">add_to_heap/4</innerclass>
+    <innerclass refid="classheap__size_22" prot="public">heap_size/2</innerclass>
+    <innerclass refid="classheap__to__list_22" prot="public">heap_to_list/2</innerclass>
+    <innerclass refid="classlist__to__heap_22" prot="public">list_to_heap/2</innerclass>
+    <innerclass refid="classmin__of__heap_23" prot="public">min_of_heap/3</innerclass>
+    <innerclass refid="classempty__heap_21" prot="public">empty_heap/1</innerclass>
+    <briefdescription>
+<para>A heap is a labelled binary tree where the key of each node is less than or equal to the keys of its sons. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The point of a heap is that we can keep on adding new elements to the heap and we can keep on taking out the minimum element If there are N elements total, the total time is O(NlgN) If you know all the elements in advance, you are better off doing a merge-sort, but this file is for when you want to do say a best-first search, and have no idea when you start how many elements there will be, let alone what they are</para>
+<para>The following heap manipulation routines are available once included with the <computeroutput>use_module(library(heaps))</computeroutput> command</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classadd__to__heap_24" kindref="compound">add_to_heap/4</ref></para>
+</listitem><listitem><para><ref refid="classempty__heap_21" kindref="compound">empty_heap/1</ref></para>
+</listitem><listitem><para>get_from_heap/4</para>
+</listitem><listitem><para><ref refid="classheap__size_22" kindref="compound">heap_size/2</ref></para>
+</listitem><listitem><para><ref refid="classheap__to__list_22" kindref="compound">heap_to_list/2</ref></para>
+</listitem><listitem><para><ref refid="classlist__to__heap_22" kindref="compound">list_to_heap/2</ref></para>
+</listitem><listitem><para><ref refid="classmin__of__heap_23" kindref="compound">min_of_heap/3</ref></para>
+</listitem><listitem><para>min_of_heap/5</para>
+</listitem></itemizedlist>
+</para>
+<para>A heap is a labelled binary tree where the key of each node is less than or equal to the keys of its sons The point of a heap is that we can keep on adding new elements to the heap and we can keep on taking out the minimum element If there are N elements total, the total time is O(NlgN) If you know all the elements in advance, you are better off doing a merge-sort, but this file is for when you want to do say a best-first search, and have no idea when you start how many elements there will be, let alone what they are</para>
+<para>A heap is represented as a triple t(N, Free, Tree) where N is the number of elements in the tree, Free is a list of integers which specifies unused positions in the tree, and Tree is a tree made of t terms for empty subtrees and t(Key,Datum,Lson,Rson) terms for the rest The nodes of the tree are notionally numbered like this: 1 2 3 4 6 5 7 8 12 10 14 9 13 11 15</para>
+<para>The idea is that if the maximum number of elements that have been in the heap so far is M, and the tree currently has K elements, the tree is some subtreee of the tree of this form having exactly M elements, and the Free list is a list of K-M integers saying which of the positions in the M-element tree are currently unoccupied This free list is needed to ensure that the cost of passing N elements through the heap is O(NlgM) instead of O(NlgN) For M say 100 and N say 10^4 this means a factor of two The cost of the free list is slight The storage cost of a heap in a copying Prolog (which Dec-10 Prolog is not) is 2K+3M words</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

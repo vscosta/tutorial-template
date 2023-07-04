@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptfilter_23" kind="concept">
+    <compoundname>filter/3</compoundname>
+    <initializer>template&lt;&gt;
+concept filter/3 =     </initializer>
+    <briefdescription>
+<para><bold>filter</bold>(+ <emphasis>StreamInp</emphasis>, + <emphasis>StreamOut</emphasis>, + <emphasis>Goal</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For every line <emphasis>LineIn</emphasis> in stream <emphasis>StreamInp</emphasis>, execute <computeroutput>call(Goal,LineIn,LineOut)</computeroutput>, and output <emphasis>LineOut</emphasis> to stream <emphasis>StreamOut</emphasis> If <computeroutput>call(Goal,LineIn,LineOut)</computeroutput> fails, nothing will be output but execution continues with the next line As an example, consider a procedure to select the second and fifth field of a CSV table : <programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">select(</highlight><highlight class="charliteral">Sep</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">In</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Out</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">fields(</highlight><highlight class="charliteral">In</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Sep</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="charliteral">_</highlight><highlight class="normal">,</highlight><highlight class="charliteral">F2</highlight><highlight class="normal">,</highlight><highlight class="charliteral">_</highlight><highlight class="normal">,</highlight><highlight class="charliteral">_</highlight><highlight class="normal">,</highlight><highlight class="charliteral">F5</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">_</highlight><highlight class="normal">]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">fields(</highlight><highlight class="charliteral">Out</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Sep</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="charliteral">F2</highlight><highlight class="normal">,</highlight><highlight class="charliteral">F5</highlight><highlight class="normal">]).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">fields<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="library/lineutils.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

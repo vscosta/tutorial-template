@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptfunctor_23" kind="concept">
+    <compoundname>functor/3</compoundname>
+    <initializer>template&lt;&gt;
+concept functor/3 =     </initializer>
+    <briefdescription>
+<para><bold>functor</bold>( <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>, <emphasis>F</emphasis>, <emphasis>N</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>The top functor of term <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> is named <emphasis>F</emphasis> and has arity <emphasis>N</emphasis></para>
+<para>When <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> is not instantiated, <emphasis>F</emphasis> and <emphasis>N</emphasis> must be If <emphasis>N</emphasis> is 0, <emphasis>F</emphasis> must be an atomic symbol, which will be unified with <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> If <emphasis>N</emphasis> is not 0, then <emphasis>F</emphasis> must be an atom and <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> becomes instantiated to the most general term having functor <emphasis>F</emphasis> and arity <emphasis>N</emphasis> If <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> is instantiated to a term then <emphasis>F</emphasis> and <emphasis>N</emphasis> are respectively unified with its top functor name and arity</para>
+<para>In the current version of YAP the arity <emphasis>N</emphasis> must be an integer Previous versions allowed evaluable expressions, as long as the expression would evaluate to an integer This feature is not available in the ISO Prolog standard </para>
+    </detaileddescription>
+    <location file="C/inlines.c" line="794" column="1"/>
+  </compounddef>
+</doxygen>

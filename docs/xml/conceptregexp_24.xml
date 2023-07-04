@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptregexp_24" kind="concept">
+    <compoundname>regexp/4</compoundname>
+    <initializer>template&lt;&gt;
+concept regexp/4 =     </initializer>
+    <briefdescription>
+<para><bold>regexp</bold>(+ <emphasis>RegExp</emphasis>,+ <emphasis>String</emphasis>,+ <emphasis>Opts</emphasis>,? <emphasis>SubMatchVars</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Match regular expression <emphasis>RegExp</emphasis> to input string <emphasis>String</emphasis> according to options <emphasis>Opts</emphasis> The variable <emphasis>SubMatchVars</emphasis> should be originally unbound or a list of unbound variables all will contain a sequence of matches, that is, the head of <emphasis>SubMatchVars</emphasis> will contain the characters in <emphasis>String</emphasis> that matched the leftmost parenthesized subexpression within <emphasis>RegExp</emphasis>, the next head of list will contain the characters that matched the next parenthesized subexpression to the right in <emphasis>RegExp</emphasis>, and so on</para>
+<para>The options may be:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>nocase</computeroutput>: Causes upper-case characters in <emphasis>String</emphasis> to be treated as lower case during the matching process</para>
+</listitem><listitem><para><computeroutput>indices</computeroutput>: Changes what is stored in <emphasis>SubMatchVars</emphasis> Instead of storing the matching characters from <emphasis>String</emphasis>, each variable will contain a term of the form <emphasis>IO-IF</emphasis> giving the indices in <emphasis>String</emphasis> of the first and last characters in the matching range of characters</para>
+</listitem></itemizedlist>
+</para>
+<para>In general there may be more than one way to match a regular expression to an input string For example, consider the command</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">regexp(</highlight><highlight class="stringliteral">&quot;(a*)b*&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;aabaaabb&quot;</highlight><highlight class="normal">,<sp/>[],<sp/>[</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">])</highlight></codeline>
+</programlisting> Considering only the rules given so far, <emphasis>X</emphasis> and <emphasis>Y</emphasis> could end up with the values <computeroutput>&quot;aabb&quot;</computeroutput> and <computeroutput>&quot;aa&quot;</computeroutput>, <computeroutput>&quot;aaab&quot;</computeroutput> and <computeroutput>&quot;aaa&quot;</computeroutput>, <computeroutput>&quot;ab&quot;</computeroutput> and <computeroutput>&quot;a&quot;</computeroutput>, or any of several other combinations To resolve this potential ambiguity <computeroutput>regexp</computeroutput> chooses among alternatives using the rule <computeroutput>first then longest</computeroutput> In other words, it considers the possible matches in order working from left to right across the input string and the pattern, and it attempts to match longer pieces of the input string before shorter ones More specifically, the following rules apply in decreasing order of priority:</para>
+<para><itemizedlist>
+<listitem><para>If a regular expression could match two different parts of an input string then it will match the one that begins earliest</para>
+</listitem><listitem><para>If a regular expression contains &quot;|&quot; operators then the leftmost matching sub-expression is chosen</para>
+</listitem><listitem><para>In *, +, and ? constructs, longer matches are chosen in preference to shorter ones</para>
+</listitem><listitem><para>In sequences of expression components the components are considered from left to right</para>
+</listitem></itemizedlist>
+</para>
+<para>In the example above, <computeroutput>&quot;(a\*)b\*&quot;</computeroutput> matches <computeroutput>&quot;aab&quot;</computeroutput>: the <computeroutput>&quot;(a\*)&quot;</computeroutput> portion of the pattern is matched first and it consumes the leading <computeroutput>&quot;aa&quot;</computeroutput>; then the <computeroutput>&quot;b\*&quot;</computeroutput> portion of the pattern consumes the next <computeroutput>&quot;b&quot;</computeroutput> Or, consider the following example:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">regexp(</highlight><highlight class="stringliteral">&quot;(ab|a)(b*)c&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;abc&quot;</highlight><highlight class="normal">,<sp/>[],<sp/>[</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Z</highlight><highlight class="normal">])</highlight></codeline>
+</programlisting></para>
+<para>After this command <emphasis>X</emphasis> will be <computeroutput>&quot;abc&quot;</computeroutput>, <emphasis>Y</emphasis> will be <computeroutput>&quot;ab&quot;</computeroutput>, and <emphasis>Z</emphasis> will be an empty string Rule 4 specifies that <computeroutput>&quot;(ab|a)&quot;</computeroutput> gets first shot at the input string and Rule 2 specifies that the <computeroutput>&quot;ab&quot;</computeroutput> sub-expression is checked before the <computeroutput>&quot;a&quot;</computeroutput> sub-expression Thus the <computeroutput>&quot;b&quot;</computeroutput> has already been claimed before the <computeroutput>&quot;(b\*)&quot;</computeroutput> component is checked and <computeroutput>(b\*)</computeroutput> must match an empty string </para>
+    </detaileddescription>
+    <location file="library/regexp.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

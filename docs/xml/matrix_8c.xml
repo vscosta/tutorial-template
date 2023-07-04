@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="matrix_8c" kind="file" language="C++">
+    <compoundname>matrix.c</compoundname>
+    <includes local="yes">YapConfig.h</includes>
+    <includes refid="YapInterface_8h" local="yes">YapInterface.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="17">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="4">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="16">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="18">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="3">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/matrix/matrix.c</label>
+        <link refid="matrix_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="8">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="9">
+        <label>config.h</label>
+      </node>
+      <node id="20">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structm" prot="public">m</innerclass>
+      <sectiondef kind="define">
+      <member refid="group__YapMatrix_1ga2d1929791f457e8f5010751e3b767558" kind="define"><name>MAX_DIMS</name></member>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>big_blob_type</name>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da565ab4266c7f5fa4c88ccbbc1fbd80ec" prot="public">
+          <name>BIG_INT</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8daeba9073f9506db5c517432ec930ddce1" prot="public">
+          <name>BIG_RATIONAL</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dac64fc4a31ab85727d6bda2c47d636b5a" prot="public">
+          <name>BIG_FLOAT</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da9f0f474acddadbb38c24f36f91991e0b" prot="public">
+          <name>EMPTY_ARENA</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da997458c46f7eca3561ed2b1e59f92603" prot="public">
+          <name>MATRIX_INT</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da56d2db828ff52cc933bd1a0db837a95d" prot="public">
+          <name>MATRIX_FLOAT</name>
+          <initializer>= 0x22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da046243c7ff596f8abe0da922c0fa0e18" prot="public">
+          <name>CLAUSE_LIST</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dab0b8812643f2d1bbb7ddce3199dad12a" prot="public">
+          <name>EXTERNAL_BLOB</name>
+          <initializer>= 0x0A0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dad3681d622584c38eaf47161a479d02f5" prot="public">
+          <name>GOAL_CUT_POINT</name>
+          <initializer>= 0x0A1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dafb76355ba347062b3ca77e050548e40f" prot="public">
+          <name>USER_BLOB_START</name>
+          <initializer>= 0x0100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8daf9d7c13b7562282ea87dfc2432673a16" prot="public">
+          <name>USER_BLOB_END</name>
+          <initializer>= 0x0200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="31" column="1" bodyfile="/home/vsc/github/yap/library/matrix/matrix.c" bodystart="31" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbe" prot="public" static="no" strong="no">
+        <type></type>
+        <name>static_array_type</name>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeabdd3542b7c71d2f3bd0eceec306162bc" prot="public">
+          <name>array_of_ints</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea970f472605ef6a1ed1078b5f7c20add6" prot="public">
+          <name>array_of_chars</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea444091f71bab4dc7463b820c883adbb3" prot="public">
+          <name>array_of_uchars</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeaedf567c345c677324f1b32e9308650eb" prot="public">
+          <name>array_of_doubles</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea92c04932b968b75144a6a735869e594c" prot="public">
+          <name>array_of_ptrs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeafedc10fc2029ef96754c5fe25b2e2122" prot="public">
+          <name>array_of_atoms</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea6987cefaa247a56e10b96d14f8d870dc" prot="public">
+          <name>array_of_dbrefs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea1c8f7a516c34d0e6a01057ba409fe3a6" prot="public">
+          <name>array_of_nb_terms</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeae26e7f4b2c0f761f36fe0170be86b78e" prot="public">
+          <name>array_of_terms</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="47" column="1" bodyfile="/home/vsc/github/yap/library/matrix/matrix.c" bodystart="48" bodyend="58"/>
+      </memberdef>
+      <member refid="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50" kind="enum"><name>op_type</name></member>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="matrix_8c_1ade3e64e074f118f567c5d2f51e34fd8f" prot="public" static="no">
+        <type>enum static_array_type</type>
+        <definition>typedef enum static_array_type static_array_types</definition>
+        <argsstring></argsstring>
+        <name>static_array_types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="58" column="20"/>
+      </memberdef>
+      <member refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kind="typedef"><name>M</name></member>
+      </sectiondef>
+      <sectiondef kind="var">
+      <member refid="group__YapMatrix_1ga7ceadd7610f6761cce570cd25a7d74bb" kind="variable"><name>MFunctorM</name></member>
+      <member refid="group__YapMatrix_1ga40441c8b1b9cafb4f57ca28d1077c1e4" kind="variable"><name>MFunctorFloats</name></member>
+      <member refid="group__YapMatrix_1gad307f21c85e4a83f2b1c3b2d748c6e9e" kind="variable"><name>MTermTrue</name></member>
+      <member refid="group__YapMatrix_1gaa140a7eca4cc8834bb0359b21d553fff" kind="variable"><name>MTermFalse</name></member>
+      <member refid="group__YapMatrix_1gac02460a13e804f757eaee12d7ec31c8f" kind="variable"><name>MTermFail</name></member>
+      <member refid="group__YapMatrix_1gace6b18337b537722a0ba98631f34f78c" kind="variable"><name>MAtomC</name></member>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="matrix_8c_1a44fdc7de67faacad12e55e4430f69ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * Yap_StaticArray</definition>
+        <argsstring>(YAP_Atom na, size_t dim, static_array_types type, void *start_addr, void *p)</argsstring>
+        <name>Yap_StaticArray</name>
+        <param>
+          <type>YAP_Atom</type>
+          <declname>na</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>static_array_types</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>start_addr</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="61" column="1" declfile="/home/vsc/github/yap/library/matrix/matrix.c" declline="61" declcolumn="1"/>
+      </memberdef>
+      <member refid="group__YapMatrix_1ga80bcf19ee15d2fe9079fa925671c49a5" kind="function"><name>matrix_long_data</name></member>
+      <member refid="group__YapMatrix_1ga1a7b926cc6a4ca79080fd08c4a24f5a0" kind="function"><name>matrix_double_data</name></member>
+      <member refid="group__YapMatrix_1ga2e78409225786a00ce626c3507c3acfb" kind="function"><name>matrix_get_offset</name></member>
+      <member refid="group__YapMatrix_1ga37b347610601fc1fb5b965b39a6a035d" kind="function"><name>matrix_get_index</name></member>
+      <member refid="group__YapMatrix_1ga69dfb6f0349d3440a7ad2a9e8ff9b5eb" kind="function"><name>GET_OFFSET</name></member>
+      <member refid="group__YapMatrix_1ga9f2e769a786813e4beaa127da2d91886" kind="function"><name>GET_INDEX</name></member>
+      <member refid="group__YapMatrix_1gad01fb7eb2bf126b43153745e8bc74593" kind="function"><name>matrix_next_index</name></member>
+      <member refid="group__YapMatrix_1ga6caa5b8c0dcb16b0b9fd2af32242fcef" kind="function"><name>IS_MATRIX</name></member>
+      <member refid="group__YapMatrix_1gae5654fd6fb04dd92703b497777def7f3" kind="function"><name>GET_MATRIX</name></member>
+      <member refid="group__YapMatrix_1gae3a5142c880629d3d3a06160ac4c7a64" kind="function"><name>is_matrix</name></member>
+      <member refid="group__YapMatrix_1gab72620ac0ccdf665f240170392344e9f" kind="function"><name>new_int_matrix</name></member>
+      <member refid="group__YapMatrix_1ga0febbc10b5894e63713d0bf320eee089" kind="function"><name>new_float_matrix</name></member>
+      <member refid="group__YapMatrix_1ga6c9e36a1b36ff876af65c10d2578c570" kind="function"><name>scan_dims</name></member>
+      <member refid="group__YapMatrix_1gabfa4452268866f3b87dbd5ef9a2dcac1" kind="function"><name>cp_int_matrix</name></member>
+      <member refid="group__YapMatrix_1gaef620643b299e89ce8e96032331080a2" kind="function"><name>cp_float_matrix</name></member>
+      <member refid="group__YapMatrix_1gae573b77cdcdd9d4ff789d235b9cc80d4" kind="function"><name>set_int_matrix</name></member>
+      <member refid="group__YapMatrix_1ga245e6ec6b3dfc7d88775750d960ff505" kind="function"><name>set_float_matrix</name></member>
+      <member refid="group__YapMatrix_1ga00c16d33010d8fe1a20b4bbd83e92a12" kind="function"><name>new_ints_matrix</name></member>
+      <member refid="group__YapMatrix_1ga0425e28489c929b0b4077de4118697e4" kind="function"><name>new_ints_matrix_set</name></member>
+      <member refid="group__YapMatrix_1gaa4ae7d476dc3fbd6aba3e76db485d6c3" kind="function"><name>new_ints_matrix_copy</name></member>
+      <member refid="group__YapMatrix_1gae453ae4efd2736b1aef81004578b9adc" kind="function"><name>new_floats_matrix_copy</name></member>
+      <member refid="group__YapMatrix_1ga3973c514399e0a87196e6fc68dffacf5" kind="function"><name>new_floats_matrix</name></member>
+      <member refid="group__YapMatrix_1gaade39386bbe555abec5224726df53ae5" kind="function"><name>new_floats_matrix_set</name></member>
+      <member refid="group__YapMatrix_1ga399d431a5a4cce38d47c10797617db02" kind="function"><name>mk_int_list</name></member>
+      <member refid="group__YapMatrix_1ga62e43a02ce826f95df80a4b4edc2cbc6" kind="function"><name>mk_rep_int_list</name></member>
+      <member refid="group__YapMatrix_1gad6af9ce7b97b74d5c29eb605a13f3ddc" kind="function"><name>matrix_float_set</name></member>
+      <member refid="group__YapMatrix_1gadd2f179bf4dacd972be2f4bea3ef02df" kind="function"><name>matrix_long_set</name></member>
+      <member refid="group__YapMatrix_1ga5d7639e8195d054ea41daba293aa135d" kind="function"><name>matrix_get_one</name></member>
+      <member refid="group__YapMatrix_1gaeb624779d02a404dea961b6cc01b5384" kind="function"><name>matrix_set_one</name></member>
+      <member refid="group__YapMatrix_1ga4642d6ec9f16a6b6576d46f73d444267" kind="function"><name>flist</name></member>
+      <member refid="group__YapMatrix_1gafe6515a254b6c5b0f9b0adb005ebb470" kind="function"><name>ilist</name></member>
+      <member refid="group__YapMatrix_1ga15a6a5364fea93f8425c80a3785d3819" kind="function"><name>blist</name></member>
+      <member refid="group__YapMatrix_1ga0cd6a091edf7716cc765d66c96991822" kind="function"><name>matrix_set_all</name></member>
+      <member refid="group__YapMatrix_1ga7d9270c78dc8bb31dfba7b0faf71b78f" kind="function"><name>matrix_add_to_all</name></member>
+      <member refid="group__YapMatrix_1ga0826135a38c1580348bfe2b584b84d0c" kind="function"><name>matrix_inc</name></member>
+      <member refid="group__YapMatrix_1gade8416ea6554506609910e5204c5fde3" kind="function"><name>matrix_inc3</name></member>
+      <member refid="group__YapMatrix_1gaa92fd4983401a781dab5b593c62b1ef0" kind="function"><name>matrix_dec</name></member>
+      <member refid="group__YapMatrix_1ga0ce0116b7e00c17916152faa418a9d6d" kind="function"><name>matrix_dec3</name></member>
+      <member refid="group__YapMatrix_1ga220c38403de72a05839b0fd86b6fcb1a" kind="function"><name>matrix_min</name></member>
+      <member refid="group__YapMatrix_1gacda47cc3ba99262f887f3463e97dd93d" kind="function"><name>matrix_minarg</name></member>
+      <member refid="group__YapMatrix_1ga87ac27edd135546dd72995ed7c413995" kind="function"><name>matrix_max</name></member>
+      <member refid="group__YapMatrix_1ga3715f141c8b58a3d326055798ccc394f" kind="function"><name>matrix_maxarg</name></member>
+      <member refid="group__YapMatrix_1ga1b94b3e06420152226fabdf03188ba48" kind="function"><name>matrix_dims</name></member>
+      <member refid="group__YapMatrix_1ga0235b113094c8df18e824b07c0a71eed" kind="function"><name>matrix_to_list</name></member>
+      <member refid="group__YapMatrix_1ga89e27af184a12200785907498ba901e1" kind="function"><name>matrix_set_base</name></member>
+      <member refid="group__YapMatrix_1gac56aa30a1c574ae5aa66612d1e0e2202" kind="function"><name>matrix_dims3</name></member>
+      <member refid="group__YapMatrix_1ga91213f3b3165ac98f9b779d9faadf05a" kind="function"><name>matrix_size</name></member>
+      <member refid="group__YapMatrix_1ga75c3033587f2d6cdb47acdbdf1d4bce8" kind="function"><name>matrix_ndims</name></member>
+      <member refid="group__YapMatrix_1gaab9325bcef5187b7aa819113d0b1e01c" kind="function"><name>matrix_type</name></member>
+      <member refid="group__YapMatrix_1gac0df8b29621e26ed23e778510ddac8d5" kind="function"><name>matrix_arg_to_offset</name></member>
+      <member refid="group__YapMatrix_1ga9aa18a4e0a6adafbae1ceee84d08adb6" kind="function"><name>matrix_offset_to_arg</name></member>
+      <member refid="group__YapMatrix_1gaff4294062818e452dc1416fae68c9bde" kind="function"><name>matrix_log_all</name></member>
+      <member refid="group__YapMatrix_1ga5c50abc4d428781406ca06c0548bd307" kind="function"><name>matrix_log_all2</name></member>
+      <member refid="group__YapMatrix_1gae6777296aede1cadd3a8d08457c2c047" kind="function"><name>matrix_exp_all</name></member>
+      <member refid="group__YapMatrix_1ga44ac7930fef35c543bff4633c43b0c06" kind="function"><name>matrix_exp2_all</name></member>
+      <member refid="group__YapMatrix_1gafa559491fa80485aa4d23b9599d5a506" kind="function"><name>matrix_exp_all2</name></member>
+      <member refid="group__YapMatrix_1ga1537f67c570cca1ad4bed1f317a05398" kind="function"><name>matrix_sum</name></member>
+      <member refid="group__YapMatrix_1gad6211bbced229e621cbdc0744260094f" kind="function"><name>add_int_lines</name></member>
+      <member refid="group__YapMatrix_1gaababbcf95dc2a5a468e397de3ec488c5" kind="function"><name>add_double_lines</name></member>
+      <member refid="group__YapMatrix_1gac622d1877cf7c08af0f995010ecb4ace" kind="function"><name>matrix_agg_lines</name></member>
+      <member refid="group__YapMatrix_1ga2a06ce3b6fa67ceb035280f119613855" kind="function"><name>add_int_cols</name></member>
+      <member refid="group__YapMatrix_1ga5e94c58fbaeaa26e5ebd9fea5c759944" kind="function"><name>add_double_cols</name></member>
+      <member refid="group__YapMatrix_1gae4407ac2a5659a6df4f4b0ee42db7a09" kind="function"><name>matrix_agg_cols</name></member>
+      <member refid="group__YapMatrix_1ga2f78254e350b366ae7e66658d3c8c733" kind="function"><name>div_int_by_lines</name></member>
+      <member refid="group__YapMatrix_1gacfc5c9a13b082e4026ad0b952e7ba3e6" kind="function"><name>div_int_by_dlines</name></member>
+      <member refid="group__YapMatrix_1ga9edb0a00626730a4d7a248fc89be5c99" kind="function"><name>div_float_long_by_lines</name></member>
+      <member refid="group__YapMatrix_1gabaae22c3f3dccebbf38405c1548ecd8f" kind="function"><name>div_float_by_lines</name></member>
+      <member refid="group__YapMatrix_1ga63893e55f37347ee15884c0c7f049e53" kind="function"><name>matrix_op_to_lines</name></member>
+      <member refid="group__YapMatrix_1gaa46c84a7128e23c3bcf3e215ff1326ba" kind="function"><name>matrix_copy</name></member>
+      <member refid="group__YapMatrix_1ga52fa483a15118e9c5aad0bb342232dfa" kind="function"><name>matrix_long_add_data</name></member>
+      <member refid="group__YapMatrix_1ga5b18a2b82ee2b68470c4627c4acf7520" kind="function"><name>matrix_long_double_add_data</name></member>
+      <member refid="group__YapMatrix_1ga23d3f91db284282a000ae3c4d1ff8aca" kind="function"><name>matrix_double_add_data</name></member>
+      <member refid="group__YapMatrix_1gac26d4e5235a45a3de8fe2ff4f54ced79" kind="function"><name>matrix_long_sub_data</name></member>
+      <member refid="group__YapMatrix_1ga96cdbf25ee1be5de284c378f091fe280" kind="function"><name>matrix_long_double_sub_data</name></member>
+      <member refid="group__YapMatrix_1gaab9332ad2ad95dafd6eb0946a52a4057" kind="function"><name>matrix_long_double_rsub_data</name></member>
+      <member refid="group__YapMatrix_1gab0e93043b22c2e326ec397d9fae13b1b" kind="function"><name>matrix_double_sub_data</name></member>
+      <member refid="group__YapMatrix_1ga355fba05c1ae76b224f91ff87885a906" kind="function"><name>matrix_long_mult_data</name></member>
+      <member refid="group__YapMatrix_1gaab3166c564ace8c64d9ee15c80d284e5" kind="function"><name>matrix_long_double_mult_data</name></member>
+      <member refid="group__YapMatrix_1ga6f6142949a69d602442c011ff413455f" kind="function"><name>matrix_double_mult_data</name></member>
+      <member refid="group__YapMatrix_1gaa3b77a6a7b6bc29ef44b72ad651fba5f" kind="function"><name>matrix_long_div_data</name></member>
+      <member refid="group__YapMatrix_1gaa51e08215c86bd4319a5d4c61098a3da" kind="function"><name>matrix_long_double_div_data</name></member>
+      <member refid="group__YapMatrix_1ga16ea079c093ae0ce6e59a170c46ec4ac" kind="function"><name>matrix_long_double_div2_data</name></member>
+      <member refid="group__YapMatrix_1gad96e7847058ee5f6e12a725c4df574bf" kind="function"><name>matrix_double_div_data</name></member>
+      <member refid="group__YapMatrix_1ga1bc087730050b2c67d597285882db892" kind="function"><name>matrix_long_zdiv_data</name></member>
+      <member refid="group__YapMatrix_1ga9d057a0735a56d08be89b39b5e81e34e" kind="function"><name>matrix_long_double_zdiv_data</name></member>
+      <member refid="group__YapMatrix_1ga9465df1ce3fb39ba543838d47edd9fe5" kind="function"><name>matrix_double_zdiv_data</name></member>
+      <member refid="group__YapMatrix_1gabb29025670f08407d3666e5294a98b84" kind="function"><name>matrix_op</name></member>
+      <member refid="group__YapMatrix_1ga57e271d40c69309ee135b7ae750b45ce" kind="function"><name>add_int_by_cols</name></member>
+      <member refid="group__YapMatrix_1ga54d39810ab8ff5ee7baea227b76aebc2" kind="function"><name>add_int_by_dcols</name></member>
+      <member refid="group__YapMatrix_1ga25a819aeb37fc3ade8bc8ff292ef6c12" kind="function"><name>add_double_by_cols</name></member>
+      <member refid="group__YapMatrix_1ga2d4736eb5764b0f3fa795ec9f1214518" kind="function"><name>matrix_op_to_cols</name></member>
+      <member refid="group__YapMatrix_1gab6ccd10fb27b4945c47f7c1c14c30470" kind="function"><name>matrix_op_to_all</name></member>
+      <member refid="group__YapMatrix_1ga6484627581ef4b54bb71d8d2841382e6" kind="function"><name>matrix_transpose</name></member>
+      <member refid="group__YapMatrix_1gaa70bc63a29fd30a6488ab21f7a43a7b0" kind="function"><name>matrix_select</name></member>
+      <member refid="group__YapMatrix_1gad6671c86e03e1ad4a9c3b3be1dc8f1dd" kind="function"><name>matrix_column</name></member>
+      <member refid="group__YapMatrix_1ga8b611043b268065d3759e68a8d8f310c" kind="function"><name>matrix_sum_out</name></member>
+      <member refid="group__YapMatrix_1ga03002f812fc350b730041b4a0ccfbb38" kind="function"><name>matrix_sum_out_several</name></member>
+      <member refid="group__YapMatrix_1ga8ad2fe8e9f959f383336679a1ec3e79b" kind="function"><name>matrix_sum_out_logs</name></member>
+      <member refid="group__YapMatrix_1ga9676bc4953e492587016dd557983ccc6" kind="function"><name>matrix_sum_out_logs_several</name></member>
+      <member refid="group__YapMatrix_1ga5f399a6d6f00e738c2e55bbda1d6eac5" kind="function"><name>matrix_expand</name></member>
+      <member refid="group__YapMatrix_1ga1c179fb942480e5649766936e1550cc5" kind="function"><name>matrix_set_all_that_disagree</name></member>
+      <member refid="group__YapMatrix_1ga1d974af6c4ba90930bdc2fb30805415e" kind="function"><name>matrix_m</name></member>
+      <member refid="group__YapMatrix_1gaad3a153bc95f5cb3379eea480b4b0023" kind="function"><name>init_matrix</name></member>
+      </sectiondef>
+    <briefdescription>
+<para>numeric operations in matrices </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Vítor Santos Costa</para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/matrix/matrix.c"/>
+  </compounddef>
+</doxygen>

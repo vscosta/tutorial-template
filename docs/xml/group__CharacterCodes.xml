@@ -1,0 +1,1243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__CharacterCodes" kind="group">
+    <compoundname>CharacterCodes</compoundname>
+    <title>Character Encoding and Manipulation.</title>
+    <innerclass refid="structenc__map" prot="public">enc_map</innerclass>
+    <innerclass refid="classencoding_22" prot="public">encoding/2</innerclass>
+    <innerclass refid="classchar__type_22" prot="public">char_type/2</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__CharacterCodes_1ga438af03ee26503f59a7b09dc9715a9a2" prot="public" static="no">
+        <type>struct <ref refid="structenc__map" kindref="compound">enc_map</ref></type>
+        <definition>typedef struct enc_map enc_map_t</definition>
+        <argsstring></argsstring>
+        <name>enc_map_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="119" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__CharacterCodes_1gafda9de14d778bd901720c378639131fa" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* encvs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>encvs</name>
+        <initializer>= {&quot;LANG&quot;, &quot;LC_ALL&quot;, &quot;LC_CTYPE&quot;, NULL}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="113" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CharacterCodes_1ga84a4c27514a0845df02b3a0977d9220a" prot="public" static="yes" mutable="no">
+        <type><ref refid="structenc__map" kindref="compound">enc_map_t</ref></type>
+        <definition>enc_map_t ematches[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ematches</name>
+        <initializer>= {
+    {&quot;UTF-8&quot;, ENC_ISO_UTF8},
+    {&quot;utf8&quot;, ENC_ISO_UTF8},
+    {&quot;UTF-16&quot;, ENC_UTF16_LE}, 
+    {&quot;UCS-2&quot;, ENC_UTF16_LE},  
+    {&quot;ISO-LATIN1&quot;, ENC_ISO_LATIN1},
+    {&quot;ISO-8859-1&quot;, ENC_ISO_LATIN1},
+    {&quot;Windows-1252&quot;, ENC_ISO_LATIN1}, 
+    {&quot;CP-1252&quot;, ENC_ISO_LATIN1},
+    {&quot;C&quot;, ENC_ISO_ASCII},
+
+
+
+    {NULL, ENC_ISO_UTF8}
+
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="121" column="18" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__CharacterCodes_1ga4af7c4eca0b19a4a9815b55f3ecfb172" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_change_type_of_char</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_change_type_of_char</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="376" column="5" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="376" bodyend="385" declfile="/home/vsc/github/yap/os/chartypes.c" declline="79" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga39ba70fd40ec242dad9ef120573f1df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_StringToNumberTerm</definition>
+        <argsstring>(const char *s, encoding_t *encp, bool error_on)</argsstring>
+        <name>Yap_StringToNumberTerm</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>encoding_t *</type>
+          <declname>encp</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>error_on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="82" column="6" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="82" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga1503b51f1d01e75dbca9a2127af4234e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>encoding_t</type>
+        <definition>static encoding_t enc_os_default</definition>
+        <argsstring>(encoding_t rc)</argsstring>
+        <name>enc_os_default</name>
+        <param>
+          <type>encoding_t</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="138" column="19" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga38da6609ae41d3c9498edf90aec89a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_encoding_error</definition>
+        <argsstring>(int ch, seq_type_t code, struct stream_desc *st)</argsstring>
+        <name>Yap_encoding_error</name>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>seq_type_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="151" column="5" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="151" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gacf36188f5c54dc6602e927d6345bc207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>encoding_t</type>
+        <definition>encoding_t Yap_SystemEncoding</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_SystemEncoding</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="174" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="174" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga05b6592c61a41aa1e3fac6648f6bf1e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>encoding_t</type>
+        <definition>static encoding_t DefaultEncoding</definition>
+        <argsstring>(void)</argsstring>
+        <name>DefaultEncoding</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="204" column="19" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="204" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga0f2c193d3d5e39bf901af7d34a839e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>encoding_t</type>
+        <definition>encoding_t Yap_DefaultEncoding</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_DefaultEncoding</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="208" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga7e8516eaba149d48e98a8910fc24e6b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_SetDefaultEncoding</definition>
+        <argsstring>(encoding_t new_encoding)</argsstring>
+        <name>Yap_SetDefaultEncoding</name>
+        <param>
+          <type>encoding_t</type>
+          <declname>new_encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="213" column="6" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga3fcd420cd66b5a5f2f0b2a7e46b6e24a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int get_default_encoding</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>get_default_encoding</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="218" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga874564e84c488954ea80f6a1d2d04233" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_encoding</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_encoding</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="227" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="227" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga80b9d1c8f907fcb2a589fc59e6703565" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_char</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>get_char</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="241" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="241" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga8f5f4167404bfbe9e980612db0a7355e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_code</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>get_code</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="263" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="263" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga5a021f7379dc6fac3c1a4db4ee00a525" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_char_or_code</definition>
+        <argsstring>(Term t, bool *is_char)</argsstring>
+        <name>get_char_or_code</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>is_char</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="280" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="280" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga761103678d9da710047ef7d468d71fa9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int toupper2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>toupper2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="306" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="306" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga0269c512baaf0c21ca477289b94a4191" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int tolower2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>tolower2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="340" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="340" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaea1eebd860294ca23e85cd7a80699ebe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_alnum</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_alnum</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="387" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="387" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga711f81458578086c27115d36b5c1a297" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_alpha</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_alpha</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="393" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="393" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga7702ef475091897c7fcaf61126b62f8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_csym</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_csym</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="399" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="399" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaf7d8b2c985c84cfdca994c1fac3a11be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_csymf</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_csymf</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="405" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="405" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaaf5df7eb36287a3252548688afe39e4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_ascii</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_ascii</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="411" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="411" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gae671ec907f55e3bed38058fc6d46a7f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_white</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_white</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="416" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="416" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga876125f6aaa220ac845309d6426f9df7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_cntrl</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_cntrl</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="426" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="426" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga31108ec70aca7571334379f1505c1020" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_digit</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_digit</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="432" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="432" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga830dbd6c2a4de1512edd87dfb12fe16b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_xdigit</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_xdigit</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="438" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="438" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gab1f464fc9c443a6f177d565ec22df35a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_graph</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_graph</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="449" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="449" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga09feef112c4cb32bde739fe583ef4e19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_lower</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_lower</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="454" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="454" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga00bb57af89d973f99224bd3e641c0eab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_upper</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_upper</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="465" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="465" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gad327126db2e7aa2f9ad6482331c034cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_punct</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_punct</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="476" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="476" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga2facea710662f5a1b637e9c13dfcf667" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_space</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_space</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="482" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="482" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gab5a92d10aac7bff48188370ba4c5f0a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_end_of_file</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_end_of_file</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="488" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gae820cac926047898c9e09ef6c8a32d66" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_end_of_line</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_end_of_line</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="493" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="493" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga20ab9544ada2dffa52c880ad5a49ae65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_newline</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_newline</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="502" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="502" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga437638524daea0d85744f2ca5c041e67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_period</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_period</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="510" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="510" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaa82a1cc2bfc8e8b65b020643ab68489a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_quote</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_quote</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="515" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="515" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gad1c54d2d9a1dcbb034075e89bc6cb637" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_paren</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_paren</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="521" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="521" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gabf491ff2e5bf1165502bf161ba04f0e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_prolog_var_start</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_prolog_var_start</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="527" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="527" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gac050646fa597df472feecbabb07de868" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_prolog_atom_start</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_prolog_atom_start</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="533" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="533" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga07f8ad7b2cf483c9d16b0a5f6c7bd7a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_prolog_identifier_continue</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_prolog_identifier_continue</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="539" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="539" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gac4805caac434218e858f0ea1b3ac2b56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_type_prolog_prolog_symbol</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_type_prolog_prolog_symbol</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="545" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="545" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaa98d85d34320380a14db25222aa1aae7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_alnum</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_alnum</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="551" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="551" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaf0e1512c7f33d099e38f4489c4c33032" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_alpha</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_alpha</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="557" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="557" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaa4079c6ddc0b949830c5bd0538545b36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_csym</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_csym</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="563" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="563" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gacecaabf5acd8b8511dfa455081161938" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_csymf</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_csymf</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="569" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="569" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga51b1e9974432829efcdf8d12da8fa059" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_ascii</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_ascii</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="575" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="575" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga3272459ceb69b15e6fd1f05e735739e9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_white</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_white</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="580" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="580" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga3c8389554fdfa379776daab226341b23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_cntrl</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_cntrl</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="590" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="590" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gae0b6866dc892638d654dd7f874de8c79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_digit</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_digit</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="596" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="596" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga4468dbe414dbf32440ac6a3d190847ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_xdigit</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_xdigit</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="602" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="602" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga0c2788a3d8353d88c3b6a3cf274515d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_graph</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_graph</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="613" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="613" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaa99d43f50d4cc33a8f886cbe53c38fa7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_lower</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_lower</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="618" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="618" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gab9d236f1f8ad7a1b7eaf42763cb4484e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_upper</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_upper</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="624" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="624" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaa4fa464fe8b1fdff44c025b03c98773b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_punct</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_punct</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="630" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="630" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga04a74316472d92e2364ce72c6ff0efd6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_space</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_space</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="639" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="639" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga53a787ca30836da2848aec1ecc7e7946" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_end_of_file</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_end_of_file</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="649" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="649" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaccdbb1f004328d251ca2be1052e2c27c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_end_of_line</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_end_of_line</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="654" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="654" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga31295584f834fda7d2fb9bb2d4ce5b35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_newline</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_newline</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="663" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="663" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga031dfae4670da752dc72aea9e6c98e00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_period</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_period</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="671" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="671" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga5f3fad955dca259df2029301ab480714" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_quote</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_quote</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="676" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="676" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga28547801fd2b3d0cbaa18e73146ec4b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_paren</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_paren</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="682" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="682" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga58a18703c8f03fe537de9cfb1ae8dee6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_prolog_var_start</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_prolog_var_start</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="688" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="688" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaeff225d0f37b6cbda4dc48cb455504fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_prolog_atom_start</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_prolog_atom_start</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="694" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="694" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga8fb1e18f70e84db940f6e1fd8b2382d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_prolog_identifier_continue</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_prolog_identifier_continue</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="700" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="700" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga6f0f60d20f184825ecd554914eaf3e01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_type_prolog_prolog_symbol</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>code_type_prolog_prolog_symbol</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="706" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="706" bodyend="710"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga6f2d4e5fd7a104540262c53ea1296302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ISOWGetc</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>ISOWGetc</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="712" column="5" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="712" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga0399241e90d803addb6a89f2dfbf9400" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_force_char_conversion</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_force_char_conversion</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="724" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="724" bodyend="736"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga9bcdd02f004c4230100c19f4757f0dcb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_disable_char_conversion</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_disable_char_conversion</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="738" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="738" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga6e16d1767381ae2a999271c23368dd15" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_conversion</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_conversion</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="749" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="749" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga80faac9a6fd16e62c3e1c797acbd9603" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_current_char_conversion</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_current_char_conversion</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="808" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="808" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1gaec804218091f49526a4ad9fcbeb4989c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_all_char_conversions</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_all_char_conversions</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="856" column="12" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="856" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="group__CharacterCodes_1ga3e07d7b3905bb7e14a0189fa4a00e8c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitChtypes</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitChtypes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/chartypes.c" line="880" column="6" bodyfile="/home/vsc/github/yap/os/chartypes.c" bodystart="880" bodyend="964"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Prolog library includes a set of built-in predicates designed to support manipulation of sequences of text, represented either as lists, atoms or strings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>{@</para>
+<para>The char_type family of predicates support manipulation of individual characters, represented either as numbers (codes) or atoms (chars)</para>
+<para>YAP supports UNICODE through the library utf8proc for compatibility across operating systems The implementation extends the original (ASCII-based) character classification used by early Prologs, but supports UNICODE.As usual, YAP tried to follow SWI-Prolog as much as possible:</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classchar__type_22" kindref="compound">char_type/2</ref> and code_type/2 support all documented SWI-Prolog flags, but are strict in argument checking</para>
+</listitem><listitem><para>letters with no case are considered as lower-case Hence, a variable can only start with an underscore or a unicode point in category LU</para>
+</listitem><listitem><para>number letters are consideed numbers</para>
+</listitem><listitem><para>connectors, dashes, are considered solo characters</para>
+</listitem><listitem><para>YAP does currently distinguish opening and closing quotes</para>
+</listitem><listitem><para>Symbols are processed as Prolog symbols, exception are modifiers that are handled as lower-case letters</para>
+</listitem></itemizedlist>
+</para>
+<para>Predicates are:</para>
+<para><itemizedlist>
+<listitem><para>@ref char_type/2</para>
+</listitem><listitem><para>@ref code_type/2</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

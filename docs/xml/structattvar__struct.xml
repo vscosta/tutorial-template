@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structattvar__struct" kind="struct" language="C++" prot="public">
+    <compoundname>attvar_struct</compoundname>
+    <includes refid="attvar_8h" local="no">attvar.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structattvar__struct_1ade2ae966f10a14681fbecf7050ec83cb" prot="public" static="no" mutable="no">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor AttFunc</definition>
+        <argsstring></argsstring>
+        <name>AttFunc</name>
+        <qualifiedname>attvar_struct::AttFunc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/attvar.h" line="50" column="13" bodyfile="/home/vsc/github/yap/H/attvar.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structattvar__struct_1a9fe87f4d898f4cc16c325ef5820dc3ce" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term Done</definition>
+        <argsstring></argsstring>
+        <name>Done</name>
+        <qualifiedname>attvar_struct::Done</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/attvar.h" line="51" column="10" bodyfile="/home/vsc/github/yap/H/attvar.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structattvar__struct_1a80cdcc19444bd759efbc196225b6b377" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term Future</definition>
+        <argsstring></argsstring>
+        <name>Future</name>
+        <qualifiedname>attvar_struct::Future</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/attvar.h" line="52" column="10" bodyfile="/home/vsc/github/yap/H/attvar.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structattvar__struct_1ae14772224b16fc764c81c56aa7ab4f5b" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term Atts</definition>
+        <argsstring></argsstring>
+        <name>Atts</name>
+        <qualifiedname>attvar_struct::Atts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/attvar.h" line="53" column="10" bodyfile="/home/vsc/github/yap/H/attvar.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attributed variales are controlled by the attvar_record. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This includes three pieces of information: A pointer to the list of attributes; The value for the variable, if the variable was bound Whether we are done with this variable as an attributed variable An array of NUM_OF_ATTS attributes</para>
+<para>Each attribute contains;</para>
+<para>o a time stamp; o the current value ([] if unbound) </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>AtomEntryStruct</label>
+        <link refid="structAtomEntryStruct"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>NextOfAE</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>PropsOfAE</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>blob</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FunctorEntryStruct</label>
+        <link refid="structFunctorEntryStruct"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+          <edgelabel>PropsOfFE</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>NameOfFE</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PropEntryStruct</label>
+        <link refid="structPropEntryStruct"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>atom_blob</label>
+        <link refid="structatom__blob"/>
+      </node>
+      <node id="1">
+        <label>attvar_struct</label>
+        <link refid="structattvar__struct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>AttFunc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/H/attvar.h" line="49" column="1" bodyfile="/home/vsc/github/yap/H/attvar.h" bodystart="49" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structattvar__struct_1ade2ae966f10a14681fbecf7050ec83cb" prot="public" virt="non-virtual"><scope>attvar_struct</scope><name>AttFunc</name></member>
+      <member refid="structattvar__struct_1ae14772224b16fc764c81c56aa7ab4f5b" prot="public" virt="non-virtual"><scope>attvar_struct</scope><name>Atts</name></member>
+      <member refid="structattvar__struct_1a9fe87f4d898f4cc16c325ef5820dc3ce" prot="public" virt="non-virtual"><scope>attvar_struct</scope><name>Done</name></member>
+      <member refid="structattvar__struct_1a80cdcc19444bd759efbc196225b6b377" prot="public" virt="non-virtual"><scope>attvar_struct</scope><name>Future</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

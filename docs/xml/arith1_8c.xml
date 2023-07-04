@@ -1,0 +1,696 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="arith1_8c" kind="file" language="C++">
+    <compoundname>arith1.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapEval_8h" local="yes">YapEval.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/arith1.c</label>
+        <link refid="arith1_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structinit__un__eval" prot="public">init_un_eval</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="arith1_8c_1a4588667b36932816752e872cfc930cbb" prot="public" static="no">
+        <name>RBIG_FL</name>
+        <param><defname>v</defname></param>
+        <initializer>return(float_to_int(v PASS_REGS))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="264" column="9" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arith1_8c_1a13984f1f6cf5a3b9ea3165e157edfcc8" prot="public" static="no">
+        <name>asinh</name>
+        <param><defname>F</defname></param>
+        <initializer>(log((F)+sqrt((F)*(F)+1)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="281" column="9" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arith1_8c_1a90f1e4321eed2eeb3d47ac77aa9230a2" prot="public" static="no">
+        <name>acosh</name>
+        <param><defname>F</defname></param>
+        <initializer>(log((F)+sqrt((F)*(F)-1)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="284" column="9" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arith1_8c_1ab78964b28af92f57d02b9da9f31d56b8" prot="public" static="no">
+        <name>atanh</name>
+        <param><defname>F</defname></param>
+        <initializer>(log((1+(F))/(1-(F)))/2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="287" column="9" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="arith1_8c_1a31c4366f88c1050e8167804b98bb9d9b" prot="public" static="no">
+        <type>struct <ref refid="structinit__un__eval" kindref="compound">init_un_eval</ref></type>
+        <definition>typedef struct init_un_eval InitUnEntry</definition>
+        <argsstring></argsstring>
+        <name>InitUnEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="269" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="arith1_8c_1ad45a7fd14b2442ec4c9bd9e2f0dc141f" prot="public" static="yes" mutable="no">
+        <type><ref refid="structinit__un__eval" kindref="compound">InitUnEntry</ref></type>
+        <definition>InitUnEntry InitUnTab[]</definition>
+        <argsstring>[]</argsstring>
+        <name>InitUnTab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="922" column="20" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="922" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="arith1_8c_1a1002a5fec24a7d716b717d37a0edf341" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term float_to_int</definition>
+        <argsstring>(Float v USES_REGS)</argsstring>
+        <name>float_to_int</name>
+        <param>
+          <type>Float v</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="236" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="236" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1aac9b9ad167c9d24597eac2367c5ffadd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>static Float get_float</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>get_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="292" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="292" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1a79e37122225579cd1df287df51c038b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double my_rint</definition>
+        <argsstring>(double x)</argsstring>
+        <name>my_rint</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="313" column="8" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="313" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1aaee312440450d55810ec0d4b24390d23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int msb</definition>
+        <argsstring>(Int inp USES_REGS)</argsstring>
+        <name>msb</name>
+        <param>
+          <type>Int inp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="336" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="336" bodyend="363"/>
+      </memberdef>
+      <member refid="group__Arithmetic_1ga1e8dd1e2720d03599634ae132975a1f7" kind="function"><name>Yap_msb</name></member>
+      <memberdef kind="function" id="arith1_8c_1a2580222c56aed21f352e632a3e7b6beb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int lsb</definition>
+        <argsstring>(Int inp USES_REGS)</argsstring>
+        <name>lsb</name>
+        <param>
+          <type>Int inp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="373" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="373" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1a11b1a4955a2c3c129ce88aae4e23035b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int popcount</definition>
+        <argsstring>(Int inp USES_REGS)</argsstring>
+        <name>popcount</name>
+        <param>
+          <type>Int inp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="397" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="397" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1adf0b67ac22d72a4c110cf205919bda01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term eval1</definition>
+        <argsstring>(Int fi, Term t USES_REGS)</argsstring>
+        <name>eval1</name>
+        <param>
+          <type>Int</type>
+          <declname>fi</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>end of switch</para>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="417" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="417" bodyend="914"/>
+      </memberdef>
+      <member refid="group__Arithmetic_1gae413223f72a2b73acdc99952aa555ea6" kind="function"><name>Yap_eval_unary</name></member>
+      <memberdef kind="function" id="arith1_8c_1ab35169b8b29a287340227f4049da44fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_NameOfUnOp</definition>
+        <argsstring>(int i)</argsstring>
+        <name>Yap_NameOfUnOp</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="964" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="964" bodyend="967"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1a192144cf509c272f524e2a0ad59b6e88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_unary_is</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_unary_is</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="970" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="970" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1ab5d7d35cf311ca1997651692fdfad3db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_unary_op_as_integer</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_unary_op_as_integer</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="1020" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="1020" bodyend="1041"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1a9d78a444cfeeeae7f456c136dc92859d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int current_evaluable_property_1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>current_evaluable_property_1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="1043" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="1043" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="arith1_8c_1a43aa7cf03171f18ed43d1781b88973cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_evaluable_property_1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_evaluable_property_1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/arith1.c" line="1054" column="1" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="1054" bodyend="1064"/>
+      </memberdef>
+      <member refid="group__Arithmetic_1gae3c7b15ed7c6daacad0ce1ff1197b477" kind="function"><name>Yap_InitUnaryExps</name></member>
+      <member refid="group__Arithmetic_1ga807ffa2dac199d049902fc491f42b31e" kind="function"><name>Yap_ReInitUnaryExps</name></member>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/arith1.c"/>
+  </compounddef>
+</doxygen>

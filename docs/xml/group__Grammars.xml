@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Grammars" kind="group">
+    <compoundname>Grammars</compoundname>
+    <title>Grammar Rules</title>
+    <innerclass refid="classop" prot="private">op</innerclass>
+    <innerclass refid="classphrase_22" prot="public">phrase/2</innerclass>
+    <innerclass refid="classphrase_23" prot="public">phrase/3</innerclass>
+    <briefdescription>
+<para>Grammar rules in Prolog are both a convenient way to express definite clause grammars and an extension of the well known context-free grammars. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A grammar rule is of the form:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">--&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight></codeline>
+</programlisting> where both <emphasis>head</emphasis> and <emphasis>body</emphasis> are sequences of one or more items linked by the standard conjunction operator <computeroutput>,</computeroutput></para>
+<para><emphasis>Items can be:</emphasis></para>
+<para><itemizedlist>
+<listitem><para>a <emphasis>non-terminal</emphasis> symbol may be either a complex term or an atom</para>
+</listitem><listitem><para>a <emphasis>terminal</emphasis> symbol may be any Prolog symbol Terminals are written as Prolog lists</para>
+</listitem><listitem><para>an <emphasis>empty body</emphasis> is written as the empty list <computeroutput>[ ]</computeroutput></para>
+</listitem><listitem><para><emphasis>extra conditions</emphasis> may be inserted as Prolog procedure calls, by being written inside curly brackets <computeroutput>{</computeroutput> and <computeroutput>}</computeroutput></para>
+</listitem><listitem><para>the left side of a rule consists of a nonterminal and an optional list of terminals</para>
+</listitem><listitem><para>alternatives may be stated in the right-hand side of the rule by using the disjunction operator <computeroutput>;</computeroutput></para>
+</listitem><listitem><para>the <emphasis>cut</emphasis> and <emphasis>conditional</emphasis> symbol (<computeroutput>-&gt;</computeroutput>) may be inserted in the right hand side of a grammar rule</para>
+</listitem></itemizedlist>
+</para>
+<para>Grammar related built-in predicates:</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classopen_23" kind="class" language="Prolog" prot="public">
+    <compoundname>open/3</compoundname>
+    <briefdescription>
+<para><bold>open</bold>(+ <emphasis>F</emphasis>,+ <emphasis>M</emphasis>,- <emphasis>S</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>Opens the file with name <emphasis>F</emphasis> in mode <emphasis>M</emphasis> (<computeroutput>read</computeroutput>, <computeroutput>write</computeroutput> or <computeroutput>append</computeroutput>), returning <emphasis>S</emphasis> unified with the stream name</para>
+<para>Yap allows 64 streams opened at the same time If you need more, redefine the MaxStreams constant Each stream is either an input or an output stream but not both There are always 3 open streams: user_input for reading, user_output for writing and user_error for writing If there is no ambiguity, the atoms user_input and user_output may be referred to as <computeroutput>user</computeroutput></para>
+<para>The <computeroutput>file_errors</computeroutput> flag controls whether errors are reported when in mode <computeroutput>read</computeroutput> or <computeroutput>append</computeroutput> the file <emphasis>F</emphasis> does not exist or is not readable, and whether in mode <computeroutput>write</computeroutput> or <computeroutput>append</computeroutput> the file is not writable </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/iopreds.c" line="1623" column="1" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1623" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

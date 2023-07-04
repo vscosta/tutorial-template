@@ -1,0 +1,1948 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="H_2cp__absmi__insts_8h" kind="file" language="C++">
+    <compoundname>cp_absmi_insts.h</compoundname>
+    <includedby refid="H_2absmi__insts_8h" local="yes">/home/vsc/github/yap/H/absmi_insts.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/H/absmi_insts.h</label>
+        <link refid="H_2absmi__insts_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/cp_absmi_insts.h</label>
+        <link refid="H_2cp__absmi__insts_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a9d3d9048db16a7eee539e93e3618cbe7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <initializer>= B_YREG</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="27" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1afd2db336f4f7628a3ad7f63a4860490f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>PREG</definition>
+        <argsstring></argsstring>
+        <name>PREG</name>
+        <initializer>= NEXTOP(PREG, Otapl)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="31" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1ac0ca150b0e000602a104bc1ca56005e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pt</definition>
+        <argsstring></argsstring>
+        <name>pt</name>
+        <initializer>= Yap_ExoLookup(PredFromDefCode(PREG) PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="93" column="9" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a18cfff6b0a33c97c6019607a3772442b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>S_YREG</definition>
+        <argsstring>[-1]</argsstring>
+        <name>S_YREG</name>
+        <initializer>=
+            (CELL)LINK_TO_ADDRESS(i, i-&gt;links[EXO_ADDRESS_TO_OFFSET(i, SREG)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="114" column="9" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a475f49832bfb29a72eb688372fd417f0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>SREG</definition>
+        <argsstring></argsstring>
+        <name>SREG</name>
+        <initializer>= i-&gt;cls</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="206" column="9" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a55f8a11b19453c601122854717a86085" prot="public" static="no" mutable="no">
+        <type>BITS32</type>
+        <definition>BITS32 offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <initializer>=
+            ADDRESS_TO_LINK(it, (BITS32 *)((CELL *)(B + 1))[it-&gt;arity])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="236" column="16" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a054c93926d49fd3fe2fc1a8f7f8f6b6c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>d0</definition>
+        <argsstring></argsstring>
+        <name>d0</name>
+        <initializer>= it-&gt;links[offset]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="238" column="9" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a0544c3fe466e421738dae463968b70ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+
+
+
+
+
+
+
+
+
+ 
+        {
+          pop_yaam_regs();
+          pop_at_least_one_arg(PREG-&gt;y_u.lp.p-&gt;ArityOfPE);
+
+
+
+ 
+          set_cut(S_YREG, B);
+        }
+      }
+      PREG = NEXTOP(PREG, lp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="254" column="8" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a3f04b853487aa95bee44c0a392753f2f" prot="public" static="no" mutable="no">
+        <type>CELL *</type>
+        <definition>CELL* extras</definition>
+        <argsstring></argsstring>
+        <name>extras</name>
+        <initializer>= (CELL *)(B + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="397" column="14" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1ac21dc24d8a26220dada14d2f58704f20" prot="public" static="no" mutable="no">
+        <type>PREG y_u p p StatisticsForPred</type>
+        <definition>PREG y_u p p StatisticsForPred NOfEntries</definition>
+        <argsstring></argsstring>
+        <name>NOfEntries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="449" column="33" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a336627c5fcfa5e1b788201fde988b812" prot="public" static="no" mutable="no">
+        <type>PREG y_u p p StatisticsForPred</type>
+        <definition>PredEntry* PREG y_u Otapl p StatisticsForPred NOfRetries</definition>
+        <argsstring></argsstring>
+        <name>NOfRetries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="458" column="33" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a031711df3669483519933b707ec7d084" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>LOCAL_ReductionsCounter</definition>
+        <argsstring></argsstring>
+        <name>LOCAL_ReductionsCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="527" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a3f623b11101720b73cfe7ec77329f5ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>LOCAL_PredEntriesCounter</definition>
+        <argsstring></argsstring>
+        <name>LOCAL_PredEntriesCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="534" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a8541e4a8012c291caf6fd7b73050ff49" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>LOCAL_RetriesCounter</definition>
+        <argsstring></argsstring>
+        <name>LOCAL_RetriesCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="550" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1ac6c7665a63571c6025f66249aba96c53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>d1</definition>
+        <argsstring></argsstring>
+        <name>d1</name>
+        <initializer>= PREG-&gt;y_u.Otapl.s</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="733" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1abc1961624bb20db2de008eee77001faa" prot="public" static="no" mutable="no">
+        <type>register CELL</type>
+        <definition>register CELL x1</definition>
+        <argsstring></argsstring>
+        <name>x1</name>
+        <initializer>= ARG1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="849" column="23" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1ae935e04076907f4e5d76f34d3bf390da" prot="public" static="no" mutable="no">
+        <type>B_YREG</type>
+        <definition>B_YREG cp_a1</definition>
+        <argsstring></argsstring>
+        <name>cp_a1</name>
+        <initializer>= x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="852" column="15" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a4ed07494eaaae99e6c761ba8bf5e2cf0" prot="public" static="no" mutable="no">
+        <type>B_YREG</type>
+        <definition>B_YREG cp_a2</definition>
+        <argsstring></argsstring>
+        <name>cp_a2</name>
+        <initializer>= x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="853" column="15" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a4bc9942c4af2df9bf9ebd6371a651466" prot="public" static="no" mutable="no">
+        <type>B_YREG</type>
+        <definition>B_YREG cp_a3</definition>
+        <argsstring></argsstring>
+        <name>cp_a3</name>
+        <initializer>= ARG3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="874" column="15" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a7211215dafe22a3886b58b1604482dff" prot="public" static="no" mutable="no">
+        <type>B_YREG</type>
+        <definition>B_YREG cp_a4</definition>
+        <argsstring></argsstring>
+        <name>cp_a4</name>
+        <initializer>= ARG4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="896" column="15" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1ab55792c0ab314a9c5666ed1c5acd3351" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ARG1</definition>
+        <argsstring></argsstring>
+        <name>ARG1</name>
+        <initializer>= B_YREG-&gt;cp_a1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="929" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="929" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1ac3db6978cc673cecceef48460cf03cfb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ARG2</definition>
+        <argsstring></argsstring>
+        <name>ARG2</name>
+        <initializer>= B_YREG-&gt;cp_a2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="930" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="930" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a7da175effee033e0ae55587a7e3d1c97" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ARG3</definition>
+        <argsstring></argsstring>
+        <name>ARG3</name>
+        <initializer>= B_YREG-&gt;cp_a3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="948" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="948" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a9151ad6e810f3e1b37eefb2d76d7a04b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ARG4</definition>
+        <argsstring></argsstring>
+        <name>ARG4</name>
+        <initializer>= B_YREG-&gt;cp_a4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="967" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="967" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="H_2cp__absmi__insts_8h_1a412f783e889f4408be7c0868a1062368" prot="public" static="no" mutable="no">
+        <type>B</type>
+        <definition>B cp_ap</definition>
+        <argsstring></argsstring>
+        <name>cp_ap</name>
+        <initializer>= NEXTOP(PREG, l)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="1006" column="8" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a58f40235c18c44548cb00a3991575e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(try_me, Otapl)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>try_me</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="11" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="11" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a3f39e4e0882d23099385c5dd395430f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>check_trail</definition>
+        <argsstring>(TR)</argsstring>
+        <name>check_trail</name>
+        <param>
+          <type>TR</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="13" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="13" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a29409dac094ca0ca909fc75347320e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CACHE_Y</definition>
+        <argsstring>(YREG)</argsstring>
+        <name>CACHE_Y</name>
+        <param>
+          <type>YREG</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="17" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="17" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a1cce58d327086b3d8e746f26796189dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_at_least_one_arg</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.s)</argsstring>
+        <name>store_at_least_one_arg</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="19" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="19" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ab957f8f6632972f288ef4910635e9476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_yaam_regs</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.d, 0)</argsstring>
+        <name>store_yaam_regs</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="21" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="21" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a739a2cdee22f41e36828a4741fa451ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>set_cut</definition>
+        <argsstring>(S_YREG, B)</argsstring>
+        <name>set_cut</name>
+        <param>
+          <type>S_YREG</type>
+        </param>
+        <param>
+          <type>B</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="25" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="25" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a5789ee75b30cfaa67872c72f43ad4918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SET_BB</definition>
+        <argsstring>(B_YREG)</argsstring>
+        <name>SET_BB</name>
+        <param>
+          <type>B_YREG</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="32" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="32" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a1ea66cb52c7126af517243b967ef86aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENDCACHE_Y</definition>
+        <argsstring>()</argsstring>
+        <name>ENDCACHE_Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="33" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="33" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a4757fa62bb09471be59757b75e0e4324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GONext</definition>
+        <argsstring>()</argsstring>
+        <name>GONext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="34" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="34" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aeaca7f6eba00c296d764e21b6d08a069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENDOp</definition>
+        <argsstring>()</argsstring>
+        <name>ENDOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="35" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="35" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a4e0e3db980e096a316c8a9223cc9e315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(retry_me, Otapl)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>retry_me</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="38" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="38" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a8f3c05afbeb115361955f73eae9b6775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CACHE_Y</definition>
+        <argsstring>(B)</argsstring>
+        <name>CACHE_Y</name>
+        <param>
+          <type>B</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="39" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="39" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1add528a78b24a34908fb002c207e1f269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restore_yaam_regs</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.d)</argsstring>
+        <name>restore_yaam_regs</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="42" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="42" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ae0d22f9561c53d33582bf49ddc54c234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restore_at_least_one_arg</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.s)</argsstring>
+        <name>restore_at_least_one_arg</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="43" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="43" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ab3e460784a63213b9de39a5e24896b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>set_cut</definition>
+        <argsstring>(S_YREG, B_YREG-&gt;cp_b)</argsstring>
+        <name>set_cut</name>
+        <param>
+          <type>S_YREG</type>
+        </param>
+        <param>
+          <type>B_YREG-&gt;</type>
+          <declname>cp_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="48" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="48" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aac7abfa27120c59f58e7641dc5caa5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(trust_me, Otapl)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>trust_me</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="57" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="57" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a5792218a4af66ef7baf85f0ef2a31a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pop_at_least_one_arg</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.s)</argsstring>
+        <name>pop_at_least_one_arg</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="71" column="9" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="71" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a1f6de156f10026845bfc5c692beae3c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(enter_exo, e)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>enter_exo</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="89" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="89" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a3c849c05e593682594d42a2fb4fa7677" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>saveregs</definition>
+        <argsstring>()</argsstring>
+        <name>saveregs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="92" column="9" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="92" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a11204e50175caee7f63f0c1de6fb02f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>setregs</definition>
+        <argsstring>()</argsstring>
+        <name>setregs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="94" column="9" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="94" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a3e1c2673b529bcdcb0b4bdd3f9a2f7cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JMPNext</definition>
+        <argsstring>()</argsstring>
+        <name>JMPNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="100" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="100" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a0a7bcc46c3c8bd9ba8f42e32bf4bfb16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENDBOp</definition>
+        <argsstring>()</argsstring>
+        <name>ENDBOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="101" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="101" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a6bea6403c5314ac5fbf191bb6138e075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(try_exo, lp)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>try_exo</type>
+        </param>
+        <param>
+          <type>lp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="105" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="105" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a24bd9c59d3d1c2472ecf89ce247dde65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_at_least_one_arg</definition>
+        <argsstring>(PREG-&gt;y_u.lp.p-&gt;ArityOfPE)</argsstring>
+        <name>store_at_least_one_arg</name>
+        <param>
+          <type>PREG-&gt;y_u.lp.p-&gt;</type>
+          <declname>ArityOfPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="119" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="119" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a4766d2ffea4f2dc6083eb21e12b2191e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_yaam_regs</definition>
+        <argsstring>(NEXTOP(PREG, lp), 0)</argsstring>
+        <name>store_yaam_regs</name>
+        <param>
+          <type>NEXTOP(PREG, lp)</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="121" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="121" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ae41d527f5792ee563608697e7f24d833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(try_exo_udi, lp)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>try_exo_udi</type>
+        </param>
+        <param>
+          <type>lp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="139" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="139" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a1c2f0868da5ec2563924370d7b6b0500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(try_udi, p)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>try_udi</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="167" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="167" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ae0491bc5e9b65503e8107e9a924ee4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(try_all_exo, lp)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>try_all_exo</type>
+        </param>
+        <param>
+          <type>lp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="197" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="197" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a8abb91e2c371dfc434227c85e4253000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(retry_exo, lp)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>retry_exo</type>
+        </param>
+        <param>
+          <type>lp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="231" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="231" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a2d69632080da4ea21b2715345b25d9f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BEGD</definition>
+        <argsstring>(d0)</argsstring>
+        <name>BEGD</name>
+        <param>
+          <type>d0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="232" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="232" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ae72435301bcdcd057697e28ef17343df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(d0)</argsstring>
+        <name>if</name>
+        <param>
+          <type>d0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="242" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="242" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1acab86cb4095209832e1721ba1d81e7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENDD</definition>
+        <argsstring>(D0)</argsstring>
+        <name>ENDD</name>
+        <param>
+          <type>D0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="278" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="278" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a04a6fbd125ac3369ab310017de56f5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(retry_exo_udi, lp)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>retry_exo_udi</type>
+        </param>
+        <param>
+          <type>lp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="283" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="283" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a8be17fc0ea7040fef3eddeb4fdf6625b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(retry_udi, p)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>retry_udi</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="336" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="336" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a1d8db6afde5c91a353fd809c4a2ccc24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(retry_all_exo, lp)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>retry_all_exo</type>
+        </param>
+        <param>
+          <type>lp</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="392" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="392" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ad29fbe5cb8de711a5c8cc7628641193a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(enter_profiling, p)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>enter_profiling</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="447" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="447" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a975e3a2640b3adb0419d080280c1ed72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOCK</definition>
+        <argsstring>(PREG-&gt;y_u.p.p-&gt;StatisticsForPred-&gt;lock)</argsstring>
+        <name>LOCK</name>
+        <param>
+          <type>PREG-&gt;y_u.p.p-&gt;StatisticsForPred-&gt;</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="448" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="448" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1abfcd98e516fe873f828653b8c59dc82c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UNLOCK</definition>
+        <argsstring>(PREG-&gt;y_u.p.p-&gt;StatisticsForPred-&gt;lock)</argsstring>
+        <name>UNLOCK</name>
+        <param>
+          <type>PREG-&gt;y_u.p.p-&gt;StatisticsForPred-&gt;</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="450" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="450" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ae1b0d61aeeacdd9c0fe05db5640a4f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(retry_profiled, p)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>retry_profiled</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="456" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="456" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a0e4cd2f0ef00416817397b34b550b872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(profiled_retry_me, Otapl)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>profiled_retry_me</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="465" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="465" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aff6e2b33eb419da1ead2d8ea708b7ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOCK</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.p-&gt;StatisticsForPred-&gt;lock)</argsstring>
+        <name>LOCK</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.p-&gt;StatisticsForPred-&gt;</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="469" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="469" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ac046dee46d775d1437a216e7e1160acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UNLOCK</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.p-&gt;StatisticsForPred-&gt;lock)</argsstring>
+        <name>UNLOCK</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.p-&gt;StatisticsForPred-&gt;</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="471" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="471" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a2b97f16e1ab5b8319576f46ff6cb1c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restore_args</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.s)</argsstring>
+        <name>restore_args</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="473" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="473" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a85e91160e2021fed5cc0530f12ecc33c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(profiled_trust_me, Otapl)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>profiled_trust_me</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="487" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="487" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1adc56a0f8670ff4e71d5ba86af3b5e0bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pop_args</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.s)</argsstring>
+        <name>pop_args</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="501" column="9" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="501" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a9b5ee2dcc80f1afc26589b49e899b99f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(count_call, p)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>count_call</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="523" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="523" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aa61fd6a68935dcde36d5af722f61e6f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(LOCAL_ReductionsCounter==0 &amp;&amp;LOCAL_ReductionsCounterOn)</argsstring>
+        <name>if</name>
+        <param>
+          <type>LOCAL_ReductionsCounter</type>
+          <defval>=0 &amp;&amp;LOCAL_ReductionsCounterOn</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="528" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="528" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a4d75456c9702d2671c3d5242bd2244f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(LOCAL_PredEntriesCounter==0 &amp;&amp;LOCAL_PredEntriesCounterOn)</argsstring>
+        <name>if</name>
+        <param>
+          <type>LOCAL_PredEntriesCounter</type>
+          <defval>=0 &amp;&amp;LOCAL_PredEntriesCounterOn</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="535" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="535" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a7152ee84ae59e52790ab3966cf76fbb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(count_retry, p)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>count_retry</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="546" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="546" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a7bbeef8f58efd9f156283b2d53de6988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(LOCAL_RetriesCounter==0 &amp;&amp;LOCAL_RetriesCounterOn)</argsstring>
+        <name>if</name>
+        <param>
+          <type>LOCAL_RetriesCounter</type>
+          <defval>=0 &amp;&amp;LOCAL_RetriesCounterOn</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="551" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="551" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aa83794a0479759cc6d213ec2a8d817be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(count_retry_me, Otapl)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>count_retry_me</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="572" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="572" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aad64683bd72e0e3d37e0b7a6bcafac07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOCK</definition>
+        <argsstring>(((PredEntry *)(PREG-&gt;y_u.Otapl.p)) -&gt;StatisticsForPred-&gt;lock)</argsstring>
+        <name>LOCK</name>
+        <param>
+          <type>((<ref refid="structpred__entry" kindref="compound">PredEntry</ref> *)(PREG-&gt;y_u.Otapl.p)) -&gt;StatisticsForPred-&gt;</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="586" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="586" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a1d53fdfed120ec49e66b4de2f1b00770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UNLOCK</definition>
+        <argsstring>(((PredEntry *)(PREG-&gt;y_u.Otapl.p)) -&gt;StatisticsForPred-&gt;lock)</argsstring>
+        <name>UNLOCK</name>
+        <param>
+          <type>((<ref refid="structpred__entry" kindref="compound">PredEntry</ref> *)(PREG-&gt;y_u.Otapl.p)) -&gt;StatisticsForPred-&gt;</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="588" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="588" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1ad70804738de60e89954ad7204487ceb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Op</definition>
+        <argsstring>(count_trust_me, Otapl)</argsstring>
+        <name>Op</name>
+        <param>
+          <type>count_trust_me</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="608" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="608" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a74e5a9995306b2730006f93535209e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(ensure_space, Osbpa)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>ensure_space</type>
+        </param>
+        <param>
+          <type>Osbpa</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="658" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="658" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a80cdd905757f4e92264b474c0a51e7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(Unsigned(HR)+sz &gt; Unsigned(YREG) - StackGap(PASS_REGS1))</argsstring>
+        <name>if</name>
+        <param>
+          <type>Unsigned(HR)+</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>Unsigned(YREG) - StackGap(PASS_REGS1)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="662" column="9" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="662" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a54e6ca958eddc02459971491fac385b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(spy_or_trymark, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>spy_or_trymark</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="690" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="690" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a67c820df4627cf7b06f11997c3758586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PELOCK</definition>
+        <argsstring>(5,((PredEntry *)(PREG-&gt;y_u.Otapl.p)))</argsstring>
+        <name>PELOCK</name>
+        <param>
+          <type>5</type>
+        </param>
+        <param>
+          <type>((<ref refid="structpred__entry" kindref="compound">PredEntry</ref> *)(PREG-&gt;y_u.Otapl.p))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="691" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="691" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a8b543cf839a04493870ed6acbbe1a986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UNLOCKPE</definition>
+        <argsstring>(11,(PredEntry *)(PREG-&gt;y_u.Otapl.p))</argsstring>
+        <name>UNLOCKPE</name>
+        <param>
+          <type>11</type>
+        </param>
+        <param>
+          <type>(<ref refid="structpred__entry" kindref="compound">PredEntry</ref> *)(PREG-&gt;y_u.Otapl.p)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="693" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="693" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a6620ef1c4fe3c3797c2585b206067028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>spy_goal</definition>
+        <argsstring>(PASS_REGS1)</argsstring>
+        <name>spy_goal</name>
+        <param>
+          <type>PASS_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="695" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="695" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a41d7bde588fdc6801eaa1a510dce53ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(try_and_mark, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>try_and_mark</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="700" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="700" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aebd1b95f91b4903f14179efb321d4982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOCK</definition>
+        <argsstring>(DynamicLock(PREG))</argsstring>
+        <name>LOCK</name>
+        <param>
+          <type>DynamicLock(PREG)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="729" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="729" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aa49d3e516fbe137f53c41232cdb1529a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UNLOCKPE</definition>
+        <argsstring>(13,((PredEntry *)(PREG-&gt;y_u.Otapl.p)))</argsstring>
+        <name>UNLOCKPE</name>
+        <param>
+          <type>13</type>
+        </param>
+        <param>
+          <type>((<ref refid="structpred__entry" kindref="compound">PredEntry</ref> *)(PREG-&gt;y_u.Otapl.p))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="731" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="731" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a017e30332f510156e1036ccbe46e0171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BEGD</definition>
+        <argsstring>(d1)</argsstring>
+        <name>BEGD</name>
+        <param>
+          <type>d1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="732" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="732" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a7d140fd37b084fd1d3bdfcbe7cda287b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_args</definition>
+        <argsstring>(d1)</argsstring>
+        <name>store_args</name>
+        <param>
+          <type>d1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="734" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="734" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1abb93e7ab3180657111c18b9782cc9015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_yaam_regs</definition>
+        <argsstring>(PREG, 0)</argsstring>
+        <name>store_yaam_regs</name>
+        <param>
+          <type>PREG</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="735" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="735" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1adf3f0904da9357d1ffd80533b4ca0761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENDD</definition>
+        <argsstring>(d1)</argsstring>
+        <name>ENDD</name>
+        <param>
+          <type>d1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="736" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="736" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1add3ee4d6b03cf8f6b336f46673e1a594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(FlagOff(InUseMask, DynamicFlags(PREG)))</argsstring>
+        <name>if</name>
+        <param>
+          <type>FlagOff(InUseMask, DynamicFlags(PREG))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="749" column="7" bodyfile="/home/vsc/github/yap/H/cp_absmi_insts.h" bodystart="749" bodyend="753"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1af730b8b52fcb87d1340e264a938dc5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(count_retry_and_mark, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>count_retry_and_mark</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="760" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="760" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a838cf361eb0a50d9c9ef885ab897932b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(profiled_retry_and_mark, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>profiled_retry_and_mark</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="778" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="778" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1accab1dfbfaf3eab674e5fec9cd3aff51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(retry_and_mark, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>retry_and_mark</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="786" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="786" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a2066217fc5bd0fcef0d08deae4b42e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PELOCK</definition>
+        <argsstring>(7, PREG-&gt;y_u.Otapl.p)</argsstring>
+        <name>PELOCK</name>
+        <param>
+          <type>7</type>
+        </param>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="791" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="791" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a6133710ce1222fa0fa684a543792d066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UNLOCK</definition>
+        <argsstring>(PREG-&gt;y_u.Otapl.p-&gt;PELock)</argsstring>
+        <name>UNLOCK</name>
+        <param>
+          <type>PREG-&gt;y_u.Otapl.p-&gt;</type>
+          <declname>PELock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="795" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="795" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a743911897a2ca89b94c2ad7c9112d2b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restore_yaam_regs</definition>
+        <argsstring>(PREG)</argsstring>
+        <name>restore_yaam_regs</name>
+        <param>
+          <type>PREG</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="796" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="796" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aa37aab48682a3fa21e1a47ce6233061b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(try_clause, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>try_clause</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="826" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="826" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aa4a9480f4bf62bc6d139c55db4f2774e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_yaam_regs</definition>
+        <argsstring>(NEXTOP(PREG, Otapl), 0)</argsstring>
+        <name>store_yaam_regs</name>
+        <param>
+          <type>NEXTOP(PREG, Otapl)</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="831" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="831" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a974375b47f9dcaef799725dc00e62ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(try_clause2, l)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>try_clause2</type>
+        </param>
+        <param>
+          <type>l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="843" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="843" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a049933a66859fc98f8a15396510203e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_yaam_regs</definition>
+        <argsstring>(NEXTOP(PREG, l), 2)</argsstring>
+        <name>store_yaam_regs</name>
+        <param>
+          <type>NEXTOP(PREG, l)</type>
+        </param>
+        <param>
+          <type>2</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="851" column="9" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="851" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a4a043e47afd7ce5a04355cb5a34f0b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(try_clause3, l)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>try_clause3</type>
+        </param>
+        <param>
+          <type>l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="866" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="866" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a341d39f51bc01cb7df04e61383b5940b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(try_clause4, l)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>try_clause4</type>
+        </param>
+        <param>
+          <type>l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="887" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="887" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aafe27c8816be59505e8495993aaf83d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(retry, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>retry</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="909" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="909" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a359c82f933766d3bda50f82309e80ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restore_yaam_regs</definition>
+        <argsstring>(NEXTOP(PREG, Otapl))</argsstring>
+        <name>restore_yaam_regs</name>
+        <param>
+          <type>NEXTOP(PREG, Otapl)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="911" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="911" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a0e6ab219ddba24800afacc1ecfe48c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(retry2, l)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>retry2</type>
+        </param>
+        <param>
+          <type>l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="925" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="925" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1af27d71887a6a086ab9ae5d66d85624b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restore_yaam_regs</definition>
+        <argsstring>(NEXTOP(PREG, l))</argsstring>
+        <name>restore_yaam_regs</name>
+        <param>
+          <type>NEXTOP(PREG, l)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="927" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="927" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a989a8dda07e1532bd15e5d4144ba2bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(retry3, l)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>retry3</type>
+        </param>
+        <param>
+          <type>l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="942" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="942" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a1068cb193a395ede6242ff6161563a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(retry4, l)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>retry4</type>
+        </param>
+        <param>
+          <type>l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="960" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="960" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1aed20f750077cf52f2e6f2028c3f67f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trust, Otapl)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trust</type>
+        </param>
+        <param>
+          <type>Otapl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="979" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="979" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="H_2cp__absmi__insts_8h_1a8d831398dd527e9e1bc61f92789e2c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(try_in, l)</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>try_in</type>
+        </param>
+        <param>
+          <type>l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cp_absmi_insts.h" line="1005" column="7" declfile="/home/vsc/github/yap/H/cp_absmi_insts.h" declline="1005" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/cp_absmi_insts.h"/>
+  </compounddef>
+</doxygen>

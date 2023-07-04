@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classset__value_22" kind="class" language="Prolog" prot="public">
+    <compoundname>set_value/2</compoundname>
+    <briefdescription>
+<para><bold>set_value</bold>(+ <emphasis>A</emphasis>,+ <emphasis>C</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Associate atom <emphasis>A</emphasis> with constant <emphasis>C</emphasis></para>
+<para>The <computeroutput>set_value</computeroutput> and <computeroutput>get_value</computeroutput> built-ins give a fast alternative to the internal data-base This is a simple form of implementing a global counter</para>
+<para><programlisting><codeline><highlight class="normal">read_and_increment_counter(Value)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal">get_value(counter,<sp/>Value),</highlight></codeline>
+<codeline><highlight class="normal">Value1<sp/>is<sp/>Value+1,</highlight></codeline>
+<codeline><highlight class="normal">set_value(counter,<sp/>Value1).</highlight></codeline>
+</programlisting> This predicate is YAP specific </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/stdpreds.c" line="218" column="1" bodyfile="/home/vsc/github/yap/C/stdpreds.c" bodystart="218" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

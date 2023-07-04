@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptfile__search__path_22" kind="concept">
+    <compoundname>file_search_path/2</compoundname>
+    <initializer>template&lt;&gt;
+concept file_search_path/2 =     </initializer>
+    <briefdescription>
+<para><bold>file_search_path</bold>(+Name:atom, -Directory:atom) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: nondeterministic</para>
+<para>Allows writing file names as compound terms The <emphasis>Name</emphasis> and <emphasis>DIRECTORY</emphasis> must be atoms The predicate may generate multiple solutions The predicate is originally defined as follows:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(library,<sp/></highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">library_directory(</highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(commons,<sp/></highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">commons_directory(</highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(swi,<sp/></highlight><highlight class="charliteral">Home</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">current_prolog_flag(home,<sp/></highlight><highlight class="charliteral">Home</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(yap,<sp/></highlight><highlight class="charliteral">Home</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">current_prolog_flag(home,<sp/></highlight><highlight class="charliteral">Home</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(system,<sp/></highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">prolog_flag(host_type,<sp/></highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(foreign,<sp/></highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">foreign_directory(</highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(executable,<sp/></highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">foreign_directory(</highlight><highlight class="charliteral">Dir</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_search_path(path,<sp/></highlight><highlight class="charliteral">C</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">getenv(</highlight><highlight class="stringliteral">&apos;PATH&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">current_prolog_flag(windows,<sp/>true)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">-&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">atomic_list_concat(</highlight><highlight class="charliteral">B</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">atomic_list_concat(</highlight><highlight class="charliteral">B</highlight><highlight class="normal">,<sp/>:,<sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">&apos;$member&apos;(</highlight><highlight class="charliteral">C</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">B</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Thus, <computeroutput>compile(library(A))</computeroutput> will search for a file using <ref refid="classlibrary__directory_21" kindref="compound">library_directory/1</ref> to obtain the prefix, whereas &apos;compile(system(A))<computeroutput>would look at the</computeroutput>host_type` flag </para>
+    </detaileddescription>
+    <location file="pl/pathconf.yap" line="2" column="1"/>
+  </compounddef>
+</doxygen>

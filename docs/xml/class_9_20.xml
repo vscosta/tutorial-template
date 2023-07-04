@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_9_20" kind="class" language="Prolog" prot="private">
+    <compoundname>!/0</compoundname>
+    <briefdescription>
+<para><bold>!</bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>Read as &quot;cut&quot; Cuts any choices taken in the current procedure When first found &quot;cut&quot; succeeds as a goal, but if backtracking should later return to it, the parent goal (the one which matches the head of the clause containing the &quot;cut&quot;, causing the clause activation) will fail This is an extra-logical predicate and cannot be explained in terms of the declarative semantics of Prolog</para>
+<para>example:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">member(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,[</highlight><highlight class="charliteral">X</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">_</highlight><highlight class="normal">]).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">member(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,[</highlight><highlight class="charliteral">_</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">L</highlight><highlight class="normal">])<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">member(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">L</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>With the above definition</para>
+<para><programlisting><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">member(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,[</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">3</highlight><highlight class="normal">])</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>will return each element of the list by backtracking With the following definition:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">member(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,[</highlight><highlight class="charliteral">X</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">_</highlight><highlight class="normal">])<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">member.</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">member(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,[</highlight><highlight class="charliteral">_</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">L</highlight><highlight class="normal">])<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">member(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">L</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>the same query would return only the first element of the list, since backtracking could not &quot;pass through&quot; the cut </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/builtins.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/builtins.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

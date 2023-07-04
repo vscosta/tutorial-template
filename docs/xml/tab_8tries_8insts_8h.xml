@@ -1,0 +1,2355 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tab_8tries_8insts_8h" kind="file" language="C++">
+    <compoundname>tab.tries.insts.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a5d3f565fadaf9163c30d1c4ca4fe7f3f" prot="public" static="no">
+        <name>TOP_STACK</name>
+        <initializer>YENV</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="50" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1ae05428c1404841c8c8f785ca3751dc3c" prot="public" static="no">
+        <name>HEAP_ARITY_ENTRY</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="52" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1aa68560df27df27d2b3900e5307af614a" prot="public" static="no">
+        <name>VARS_ARITY_ENTRY</name>
+        <initializer>(1 + heap_arity)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="53" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a82c6b8bb7bd4123c3ffa56bf6ec83298" prot="public" static="no">
+        <name>SUBS_ARITY_ENTRY</name>
+        <initializer>(1 + heap_arity + 1 + vars_arity)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="54" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1ae60be0c534da64835f39b9ece18fde82" prot="public" static="no">
+        <name>HEAP_ENTRY</name>
+        <param><defname>INDEX</defname></param>
+        <initializer>(HEAP_ARITY_ENTRY + (INDEX))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="58" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a042d834e22a5aa0668f9adb60bb94730" prot="public" static="no">
+        <name>VARS_ENTRY</name>
+        <param><defname>INDEX</defname></param>
+        <initializer>(VARS_ARITY_ENTRY + 1 + vars_arity - (INDEX))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="59" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a52d33363ea16402ef5e69b89fd5df93e" prot="public" static="no">
+        <name>SUBS_ENTRY</name>
+        <param><defname>INDEX</defname></param>
+        <initializer>(SUBS_ARITY_ENTRY + 1 + subs_arity - (INDEX))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="60" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a20c050eb01306003f3c71eb68203ff98" prot="public" static="no">
+        <name>next_trie_instruction</name>
+        <param><defname>NODE</defname></param>
+        <initializer>        PREG = (<ref refid="structyami" kindref="compound">yamop</ref> *) TrNode_child(NODE);                            \
+        PREFETCH_OP(PREG);                                              \
+        GONext()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="62" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a9a76ebaef5f40e0abe1e9541238c8c0f" prot="public" static="no">
+        <name>next_instruction</name>
+        <param><defname>CONDITION</defname></param>
+        <param><defname>NODE</defname></param>
+        <initializer>        if (CONDITION) {                                                \
+          PREG = (<ref refid="structyami" kindref="compound">yamop</ref> *) TrNode_child(NODE);                          \
+        } else {  /* procceed */                                        \
+	  PREG = (<ref refid="structyami" kindref="compound">yamop</ref> *) CPREG;                                       \
+	  TOP_STACK = ENV;                                              \
+        }                                                               \
+        PREFETCH_OP(PREG);                                              \
+        GONext()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="67" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a6c15ff08220186f802dc2ce901fe557c" prot="public" static="no">
+        <name>copy_aux_stack</name>
+        <param></param>
+        <initializer>        { arity_t  size = 3 + heap_arity + subs_arity + vars_arity;          \
+          TOP_STACK -= size;                                            \
+          memcpy(TOP_STACK, aux_stack, size * sizeof(CELL *));          \
+          aux_stack = TOP_STACK;                                        \
+	}/* macros &apos;store_trie_node&apos;, &apos;restore_trie_node&apos; and &apos;pop_trie_node&apos;   **
+** do not include &apos;set_cut&apos; because trie instructions are cut safe     */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="78" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1afe8f0dfbbf12de63830119b0b785604b" prot="public" static="no">
+        <name>store_trie_node</name>
+        <param><defname>AP</defname></param>
+        <initializer>        { register <ref refid="structchoicept" kindref="compound">choiceptr</ref> cp;                                        \
+          TOP_STACK = (CELL *) (NORM_CP(TOP_STACK) - 1);                \
+          cp = NORM_CP(TOP_STACK);                                      \
+          HBREG = HR;                                                    \
+          store_yaam_reg_cpdepth(cp);                                   \
+          cp-&gt;cp_tr = TR;                                               \
+          cp-&gt;cp_h  = HR;						\
+          cp-&gt;cp_b  = B;                                                \
+          cp-&gt;cp_cp = CPREG;                                            \
+          cp-&gt;cp_ap = (<ref refid="structyami" kindref="compound">yamop</ref> *) AP;                                     \
+          cp-&gt;cp_env= ENV;                                              \
+          B = cp;                                                       \
+          YAPOR_SET_LOAD(B);                                            \
+          SET_BB(B);                                                    \
+          TABLING_ERROR_CHECKING_STACK;                                 \
+	}                                                               \
+        copy_aux_stack()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="85" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a922cbf95da56a05f758fe20e196f016c" prot="public" static="no">
+        <name>restore_trie_node</name>
+        <param><defname>AP</defname></param>
+        <initializer>        HR = HBREG = PROTECT_FROZEN_H(B);                                \
+        restore_yaam_reg_cpdepth(B);                                    \
+        CPREG = B-&gt;cp_cp;                                               \
+        ENV = B-&gt;cp_env;                                                \
+        YAPOR_update_alternative(PREG, (<ref refid="structyami" kindref="compound">yamop</ref> *) AP)                    \
+        B-&gt;cp_ap = (<ref refid="structyami" kindref="compound">yamop</ref> *) AP;                                        \
+        TOP_STACK = (CELL *) PROTECT_FROZEN_B(B);                       \
+        SET_BB(NORM_CP(TOP_STACK));                                     \
+        copy_aux_stack()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="104" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a05ba33ef7c4b3dfd7827b7978663db13" prot="public" static="no">
+        <name>really_pop_trie_node</name>
+        <param></param>
+        <initializer>        TOP_STACK = (CELL *) PROTECT_FROZEN_B((B + 1));                 \
+        HR = PROTECT_FROZEN_H(B);                                        \
+        pop_yaam_reg_cpdepth(B);                                        \
+	CPREG = B-&gt;cp_cp;                                               \
+        TABLING_close_alt(B);                                           \
+        ENV = B-&gt;cp_env;                                                \
+	B = B-&gt;cp_b;                                                    \
+        HBREG = PROTECT_FROZEN_H(B);                                    \
+        SET_BB(PROTECT_FROZEN_B(B));                                    \
+        if ((<ref refid="structchoicept" kindref="compound">choiceptr</ref>) TOP_STACK == B_FZ) {                            \
+          copy_aux_stack();                                             \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="115" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a360570bf89d30ab7f4cfceadfd04864e" prot="public" static="no">
+        <name>pop_trie_node</name>
+        <param></param>
+        <initializer>        really_pop_trie_node()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="137" column="10" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="136" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1199" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1aa658caccb5bdb731e2f75ca9a978a2fd" prot="public" static="no">
+        <name>aux_stack_null_instr</name>
+        <param></param>
+        <initializer>        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="147" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="146" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="791" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1ac1eff33463396e6d698d14ec19c97300" prot="public" static="no">
+        <name>aux_stack_extension_instr</name>
+        <param></param>
+        <initializer>        TOP_STACK = &amp;aux_stack[-2];                                     \
+        TOP_STACK[HEAP_ARITY_ENTRY] = heap_arity + 2;                   \
+        TOP_STACK[HEAP_ENTRY(1)] = TrNode_entry(node);                  \
+        TOP_STACK[HEAP_ENTRY(2)] = 0;             /* extension mark */  \
+        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="156" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="155" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1072" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1adf1f18d3971f1611470019dd36d38fec" prot="public" static="no">
+        <name>aux_stack_term_instr</name>
+        <param></param>
+        <initializer>        if (heap_arity) {                                               \
+          Bind_Global((CELL *) aux_stack[HEAP_ENTRY(1)], t);            \
+          TOP_STACK = &amp;aux_stack[1];                                    \
+          TOP_STACK[HEAP_ARITY_ENTRY] = heap_arity - 1;                 \
+          next_instruction(heap_arity - 1 || subs_arity, node);         \
+        } else {                                                        \
+          YapBind((CELL *) aux_stack[SUBS_ENTRY(1)], t);                   \
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          next_instruction(subs_arity - 1, node);                       \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="169" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="168" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1160" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1acdcc05e97f0dd26908e6d8511d32814e" prot="public" static="no">
+        <name>aux_stack_term_in_pair_instr</name>
+        <param></param>
+        <initializer>        if (heap_arity) {                                               \
+          Bind_Global((CELL *) aux_stack[HEAP_ENTRY(1)], AbsPair(HR));   \
+        } else {                                                        \
+          YapBind((CELL *) aux_stack[SUBS_ENTRY(1)], AbsPair(HR));          \
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          TOP_STACK = &amp;aux_stack[-1];                                   \
+          TOP_STACK[HEAP_ARITY_ENTRY] = 1;                              \
+        }                                                               \
+        Bind_Global(HR, TrNode_entry(node));                             \
+        TOP_STACK[HEAP_ENTRY(1)] = (CELL) (HR + 1);                      \
+        HR += 2;                                                         \
+        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="181" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1ab5410e13a4af644eb94522bea6250bf8" prot="public" static="no">
+        <name>aux_stack_new_pair_instr</name>
+        <param></param>
+        <initializer>        /* for term &apos;CompactPairInit&apos; */  \
+        if (heap_arity) {                                               \
+          Bind_Global((CELL *) aux_stack[HEAP_ENTRY(1)], AbsPair(HR));   \
+          TOP_STACK = &amp;aux_stack[-1];                                   \
+          TOP_STACK[HEAP_ARITY_ENTRY] = heap_arity + 1;                 \
+        } else {                                                        \
+          YapBind((CELL *) aux_stack[SUBS_ENTRY(1)], AbsPair(HR));          \
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          TOP_STACK = &amp;aux_stack[-2];                                   \
+          TOP_STACK[HEAP_ARITY_ENTRY] = 2;                              \
+	}                                                               \
+        TOP_STACK[HEAP_ENTRY(1)] = (CELL) HR;                            \
+        TOP_STACK[HEAP_ENTRY(2)] = (CELL) (HR + 1);                      \
+        HR += 2;                                                         \
+        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="201" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a08b306849b43790fc2be8394b6703041" prot="public" static="no">
+        <name>aux_stack_pair_instr</name>
+        <param></param>
+        <initializer>        aux_stack_new_pair_instr()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="232" column="10" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="231" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="901" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a44057c7f2fe6966eb2f98ef122d97f35" prot="public" static="no">
+        <name>aux_stack_appl_instr</name>
+        <param></param>
+        <initializer>        if (heap_arity) {                                               \
+          Bind_Global((CELL *) aux_stack[HEAP_ENTRY(1)], AbsAppl(HR));   \
+          TOP_STACK = &amp;aux_stack[-func_arity + 1];                      \
+          TOP_STACK[HEAP_ARITY_ENTRY] = heap_arity + func_arity - 1;    \
+        } else {                                                        \
+          YapBind((CELL *) aux_stack[SUBS_ENTRY(1)], AbsAppl(HR));          \
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          TOP_STACK = &amp;aux_stack[-func_arity];                          \
+          TOP_STACK[HEAP_ARITY_ENTRY] = func_arity;                     \
+	}                                                               \
+        *HR = (CELL) func;                                               \
+        { arity_t  i;                                                        \
+          for (i = 1; i &lt;= func_arity; i++)	       	                \
+            TOP_STACK[HEAP_ENTRY(i)] = (CELL) (HR + i);                  \
+	}                                                               \
+        HR += 1 + func_arity;                                            \
+        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="242" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="241" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="956" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a3030f2764bdec7cac260f656018aa415" prot="public" static="no">
+        <name>aux_stack_appl_in_pair_instr</name>
+        <param></param>
+        <initializer>        if (heap_arity) {                                               \
+          Bind_Global((CELL *) aux_stack[HEAP_ENTRY(1)], AbsPair(HR));   \
+          TOP_STACK = &amp;aux_stack[-func_arity];                          \
+          TOP_STACK[HEAP_ARITY_ENTRY] = heap_arity + func_arity;        \
+        } else {                                                        \
+          YapBind((CELL *) aux_stack[SUBS_ENTRY(1)], AbsPair(HR));          \
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          TOP_STACK = &amp;aux_stack[-func_arity - 1];                      \
+          TOP_STACK[HEAP_ARITY_ENTRY] = func_arity + 1;                 \
+        }                                                               \
+        TOP_STACK[HEAP_ENTRY(func_arity + 1)] = (CELL) (HR + 1);         \
+        Bind_Global(HR, AbsAppl(HR + 2));                                 \
+        HR += 2;                                                         \
+        *HR = (CELL) func;                                               \
+        { arity_t  i;                                                        \
+          for (i = 1; i &lt;= func_arity; i++)		                \
+            TOP_STACK[HEAP_ENTRY(i)] = (CELL) (HR + i);                  \
+	}                                                               \
+        HR += 1 + func_arity;                                            \
+        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="261" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1ab969912dd41fc9ab20b0bb0a0074c283" prot="public" static="no">
+        <name>aux_stack_var_instr</name>
+        <param></param>
+        <initializer>        if (heap_arity) {                                               \
+          arity_t  i;                                                        \
+          CELL var = aux_stack[HEAP_ENTRY(1)];                          \
+          RESET_VARIABLE(var);                                          \
+          TOP_STACK[HEAP_ARITY_ENTRY] = heap_arity - 1;                 \
+          for (i = 2; i &lt;= heap_arity; i++)                             \
+            TOP_STACK[HEAP_ENTRY(i - 1)] = aux_stack[HEAP_ENTRY(i)];    \
+          aux_stack[VARS_ARITY_ENTRY - 1] = vars_arity + 1;             \
+	  aux_stack[VARS_ENTRY(vars_arity + 1)] = var;                  \
+          next_instruction(heap_arity - 1 || subs_arity, node);         \
+        } else {				                        \
+	  CELL var = aux_stack[SUBS_ENTRY(1)];                          \
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          TOP_STACK = &amp;aux_stack[-1];                                   \
+          TOP_STACK[HEAP_ARITY_ENTRY] = 0;                              \
+          aux_stack[VARS_ARITY_ENTRY - 1] = vars_arity + 1;             \
+          aux_stack[VARS_ENTRY(vars_arity + 1)] = var;                  \
+          next_instruction(subs_arity - 1, node);	                \
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="289" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="288" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="453" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a6a47a55007b0c3f3f9d3a26767b052e6" prot="public" static="no">
+        <name>aux_stack_var_in_pair_instr</name>
+        <param></param>
+        <initializer>        if (heap_arity) {                                               \
+	  arity_t  i;                                                        \
+          Bind_Global((CELL *) aux_stack[HEAP_ENTRY(1)], AbsPair(HR));   \
+          TOP_STACK = &amp;aux_stack[-1];                                   \
+          TOP_STACK[HEAP_ARITY_ENTRY] = heap_arity;                     \
+          TOP_STACK[HEAP_ENTRY(1)] = (CELL) (HR + 1);                    \
+          for (i = 2; i &lt;= heap_arity; i++)                             \
+            TOP_STACK[HEAP_ENTRY(i)] = aux_stack[HEAP_ENTRY(i)];        \
+        } else {                                                        \
+          YapBind((CELL *) aux_stack[SUBS_ENTRY(1)], AbsPair(HR));		\
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          TOP_STACK = &amp;aux_stack[-2];                                   \
+          TOP_STACK[HEAP_ARITY_ENTRY] = 1;                              \
+          TOP_STACK[HEAP_ENTRY(1)] = (CELL) (HR + 1);                    \
+        }                                                               \
+        aux_stack[VARS_ARITY_ENTRY - 1] = vars_arity + 1;               \
+        aux_stack[VARS_ENTRY(vars_arity + 1)] = (CELL) HR;		\
+        RESET_VARIABLE((CELL) HR);                                       \
+        HR += 2;                                                         \
+        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="310" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1ac36b220f44250b582891aafad97abd89" prot="public" static="no">
+        <name>aux_stack_val_instr</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="338" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="337" bodyend="-1" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="567" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="define" id="tab_8tries_8insts_8h_1a2cc7c9f4e63136d7ed1c0cb92e0c37b3" prot="public" static="no">
+        <name>aux_stack_val_in_pair_instr</name>
+        <param></param>
+        <initializer>        if (heap_arity) {                                               \
+          Bind_Global((CELL *) aux_stack[HEAP_ENTRY(1)], AbsPair(HR));   \
+        } else {                                                        \
+          YapBind((CELL *) aux_stack[SUBS_ENTRY(1)], AbsPair(HR));		\
+          aux_stack[SUBS_ARITY_ENTRY] = subs_arity - 1;                 \
+          TOP_STACK = &amp;aux_stack[-1];                                   \
+          TOP_STACK[HEAP_ARITY_ENTRY] = 1;                              \
+	}                                                               \
+        { CELL aux_sub, aux_var;                                        \
+          aux_sub = (CELL) HR;                                          \
+          aux_var = aux_stack[VARS_ENTRY(var_index + 1)];               \
+          if (aux_sub &gt; aux_var) {                                      \
+            Bind_Global((CELL *) aux_sub, aux_var);                     \
+          } else {                                                      \
+            RESET_VARIABLE(aux_sub);                                    \
+	    Bind_Local((CELL *) aux_var, aux_sub);                      \
+            aux_stack[VARS_ENTRY(var_index + 1)] = aux_sub;             \
+          }                                                             \
+        }                                                               \
+        TOP_STACK[HEAP_ENTRY(1)] = (CELL) (HR + 1);                      \
+        HR += 2;                                                         \
+        next_trie_instruction(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="381" column="9" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a86580f0941d58a05befc4a67d9107cfc" prot="public" static="no" mutable="no">
+        <type>register CELL *</type>
+        <definition>register CELL * aux_stack</definition>
+        <argsstring></argsstring>
+        <name>aux_stack</name>
+        <initializer>= TOP_STACK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="412" column="19" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a2c4d74337c42312cfce8ad72cec6fbf9" prot="public" static="no" mutable="no">
+        <type>arity_t</type>
+        <definition>int heap_arity</definition>
+        <argsstring></argsstring>
+        <name>heap_arity</name>
+        <initializer>= aux_stack[HEAP_ARITY_ENTRY]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="413" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a2a703d7eee80af9cbdb23238cf22e502" prot="public" static="no" mutable="no">
+        <type>arity_t</type>
+        <definition>int vars_arity</definition>
+        <argsstring></argsstring>
+        <name>vars_arity</name>
+        <initializer>= aux_stack[VARS_ARITY_ENTRY]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="414" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1ab514a5272bdee759edfb324b06782a6d" prot="public" static="no" mutable="no">
+        <type>arity_t</type>
+        <definition>int subs_arity</definition>
+        <argsstring></argsstring>
+        <name>subs_arity</name>
+        <initializer>= aux_stack[SUBS_ARITY_ENTRY]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="415" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a0737b08f9290257c57c62dd8f9ba7dfd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TermNil</definition>
+        <argsstring></argsstring>
+        <name>TermNil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="467" column="6" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1ac71c9668b057a6aaf6edd311d4689295" prot="public" static="no" mutable="no">
+        <type>trie_do_var_in_pair</type>
+        <definition>trie_do_var_in_pair __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="467" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a4020fae2e3aed1b2e05ea7acef3ca5a8" prot="public" static="no" mutable="no">
+        <type>trie_trust_var_in_pair</type>
+        <definition>trie_trust_var_in_pair __pad1__</definition>
+        <argsstring></argsstring>
+        <name>__pad1__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="483" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1ae9326768d711f323fffdd6665a04f09c" prot="public" static="no" mutable="no">
+        <type>trie_try_var_in_pair</type>
+        <definition>trie_try_var_in_pair __pad2__</definition>
+        <argsstring></argsstring>
+        <name>__pad2__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="499" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a918c600ed506f5edd492b4a5e71f80bc" prot="public" static="no" mutable="no">
+        <type>trie_retry_var_in_pair</type>
+        <definition>trie_retry_var_in_pair __pad3__</definition>
+        <argsstring></argsstring>
+        <name>__pad3__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="515" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a3de5fd09893127e4ec08e3cbf9cbcb62" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int var_index</definition>
+        <argsstring></argsstring>
+        <name>var_index</name>
+        <initializer>= VarIndexOfTableTerm(TrNode_entry(node))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="526" column="15" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1aaee5a2da64769bc7152b2d660a80923a" prot="public" static="no" mutable="no">
+        <type>trie_do_val_in_pair</type>
+        <definition>trie_do_val_in_pair __pad4__</definition>
+        <argsstring></argsstring>
+        <name>__pad4__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="582" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a66921350a2d662abc5b730fcba9cdef0" prot="public" static="no" mutable="no">
+        <type>trie_trust_val_in_pair</type>
+        <definition>trie_trust_val_in_pair __pad5__</definition>
+        <argsstring></argsstring>
+        <name>__pad5__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="599" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a90bfbb58c79d72999cb2d3b4fc9140ef" prot="public" static="no" mutable="no">
+        <type>trie_try_val_in_pair</type>
+        <definition>trie_try_val_in_pair __pad6__</definition>
+        <argsstring></argsstring>
+        <name>__pad6__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="616" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1aa29b3e13cf1f9e3bfbb3eb5b8859fcf3" prot="public" static="no" mutable="no">
+        <type>trie_retry_val_in_pair</type>
+        <definition>trie_retry_val_in_pair __pad7__</definition>
+        <argsstring></argsstring>
+        <name>__pad7__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="633" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a828f460f1e56a49fe243af8d5175cbac" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <initializer>= TrNode_entry(node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="644" column="10" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1acf2b24705dbad1c157ecf587aeff4ffa" prot="public" static="no" mutable="no">
+        <type>trie_do_atom_in_pair</type>
+        <definition>trie_do_atom_in_pair __pad8__</definition>
+        <argsstring></argsstring>
+        <name>__pad8__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="699" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1afa02c7ef1594dd8f1ce54e5f36a5576e" prot="public" static="no" mutable="no">
+        <type>trie_trust_atom_in_pair</type>
+        <definition>trie_trust_atom_in_pair __pad9__</definition>
+        <argsstring></argsstring>
+        <name>__pad9__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="715" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1ae6a6ceebdddebb1c673a6781ccde7ea7" prot="public" static="no" mutable="no">
+        <type>trie_try_atom_in_pair</type>
+        <definition>trie_try_atom_in_pair __pad10__</definition>
+        <argsstring></argsstring>
+        <name>__pad10__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="731" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1accbad97175580e0adce06eafd009ca8a" prot="public" static="no" mutable="no">
+        <type>trie_retry_atom_in_pair</type>
+        <definition>trie_retry_atom_in_pair __pad11__</definition>
+        <argsstring></argsstring>
+        <name>__pad11__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="747" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a34fa2aac0cc8224d63c138ba2d624196" prot="public" static="no" mutable="no">
+        <type>trie_do_null_in_pair</type>
+        <definition>trie_do_null_in_pair __pad12__</definition>
+        <argsstring></argsstring>
+        <name>__pad12__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="805" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a281103695603211a4fd411c5f600a11b" prot="public" static="no" mutable="no">
+        <type>trie_trust_null_in_pair</type>
+        <definition>trie_trust_null_in_pair __pad13__</definition>
+        <argsstring></argsstring>
+        <name>__pad13__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="821" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a6a5dc5cc198fa3586f969c5212c5e017" prot="public" static="no" mutable="no">
+        <type>trie_try_null_in_pair</type>
+        <definition>trie_try_null_in_pair __pad14__</definition>
+        <argsstring></argsstring>
+        <name>__pad14__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="837" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1add35ea2411e0f731d1750e23dbb133c5" prot="public" static="no" mutable="no">
+        <type>trie_retry_null_in_pair</type>
+        <definition>trie_retry_null_in_pair __pad15__</definition>
+        <argsstring></argsstring>
+        <name>__pad15__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="853" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1af84ff1b6811e8532a24d2868aa1f2e17" prot="public" static="no" mutable="no">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <initializer>= (<ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref>) RepAppl(TrNode_entry(node))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="911" column="13" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1acf95f5dae1eabf2d2d843187e8fd13f3" prot="public" static="no" mutable="no">
+        <type>arity_t</type>
+        <definition>arity_t func_arity</definition>
+        <argsstring></argsstring>
+        <name>func_arity</name>
+        <initializer>= ArityOfFunctor(func)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="912" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="912" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a292953a20186a957d2711c97e6133ca0" prot="public" static="no" mutable="no">
+        <type>trie_do_appl_in_pair</type>
+        <definition>trie_do_appl_in_pair __pad16__</definition>
+        <argsstring></argsstring>
+        <name>__pad16__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="972" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="972" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a01897aacddc20ed08711858734a7d720" prot="public" static="no" mutable="no">
+        <type>trie_trust_appl_in_pair</type>
+        <definition>trie_trust_appl_in_pair __pad17__</definition>
+        <argsstring></argsstring>
+        <name>__pad17__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="990" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a6b49b00daae543093f60800460239ef9" prot="public" static="no" mutable="no">
+        <type>trie_try_appl_in_pair</type>
+        <definition>trie_try_appl_in_pair __pad18__</definition>
+        <argsstring></argsstring>
+        <name>__pad18__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1008" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1af0f78a1a545f3901196875c8102ae785" prot="public" static="no" mutable="no">
+        <type>trie_retry_appl_in_pair</type>
+        <definition>trie_retry_appl_in_pair __pad19__</definition>
+        <argsstring></argsstring>
+        <name>__pad19__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1026" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1026" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a61817c5307a7a20b3d50e5c23f4ff09d" prot="public" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float dbl</definition>
+        <argsstring></argsstring>
+        <name>dbl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1083" column="13" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1083" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a563edacd8d14ca30c0b98645785f14ff" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>td ts</definition>
+        <argsstring>[SIZEOF_DOUBLE/SIZEOF_INT_P]</argsstring>
+        <name>ts</name>
+        <initializer>= aux_stack[HEAP_ENTRY(1)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1084" column="12" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1084" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a208f6ef8a54f202f9826b20584d0b24c" prot="public" static="no" mutable="no">
+        <type>volatile union </type>
+        <definition>volatile union  td</definition>
+        <argsstring></argsstring>
+        <name>td</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1085" column="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a749264214e64ec48123de100d04a343a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TOP_STACK</definition>
+        <argsstring></argsstring>
+        <name>TOP_STACK</name>
+        <initializer>= aux_stack = &amp;aux_stack[4]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1092" column="5" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1092" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a8cf26769ca7a0281d824e040e555cb11" prot="public" static="no" mutable="no">
+        <type>trie_trust_double</type>
+        <definition>trie_trust_double __pad20__</definition>
+        <argsstring></argsstring>
+        <name>__pad20__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1105" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1af202384035710961cd763f0f83fe1495" prot="public" static="no" mutable="no">
+        <type>trie_try_double</type>
+        <definition>trie_try_double __pad21__</definition>
+        <argsstring></argsstring>
+        <name>__pad21__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1110" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a300fe9cb749f4bf9ef56b51d8dbf5476" prot="public" static="no" mutable="no">
+        <type>trie_retry_double</type>
+        <definition>trie_retry_double __pad22__</definition>
+        <argsstring></argsstring>
+        <name>__pad22__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1115" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a8515ee1d6de37879b086311392e8e706" prot="public" static="no" mutable="no">
+        <type>trie_trust_longint</type>
+        <definition>trie_trust_longint __pad23__</definition>
+        <argsstring></argsstring>
+        <name>__pad23__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1135" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a27761a5c6441e6c1ebee77220806e1e8" prot="public" static="no" mutable="no">
+        <type>trie_try_longint</type>
+        <definition>trie_try_longint __pad24__</definition>
+        <argsstring></argsstring>
+        <name>__pad24__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1140" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a413c996e7199fa46cc244234f622d67a" prot="public" static="no" mutable="no">
+        <type>trie_retry_longint</type>
+        <definition>trie_retry_longint __pad25__</definition>
+        <argsstring></argsstring>
+        <name>__pad25__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1145" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1ab2f2c525c09ac635f2655342b7eadeae" prot="public" static="no" mutable="no">
+        <type>trie_trust_bigint</type>
+        <definition>trie_trust_bigint __pad26__</definition>
+        <argsstring></argsstring>
+        <name>__pad26__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1165" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1a849bfc0992d3f369291b72d20c80d0b6" prot="public" static="no" mutable="no">
+        <type>trie_try_bigint</type>
+        <definition>trie_try_bigint __pad27__</definition>
+        <argsstring></argsstring>
+        <name>__pad27__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1170" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tab_8tries_8insts_8h_1aa726d21814df00ecdf972e944d3de150" prot="public" static="no" mutable="no">
+        <type>trie_retry_bigint</type>
+        <definition>trie_retry_bigint __pad28__</definition>
+        <argsstring></argsstring>
+        <name>__pad28__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1175" column="14" bodyfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" bodystart="1175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a5dde90f212a2c77bb2843981aee76e3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_var, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_var</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="410" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="409" bodyend="410" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="410" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ac3202159d56abefb9aa4b48d3a008a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENDPBOp</definition>
+        <argsstring>()</argsstring>
+        <name>ENDPBOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="418" column="3" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="418" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a715210e750a8ec29b765be1e33365039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_var, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_var</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="421" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="415" bodyend="416" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="421" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a6e4a14f367e261ab4a4434bf82442c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_var, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_var</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="433" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="420" bodyend="421" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="433" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a630bcebab42da922dad3926cad751e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>store_trie_node</definition>
+        <argsstring>(TrNode_next(node))</argsstring>
+        <name>store_trie_node</name>
+        <param>
+          <type>TrNode_next(node)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="440" column="5" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="440" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a2dec5c40fefc6528a36391443b9e111e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_var, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_var</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="445" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="426" bodyend="427" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="445" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a66dac6fbc6c3f6311c188fc259b6e234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restore_trie_node</definition>
+        <argsstring>(TrNode_next(node))</argsstring>
+        <name>restore_trie_node</name>
+        <param>
+          <type>TrNode_next(node)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="452" column="5" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="452" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1acc9edb097c0e4113b63a66c1dbcdf4b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_var_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_var_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="457" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aa84d5bb6fa9fb7c97ee2fbd87dba2f1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_var_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_var_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="472" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a0dc23b859edaf290454ac947e371754c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_var_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_var_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="488" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a7e9ba327bc1c07facd790b6b6a8bee70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_var_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_var_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="504" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a3677918021395694da250afaf14e18c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_val, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_val</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="520" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="451" bodyend="452" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="520" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a41ebba07f888eb4460ddaa4ed05f8db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_val, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_val</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="532" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="456" bodyend="457" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="532" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ade4641e9d0c9bb80561f8af59797600c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_val, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_val</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="545" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="461" bodyend="462" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="545" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a109296c9337be812f83b8470de05eacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_val, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_val</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="558" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="466" bodyend="467" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="558" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ad36ad6e06cba1e39614d54b464e4ad20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_val_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_val_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="571" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a842b28a932f70fb168ca02cd83683734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_val_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_val_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="587" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a1db490fe678a64990682601c464690e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_val_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_val_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="604" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1af108cd488be09f2b23fa7ffbe371f1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_val_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_val_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="621" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a897f1ea719b10781e06b525b51df81a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_atom, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_atom</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="638" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="491" bodyend="492" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="638" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1af3fecd103b0df62278debff65c0f7ef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_atom, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_atom</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="650" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="496" bodyend="497" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="650" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ab6522330a42e31e6d258604fb1c56279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_atom, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_atom</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="663" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="501" bodyend="502" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="663" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a4d5eebde4f3132d2e8fb5f3cc62a81cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_atom, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_atom</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="676" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="506" bodyend="507" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="676" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ab3efe99c4ebbba3dc62f8cdf29b8a734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_atom_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_atom_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="689" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a5858e1f65d42c610513004d933ec9a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_atom_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_atom_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="704" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a6efa29f037e7f908a4e358ea13f774cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_atom_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_atom_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="720" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1acc8ba29de4bdb3169afd30069e175e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_atom_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_atom_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="736" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a8a0cb39ede29285e4eed0f4ef30b8ec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_null, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_null</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="752" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="531" bodyend="532" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="752" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ae83d46cfd4cd3658724118220d3b3a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_null, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_null</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="759" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="536" bodyend="537" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="759" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a063e710f1f6893df96c9819d09d23e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_null, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_null</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="771" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="541" bodyend="542" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="771" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ae535696da283785e56451ffd1a6a8ca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_null, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_null</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="783" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="546" bodyend="547" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="783" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1acd8f6f52b3ba9751309bcd19969a0893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_null_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_null_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="795" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aaa5a74e40e2973c86125f754a31fd343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_null_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_null_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="810" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a3e918284dce563d3ed1f106c989cacc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_null_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_null_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="826" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a29467d74a49c1d08031ea3dc97362bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_null_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_null_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="842" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a2e740d0cf2645501a23127bbec192525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_pair, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="858" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="571" bodyend="572" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="858" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aff65c9165754c8a22ee178bff407970d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_pair, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="869" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="576" bodyend="577" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="869" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aef36e3581b53090142d3be91ea6663fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_pair, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="881" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="581" bodyend="582" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="881" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a2700adc609d7f289b10eb3cbe1a53e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_pair, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="893" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="586" bodyend="587" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="893" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a17ba7c28c7d9a9d95b6b4473a2048d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_appl, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_appl</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="905" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="591" bodyend="592" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="905" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1af02036c8b091c2d2bced0bd55a7795fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_appl, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_appl</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="918" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="596" bodyend="597" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="918" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a6425b4effc250dd4852933c845f3a750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_appl, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_appl</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="932" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="601" bodyend="602" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="932" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ae9634ccacd3fcc0dbfc16113f1a2aaf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_appl, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_appl</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="946" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="606" bodyend="607" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="946" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a10f4965645b0666e26e83ffbb8425ae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_appl_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_appl_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="960" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ac961f7153056f7cf0db008a7950662e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_appl_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_appl_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="977" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aec6e81282fcb0d75ac20e4f3913faf2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_appl_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_appl_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="995" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ab19f951f391cb3119c7b7d443474503b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_appl_in_pair, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_appl_in_pair</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1013" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1afa6d0631513cb95ad8fc637339f2280e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_extension, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_extension</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1031" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="631" bodyend="632" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1031" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ada642f1cd7373744b592b981b814efb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_extension, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_extension</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1040" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="636" bodyend="637" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1040" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a1f7fd289403ccfdebf2b6ac4bab365a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_extension, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_extension</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1052" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="641" bodyend="642" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1052" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ac39019df5333574767763c156e136c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_extension, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_extension</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1064" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="646" bodyend="647" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1064" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a29ac8c669b8f6b75963e904d6595f2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_double, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_double</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1076" column="3" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1076" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a9e4a515e7ebac285b3040b48926433c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_trust_double, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_trust_double</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1104" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a0a7bcc46c3c8bd9ba8f42e32bf4bfb16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ENDBOp</definition>
+        <argsstring>()</argsstring>
+        <name>ENDBOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1106" column="3" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1106" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aa6aa611ab229e113e2bbb875a625083c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_try_double, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_try_double</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1109" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a37b68329cc36142026bc2c763f8d96e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_retry_double, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_retry_double</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1114" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a7dbe6703505a126678870a87ab8ee544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_longint, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_longint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1119" column="3" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1119" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a9af7b6ea197226c39d7cbbcd13b1c270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_trust_longint, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_trust_longint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1134" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a020f2521773472f4be96db35bea02510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_try_longint, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_try_longint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1139" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a16c2294fad82ff2a4021891bf8903dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_retry_longint, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_retry_longint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1144" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a216b6d43b91931b5920b443339fbe23c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_bigint, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_bigint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1149" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="725" bodyend="726" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1149" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a7f8626d46f710c45f7f6eb6f887e947a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_trust_bigint, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_trust_bigint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1164" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aa0d0a903f0424e8b12a311c61dd32b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_try_bigint, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_try_bigint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1169" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aca54fe2678c7e8cc9c335ea42b226b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOp</definition>
+        <argsstring>(trie_retry_bigint, e) Yap_Error(SYSTEM_ERROR_INTERNAL</argsstring>
+        <name>BOp</name>
+        <param>
+          <type>trie_retry_bigint</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1174" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a6dde719f7a5274e81999799173ada208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_do_gterm, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_do_gterm</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1180" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="743" bodyend="745" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1180" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a1de9cc90cdff30c4686c46945349107c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>next_instruction</definition>
+        <argsstring>(subs_arity - 1, node)</argsstring>
+        <name>next_instruction</name>
+        <param>
+          <type>subs_arity -</type>
+          <declname>1</declname>
+        </param>
+        <param>
+          <type>node</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1188" column="5" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1188" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1a1ad010d78c1e4f4a0987a499ac75eb44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_trust_gterm, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_trust_gterm</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1192" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="749" bodyend="750" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1192" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1ae1c23c80adebff5334be534e72aeaf3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_try_gterm, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_try_gterm</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1205" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="754" bodyend="755" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1205" declcolumn="3"/>
+      </memberdef>
+      <memberdef kind="function" id="tab_8tries_8insts_8h_1aadfdbef319a750ff9d43ec40ba628bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PBOp</definition>
+        <argsstring>(trie_retry_gterm, e) register ans_node_ptr node</argsstring>
+        <name>PBOp</name>
+        <param>
+          <type>trie_retry_gterm</type>
+        </param>
+        <param>
+          <type>e</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" line="1218" column="3" bodyfile="/home/vsc/github/yap/OPTYap/traced_tab.tries.insts.h" bodystart="759" bodyend="760" declfile="/home/vsc/github/yap/OPTYap/tab.tries.insts.h" declline="1218" declcolumn="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/tab.tries.insts.h"/>
+  </compounddef>
+</doxygen>

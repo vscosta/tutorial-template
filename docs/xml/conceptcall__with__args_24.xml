@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptcall__with__args_24" kind="concept">
+    <compoundname>call_with_args/4</compoundname>
+    <initializer>template&lt;&gt;
+concept call_with_args/4 =     </initializer>
+    <briefdescription>
+<para><bold>call_with_args</bold>(+ <emphasis>Name</emphasis>,...,? <emphasis>Ai</emphasis>,...) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Meta-call where <emphasis>Name</emphasis> is the name of the procedure to be called and the <emphasis>Ai</emphasis> are the arguments The number of arguments varies between 0 and 10 New code should use <computeroutput>call/N</computeroutput> for better portability</para>
+<para>If <emphasis>Name</emphasis> is a complex term, then call_with_args/n behaves as call/n:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">call(p(</highlight><highlight class="charliteral">X1</highlight><highlight class="normal">,...,</highlight><highlight class="charliteral">Xm</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">Y1</highlight><highlight class="normal">,...,</highlight><highlight class="charliteral">Yn</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">p(</highlight><highlight class="charliteral">X1</highlight><highlight class="normal">,...,</highlight><highlight class="charliteral">Xm</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y1</highlight><highlight class="normal">,...,</highlight><highlight class="charliteral">Yn</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="pl/control.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

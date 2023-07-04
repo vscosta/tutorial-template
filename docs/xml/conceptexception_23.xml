@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptexception_23" kind="concept">
+    <compoundname>exception/3</compoundname>
+    <initializer>template&lt;&gt;
+concept exception/3 =     </initializer>
+    <briefdescription>
+<para><bold>exception</bold>(+ <emphasis>Exception</emphasis>, + <emphasis>Context</emphasis>, - <emphasis>Action</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Dynamic predicate, normally not defined Callreded by the Prolog system on run-time exceptions that can be repaired <computeroutput>just-in-time</computeroutput> The values for <emphasis>Exception</emphasis> are described below See also catch/3 and <ref refid="classthrow_21" kindref="compound">throw/1</ref> If this hook preodicate succeeds it must instantiate the <emphasis>Action</emphasis> argument to the atom <computeroutput>fail</computeroutput> to make the operation fail silently, <computeroutput>retry</computeroutput> to tell Prolog to retry the operation or <computeroutput>error</computeroutput> to make the system generate an exception The action <computeroutput>retry</computeroutput> only makes sense if this hook modified the environment such that the operation can now succeed without error</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>undefined_predicate</computeroutput> <emphasis>Context</emphasis> is instantiated to a predicate-indicator ( <emphasis>Module:Name/Arity</emphasis>) If the predicate fails Prolog will generate an existence_error exception The hook is intended to implement alternatives to the SWI built-in autoloader, such as autoloading code from a database Do not use this hook to suppress existence errors on predicates See also <computeroutput>unknown</computeroutput></para>
+</listitem><listitem><para><computeroutput>undefined_global_variable</computeroutput> <emphasis>Context</emphasis> is instantiated to the name of the missing global variable The hook must call <ref refid="classnb__setval_22" kindref="compound">nb_setval/2</ref> or b_setval/2 before returning with the action retry </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pl/boot.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

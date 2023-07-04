@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="locks__sparc_8h" kind="file" language="C++">
+    <compoundname>locks_sparc.h</compoundname>
+    <innerclass refid="structrwlock__t" prot="public">rwlock_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="locks__sparc_8h_1a436aff6ff3264f0187ac134ae9055900" prot="public" static="no">
+        <name>swap_il</name>
+        <param><defname>adr</defname></param>
+        <param><defname>reg</defname></param>
+        <initializer>({ int _ret;						     \
+   asm volatile (&quot;swap %1,%0&quot;				     \
+	: &quot;=r&quot; (_ret), &quot;=m&quot; (*(adr))	/* Output %0,%1 */   \
+	: &quot;m&quot;  (*(adr)), &quot;0&quot; (reg));	/* Input (%2),%0 */  \
+   _ret;						     \
+})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="18" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1aaccdc446a4979193fc5063d036f4a091" prot="public" static="no">
+        <name>TRY_LOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>(swap_il((LOCK_VAR),1)==0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="26" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a95931d61958ed81501df5eb5be9d7e83" prot="public" static="no">
+        <name>INIT_LOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>((LOCK_VAR) = 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="28" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a486c0cd015fd37bc06bf4b336ce92f1d" prot="public" static="no">
+        <name>LOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>                                 do {                                     \
+                                 if (TRY_LOCK(&amp;(LOCK_VAR))) break;      \
+		                 while (IS_LOCKED(LOCK_VAR)) continue;  \
+		               } while (1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="29" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a94b4de76520736ba8336e12d1f0990e9" prot="public" static="no">
+        <name>IS_LOCKED</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>((LOCK_VAR) != 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="33" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a047d9f61412548844e3bca113ac8f1dc" prot="public" static="no">
+        <name>IS_UNLOCKED</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>((LOCK_VAR) == 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="34" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1ae53ffa35f8b40ff08610421eda69d668" prot="public" static="no">
+        <name>UNLOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>((LOCK_VAR) = 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="35" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1ab3e77e3e6c1270246675011c67d3f8d5" prot="public" static="no">
+        <name>READ_LOCK</name>
+        <param><defname>lock</defname></param>
+        <initializer>do {	_read_lock(&amp;(lock)); \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="72" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a9c4b47c991fb8871bd751e17a9357cf0" prot="public" static="no">
+        <name>READ_UNLOCK</name>
+        <param><defname>lock</defname></param>
+        <initializer>do {	_read_unlock(&amp;lock); \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="89" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a8133ec89273e1d1d5b04b647645ee3fa" prot="public" static="no">
+        <name>WRITE_LOCK</name>
+        <param><defname>X</defname></param>
+        <initializer>write_lock(&amp;(X))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="106" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a96ff118fe5320e5e4fb4547bbd6bb215" prot="public" static="no">
+        <name>WRITE_UNLOCK</name>
+        <param><defname>rw</defname></param>
+        <initializer>do { (&amp;(rw))-&gt;lock = 0; } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="108" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__sparc_8h_1a1fed6f76de3f69ae4bf051a9daf12190" prot="public" static="no">
+        <name>INIT_RWLOCK</name>
+        <param><defname>RW</defname></param>
+        <initializer>(RW).lock = 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="110" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="locks__sparc_8h_1a03e85dd9bd218e1f582265e0f2d1ab73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void _read_lock</definition>
+        <argsstring>(rwlock_t *rw)</argsstring>
+        <name>_read_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>rw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="59" column="24" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__sparc_8h_1ad40947ed979586617e15cfa68e7320d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void _read_unlock</definition>
+        <argsstring>(rwlock_t *rw)</argsstring>
+        <name>_read_unlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>rw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="76" column="24" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__sparc_8h_1ac7f6380788bf382e73831f06d26b1947" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void write_lock</definition>
+        <argsstring>(rwlock_t *rw)</argsstring>
+        <name>write_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>rw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h" line="93" column="24" bodyfile="/home/vsc/github/yap/OPTYap/locks_sparc.h" bodystart="93" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/locks_sparc.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structBlackBoardEntry" kind="struct" language="C++" prot="public">
+    <compoundname>BlackBoardEntry</compoundname>
+    <includes refid="Yatom_8h" local="no">Yatom.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBlackBoardEntry_1aa12b59e13dfc03a609d88b3c4df0302e" prot="public" static="no" mutable="no">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop NextOfPE</definition>
+        <argsstring></argsstring>
+        <name>NextOfPE</name>
+        <qualifiedname>BlackBoardEntry::NextOfPE</qualifiedname>
+        <briefdescription>
+<para>used to chain properties <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/Yatom.h" line="876" column="8" bodyfile="/home/vsc/github/yap/H/Yatom.h" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBlackBoardEntry_1ac64ed3709352ec1f8c7d683805f2a91e" prot="public" static="no" mutable="no">
+        <type>PropFlags</type>
+        <definition>PropFlags KindOfPE</definition>
+        <argsstring></argsstring>
+        <name>KindOfPE</name>
+        <qualifiedname>BlackBoardEntry::KindOfPE</qualifiedname>
+        <briefdescription>
+<para>kind of property <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/Yatom.h" line="877" column="13" bodyfile="/home/vsc/github/yap/H/Yatom.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBlackBoardEntry_1adcadaaba1e5dcaf40a015c74f3b1bfa8" prot="public" static="no" mutable="no">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom KeyOfBB</definition>
+        <argsstring></argsstring>
+        <name>KeyOfBB</name>
+        <qualifiedname>BlackBoardEntry::KeyOfBB</qualifiedname>
+        <briefdescription>
+<para>functor for this property <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/Yatom.h" line="878" column="8" bodyfile="/home/vsc/github/yap/H/Yatom.h" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBlackBoardEntry_1a938e5b36c0f2c993ffe7c75548559750" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term Element</definition>
+        <argsstring></argsstring>
+        <name>Element</name>
+        <qualifiedname>BlackBoardEntry::Element</qualifiedname>
+        <briefdescription>
+<para>blackboard element <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/Yatom.h" line="879" column="8" bodyfile="/home/vsc/github/yap/H/Yatom.h" bodystart="879" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBlackBoardEntry_1abcf2cea80ba6f68b2e904d77640f0283" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term ModuleOfBB</definition>
+        <argsstring></argsstring>
+        <name>ModuleOfBB</name>
+        <qualifiedname>BlackBoardEntry::ModuleOfBB</qualifiedname>
+        <briefdescription>
+<para>module for this definition <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/Yatom.h" line="883" column="8" bodyfile="/home/vsc/github/yap/H/Yatom.h" bodystart="883" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>blackboard entry: a module, a key, and a value </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>AtomEntryStruct</label>
+        <link refid="structAtomEntryStruct"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>NextOfAE</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>PropsOfAE</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>blob</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>BlackBoardEntry</label>
+        <link refid="structBlackBoardEntry"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>KeyOfBB</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PropEntryStruct</label>
+        <link refid="structPropEntryStruct"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>atom_blob</label>
+        <link refid="structatom__blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/H/Yatom.h" line="875" column="1" bodyfile="/home/vsc/github/yap/H/Yatom.h" bodystart="875" bodyend="884"/>
+    <listofallmembers>
+      <member refid="structBlackBoardEntry_1a938e5b36c0f2c993ffe7c75548559750" prot="public" virt="non-virtual"><scope>BlackBoardEntry</scope><name>Element</name></member>
+      <member refid="structBlackBoardEntry_1adcadaaba1e5dcaf40a015c74f3b1bfa8" prot="public" virt="non-virtual"><scope>BlackBoardEntry</scope><name>KeyOfBB</name></member>
+      <member refid="structBlackBoardEntry_1ac64ed3709352ec1f8c7d683805f2a91e" prot="public" virt="non-virtual"><scope>BlackBoardEntry</scope><name>KindOfPE</name></member>
+      <member refid="structBlackBoardEntry_1abcf2cea80ba6f68b2e904d77640f0283" prot="public" virt="non-virtual"><scope>BlackBoardEntry</scope><name>ModuleOfBB</name></member>
+      <member refid="structBlackBoardEntry_1aa12b59e13dfc03a609d88b3c4df0302e" prot="public" virt="non-virtual"><scope>BlackBoardEntry</scope><name>NextOfPE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

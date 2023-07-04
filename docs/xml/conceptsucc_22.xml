@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptsucc_22" kind="concept">
+    <compoundname>succ/2</compoundname>
+    <initializer>template&lt;&gt;
+concept succ/2 =     </initializer>
+    <briefdescription>
+<para><bold>succ</bold>(? <emphasis>Int1</emphasis>:int, ? <emphasis>Int2</emphasis>:int) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: deterministic</para>
+<para><itemizedlist>
+<listitem><para>True if <emphasis>Int2</emphasis> = <emphasis>Int1</emphasis> + 1 and <emphasis>Int1</emphasis> &gt;= 0 At least one of the arguments must be instantiated to a natural number This predicate raises the domain-error not_less_than_zero if called with a negative integer E.g <computeroutput>succ(X, 0)</computeroutput> fails silently and <computeroutput>succ(X, -1)</computeroutput> raises a domain-error The behaviour to deal with natural numbers only was defined by Richard O&apos;Keefe to support the common count-down-to-zero in a natural way </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pl/arithpreds.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

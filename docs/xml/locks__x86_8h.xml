@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="locks__x86_8h" kind="file" language="C++">
+    <compoundname>locks_x86.h</compoundname>
+    <innerclass refid="structspinlock__t" prot="public">spinlock_t</innerclass>
+    <innerclass refid="structrwlock__t" prot="public">rwlock_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="locks__x86_8h_1a95931d61958ed81501df5eb5be9d7e83" prot="public" static="no">
+        <name>INIT_LOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>((LOCK_VAR) = 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="53" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1aaccdc446a4979193fc5063d036f4a091" prot="public" static="no">
+        <name>TRY_LOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>spin_trylock((<ref refid="structspinlock__t" kindref="compound">spinlock_t</ref> *)(LOCK_VAR))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="54" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a486c0cd015fd37bc06bf4b336ce92f1d" prot="public" static="no">
+        <name>LOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>                                 { do {					\
+                                 if (TRY_LOCK(&amp;(LOCK_VAR))) break;      \
+		                 while (IS_LOCKED(LOCK_VAR)) continue;  \
+				 } while (1); }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="74" column="10" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a94b4de76520736ba8336e12d1f0990e9" prot="public" static="no">
+        <name>IS_LOCKED</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>((LOCK_VAR) != 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="78" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a047d9f61412548844e3bca113ac8f1dc" prot="public" static="no">
+        <name>IS_UNLOCKED</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>((LOCK_VAR) == 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="79" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1ae53ffa35f8b40ff08610421eda69d668" prot="public" static="no">
+        <name>UNLOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <initializer>spin_unlock((<ref refid="structspinlock__t" kindref="compound">spinlock_t</ref> *)&amp;(LOCK_VAR))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="80" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1af437bbd81210520fbe17e4e0c166e96e" prot="public" static="no">
+        <name>RWLOCK_OFFSET</name>
+        <initializer>(1&lt;&lt;24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="89" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a8bd11f5aca289496840c8435901cd88f" prot="public" static="no">
+        <name>INIT_RWLOCK</name>
+        <param><defname>lock</defname></param>
+        <initializer>init_rwlock(&amp;(lock))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="186" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1ab3e77e3e6c1270246675011c67d3f8d5" prot="public" static="no">
+        <name>READ_LOCK</name>
+        <param><defname>lock</defname></param>
+        <initializer>read_lock(&amp;(lock))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="187" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a9c4b47c991fb8871bd751e17a9357cf0" prot="public" static="no">
+        <name>READ_UNLOCK</name>
+        <param><defname>lock</defname></param>
+        <initializer>read_unlock(&amp;(lock))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="188" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a1435a25c7f4c1aed932a5633700a21e7" prot="public" static="no">
+        <name>WRITE_LOCK</name>
+        <param><defname>lock</defname></param>
+        <initializer>write_lock(&amp;(lock))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="189" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a22deeda6cdd422f1a9ca952c52c7d9d3" prot="public" static="no">
+        <name>WRITE_UNLOCK</name>
+        <param><defname>lock</defname></param>
+        <initializer>write_unlock(&amp;(lock))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="190" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1a96c855e45367b31aed9f1069c09450fb" prot="public" static="no">
+        <name>MUTEX_LOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="214" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1adc957b2dab27396a3aea4d8fa1fc8170" prot="public" static="no">
+        <name>MUTEX_TRYLOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="215" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="locks__x86_8h_1aa29c37c9bb8bdd4c1821c2ecf92b87e6" prot="public" static="no">
+        <name>MUTEX_UNLOCK</name>
+        <param><defname>LOCK_VAR</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="216" column="9" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="locks__x86_8h_1a7121983496511382324407c3773182b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int spin_trylock</definition>
+        <argsstring>(spinlock_t *lock)</argsstring>
+        <name>spin_trylock</name>
+        <param>
+          <type><ref refid="structspinlock__t" kindref="compound">spinlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="23" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1af0bffee791867b9ae4b9f66d4e111d95" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void spin_unlock</definition>
+        <argsstring>(spinlock_t *lock)</argsstring>
+        <name>spin_unlock</name>
+        <param>
+          <type><ref refid="structspinlock__t" kindref="compound">spinlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="34" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="34" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1a3f92081ca7b1bcbd2be4b3744f2b4229" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void init_rwlock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>init_rwlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="92" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1ae3d4c9bef134d29a2a001bca518ec63c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void read_unlock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>read_unlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="98" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="98" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1aa6034378bd116fc18a32fd299af80b24" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int read_trylock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>read_trylock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="108" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="108" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1af55612dd24d5531bf9e77bf5f68834a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int read_is_locked</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>read_is_locked</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="125" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1a23080070e0afc6803e7571de9c540d49" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void read_lock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>read_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="131" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="131" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1a6cbfb5a448e1c05b1013e6c79b604900" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_unlock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>write_unlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="143" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="143" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1aac1bdde7f78bf1eb4d506bfbe608ae3f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int write_trylock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>write_trylock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="152" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="152" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1a9e425226f39bec2d230cb3234e4dec08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int write_is_locked</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>write_is_locked</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="169" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__x86_8h_1ae28dbae096e3da2572d3d5782592834f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_lock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>write_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_x86.h" line="175" column="1" bodyfile="/home/vsc/github/yap/OPTYap/locks_x86.h" bodystart="175" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/locks_x86.h"/>
+  </compounddef>
+</doxygen>

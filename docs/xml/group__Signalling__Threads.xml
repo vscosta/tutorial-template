@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Signalling__Threads" kind="group">
+    <compoundname>Signalling_Threads</compoundname>
+    <title>Signalling Threads</title>
+    <innerclass refid="classthread__sleep_21" prot="public">thread_sleep/1</innerclass>
+    <briefdescription>
+<para>These predicates provide a mechanism to make another thread execute some goal as an <emphasis>interrupt</emphasis> </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Signalling threads is safe as these interrupts are only checked at safe points in the virtual machine Nevertheless, signalling in multi-threaded environments should be handled with care as the receiving thread may hold a <emphasis>mutex</emphasis> (see with_mutex/2 ) Signalling probably only makes sense to start debugging threads and to cancel no-longer-needed threads with <ref refid="classthrow_21" kindref="compound">throw/1</ref> , where the receiving thread should be designed carefully do handle exceptions at any point</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

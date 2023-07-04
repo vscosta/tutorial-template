@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__AllocProviders" kind="group">
+    <compoundname>AllocProviders</compoundname>
+    <title>YAP and memory allocation</title>
+    <innergroup refid="group__MALLOC__Wrapper">Stack allocated objects</innergroup>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__AllocProviders_1gab945c50e92f09ee7992805e457cd16c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int write_malloc</definition>
+        <argsstring></argsstring>
+        <name>write_malloc</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="89" column="5" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__AllocProviders_1gab4ff3c0d10db9899fc7cb551b2e9fc9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * my_malloc</definition>
+        <argsstring>(size_t sz)</argsstring>
+        <name>my_malloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="91" column="6" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="91" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AllocProviders_1gae4f19f16a92059fe7d77aa510eed5943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * my_realloc</definition>
+        <argsstring>(void *ptr, size_t sz)</argsstring>
+        <name>my_realloc</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="108" column="6" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="108" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AllocProviders_1gaeb91c3eb5211fce0a46a0a1a78dab50c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_free</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>my_free</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="123" column="6" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="123" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__AllocProviders_1gae7520c5477c11965aabeedc033c9862b" prot="public" static="no">
+        <name>MASK</name>
+        <initializer>0x968e00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="82" column="9" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__AllocProviders_1gaaebf6f78eec2209de6e74592e036696d" prot="public" static="no">
+        <name>my_malloc</name>
+        <param><defname>sz</defname></param>
+        <initializer>Yap_dlmalloc(sz)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="84" column="9" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__AllocProviders_1gaaebf6f78eec2209de6e74592e036696d" prot="public" static="no">
+        <name>my_malloc</name>
+        <param><defname>sz</defname></param>
+        <initializer>Yap_dlmalloc(sz)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="143" column="9" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__AllocProviders_1ga86be76076e76be031f1e99db94871093" prot="public" static="no">
+        <name>my_realloc</name>
+        <param><defname>ptr</defname></param>
+        <param><defname>sz</defname></param>
+        <initializer>Yap_dlrealloc(ptr, sz)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="85" column="9" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__AllocProviders_1ga86be76076e76be031f1e99db94871093" prot="public" static="no">
+        <name>my_realloc</name>
+        <param><defname>ptr</defname></param>
+        <param><defname>sz</defname></param>
+        <initializer>Yap_dlrealloc(ptr, sz)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="144" column="9" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__AllocProviders_1ga4418a642b715ef1c2ec4f0721352bbef" prot="public" static="no">
+        <name>my_free</name>
+        <param><defname>sz</defname></param>
+        <initializer>Yap_dlfree(sz)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="86" column="9" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__AllocProviders_1ga4418a642b715ef1c2ec4f0721352bbef" prot="public" static="no">
+        <name>my_free</name>
+        <param><defname>sz</defname></param>
+        <initializer>Yap_dlfree(sz)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/alloc.c" line="145" column="9" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

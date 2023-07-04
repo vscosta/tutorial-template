@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptformat_22" kind="concept">
+    <compoundname>format/2</compoundname>
+    <initializer>template&lt;&gt;
+concept format/2 =     </initializer>
+    <briefdescription>
+<para><bold>format</bold>(+ <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>, :<emphasis>L</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>format</bold>(+_Stream_+ <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>, :ListWithArguments)</para>
+<para><bold>format</bold>(+ <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>, :ListWithArguments)</para>
+<para>Print formatted output to the current output stream The arguments in list <emphasis>L</emphasis> are output according to the string, list of codes or characters, or by the atom <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis></para>
+<para>A control sequence is introduced by a <computeroutput>~</computeroutput> The following control sequences are available in YAP:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~~</computeroutput> Print a single tilde</para>
+</listitem><listitem><para><computeroutput>~a</computeroutput> The next argument must be an atom, that will be printed as if by <computeroutput>write</computeroutput></para>
+</listitem><listitem><para><computeroutput>~Nc</computeroutput> The next argument must be an integer, that will be printed as a character code The number <emphasis>N</emphasis> is the number of times to print the character (default 1)</para>
+</listitem><listitem><para><computeroutput>~Ne</computeroutput></para>
+</listitem><listitem><para><computeroutput>~NE</computeroutput></para>
+</listitem><listitem><para><computeroutput>~Nf</computeroutput></para>
+</listitem><listitem><para><computeroutput>~Ng</computeroutput></para>
+</listitem><listitem><para><computeroutput>~NG</computeroutput> The next argument must be a floating point number The float <emphasis>F</emphasis>, the number <emphasis>N</emphasis> and the control code <computeroutput>c</computeroutput> will be passed to <computeroutput>printf</computeroutput> as:</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">printf(</highlight><highlight class="stringliteral">&quot;%s.Nc&quot;</highlight><highlight class="normal">,<sp/>F)</highlight></codeline>
+</programlisting></para>
+<para>As an example:</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;~8e,<sp/>~8E,<sp/>~8f,<sp/>~8g,<sp/>~8G~w&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[3.14,3.14,3.14,3.14,3.14,3.14]).</highlight></codeline>
+<codeline><highlight class="normal">3.140000e+00,<sp/>3.140000E+00,<sp/>3.140000,<sp/>3.14,<sp/>3.143.14</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~Nd</computeroutput> The next argument must be an integer, and <emphasis>N</emphasis> is the number of digits after the decimal point If <emphasis>N</emphasis> is <computeroutput>0</computeroutput> no decimal points will be printed The default is <emphasis>N = 0</emphasis></para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;~2d,<sp/>~d&quot;</highlight><highlight class="normal">,[15000,<sp/>15000]).</highlight></codeline>
+<codeline><highlight class="normal">150.00,<sp/>15000</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~ND</computeroutput> Identical to <computeroutput>~Nd</computeroutput>, except that commas are used to separate groups of three digits</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;~2D,<sp/>~D&quot;</highlight><highlight class="normal">,[150000,<sp/>150000]).</highlight></codeline>
+<codeline><highlight class="normal">1,500.00,<sp/>150,000</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~i</computeroutput> Ignore the next argument in the list of arguments:</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&apos;The<sp/>~i<sp/>met<sp/>the<sp/>boregrove&apos;</highlight><highlight class="normal">,[mimsy]).</highlight></codeline>
+<codeline><highlight class="normal">The<sp/><sp/>met<sp/>the<sp/>boregrove</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~k</computeroutput> Print the next argument with <computeroutput>write_canonical</computeroutput>:</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;Good<sp/>night<sp/>~k&quot;</highlight><highlight class="normal">,a+[1,2]).</highlight></codeline>
+<codeline><highlight class="normal">Good<sp/>night<sp/>+(a,[1,2])</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~Nn</computeroutput> Print <emphasis>N</emphasis> newlines (where <emphasis>N</emphasis> defaults to 1)</para>
+</listitem><listitem><para><computeroutput>~NN</computeroutput> Print <emphasis>N</emphasis> newlines if at the beginning of the line (where <emphasis>N</emphasis> defaults to 1)</para>
+</listitem><listitem><para><computeroutput>~Nr</computeroutput> The next argument must be an integer, and <emphasis>N</emphasis> is interpreted as a radix, such that <computeroutput>2 &lt;= N &lt;= 36</computeroutput> (the default is 8)</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;~2r,<sp/>0x~16r,<sp/>~r&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[150000,<sp/>150000,<sp/>150000]).</highlight></codeline>
+<codeline><highlight class="normal">100100100111110000,<sp/>0x249f0,<sp/>444760</highlight></codeline>
+</programlisting></para>
+<para>Note that the letters <computeroutput>a-z</computeroutput> denote digits larger than 9</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~NR</computeroutput> Similar to <computeroutput>~NR</computeroutput> The next argument must be an integer, and <emphasis>N</emphasis> is interpreted as a radix, such that <computeroutput>2 &lt;= N &lt;= 36</computeroutput> (the default is 8)</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;~2r,<sp/>0x~16r,<sp/>~r&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[150000,<sp/>150000,<sp/>150000]).</highlight></codeline>
+<codeline><highlight class="normal">100100100111110000,<sp/>0x249F0,<sp/>444760</highlight></codeline>
+</programlisting></para>
+<para>The only difference is that letters <computeroutput>A-Z</computeroutput> denote digits larger than 9</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~p</computeroutput> Print the next argument with print/1 :</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;Good<sp/>night<sp/>~p&quot;</highlight><highlight class="normal">,a+[1,2]).</highlight></codeline>
+<codeline><highlight class="normal">Good<sp/>night<sp/>a+[1,2]</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~q</computeroutput> Print the next argument with writeq/1 :</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;Good<sp/>night<sp/>~q&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;Hello&apos;</highlight><highlight class="normal">+[1,2]).</highlight></codeline>
+<codeline><highlight class="normal">Good<sp/>night<sp/></highlight><highlight class="stringliteral">&apos;Hello&apos;</highlight><highlight class="normal">+[1,2]</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~Ns</computeroutput> The next argument must be a list of character codes.The system then outputs their representation as a string, where <emphasis>N</emphasis> is the maximum number of characters for the string ( <emphasis>N</emphasis> defaults to the length of the string)</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;The<sp/>~s<sp/>are<sp/>~4s&quot;</highlight><highlight class="normal">,[</highlight><highlight class="stringliteral">&quot;woods&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;lovely&quot;</highlight><highlight class="normal">]).</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>woods<sp/>are<sp/>love</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~w</computeroutput> Print the next argument with write/1 :</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;Good<sp/>night<sp/>~w&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;Hello&apos;</highlight><highlight class="normal">+[1,2]).</highlight></codeline>
+<codeline><highlight class="normal">Good<sp/>night<sp/>Hello+[1,2]</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~W</computeroutput> Give the next two arguments to <ref refid="classwrite__term_22" kindref="compound">write_term/2</ref> The first is the term to print, and the second is a list of <ref refid="classwrite__term_22" kindref="compound">write_term/2</ref> options For example:</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">format(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(S),<sp/></highlight><highlight class="stringliteral">&apos;~W&apos;</highlight><highlight class="normal">,<sp/>[Term,<sp/>[singletons(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)]]).</highlight></codeline>
+</programlisting></para>
+<para>This option is SWI-Prolog specific</para>
+<para>The number of arguments, <computeroutput>N</computeroutput>, may be given as an integer, or it may be given as an extra argument The next example shows a small procedure to write a variable number of <computeroutput>a</computeroutput> characters:</para>
+<para><programlisting><codeline><highlight class="normal">write_many_as(N)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format(</highlight><highlight class="stringliteral">&quot;~*c&quot;</highlight><highlight class="normal">,[N,0</highlight><highlight class="stringliteral">&apos;a]).</highlight></codeline>
+</programlisting></para>
+<para>The <ref refid="classformat_22" kindref="compound">format/2</ref> built-in also allows for formatted output One can specify column boundaries and fill the intermediate space by a padding character:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~N|</computeroutput> Set a column boundary at position <emphasis>N</emphasis>, where <emphasis>N</emphasis> defaults to the current position</para>
+</listitem><listitem><para><computeroutput>~N+</computeroutput> Set a column boundary at <emphasis>N</emphasis> characters past the current position, where <emphasis>N</emphasis> defaults to <computeroutput>8</computeroutput></para>
+</listitem><listitem><para><computeroutput>~Nt</computeroutput> Set padding for a column, where <emphasis>N</emphasis> is the fill code (default is <computeroutput>SPC</computeroutput>)</para>
+</listitem></itemizedlist>
+</para>
+<para>The next example shows how to align columns and padding We first show left-alignment:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/>?-<sp/>format(</highlight><highlight class="stringliteral">&quot;~n*Hello~16+*~n&quot;</highlight><highlight class="normal">,[]).</highlight></codeline>
+<codeline><highlight class="normal">*Hello<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+</programlisting></para>
+<para>Note that we reserve 16 characters for the column</para>
+<para>The following example shows how to do right-alignment:</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;*~tHello~16+*~n&quot;</highlight><highlight class="normal">,[]).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Hello*</highlight></codeline>
+</programlisting></para>
+<para>The <computeroutput>~t</computeroutput> escape sequence forces filling before <computeroutput>Hello</computeroutput></para>
+<para>We next show how to do centering:</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>format(</highlight><highlight class="stringliteral">&quot;*~tHello~t~16+*~n&quot;</highlight><highlight class="normal">,[]).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Hello<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+</programlisting></para>
+<para>The two <computeroutput>~t</computeroutput> escape sequence force filling both before and after <computeroutput>Hello</computeroutput> Space is then evenly divided between the right and the left sides</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>~@</computeroutput> Evaluate the next argument as a goal whose standard output is directed to the stream used by <ref refid="classformat_22" kindref="compound">format/2</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>Print formatted output to the current output stream</para>
+<para>Print formatted output to the stream <emphasis>Stream</emphasis> </para>
+    </detaileddescription>
+    <location file="os/format.c" line="43" column="1"/>
+  </compounddef>
+</doxygen>

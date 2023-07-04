@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Conditional__Compilation" kind="group">
+    <compoundname>Conditional_Compilation</compoundname>
+    <title>Conditional Compilation</title>
+    <innerclass refid="classif_21" prot="public">if/1</innerclass>
+    <innerclass refid="classelse_20" prot="private">else/0</innerclass>
+    <innerclass refid="classelif_21" prot="public">elif/1</innerclass>
+    <innerclass refid="classendif_20" prot="private">endif/0</innerclass>
+    <briefdescription>
+<para>Conditional compilation builds on the same principle as <ref refid="classterm__expansion_22" kindref="compound">term_expansion/2</ref> , goal_expansion/2 and the expansion of grammar rules to compile sections of the source-code conditionally. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>One of the reasons for introducing conditional compilation is to simplify writing portable code</para>
+<para>Note that these directives can only be appear as separate terms in the input Typical usage scenarios include:</para>
+<para><verbatim>Load different libraries on different dialects
+
+Define a predicate if it is missing as a system predicate
+
+Realise totally different implementations for a particular
+</verbatim> part of the code due to different capabilities <verbatim>Realise different configuration options for your software.
+</verbatim> <programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">if(test1).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">if.</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">elif(test2).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">elif.</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">elif(test3).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">elif.</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">elif.</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">elif.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">elif</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

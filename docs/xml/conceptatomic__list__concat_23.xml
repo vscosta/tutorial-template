@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptatomic__list__concat_23" kind="concept">
+    <compoundname>atomic_list_concat/3</compoundname>
+    <initializer>template&lt;&gt;
+concept atomic_list_concat/3 =     </initializer>
+    <briefdescription>
+<para><bold>atomic_list_concat</bold>(? <emphasis>As</emphasis>,+ <emphasis>Separator</emphasis>,? <emphasis>A</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Creates an atom just like <ref refid="classatomic__list__concat_22" kindref="compound">atomic_list_concat/2</ref> , but inserts <emphasis>Separator</emphasis> between each pair of atoms For example:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">atomic_list_concat([gnu,<sp/>gnat],<sp/></highlight><highlight class="stringliteral">`,<sp/>`</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">`gnu,<sp/>gnat`</highlight></codeline>
+</programlisting></para>
+<para>YAP emulates the SWI-Prolog version of this predicate that can also be used to split atoms by instantiating <emphasis>Separator</emphasis> and <emphasis>Atom</emphasis> as shown below</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">atomic_list_concat(</highlight><highlight class="charliteral">L</highlight><highlight class="normal">,<sp/>-,<sp/></highlight><highlight class="stringliteral">&apos;gnu-gnat&apos;</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">L</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/>[gnu,<sp/>gnat]</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="pl/atoms.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

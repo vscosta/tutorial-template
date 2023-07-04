@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__queues" kind="group">
+    <compoundname>queues</compoundname>
+    <title>Queues</title>
+    <innerclass refid="classmake__queue_21" prot="public">make_queue/1</innerclass>
+    <innerclass refid="classempty__queue_21" prot="public">empty_queue/1</innerclass>
+    <innerclass refid="classhead__queue_22" prot="public">head_queue/2</innerclass>
+    <innerclass refid="classjoin__queue_23" prot="public">join_queue/3</innerclass>
+    <innerclass refid="classjump__queue_23" prot="public">jump_queue/3</innerclass>
+    <innerclass refid="classlength__queue_22" prot="public">length_queue/2</innerclass>
+    <innerclass refid="classlist__join__queue_23" prot="public">list_join_queue/3</innerclass>
+    <innerclass refid="classlist__jump__queue_23" prot="public">list_jump_queue/3</innerclass>
+    <innerclass refid="classlist__to__queue_22" prot="public">list_to_queue/2</innerclass>
+    <innerclass refid="classqueue__to__list_22" prot="public">queue_to_list/2</innerclass>
+    <innerclass refid="classserve__queue_23" prot="public">serve_queue/3</innerclass>
+    <briefdescription>
+<para>The following queue manipulation routines are available once included with the <computeroutput>use_module(library(queues))</computeroutput> command. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Queues are implemented with difference lists</para>
+<para>In this package, a queue is represented as a term Front-Back, where Front is a list and Back is a tail of that list, and is normally a variable join_queue will only work when the Back is a variable, the other routines will accept any tail The elements of the queue are the list difference, that is, all the elements starting at Front and stopping at Back Examples:</para>
+<para>[a,b,c,d,e|Z]-Z has elements a,b,c,d,e [a,b,c,d,e]-[d,e] has elements a,b,c Z-Z has no elements [1,2,3]-[1,2,3] has no elements</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

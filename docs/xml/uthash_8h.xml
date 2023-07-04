@@ -1,0 +1,957 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="uthash_8h" kind="file" language="C++">
+    <compoundname>uthash.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">inttypes.h</includes>
+    <includedby refid="udi__private_8h" local="yes">/home/vsc/github/yap/H/udi_private.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/uthash.h</label>
+        <link refid="uthash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>inttypes.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/udi.c</label>
+        <link refid="udi_8c_source"/>
+      </node>
+      <node id="2">
+        <label>/home/vsc/github/yap/H/udi_private.h</label>
+        <link refid="udi__private_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/uthash.h</label>
+        <link refid="uthash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structUT__hash__bucket" prot="public">UT_hash_bucket</innerclass>
+    <innerclass refid="structUT__hash__table" prot="public">UT_hash_table</innerclass>
+    <innerclass refid="structUT__hash__handle" prot="public">UT_hash_handle</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="uthash_8h_1a716ba290563c2d955cb0c90d85874073" prot="public" static="no">
+        <name>DECLTYPE</name>
+        <param><defname>x</defname></param>
+        <initializer>(__typeof(x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="43" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a3c736f2f2dd643f2987b2bc323e269ba" prot="public" static="no">
+        <name>DECLTYPE_ASSIGN</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <initializer>do {                                                                             \
+  (dst) = DECLTYPE(dst)(src);                                                    \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="53" column="10" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1aa56cef9cb86dc1f4b5d27ee3a691077e" prot="public" static="no">
+        <name>UTHASH_VERSION</name>
+        <initializer>1.9.7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="67" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a03b52301b0ed976b6981ef33613320c1" prot="public" static="no">
+        <name>uthash_fatal</name>
+        <param><defname>msg</defname></param>
+        <initializer>exit(-1)        /* fatal error (out of memory,etc) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="70" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a861013aff36c0448f1888a2b0b5836d8" prot="public" static="no">
+        <name>uthash_malloc</name>
+        <param><defname>sz</defname></param>
+        <initializer>malloc(sz)      /* malloc fcn                      */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="73" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a56cdf8c254fc700332c8e6a7263b4657" prot="public" static="no">
+        <name>uthash_free</name>
+        <param><defname>ptr</defname></param>
+        <param><defname>sz</defname></param>
+        <initializer>free(ptr)     /* free fcn                        */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="76" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a7cc237d8f87de3836b5390856cfc5c86" prot="public" static="no">
+        <name>uthash_noexpand_fyi</name>
+        <param><defname>tbl</defname></param>
+        <initializer>/* can be defined to log noexpand  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="80" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a86ea78714da520989a6f7a764b4d71b4" prot="public" static="no">
+        <name>uthash_expand_fyi</name>
+        <param><defname>tbl</defname></param>
+        <initializer>/* can be defined to log expands   */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="83" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a361cdc5e8d6d8fe5fae6912588ae15d0" prot="public" static="no">
+        <name>HASH_INITIAL_NUM_BUCKETS</name>
+        <initializer>32      /* initial number of buckets        */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="87" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a0b39a5cf1d6c05c43bd8530db2ec908c" prot="public" static="no">
+        <name>HASH_INITIAL_NUM_BUCKETS_LOG2</name>
+        <initializer>5  /* lg2 of initial number of buckets */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="88" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a8ae3e6473261f6c4b78c030c94f5d68f" prot="public" static="no">
+        <name>HASH_BKT_CAPACITY_THRESH</name>
+        <initializer>10      /* expand when <ref refid="structbucket" kindref="compound">bucket</ref> count reaches */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="89" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a568e95048979b8b3e4ea1567fd91c186" prot="public" static="no">
+        <name>ELMT_FROM_HH</name>
+        <param><defname>tbl</defname></param>
+        <param><defname>hhp</defname></param>
+        <initializer>((void*)(((char*)(hhp)) - ((tbl)-&gt;hho)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="92" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1ad4a1cd39c3044936c0e49d3f372c9dbf" prot="public" static="no">
+        <name>HASH_FIND</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>keyptr</defname></param>
+        <param><defname>keylen</defname></param>
+        <param><defname>out</defname></param>
+        <initializer>do {                                                                             \
+  unsigned _hf_bkt,_hf_hashv;                                                    \
+  out=NULL;                                                                      \
+  if (head) {                                                                    \
+     HASH_FCN(keyptr,keylen, (head)-&gt;hh.tbl-&gt;num_buckets, _hf_hashv, _hf_bkt);   \
+     if (HASH_BLOOM_TEST((head)-&gt;hh.tbl, _hf_hashv)) {                           \
+       HASH_FIND_IN_BKT((head)-&gt;hh.tbl, hh, (head)-&gt;hh.tbl-&gt;buckets[ _hf_bkt ],  \
+                        keyptr,keylen,out);                                      \
+     }                                                                           \
+  }                                                                              \
+} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="94" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a254f427772a1fe7a2480a8302af8f8b8" prot="public" static="no">
+        <name>HASH_BLOOM_MAKE</name>
+        <param><defname>tbl</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="134" column="10" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1ad6847ad938fc26bfd0726d7f159efd0a" prot="public" static="no">
+        <name>HASH_BLOOM_FREE</name>
+        <param><defname>tbl</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="135" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1acaad947212056cd8bfe3d660265fb2db" prot="public" static="no">
+        <name>HASH_BLOOM_ADD</name>
+        <param><defname>tbl</defname></param>
+        <param><defname>hashv</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="136" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a06bfbf880899d54da35487d0d39c1009" prot="public" static="no">
+        <name>HASH_BLOOM_TEST</name>
+        <param><defname>tbl</defname></param>
+        <param><defname>hashv</defname></param>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="137" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1aeba971430f623b6334f565d9c7ec9de5" prot="public" static="no">
+        <name>HASH_MAKE_TABLE</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <initializer>do {                                                                             \
+  (head)-&gt;hh.tbl = (<ref refid="structUT__hash__table" kindref="compound">UT_hash_table</ref>*)uthash_malloc(                                \
+                  sizeof(<ref refid="structUT__hash__table" kindref="compound">UT_hash_table</ref>));                                        \
+  if (!((head)-&gt;hh.tbl))  { uthash_fatal( &quot;out of memory&quot;); }                    \
+  memset((head)-&gt;hh.tbl, 0, sizeof(<ref refid="structUT__hash__table" kindref="compound">UT_hash_table</ref>));                              \
+  (head)-&gt;hh.tbl-&gt;tail = &amp;((head)-&gt;hh);                                          \
+  (head)-&gt;hh.tbl-&gt;num_buckets = HASH_INITIAL_NUM_BUCKETS;                        \
+  (head)-&gt;hh.tbl-&gt;log2_num_buckets = HASH_INITIAL_NUM_BUCKETS_LOG2;              \
+  (head)-&gt;hh.tbl-&gt;hho = (char*)(&amp;(head)-&gt;hh) - (char*)(head);                    \
+  (head)-&gt;hh.tbl-&gt;buckets = (<ref refid="structUT__hash__bucket" kindref="compound">UT_hash_bucket</ref>*)uthash_malloc(                      \
+          HASH_INITIAL_NUM_BUCKETS*sizeof(struct <ref refid="structUT__hash__bucket" kindref="compound">UT_hash_bucket</ref>));               \
+  if (! (head)-&gt;hh.tbl-&gt;buckets) { uthash_fatal( &quot;out of memory&quot;); }             \
+  memset((head)-&gt;hh.tbl-&gt;buckets, 0,                                             \
+          HASH_INITIAL_NUM_BUCKETS*sizeof(struct <ref refid="structUT__hash__bucket" kindref="compound">UT_hash_bucket</ref>));               \
+  HASH_BLOOM_MAKE((head)-&gt;hh.tbl);                                               \
+  (head)-&gt;hh.tbl-&gt;signature = HASH_SIGNATURE;                                    \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="140" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1aaf01358e257c8d838eb5e4b189f0c399" prot="public" static="no">
+        <name>HASH_ADD</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>fieldname</defname></param>
+        <param><defname>keylen_in</defname></param>
+        <param><defname>add</defname></param>
+        <initializer>        HASH_ADD_KEYPTR(hh,head,&amp;((add)-&gt;fieldname),keylen_in,add)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="159" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a0b7468360b5c788762cdb2ccf9cd4d26" prot="public" static="no">
+        <name>HASH_ADD_KEYPTR</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>keyptr</defname></param>
+        <param><defname>keylen_in</defname></param>
+        <param><defname>add</defname></param>
+        <initializer>do {                                                                             \
+ unsigned _ha_bkt;                                                               \
+ (add)-&gt;hh.next = NULL;                                                          \
+ (add)-&gt;hh.key = (char*)keyptr;                                                  \
+ (add)-&gt;hh.keylen = (unsigned)keylen_in;                                                   \
+ if (!(head)) {                                                                  \
+    head = (add);                                                                \
+    (head)-&gt;hh.prev = NULL;                                                      \
+    HASH_MAKE_TABLE(hh,head);                                                    \
+ } else {                                                                        \
+    (head)-&gt;hh.tbl-&gt;tail-&gt;next = (add);                                          \
+    (add)-&gt;hh.prev = ELMT_FROM_HH((head)-&gt;hh.tbl, (head)-&gt;hh.tbl-&gt;tail);         \
+    (head)-&gt;hh.tbl-&gt;tail = &amp;((add)-&gt;hh);                                         \
+ }                                                                               \
+ (head)-&gt;hh.tbl-&gt;num_items++;                                                    \
+ (add)-&gt;hh.tbl = (head)-&gt;hh.tbl;                                                 \
+ HASH_FCN(keyptr,keylen_in, (head)-&gt;hh.tbl-&gt;num_buckets,                         \
+         (add)-&gt;hh.hashv, _ha_bkt);                                              \
+ HASH_ADD_TO_BKT((head)-&gt;hh.tbl-&gt;buckets[_ha_bkt],&amp;(add)-&gt;hh);                   \
+ HASH_BLOOM_ADD((head)-&gt;hh.tbl,(add)-&gt;hh.hashv);                                 \
+ HASH_EMIT_KEY(hh,head,keyptr,keylen_in);                                        \
+ HASH_FSCK(hh,head);                                                             \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="162" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a4d7691544128a6ef265f3e4fa5ed3113" prot="public" static="no">
+        <name>HASH_TO_BKT</name>
+        <param><defname>hashv</defname></param>
+        <param><defname>num_bkts</defname></param>
+        <param><defname>bkt</defname></param>
+        <initializer>do {                                                                             \
+  bkt = ((hashv) &amp; ((num_bkts) - 1));                                            \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="187" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a3f83117e1108d63844a58d2d79c3b980" prot="public" static="no">
+        <name>HASH_DELETE</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>delptr</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="204" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a214529083adfab2fa8cd402d2eeb0a84" prot="public" static="no">
+        <name>HASH_FIND_STR</name>
+        <param><defname>head</defname></param>
+        <param><defname>findstr</defname></param>
+        <param><defname>out</defname></param>
+        <initializer>    HASH_FIND(hh,head,findstr,strlen(findstr),out)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="241" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a9724951736f3985f74df17638c8a7885" prot="public" static="no">
+        <name>HASH_ADD_STR</name>
+        <param><defname>head</defname></param>
+        <param><defname>strfield</defname></param>
+        <param><defname>add</defname></param>
+        <initializer>    HASH_ADD(hh,head,strfield,strlen(add-&gt;strfield),add)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="243" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1aadcb19b940348f3141bd51505ede0142" prot="public" static="no">
+        <name>HASH_FIND_INT</name>
+        <param><defname>head</defname></param>
+        <param><defname>findint</defname></param>
+        <param><defname>out</defname></param>
+        <initializer>    HASH_FIND(hh,head,findint,sizeof(int),out)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="245" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1acf85835471af894e354efb7e346698f3" prot="public" static="no">
+        <name>HASH_ADD_INT</name>
+        <param><defname>head</defname></param>
+        <param><defname>intfield</defname></param>
+        <param><defname>add</defname></param>
+        <initializer>    HASH_ADD(hh,head,intfield,sizeof(int),add)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="247" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a26a887f8e31952034becac0cf446f6c3" prot="public" static="no">
+        <name>HASH_FIND_PTR</name>
+        <param><defname>head</defname></param>
+        <param><defname>findptr</defname></param>
+        <param><defname>out</defname></param>
+        <initializer>    HASH_FIND(hh,head,findptr,sizeof(void *),out)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="249" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a2ad1f84ef1ba9df99fa2ada38cb61823" prot="public" static="no">
+        <name>HASH_ADD_PTR</name>
+        <param><defname>head</defname></param>
+        <param><defname>ptrfield</defname></param>
+        <param><defname>add</defname></param>
+        <initializer>    HASH_ADD(hh,head,ptrfield,sizeof(void *),add)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="251" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a48b7ed374602dcb236501aa23a971f05" prot="public" static="no">
+        <name>HASH_DEL</name>
+        <param><defname>head</defname></param>
+        <param><defname>delptr</defname></param>
+        <initializer>    HASH_DELETE(hh,head,delptr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="253" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a7d882fadb26a4e6c13c134d8be4d0759" prot="public" static="no">
+        <name>HASH_FSCK</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="313" column="10" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a44f9d46e2cc79652492e5dd3e6c40a15" prot="public" static="no">
+        <name>HASH_EMIT_KEY</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>keyptr</defname></param>
+        <param><defname>fieldlen</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="327" column="10" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1abd3356419b386c379116393700a751d3" prot="public" static="no">
+        <name>HASH_FCN</name>
+        <initializer>HASH_JEN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="334" column="10" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a7271bf51d7fe2cf2c183578aee73601e" prot="public" static="no">
+        <name>HASH_BER</name>
+        <param><defname>key</defname></param>
+        <param><defname>keylen</defname></param>
+        <param><defname>num_bkts</defname></param>
+        <param><defname>hashv</defname></param>
+        <param><defname>bkt</defname></param>
+        <initializer>do {                                                                             \
+  unsigned _hb_keylen=keylen;                                                    \
+  char *_hb_key=(char*)(key);                                                    \
+  (hashv) = 0;                                                                   \
+  while (_hb_keylen--)  { (hashv) = ((hashv) * 33) + *_hb_key++; }               \
+  bkt = (hashv) &amp; (num_bkts-1);                                                  \
+} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="338" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1aa4cb140b45415e7bf57237525388af79" prot="public" static="no">
+        <name>HASH_SAX</name>
+        <param><defname>key</defname></param>
+        <param><defname>keylen</defname></param>
+        <param><defname>num_bkts</defname></param>
+        <param><defname>hashv</defname></param>
+        <param><defname>bkt</defname></param>
+        <initializer>do {                                                                             \
+  unsigned _sx_i;                                                                \
+  char *_hs_key=(char*)(key);                                                    \
+  hashv = 0;                                                                     \
+  for(_sx_i=0; _sx_i &lt; keylen; _sx_i++)                                          \
+      hashv ^= (hashv &lt;&lt; 5) + (hashv &gt;&gt; 2) + _hs_key[_sx_i];                     \
+  bkt = hashv &amp; (num_bkts-1);                                                    \
+} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="350" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1ac99f9a353421537527a80b392089dd9d" prot="public" static="no">
+        <name>HASH_FNV</name>
+        <param><defname>key</defname></param>
+        <param><defname>keylen</defname></param>
+        <param><defname>num_bkts</defname></param>
+        <param><defname>hashv</defname></param>
+        <param><defname>bkt</defname></param>
+        <initializer>do {                                                                             \
+  unsigned _fn_i;                                                                \
+  char *_hf_key=(char*)(key);                                                    \
+  hashv = 2166136261UL;                                                          \
+  for(_fn_i=0; _fn_i &lt; keylen; _fn_i++)                                          \
+      hashv = (hashv * 16777619) ^ _hf_key[_fn_i];                               \
+  bkt = hashv &amp; (num_bkts-1);                                                    \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="360" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1abc7040b698211c1993441fb4165fa0b4" prot="public" static="no">
+        <name>HASH_OAT</name>
+        <param><defname>key</defname></param>
+        <param><defname>keylen</defname></param>
+        <param><defname>num_bkts</defname></param>
+        <param><defname>hashv</defname></param>
+        <param><defname>bkt</defname></param>
+        <initializer>do {                                                                             \
+  unsigned _ho_i;                                                                \
+  char *_ho_key=(char*)(key);                                                    \
+  hashv = 0;                                                                     \
+  for(_ho_i=0; _ho_i &lt; keylen; _ho_i++) {                                        \
+      hashv += _ho_key[_ho_i];                                                   \
+      hashv += (hashv &lt;&lt; 10);                                                    \
+      hashv ^= (hashv &gt;&gt; 6);                                                     \
+  }                                                                              \
+  hashv += (hashv &lt;&lt; 3);                                                         \
+  hashv ^= (hashv &gt;&gt; 11);                                                        \
+  hashv += (hashv &lt;&lt; 15);                                                        \
+  bkt = hashv &amp; (num_bkts-1);                                                    \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="370" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a6d37144e54d2bd49eb88fbfd04c59dc5" prot="public" static="no">
+        <name>HASH_JEN_MIX</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>do {                                                                             \
+  a -= b; a -= c; a ^= ( c &gt;&gt; 13 );                                              \
+  b -= c; b -= a; b ^= ( a &lt;&lt; 8 );                                               \
+  c -= a; c -= b; c ^= ( b &gt;&gt; 13 );                                              \
+  a -= b; a -= c; a ^= ( c &gt;&gt; 12 );                                              \
+  b -= c; b -= a; b ^= ( a &lt;&lt; 16 );                                              \
+  c -= a; c -= b; c ^= ( b &gt;&gt; 5 );                                               \
+  a -= b; a -= c; a ^= ( c &gt;&gt; 3 );                                               \
+  b -= c; b -= a; b ^= ( a &lt;&lt; 10 );                                              \
+  c -= a; c -= b; c ^= ( b &gt;&gt; 15 );                                              \
+} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="386" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1aa16e3ae6125d7f10d3deb4695e0ee51e" prot="public" static="no">
+        <name>HASH_JEN</name>
+        <param><defname>key</defname></param>
+        <param><defname>keylen</defname></param>
+        <param><defname>num_bkts</defname></param>
+        <param><defname>hashv</defname></param>
+        <param><defname>bkt</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="399" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1abc7d71657be8975a51684e41029b7964" prot="public" static="no">
+        <name>get16bits</name>
+        <param><defname>d</defname></param>
+        <initializer>                       ((((uint32_t)(((const uint8_t *)(d))[1])) &lt;&lt; 8)             \
+                       +(uint32_t)(((const uint8_t *)(d))[0]) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="448" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1ab595698a74642684dace0dfa47dab445" prot="public" static="no">
+        <name>HASH_SFH</name>
+        <param><defname>key</defname></param>
+        <param><defname>keylen</defname></param>
+        <param><defname>num_bkts</defname></param>
+        <param><defname>hashv</defname></param>
+        <param><defname>bkt</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="451" column="10" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a35c9b682ebb7a8cbf284b9f0a9594095" prot="public" static="no">
+        <name>HASH_KEYCMP</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>len</defname></param>
+        <initializer>memcmp(a,b,len)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="577" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a42ae87cc63106a82601808f19329502c" prot="public" static="no">
+        <name>HASH_FIND_IN_BKT</name>
+        <param><defname>tbl</defname></param>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>keyptr</defname></param>
+        <param><defname>keylen_in</defname></param>
+        <param><defname>out</defname></param>
+        <initializer>do {                                                                             \
+ if (head.hh_head) DECLTYPE_ASSIGN(out,ELMT_FROM_HH(tbl,head.hh_head));          \
+ else out=NULL;                                                                  \
+ while (out) {                                                                   \
+    if ((out)-&gt;hh.keylen == keylen_in) {                                           \
+        if ((HASH_KEYCMP((out)-&gt;hh.key,keyptr,keylen_in)) == 0) break;             \
+    }                                                                            \
+    if ((out)-&gt;hh.hh_next) DECLTYPE_ASSIGN(out,ELMT_FROM_HH(tbl,(out)-&gt;hh.hh_next)); \
+    else out = NULL;                                                             \
+ }                                                                               \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="580" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a78e11adee321f45c5cb31ff2d6eb0348" prot="public" static="no">
+        <name>HASH_ADD_TO_BKT</name>
+        <param><defname>head</defname></param>
+        <param><defname>addhh</defname></param>
+        <initializer>do {                                                                             \
+ head.count++;                                                                   \
+ (addhh)-&gt;hh_next = head.hh_head;                                                \
+ (addhh)-&gt;hh_prev = NULL;                                                        \
+ if (head.hh_head) { (head).hh_head-&gt;hh_prev = (addhh); }                        \
+ (head).hh_head=addhh;                                                           \
+ if (head.count &gt;= ((head.expand_mult+1) * HASH_BKT_CAPACITY_THRESH)             \
+     &amp;&amp; (addhh)-&gt;tbl-&gt;noexpand != 1) {                                           \
+       HASH_EXPAND_BUCKETS((addhh)-&gt;tbl);                                        \
+ }                                                                               \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="594" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a1b2d6f694f98cf6350cdd18225cb3f78" prot="public" static="no">
+        <name>HASH_DEL_IN_BKT</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>hh_del</defname></param>
+        <initializer>    (head).count--;                                                              \
+    if ((head).hh_head == hh_del) {                                              \
+      (head).hh_head = hh_del-&gt;hh_next;                                          \
+    }                                                                            \
+    if (hh_del-&gt;hh_prev) {                                                       \
+        hh_del-&gt;hh_prev-&gt;hh_next = hh_del-&gt;hh_next;                              \
+    }                                                                            \
+    if (hh_del-&gt;hh_next) {                                                       \
+        hh_del-&gt;hh_next-&gt;hh_prev = hh_del-&gt;hh_prev;                              \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="608" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a6439fd6271474e61b1840fbf83132f03" prot="public" static="no">
+        <name>HASH_EXPAND_BUCKETS</name>
+        <param><defname>tbl</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="649" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a88d2ab40956878caacd02c214f7e8f15" prot="public" static="no">
+        <name>HASH_SORT</name>
+        <param><defname>head</defname></param>
+        <param><defname>cmpfcn</defname></param>
+        <initializer>HASH_SRT(hh,head,cmpfcn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="701" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a388b4071dcff005154f431d3d3025fbd" prot="public" static="no">
+        <name>HASH_SRT</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>cmpfcn</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="702" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1ad190366f7a476ece79bd628240a5fc93" prot="public" static="no">
+        <name>HASH_SELECT</name>
+        <param><defname>hh_dst</defname></param>
+        <param><defname>dst</defname></param>
+        <param><defname>hh_src</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>cond</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="786" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a0512b3f7a824275579ec82643ef2cc23" prot="public" static="no">
+        <name>HASH_CLEAR</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <initializer>do {                                                                             \
+  if (head) {                                                                    \
+    uthash_free((head)-&gt;hh.tbl-&gt;buckets,                                         \
+                (head)-&gt;hh.tbl-&gt;num_buckets*sizeof(struct <ref refid="structUT__hash__bucket" kindref="compound">UT_hash_bucket</ref>));      \
+    HASH_BLOOM_FREE((head)-&gt;hh.tbl);                                             \
+    uthash_free((head)-&gt;hh.tbl, sizeof(<ref refid="structUT__hash__table" kindref="compound">UT_hash_table</ref>));                          \
+    (head)=NULL;                                                                 \
+  }                                                                              \
+} while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="824" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a4d524042f1fcb976d8bccae9e4cc63d6" prot="public" static="no">
+        <name>HASH_ITER</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <param><defname>el</defname></param>
+        <param><defname>tmp</defname></param>
+        <initializer>for((el)=(head),(tmp)=DECLTYPE(el)((head)?(head)-&gt;hh.next:NULL);                 \
+  el; (el)=(tmp),(tmp)=DECLTYPE(el)((tmp)?(tmp)-&gt;hh.next:NULL))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="840" column="10" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a7d3edf55a3ee4da1a0e1b477c314342f" prot="public" static="no">
+        <name>HASH_COUNT</name>
+        <param><defname>head</defname></param>
+        <initializer>HASH_CNT(hh,head)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="846" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a6ea9e661cd8c35eff1fdcd5731127edd" prot="public" static="no">
+        <name>HASH_CNT</name>
+        <param><defname>hh</defname></param>
+        <param><defname>head</defname></param>
+        <initializer>((head)?((head)-&gt;hh.tbl-&gt;num_items):0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="847" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a4a7a46b9b92a9c73e4f9321e8e6b6bb2" prot="public" static="no">
+        <name>HASH_SIGNATURE</name>
+        <initializer>0xa0111fe1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="870" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="uthash_8h_1a18a33f4269f05c1e81ce54edbc0ffca6" prot="public" static="no">
+        <name>HASH_BLOOM_SIGNATURE</name>
+        <initializer>0xb12220f2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="871" column="9" bodyfile="/home/vsc/github/yap/H/uthash.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="uthash_8h_1a3775136bedd7fc8db3ad7c1ad6a7218e" prot="public" static="no">
+        <type>struct <ref refid="structUT__hash__bucket" kindref="compound">UT_hash_bucket</ref></type>
+        <definition>typedef struct UT_hash_bucket UT_hash_bucket</definition>
+        <argsstring></argsstring>
+        <name>UT_hash_bucket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="867" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="uthash_8h_1ade349c45717e328f0337b6fe5a0658bf" prot="public" static="no">
+        <type>struct <ref refid="structUT__hash__table" kindref="compound">UT_hash_table</ref></type>
+        <definition>typedef struct UT_hash_table UT_hash_table</definition>
+        <argsstring></argsstring>
+        <name>UT_hash_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="904" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="uthash_8h_1a817624f072ea116d638b237d518d6f6a" prot="public" static="no">
+        <type>struct <ref refid="structUT__hash__handle" kindref="compound">UT_hash_handle</ref></type>
+        <definition>typedef struct UT_hash_handle UT_hash_handle</definition>
+        <argsstring></argsstring>
+        <name>UT_hash_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/uthash.h" line="915" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/uthash.h"/>
+  </compounddef>
+</doxygen>

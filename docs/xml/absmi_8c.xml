@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="absmi_8c" kind="file" language="C++">
+    <compoundname>absmi.c</compoundname>
+    <includes refid="absmi_8h" local="yes">absmi.h</includes>
+    <includes refid="Regs_8h" local="yes">Regs.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="Yapproto_8h" local="yes">Yapproto.h</includes>
+    <includes refid="heapgc_8h" local="yes">heapgc.h</includes>
+    <includes refid="YapCompoundTerm_8h" local="yes">YapCompoundTerm.h</includes>
+    <includes refid="arith2_8h" local="yes">arith2.h</includes>
+    <includes refid="C_2absmi__insts_8h" local="yes">absmi_insts.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/absmi.c</label>
+        <link refid="absmi_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>absmi_insts.h</label>
+        <link refid="C_2absmi__insts_8h_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>control_absmi_insts.h</label>
+        <link refid="control__absmi__insts_8h_source"/>
+      </node>
+      <node id="63">
+        <label>cp_absmi_insts.h</label>
+        <link refid="C_2cp__absmi__insts_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>fail_absmi_insts.h</label>
+        <link refid="fail__absmi__insts_8h_source"/>
+      </node>
+      <node id="65">
+        <label>fli_absmi_insts.h</label>
+        <link refid="fli__absmi__insts_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>index_absmi_insts.h</label>
+        <link refid="index__absmi__insts_8h_source"/>
+      </node>
+      <node id="67">
+        <label>lu_absmi_insts.h</label>
+        <link refid="lu__absmi__insts_8h_source"/>
+      </node>
+      <node id="68">
+        <label>or_absmi_insts.h</label>
+        <link refid="or__absmi__insts_8h_source"/>
+      </node>
+      <node id="69">
+        <label>prim_absmi_insts.h</label>
+        <link refid="prim__absmi__insts_8h_source"/>
+      </node>
+      <node id="70">
+        <label>type_absmi_insts.h</label>
+        <link refid="type__absmi__insts_8h_source"/>
+      </node>
+      <node id="71">
+        <label>unify_absmi_insts.h</label>
+        <link refid="unify__absmi__insts_8h_source"/>
+      </node>
+      <node id="22">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="28">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="37">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="27">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="36">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>arith2.h</label>
+        <link refid="arith2_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="43">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="35">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="59">
+        <label>heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="45">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="55">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="58">
+        <label>trim_trail.h</label>
+        <link refid="trim__trail_8h_source"/>
+      </node>
+      <node id="50">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="7">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="19">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="21">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="10">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="14">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="12">
+        <label>config.h</label>
+      </node>
+      <node id="46">
+        <label>dlocals.h</label>
+      </node>
+      <node id="29">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="15">
+        <label>string.h</label>
+      </node>
+      <node id="53">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="23">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <member refid="group__Emulator_1ga7acc72f894c5fa7d39dd00e5bfd12970" kind="define"><name>IN_ABSMI_C</name></member>
+      <member refid="group__Emulator_1ga1aae651a135d32325df00e1ef73f905d" kind="define"><name>_INATIV</name></member>
+      <member refid="group__Emulator_1ga9529e916451e584e814efe1784cff21e" kind="define"><name>HAS_CACHE_REGS</name></member>
+      <member refid="group__Emulator_1ga61a10b9b9e8dcd3f1bce94a353667efa" kind="define"><name>DEBUG_INTERRUPTS</name></member>
+      <memberdef kind="define" id="absmi_8c_1a44649b9fd72381770cd6486b462d131d" prot="public" static="no">
+        <name>I_R</name>
+        <initializer>(XREGS[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="890" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <member refid="group__Emulator_1ga73b3066291b5a6ccaf8f8a0d0473ca6e" kind="variable"><name>Yap_ABSMI_OPCODES</name></member>
+      <member refid="group__Emulator_1gaf199a46b47f2aeaf1f533c2afbb1a878" kind="variable"><name>Yap_XREGS</name></member>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__Emulator_1gac88797c1aee4eb53682a43f0e90fbc23" kind="function"><name>save_goal</name></member>
+      <member refid="group__Emulator_1gae481a50bf9736534ca2da346d9f73597" kind="function"><name>stack_overflow</name></member>
+      <member refid="group__Emulator_1gacac6c0c0e8f8e6f83ad226547474a01a" kind="function"><name>code_overflow</name></member>
+      <member refid="group__Emulator_1gad8f55a5c337a4d0be454970d312a209e" kind="function"><name>save_xregs</name></member>
+      <member refid="group__Emulator_1gaff0ef54b952be75c176441ece4c2a778" kind="function"><name>addgs</name></member>
+      <member refid="group__Emulator_1ga95c5e927eeb195999b3804debaa85982" kind="function"><name>interrupt_wake_up</name></member>
+      <member refid="group__Emulator_1gaebe20838dca8c9eeb5cd66275a88c443" kind="function"><name>interrupt_main</name></member>
+      <member refid="group__Emulator_1gae40865dfdf3ab3926862ced32e58378a" kind="function"><name>Yap_dispatch_interrupts</name></member>
+      <member refid="group__Emulator_1gae2090fcdad50ad1edcbd104cc97315cb" kind="function"><name>interrupt_fail</name></member>
+      <member refid="group__Emulator_1gabefd868ef9584770caac55832710b284" kind="function"><name>interrupt_execute</name></member>
+      <member refid="group__Emulator_1ga5828f1ab3d5c70cd034d5d371140df50" kind="function"><name>Yap_interrupt_execute</name></member>
+      <member refid="group__Emulator_1gaa9faba4fb98c024d91a39e50f17922c7" kind="function"><name>interrupt_executec</name></member>
+      <member refid="group__Emulator_1ga7eaec3a278bab0805701ce0f3edcb41d" kind="function"><name>interrupt_c_call</name></member>
+      <member refid="group__Emulator_1ga897bc000d103e35fcf06eccb9ec6cc92" kind="function"><name>interrupt_user_call</name></member>
+      <member refid="group__Emulator_1ga8f316150bb7654297404b06618e96244" kind="function"><name>interrupt_call</name></member>
+      <member refid="group__Emulator_1ga84e164d934998f9da4b7009fa8c7914b" kind="function"><name>interrupt_dexecute</name></member>
+      <member refid="group__Emulator_1ga6e835e4138d4318188796d067e5eab81" kind="function"><name>interrupt_cut</name></member>
+      <member refid="group__Emulator_1ga1e286ccf33557a27ed4f2f26564b64f9" kind="function"><name>interrupt_cut_t</name></member>
+      <member refid="group__Emulator_1ga469df0205fe72d0450de06b80d80f3e4" kind="function"><name>interrupt_cut_e</name></member>
+      <member refid="group__Emulator_1ga1a8ba689c32ed38ab5b591f27cef415c" kind="function"><name>interrupt_commit_y</name></member>
+      <member refid="group__Emulator_1ga4864cb9795b232fcd2e5c2675f0f738a" kind="function"><name>interrupt_commit_x</name></member>
+      <member refid="group__Emulator_1ga273ce2165a4911137b7e656bbad54565" kind="function"><name>undef_goal</name></member>
+      <member refid="group__Emulator_1gaf485123c7f6bfb7b5a3c29a0b1c356d5" kind="function"><name>spy_goal</name></member>
+      <member refid="group__Emulator_1ga3c423901cbd264db01d2fa53e5855c81" kind="function"><name>Yap_absmi</name></member>
+      <member refid="group__Emulator_1gaaeacd69c158e335a9e3591f3c8383a38" kind="function"><name>Yap_absmiEND</name></member>
+      </sectiondef>
+    <briefdescription>
+<para>We next discuss several issues on trying to make Prolog programs run fast in YAP. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>We assume two different programming styles:</para>
+<para><itemizedlist>
+<listitem><para>Evaluation of <emphasis>deterministic</emphasis> programs often boils down to a recursive loop of the form:</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">loop(Done).</highlight></codeline>
+<codeline><highlight class="normal">loop(Env)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal">do_something(Env,NewEnv),</highlight></codeline>
+<codeline><highlight class="normal">loop(NewEnv).</highlight></codeline>
+</programlisting></para>
+<para>or to the repeat-fail loop:</para>
+<para><programlisting><codeline><highlight class="normal">loop(Inp)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal">do_something(Inp,Out),</highlight></codeline>
+<codeline><highlight class="normal">out_and_fail(Out).</highlight></codeline>
+</programlisting></para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/absmi.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,800 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="bignum_8c" kind="file" language="C++">
+    <compoundname>bignum.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/bignum.c</label>
+        <link refid="bignum_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bignum_8c_1a0e5b5fa17fa01ccb258065f58e90aeae" prot="public" static="no">
+        <name>MAT_DIMS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="567" column="9" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bignum_8c_1aa002eb9f06ff11608b5b7b2211f77f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_AllocExternalDataaaInStack</definition>
+        <argsstring>(size_t ncells)</argsstring>
+        <name>Yap_AllocExternalDataaaInStack</name>
+        <param>
+          <type>size_t</type>
+          <declname>ncells</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="192" column="6" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="192" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1ac187f40afbffc85fbb6eaaa692dcd1a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_AllocExternalDataInStack</definition>
+        <argsstring>(size_t ncells)</argsstring>
+        <name>Yap_AllocExternalDataInStack</name>
+        <param>
+          <type>size_t</type>
+          <declname>ncells</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="209" column="6" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="209" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a138666fb018dfbc876e18a1532addd4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_CleanOpaqueVariable</definition>
+        <argsstring>(CELL d)</argsstring>
+        <name>Yap_CleanOpaqueVariable</name>
+        <param>
+          <type>CELL</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="229" column="5" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="229" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a51f4c4f7fee1fd80b65315b48f5168eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Opaque_CallOnWrite</type>
+        <definition>YAP_Opaque_CallOnWrite Yap_blob_write_handler</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_blob_write_handler</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="254" column="24" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="254" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a7323f083ae04fcfda1e09b3357824b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Opaque_CallOnGCMark</type>
+        <definition>YAP_Opaque_CallOnGCMark Yap_blob_gc_mark_handler</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_blob_gc_mark_handler</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="278" column="25" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="278" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a4c271b15fed57dbadfd88da028bb8290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Opaque_CallOnGCRelocate</type>
+        <definition>YAP_Opaque_CallOnGCRelocate Yap_blob_gc_relocate_handler</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_blob_gc_relocate_handler</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="299" column="29" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="299" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a3d8434ec29c421fc1eecd8483e1408fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_blob_tag</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_blob_tag</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="322" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="322" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a2f097ac757e85e5d5a168bbbd0852433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * Yap_blob_info</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_blob_info</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="335" column="6" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="335" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a8218e5d072038e501b373aef8d73f14f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_MkULLIntTerm</definition>
+        <argsstring>(YAP_ULONG_LONG n)</argsstring>
+        <name>Yap_MkULLIntTerm</name>
+        <param>
+          <type>YAP_ULONG_LONG</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="351" column="6" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="351" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1ae5b5fa029604ef9c9f2e75bb2cd18ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>CELL * Yap_HeapStoreOpaqueTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_HeapStoreOpaqueTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="379" column="6" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="379" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1af6f8466a4cb9d793cc8f0879e937faaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Yap_OpaqueTermToString</definition>
+        <argsstring>(Term t, char *str, size_t max)</argsstring>
+        <name>Yap_OpaqueTermToString</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="398" column="8" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="398" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a7227cf02aa559472be6fd6c41c4223d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_is_bignum</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_is_bignum</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="446" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="446" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1acad7294fe1d6b813a5e602663c958f71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_is_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_is_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="456" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="456" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1abf83efc3c801bc775601f1555028b0b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_nb_set_bit</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_nb_set_bit</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="462" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="462" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1aab3aac4fdc3413eb97731bb7487ee14d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_has_bignums</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_has_bignums</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="488" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="488" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1aafcc5539aa80d90bf76c09cff2ecddee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_is_opaque</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_is_opaque</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="496" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="496" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a2677acba576a299b7dc9a767deb9e35e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_is_rational</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_is_rational</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="512" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="512" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1adbdbfd0e1d9977d53fedae8efbbb60ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * YAP_FetchArray</definition>
+        <argsstring>(Term t1, ssize_t *sz, int *type, ssize_t *ndims, ssize_t **dims)</argsstring>
+        <name>YAP_FetchArray</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>ssize_t *</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>ssize_t *</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>ssize_t **</type>
+          <declname>dims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="532" column="7" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="532" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1aeb536448aeed81df2f280cbce5350f8a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int fast_get_for_int_vector</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>fast_get_for_int_vector</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="568" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="568" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a24840e7a7bb7f3501e2bfa9068576046" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int fast_set_for_int_vector</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>fast_set_for_int_vector</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="574" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="574" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1abac46b2144b14a0e3902aedfe69e516b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IS_MATRIX</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>IS_MATRIX</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="581" column="6" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="581" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="bignum_8c_1a0b992f225f6c8837b20e996db5d4e27c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rational</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rational</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/bignum.c" line="607" column="12" bodyfile="/home/vsc/github/yap/C/bignum.c" bodystart="607" bodyend="639"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/bignum.c"/>
+  </compounddef>
+</doxygen>

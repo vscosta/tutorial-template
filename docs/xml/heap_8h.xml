@@ -1,0 +1,865 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="heap_8h" kind="file" language="C++">
+    <compoundname>heap.h</compoundname>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includedby refid="fields_8h" local="yes">/home/vsc/github/yap/H/fields.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="30">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="38">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="29">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="37">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="46">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="45">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="36">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/heap.h</label>
+        <link refid="heap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="48">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="20">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="39">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="19">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="21">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="10">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="14">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="12">
+        <label>config.h</label>
+      </node>
+      <node id="49">
+        <label>dlocals.h</label>
+      </node>
+      <node id="31">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="15">
+        <label>string.h</label>
+      </node>
+      <node id="42">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="5">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/H/fields.h</label>
+        <link refid="fields_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/heap.h</label>
+        <link refid="heap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="heap_8h_1a2dd638e722faaf24f74a9c4d6d747b13" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>WideHashChain</definition>
+        <argsstring></argsstring>
+        <name>WideHashChain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="93" column="3" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1aae7e4cda7bcd0ca20b8255f98031fbdf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>HashChain</definition>
+        <argsstring></argsstring>
+        <name>HashChain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="94" column="3" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1abf6961a617f76ce5ca314c0fc6e33cf4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>GLOBAL_flagCount</definition>
+        <argsstring></argsstring>
+        <name>GLOBAL_flagCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="143" column="2" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1a9647b40a342b19fe792cc2d60eccdb79" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>PredHash</definition>
+        <argsstring></argsstring>
+        <name>PredHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="148" column="4" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1a6110d7c9908d5dafc887e4c2b15e0b12" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RETRY_C_RECORDEDP_CODE</definition>
+        <argsstring></argsstring>
+        <name>RETRY_C_RECORDEDP_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="249" column="4" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1a9578bf94fd913a1b19c44c1213156cf2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>NULL</definition>
+        <argsstring></argsstring>
+        <name>NULL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="249" column="27" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1a919361f5839c8134156d81c3e75e6154" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RETRY_C_RECORDED_K_CODE</definition>
+        <argsstring></argsstring>
+        <name>RETRY_C_RECORDED_K_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="252" column="4" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1ab48798e5ea7cc3a49f1a6a1878bfd0c3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DBErasedMarker</definition>
+        <argsstring></argsstring>
+        <name>DBErasedMarker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="309" column="4" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1aed181755bb4e497e61edaf1685acbe28" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>LogDBErasedMarker</definition>
+        <argsstring></argsstring>
+        <name>LogDBErasedMarker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="311" column="4" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1a77597739584eb10c7b242caf2bd551a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>SWI_Atoms</definition>
+        <argsstring></argsstring>
+        <name>SWI_Atoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="346" column="4" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1a5797138e49ef21a2f0efd1b2102dc014" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>MAX_EMPTY_WAKEUPS</definition>
+        <argsstring></argsstring>
+        <name>MAX_EMPTY_WAKEUPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="380" column="2" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="heap_8h_1aa29b5b48bd0023cae9ad501450331d61" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>EmptyWakeups</definition>
+        <argsstring></argsstring>
+        <name>EmptyWakeups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="380" column="20" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="heap_8h_1a82e30df44d569137bb31c51426f08a00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HPROC</definition>
+        <argsstring>(AtomHashEntry, INVISIBLECHAIN, InitInvisibleAtoms(), RestoreInvisibleAtoms()) HPROC(AtomHashEntry *</argsstring>
+        <name>HPROC</name>
+        <param>
+          <type><ref refid="structatom__hash__entry" kindref="compound">AtomHashEntry</ref></type>
+        </param>
+        <param>
+          <type>INVISIBLECHAIN</type>
+        </param>
+        <param>
+          <type>InitInvisibleAtoms()</type>
+        </param>
+        <param>
+          <type>RestoreInvisibleAtoms()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1ab4b7baaaaa48ee0e9b2aec93c6cfd294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InitWideAtoms</definition>
+        <argsstring>()</argsstring>
+        <name>InitWideAtoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="93" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1aceeeddb9e2856e89b70e380672d7ebe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestoreWideAtoms</definition>
+        <argsstring>()) HPROC(AtomHashEntry *</argsstring>
+        <name>RestoreWideAtoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="93" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1aecb398460ae58ef98cba9cb028d75a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InitAtoms</definition>
+        <argsstring>()</argsstring>
+        <name>InitAtoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="94" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1acf3552c84668f47d11e32ad4a76f2111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestoreAtoms</definition>
+        <argsstring>()) HM(UInt</argsstring>
+        <name>RestoreAtoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="94" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a8a50dd8d004c833f1ba9134aacdeeebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Yap_InitFlags</definition>
+        <argsstring>(true)</argsstring>
+        <name>Yap_InitFlags</name>
+        <param>
+          <type>true</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="143" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1ab87f1ee12a78e8b5a87307e3332778a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestoreFlags</definition>
+        <argsstring>(GLOBAL_flagCount)) HPROC(struct pred_entry **</argsstring>
+        <name>RestoreFlags</name>
+        <param>
+          <type>GLOBAL_flagCount</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="143" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a722d538e6b7b31dd8604adc63440ac70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InitPredHash</definition>
+        <argsstring>()</argsstring>
+        <name>InitPredHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="148" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1aded6b8e654f422185bdf18255cd5da96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestorePredHash</definition>
+        <argsstring>()) HSPACE HM(struct yami *</argsstring>
+        <name>RestorePredHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="148" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1ab23ea02a19abfee601c05a6d2e9fc405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PtoOpAdjust</definition>
+        <argsstring>(RETRY_C_RECORDEDP_CODE)) HM(struct yami *</argsstring>
+        <name>PtoOpAdjust</name>
+        <param>
+          <type>RETRY_C_RECORDEDP_CODE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="250" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a0d838b3768d421bbc7dc2bdaa2a734aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PtoOpAdjust</definition>
+        <argsstring>(RETRY_C_RECORDED__CODE)) HPROC(struct DB_STRUCT *</argsstring>
+        <name>PtoOpAdjust</name>
+        <param>
+          <type>RETRY_C_RECORDED__CODE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="253" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a6e7d58eb48788364b0dbb44ab72c34e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InitDBErasedMarker</definition>
+        <argsstring>()</argsstring>
+        <name>InitDBErasedMarker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="309" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a243171e141c075df3ed05abd9df97b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestoreDBErasedMarker</definition>
+        <argsstring>()) HPROC(struct logic_upd_clause *</argsstring>
+        <name>RestoreDBErasedMarker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="310" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a0dabcfa0bceb5776b79428b009f525fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InitLogDBErasedMarker</definition>
+        <argsstring>()</argsstring>
+        <name>InitLogDBErasedMarker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="311" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1ae27046889bb49784b6fdcb4284c1bcc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestoreLogDBErasedMarker</definition>
+        <argsstring>()) HPROC(struct atom_entry *</argsstring>
+        <name>RestoreLogDBErasedMarker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="312" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a9560b48db0cbbc8b30620f5df6ef496e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InitSWIAtoms</definition>
+        <argsstring>()</argsstring>
+        <name>InitSWIAtoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="346" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1af8ddcf8b94543168b27f8f37a0db6631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestoreSWIAtoms</definition>
+        <argsstring>()) HPROCN(Atom</argsstring>
+        <name>RestoreSWIAtoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="346" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a5e823b24f1661ffd1acf4e0f5bb0462f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InitEmptyWakeups</definition>
+        <argsstring>()</argsstring>
+        <name>InitEmptyWakeups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="380" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a0fa6074c7e5657d19dbbaf9ebcb1baf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestoreEmptyWakeups</definition>
+        <argsstring>()) INLINE_ONLY int Yap_has_a_signal__(USES_REGS1)</argsstring>
+        <name>RestoreEmptyWakeups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="381" column="8" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="381" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a7ba9f051b1f9e2989dea5fa40bcb2d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY int</type>
+        <definition>INLINE_ONLY int Yap_has_signal__</definition>
+        <argsstring>(yap_signals sig USES_REGS)</argsstring>
+        <name>Yap_has_signal__</name>
+        <param>
+          <type>yap_signals sig</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="536" column="1" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="536" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="heap_8h_1a073659be13fb2aae7d572d79194ac2ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY int</type>
+        <definition>INLINE_ONLY int Yap_only_has_signal__</definition>
+        <argsstring>(yap_signals sig USES_REGS)</argsstring>
+        <name>Yap_only_has_signal__</name>
+        <param>
+          <type>yap_signals sig</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heap.h" line="542" column="1" bodyfile="/home/vsc/github/yap/H/heap.h" bodystart="542" bodyend="545"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/heap.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1082 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="heapgc_8h" kind="file" language="C++">
+    <compoundname>heapgc.h</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includedby refid="absmi_8c" local="yes">/home/vsc/github/yap/C/absmi.c</includedby>
+    <includedby refid="arrays_8c" local="yes">/home/vsc/github/yap/C/arrays.c</includedby>
+    <includedby refid="attvar_8c" local="yes">/home/vsc/github/yap/C/attvar.c</includedby>
+    <includedby refid="c__interface_8c" local="no">/home/vsc/github/yap/C/c_interface.c</includedby>
+    <includedby refid="cdmgr_8c" local="no">/home/vsc/github/yap/C/cdmgr.c</includedby>
+    <includedby refid="consult_8c" local="no">/home/vsc/github/yap/C/consult.c</includedby>
+    <includedby refid="copy_8c" local="yes">/home/vsc/github/yap/C/copy.c</includedby>
+    <includedby refid="corout_8c" local="yes">/home/vsc/github/yap/C/corout.c</includedby>
+    <includedby refid="dbase_8c" local="yes">/home/vsc/github/yap/C/dbase.c</includedby>
+    <includedby refid="dbload_8c" local="no">/home/vsc/github/yap/C/dbload.c</includedby>
+    <includedby refid="exec_8c" local="yes">/home/vsc/github/yap/C/exec.c</includedby>
+    <includedby refid="execstruct_8c" local="yes">/home/vsc/github/yap/C/execstruct.c</includedby>
+    <includedby refid="globals_8c" local="yes">/home/vsc/github/yap/C/globals.c</includedby>
+    <includedby refid="heapgc_8c" local="yes">/home/vsc/github/yap/C/heapgc.c</includedby>
+    <includedby refid="C_2stack_8c" local="no">/home/vsc/github/yap/C/stack.c</includedby>
+    <includedby refid="terms_8c" local="yes">/home/vsc/github/yap/C/terms.c</includedby>
+    <includedby refid="yapi_8cpp" local="yes">/home/vsc/github/yap/CXX/yapi.cpp</includedby>
+    <includedby refid="pl_2stack_8c" local="no">/home/vsc/github/yap/pl/stack.c</includedby>
+    <incdepgraph>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/heapgc.h</label>
+        <link refid="heapgc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/absmi.c</label>
+        <link refid="absmi_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/arrays.c</label>
+        <link refid="arrays_8c"/>
+      </node>
+      <node id="4">
+        <label>/home/vsc/github/yap/C/attvar.c</label>
+        <link refid="attvar_8c_source"/>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/C/c_interface.c</label>
+        <link refid="c__interface_8c"/>
+      </node>
+      <node id="6">
+        <label>/home/vsc/github/yap/C/cdmgr.c</label>
+        <link refid="cdmgr_8c_source"/>
+      </node>
+      <node id="7">
+        <label>/home/vsc/github/yap/C/consult.c</label>
+        <link refid="consult_8c_source"/>
+      </node>
+      <node id="8">
+        <label>/home/vsc/github/yap/C/copy.c</label>
+        <link refid="copy_8c"/>
+      </node>
+      <node id="9">
+        <label>/home/vsc/github/yap/C/corout.c</label>
+        <link refid="corout_8c_source"/>
+      </node>
+      <node id="10">
+        <label>/home/vsc/github/yap/C/dbase.c</label>
+        <link refid="dbase_8c_source"/>
+      </node>
+      <node id="11">
+        <label>/home/vsc/github/yap/C/dbload.c</label>
+        <link refid="dbload_8c_source"/>
+      </node>
+      <node id="12">
+        <label>/home/vsc/github/yap/C/exec.c</label>
+        <link refid="exec_8c_source"/>
+      </node>
+      <node id="13">
+        <label>/home/vsc/github/yap/C/execstruct.c</label>
+        <link refid="execstruct_8c_source"/>
+      </node>
+      <node id="14">
+        <label>/home/vsc/github/yap/C/globals.c</label>
+        <link refid="globals_8c"/>
+      </node>
+      <node id="15">
+        <label>/home/vsc/github/yap/C/heapgc.c</label>
+        <link refid="heapgc_8c_source"/>
+      </node>
+      <node id="16">
+        <label>/home/vsc/github/yap/C/stack.c</label>
+        <link refid="C_2stack_8c"/>
+      </node>
+      <node id="17">
+        <label>/home/vsc/github/yap/C/terms.c</label>
+        <link refid="terms_8c"/>
+      </node>
+      <node id="18">
+        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <link refid="yapi_8cpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/heapgc.h</label>
+        <link refid="heapgc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/vsc/github/yap/pl/stack.c</label>
+        <link refid="pl_2stack_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgc__entry__info" prot="public">gc_entry_info</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="heapgc_8h_1aec57ad4006d6b0f33ecc4849eac08b16" prot="public" static="no">
+        <name>GET_NEXT</name>
+        <param><defname>val</defname></param>
+        <initializer>((CELL *) ((val) &amp; MaskAdr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="56" column="11" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1aa35a5cbd3fffc2b2b712f7fa02ccef3e" prot="public" static="no">
+        <name>ONHEAP</name>
+        <param><defname>ptr</defname></param>
+        <initializer>(CellPtr(ptr) &gt;= H0  &amp;&amp; CellPtr(ptr) &lt; HR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="61" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a1d8bb673f34a4fbffd920d48a9e2aa64" prot="public" static="no">
+        <name>ONCODE</name>
+        <param><defname>ptr</defname></param>
+        <initializer>(Addr(ptr) &lt; HeapTop &amp;&amp; Addr(ptr) &gt;= Yap_HeapBase)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="70" column="10" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1af43619acc484effd2bed81cec8cd1eec" prot="public" static="no">
+        <name>GCIsPrimitiveTerm</name>
+        <param><defname>X</defname></param>
+        <initializer>(/* not really needed !IsVarTerm(X) &amp;&amp; */ IsAtomOrIntTerm(X))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="73" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a49bdbab003d798c3fb3dafcc8da406e2" prot="public" static="no">
+        <name>HEAP_PTR</name>
+        <param><defname>val</defname></param>
+        <initializer>(!GCIsPrimitiveTerm(val) &amp;&amp; ONHEAP(GET_NEXT(val)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="76" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a697631dc916b44ee9f91dd79b1e66a2d" prot="public" static="no">
+        <name>HEAP_TRAIL_ENTRY</name>
+        <param><defname>val</defname></param>
+        <initializer>				((IsVarTerm(val)) &amp;&amp;                  \
+				((H0 &lt;= CellPtr(val) &amp;&amp; CellPtr(val)\
+				&lt; cp_H) ||                          \
+			       (CellPtr(B) &lt; CellPtr(val) &amp;&amp; CellPtr(val) &lt;= \
+				LCL0 &amp;&amp; HEAP_PTR(val))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="88" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a9c6103cbd73dfedf4f267adee7f54d16" prot="public" static="no">
+        <name>MARK_BIT</name>
+        <initializer>((char)1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="165" column="10" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a6c9af49b07b4861bae500432c08c2a56" prot="public" static="no">
+        <name>RMARK_BIT</name>
+        <initializer>((char)2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="166" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a75f43e25f65f25e4966fd42206f4b3f0" prot="public" static="no">
+        <name>XMARK_BIT</name>
+        <initializer>((char)4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="167" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1af3ecde8c572501196f34230c6ba7941f" prot="public" static="no">
+        <name>mcell</name>
+        <param><defname>X</defname></param>
+        <initializer>LOCAL_bp[(X)-(CELL *)LOCAL_GlobalBase]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="169" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a2e21b02dd06f17d9a72109007c9b2f1d" prot="public" static="no">
+        <name>MARKED_PTR</name>
+        <param><defname>P</defname></param>
+        <initializer>MARKED_PTR__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="171" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a313e0eeed4cfc49ea257065eef0a8387" prot="public" static="no">
+        <name>UNMARKED_MARK</name>
+        <param><defname>P</defname></param>
+        <param><defname>BP</defname></param>
+        <initializer>UNMARKED_MARK__(P, BP PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="172" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a380a9233f5cb4ba6d5c4bc13133c0e85" prot="public" static="no">
+        <name>MARK</name>
+        <param><defname>P</defname></param>
+        <initializer>MARK__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="173" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1aa1f85d66ed907aa58f6d584bc49b09b1" prot="public" static="no">
+        <name>UNMARK</name>
+        <param><defname>P</defname></param>
+        <initializer>UNMARK__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="174" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1ad1eab374ec09847af195f22c9886a225" prot="public" static="no">
+        <name>RMARK</name>
+        <param><defname>P</defname></param>
+        <initializer>RMARK__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="175" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a3a80fa41ef23ae2b6fdc119589af0d92" prot="public" static="no">
+        <name>RMARKED</name>
+        <param><defname>P</defname></param>
+        <initializer>RMARKED__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="176" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a297315570a6b3540f345991b117651c0" prot="public" static="no">
+        <name>UNRMARK</name>
+        <param><defname>P</defname></param>
+        <initializer>UNRMARK__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="177" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a9672c2e8bd470eb27fde500b44963ded" prot="public" static="no">
+        <name>XMARK</name>
+        <param><defname>P</defname></param>
+        <initializer>XMARK__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="178" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a5368b77d0aeec0678f74e1ea7498ce72" prot="public" static="no">
+        <name>XMARKED</name>
+        <param><defname>P</defname></param>
+        <initializer>XMARKED__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="179" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1ac7a0fe2e49e98a1266ddf78a47d3f850" prot="public" static="no">
+        <name>UNXMARK</name>
+        <param><defname>P</defname></param>
+        <initializer>UNXMARK__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="180" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a0eeca96d38ac7ae4474e5b1ef2c29a48" prot="public" static="no">
+        <name>MAY_UNMARK</name>
+        <param><defname>X</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="215" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a4257084e5654e7020f4d26f66a6d6748" prot="public" static="no">
+        <name>UNMARK_CELL</name>
+        <param><defname>X</defname></param>
+        <initializer>(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="217" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1a5515c669008804f8424b9ab2cb6759dd" prot="public" static="no">
+        <name>TAG</name>
+        <param><defname>X</defname></param>
+        <initializer>((X) &amp; 0x98000000L)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="269" column="10" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="heapgc_8h_1ae156b782064832cb958c2001a092f474" prot="public" static="no">
+        <name>ENVSIZE</name>
+        <param><defname>E</defname></param>
+        <initializer>EnvSize(((CELL *)E)[E_CP])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="272" column="9" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="heapgc_8h_1a78d4c4b9bcceb13363c8e68da3c61c02" prot="public" static="no">
+        <type>struct <ref refid="structgc__entry__info" kindref="compound">gc_entry_info</ref></type>
+        <definition>typedef struct gc_entry_info gc_entry_info_t</definition>
+        <argsstring></argsstring>
+        <name>gc_entry_info_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="31" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="heapgc_8h_1ab0d8b1564a1f7a196f029e06b5da178b" prot="public" static="no">
+        <type>CELL *</type>
+        <definition>typedef CELL* CELL_PTR</definition>
+        <argsstring></argsstring>
+        <name>CELL_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="275" column="16" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="heapgc_8h_1adb4221455a8edeb7a215256bfd6343e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int MARKED_PTR__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>MARKED_PTR__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="183" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a43d4db7c07e51f1d7d6387c69a93bf9d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int UNMARKED_MARK__</definition>
+        <argsstring>(CELL *ptr, char *bp USES_REGS)</argsstring>
+        <name>UNMARKED_MARK__</name>
+        <param>
+          <type>CELL *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>char *bp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="189" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="189" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a4d8ba75228687c9f21d9fc3c60f178aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MARK__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>MARK__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="201" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="201" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1ab4ad40c400ae234f5686bf33d16bcd5d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UNMARK__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>UNMARK__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="209" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a7e142a948d35dde5f590bade3219bf21" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RMARK__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>RMARK__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="220" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1aef4ec021011c9c5da7ce04766c37139d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UNRMARK__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>UNRMARK__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="226" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1aea1625b3bebbc7cab37b9b2be3bb2afe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int RMARKED__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>RMARKED__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="232" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a183025fa5de261812f0195d1514cf029" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void XMARK__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>XMARK__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="239" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="239" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a01570d8afb8d268b964a86c901b1a004" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UNXMARK__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>UNXMARK__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="245" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1aece1d44cd81c720cd788049c5b2a0c26" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int XMARKED__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>XMARKED__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="251" column="1" bodyfile="/home/vsc/github/yap/H/heapgc.h" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1ac73b5789d10928bdff7d118723ef59a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_mark_variable</definition>
+        <argsstring>(CELL *)</argsstring>
+        <name>Yap_mark_variable</name>
+        <param>
+          <type>CELL *</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="278" column="14" bodyfile="/home/vsc/github/yap/C/heapgc.c" bodystart="1424" bodyend="1428" declfile="/home/vsc/github/yap/H/heapgc.h" declline="278" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a6d90209c3a013aafc441a7b2495f0af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_mark_external_reference</definition>
+        <argsstring>(CELL *)</argsstring>
+        <name>Yap_mark_external_reference</name>
+        <param>
+          <type>CELL *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="279" column="14" bodyfile="/home/vsc/github/yap/C/heapgc.c" bodystart="1471" bodyend="1474" declfile="/home/vsc/github/yap/H/heapgc.h" declline="279" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a8337bcf00c32d581edbddadeeec3ce07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_inc_mark_variable</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_inc_mark_variable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="280" column="14" bodyfile="/home/vsc/github/yap/C/heapgc.c" bodystart="4190" bodyend="4194" declfile="/home/vsc/github/yap/H/heapgc.h" declline="280" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="heapgc_8h_1a3a74aa120096409979d269d78ad950d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PUSH_POINTER</definition>
+        <argsstring>(CELL *v USES_REGS)</argsstring>
+        <name>PUSH_POINTER</name>
+        <param>
+          <type>CELL *v</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/heapgc.h" line="282" column="13" bodyfile="/home/vsc/github/yap/C/heapgc.c" bodystart="169" bodyend="172" declfile="/home/vsc/github/yap/H/heapgc.h" declline="282" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/heapgc.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="base__dbtries_8c" kind="file" language="C++">
+    <compoundname>base_dbtries.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="base__tries_8c" local="yes">/home/vsc/github/yap/library/tries/base_tries.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/tries/base_dbtries.c</label>
+        <link refid="base__dbtries_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/tries/base_dbtries.c</label>
+        <link refid="base__dbtries_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/vsc/github/yap/library/tries/base_tries.c</label>
+        <link refid="base__tries_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="base__dbtries_8c_1a45ac2f8f7d05ba8327a352f73e2f566d" prot="public" static="yes" mutable="no">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData CURRENT_DEPTH_BREADTH_DATA</definition>
+        <argsstring></argsstring>
+        <name>CURRENT_DEPTH_BREADTH_DATA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="224" column="16" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="base__dbtries_8c_1a44ca0c517259ada114be1f7f68d8fb5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simplification_reduction</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>simplification_reduction</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="320" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="320" bodyend="341" declfile="/home/vsc/github/yap/library/tries/base_dbtries.c" declline="211" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1adc94b9dd33bba9cc4004cb7726fe88d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+        <definition>static TrNode depth_reduction</definition>
+        <argsstring>(TrEntry trie, TrNode depth_node, YAP_Int opt_level)</argsstring>
+        <name>depth_reduction</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>depth_node</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>opt_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="345" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="345" bodyend="372" declfile="/home/vsc/github/yap/library/tries/base_dbtries.c" declline="212" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1acd4dd020c323c6cebac0769508ac6b7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+        <definition>static TrNode breadth_reduction</definition>
+        <argsstring>(TrEntry trie, TrNode breadth_node, YAP_Int opt_level)</argsstring>
+        <name>breadth_reduction</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>breadth_node</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>opt_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="376" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="376" bodyend="403" declfile="/home/vsc/github/yap/library/tries/base_dbtries.c" declline="213" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a9a697cc369e0c40cbb260d59efe27bcd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int compare_label_nodes</definition>
+        <argsstring>(TrData data1, TrData data2)</argsstring>
+        <name>compare_label_nodes</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data1</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="481" column="5" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="481" bodyend="487" declfile="/home/vsc/github/yap/library/tries/base_dbtries.c" declline="214" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a68c60b4f8be048bbe6ca1ace0521f021" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void move_after</definition>
+        <argsstring>(TrData data_source, TrData data_dest)</argsstring>
+        <name>move_after</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data_source</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data_dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="426" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="426" bodyend="451" declfile="/home/vsc/github/yap/library/tries/base_dbtries.c" declline="215" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1aa7e084922e25c50ed942b73f2b3be362" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void move_last_data_after</definition>
+        <argsstring>(TrData moveto_data)</argsstring>
+        <name>move_last_data_after</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>moveto_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="407" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="407" bodyend="422" declfile="/home/vsc/github/yap/library/tries/base_dbtries.c" declline="216" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1abc90a2660e7361e9828fa6bd084b5137" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void set_depth_breadth_reduction_current_data</definition>
+        <argsstring>(TrData data)</argsstring>
+        <name>set_depth_breadth_reduction_current_data</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="313" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="313" bodyend="316" declfile="/home/vsc/github/yap/library/tries/base_dbtries.c" declline="217" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a962c6422eca0b4843cd10e42a94f7727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>YAP_Term trie_depth_breadth</definition>
+        <argsstring>(TrEntry trie, TrEntry db_trie, YAP_Int opt_level, YAP_Int start_counter, YAP_Int *end_counter)</argsstring>
+        <name>trie_depth_breadth</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>db_trie</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>opt_level</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>start_counter</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>end_counter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="232" column="10" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="232" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1ac54682b5b3cb3c818a3e3ed845d6c566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int trie_get_db_opt_level_count</definition>
+        <argsstring>(YAP_Int opt_level)</argsstring>
+        <name>trie_get_db_opt_level_count</name>
+        <param>
+          <type>YAP_Int</type>
+          <declname>opt_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="273" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a241dc862106ee5b098ec7e45e4c7381c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_get_depth_breadth_reduction_current_data</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_get_depth_breadth_reduction_current_data</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="279" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a8a4dc6d2f6ba8b238e4ccc491663a421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_replace_nested_trie</definition>
+        <argsstring>(TrEntry trie, YAP_Int nested_trie_id, YAP_Term new_term)</argsstring>
+        <name>trie_replace_nested_trie</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>nested_trie_id</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>new_term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="285" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="285" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a0eedb982922d26154cdd30db78d727c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int trie_get_db_opt_min_prefix</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_get_db_opt_min_prefix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="295" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="295" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a08bf82e450473c01aefc8dc4f76648a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_set_db_opt_min_prefix</definition>
+        <argsstring>(YAP_Int min_prefix)</argsstring>
+        <name>trie_set_db_opt_min_prefix</name>
+        <param>
+          <type>YAP_Int</type>
+          <declname>min_prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="301" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="base__dbtries_8c_1a3bdbbaaab304357f12035bdcaf1d2e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_data_order_correction</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_data_order_correction</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_dbtries.c" line="454" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_dbtries.c" bodystart="454" bodyend="477"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/tries/base_dbtries.c"/>
+  </compounddef>
+</doxygen>

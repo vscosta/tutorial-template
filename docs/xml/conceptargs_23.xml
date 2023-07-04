@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptargs_23" kind="concept">
+    <compoundname>args/3</compoundname>
+    <initializer>template&lt;&gt;
+concept args/3 =     </initializer>
+    <briefdescription>
+<para><bold>args</bold>( +_Index_, +_ListOfTerms_ , -_ListOfArgs_ ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Succeeds if <emphasis>ListOfArgs</emphasis> unifies with the application of <ref refid="classgenarg_23" kindref="compound">genarg/3</ref> to every element of <emphasis>ListOfTerms</emphasis></para>
+</listitem></itemizedlist>
+</para>
+<para>It corresponds to calling <ref refid="classmaplist_23" kindref="compound">maplist/3</ref> on <ref refid="classgenarg_23" kindref="compound">genarg/3</ref> : <programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">args(<sp/></highlight><highlight class="charliteral">I</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Ts</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">As</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">maplist(<sp/>genarg(</highlight><highlight class="charliteral">I</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">Ts</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">As</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Notice that unification allows <emphasis>ListOfArgs</emphasis> to be bound, eg:</para>
+<para><programlisting><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">args(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="charliteral">X1</highlight><highlight class="keyword">+</highlight><highlight class="charliteral">Y1</highlight><highlight class="normal">,</highlight><highlight class="charliteral">X2</highlight><highlight class="keyword">-</highlight><highlight class="charliteral">Y2</highlight><highlight class="normal">,</highlight><highlight class="charliteral">X3</highlight><highlight class="keyword">*</highlight><highlight class="charliteral">Y3</highlight><highlight class="normal">,</highlight><highlight class="charliteral">X4</highlight><highlight class="keyword">/</highlight><highlight class="charliteral">Y4</highlight><highlight class="normal">],<sp/>[</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">]).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="charliteral">X1</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X2</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X3</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X4</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="library/arg.yap" line="2" column="1"/>
+  </compounddef>
+</doxygen>

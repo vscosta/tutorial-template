@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtime__out_23" kind="class" language="Prolog" prot="public">
+    <compoundname>time_out/3</compoundname>
+    <briefdescription>
+<para><bold>time_out</bold>(+ <emphasis>Goal</emphasis>, + <emphasis>Timeout</emphasis>, - <emphasis>Result</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Execute goal <emphasis>Goal</emphasis> with time limited <emphasis>Timeout</emphasis>, where <emphasis>Timeout</emphasis> is measured in milliseconds If the goal succeeds, unify <emphasis>Result</emphasis> with success If the timer expires before the goal terminates, unify <emphasis>Result</emphasis> with <computeroutput>time_out</computeroutput></para>
+<para>This command is implemented by activating an alarm at procedure entry If the timer expires before the goal completes, the alarm will throw an exception <emphasis>timeout</emphasis></para>
+<para>One should note that <ref refid="classtime__out_23" kindref="compound">time_out/3</ref> is not reentrant, that is, a goal called from <computeroutput>time_out</computeroutput> should never itself call <ref refid="classtime__out_23" kindref="compound">time_out/3</ref> Moreover, <ref refid="classtime__out_23" kindref="compound">time_out/3</ref> will deactivate any previous alarms set by <ref refid="classalarm_23" kindref="compound">alarm/3</ref> and vice-versa, hence only one of these calls should be used in a program</para>
+<para>Last, even though the timer is set in milliseconds, the current implementation relies on <computeroutput><ref refid="classalarm_23" kindref="compound">alarm/3</ref> </computeroutput>, and therefore can only offer precision on the scale of seconds </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/timeout.yap" line="3" column="1" bodyfile="/home/vsc/github/yap/library/timeout.yap" bodystart="3" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

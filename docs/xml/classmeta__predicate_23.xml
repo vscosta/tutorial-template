@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmeta__predicate_23" kind="class" language="Prolog" prot="public">
+    <compoundname>meta_predicate/3</compoundname>
+    <briefdescription>
+<para><bold>meta_predicate</bold>(G1 , Gj , Gn) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: directive</para>
+<para>Declares that this predicate manipulates references to predicates Each <emphasis>Gi</emphasis> is a mode specification</para>
+<para>If the argument is <computeroutput>:</computeroutput>, it does not refer directly to a predicate but must be module expanded If the argument is an integer, the argument is a goal or a closure and must be expanded Otherwise, the argument is not expanded Note that the system already includes declarations for all built-ins</para>
+<para>For example, the declaration for <ref refid="classcall_21" kindref="compound">call/1</ref> and <ref refid="classsetof_23" kindref="compound">setof/3</ref> are:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="keyword">meta_predicate</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">call(</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">setof(?,</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">,?)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>meta_predicate declaration implemented by asserting</para>
+<para>meta_predicate(SourceModule,Declaration) </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/meta.yap" line="9" column="1" bodyfile="/home/vsc/github/yap/pl/meta.yap" bodystart="9" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

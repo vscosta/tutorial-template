@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="opt_8config_8h" kind="file" language="C++">
+    <compoundname>opt.config.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="opt_8config_8h_1a92e8998f3a32b3cc9f5dac8fbf5d0491" prot="public" static="no">
+        <name>MAX_TABLE_VARS</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="23" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a676c425d82a777d298a72c1fddba774c" prot="public" static="no">
+        <name>TRIE_LOCK_BUCKETS</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="24" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a479a2b767e5f13c59d2511b8f3166912" prot="public" static="no">
+        <name>THREADS_DIRECT_BUCKETS</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="25" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a3e0c5b63706e5abe04ce24eb6bb89c61" prot="public" static="no">
+        <name>THREADS_INDIRECT_BUCKETS</name>
+        <initializer>((MAX_THREADS - THREADS_DIRECT_BUCKETS) / THREADS_DIRECT_BUCKETS)  /* (1024 - 32) / 32 = 31 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="26" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a7e6c00b7b2f372210d38c27d4ad32c7f" prot="public" static="no">
+        <name>THREADS_NUM_BUCKETS</name>
+        <initializer>(THREADS_DIRECT_BUCKETS + THREADS_INDIRECT_BUCKETS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="27" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1adef7258b57ae4b737ed8b1044413348a" prot="public" static="no">
+        <name>TG_ANSWER_SLOTS</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="28" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a69e46fcd8dfd22d6a7220809404b3afb" prot="public" static="no">
+        <name>MAX_BRANCH_DEPTH</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="29" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1affd809f8811a27a18f3cdf0803c9d602" prot="public" static="no">
+        <name>MMAP_MEMORY_MAPPING_SCHEME</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="34" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1acb9d6e71d945564bb74489b980429e0d" prot="public" static="no">
+        <name>BFZ_TRAIL_SCHEME</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="45" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a06ff32ca86ccd49136f43ea48e847547" prot="public" static="no">
+        <name>THREADS_NO_SHARING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="51" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1ac7d878979d406175535db162eebe8049" prot="public" static="no">
+        <name>SUBGOAL_TRIE_LOCK_AT_NODE_LEVEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="73" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1ad4a4604f068ba26a9998eef200c87691" prot="public" static="no">
+        <name>ANSWER_TRIE_LOCK_AT_NODE_LEVEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="78" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1aa47da6c6a38818aee06ed86b58086fc6" prot="public" static="no">
+        <name>GLOBAL_TRIE_LOCK_AT_NODE_LEVEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="82" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a87bcf0f3c514ff4768b60674fe62ef24" prot="public" static="no">
+        <name>TRIE_LOCK_USING_NODE_FIELD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="92" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1abb38a1582e448d126ce821942001ac61" prot="public" static="no">
+        <name>MODE_DIRECTED_TABLING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="98" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a4df5c557c584e60a31831994702fa04d" prot="public" static="no">
+        <name>TABLING_EARLY_COMPLETION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="103" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a90e6c6c72579da59496d3866982fc2fc" prot="public" static="no">
+        <name>TRIE_COMPACT_PAIRS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="108" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1adc5e5f3359fb321431c106e56bb02237" prot="public" static="no">
+        <name>TABLING_INNER_CUTS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="133" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a9aba31dda5d4aca5ec6a17e795253a38" prot="public" static="no">
+        <name>TIMESTAMP_CHECK</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="138" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="opt_8config_8h_1a59b53227f695a385e988df74b6b71e1e" prot="public" static="no">
+        <name>TRIE_RATIONAL_TERMS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/opt.config.h" line="154" column="9" bodyfile="/home/vsc/github/yap/OPTYap/opt.config.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/opt.config.h"/>
+  </compounddef>
+</doxygen>

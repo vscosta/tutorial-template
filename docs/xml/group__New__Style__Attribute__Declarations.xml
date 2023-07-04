@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__New__Style__Attribute__Declarations" kind="group">
+    <compoundname>New_Style_Attribute_Declarations</compoundname>
+    <title>hProlog and SWI-Prolog style Attribute Declarations</title>
+    <innerclass refid="classcopy__term_23" prot="public">copy_term/3</innerclass>
+    <innerclass refid="classcall__residue__vars_22" prot="public">call_residue_vars/2</innerclass>
+    <innerclass refid="classattribute__goals_23" prot="public">attribute_goals/3</innerclass>
+    <innerclass refid="classcall__residue_22" prot="public">call_residue/2</innerclass>
+    <innerclass refid="classattr__unify__hook_22" prot="public">attr_unify_hook/2</innerclass>
+    <briefdescription>
+<para><itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+    </briefdescription>
+    <detaileddescription>
+<para>The following documentation is taken from the SWI-Prolog manual</para>
+<para>Binding an attributed variable schedules a goal to be executed at the first possible opportunity In the current implementation the hooks are executed immediately after a successful unification of the clause-head or successful completion of a foreign language (built-in) predicate Each attribute is associated to a module and the hook <ref refid="classattr__unify__hook_22" kindref="compound">attr_unify_hook/2</ref> is executed in this module The example below realises a very simple and incomplete finite domain reasoner</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/>module(domain,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[<sp/>@ref<sp/>domain/2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>Var,<sp/>?Domain</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>]).</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/>use_module(library(ordsets)).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">domain(X,<sp/>Dom)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var(Dom),<sp/>!,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>get_attr(X,<sp/>domain,<sp/>Dom).</highlight></codeline>
+<codeline><highlight class="normal">domain(X,<sp/>List)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>list_to_ord_set(List,<sp/>Domain),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>put_attr(Y,<sp/>domain,<sp/>Domain),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>X<sp/>=<sp/>Y.</highlight></codeline>
+</programlisting></para>
+<para>An attributed variable with attribute value Domain has been assigned the value Y</para>
+<para><programlisting><codeline><highlight class="normal">attr_unify_hook(Domain,<sp/>Y)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>(<sp/><sp/><sp/>get_attr(Y,<sp/>domain,<sp/>Dom2)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-&gt;<sp/><sp/>ord_intersection(Domain,<sp/>Dom2,<sp/>NewDomain),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>(<sp/><sp/><sp/>NewDomain<sp/>==<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-&gt;<sp/><sp/><sp/><sp/>fail</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>;<sp/><sp/><sp/><sp/>NewDomain<sp/>=<sp/>[Value]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-&gt;<sp/><sp/><sp/><sp/>Y<sp/>=<sp/>Value</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>;<sp/><sp/><sp/><sp/>put_attr(Y,<sp/>domain,<sp/>NewDomain)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>;<sp/><sp/><sp/>var(Y)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-&gt;<sp/><sp/>put_attr(<sp/>Y,<sp/>domain,<sp/>Domain<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>;<sp/><sp/><sp/>ord_memberchk(Y,<sp/>Domain)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>).</highlight></codeline>
+</programlisting></para>
+<para>Translate attributes from this module to residual goals: <programlisting><codeline><highlight class="normal">attribute_goals(X)<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{<sp/>get_attr(X,<sp/>domain,<sp/>List)<sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>[domain(X,<sp/>List)].</highlight></codeline>
+</programlisting></para>
+<para>Before explaining the code we give some example queries:</para>
+<para>The predicate domain/2 fetches (first clause) or assigns (second clause) the variable a <emphasis>domain</emphasis>, a set of values it can be unified with In the second clause first associates the domain with a fresh variable and then unifies X to this variable to deal with the possibility that X already has a domain The predicate <ref refid="classattr__unify__hook_22" kindref="compound">attr_unify_hook/2</ref> is a hook called after a variable with a domain is assigned a value In the simple case where the variable is bound to a concrete value we simply check whether this value is in the domain Otherwise we take the intersection of the domains and either fail if the intersection is empty (first example), simply assign the value if there is only one value in the intersection (second example) or assign the intersection as the new domain of the variable (third example) The nonterminal <computeroutput><ref refid="classattribute__goals_23" kindref="compound">attribute_goals/3</ref> </computeroutput> is used to translate remaining attributes to user-readable goals that, when executed, reinstate these attributes</para>
+<para>Prolog uses a simple left-to-right flow of control It is sometimes convenient to change this control so that goals will only execute when sufficiently instantiated This may result in a more &quot;data-driven&quot; execution, or may be necessary to correctly implement extensions such as negation by failure</para>
+<para>Initially, YAP used a separate mechanism for co-routining Nowadays, YAP uses attributed variables to implement co-routining</para>
+<para><itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

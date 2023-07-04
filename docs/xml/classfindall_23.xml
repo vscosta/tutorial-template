@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classfindall_23" kind="class" language="Prolog" prot="public">
+    <compoundname>findall/3</compoundname>
+    <briefdescription>
+<para><bold>findall</bold>( <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>,+ <emphasis>G</emphasis>,- <emphasis>L</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para><ref refid="classfindall_23" kindref="compound">findall/3</ref> is a simplified version of bagof which has an implicit existential quantifier on every variable</para>
+<para>Unifies <emphasis>L</emphasis> with a list that contains all the instantiations of the term <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> satisfying the goal <emphasis>G</emphasis></para>
+<para>With the following program:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>the answer to the query</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">findall(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">),</highlight><highlight class="charliteral">L</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>would be:</para>
+<para><programlisting><codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">_32</highlight></codeline>
+<codeline><highlight class="charliteral">Y</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">_33</highlight></codeline>
+<codeline><highlight class="charliteral">L</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/>[</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">]</highlight><highlight class="keyword">;</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal"></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/setof.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/setof.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

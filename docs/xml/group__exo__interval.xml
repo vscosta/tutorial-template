@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__exo__interval" kind="group">
+    <compoundname>exo_interval</compoundname>
+    <title>Exo Intervals</title>
+    <innerclass refid="classmax_22" prot="public">max/2</innerclass>
+    <innerclass refid="classmax_21" prot="public">max/1</innerclass>
+    <innerclass refid="classmin_22" prot="public">min/2</innerclass>
+    <innerclass refid="classmin_21" prot="public">min/1</innerclass>
+    <briefdescription>
+<para>This package assumes you use exo-compilation, that is, that you loaded the pedicate using the <computeroutput>exo</computeroutput> option to <ref refid="classload__files_22" kindref="compound">load_files/2</ref> , In this case, YAP includes a package for improved search on intervals of integers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The package is activated by <computeroutput>udi</computeroutput> declarations that state what is the argument of interest:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">udi(diagnoses(exo_interval,?,?)).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">load_files(db,<sp/>[consult(exo)])</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> It is designed to optimise the following type of queries:</para>
+<para><programlisting><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">max(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,<sp/>diagnoses(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,<sp/></highlight><highlight class="vhldigit">9</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">min(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,<sp/>diagnoses(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,<sp/></highlight><highlight class="vhldigit">9</highlight><highlight class="normal">,<sp/></highlight><highlight class="vhldigit">36211117</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">min<sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">min(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,<sp/>diagnoses(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,<sp/></highlight><highlight class="vhldigit">9</highlight><highlight class="normal">,<sp/></highlight><highlight class="vhldigit">36211117</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/>),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">diagnoses(</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,<sp/></highlight><highlight class="vhldigit">9</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">_</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> The first argument gives the time, the second the patient, and the third the condition code The first query should find the last time the patient 9 had any code reported, the second looks for the first report of code 36211117, and the last searches for reports after this one All queries run in constant or log(n) time</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

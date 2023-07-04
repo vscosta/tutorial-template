@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classnew__variables__in__term_23" kind="class" language="Prolog" prot="public">
+    <compoundname>new_variables_in_term/3</compoundname>
+    <briefdescription>
+<para><bold>new_variables_in_term</bold>(+_CurrentVariables_, ? <emphasis>Term</emphasis>, -_Variables_) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>new_variables_in_term</bold>(+ <emphasis>Variables</emphasis>,? <emphasis>Term</emphasis>, - <emphasis>OutputVariables</emphasis>)</para>
+<para>Unify <emphasis>Variables</emphasis> with the list of all variables of term <emphasis>Term</emphasis> that do not occur in <emphasis>CurrentVariables</emphasis> That is:</para>
+<para><computeroutput>Variables = vars(Term) - CurrentVariables</computeroutput> = The variables occur in the order of their first appearance when traversing the term depth-first, left-to-right</para>
+<para>Unify <emphasis>OutputVariables</emphasis> with all variables occurring in <emphasis>Term</emphasis> that are not in the list <emphasis>Variables</emphasis> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/terms.c" line="791" column="1" bodyfile="/home/vsc/github/yap/C/terms.c" bodystart="791" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="cut__c_8h" kind="file" language="C++">
+    <compoundname>cut_c.h</compoundname>
+    <includedby refid="c__interface_8c" local="yes">/home/vsc/github/yap/C/c_interface.c</includedby>
+    <includedby refid="cut__c_8c" local="yes">/home/vsc/github/yap/C/cut_c.c</includedby>
+    <includedby refid="debug_8c" local="yes">/home/vsc/github/yap/C/debug.c</includedby>
+    <includedby refid="exec_8c" local="yes">/home/vsc/github/yap/C/exec.c</includedby>
+    <includedby refid="execstruct_8c" local="yes">/home/vsc/github/yap/C/execstruct.c</includedby>
+    <includedby refid="grow_8c" local="yes">/home/vsc/github/yap/C/grow.c</includedby>
+    <includedby refid="index_8c" local="yes">/home/vsc/github/yap/C/index.c</includedby>
+    <includedby refid="inlines_8c" local="yes">/home/vsc/github/yap/C/inlines.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/c_interface.c</label>
+        <link refid="c__interface_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/cut_c.c</label>
+        <link refid="cut__c_8c_source"/>
+      </node>
+      <node id="4">
+        <label>/home/vsc/github/yap/C/debug.c</label>
+        <link refid="debug_8c_source"/>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/C/exec.c</label>
+        <link refid="exec_8c_source"/>
+      </node>
+      <node id="6">
+        <label>/home/vsc/github/yap/C/execstruct.c</label>
+        <link refid="execstruct_8c_source"/>
+      </node>
+      <node id="7">
+        <label>/home/vsc/github/yap/C/grow.c</label>
+        <link refid="grow_8c_source"/>
+      </node>
+      <node id="8">
+        <label>/home/vsc/github/yap/C/index.c</label>
+        <link refid="index_8c"/>
+      </node>
+      <node id="9">
+        <label>/home/vsc/github/yap/C/inlines.c</label>
+        <link refid="inlines_8c"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/cut_c.h</label>
+        <link refid="cut__c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcut__c__str" prot="public">cut_c_str</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cut__c_8h_1ae2c1a63ab5e9233abdd6369542a96057" prot="public" static="no">
+        <name>Choice_Point_Type</name>
+        <initializer>void *</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="5" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" prot="public" static="no">
+        <name>NULL</name>
+        <initializer>nil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="9" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1ad72b8d30270508af7f5e782d74ec4070" prot="public" static="no">
+        <name>CUT_C_STR_SIZE</name>
+        <initializer>((sizeof(struct <ref refid="structcut__c__str" kindref="compound">cut_c_str</ref>)) / (sizeof(CELL)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="18" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1adf876b851ba80b3ecf64338d6450f2d4" prot="public" static="no">
+        <name>EXTRA_CBACK_CUT_ARG</name>
+        <param><defname>Type</defname></param>
+        <param><defname>Offset</defname></param>
+        <initializer>EXTRA_CBACK_ARG(PP-&gt;ArityOfPE, Offset)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="20" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1a6ad65636c3fc25ddeb8b5c17d705f933" prot="public" static="no">
+        <name>CBACK_CUT_ARG</name>
+        <param><defname>Offset</defname></param>
+        <initializer>B-&gt;cp_args[(Offset)-1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="22" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1a5e1aa851da5aead25b4c3233219e7123" prot="public" static="no">
+        <name>CUT_C_PUSH</name>
+        <param><defname>YAMOP</defname></param>
+        <param><defname>S_YREG</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="24" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1a3bfc7a811d3e1255a06c5d873d4773f1" prot="public" static="no">
+        <name>POP_CHOICE_POINT</name>
+        <param><defname>cp</defname></param>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="26" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1abeee7b4535b479239796a7bbde731d1f" prot="public" static="no">
+        <name>POP_EXECUTE</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="27" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1a37ca7360cff0c60195cad79323c8e155" prot="public" static="no">
+        <name>POP_FAIL</name>
+        <param><defname>handler</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="29" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cut__c_8h_1a6ffc4cf11a65ae9e8874998bf595665b" prot="public" static="no">
+        <name>POP_FAIL_EXECUTE</name>
+        <param><defname>handler</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="30" column="9" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cut__c_8h_1a85cdb2b561b4e4f73668b3b17a204087" prot="public" static="no">
+        <type>struct <ref refid="structcut__c__str" kindref="compound">cut_c_str</ref> *</type>
+        <definition>typedef struct cut_c_str* cut_c_str_ptr</definition>
+        <argsstring></argsstring>
+        <name>cut_c_str_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="12" column="24" bodyfile="/home/vsc/github/yap/H/cut_c.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cut__c_8h_1a13eea4a52d5c68f80a514fc52cd9bf79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cut_c_initialize</definition>
+        <argsstring>(int wid)</argsstring>
+        <name>cut_c_initialize</name>
+        <param>
+          <type>int</type>
+          <declname>wid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="33" column="6" bodyfile="/home/vsc/github/yap/C/cut_c.c" bodystart="5" bodyend="8" declfile="/home/vsc/github/yap/H/cut_c.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="cut__c_8h_1a2324ccc134909c44fa83a1d068591ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cut_c_pop</definition>
+        <argsstring>(void)</argsstring>
+        <name>cut_c_pop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="36" column="6" bodyfile="/home/vsc/github/yap/C/cut_c.c" bodystart="11" bodyend="25" declfile="/home/vsc/github/yap/H/cut_c.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="cut__c_8h_1ac2c8ab799a48e29084a72bb082b362d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cut_c_push</definition>
+        <argsstring>(cut_c_str_ptr)</argsstring>
+        <name>cut_c_push</name>
+        <param>
+          <type><ref refid="structcut__c__str" kindref="compound">cut_c_str_ptr</ref></type>
+          <declname>new_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/cut_c.h" line="39" column="6" bodyfile="/home/vsc/github/yap/C/cut_c.c" bodystart="28" bodyend="33" declfile="/home/vsc/github/yap/H/cut_c.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/cut_c.h"/>
+  </compounddef>
+</doxygen>

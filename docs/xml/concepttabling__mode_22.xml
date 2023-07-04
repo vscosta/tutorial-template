@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="concepttabling__mode_22" kind="concept">
+    <compoundname>tabling_mode/2</compoundname>
+    <initializer>template&lt;&gt;
+concept tabling_mode/2 =     </initializer>
+    <briefdescription>
+<para><bold>tabling_mode</bold>(+ <emphasis>P</emphasis>,? <emphasis>Mode</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sets or reads the default tabling mode for a tabled predicate <emphasis>P</emphasis> (or a list of predicates <emphasis>P1</emphasis>,..., <emphasis>Pn</emphasis> or [ <emphasis>P1</emphasis>,..., <emphasis>Pn</emphasis>]) The list of <emphasis>Mode</emphasis> options includes:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>batched</computeroutput></para>
+<para>Defines that, by default, batched scheduling is the scheduling strategy to be used to evaluated calls to predicate <emphasis>P</emphasis></para>
+</listitem><listitem><para><computeroutput>local</computeroutput></para>
+<para>Defines that, by default, local scheduling is the scheduling strategy to be used to evaluated calls to predicate <emphasis>P</emphasis></para>
+</listitem><listitem><para><computeroutput>exec_answers</computeroutput></para>
+<para>Defines that, by default, when a call to predicate <emphasis>P</emphasis> is already evaluated (completed), answers are obtained by executing compiled WAM-like code directly from the trie data structure This reduces the loading time when backtracking, but the order in which answers are obtained is undefined</para>
+</listitem><listitem><para><computeroutput>load_answers</computeroutput></para>
+<para>Defines that, by default, when a call to predicate <emphasis>P</emphasis> is already evaluated (completed), answers are obtained (as a consumer) by loading them from the trie data structure This guarantees that answers are obtained in the same order as they were found Somewhat less efficient but creates less choice-points</para>
+</listitem></itemizedlist>
+</para>
+<para>The default tabling mode for a new tabled predicate is <computeroutput>batched</computeroutput> and <computeroutput>exec_answers</computeroutput> To set the tabling mode for all predicates at once you can use the <ref refid="classyap__flag_22" kindref="compound">yap_flag/2</ref> predicate as described next </para>
+    </detaileddescription>
+    <location file="pl/tabling.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

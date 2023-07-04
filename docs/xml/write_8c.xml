@@ -1,0 +1,1289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="write_8c" kind="file" language="C++">
+    <compoundname>write.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/write.c</label>
+        <link refid="write_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="54">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="57">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="59">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="60">
+        <label>math.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structunion__slots" prot="public">union_slots</innerclass>
+    <innerclass refid="structunion__direct" prot="public">union_direct</innerclass>
+    <innerclass refid="structwrite__globs" prot="public">write_globs</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="write_8c_1ae9ba0e65659815ef5af16967ded753ab" prot="public" static="no">
+        <name>lastw</name>
+        <initializer>wglb-&gt;lw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="79" column="9" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="write_8c_1acf4bbd692c7c3242b2b94a8a99331a48" prot="public" static="no">
+        <name>last_minus</name>
+        <initializer>wglb-&gt;last_atom_minus</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="80" column="9" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="write_8c_1aeaf58daba53d81c4b0780434f82d07dc" prot="public" static="no">
+        <name>PROTECT</name>
+        <param><defname>t</defname></param>
+        <param><defname>F</defname></param>
+        <initializer>  {                                                                            \
+    yhandle_t yt = Yap_InitHandle(t); 		\
+    F;                                                                         \
+    t = Yap_PopHandle(yt);                                                     \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="97" column="9" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="write_8c_1aa24f7dba9444022bea16d9181b63bc09" prot="public" static="no">
+        <name>wrputc</name>
+        <param><defname>WF</defname></param>
+        <param><defname>X</defname></param>
+        <initializer>  (X)-&gt;stream_wputc(X - GLOBAL_Stream, WF) /* writes a character */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="116" column="9" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="write_8c_1a5376250224ce32fb558d88aa0b5a93ff" prot="public" static="no" strong="no">
+        <type></type>
+        <name>wtype</name>
+        <enumvalue id="write_8c_1a5376250224ce32fb558d88aa0b5a93ffa0e97c69c73117f6c0109b2d7d1d9cedc" prot="public">
+          <name>start</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="write_8c_1a5376250224ce32fb558d88aa0b5a93ffad04d10fe70193129cbd32a6e7c94b9e9" prot="public">
+          <name>separator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="write_8c_1a5376250224ce32fb558d88aa0b5a93ffa179d77b30788bdfd713a0d574ead54ea" prot="public">
+          <name>alphanum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="write_8c_1a5376250224ce32fb558d88aa0b5a93ffa017267144b69b2c6cba073ccdf7cce45" prot="public">
+          <name>symbol</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="45" column="1" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="write_8c_1a879c81cb1ea49a9f5f85abdaffb74bfd" prot="public" static="no">
+        <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+        <definition>typedef StreamDesc* wrf</definition>
+        <argsstring></argsstring>
+        <name>wrf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="52" column="20" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="write_8c_1a11a563c5c940bb60bda90adb94a3664a" prot="public" static="no">
+        <type>struct <ref refid="structunion__slots" kindref="compound">union_slots</ref></type>
+        <definition>typedef struct union_slots uslots</definition>
+        <argsstring></argsstring>
+        <name>uslots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="write_8c_1a059dac2975f456603b4187c808122363" prot="public" static="no">
+        <type>struct <ref refid="structunion__direct" kindref="compound">union_direct</ref></type>
+        <definition>typedef struct union_direct udirect</definition>
+        <argsstring></argsstring>
+        <name>udirect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="62" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="write_8c_1abf85a96f4d72cd9f4a6959ee732be2e8" prot="public" static="no">
+        <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref></type>
+        <definition>typedef struct write_globs wglbs</definition>
+        <argsstring></argsstring>
+        <name>wglbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="77" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="write_8c_1a5b3dbe97ae46c973dac5a330b3556493" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool callPortray</definition>
+        <argsstring>(Term t, int sno USES_REGS)</argsstring>
+        <name>callPortray</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int sno</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="82" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="82" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a9025706a2b9ec9989f55321184699ced" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wrputn</definition>
+        <argsstring>(Int, struct write_globs *)</argsstring>
+        <name>wrputn</name>
+        <param>
+          <type>Int</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <defname>wglb</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="161" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="161" bodyend="178" declfile="/home/vsc/github/yap/C/write.c" declline="106" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a535112add74eb1473b8300fe706ebf97" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wrputf</definition>
+        <argsstring>(Float, struct write_globs *)</argsstring>
+        <name>wrputf</name>
+        <param>
+          <type>Float</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <defname>wglb</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="302" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="302" bodyend="381" declfile="/home/vsc/github/yap/C/write.c" declline="107" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1afae1cade2f1d1e95fb816ddb0c273f6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wrputref</definition>
+        <argsstring>(void *, int, struct write_globs *)</argsstring>
+        <name>wrputref</name>
+        <param>
+          <type>void *</type>
+          <defname>ref</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>Quote_illegal</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <defname>wglb</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="400" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="400" bodyend="420" declfile="/home/vsc/github/yap/C/write.c" declline="108" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1ac3c441e6d2db49174dc41dbb1005b9cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int legalAtom</definition>
+        <argsstring>(unsigned char *)</argsstring>
+        <name>legalAtom</name>
+        <param>
+          <type>unsigned char *</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="436" column="12" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="436" bodyend="471" declfile="/home/vsc/github/yap/C/write.c" declline="109" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a1bd43ac0b56d65351c4cd136268ad229" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wtype</type>
+        <definition>static wtype AtomIsSymbols</definition>
+        <argsstring>(unsigned char *)</argsstring>
+        <name>AtomIsSymbols</name>
+        <param>
+          <type>unsigned char *</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="474" column="1" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="474" bodyend="484" declfile="/home/vsc/github/yap/C/write.c" declline="112" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a49fab12d85f49794fd26d1afb8316329" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void putAtom</definition>
+        <argsstring>(Atom, int, struct write_globs *)</argsstring>
+        <name>putAtom</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <defname>atom</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>Quote_illegal</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <defname>wglb</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="591" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="591" bodyend="639" declfile="/home/vsc/github/yap/C/write.c" declline="113" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a544f258444b113197b60b30e7094668c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void writeTerm</definition>
+        <argsstring>(Term, int, int[], int, struct write_globs *)</argsstring>
+        <name>writeTerm</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>depths</defname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>rinfixarg</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <defname>wglb</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="784" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="784" bodyend="1105" declfile="/home/vsc/github/yap/C/write.c" declline="114" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a82647e402f860fe5a4d1705ceb214d84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wropen_bracket</definition>
+        <argsstring>(struct write_globs *wglb, int protect)</argsstring>
+        <name>wropen_bracket</name>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>protect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="123" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="123" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a5bbdbe7e36882222597df97c0c673e3f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wrclose_bracket</definition>
+        <argsstring>(struct write_globs *wglb, int protect)</argsstring>
+        <name>wrclose_bracket</name>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>protect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="132" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="132" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a822fdb97dbf43fb19312850a89de3810" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int protect_open_number</definition>
+        <argsstring>(struct write_globs *wglb, int lm, int minus_required)</argsstring>
+        <name>protect_open_number</name>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lm</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minus_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="139" column="12" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="139" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1ad14b90999c18244a37b5b4345838ca24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void protect_close_number</definition>
+        <argsstring>(struct write_globs *wglb, int used_bracket)</argsstring>
+        <name>protect_close_number</name>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>used_bracket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="152" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="152" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a7c8a967fdefb46afc7d8f652a1e9ef74" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wrputs</definition>
+        <argsstring>(char *s, StreamDesc *stream)</argsstring>
+        <name>wrputs</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="180" column="20" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1af2ee3b5f1fb3dfa95df7ad06db9cd07a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_opaque</definition>
+        <argsstring>(Term t, struct write_globs *wglb)</argsstring>
+        <name>write_opaque</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="248" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="248" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1af89984a6dd33b544a776890421ade962" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void writebig</definition>
+        <argsstring>(Term t, int p, int depths[], int rinfixarg, struct write_globs *wglb)</argsstring>
+        <name>writebig</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depths</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rinfixarg</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="284" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="284" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a52e68e9885c3a74ea1b176b82556ff41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_FormatFloat</definition>
+        <argsstring>(Float f, char **s, size_t sz)</argsstring>
+        <name>Yap_FormatFloat</name>
+        <param>
+          <type>Float</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="383" column="5" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="383" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a526db5beb2ec1e5ea5ebb8b2f3f9e618" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int wrputblob</definition>
+        <argsstring>(AtomEntry *ref, int Quote_illegal, struct write_globs *wglb)</argsstring>
+        <name>wrputblob</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Quote_illegal</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="423" column="12" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="423" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a9f898c8fc32fb8178c4b630c759df965" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_quoted</definition>
+        <argsstring>(wchar_t ch, wchar_t quote, wrf stream)</argsstring>
+        <name>write_quoted</name>
+        <param>
+          <type>wchar_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>wchar_t</type>
+          <declname>quote</declname>
+        </param>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">wrf</ref></type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="486" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="486" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a0479ec02fb1cb3ad27ea298265e09195" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_string</definition>
+        <argsstring>(const unsigned char *s, struct write_globs *wglb)</argsstring>
+        <name>write_string</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="562" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="562" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a4a91a599f677a998d6e16cecb2fe8a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_WriteAtom</definition>
+        <argsstring>(StreamDesc *s, Atom atom)</argsstring>
+        <name>Yap_WriteAtom</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>atom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="641" column="6" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="641" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a54c6fe2914df1bf56e16727a25c458ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IsCodesTerm</definition>
+        <argsstring>(Term string)</argsstring>
+        <name>IsCodesTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="648" column="12" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="648" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1af661a9523e0ce07ab5c73b5cb97412ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void putString</definition>
+        <argsstring>(Term string, struct write_globs *wglb)</argsstring>
+        <name>putString</name>
+        <param>
+          <type>Term</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="674" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="674" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a4ee93835a03f1611c6826451ad4b833f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void putUnquotedString</definition>
+        <argsstring>(Term string, struct write_globs *wglb)</argsstring>
+        <name>putUnquotedString</name>
+        <param>
+          <type>Term</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="689" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="689" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1ab0f4b1ff8be46c7b671a27c50e9b4ecd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_var</definition>
+        <argsstring>(CELL *t, int depths[], struct write_globs *wglb)</argsstring>
+        <name>write_var</name>
+        <param>
+          <type>CELL *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depths</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="701" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="701" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1a030e4c1d28a7cac3ef32009045872ec1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_list</definition>
+        <argsstring>(Term t, int direction, int depths[], struct write_globs *wglb)</argsstring>
+        <name>write_list</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depths</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>struct <ref refid="structwrite__globs" kindref="compound">write_globs</ref> *</type>
+          <declname>wglb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="739" column="13" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="739" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1ae13460a68fa33146ab3f7296c826db59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yap_error_number</type>
+        <definition>static yap_error_number bind_variable_names</definition>
+        <argsstring>(Term t, Functor FunctorF USES_REGS)</argsstring>
+        <name>bind_variable_names</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref> FunctorF</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="1108" column="25" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="1108" bodyend="1136"/>
+      </memberdef>
+      <memberdef kind="function" id="write_8c_1aa4cdeecd8660d74eb3ce53dc685ffc4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_plwrite</definition>
+        <argsstring>(Term t, StreamDesc *mywrite, CELL *hbase, yhandle_t ynames, write_flag_t flags, xarg *args)</argsstring>
+        <name>Yap_plwrite</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>mywrite</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>hbase</declname>
+        </param>
+        <param>
+          <type>yhandle_t</type>
+          <declname>ynames</declname>
+        </param>
+        <param>
+          <type>write_flag_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="structx__el" kindref="compound">xarg</ref> *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/write.c" line="1138" column="6" bodyfile="/home/vsc/github/yap/C/write.c" bodystart="1138" bodyend="1389"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/write.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__ExplicitNaming" kind="group">
+    <compoundname>ExplicitNaming</compoundname>
+    <title>Explicit Naming</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The module system allows one to <emphasis>explicitly</emphasis> specify the source mode for a clause by prefixing a clause with its module, say: <programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="normal">(a<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/>)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>it is also possible to type</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>both formulations describe the same clause, independently of the current type-in module</para>
+<para>In fact, it is sufficient to specify the source mode for the clause&apos;s head:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>if the current type-in module is <computeroutput>m</computeroutput>, the clause could also be written as:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>The compiler rewrites the source clauses to ensure that explicit calls are respected, and that implicit calls are made to the current source module</para>
+<para>A goal should refer to a predicate visible within the current type-in module Thus, if a goal appears in a text file with a module declaration, the goal refers to that module&apos;s context (but see the <ref refid="classinitialization_21" kindref="compound">initialization/1</ref> directive for more details)</para>
+<para>Again, one can override this rule by prefixing a goal with a module to be consulted The following query:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="stringliteral"></highlight><highlight class="normal">launch(apollo,</highlight><highlight class="vhldigit">13</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> invokes the goal <computeroutput>launch(apollo,13)</computeroutput> as if the current source module was <computeroutput>nasa</computeroutput></para>
+<para>YAP and other Prolog systems allow the module prefix to see all predicates visible in the module, including predicates private to the module This rule allows maximum flexibility, but it also breaks encapsulation and should be used with care The ciao language proposes a different approach to this problem, see DBLP:conf/cl/GrasH00</para>
+<para>Modules are not always associated with a source-file They may range over several files, by using the <computeroutput>include</computeroutput>directive Moreover, they may not be associated to any source file As an example, <programlisting filename=".prolog"><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert(<sp/>nasa</highlight><highlight class="keyword">:</highlight><highlight class="normal">launch(apollo,</highlight><highlight class="vhldigit">13</highlight><highlight class="normal">)<sp/>)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> will create a module <computeroutput>nasa</computeroutput>, if does not already exist In fact it is sufficient to call a predicate from a module to implicitly create the module Hence after this call:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">assert</highlight><highlight class="keyword">:</highlight><highlight class="stringliteral"></highlight><highlight class="normal">launch(apollo,</highlight><highlight class="vhldigit">13</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>there will be a <computeroutput>nasa</computeroutput>module in the system, even if nasa:launch/2 is not at all defined</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

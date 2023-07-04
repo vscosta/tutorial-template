@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__coinduction" kind="group">
+    <compoundname>coinduction</compoundname>
+    <title>Co-induction</title>
+    <briefdescription>
+<para>This simple module implements the directive coinductive/1 as described in &quot;Co-Logic Programming: Extending Logic  Programming with Coinduction&quot; by Luke Somin et al. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The idea behind coinduction is that a goal succeeds if it unifies to a parent goal This enables some interesting programs, notably on infinite trees (cyclic terms)</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">use_module(library(coinduction)).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">use_module<sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal">use_module<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">stream/1<sp/>.<sp/></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">stream([</highlight><highlight class="charliteral">H</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">T</highlight><highlight class="normal">])<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">i(</highlight><highlight class="charliteral">H</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">stream(</highlight><highlight class="charliteral">T</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="comment">%<sp/>inductive</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">i(</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">i(s(</highlight><highlight class="charliteral">N</highlight><highlight class="normal">))<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">i(</highlight><highlight class="charliteral">N</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="keyword">=</highlight><highlight class="normal">[</highlight><highlight class="stringliteral"></highlight><highlight class="normal">s(s(</highlight><highlight class="charliteral">A</highlight><highlight class="normal">))</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">X</highlight><highlight class="normal">],<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">stream(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/>[</highlight><highlight class="stringliteral"></highlight><highlight class="normal">s(s(</highlight><highlight class="charliteral">A</highlight><highlight class="normal">))</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">X</highlight><highlight class="normal">],<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">stream(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/>[</highlight><highlight class="stringliteral"></highlight><highlight class="normal">s(s(</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">))</highlight><highlight class="stringliteral"></highlight><highlight class="normal">s]</highlight></codeline>
+</programlisting></para>
+<para>This predicate is true for any cyclic list containing only 1-s, regardless of the cycle-length</para>
+<para><computeroutput>@bug</computeroutput> Programs mixing normal predicates and coinductive predicates must be <emphasis>stratified</emphasis> The theory does not apply to normal Prolog calling coinductive predicates, calling normal Prolog predicates, etc</para>
+<para>Stratification is not checked or enforced in any other way and thus left as a responsibility to the user <computeroutput>@see</computeroutput> &quot;Co-Logic Programming: Extending Logic  Programming with Coinduction&quot; by Luke Somin et al</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="save_8c" kind="file" language="C++">
+    <compoundname>save.c</compoundname>
+    <includes refid="absmi_8h" local="yes">absmi.h</includes>
+    <includes refid="alloc_8h" local="yes">alloc.h</includes>
+    <includes refid="Foreign_8h" local="yes">Foreign.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <includes refid="sshift_8h" local="yes">sshift.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <includes refid="rheap_8h" local="yes">rheap.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/save.c</label>
+        <link refid="save_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Foreign.h</label>
+        <link refid="Foreign_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="28">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="37">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="27">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="36">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="43">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>ratoms.h</label>
+        <link refid="ratoms_8h_source"/>
+      </node>
+      <node id="70">
+        <label>rhstruct.h</label>
+        <link refid="rhstruct_8h_source"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>rlocals.h</label>
+        <link refid="rlocals_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="35">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="6">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="45">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="68">
+        <label>rclause.h</label>
+        <link refid="rclause_8h_source"/>
+      </node>
+      <node id="67">
+        <label>rheap.h</label>
+        <link refid="rheap_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>sshift.h</label>
+        <link refid="sshift_8h_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="58">
+        <label>trim_trail.h</label>
+        <link refid="trim__trail_8h_source"/>
+      </node>
+      <node id="50">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="63">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>YapBlobs.h</label>
+        <link refid="YapBlobs_8h_source"/>
+      </node>
+      <node id="7">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="19">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="21">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="65">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="14">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="12">
+        <label>config.h</label>
+      </node>
+      <node id="46">
+        <label>dlocals.h</label>
+      </node>
+      <node id="29">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="15">
+        <label>string.h</label>
+      </node>
+      <node id="53">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="23">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="save_8c_1aa8e0b81a04ffb1a43fe7d38fc0505bc3" prot="public" static="no">
+        <name>strncat</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcat(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="41" column="9" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="save_8c_1a2c5b8ad33d611ac4e9e9c4e0bd0b069a" prot="public" static="no">
+        <name>strncpy</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcpy(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="44" column="9" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="save_8c_1a1ba1918ed5d7a96aab64183ef1aa8aa8" prot="public" static="no">
+        <name>FullSaved</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="194" column="9" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="save_8c_1a52f7ff3c0f79c8692dbd2fab70256529" prot="public" static="no">
+        <name>HASH_SHIFT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1057" column="9" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1057" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="save_8c_1a4ed9446aaa0f1db656907c2f089e6191" prot="public" static="no">
+        <type>CELL *</type>
+        <definition>typedef CELL* CELLPOINTER</definition>
+        <argsstring></argsstring>
+        <name>CELLPOINTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="198" column="14" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="save_8c_1a3f7b54f33671b799359cddabbead2bb3" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char end_msg[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>end_msg</name>
+        <initializer>= &quot;*** End of YAP saved state *****&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="64" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save_8c_1a337f11260c8c2e3db545668ce0f88bd1" prot="public" static="yes" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* splfild</definition>
+        <argsstring></argsstring>
+        <name>splfild</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="200" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save_8c_1a1763ee6f7c8bd45dafbc0b96ae0101db" prot="public" static="yes" mutable="no">
+        <type>Int</type>
+        <definition>Int OldHeapUsed</definition>
+        <argsstring></argsstring>
+        <name>OldHeapUsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="212" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save_8c_1ac966f856f3f2e163b0155a0cbf7edf64" prot="public" static="yes" mutable="no">
+        <type>CELL</type>
+        <definition>CELL which_save</definition>
+        <argsstring></argsstring>
+        <name>which_save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="214" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save_8c_1af1e0ea0d2c3ac8e85bbe7efe6ab07b4e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int in_limbo</definition>
+        <argsstring></argsstring>
+        <name>in_limbo</name>
+        <initializer>= FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1510" column="5" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1510" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="save_8c_1ac3c73735519c0fbd83b55f44c3536b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initIO</definition>
+        <argsstring>(void)</argsstring>
+        <name>initIO</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="67" column="6" declfile="/home/vsc/github/yap/C/save.c" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1aab43e3f84fc67ce89d3860d80668a2e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int myread</definition>
+        <argsstring>(FILE *, char *, Int)</argsstring>
+        <name>myread</name>
+        <param>
+          <type>FILE *</type>
+          <defname>fd</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>buffer</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>len</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="161" column="19" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="161" bodyend="175" declfile="/home/vsc/github/yap/C/save.c" declline="90" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ae301683690509a2934f8f5eb9ac46864" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int mywrite</definition>
+        <argsstring>(FILE *, char *, Int)</argsstring>
+        <name>mywrite</name>
+        <param>
+          <type>FILE *</type>
+          <defname>fd</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>buff</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>len</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="177" column="19" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="177" bodyend="192" declfile="/home/vsc/github/yap/C/save.c" declline="91" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a44d8d405c45a51fc536da44414eedf51" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>static FILE * open_file</definition>
+        <argsstring>(const char *, int)</argsstring>
+        <name>open_file</name>
+        <param>
+          <type>const char *</type>
+          <defname>my_file</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="217" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="217" bodyend="245" declfile="/home/vsc/github/yap/C/save.c" declline="92" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ad1514519dea31eefe6f266bf2e83c832" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int close_file</definition>
+        <argsstring>(void)</argsstring>
+        <name>close_file</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="247" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="247" bodyend="256" declfile="/home/vsc/github/yap/C/save.c" declline="93" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a582a1eb3712d246bae6f59c7613ec621" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int putout</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>putout</name>
+        <param>
+          <type>CELL</type>
+          <defname>l</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="259" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="259" bodyend="259" declfile="/home/vsc/github/yap/C/save.c" declline="94" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ab4fc5a53c7656224d0a88c121e22954e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int putcellptr</definition>
+        <argsstring>(CELL *)</argsstring>
+        <name>putcellptr</name>
+        <param>
+          <type>CELL *</type>
+          <defname>l</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="262" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="262" bodyend="264" declfile="/home/vsc/github/yap/C/save.c" declline="95" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ae025aa00bcac6b46c7fe35919c82a82e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL</type>
+        <definition>static CELL get_cell</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_cell</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="267" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="267" bodyend="271" declfile="/home/vsc/github/yap/C/save.c" declline="96" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a4eacfb0b98a53e87d1f381c49fb11bf0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * get_cellptr</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_cellptr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="291" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="291" bodyend="297" declfile="/home/vsc/github/yap/C/save.c" declline="97" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ad8db2d85960e1d888f74f230950a09e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int put_info</definition>
+        <argsstring>(int, int CACHE_TYPE)</argsstring>
+        <name>put_info</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="98" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="98" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a424f0eeba72d4042353119b51d163b5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int save_regs</definition>
+        <argsstring>(int CACHE_TYPE)</argsstring>
+        <name>save_regs</name>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="99" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="99" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a04af5bb32cc5d431b77013bbae55370e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int save_code_info</definition>
+        <argsstring>(void)</argsstring>
+        <name>save_code_info</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="447" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="447" bodyend="464" declfile="/home/vsc/github/yap/C/save.c" declline="100" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ace04a2750fb47bb724d96872331c12a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int save_heap</definition>
+        <argsstring>(void)</argsstring>
+        <name>save_heap</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="466" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="466" bodyend="478" declfile="/home/vsc/github/yap/C/save.c" declline="101" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a5046e761c89c6780f4226416627114bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int save_stacks</definition>
+        <argsstring>(int CACHE_TYPE)</argsstring>
+        <name>save_stacks</name>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="102" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="102" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ac843034cb0b82340e59ad6ba86f164f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int save_crc</definition>
+        <argsstring>(void)</argsstring>
+        <name>save_crc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="526" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="526" bodyend="529" declfile="/home/vsc/github/yap/C/save.c" declline="103" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a8825b9405cb85b804fd85fe70c84f053" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int do_save</definition>
+        <argsstring>(int CACHE_TYPE)</argsstring>
+        <name>do_save</name>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="104" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="104" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a0af3de4a8f37974c7292ffd98876abb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_save2</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>p_save2</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="105" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="105" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a22bf77d17596a527225b862306718fb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_save_program</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>p_save_program</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="106" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="106" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ad77669bad717cda023be0d075fad4699" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int check_header</definition>
+        <argsstring>(CELL *, CELL *, CELL *, CELL *CACHE_TYPE)</argsstring>
+        <name>check_header</name>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="107" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="107" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ac66fffbddc24abb403b2e9efc9051fd5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_heap_info</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>get_heap_info</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="108" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="108" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a767d85cdb3cdc2a38f6bdb0940fe3019" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_regs</definition>
+        <argsstring>(int CACHE_TYPE)</argsstring>
+        <name>get_regs</name>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="109" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="109" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a5855f42e7bb812e85620952c4887d675" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_insts</definition>
+        <argsstring>(OPCODE[])</argsstring>
+        <name>get_insts</name>
+        <param>
+          <type>OPCODE</type>
+          <defname>old_ops</defname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="889" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="889" bodyend="891" declfile="/home/vsc/github/yap/C/save.c" declline="110" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a0ce367a22c000c769048eeb92cfabe1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_hash</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_hash</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="894" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="894" bodyend="897" declfile="/home/vsc/github/yap/C/save.c" declline="111" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a93011b4f6c47716f1fa732558d8a481f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CopyCode</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>CopyCode</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="112" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="112" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a206bceff0012e49f939f4f3658bb6d2a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CopyStacks</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>CopyStacks</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="113" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="113" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a79a76aa3b851864cde0ea0159f68f607" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_coded</definition>
+        <argsstring>(int, OPCODE[] CACHE_TYPE)</argsstring>
+        <name>get_coded</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>OPCODE[]</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="114" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="114" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a6001943aff1f999c21ff5cae3c041ded" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void restore_codes</definition>
+        <argsstring>(void)</argsstring>
+        <name>restore_codes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="115" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="115" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a025ff42b1a25dc648f823a0f8d6b96bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreDB</definition>
+        <argsstring>(DBEntry *CACHE_TYPE)</argsstring>
+        <name>RestoreDB</name>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBEntry</ref> *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="116" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="116" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1aa51b1bcda5c214eae90063bbd2302d78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreDBTerm</definition>
+        <argsstring>(DBTerm *, bool, int CACHE_TYPE)</argsstring>
+        <name>RestoreDBTerm</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="117" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="117" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a144b3cec047ccd05019a2da0ccf6e42b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CleanClauses</definition>
+        <argsstring>(yamop *First, yamop *Last, PredEntry *pp USES_REGS)</argsstring>
+        <name>CleanClauses</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>First</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>Last</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *pp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="118" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="118" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a191a0b8fa00c2040eb5d04c8b7bebf8a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void rehash</definition>
+        <argsstring>(CELL *, int, int CACHE_TYPE)</argsstring>
+        <name>rehash</name>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="119" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="119" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1adfc591f09b32a368556d532e055b17dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CleanCode</definition>
+        <argsstring>(PredEntry *CACHE_TYPE)</argsstring>
+        <name>CleanCode</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="120" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="120" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a3f61918c009f07248d2737b20c0cbe67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreEntries</definition>
+        <argsstring>(PropEntry *, int CACHE_TYPE)</argsstring>
+        <name>RestoreEntries</name>
+        <param>
+          <type><ref refid="structPropEntryStruct" kindref="compound">PropEntry</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="121" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="121" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a1001db47629ff6c2006fd8721e9f9a66" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreFreeSpace</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>RestoreFreeSpace</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="122" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="122" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a51a9d41822748058e6a98823f9410310" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void restore_heap</definition>
+        <argsstring>(void)</argsstring>
+        <name>restore_heap</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1245" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1245" bodyend="1248" declfile="/home/vsc/github/yap/C/save.c" declline="123" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1aefc790ee6e425ad2d1305ccc47675fb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int OpenRestore</definition>
+        <argsstring>(const char *, CELL *, CELL *, CELL *, CELL *, FILE **)</argsstring>
+        <name>OpenRestore</name>
+        <param>
+          <type>const char *</type>
+          <defname>fname</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>Astate</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>ATrail</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>AStack</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>AHeap</defname>
+        </param>
+        <param>
+          <type>FILE **</type>
+          <defname>streamp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1339" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1339" bodyend="1362" declfile="/home/vsc/github/yap/C/save.c" declline="128" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a73e64d5ca3e3147b07296fdb9bd0ecd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CloseRestore</definition>
+        <argsstring>(void)</argsstring>
+        <name>CloseRestore</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1373" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1373" bodyend="1380" declfile="/home/vsc/github/yap/C/save.c" declline="130" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a6fd6aa2ddd2793aaee86d3ea9a80924b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int check_opcodes</definition>
+        <argsstring>(OPCODE[])</argsstring>
+        <name>check_opcodes</name>
+        <param>
+          <type>OPCODE</type>
+          <defname>old_ops</defname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1383" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1383" bodyend="1398" declfile="/home/vsc/github/yap/C/save.c" declline="132" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a5c70adad4427228139bd52462b24ed4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreHeap</definition>
+        <argsstring>(OPCODE[] CACHE_TYPE)</argsstring>
+        <name>RestoreHeap</name>
+        <param>
+          <type>OPCODE[]</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="134" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="134" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a27a51cafd1e6873ac771c7b11aedcac8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_restore</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>p_restore</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="135" column="12" declfile="/home/vsc/github/yap/C/save.c" declline="135" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a68476ab7b8b5f418106e81cf3583973e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void restore_heap_regs</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>restore_heap_regs</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="136" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="136" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a98be5983ae654565f435cc429a9acc67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void restore_regs</definition>
+        <argsstring>(int CACHE_TYPE)</argsstring>
+        <name>restore_regs</name>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="137" column="13" declfile="/home/vsc/github/yap/C/save.c" declline="137" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1aa7b9e1212d8787c0ad13a9926628667a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL</type>
+        <definition>static CELL get_header_cell</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_header_cell</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="274" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="274" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a22977daa6434e1179483243c831c2cc1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int put_info</definition>
+        <argsstring>(int info, int mode USES_REGS)</argsstring>
+        <name>put_info</name>
+        <param>
+          <type>int</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>int mode</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="303" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="303" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1abf3874a4c1bb926a758d0e3b959986a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int save_regs</definition>
+        <argsstring>(int mode USES_REGS)</argsstring>
+        <name>save_regs</name>
+        <param>
+          <type>int mode</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="342" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="342" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a179eb5c7c5c57030648cc28a9f69274f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int save_stacks</definition>
+        <argsstring>(int mode USES_REGS)</argsstring>
+        <name>save_stacks</name>
+        <param>
+          <type>int mode</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="480" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="480" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a2c75f27f972a6a0274fe4cd3a2da6022" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int do_save</definition>
+        <argsstring>(int mode USES_REGS)</argsstring>
+        <name>do_save</name>
+        <param>
+          <type>int mode</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="531" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="531" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a9d91e59b9e57cf4db42cae5fbbe7fe68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_save2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_save2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="569" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="569" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a0f8b10331828e21ac8f237bc83ee5e47" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_save_program</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_save_program</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="601" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="601" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a30ba37f5b3a68fc10fed2993eec4b491" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int check_header</definition>
+        <argsstring>(CELL *info, CELL *ATrail, CELL *AStack, CELL *AHeap USES_REGS)</argsstring>
+        <name>check_header</name>
+        <param>
+          <type>CELL *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>ATrail</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>AStack</declname>
+        </param>
+        <param>
+          <type>CELL *AHeap</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="609" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="609" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1acc591dbd5fd8022d310b17acf231119c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_heap_info</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>get_heap_info</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="719" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="719" bodyend="753"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a557c1b54c632b8e38c384306bba9acc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_regs</definition>
+        <argsstring>(int flag USES_REGS)</argsstring>
+        <name>get_regs</name>
+        <param>
+          <type>int flag</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="758" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="758" bodyend="886"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1af1bcf9db75b1121361b805ebdffd6aff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CopyCode</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>CopyCode</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="900" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="900" bodyend="906"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1aa80543746b40bc9cc7a81da6fddaa49b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CopyStacks</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>CopyStacks</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="910" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="910" bodyend="925"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a2354a7c380fbb2bfbe5d84de8b78fed1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CopyTrailEntries</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>CopyTrailEntries</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="929" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="929" bodyend="939"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a927f1b34694d9cadb9baea0fec72037f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_coded</definition>
+        <argsstring>(int flag, OPCODE old_ops[] USES_REGS)</argsstring>
+        <name>get_coded</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>OPCODE old_ops[]</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="942" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="942" bodyend="971"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a4a21eb40281e0878a5b4622d964f6839" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void restore_heap_regs</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>restore_heap_regs</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="974" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="974" bodyend="981"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a695c84d5c19186b212faddaf917c7eb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void restore_regs</definition>
+        <argsstring>(int flag USES_REGS)</argsstring>
+        <name>restore_regs</name>
+        <param>
+          <type>int flag</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="984" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="984" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a7435ee2820336a2bfebcd8b45686c0cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void recompute_mask</definition>
+        <argsstring>(DBRef dbr)</argsstring>
+        <name>recompute_mask</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>dbr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1005" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1005" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a4bff26b6ca2327a780b1af192164594c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void rehash</definition>
+        <argsstring>(CELL *oldcode, int NOfE, int KindOfEntries USES_REGS)</argsstring>
+        <name>rehash</name>
+        <param>
+          <type>CELL *</type>
+          <declname>oldcode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>NOfE</declname>
+        </param>
+        <param>
+          <type>int KindOfEntries</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1065" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1065" bodyend="1128"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a12dc21eca60fb2396f1f26f025e7e52a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreFlags</definition>
+        <argsstring>(UInt NFlags)</argsstring>
+        <name>RestoreFlags</name>
+        <param>
+          <type>UInt</type>
+          <declname>NFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1130" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1130" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ace36c6b6f62ef6e3f167d2882da7d5bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreIOStructures</definition>
+        <argsstring>(void)</argsstring>
+        <name>RestoreIOStructures</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1135" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1135" bodyend="1135"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1acbd7a1e6b62e90369caaad0fc916ff30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreFreeSpace</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>RestoreFreeSpace</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1137" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1137" bodyend="1181"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a04dcaf63c27c06fd634eaff92480db61" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreAtomList</definition>
+        <argsstring>(Atom atm USES_REGS)</argsstring>
+        <name>RestoreAtomList</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref> atm</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1183" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1183" bodyend="1193"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a85fefcf12ccf720be9307087894fd855" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreHashPreds</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>RestoreHashPreds</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1195" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1195" bodyend="1240"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1af0eeabe660c120046f95dfafefb5729f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int commit_to_saved_state</definition>
+        <argsstring>(const char *s, CELL *Astate, CELL *ATrail, CELL *AStack, CELL *AHeap)</argsstring>
+        <name>commit_to_saved_state</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>Astate</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>ATrail</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>AStack</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>AHeap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1291" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1291" bodyend="1315"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ab80d771865818acc387dc4893319414a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int try_open</definition>
+        <argsstring>(const char *inpf, CELL *Astate, CELL *ATrail, CELL *AStack, CELL *AHeap, FILE **streamp)</argsstring>
+        <name>try_open</name>
+        <param>
+          <type>const char *</type>
+          <declname>inpf</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>Astate</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>ATrail</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>AStack</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>AHeap</declname>
+        </param>
+        <param>
+          <type>FILE **</type>
+          <declname>streamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1317" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1317" bodyend="1337"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a942c0bca4213a2ca9609e0d5e846075f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE * Yap_OpenRestore</definition>
+        <argsstring>(const char *inpf)</argsstring>
+        <name>Yap_OpenRestore</name>
+        <param>
+          <type>const char *</type>
+          <declname>inpf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1364" column="6" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1364" bodyend="1371"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a5c3a3fef96da2575cef6f1b52921f104" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreHeap</definition>
+        <argsstring>(OPCODE old_ops[] USES_REGS)</argsstring>
+        <name>RestoreHeap</name>
+        <param>
+          <type>OPCODE old_ops[]</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1401" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1401" bodyend="1437"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ad8e47aeede2f4ec190ba1c28f402bfc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_SavedInfo</definition>
+        <argsstring>(const char *FileName, CELL *ATrail, CELL *AStack, CELL *AHeap)</argsstring>
+        <name>Yap_SavedInfo</name>
+        <param>
+          <type>const char *</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>ATrail</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>AStack</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>AHeap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1443" column="5" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1443" bodyend="1463"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ab7148c64738b8e0d6ce80ee6c2ec5c43" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnmarkTrEntries</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>UnmarkTrEntries</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1465" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1465" bodyend="1508"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a6ec2eaf74b7eca0861a5c67100c84c59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void FreeRecords</definition>
+        <argsstring>(void)</argsstring>
+        <name>FreeRecords</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1513" column="13" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1513" bodyend="1524"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1ab8c18b0881847b00bbc01d3784eed2c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Restore</definition>
+        <argsstring>(char *s_dir USES_REGS)</argsstring>
+        <name>Restore</name>
+        <param>
+          <type>char *s_dir</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1530" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1530" bodyend="1586"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a2c4ffb020870643e3a7bf0b9b7b0506e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_SavedStateRestore</definition>
+        <argsstring>(char *s)</argsstring>
+        <name>Yap_SavedStateRestore</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1588" column="5" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1588" bodyend="1591"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a99153b35d7ae39894b6ac00fdd13dd20" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_restore</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_restore</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1593" column="12" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1593" bodyend="1620"/>
+      </memberdef>
+      <memberdef kind="function" id="save_8c_1a18cece3f1832502b9a1411027eb390ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitSavePreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitSavePreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/save.c" line="1622" column="6" bodyfile="/home/vsc/github/yap/C/save.c" bodystart="1622" bodyend="1626"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/save.c"/>
+  </compounddef>
+</doxygen>

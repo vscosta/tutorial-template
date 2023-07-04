@@ -1,0 +1,973 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="exo__udi_8c" kind="file" language="C++">
+    <compoundname>exo_udi.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="YapEval_8h" local="yes">YapEval.h</includes>
+    <includes refid="tracer_8h" local="yes">tracer.h</includes>
+    <includes refid="attvar_8h" local="yes">attvar.h</includes>
+    <includes refid="udi_8h" local="no">udi.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/exo_udi.c</label>
+        <link refid="exo__udi_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>attvar.h</label>
+        <link refid="attvar_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="54">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="61">
+        <label>tracer.h</label>
+        <link refid="tracer_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="57">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="59">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>udi.h</label>
+        <link refid="udi_8h_source"/>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structexo__udi__access__t" prot="public">exo_udi_access_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="exo__udi_8c_1a5aa5893e195b25c38c77345b4dbefde4" prot="public" static="no">
+        <type>struct <ref refid="structexo__udi__access__t" kindref="compound">exo_udi_access_t</ref></type>
+        <definition>typedef struct exo_udi_access_t exo_udi_encaps_t</definition>
+        <argsstring></argsstring>
+        <name>exo_udi_encaps_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="543" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="exo__udi_8c_1a1e0144cb65c3855056f341373107a904" prot="public" static="yes" mutable="no">
+        <type>struct <ref refid="structudi__control__block" kindref="compound">udi_control_block</ref></type>
+        <definition>struct udi_control_block IntervalCB</definition>
+        <argsstring></argsstring>
+        <name>IntervalCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="539" column="31" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="exo__udi_8c_1a23ca8d1685a376fc805f1448b9c74500" prot="public" static="yes" mutable="no">
+        <type>struct <ref refid="structexo__udi__access__t" kindref="compound">exo_udi_access_t</ref></type>
+        <definition>struct exo_udi_access_t ExoCB</definition>
+        <argsstring></argsstring>
+        <name>ExoCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="545" column="30" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="exo__udi_8c_1aefc85dd0697c1b824b6de049db55280e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int compar</definition>
+        <argsstring>(const void *ip0, const void *jp0)</argsstring>
+        <name>compar</name>
+        <param>
+          <type>const void *</type>
+          <declname>ip0</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>jp0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="39" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a7af19da61784e53ad8fb86ae1501c094" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cmp_extra_args</definition>
+        <argsstring>(CELL *si, CELL *sj, struct index_t *it)</argsstring>
+        <name>cmp_extra_args</name>
+        <param>
+          <type>CELL *</type>
+          <declname>si</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>sj</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="49" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="49" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a8e38891bbacf7dc8f63c4b613cdd56a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int compar2</definition>
+        <argsstring>(const void *ip0, const void *jp0)</argsstring>
+        <name>compar2</name>
+        <param>
+          <type>const void *</type>
+          <declname>ip0</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>jp0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="71" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="71" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a7fbab8a07fa03192d5b34187c43c755f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int compare</definition>
+        <argsstring>(const BITS32 *ip, Int j USES_REGS)</argsstring>
+        <name>compare</name>
+        <param>
+          <type>const BITS32 *</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>Int j</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="84" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a948ceecbb930897ab5ef1ce8713d03df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>static UInt free_args</definition>
+        <argsstring>(UInt b[], UInt arity, UInt i)</argsstring>
+        <name>free_args</name>
+        <param>
+          <type>UInt</type>
+          <declname>b</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="90" column="13" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="90" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a03c209da5e7cf3f37659a8591b888db9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BITS32 *</type>
+        <definition>static BITS32 * NEXT_DIFFERENT</definition>
+        <argsstring>(BITS32 *pt0, BITS32 *pte, struct index_t *it)</argsstring>
+        <name>NEXT_DIFFERENT</name>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pte</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="102" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="102" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1afe381474d303137b6b9ed9bf8437f3c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BITS32 *</type>
+        <definition>static BITS32 * PREV_DIFFERENT</definition>
+        <argsstring>(BITS32 *pt0, BITS32 *pte, struct index_t *it)</argsstring>
+        <name>PREV_DIFFERENT</name>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pte</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="117" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="117" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1aa454ed26a1fbdb156c2b68448bf95762" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BITS32 *</type>
+        <definition>static BITS32 * NEXT_MIN</definition>
+        <argsstring>(BITS32 *pt0, BITS32 *pte, Term tmin, Term tmax, struct index_t *it)</argsstring>
+        <name>NEXT_MIN</name>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pte</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tmin</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tmax</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="132" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="132" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a0c611faa4c9eb321889c3f6b194bf205" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BITS32 *</type>
+        <definition>static BITS32 * NEXT_MAX</definition>
+        <argsstring>(BITS32 *pt0, BITS32 *pte, Term tmin, Term tmax, struct index_t *it)</argsstring>
+        <name>NEXT_MAX</name>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>BITS32 *</type>
+          <declname>pte</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tmin</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tmax</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="162" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="162" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a3e89f4e72d49d4cb61a57e1fca74aabc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IntervalUDIRefitIndex</definition>
+        <argsstring>(struct index_t **ip, UInt b[] USES_REGS)</argsstring>
+        <name>IntervalUDIRefitIndex</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> **</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>UInt b[]</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="192" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="192" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1abc55dc6c29d97620f20e59c418aee685" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BITS32 *</type>
+        <definition>static BITS32 * binary_search</definition>
+        <argsstring>(BITS32 *start, BITS32 *end, Int x USES_REGS)</argsstring>
+        <name>binary_search</name>
+        <param>
+          <type>BITS32 *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>BITS32 *</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>Int x</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="274" column="2" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="274" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a22b334911946e978317c32fd5b6706a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * Interval</definition>
+        <argsstring>(struct index_t *it, Term min, Term max, Term op, BITS32 off USES_REGS)</argsstring>
+        <name>Interval</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>BITS32 off</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="292" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="292" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1ae6a1f75904c3ee4dd4f5ebbeceb9ea65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * IntervalEnterUDIIndex</definition>
+        <argsstring>(struct index_t *it USES_REGS)</argsstring>
+        <name>IntervalEnterUDIIndex</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *it</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="474" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="474" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a69ae83fff4680706a05c4b2882ce8380" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IntervalRetryUDIIndex</definition>
+        <argsstring>(struct index_t *it USES_REGS)</argsstring>
+        <name>IntervalRetryUDIIndex</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *it</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="502" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="502" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a7128274363c3dfee61527cfa98170ee9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * IntervalUdiInit</definition>
+        <argsstring>(Term spec, int arg, int arity)</argsstring>
+        <name>IntervalUdiInit</name>
+        <param>
+          <type>Term</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="548" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="548" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a2f9e440861ef0cff527641796fc8ccff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * IntervalUdiInsert</definition>
+        <argsstring>(void *control, Term term, int arg, void *data)</argsstring>
+        <name>IntervalUdiInsert</name>
+        <param>
+          <type>void *</type>
+          <declname>control</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="554" column="1" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="554" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1ac803cd9f285044d7f7e530571ca4dba2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IntervalUdiDestroy</definition>
+        <argsstring>(void *control)</argsstring>
+        <name>IntervalUdiDestroy</name>
+        <param>
+          <type>void *</type>
+          <declname>control</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="567" column="12" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="567" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="exo__udi_8c_1a3cbb918804857b235a5cfd17e9439330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_udi_Interval_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_udi_Interval_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/exo_udi.c" line="574" column="6" bodyfile="/home/vsc/github/yap/C/exo_udi.c" bodystart="574" bodyend="588"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/exo_udi.c"/>
+  </compounddef>
+</doxygen>

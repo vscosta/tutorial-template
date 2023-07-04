@@ -1,0 +1,1641 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="compiler_8c" kind="file" language="C++">
+    <compoundname>compiler.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapCompile_8h" local="yes">YapCompile.h</includes>
+    <includes refid="alloc_8h" local="yes">alloc.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/compiler.c</label>
+        <link refid="compiler_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>YapCompile.h</label>
+        <link refid="YapCompile_8h_source"/>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="55">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="58">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="60">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structbranch__descriptor" prot="public">branch_descriptor</innerclass>
+    <innerclass refid="structcompiler__struct__struct" prot="public">compiler_struct_struct</innerclass>
+    <innerclass refid="structenv__tmp" prot="public">env_tmp</innerclass>
+    <innerclass refid="structbventry" prot="public">bventry</innerclass>
+    <innerclass refid="structUnsafeEntry" prot="public">UnsafeEntry</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="compiler_8c_1a0e3ce80ecaa0b8998f2f31ae706e5084" prot="public" static="no">
+        <name>FAIL</name>
+        <param><defname>M</defname></param>
+        <param><defname>T</defname></param>
+        <param><defname>E</defname></param>
+        <initializer>  {                                                                            \
+    <ref refid="group__ErrorC_1ga84356483d961e8604272c2b07979b455" kindref="member">LOCAL_Error_TYPE</ref> = <ref refid="classT" kindref="compound">T</ref>;                                                      \
+    return;                                                                    \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="288" column="9" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="compiler_8c_1aee6f7cd80ccb3a11ed39aa21a0a1c3f3" prot="public" static="no">
+        <name>IsNewVar</name>
+        <param><defname>v</defname></param>
+        <initializer>  (Addr(v) &lt; cglobs-&gt;cint.freep0 || Addr(v) &gt; cglobs-&gt;cint.freep)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="297" column="10" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="compiler_8c_1aeefa75c29c03dea17c3441f82c4c9fe1" prot="public" static="no">
+        <name>LOCALISE_VOIDS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2289" column="9" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="compiler_8c_1a116bda99bc9e0e95d9d565a80b4903cb" prot="public" static="no">
+        <name>MAX_DISJUNCTIONS</name>
+        <initializer>(128 * 128 * 32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2473" column="9" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="compiler_8c_1a8e30770bd0507928bd0027d5c5e3fd3f" prot="public" static="no">
+        <type>struct <ref refid="structbranch__descriptor" kindref="compound">branch_descriptor</ref></type>
+        <definition>typedef struct branch_descriptor branch</definition>
+        <argsstring></argsstring>
+        <name>branch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="191" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="compiler_8c_1a385244ed957321680cbb80f01b81cbd7" prot="public" static="no">
+        <type>struct <ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct_struct</ref></type>
+        <definition>typedef struct compiler_struct_struct compiler_struct</definition>
+        <argsstring></argsstring>
+        <name>compiler_struct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="228" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="compiler_8c_1a71bc73f288052b7e3a52937346c454ae" prot="public" static="no">
+        <type>struct <ref refid="structenv__tmp" kindref="compound">env_tmp</ref></type>
+        <definition>typedef struct env_tmp EnvTmp</definition>
+        <argsstring></argsstring>
+        <name>EnvTmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2295" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="compiler_8c_1a2559eb731358d125a8fb577faf38668f" prot="public" static="yes" mutable="no">
+        <type><ref refid="structbventry" kindref="compound">bventry</ref> *</type>
+        <definition>bventry* bvstack</definition>
+        <argsstring></argsstring>
+        <name>bvstack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2474" column="16" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compiler_8c_1aeaa417c5b6def5075df47270fbaa8913" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int bvindex</definition>
+        <argsstring></argsstring>
+        <name>bvindex</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2475" column="12" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2475" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="compiler_8c_1a690ca4767a10e47ecacfbe5b86025e81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int active_branch</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>active_branch</name>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>onbranch</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="276" column="19" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="276" bodyend="286" declfile="/home/vsc/github/yap/C/compiler.c" declline="230" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1afb3f9805afa6bdd86a754ef9632d3616" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_var</definition>
+        <argsstring>(Term, Int, unsigned int, unsigned int, compiler_struct *)</argsstring>
+        <name>c_var</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>argno</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>arity</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>level</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="435" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="435" bodyend="506" declfile="/home/vsc/github/yap/C/compiler.c" declline="231" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1aaa2f5ebf23b2a7e88b38ca1e355f77e9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void reset_vars</definition>
+        <argsstring>(Ventry *)</argsstring>
+        <name>reset_vars</name>
+        <param>
+          <type><ref refid="structVENTRY" kindref="compound">Ventry</ref> *</type>
+          <defname>vtable</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="526" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="526" bodyend="535" declfile="/home/vsc/github/yap/C/compiler.c" declline="232" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a7bc8c98330d0373193d77e0a3281291c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term optimize_ce</definition>
+        <argsstring>(Term, unsigned int, unsigned int, compiler_struct *)</argsstring>
+        <name>optimize_ce</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>arity</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>level</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="537" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="537" bodyend="589" declfile="/home/vsc/github/yap/C/compiler.c" declline="233" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a5f54843dac3c48c9d8ce681a4ea13f96" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_arg</definition>
+        <argsstring>(Int, Term, unsigned int, unsigned int, compiler_struct *)</argsstring>
+        <name>c_arg</name>
+        <param>
+          <type>Int</type>
+          <defname>argno</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>arity</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>level</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="711" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="711" bodyend="931" declfile="/home/vsc/github/yap/C/compiler.c" declline="234" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a18c11d244e6538ddb5bc8d6808020aa7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_args</definition>
+        <argsstring>(Term, unsigned int, compiler_struct *)</argsstring>
+        <name>c_args</name>
+        <param>
+          <type>Term</type>
+          <defname>app</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>level</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="630" column="20" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="630" bodyend="652" declfile="/home/vsc/github/yap/C/compiler.c" declline="235" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ad5e2ac26564572328e7e9867487bb4a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_eq</definition>
+        <argsstring>(Term, Term, compiler_struct *)</argsstring>
+        <name>c_eq</name>
+        <param>
+          <type>Term</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="933" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="933" bodyend="1021" declfile="/home/vsc/github/yap/C/compiler.c" declline="236" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ac4329e9c38e44fddec38d701ddc3328b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_test</definition>
+        <argsstring>(Int, Term, compiler_struct *)</argsstring>
+        <name>c_test</name>
+        <param>
+          <type>Int</type>
+          <defname>Op</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="1023" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="1023" bodyend="1060" declfile="/home/vsc/github/yap/C/compiler.c" declline="237" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ae7d6ad28c498bfb8452bb69e8e13545b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_bifun</definition>
+        <argsstring>(basic_preds, Term, Term, Term, Term, Term, compiler_struct *)</argsstring>
+        <name>c_bifun</name>
+        <param>
+          <type>basic_preds</type>
+          <defname>Op</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>t1</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>t2</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>t3</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>Goal</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="1092" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="1092" bodyend="1419" declfile="/home/vsc/github/yap/C/compiler.c" declline="238" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ae9174df41f6a7ce881749f6d13b04742" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_goal</definition>
+        <argsstring>(Term, Term, compiler_struct *)</argsstring>
+        <name>c_goal</name>
+        <param>
+          <type>Term</type>
+          <defname>Goal</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="1533" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="1533" bodyend="2160" declfile="/home/vsc/github/yap/C/compiler.c" declline="240" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a4df17da1af37e35888975b3d44f09d35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_body</definition>
+        <argsstring>(Term, Term, compiler_struct *)</argsstring>
+        <name>c_body</name>
+        <param>
+          <type>Term</type>
+          <defname>Body</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2162" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2162" bodyend="2194" declfile="/home/vsc/github/yap/C/compiler.c" declline="241" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a440de793bfb2525115f056c7c671b566" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_head</definition>
+        <argsstring>(Term, compiler_struct *)</argsstring>
+        <name>c_head</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2196" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2196" bodyend="2245" declfile="/home/vsc/github/yap/C/compiler.c" declline="242" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a564f474864520b624c6e871948d1a7e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool usesvar</definition>
+        <argsstring>(compiler_vm_op)</argsstring>
+        <name>usesvar</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <defname>ic</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2247" column="20" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2247" bodyend="2269" declfile="/home/vsc/github/yap/C/compiler.c" declline="243" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a3a9fb30a6cd2852be974d42bae6a099b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * init_bvarray</definition>
+        <argsstring>(int, compiler_struct *)</argsstring>
+        <name>init_bvarray</name>
+        <param>
+          <type>int</type>
+          <defname>nperm</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2405" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2405" bodyend="2413" declfile="/home/vsc/github/yap/C/compiler.c" declline="244" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1af0a5a8a147e7d7569d81d81b1d855131" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clear_bvarray</definition>
+        <argsstring>(int, CELL *)</argsstring>
+        <name>clear_bvarray</name>
+        <param>
+          <type>int</type>
+          <defname>var</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>bvarray</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2415" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2415" bodyend="2447" declfile="/home/vsc/github/yap/C/compiler.c" declline="248" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a4e622075b7ce9fc3a9892ca364eae7f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AssignPerm</definition>
+        <argsstring>(PInstr *, compiler_struct *)</argsstring>
+        <name>AssignPerm</name>
+        <param>
+          <type><ref refid="structPSEUDO" kindref="compound">PInstr</ref> *</type>
+          <defname>pc</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2323" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2323" bodyend="2403" declfile="/home/vsc/github/yap/C/compiler.c" declline="250" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ab903aeb05317c8f919e26405b98b6735" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CheckUnsafe</definition>
+        <argsstring>(PInstr *, compiler_struct *)</argsstring>
+        <name>CheckUnsafe</name>
+        <param>
+          <type><ref refid="structPSEUDO" kindref="compound">PInstr</ref> *</type>
+          <defname>pc</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2544" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2544" bodyend="2672" declfile="/home/vsc/github/yap/C/compiler.c" declline="251" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a645fd467b663cb29fbd3934b6cee308f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CheckVoids</definition>
+        <argsstring>(compiler_struct *)</argsstring>
+        <name>CheckVoids</name>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2674" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2674" bodyend="2725" declfile="/home/vsc/github/yap/C/compiler.c" declline="252" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ae389df112e34b6af49bd1cda02121e25" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int checktemp</definition>
+        <argsstring>(Int, Int, compiler_vm_op, compiler_struct *)</argsstring>
+        <name>checktemp</name>
+        <param>
+          <type>Int</type>
+          <defname>arg</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>rn</defname>
+        </param>
+        <param>
+          <type>compiler_vm_op</type>
+          <defname>ic</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2727" column="12" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2727" bodyend="2832" declfile="/home/vsc/github/yap/C/compiler.c" declline="253" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ae9d25eda96781eb46407edbb5904a820" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int checkreg</definition>
+        <argsstring>(Int, Int, compiler_vm_op, int, compiler_struct *)</argsstring>
+        <name>checkreg</name>
+        <param>
+          <type>Int</type>
+          <defname>arg</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>rn</defname>
+        </param>
+        <param>
+          <type>compiler_vm_op</type>
+          <defname>ic</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>var_arg</defname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2834" column="12" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2834" bodyend="2875" declfile="/home/vsc/github/yap/C/compiler.c" declline="254" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a38215777646f4873f98467338531996b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_layout</definition>
+        <argsstring>(compiler_struct *)</argsstring>
+        <name>c_layout</name>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <defname>cglobs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2899" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2899" bodyend="3236" declfile="/home/vsc/github/yap/C/compiler.c" declline="255" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a8dabd5615e80d82a37b28ef7c58f43af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_optimize</definition>
+        <argsstring>(PInstr *)</argsstring>
+        <name>c_optimize</name>
+        <param>
+          <type><ref refid="structPSEUDO" kindref="compound">PInstr</ref> *</type>
+          <defname>pc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="3297" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="3297" bodyend="3471" declfile="/home/vsc/github/yap/C/compiler.c" declline="256" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a506481a35e45c094ed2fc04ea8e1d40d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void push_branch</definition>
+        <argsstring>(int id, Term cmvar, compiler_struct *cglobs)</argsstring>
+        <name>push_branch</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cmvar</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="261" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="261" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a9ad847bda6d8fa2c4cad04dfdf0b24a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int pop_branch</definition>
+        <argsstring>(compiler_struct *cglobs)</argsstring>
+        <name>pop_branch</name>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="267" column="12" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="267" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a8563b9cf8e840f93f5ee79a299eb362d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term replace_cuts</definition>
+        <argsstring>(Term g, bool left, Term commitvar)</argsstring>
+        <name>replace_cuts</name>
+        <param>
+          <type>Term</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>commitvar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="301" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="301" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a8a9ad42e07ac512b1ca4d32bafd13efc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void pop_code</definition>
+        <argsstring>(unsigned int level, compiler_struct *cglobs)</argsstring>
+        <name>pop_code</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="334" column="20" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="334" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1af2f4e08a5027f84225e36630cf1976d6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int check_var</definition>
+        <argsstring>(Term t, unsigned int level, Int argno, compiler_struct *cglobs)</argsstring>
+        <name>check_var</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>argno</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="345" column="12" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="345" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a54daff2ea3567953878371f955d8bf70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void tag_var</definition>
+        <argsstring>(Term t, int new, compiler_struct *cglobs)</argsstring>
+        <name>tag_var</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="421" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="421" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1aecf2372221dfbbb771bcf39576547714" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_2vars</definition>
+        <argsstring>(int op, Term t1, Int argno1, Term t2, Int argno2, CELL extra, unsigned int arity, unsigned int level, compiler_struct *cglobs)</argsstring>
+        <name>c_2vars</name>
+        <param>
+          <type>int</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>argno1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>argno2</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>extra</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="509" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="509" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a4adcf154bd326160701e4ee504480931" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int try_store_as_dbterm</definition>
+        <argsstring>(Term t, Int argno, unsigned int arity, int level, compiler_struct *cglobs)</argsstring>
+        <name>try_store_as_dbterm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>argno</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="654" column="12" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="654" bodyend="709"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ae3e0fe7722ed7d5c7042fac71686bbc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void c_functor</definition>
+        <argsstring>(Term Goal, Term mod, compiler_struct *cglobs)</argsstring>
+        <name>c_functor</name>
+        <param>
+          <type>Term</type>
+          <declname>Goal</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="1421" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="1421" bodyend="1466"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a2aabfb66292fb09fc5e1b01f205b7ee9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IsTrueGoal</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>IsTrueGoal</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="1468" column="12" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="1468" bodyend="1483"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ac0e2370deef5777bc4c8cd08b4968e38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void emit_special_label</definition>
+        <argsstring>(Term Goal, compiler_struct *cglobs)</argsstring>
+        <name>emit_special_label</name>
+        <param>
+          <type>Term</type>
+          <declname>Goal</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="1485" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="1485" bodyend="1531"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a84a4e5e62d0869595a0ab20b9758f796" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool usesvar2</definition>
+        <argsstring>(compiler_vm_op ic)</argsstring>
+        <name>usesvar2</name>
+        <param>
+          <type>compiler_vm_op</type>
+          <declname>ic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2283" column="20" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2283" bodyend="2283"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a2151b2778f49f26b7e58d48aca40cad4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void tag_use</definition>
+        <argsstring>(Ventry *v USES_REGS)</argsstring>
+        <name>tag_use</name>
+        <param>
+          <type><ref refid="structVENTRY" kindref="compound">Ventry</ref> *v</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2298" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2298" bodyend="2321"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a871e42055dd250d781fec842675b3bf3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_bvarray_op</definition>
+        <argsstring>(PInstr *cp, CELL *bvarray, int env_size, compiler_struct *cglobs)</argsstring>
+        <name>add_bvarray_op</name>
+        <param>
+          <type><ref refid="structPSEUDO" kindref="compound">PInstr</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>bvarray</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>env_size</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2450" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2450" bodyend="2463"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a40e2c331a86064663d392b3a500f1fe3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void push_bvmap</definition>
+        <argsstring>(int label, PInstr *pcpc, compiler_struct *cglobs)</argsstring>
+        <name>push_bvmap</name>
+        <param>
+          <type>int</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type><ref refid="structPSEUDO" kindref="compound">PInstr</ref> *</type>
+          <declname>pcpc</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2477" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2477" bodyend="2494"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1abe846f962ddfcac5358dc0357ea1c6c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void reset_bvmap</definition>
+        <argsstring>(CELL *bvarray, int nperm, compiler_struct *cglobs)</argsstring>
+        <name>reset_bvmap</name>
+        <param>
+          <type>CELL *</type>
+          <declname>bvarray</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nperm</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2496" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2496" bodyend="2523"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1adf85a755e1a7cde92e796d7bbc3407d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void pop_bvmap</definition>
+        <argsstring>(CELL *bvarray, int nperm, compiler_struct *cglobs)</argsstring>
+        <name>pop_bvmap</name>
+        <param>
+          <type>CELL *</type>
+          <declname>bvarray</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nperm</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2525" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2525" bodyend="2536"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1ad0568982239010716727db47a8af3f98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL</type>
+        <definition>static CELL copy_live_temps_bmap</definition>
+        <argsstring>(int max, compiler_struct *cglobs)</argsstring>
+        <name>copy_live_temps_bmap</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type><ref refid="structcompiler__struct__struct" kindref="compound">compiler_struct</ref> *</type>
+          <declname>cglobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2878" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2878" bodyend="2897"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a736c2c11c3fdab7496fe5b13b7e81456" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void push_allocate</definition>
+        <argsstring>(PInstr *pc, PInstr *oldpc)</argsstring>
+        <name>push_allocate</name>
+        <param>
+          <type><ref refid="structPSEUDO" kindref="compound">PInstr</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type><ref refid="structPSEUDO" kindref="compound">PInstr</ref> *</type>
+          <declname>oldpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="3238" column="13" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="3238" bodyend="3295"/>
+      </memberdef>
+      <memberdef kind="function" id="compiler_8c_1a983754c2bd288cfda32575394f29dcf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>yamop * Yap_cclause</definition>
+        <argsstring>(volatile Term inp_clause, Int NOfArgs, Term mod, Term pos, volatile Term src, void *infop)</argsstring>
+        <name>Yap_cclause</name>
+        <param>
+          <type>volatile Term</type>
+          <declname>inp_clause</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>NOfArgs</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>volatile Term</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>infop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="3473" column="7" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="3473" bodyend="3753"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/compiler.c"/>
+  </compounddef>
+</doxygen>

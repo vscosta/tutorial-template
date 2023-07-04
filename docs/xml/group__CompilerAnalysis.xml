@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__CompilerAnalysis" kind="group">
+    <compoundname>CompilerAnalysis</compoundname>
+    <title>Internal Clause Rewriting</title>
+    <briefdescription>
+<para>YAP supports several clause optimisation mechanisms, that are designed to improve execution of arithmetic and term construction built-ins. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In other words, during the compilation process a clause is rewritten twice:</para>
+<para><orderedlist>
+<listitem><para>first, perform user-defined goal_expansion as described in the predicates goal_expansion/1 and goal_expansion/2</para>
+</listitem><listitem><para>Perform expansion of some built-ins like:<itemizedlist>
+<listitem><para>pruning operators, like -&gt;/2 and F&gt;/2</para>
+</listitem><listitem><para>arithmetic, including early evaluation of constant expressions</para>
+</listitem><listitem><para>specialise versions for some built-ins, if we are aware of the run-time execution mode</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para>The user has some control over this process, through some built-ins and through execution flsgs</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

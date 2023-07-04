@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptmust__be__predicate__indicator_24" kind="concept">
+    <compoundname>must_be_predicate_indicator/4</compoundname>
+    <initializer>template&lt;&gt;
+concept must_be_predicate_indicator/4 =     </initializer>
+    <briefdescription>
+<para><bold>must_be_predicate_indicator</bold>( Term, Module, Name, Arity ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This predicates can be used to verify if Term is a predicate indicator, that is of the form:<itemizedlist>
+<listitem><para>Name/Arity</para>
+</listitem><listitem><para>Name//Arity-2</para>
+</listitem><listitem><para>Module:Name/Arity</para>
+</listitem><listitem><para>Module:Name//Arity-2</para>
+</listitem></itemizedlist>
+</para>
+<para>if it is, it will extract the predicate&apos;s module, name, and arity</para>
+<para>Note: this will now accept both mod:(a/n) and (mod:a)/n as valid </para>
+    </detaileddescription>
+    <location file="C/errors.c" line="1865" column="1"/>
+  </compounddef>
+</doxygen>

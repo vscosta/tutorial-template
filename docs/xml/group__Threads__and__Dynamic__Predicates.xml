@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Threads__and__Dynamic__Predicates" kind="group">
+    <compoundname>Threads_and_Dynamic_Predicates</compoundname>
+    <title>Threads and Dynamic Predicates</title>
+    <innerclass refid="classthread__local_21" prot="public">thread_local/1</innerclass>
+    <innerclass refid="classprivate_21" prot="public">private/1</innerclass>
+    <briefdescription>
+<para>Besides queues threads can share and exchange data using dynamic predicates. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The multi-threaded version knows about two types of dynamic predicates By default, a predicate declared <emphasis>dynamic</emphasis> (see <ref refid="classdynamic_21" kindref="compound">dynamic/1</ref> ) is shared by all threads Each thread may assert, retract and run the dynamic predicate Synchronisation inside Prolog guarantees the consistency of the predicate Updates are <emphasis>logical</emphasis>: visible clauses are not affected by assert/retract after a query started on the predicate In many cases primitive from thread synchronisation should be used to ensure application invariants on the predicate are maintained</para>
+<para>Besides shared predicates, dynamic predicates can be declared with the <ref refid="classthread__local_21" kindref="compound">thread_local/1</ref> directive Such predicates share their attributes, but the clause-list is different in each thread</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

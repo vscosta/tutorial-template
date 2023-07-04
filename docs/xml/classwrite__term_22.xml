@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classwrite__term_22" kind="class" language="Prolog" prot="public">
+    <compoundname>write_term/2</compoundname>
+    <briefdescription>
+<para><bold>write_term</bold>(+ <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>, + <emphasis>Opts</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>Displays term <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> on the current output stream, according to the following options:</para>
+<para><itemizedlist>
+<listitem><para>quoted(+ <emphasis>Bool</emphasis>) is iso If <computeroutput>true</computeroutput>, quote atoms if this would be necessary for the atom to be recognized as an atom by YAP&apos;s parser The default value is <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>ignore_ops(+ <emphasis>Bool</emphasis>) is iso If <computeroutput>true</computeroutput>, ignore operator declarations when writing the term The default value is <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>numbervars(+ <emphasis>Bool</emphasis>) is iso If <computeroutput>true</computeroutput>, output terms of the form <computeroutput>$VAR(N)</computeroutput>, where <emphasis>N</emphasis> is an integer, as a sequence of capital letters The default value is <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>variable_names(+ <emphasis>List</emphasis>) is iso If <computeroutput>List</computeroutput> is a list of bindings <computeroutput>Name = Var</computeroutput>, output <computeroutput>Var</computeroutput> as if bound to <computeroutput>Name</computeroutput> If not all variables are named, you can use the name_vars option to generate the missing variable names</para>
+</listitem><listitem><para>name_variables(+ <emphasis>Bool</emphasis> ) This YAP option generates user readable names for the term variables It complements <computeroutput>variable_names</computeroutput></para>
+</listitem><listitem><para>portrayed(+ <emphasis>Bool</emphasis>) If <computeroutput>true</computeroutput>, use <computeroutput>portray/1 </computeroutput> to portray bound terms The default value is <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>portray(+ <emphasis>Bool</emphasis>) If <computeroutput>true</computeroutput>, use <computeroutput>portray/1 </computeroutput> to portray bound terms The default value is <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>max_depth(+ <emphasis>Depth</emphasis>) If <computeroutput>Depth</computeroutput> is a positive integer, use <computeroutput>Depth</computeroutput> as the maximum depth to portray a term The default is <computeroutput>0</computeroutput>, that is, unlimited depth</para>
+</listitem><listitem><para>priority(+ <emphasis>Piority</emphasis>) If <computeroutput>Priority</computeroutput> is a positive integer smaller than <computeroutput>1200</computeroutput>, give the context priority The default is <computeroutput>1200</computeroutput></para>
+</listitem><listitem><para>cycles(+ <emphasis>Bool</emphasis>) Do not loop in rational trees (default)</para>
+</listitem><listitem><para>(+ <emphasis>Bool</emphasis>) Do not loop in rational trees (default) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/writeterm.c" line="191" column="1" bodyfile="/home/vsc/github/yap/os/writeterm.c" bodystart="191" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

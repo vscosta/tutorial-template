@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classdirectory__files_22" kind="class" language="Prolog" prot="public">
+    <compoundname>directory_files/2</compoundname>
+    <briefdescription>
+<para><bold>directory_files</bold>(+ <emphasis>Dir</emphasis>,- <emphasis>List</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>directory_files</bold>(+-_Dir_,-_List of Files)</para>
+<para>Given a directory <emphasis>Dir</emphasis>, <ref refid="classdirectory__files_22" kindref="compound">directory_files/2</ref> procedures a listing of all fniles and directories in the directory:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>?-<sp/>directory_files(</highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,L),<sp/>writeq(L).</highlight></codeline>
+<codeline><highlight class="normal">[</highlight><highlight class="stringliteral">&apos;Makefile.~1~&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;sys.so&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;Makefile&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;sys.o&apos;</highlight><highlight class="normal">,x,..,</highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">]</highlight></codeline>
+</programlisting> The predicates uses the <computeroutput>dirent</computeroutput> family of routines in Unix environments, and <computeroutput>findfirst</computeroutput> in WIN32 through the system_library buil</para>
+<para>)<itemizedlist>
+<listitem><para>If <emphasis>Dir</emphasis> is S valid path to an existing directory, and the current process holds the necessary permission <emphasis>ListOfFiles</emphasis> will be unified with all the files in directory The list of files is not guaranteed to follow any specific order</para>
+</listitem><listitem><para>This built-in is just a stub for list_directory/2 It is exported from the user module and from the system library </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/files.c" line="554" column="1" bodyfile="/home/vsc/github/yap/os/files.c" bodystart="554" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

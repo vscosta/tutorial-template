@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptenviron_22" kind="concept">
+    <compoundname>environ/2</compoundname>
+    <initializer>template&lt;&gt;
+concept environ/2 =     </initializer>
+    <briefdescription>
+<para><bold>environ</bold>(? <emphasis>EnvVar</emphasis>,+ <emphasis>EnvValue</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Unify environment variable <emphasis>EnvVar</emphasis> with its value <emphasis>EnvValue</emphasis>, if there is one This predicate is backtrackable in Unix systems, but not currently in Win32 configurations</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">environ(</highlight><highlight class="stringliteral">&apos;HOME&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">V</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">V</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;C:\\cygwin\\home\\administrator&apos;</highlight><highlight class="normal"><sp/>?</highlight></codeline>
+</programlisting> <emphasis>EnvVar</emphasis> may be bound to an atom, or just be unbound In the latter case <ref refid="classenviron_22" kindref="compound">environ/2</ref> will enumerate over all environment variables </para>
+    </detaileddescription>
+    <location file="library/system.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

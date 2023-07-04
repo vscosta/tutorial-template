@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptthread__send__message_22" kind="concept">
+    <compoundname>thread_send_message/2</compoundname>
+    <initializer>template&lt;&gt;
+concept thread_send_message/2 =     </initializer>
+    <briefdescription>
+<para><bold>thread_send_message</bold>(+ <emphasis>QueueOrThreadId</emphasis>, + <emphasis>Term</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Place <emphasis>Term</emphasis> in the given queue or default queue of the indicated thread (which can even be the message queue of itself (see <ref refid="classthread__self_21" kindref="compound">thread_self/1</ref> ) Any term can be placed in a message queue, but note that the term is copied to the receiving thread and variable-bindings are thus lost This call returns immediately</para>
+<para>If more than one thread is waiting for messages on the given queue and at least one of these is waiting with a partially instantiated <emphasis>Term</emphasis>, the waiting threads are <emphasis>all</emphasis> sent a wakeup signal, starting a rush for the available messages in the queue This behaviour can seriously harm performance with many threads waiting on the same queue as all-but-the-winner perform a useless scan of the queue If there is only one waiting thread or all waiting threads wait with an unbound variable an arbitrary thread is restarted to scan the queue </para>
+    </detaileddescription>
+    <location file="pl/threads.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

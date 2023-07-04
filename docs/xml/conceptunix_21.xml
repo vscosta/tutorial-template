@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptunix_21" kind="concept">
+    <compoundname>unix/1</compoundname>
+    <initializer>template&lt;&gt;
+concept unix/1 =     </initializer>
+    <briefdescription>
+<para><bold>unix</bold>(+ <emphasis>S</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Access to Unix-like functionality:</para>
+<para><itemizedlist>
+<listitem><para>argv/1 Return a list of arguments to the program These are the arguments that follow a <computeroutput>--</computeroutput>, as in the usual Unix convention</para>
+</listitem><listitem><para>cd/0 Change to home directory</para>
+</listitem><listitem><para><ref refid="classcd_21" kindref="compound">cd/1</ref> Change to given directory Acceptable directory names are strings or atoms</para>
+</listitem><listitem><para><ref refid="classenviron_22" kindref="compound">environ/2</ref> If the first argument is an atom, unify the second argument with the value of the corresponding environment variable</para>
+</listitem><listitem><para><ref refid="classgetcwd_21" kindref="compound">getcwd/1</ref> Unify the first argument with an atom representing the current directory</para>
+</listitem><listitem><para><ref refid="classputenv_22" kindref="compound">putenv/2</ref> Set environment variable <emphasis>E</emphasis> to the value <emphasis>S</emphasis> If the environment variable <emphasis>E</emphasis> does not exist, create a new one Both the environment variable and the value must be atoms</para>
+</listitem><listitem><para><ref refid="classshell_21" kindref="compound">shell/1</ref> Execute command under current shell Acceptable commands are strings or atoms</para>
+</listitem><listitem><para><ref refid="classsystem_21" kindref="compound">system/1</ref> Execute command with <computeroutput>/bin/sh</computeroutput> Acceptable commands are strings or atoms</para>
+</listitem><listitem><para>shell/0 Execute a new shell </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="os/os.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptif_23" kind="concept">
+    <compoundname>if/3</compoundname>
+    <initializer>template&lt;&gt;
+concept if/3 =     </initializer>
+    <briefdescription>
+<para><bold>if</bold>(? <emphasis>G</emphasis>,? <emphasis>H</emphasis>,? <emphasis>I</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Call goal <emphasis>H</emphasis> once per each solution of goal <emphasis>H</emphasis> If goal <emphasis>H</emphasis> has no solutions, call goal <emphasis>I</emphasis></para>
+<para>The built-in <computeroutput><ref refid="classif_23" kindref="compound">if/3</ref> </computeroutput> is similar to &lt;tt&gt;-&gt;/3 , with the difference that it will backtrack over the test goal Consider the following small data-base:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">b(a).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">c(x).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">b(b).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">c(y)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Execution of an <ref refid="classif_23" kindref="compound">if/3</ref> query will proceed as follows:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">if(a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">),b(</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">),c(</highlight><highlight class="charliteral">Z</highlight><highlight class="normal">)).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="charliteral">Y</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">if<sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="charliteral">Y</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/><sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="charliteral">Y</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">if<sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="charliteral">Y</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/><sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">if</highlight></codeline>
+</programlisting></para>
+<para>The system will backtrack over the two solutions for <computeroutput>a/1 </computeroutput> and the two solutions for <computeroutput>b/1 </computeroutput>, generating four solutions</para>
+<para>Cuts are allowed inside the first goal <emphasis>G</emphasis>, but they will only prune over <emphasis>G</emphasis></para>
+<para>If you want <emphasis>G</emphasis> to be deterministic you should use if-then-else, as it is both more efficient and more portable </para>
+    </detaileddescription>
+    <location file="pl/control.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmodule_22" kind="class" language="Prolog" prot="public">
+    <compoundname>module/2</compoundname>
+    <briefdescription>
+<para><bold>module</bold>(+ M:atom,+ L:list ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>module</bold>(+ Module:atom, +ExportList:list)</para>
+<para>properties: directive</para>
+<para>the current file defines module <emphasis>M</emphasis> with exports <emphasis>L</emphasis> The list may include</para>
+<para><itemizedlist>
+<listitem><para>predicate indicators</para>
+</listitem><listitem><para>operator definitions that look like calls to <ref refid="classop_23" kindref="compound">op/3</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>The list <emphasis>L</emphasis> may include predicates imported from other modules If you want to fully reexport a module, or a sub-set, also consider <ref refid="classreexport_21" kindref="compound">reexport/1</ref></para>
+<para>Similar to <ref refid="classmodule_22" kindref="compound">module/2</ref> , this directive defines the file where it appears in as a module file; it must be the first declaration in the file <emphasis>M</emphasis> must be an atom specifying the module name; <emphasis>L</emphasis> must be a list containing the module&apos;s public predicates specification, in the form <computeroutput>[predicate_name/arity,...]</computeroutput></para>
+<para>The last argument <emphasis>Options</emphasis> must be a list of options, which can be:<itemizedlist>
+<listitem><para><bold>filename</bold> the filename for a module to import into the current module</para>
+</listitem><listitem><para><bold>library( +File )</bold> a library file to import into the current module</para>
+</listitem><listitem><para><bold>hide( +Opt)</bold> if <emphasis>Opt</emphasis> is <computeroutput>false</computeroutput>, keep source code for current module, if <computeroutput>true</computeroutput>, disable</para>
+</listitem><listitem><para><bold>export(+PredicateIndicator )</bold> Add predicates to the public list of the context module This implies the predicate will be imported into another module if this module is imported with <ref refid="classuse__module_21" kindref="compound">use_module/1</ref> and <ref refid="classuse__module_22" kindref="compound">use_module/2</ref></para>
+</listitem><listitem><para><bold>export_list(? <emphasis>Mod</emphasis>,? <emphasis>ListOfPredicateIndicator</emphasis>)</bold> The list <emphasis>ListOfPredicateIndicator</emphasis> contains all predicates exported by module <emphasis>Mod</emphasis></para>
+</listitem></itemizedlist>
+</para>
+<para>Note that predicates are normally exported using the directive <computeroutput><ref refid="classmodule_22" kindref="compound">module/2</ref> </computeroutput> The <computeroutput><ref refid="classexport_21" kindref="compound">export/1</ref> </computeroutput> argumwnt is meant to allow export from dynamically created modules The directive argument may also be a list of predicates</para>
+<para>properties: directive</para>
+<para>the current file defines module <emphasis>M</emphasis> with exports <emphasis>L</emphasis> The list may include</para>
+<para><itemizedlist>
+<listitem><para>predicate indicators</para>
+</listitem><listitem><para>operator definitions that look like calls to <ref refid="classop_23" kindref="compound">op/3</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>The list <emphasis>L</emphasis> may include predicates imported from other modules If you want to fully reexport a module, or a sub-set, also consider <ref refid="classreexport_21" kindref="compound">reexport/1</ref></para>
+<para>Similar to <ref refid="classmodule_22" kindref="compound">module/2</ref> , this directive defines the file where it appears in as a module file; it must be the first declaration in the file <emphasis>M</emphasis> must be an atom specifying the module name; <emphasis>L</emphasis> must be a list containing the module&apos;s public predicates specification, in the form <computeroutput>[predicate_name/arity,...]</computeroutput></para>
+<para>The last argument <emphasis>Options</emphasis> must be a list of options, which can be: +<bold>filename</bold> the filename for a module to import into the current module</para>
+<para><itemizedlist>
+<listitem><para><bold>library( +File )</bold> a library file to import into the current module</para>
+</listitem><listitem><para><bold>hide( +Opt)</bold> if <emphasis>Opt</emphasis> is <computeroutput>false</computeroutput>, keep source code for current module, if <computeroutput>true</computeroutput>, disable</para>
+</listitem><listitem><para><bold>export(+PredicateIndicator )</bold> Add predicates to the public list of the context module This implies the predicate will be imported into another module if this module is imported with <ref refid="classuse__module_21" kindref="compound">use_module/1</ref> and <ref refid="classuse__module_22" kindref="compound">use_module/2</ref></para>
+</listitem><listitem><para><bold>export_list(? <emphasis>Mod</emphasis>,? <emphasis>ListOfPredicateIndicator</emphasis>)</bold> The list <emphasis>ListOfPredicateIndicator</emphasis> contains all predicates exported by module <emphasis>Mod</emphasis></para>
+</listitem></itemizedlist>
+</para>
+<para>Note that predicates are normally exported using the directive <computeroutput><ref refid="classmodule_22" kindref="compound">module/2</ref> </computeroutput> The <computeroutput><ref refid="classexport_21" kindref="compound">export/1</ref> </computeroutput> argument is meant to allow export from dynamically created modules The directive argument may also be a list of predicates</para>
+<para>properties: directive</para>
+<para>define a new module</para>
+<para>This directive defines the file where it appears as a <emphasis>module file</emphasis>; it must be the first declaration in the file <emphasis>Module</emphasis> must be an atom specifying the module name; <emphasis>ExportList</emphasis> must be a list containing the module&apos;s public predicates specification, in the form <computeroutput>[predicate_name/arity,...]</computeroutput> The <emphasis>ExportList</emphasis> can include operator declarations for operators that are exported by the module</para>
+<para>The public predicates of a module file can be made accessible to other files through loading the source file, using the directives <ref refid="classuse__module_21" kindref="compound">use_module/1</ref> or <ref refid="classuse__module_22" kindref="compound">use_module/2</ref> , <ref refid="classensure__loaded_21" kindref="compound">ensure_loaded/1</ref> and the predicates <ref refid="classconsult_21" kindref="compound">consult/1</ref> or <ref refid="classreconsult_21" kindref="compound">reconsult/1</ref> The non-public predicates of a module file are not supposed to be visible to other modules; they can, however, be accessed by prefixing the module name with the &lt;tt&gt;:/2  operator </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/modules.md" line="278" column="1" bodyfile="/home/vsc/github/yap/docs/md/modules.md" bodystart="278" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

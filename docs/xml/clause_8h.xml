@@ -1,0 +1,2396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="clause_8h" kind="file" language="C++">
+    <compoundname>clause.h</compoundname>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="inline-only_8h" local="yes">inline-only.h</includes>
+    <includes refid="alloc_8h" local="yes">alloc.h</includes>
+    <includes refid="terms_8h" local="yes">terms.h</includes>
+    <includedby refid="absmi_8c" local="yes">/home/vsc/github/yap/C/absmi.c</includedby>
+    <includedby refid="adtdefs_8c" local="yes">/home/vsc/github/yap/C/adtdefs.c</includedby>
+    <includedby refid="amasm_8c" local="yes">/home/vsc/github/yap/C/amasm.c</includedby>
+    <includedby refid="arrays_8c" local="yes">/home/vsc/github/yap/C/arrays.c</includedby>
+    <includedby refid="bb_8c" local="yes">/home/vsc/github/yap/C/bb.c</includedby>
+    <includedby refid="c__interface_8c" local="yes">/home/vsc/github/yap/C/c_interface.c</includedby>
+    <includedby refid="cdmgr_8c" local="yes">/home/vsc/github/yap/C/cdmgr.c</includedby>
+    <includedby refid="clause__list_8c" local="yes">/home/vsc/github/yap/C/clause_list.c</includedby>
+    <includedby refid="compiler_8c" local="yes">/home/vsc/github/yap/C/compiler.c</includedby>
+    <includedby refid="consult_8c" local="yes">/home/vsc/github/yap/C/consult.c</includedby>
+    <includedby refid="copy_8c" local="yes">/home/vsc/github/yap/C/copy.c</includedby>
+    <includedby refid="dbase_8c" local="yes">/home/vsc/github/yap/C/dbase.c</includedby>
+    <includedby refid="dbload_8c" local="yes">/home/vsc/github/yap/C/dbload.c</includedby>
+    <includedby refid="exo_8c" local="yes">/home/vsc/github/yap/C/exo.c</includedby>
+    <includedby refid="exo__udi_8c" local="yes">/home/vsc/github/yap/C/exo_udi.c</includedby>
+    <includedby refid="globals_8c" local="yes">/home/vsc/github/yap/C/globals.c</includedby>
+    <includedby refid="init_8c" local="yes">/home/vsc/github/yap/C/init.c</includedby>
+    <includedby refid="C_2stack_8c" local="yes">/home/vsc/github/yap/C/stack.c</includedby>
+    <includedby refid="terms_8c" local="yes">/home/vsc/github/yap/C/terms.c</includedby>
+    <includedby refid="udi_8c" local="yes">/home/vsc/github/yap/C/udi.c</includedby>
+    <includedby refid="write_8c" local="yes">/home/vsc/github/yap/C/write.c</includedby>
+    <includedby refid="cxx4yap_8hh" local="yes">/home/vsc/github/yap/CXX/cxx4yap.hh</includedby>
+    <includedby refid="tmp_2yapi_8hh" local="yes">/home/vsc/github/yap/CXX/tmp/yapi.hh</includedby>
+    <includedby refid="yapi_8hh" local="yes">/home/vsc/github/yap/CXX/yapi.hh</includedby>
+    <includedby refid="absmi_8h" local="yes">/home/vsc/github/yap/H/absmi.h</includedby>
+    <includedby refid="rheap_8h" local="yes">/home/vsc/github/yap/H/rheap.h</includedby>
+    <includedby refid="writeterm_8c" local="yes">/home/vsc/github/yap/os/writeterm.c</includedby>
+    <includedby refid="pl_2stack_8c" local="yes">/home/vsc/github/yap/pl/stack.c</includedby>
+    <incdepgraph>
+      <node id="22">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="28">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="37">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="27">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="36">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/clause.h</label>
+        <link refid="clause_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="49">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="48">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="35">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="6">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="51">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="53">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="42">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="7">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="19">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="21">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="10">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="14">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="12">
+        <label>config.h</label>
+      </node>
+      <node id="52">
+        <label>dlocals.h</label>
+      </node>
+      <node id="29">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="15">
+        <label>string.h</label>
+      </node>
+      <node id="45">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="23">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/absmi.c</label>
+        <link refid="absmi_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/adtdefs.c</label>
+        <link refid="adtdefs_8c_source"/>
+      </node>
+      <node id="44">
+        <label>/home/vsc/github/yap/C/agc.c</label>
+        <link refid="agc_8c_source"/>
+      </node>
+      <node id="4">
+        <label>/home/vsc/github/yap/C/amasm.c</label>
+        <link refid="amasm_8c_source"/>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/C/arrays.c</label>
+        <link refid="arrays_8c"/>
+      </node>
+      <node id="6">
+        <label>/home/vsc/github/yap/C/bb.c</label>
+        <link refid="bb_8c_source"/>
+      </node>
+      <node id="7">
+        <label>/home/vsc/github/yap/C/c_interface.c</label>
+        <link refid="c__interface_8c"/>
+      </node>
+      <node id="8">
+        <label>/home/vsc/github/yap/C/cdmgr.c</label>
+        <link refid="cdmgr_8c_source"/>
+      </node>
+      <node id="9">
+        <label>/home/vsc/github/yap/C/clause_list.c</label>
+        <link refid="clause__list_8c_source"/>
+      </node>
+      <node id="10">
+        <label>/home/vsc/github/yap/C/compiler.c</label>
+        <link refid="compiler_8c_source"/>
+      </node>
+      <node id="11">
+        <label>/home/vsc/github/yap/C/consult.c</label>
+        <link refid="consult_8c_source"/>
+      </node>
+      <node id="12">
+        <label>/home/vsc/github/yap/C/copy.c</label>
+        <link refid="copy_8c"/>
+      </node>
+      <node id="13">
+        <label>/home/vsc/github/yap/C/dbase.c</label>
+        <link refid="dbase_8c_source"/>
+      </node>
+      <node id="14">
+        <label>/home/vsc/github/yap/C/dbload.c</label>
+        <link refid="dbload_8c_source"/>
+      </node>
+      <node id="29">
+        <label>/home/vsc/github/yap/C/debug.c</label>
+        <link refid="debug_8c_source"/>
+      </node>
+      <node id="30">
+        <label>/home/vsc/github/yap/C/errors.c</label>
+        <link refid="C_2errors_8c"/>
+      </node>
+      <node id="31">
+        <label>/home/vsc/github/yap/C/exec.c</label>
+        <link refid="exec_8c_source"/>
+      </node>
+      <node id="32">
+        <label>/home/vsc/github/yap/C/execstruct.c</label>
+        <link refid="execstruct_8c_source"/>
+      </node>
+      <node id="15">
+        <label>/home/vsc/github/yap/C/exo.c</label>
+        <link refid="exo_8c_source"/>
+      </node>
+      <node id="16">
+        <label>/home/vsc/github/yap/C/exo_udi.c</label>
+        <link refid="exo__udi_8c_source"/>
+      </node>
+      <node id="17">
+        <label>/home/vsc/github/yap/C/globals.c</label>
+        <link refid="globals_8c"/>
+      </node>
+      <node id="33">
+        <label>/home/vsc/github/yap/C/gprof.c</label>
+        <link refid="gprof_8c_source"/>
+      </node>
+      <node id="34">
+        <label>/home/vsc/github/yap/C/grow.c</label>
+        <link refid="grow_8c_source"/>
+      </node>
+      <node id="35">
+        <label>/home/vsc/github/yap/C/heapgc.c</label>
+        <link refid="heapgc_8c_source"/>
+      </node>
+      <node id="36">
+        <label>/home/vsc/github/yap/C/index.c</label>
+        <link refid="index_8c"/>
+      </node>
+      <node id="18">
+        <label>/home/vsc/github/yap/C/init.c</label>
+        <link refid="init_8c_source"/>
+      </node>
+      <node id="37">
+        <label>/home/vsc/github/yap/C/inlines.c</label>
+        <link refid="inlines_8c"/>
+      </node>
+      <node id="38">
+        <label>/home/vsc/github/yap/C/qlyr.c</label>
+        <link refid="qlyr_8c"/>
+      </node>
+      <node id="39">
+        <label>/home/vsc/github/yap/C/qlyw.c</label>
+        <link refid="qlyw_8c_source"/>
+      </node>
+      <node id="40">
+        <label>/home/vsc/github/yap/C/save.c</label>
+        <link refid="save_8c_source"/>
+      </node>
+      <node id="19">
+        <label>/home/vsc/github/yap/C/stack.c</label>
+        <link refid="C_2stack_8c"/>
+      </node>
+      <node id="20">
+        <label>/home/vsc/github/yap/C/terms.c</label>
+        <link refid="terms_8c"/>
+      </node>
+      <node id="21">
+        <label>/home/vsc/github/yap/C/udi.c</label>
+        <link refid="udi_8c_source"/>
+      </node>
+      <node id="41">
+        <label>/home/vsc/github/yap/C/unify.c</label>
+        <link refid="unify_8c_source"/>
+      </node>
+      <node id="42">
+        <label>/home/vsc/github/yap/C/utilpreds.c</label>
+        <link refid="utilpreds_8c"/>
+      </node>
+      <node id="22">
+        <label>/home/vsc/github/yap/C/write.c</label>
+        <link refid="write_8c_source"/>
+      </node>
+      <node id="23">
+        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <link refid="cxx4yap_8hh_source"/>
+      </node>
+      <node id="26">
+        <label>/home/vsc/github/yap/CXX/heap.cxx</label>
+        <link refid="heap_8cxx_source"/>
+      </node>
+      <node id="24">
+        <label>/home/vsc/github/yap/CXX/tmp/yapi.hh</label>
+        <link refid="tmp_2yapi_8hh"/>
+      </node>
+      <node id="27">
+        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <link refid="yapi_8cpp_source"/>
+      </node>
+      <node id="25">
+        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <link refid="yapi_8hh"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/home/vsc/github/yap/H/absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/clause.h</label>
+        <link refid="clause_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/home/vsc/github/yap/H/rheap.h</label>
+        <link refid="rheap_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/home/vsc/github/yap/os/writeterm.c</label>
+        <link refid="writeterm_8c"/>
+      </node>
+      <node id="45">
+        <label>/home/vsc/github/yap/pl/errors.c</label>
+        <link refid="pl_2errors_8c"/>
+      </node>
+      <node id="47">
+        <label>/home/vsc/github/yap/pl/stack.c</label>
+        <link refid="pl_2stack_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCONSULT__OBJ" prot="public">CONSULT_OBJ</innerclass>
+    <innerclass refid="structlogic__upd__index" prot="public">logic_upd_index</innerclass>
+    <innerclass refid="structlogic__upd__clause" prot="public">logic_upd_clause</innerclass>
+    <innerclass refid="structdynamic__clause" prot="public">dynamic_clause</innerclass>
+    <innerclass refid="structstatic__index" prot="public">static_index</innerclass>
+    <innerclass refid="structstatic__clause" prot="public">static_clause</innerclass>
+    <innerclass refid="structstatic__mega__clause" prot="public">static_mega_clause</innerclass>
+    <innerclass refid="unionclause__obj" prot="public">clause_obj</innerclass>
+    <innerclass refid="unionclause__ptr" prot="public">clause_ptr</innerclass>
+    <innerclass refid="structindex__t" prot="public">index_t</innerclass>
+    <innerclass refid="structdbterm__list" prot="public">dbterm_list</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="clause_8h_1aaa872cd2a7a2aef0b1194af3a340ceef" prot="public" static="no">
+        <name>ASSEMBLING_CLAUSE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="36" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1ab4dc4ad6f72957116d1f4352d3df928b" prot="public" static="no">
+        <name>ASSEMBLING_INDEX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="37" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a0106490c7fd14d13cae72803b76306b6" prot="public" static="no">
+        <name>ASSEMBLING_EINDEX</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="38" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a0b5f72a10cd8fa01148adf778c5c38aa" prot="public" static="no">
+        <name>NextDynamicClause</name>
+        <param><defname>X</defname></param>
+        <initializer>(((<ref refid="structyami" kindref="compound">yamop</ref> *)X)-&gt;y_u.Otapl.d)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="40" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a29340faa4afc00a819347be3c20d3ff7" prot="public" static="no">
+        <name>PredFirstClause</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="42" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a0482471b72a46397039e712e740a3378" prot="public" static="no">
+        <name>PredMiddleClause</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="43" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1af18ece956fb140567430c9e60de9db78" prot="public" static="no">
+        <name>PredLastClause</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="44" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a7aae0d5f4331383f082f34c33bb17173" prot="public" static="no">
+        <name>ClauseCodeToDynamicClause</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structdynamic__clause" kindref="compound">DynamicClause</ref> *)((CODEADDR)(p) - (CELL)(((<ref refid="structdynamic__clause" kindref="compound">DynamicClause</ref> *)NULL)-&gt;ClCode)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="239" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a99afeac29c0debb95887c339207e6fc8" prot="public" static="no">
+        <name>ClauseCodeToStaticClause</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structstatic__clause" kindref="compound">StaticClause</ref> *)((CODEADDR)(p) - (CELL)(((<ref refid="structstatic__clause" kindref="compound">StaticClause</ref> *)NULL)-&gt;ClCode)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="241" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1aef3f5dd52128552343114149de01b606" prot="public" static="no">
+        <name>ClauseCodeToLogUpdClause</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *)((CODEADDR)(p) - (CELL)(((<ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *)NULL)-&gt;ClCode)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="243" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a15f3cad9c2d059d6badd68567ea97873" prot="public" static="no">
+        <name>ClauseCodeToMegaClause</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structstatic__mega__clause" kindref="compound">MegaClause</ref> *)((CODEADDR)(p) - (CELL)(((<ref refid="structstatic__mega__clause" kindref="compound">MegaClause</ref> *)NULL)-&gt;ClCode)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="245" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a6825886bcd770e26ab0f76fce2d67b1b" prot="public" static="no">
+        <name>ClauseCodeToLogUpdIndex</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *)((CODEADDR)(p) - (CELL)(((<ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *)NULL)-&gt;ClCode)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="247" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1adca3f2a00096e6be18a85dbb0b0c89dc" prot="public" static="no">
+        <name>ClauseCodeToStaticIndex</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structstatic__index" kindref="compound">StaticIndex</ref> *)((CODEADDR)(p) - (CELL)(((<ref refid="structstatic__index" kindref="compound">StaticIndex</ref> *)NULL)-&gt;ClCode)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="249" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1ad671b21dd40a2258788087f84cbc6dc8" prot="public" static="no">
+        <name>ClauseFlagsToDynamicClause</name>
+        <param><defname>p</defname></param>
+        <initializer>((<ref refid="structdynamic__clause" kindref="compound">DynamicClause</ref> *)(p))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="252" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a3c4e4105f62c127eed91fcf2601a880f" prot="public" static="no">
+        <name>ClauseFlagsToLogUpdClause</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *)((CODEADDR)(p) - (CELL)(&amp;(((<ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *)NULL)-&gt;ClFlags))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="253" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1acf6a0fad52471467a5edff5ca26817b9" prot="public" static="no">
+        <name>ClauseFlagsToLogUpdIndex</name>
+        <param><defname>p</defname></param>
+        <initializer>  ((<ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *)((CODEADDR)(p) - (CELL)(&amp;(((<ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *)NULL)-&gt;ClFlags))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="255" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1aa5c82e3a18f022fff916cfdf9b5364f1" prot="public" static="no">
+        <name>ClauseFlagsToStaticClause</name>
+        <param><defname>p</defname></param>
+        <initializer>((<ref refid="structstatic__clause" kindref="compound">StaticClause</ref> *)(p))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="257" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1afb77690f66667f536b6506e6d5516e81" prot="public" static="no">
+        <name>DynamicFlags</name>
+        <param><defname>X</defname></param>
+        <initializer>(ClauseCodeToDynamicClause(X)-&gt;ClFlags)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="259" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a9c5706287b7e1a76a571fc9d89b9971a" prot="public" static="no">
+        <name>DynamicLock</name>
+        <param><defname>X</defname></param>
+        <initializer>(ClauseCodeToDynamicClause(X)-&gt;ClLock)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="261" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a60dcd679ca00a6c07f5551244d7e36d7" prot="public" static="no">
+        <name>INIT_CLREF_COUNT</name>
+        <param><defname>X</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="270" column="10" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1aad10c33f388f6e618aeb357bc233e95f" prot="public" static="no">
+        <name>INC_CLREF_COUNT</name>
+        <param><defname>X</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="271" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1ace48692ebfa3a107200ba848b11f43eb" prot="public" static="no">
+        <name>DEC_CLREF_COUNT</name>
+        <param><defname>X</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="272" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1ac4c9d47d53ae9a8579dcf6db7e6280a9" prot="public" static="no">
+        <name>CL_IN_USE</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;ClFlags &amp; InUseMask || (X)-&gt;ClRefCount)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="273" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a2b98b4e657aedc1f648c6b8e108012b5" prot="public" static="no">
+        <name>Yap_MkStaticRefTerm</name>
+        <param><defname>cp</defname></param>
+        <param><defname>ap</defname></param>
+        <initializer>__Yap_MkStaticRefTerm((cp), (ap)PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="377" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a3dea3eec815b16bce8bd2af4ff230ba3" prot="public" static="no">
+        <name>Yap_MkMegaRefTerm</name>
+        <param><defname>ap</defname></param>
+        <param><defname>ipc</defname></param>
+        <initializer>__Yap_MkMegaRefTerm((ap), (ipc)PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="391" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a05559af17b632bd3d204751c326ae601" prot="public" static="no">
+        <name>Yap_MkExoRefTerm</name>
+        <param><defname>ap</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>__Yap_MkExoRefTerm((ap), (i)PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="408" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1a376519d91b604528374a787abdfbe101" prot="public" static="no">
+        <name>DEAD_REF</name>
+        <param><defname>ref</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="450" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="clause_8h_1af9e179e3022a978d102a0451c8e5b157" prot="public" static="no">
+        <name>Yap_InformOfRemoval</name>
+        <param><defname>X</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="477" column="10" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="clause_8h_1a644f441044ee2ae0da8293d8d538d772" prot="public" static="no" strong="no">
+        <type></type>
+        <name>find_pred_type</name>
+        <enumvalue id="clause_8h_1a644f441044ee2ae0da8293d8d538d772a5252ad41924f4e948865fd629072a6b9" prot="public">
+          <name>FIND_PRED_FROM_ANYWHERE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="clause_8h_1a644f441044ee2ae0da8293d8d538d772a566bf564f9594a799630094bd472b0a5" prot="public">
+          <name>FIND_PRED_FROM_CP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="clause_8h_1a644f441044ee2ae0da8293d8d538d772a998453a0f8e5844e03565eee4c152769" prot="public">
+          <name>FIND_PRED_FROM_ENV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="453" column="1" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="453" bodyend="457"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="clause_8h_1aff7c2d81b8e92c69134843eb4802c2a0" prot="public" static="no">
+        <type>struct <ref refid="structCONSULT__OBJ" kindref="compound">CONSULT_OBJ</ref></type>
+        <definition>typedef struct CONSULT_OBJ consult_obj</definition>
+        <argsstring></argsstring>
+        <name>consult_obj</name>
+        <briefdescription>
+<para>Each entry in the consult stack starts with this header. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="32" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a2cc2db2974bca3278c17642407a6b768" prot="public" static="no">
+        <type>struct <ref refid="structlogic__upd__index" kindref="compound">logic_upd_index</ref></type>
+        <definition>typedef struct logic_upd_index LogUpdIndex</definition>
+        <argsstring></argsstring>
+        <name>LogUpdIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="61" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1aff66f32f4ea3ff4f89d8e17911f0323e" prot="public" static="no">
+        <type>struct <ref refid="structlogic__upd__clause" kindref="compound">logic_upd_clause</ref></type>
+        <definition>typedef struct logic_upd_clause LogUpdClause</definition>
+        <argsstring></argsstring>
+        <name>LogUpdClause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="92" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a4b7f258f4ee2dbc6b003801ab0af03aa" prot="public" static="no">
+        <type>struct <ref refid="structdynamic__clause" kindref="compound">dynamic_clause</ref></type>
+        <definition>typedef struct dynamic_clause DynamicClause</definition>
+        <argsstring></argsstring>
+        <name>DynamicClause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="115" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a3926b80347267d68bc536e54a9f2f1ca" prot="public" static="no">
+        <type>struct <ref refid="structstatic__index" kindref="compound">static_index</ref></type>
+        <definition>typedef struct static_index StaticIndex</definition>
+        <argsstring></argsstring>
+        <name>StaticIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="126" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a52a706d49303c7518064c3114acecbc5" prot="public" static="no">
+        <type>struct <ref refid="structstatic__clause" kindref="compound">static_clause</ref></type>
+        <definition>typedef struct static_clause StaticClause</definition>
+        <argsstring></argsstring>
+        <name>StaticClause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="140" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a64d3bd8b72137f7cffdd229b8bf9b3ce" prot="public" static="no">
+        <type>struct <ref refid="structstatic__mega__clause" kindref="compound">static_mega_clause</ref></type>
+        <definition>typedef struct static_mega_clause MegaClause</definition>
+        <argsstring></argsstring>
+        <name>MegaClause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="153" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1acd475180fe313ff0b10cdfe0639bf6ff" prot="public" static="no">
+        <type>union <ref refid="unionclause__obj" kindref="compound">clause_obj</ref></type>
+        <definition>typedef union clause_obj ClauseUnion</definition>
+        <argsstring></argsstring>
+        <name>ClauseUnion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="162" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a538083e641202551a396799b565e585f" prot="public" static="no">
+        <type>union <ref refid="unionclause__ptr" kindref="compound">clause_ptr</ref></type>
+        <definition>typedef union clause_ptr ClausePointer</definition>
+        <argsstring></argsstring>
+        <name>ClausePointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="171" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1abb5f24804bebdaaa48bf8a41ea404dc2" prot="public" static="no">
+        <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref></type>
+        <definition>typedef struct index_t Index_t</definition>
+        <argsstring></argsstring>
+        <name>Index_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="195" column="9"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a9d69fb7248c95e9a1b26eaff95986314" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* CRefitExoIndex) (struct index_t **ip, UInt b[] USES_REGS)</definition>
+        <argsstring>)(struct index_t **ip, UInt b[] USES_REGS)</argsstring>
+        <name>CRefitExoIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="227" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1aa5a9bcd48ee366e55455622f5c9d3013" prot="public" static="no">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *(*</type>
+        <definition>typedef yamop *(* CEnterExoIndex) (struct index_t *it USES_REGS)</definition>
+        <argsstring>)(struct index_t *it USES_REGS)</argsstring>
+        <name>CEnterExoIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="228" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a02924914644281e59a971f0d0ad8892e" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* CRetryExoIndex) (struct index_t *it USES_REGS)</definition>
+        <argsstring>)(struct index_t *it USES_REGS)</argsstring>
+        <name>CRetryExoIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="229" column="9" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clause_8h_1a0f11c599b935c527e68e57897425718b" prot="public" static="no">
+        <type>struct <ref refid="structdbterm__list" kindref="compound">dbterm_list</ref></type>
+        <definition>typedef struct dbterm_list DBTermList</definition>
+        <argsstring></argsstring>
+        <name>DBTermList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="237" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="clause_8h_1a8e10decafdb958f48c3d0e9677d72757" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY int</type>
+        <definition>INLINE_ONLY int VALID_TIMESTAMP</definition>
+        <argsstring>(UInt, struct logic_upd_clause *)</argsstring>
+        <name>VALID_TIMESTAMP</name>
+        <param>
+          <type>UInt</type>
+          <defname>timestamp</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structlogic__upd__clause" kindref="compound">logic_upd_clause</ref> *</type>
+          <defname>cl</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="97" column="17" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="97" bodyend="100" declfile="/home/vsc/github/yap/H/clause.h" declline="95" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ac63cba8ff5d95a94084ee0f47c5ddfb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY BITS32</type>
+        <definition>INLINE_ONLY BITS32 EXO_ADDRESS_TO_OFFSET</definition>
+        <argsstring>(struct index_t *it, CELL *ptr)</argsstring>
+        <name>EXO_ADDRESS_TO_OFFSET</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="200" column="21" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="200" bodyend="203" declfile="/home/vsc/github/yap/H/clause.h" declline="197" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a57b3840d67afcfecb13e27732b564620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY CELL *</type>
+        <definition>INLINE_ONLY CELL * EXO_OFFSET_TO_ADDRESS</definition>
+        <argsstring>(struct index_t *it, BITS32 off)</argsstring>
+        <name>EXO_OFFSET_TO_ADDRESS</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>BITS32</type>
+          <declname>off</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="208" column="19" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="208" bodyend="213" declfile="/home/vsc/github/yap/H/clause.h" declline="205" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ab37bb81cc0575537a671eba46518e5e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY BITS32</type>
+        <definition>INLINE_ONLY BITS32 ADDRESS_TO_LINK</definition>
+        <argsstring>(struct index_t *it, BITS32 *ptr)</argsstring>
+        <name>ADDRESS_TO_LINK</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>BITS32 *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="216" column="21" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a4d6fa4ab894fa2406ef0fe8ca980df7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY BITS32 *</type>
+        <definition>INLINE_ONLY BITS32 * LINK_TO_ADDRESS</definition>
+        <argsstring>(struct index_t *it, BITS32 off)</argsstring>
+        <name>LINK_TO_ADDRESS</name>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>BITS32</type>
+          <declname>off</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="222" column="21" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ace9cf5c8cc14bed98b8a88ad2d061bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wamreg</type>
+        <definition>wamreg Yap_emit_x</definition>
+        <argsstring>(CELL)</argsstring>
+        <name>Yap_emit_x</name>
+        <param>
+          <type>CELL</type>
+          <declname>xarg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="277" column="8" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="381" bodyend="381" declfile="/home/vsc/github/yap/H/clause.h" declline="277" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a2badbe4a362753a0b248e8f26805e147" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>COUNT</type>
+        <definition>COUNT Yap_compile_cmp_flags</definition>
+        <argsstring>(PredEntry *)</argsstring>
+        <name>Yap_compile_cmp_flags</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="278" column="7" bodyfile="/home/vsc/github/yap/C/amasm.c" bodystart="1523" bodyend="1526" declfile="/home/vsc/github/yap/H/clause.h" declline="278" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a983cab539314e40154a3a976ae4a222c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_IPred</definition>
+        <argsstring>(PredEntry *, UInt, yamop *)</argsstring>
+        <name>Yap_IPred</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>NSlots</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>next_pc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="281" column="6" bodyfile="/home/vsc/github/yap/C/cdmgr.c" bodystart="552" bodyend="554" declfile="/home/vsc/github/yap/H/clause.h" declline="281" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a2d1ed5c9d04c35cf30f644ab35a05079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_addclause</definition>
+        <argsstring>(PredEntry *p, Term, yamop *, Term, Term, Term *)</argsstring>
+        <name>Yap_addclause</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tmode</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>t5ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="282" column="6" bodyfile="/home/vsc/github/yap/C/cdmgr.c" bodystart="1763" bodyend="1895" declfile="/home/vsc/github/yap/H/clause.h" declline="282" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a9cf3610fc0c6b6b71800f0efed5f860f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_add_logupd_clause</definition>
+        <argsstring>(PredEntry *, LogUpdClause *, int)</argsstring>
+        <name>Yap_add_logupd_clause</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="283" column="6" bodyfile="/home/vsc/github/yap/C/cdmgr.c" bodystart="1985" bodyend="2018" declfile="/home/vsc/github/yap/H/clause.h" declline="283" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a8d27aa5e07b1a01a55753e399f0ad15d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_kill_iblock</definition>
+        <argsstring>(ClauseUnion *, ClauseUnion *, PredEntry *)</argsstring>
+        <name>Yap_kill_iblock</name>
+        <param>
+          <type><ref refid="unionclause__obj" kindref="compound">ClauseUnion</ref> *</type>
+          <declname>blk</declname>
+        </param>
+        <param>
+          <type><ref refid="unionclause__obj" kindref="compound">ClauseUnion</ref> *</type>
+          <declname>parent_blk</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="284" column="6" bodyfile="/home/vsc/github/yap/C/cdmgr.c" bodystart="946" bodyend="977" declfile="/home/vsc/github/yap/H/clause.h" declline="284" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a1997fb8066a4eabd658585ee5157fc25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_EraseStaticClause</definition>
+        <argsstring>(StaticClause *, PredEntry *, Term)</argsstring>
+        <name>Yap_EraseStaticClause</name>
+        <param>
+          <type><ref refid="structstatic__clause" kindref="compound">StaticClause</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="285" column="6" bodyfile="/home/vsc/github/yap/C/cdmgr.c" bodystart="1902" bodyend="1983" declfile="/home/vsc/github/yap/H/clause.h" declline="285" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a61bcbca56eb08b756c18a3ac6ac09ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionclause__obj" kindref="compound">ClauseUnion</ref> *</type>
+        <definition>ClauseUnion * Yap_find_owner_index</definition>
+        <argsstring>(yamop *, PredEntry *)</argsstring>
+        <name>Yap_find_owner_index</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>ipc</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="286" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1138" bodyend="1147" declfile="/home/vsc/github/yap/H/clause.h" declline="286" declcolumn="13"/>
+      </memberdef>
+      <member refid="group__Internal__Database_1ga680dc6f1a48bb319dcedda7e7b15ecf1" kind="function"><name>Yap_ErCl</name></member>
+      <member refid="group__Internal__Database_1gad2d1a6c686ae3f07a4c4c3dd052d5b2c" kind="function"><name>Yap_ErLogUpdCl</name></member>
+      <memberdef kind="function" id="clause_8h_1a0b1f6fd14d9844f808d9a7b002d69b6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ErLogUpdIndex</definition>
+        <argsstring>(LogUpdIndex *)</argsstring>
+        <name>Yap_ErLogUpdIndex</name>
+        <param>
+          <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+          <declname>clau</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="291" column="6" bodyfile="/home/vsc/github/yap/C/cdmgr.c" bodystart="983" bodyend="1010" declfile="/home/vsc/github/yap/H/clause.h" declline="291" declcolumn="6"/>
+      </memberdef>
+      <member refid="group__Internal__Database_1gac3f442f1bd346a5a5bc592353afaafab" kind="function"><name>Yap_Recordz</name></member>
+      <memberdef kind="function" id="clause_8h_1aa50a2fab3ae641f253f49153d4d83ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_db_nth_recorded</definition>
+        <argsstring>(PredEntry *, Int USES_REGS)</argsstring>
+        <name>Yap_db_nth_recorded</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="293" column="5" declfile="/home/vsc/github/yap/H/clause.h" declline="293" declcolumn="5"/>
+      </memberdef>
+      <member refid="group__Internal__Database_1gab0b9e50f033140940fac3fbd6e7ee756" kind="function"><name>Yap_unify_immediate_ref</name></member>
+      <memberdef kind="function" id="clause_8h_1afd8260f7f49c03eff4b5e15a8277298b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_cp_as_integer</definition>
+        <argsstring>(choiceptr)</argsstring>
+        <name>Yap_cp_as_integer</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>Represents a choice-point as an offset to the top of local stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This should *be stable acroos gc or stack shifts <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to choice-point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Term with offset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="297" column="6" bodyfile="/home/vsc/github/yap/C/exec.c" bodystart="59" bodyend="63" declfile="/home/vsc/github/yap/H/clause.h" declline="297" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1afda4cb9fc26343c677dbeb5e7e897023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>yamop * Yap_PredIsIndexable</definition>
+        <argsstring>(PredEntry *, UInt, yamop *)</argsstring>
+        <name>Yap_PredIsIndexable</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>NSlots</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>next_pc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="300" column="7" bodyfile="/home/vsc/github/yap/C/index.c" bodystart="2932" bodyend="3043" declfile="/home/vsc/github/yap/H/clause.h" declline="300" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a6f171281a6a8707ab42fe9cb0181b51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>yamop * Yap_ExpandIndex</definition>
+        <argsstring>(PredEntry *, UInt)</argsstring>
+        <name>Yap_ExpandIndex</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>nargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="301" column="7" bodyfile="/home/vsc/github/yap/C/index.c" bodystart="4272" bodyend="4275" declfile="/home/vsc/github/yap/H/clause.h" declline="301" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ab785a2912437b0f4c5e1041c4efacc72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_CleanUpIndex</definition>
+        <argsstring>(struct logic_upd_index *)</argsstring>
+        <name>Yap_CleanUpIndex</name>
+        <param>
+          <type>struct <ref refid="structlogic__upd__index" kindref="compound">logic_upd_index</ref> *</type>
+          <declname>blk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="302" column="6" bodyfile="/home/vsc/github/yap/C/index.c" bodystart="7001" bodyend="7016" declfile="/home/vsc/github/yap/H/clause.h" declline="302" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a89bc1b95aaaa7d7888daeb4114269abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_CleanKids</definition>
+        <argsstring>(struct logic_upd_index *)</argsstring>
+        <name>Yap_CleanKids</name>
+        <param>
+          <type>struct <ref refid="structlogic__upd__index" kindref="compound">logic_upd_index</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="303" column="6" declfile="/home/vsc/github/yap/H/clause.h" declline="303" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a0f80984496a0f0a32fccc8e7fd9bb226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_AddClauseToIndex</definition>
+        <argsstring>(PredEntry *, yamop *, int)</argsstring>
+        <name>Yap_AddClauseToIndex</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>beg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>first</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="304" column="6" bodyfile="/home/vsc/github/yap/C/index.c" bodystart="5566" bodyend="5611" declfile="/home/vsc/github/yap/H/clause.h" declline="304" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a6983fdc6d006785ab43d2bf577a5ef60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_RemoveClauseFromIndex</definition>
+        <argsstring>(PredEntry *, yamop *)</argsstring>
+        <name>Yap_RemoveClauseFromIndex</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>beg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="305" column="6" bodyfile="/home/vsc/github/yap/C/index.c" bodystart="6004" bodyend="6118" declfile="/home/vsc/github/yap/H/clause.h" declline="305" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1af8d367d2f66c264414c3f6fa1dd3d904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>LogUpdClause * Yap_NthClause</definition>
+        <argsstring>(PredEntry *, Int)</argsstring>
+        <name>Yap_NthClause</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>ncls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="306" column="14" bodyfile="/home/vsc/github/yap/C/index.c" bodystart="6787" bodyend="6999" declfile="/home/vsc/github/yap/H/clause.h" declline="306" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a397b769de8b86161a8f6e3f3b580ae4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>LogUpdClause * Yap_FollowIndexingCode</definition>
+        <argsstring>(PredEntry *, yamop *, yhandle_t, yamop *, yamop *)</argsstring>
+        <name>Yap_FollowIndexingCode</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>ipc</declname>
+        </param>
+        <param>
+          <type>yhandle_t</type>
+          <declname>yht</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>ap_pc</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cp_pc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="307" column="14" bodyfile="/home/vsc/github/yap/C/index.c" bodystart="6168" bodyend="6785" declfile="/home/vsc/github/yap/H/clause.h" declline="307" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ae2cce540a6c0284651be52e74e0c2e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>yamop * Yap_ExoLookup</definition>
+        <argsstring>(PredEntry *ap USES_REGS)</argsstring>
+        <name>Yap_ExoLookup</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *ap</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="311" column="7" bodyfile="/home/vsc/github/yap/C/exo.c" bodystart="524" bodyend="570" declfile="/home/vsc/github/yap/H/clause.h" declline="311" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a0d7a786156f8edb0fdbe284cb776f7be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL</type>
+        <definition>CELL Yap_NextExo</definition>
+        <argsstring>(choiceptr cpt, struct index_t *it)</argsstring>
+        <name>Yap_NextExo</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cpt</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structindex__t" kindref="compound">index_t</ref> *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="312" column="6" bodyfile="/home/vsc/github/yap/C/exo.c" bodystart="573" bodyend="581" declfile="/home/vsc/github/yap/H/clause.h" declline="312" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a3164f983961987c617011373430525fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>op_numbers</type>
+        <definition>static op_numbers Yap_op_from_opcode</definition>
+        <argsstring>(OPCODE opc)</argsstring>
+        <name>Yap_op_from_opcode</name>
+        <param>
+          <type>OPCODE</type>
+          <declname>opc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="352" column="26" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="352" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a3387dcef176bd9b0d92b7b8038272093" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term __Yap_MkStaticRefTerm</definition>
+        <argsstring>(StaticClause *cp, PredEntry *ap USES_REGS)</argsstring>
+        <name>__Yap_MkStaticRefTerm</name>
+        <param>
+          <type><ref refid="structstatic__clause" kindref="compound">StaticClause</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *ap</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="379" column="20" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="379" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ab019edcbd8df82f5fc5901ace8020b51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structstatic__clause" kindref="compound">StaticClause</ref> *</type>
+        <definition>static StaticClause * Yap_ClauseFromTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_ClauseFromTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="387" column="28" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="387" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ac41bab2b3b1cd7cf2acdb62e3ddb97cb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term __Yap_MkMegaRefTerm</definition>
+        <argsstring>(PredEntry *ap, yamop *ipc USES_REGS)</argsstring>
+        <name>__Yap_MkMegaRefTerm</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *ipc</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="393" column="20" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="393" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a2e9a984e486ee288ee9a718db183ec79" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * Yap_MegaClauseFromTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_MegaClauseFromTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="400" column="21" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="400" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a24add705ae3f74c1704d1cab0b896de8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * Yap_MegaClausePredicateFromTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_MegaClausePredicateFromTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="404" column="25" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="404" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a377ca8f757bc2426c69242efa76e1391" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term __Yap_MkExoRefTerm</definition>
+        <argsstring>(PredEntry *ap, Int i USES_REGS)</argsstring>
+        <name>__Yap_MkExoRefTerm</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>Int i</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="410" column="20" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="410" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a4c0108837dc7f3c58e24069e19cae6a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int Yap_ExoClauseFromTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_ExoClauseFromTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="417" column="19" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="417" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1aab58586b90304b90bb8a580693ff462a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * Yap_ExoClausePredicateFromTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_ExoClausePredicateFromTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="421" column="25" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="421" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a09fce256c44765dd4fb0212257663d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_search_for_static_predicate_in_use</definition>
+        <argsstring>(PredEntry *p, bool check_everything)</argsstring>
+        <name>Yap_search_for_static_predicate_in_use</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_everything</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="431" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="450" bodyend="504" declfile="/home/vsc/github/yap/H/clause.h" declline="431" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1ad9a4edb8cd7ff868985b10947be5a0c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Yap_static_in_use</definition>
+        <argsstring>(PredEntry *p, bool check_everything)</argsstring>
+        <name>Yap_static_in_use</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_everything</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="434" column="20" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="434" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1af65d97e06d372a44e8a6053085469841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_PredForCode</definition>
+        <argsstring>(yamop *, find_pred_type, Int *cl, Term *mod)</argsstring>
+        <name>Yap_PredForCode</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>find_pred_type</type>
+          <declname>hint</declname>
+        </param>
+        <param>
+          <type>Int *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>given an arbitrary code point <emphasis>codeptr</emphasis> search the database for the owner predicate <bold>pp</bold> identifying the corresponding clause </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="459" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="851" bodyend="877" declfile="/home/vsc/github/yap/H/clause.h" declline="459" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a79de3aaa108e057ca648b4cbc95676d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_PredEntryForCode</definition>
+        <argsstring>(choiceptr, yamop *, find_pred_type, void **, void **)</argsstring>
+        <name>Yap_PredEntryForCode</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>find_pred_type</type>
+          <declname>where_from</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="461" column="11" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1061" bodyend="1078" declfile="/home/vsc/github/yap/H/clause.h" declline="461" declcolumn="11"/>
+      </memberdef>
+      <member refid="group__Internal__Database_1ga3a1ee361024fdc44173e0f171a2d0435" kind="function"><name>Yap_new_ludbe</name></member>
+      <member refid="group__Internal__Database_1gafa56069a26711a7df4ff79d1bb9a5b15" kind="function"><name>Yap_LUInstance</name></member>
+      <memberdef kind="function" id="clause_8h_1af1c6bb8e07394e104145209ff8b88a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_new_udi_clause</definition>
+        <argsstring>(PredEntry *, yamop *, Term)</argsstring>
+        <name>Yap_new_udi_clause</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="466" column="5" bodyfile="/home/vsc/github/yap/C/udi.c" bodystart="170" bodyend="193" declfile="/home/vsc/github/yap/H/clause.h" declline="466" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a5eb12f2615b9ab7f8afa4c8d747f4932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>yamop * Yap_udi_search</definition>
+        <argsstring>(PredEntry *)</argsstring>
+        <name>Yap_udi_search</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="467" column="7" bodyfile="/home/vsc/github/yap/C/udi.c" bodystart="205" bodyend="248" declfile="/home/vsc/github/yap/H/clause.h" declline="467" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1aecca69c375358c3149789ca6a38e6970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_bug_location</definition>
+        <argsstring>(yamop *p, yamop *cp, choiceptr b_ptr, CELL *env)</argsstring>
+        <name>Yap_bug_location</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>b_ptr</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="469" column="6" declfile="/home/vsc/github/yap/H/clause.h" declline="469" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a0fb8204b1440c47af271b1dd24530991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_pc_location</definition>
+        <argsstring>(yamop *p, choiceptr b_ptr, CELL *env)</argsstring>
+        <name>Yap_pc_location</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>b_ptr</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="470" column="6" declfile="/home/vsc/github/yap/H/clause.h" declline="470" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1aee56dc3bbbc46321d6fef50cd37372f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_env_location</definition>
+        <argsstring>(yamop *p, choiceptr b_ptr, CELL *env, Int ignore_first)</argsstring>
+        <name>Yap_env_location</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>b_ptr</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>ignore_first</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="471" column="6" declfile="/home/vsc/github/yap/H/clause.h" declline="471" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1af9499945baeb32e9245407915f8279d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clean_tr</definition>
+        <argsstring>(tr_fr_ptr TR0 USES_REGS)</argsstring>
+        <name>clean_tr</name>
+        <param>
+          <type>tr_fr_ptr TR0</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="480" column="20" bodyfile="/home/vsc/github/yap/H/clause.h" bodystart="480" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a5f84c21be89c0a019721da420bdd27b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_track_cpred</definition>
+        <argsstring>(op_numbers opcode, yamop *p, size_t min, void *i)</argsstring>
+        <name>Yap_track_cpred</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="502" column="20" bodyfile="/home/vsc/github/yap/C/exec.c" bodystart="65" bodyend="284" declfile="/home/vsc/github/yap/H/clause.h" declline="502" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a0674523358df394c61fec506cb965eec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_protect_goal</definition>
+        <argsstring>(PredEntry **pe0, Term t, Term mod, Term t0)</argsstring>
+        <name>Yap_protect_goal</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> **</type>
+          <declname>pe0</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="503" column="13" declfile="/home/vsc/github/yap/H/clause.h" declline="503" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="clause_8h_1a68ea251fcb5e1bdc78fa9206c72d7161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_Compile</definition>
+        <argsstring>(Term t, Term t1, Term tsrc, Term mod, Term pos, Term tref USES_REGS)</argsstring>
+        <name>Yap_Compile</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tsrc</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Term tref</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/clause.h" line="504" column="13" bodyfile="/home/vsc/github/yap/C/cdmgr.c" bodystart="2072" bodyend="2197" declfile="/home/vsc/github/yap/H/clause.h" declline="504" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/clause.h"/>
+  </compounddef>
+</doxygen>

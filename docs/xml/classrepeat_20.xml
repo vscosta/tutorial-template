@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classrepeat_20" kind="class" language="Prolog" prot="private">
+    <compoundname>repeat/0</compoundname>
+    <briefdescription>
+<para><bold>repeat</bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>Succeeds repeatedly</para>
+<para>In the next example, <computeroutput>repeat</computeroutput> is used as an efficient way to implement a loop The next example reads all terms in a file: <programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">read(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write,<sp/></highlight><highlight class="charliteral">X</highlight><highlight class="keyword">=</highlight><highlight class="stringliteral"></highlight><highlight class="normal">write,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> the loop is effectively terminated by the cut-goal, when the test-goal <computeroutput>X=end</computeroutput> succeeds While the test fails, the goals <computeroutput>read(X)</computeroutput>, <computeroutput>write(X)</computeroutput>, and <computeroutput>nl</computeroutput> are executed repeatedly, because backtracking is caught by the <computeroutput>repeat</computeroutput> goal</para>
+<para>The built-in <computeroutput>repeat/0 </computeroutput> could be defined in Prolog by:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">write.</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">write</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>The predicate <ref refid="classbetween_23" kindref="compound">between/3</ref> can be used to iterate for a pre-defined number of steps </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/builtins.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/builtins.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

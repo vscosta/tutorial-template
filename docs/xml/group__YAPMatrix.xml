@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__YAPMatrix" kind="group">
+    <compoundname>YAPMatrix</compoundname>
+    <title>YAP Matrix Library</title>
+    <innerclass refid="classmatrix__column_23" prot="public">matrix_column/3</innerclass>
+    <innerclass refid="classmatrix__new__matrix_24" prot="public">matrix_new_matrix/4</innerclass>
+    <innerclass refid="classmatrix__new__matrix_23" prot="public">matrix_new_matrix/3</innerclass>
+    <innerclass refid="classmatrix__new__set_24" prot="public">matrix_new_set/4</innerclass>
+    <innerclass refid="classmatrix__offset__to__arg_23" prot="public">matrix_offset_to_arg/3</innerclass>
+    <innerclass refid="classmatrix__op_24" prot="public">matrix_op/4</innerclass>
+    <innerclass refid="classmatrix__select_24" prot="public">matrix_select/4</innerclass>
+    <innerclass refid="classmatrix__shuffle_23" prot="public">matrix_shuffle/3</innerclass>
+    <innerclass refid="classmatrix__shuffle_22" prot="private">matrix_shuffle/2</innerclass>
+    <innerclass refid="class_3_0a_0a_22" prot="public">&lt;==/2</innerclass>
+    <innerclass refid="classmap__matrix_22" prot="public">map_matrix/2</innerclass>
+    <innerclass refid="classfoldl__matrix_24" prot="public">foldl_matrix/4</innerclass>
+    <innerclass refid="classcompute_22" prot="public">compute/2</innerclass>
+    <innerclass refid="classmatrix__get_23" prot="public">matrix_get/3</innerclass>
+    <innerclass refid="classmatrix__type_22" prot="public">matrix_type/2</innerclass>
+    <innerclass refid="classmatrix__agg__lines_23" prot="public">matrix_agg_lines/3</innerclass>
+    <innerclass refid="classmatrix__agg__cols_23" prot="public">matrix_agg_cols/3</innerclass>
+    <innerclass refid="classmatrix__op__to__cols_24" prot="public">matrix_op_to_cols/4</innerclass>
+    <innerclass refid="classmatrix__transpose_22" prot="public">matrix_transpose/2</innerclass>
+    <briefdescription>
+<para>This package provides a fast implementation of multi-dimensional matwrices of integers and floats. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In contrast to dynamic arrays, these matrices are multi-dimensional and compact In contrast to static arrays these arrays are allocated in the stack, and disppear in backtracking Matrices are available by loading the library <computeroutput>library(matrix)</computeroutput> They are multimensional objects of type:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>terms</computeroutput>: Prolog terms</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>ints</computeroutput>: bounded integers, represented as an opaque term The maximum integer depends on hardware, but should be obtained from the natural size of the machine</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>floats</computeroutput>: floating-point numbers, represented as an opaque term</para>
+</listitem></itemizedlist>
+</para>
+<para>The matrix library also supports a B-Prolog/ECliPSe inspired <computeroutput>foreach</computeroutput>iterator to iterate over elements of a matrix:</para>
+<para><itemizedlist>
+<listitem><para>Copy a vector, element by element</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">foreach(</highlight><highlight class="charliteral">I</highlight><highlight class="normal"><sp/>in<sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal">..</highlight><highlight class="charliteral">N1</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal">[</highlight><highlight class="charliteral">I</highlight><highlight class="normal">]<sp/>&lt;==<sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">[</highlight><highlight class="charliteral">I</highlight><highlight class="normal">])</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>The lower-triangular matrix <emphasis>Z</emphasis> is the difference between the lower-triangular and upper-triangular parts of <emphasis>X</emphasis></para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">foreach([</highlight><highlight class="charliteral">I</highlight><highlight class="normal"><sp/>in<sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal">..</highlight><highlight class="charliteral">N1</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">J</highlight><highlight class="normal"><sp/>in<sp/></highlight><highlight class="charliteral">I</highlight><highlight class="normal">..</highlight><highlight class="charliteral">N1</highlight><highlight class="normal">],<sp/></highlight><highlight class="charliteral">Z</highlight><highlight class="normal">[</highlight><highlight class="charliteral">I</highlight><highlight class="normal">,</highlight><highlight class="charliteral">J</highlight><highlight class="normal">]<sp/>&lt;==<sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal">[</highlight><highlight class="charliteral">I</highlight><highlight class="normal">,</highlight><highlight class="charliteral">J</highlight><highlight class="normal">]<sp/></highlight><highlight class="keyword">-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal">[</highlight><highlight class="charliteral">I</highlight><highlight class="normal">,</highlight><highlight class="charliteral">J</highlight><highlight class="normal">])</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>Add all elements of a matrix by using <emphasis>Sum</emphasis> as an accumulator</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">foreach([</highlight><highlight class="charliteral">I</highlight><highlight class="normal"><sp/>in<sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal">..</highlight><highlight class="charliteral">N1</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">J</highlight><highlight class="normal"><sp/>in<sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal">..</highlight><highlight class="charliteral">N1</highlight><highlight class="normal">],<sp/>plus(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">[</highlight><highlight class="charliteral">I</highlight><highlight class="normal">,</highlight><highlight class="charliteral">J</highlight><highlight class="normal">]),<sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Sum</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting> <verbatim>Notice that the library does not support all known matrix operations. Please
+</verbatim> contact the YAP maintainers if you require extra functionality</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

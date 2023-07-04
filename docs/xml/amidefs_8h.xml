@@ -1,0 +1,3059 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="amidefs_8h" kind="file" language="C++">
+    <compoundname>amidefs.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="YapOpcodes_8h" local="yes">YapOpcodes.h</includes>
+    <includedby refid="C_2cp__absmi__insts_8h" local="yes">/home/vsc/github/yap/C/cp_absmi_insts.h</includedby>
+    <includedby refid="exec_8c" local="yes">/home/vsc/github/yap/C/exec.c</includedby>
+    <includedby refid="execstruct_8c" local="yes">/home/vsc/github/yap/C/execstruct.c</includedby>
+    <includedby refid="Regs_8h" local="no">/home/vsc/github/yap/H/Regs.h</includedby>
+    <includedby refid="Yap_8h" local="yes">/home/vsc/github/yap/H/Yap.h</includedby>
+    <includedby refid="terms_8h" local="yes">/home/vsc/github/yap/H/terms.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/amidefs.h</label>
+        <link refid="amidefs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/home/vsc/github/yap/C/absmi.c</label>
+        <link refid="absmi_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/absmi_insts.h</label>
+        <link refid="C_2absmi__insts_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/vsc/github/yap/C/adtdefs.c</label>
+        <link refid="adtdefs_8c_source"/>
+      </node>
+      <node id="12">
+        <label>/home/vsc/github/yap/C/agc.c</label>
+        <link refid="agc_8c_source"/>
+      </node>
+      <node id="13">
+        <label>/home/vsc/github/yap/C/alloc.c</label>
+        <link refid="alloc_8c"/>
+      </node>
+      <node id="14">
+        <label>/home/vsc/github/yap/C/amasm.c</label>
+        <link refid="amasm_8c_source"/>
+      </node>
+      <node id="15">
+        <label>/home/vsc/github/yap/C/args.c</label>
+        <link refid="args_8c"/>
+      </node>
+      <node id="16">
+        <label>/home/vsc/github/yap/C/arith0.c</label>
+        <link refid="arith0_8c"/>
+      </node>
+      <node id="17">
+        <label>/home/vsc/github/yap/C/arith1.c</label>
+        <link refid="arith1_8c"/>
+      </node>
+      <node id="18">
+        <label>/home/vsc/github/yap/C/arith2.c</label>
+        <link refid="arith2_8c"/>
+      </node>
+      <node id="19">
+        <label>/home/vsc/github/yap/C/arrays.c</label>
+        <link refid="arrays_8c"/>
+      </node>
+      <node id="20">
+        <label>/home/vsc/github/yap/C/atomic.c</label>
+        <link refid="atomic_8c"/>
+      </node>
+      <node id="21">
+        <label>/home/vsc/github/yap/C/attvar.c</label>
+        <link refid="attvar_8c_source"/>
+      </node>
+      <node id="22">
+        <label>/home/vsc/github/yap/C/bb.c</label>
+        <link refid="bb_8c_source"/>
+      </node>
+      <node id="23">
+        <label>/home/vsc/github/yap/C/bignum.c</label>
+        <link refid="bignum_8c_source"/>
+      </node>
+      <node id="24">
+        <label>/home/vsc/github/yap/C/blobs.c</label>
+        <link refid="C_2blobs_8c_source"/>
+      </node>
+      <node id="25">
+        <label>/home/vsc/github/yap/C/c_interface.c</label>
+        <link refid="c__interface_8c"/>
+      </node>
+      <node id="8">
+        <label>/home/vsc/github/yap/C/cdmgr.c</label>
+        <link refid="cdmgr_8c_source"/>
+      </node>
+      <node id="26">
+        <label>/home/vsc/github/yap/C/clause_list.c</label>
+        <link refid="clause__list_8c_source"/>
+      </node>
+      <node id="27">
+        <label>/home/vsc/github/yap/C/cmppreds.c</label>
+        <link refid="cmppreds_8c"/>
+      </node>
+      <node id="28">
+        <label>/home/vsc/github/yap/C/compiler.c</label>
+        <link refid="compiler_8c_source"/>
+      </node>
+      <node id="29">
+        <label>/home/vsc/github/yap/C/computils.c</label>
+        <link refid="computils_8c_source"/>
+      </node>
+      <node id="30">
+        <label>/home/vsc/github/yap/C/consult.c</label>
+        <link refid="consult_8c_source"/>
+      </node>
+      <node id="31">
+        <label>/home/vsc/github/yap/C/copy.c</label>
+        <link refid="copy_8c"/>
+      </node>
+      <node id="32">
+        <label>/home/vsc/github/yap/C/corout.c</label>
+        <link refid="corout_8c_source"/>
+      </node>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/cp_absmi_insts.h</label>
+        <link refid="C_2cp__absmi__insts_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/home/vsc/github/yap/C/cut_c.c</label>
+        <link refid="cut__c_8c_source"/>
+      </node>
+      <node id="34">
+        <label>/home/vsc/github/yap/C/dbase.c</label>
+        <link refid="dbase_8c_source"/>
+      </node>
+      <node id="35">
+        <label>/home/vsc/github/yap/C/dbload.c</label>
+        <link refid="dbload_8c_source"/>
+      </node>
+      <node id="36">
+        <label>/home/vsc/github/yap/C/debug.c</label>
+        <link refid="debug_8c_source"/>
+      </node>
+      <node id="37">
+        <label>/home/vsc/github/yap/C/depth_bound.c</label>
+        <link refid="depth__bound_8c_source"/>
+      </node>
+      <node id="38">
+        <label>/home/vsc/github/yap/C/dlmalloc.c</label>
+        <link refid="dlmalloc_8c_source"/>
+      </node>
+      <node id="39">
+        <label>/home/vsc/github/yap/C/errors.c</label>
+        <link refid="C_2errors_8c"/>
+      </node>
+      <node id="40">
+        <label>/home/vsc/github/yap/C/eval.c</label>
+        <link refid="eval_8c"/>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/C/exec.c</label>
+        <link refid="exec_8c_source"/>
+      </node>
+      <node id="6">
+        <label>/home/vsc/github/yap/C/execstruct.c</label>
+        <link refid="execstruct_8c_source"/>
+      </node>
+      <node id="41">
+        <label>/home/vsc/github/yap/C/exo.c</label>
+        <link refid="exo_8c_source"/>
+      </node>
+      <node id="42">
+        <label>/home/vsc/github/yap/C/exo_udi.c</label>
+        <link refid="exo__udi_8c_source"/>
+      </node>
+      <node id="43">
+        <label>/home/vsc/github/yap/C/flags.c</label>
+        <link refid="flags_8c"/>
+      </node>
+      <node id="87">
+        <label>/home/vsc/github/yap/C/fli_absmi_insts.h</label>
+        <link refid="fli__absmi__insts_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/home/vsc/github/yap/C/globals.c</label>
+        <link refid="globals_8c"/>
+      </node>
+      <node id="45">
+        <label>/home/vsc/github/yap/C/gmp_support.c</label>
+        <link refid="gmp__support_8c_source"/>
+      </node>
+      <node id="93">
+        <label>/home/vsc/github/yap/C/gprof.c</label>
+        <link refid="gprof_8c_source"/>
+      </node>
+      <node id="83">
+        <label>/home/vsc/github/yap/C/grow.c</label>
+        <link refid="grow_8c_source"/>
+      </node>
+      <node id="94">
+        <label>/home/vsc/github/yap/C/heapgc.c</label>
+        <link refid="heapgc_8c_source"/>
+      </node>
+      <node id="95">
+        <label>/home/vsc/github/yap/C/index.c</label>
+        <link refid="index_8c"/>
+      </node>
+      <node id="46">
+        <label>/home/vsc/github/yap/C/init.c</label>
+        <link refid="init_8c_source"/>
+      </node>
+      <node id="96">
+        <label>/home/vsc/github/yap/C/inlines.c</label>
+        <link refid="inlines_8c"/>
+      </node>
+      <node id="47">
+        <label>/home/vsc/github/yap/C/load_aout.c</label>
+        <link refid="load__aout_8c_source"/>
+      </node>
+      <node id="48">
+        <label>/home/vsc/github/yap/C/load_coff.c</label>
+        <link refid="load__coff_8c_source"/>
+      </node>
+      <node id="49">
+        <label>/home/vsc/github/yap/C/load_dl.c</label>
+        <link refid="load__dl_8c_source"/>
+      </node>
+      <node id="50">
+        <label>/home/vsc/github/yap/C/load_dll.c</label>
+        <link refid="load__dll_8c_source"/>
+      </node>
+      <node id="51">
+        <label>/home/vsc/github/yap/C/load_dyld.c</label>
+        <link refid="load__dyld_8c_source"/>
+      </node>
+      <node id="52">
+        <label>/home/vsc/github/yap/C/load_foreign.c</label>
+        <link refid="load__foreign_8c_source"/>
+      </node>
+      <node id="53">
+        <label>/home/vsc/github/yap/C/load_none.c</label>
+        <link refid="load__none_8c_source"/>
+      </node>
+      <node id="54">
+        <label>/home/vsc/github/yap/C/load_shl.c</label>
+        <link refid="load__shl_8c_source"/>
+      </node>
+      <node id="55">
+        <label>/home/vsc/github/yap/C/mavar.c</label>
+        <link refid="mavar_8c"/>
+      </node>
+      <node id="56">
+        <label>/home/vsc/github/yap/C/modules.c</label>
+        <link refid="modules_8c_source"/>
+      </node>
+      <node id="57">
+        <label>/home/vsc/github/yap/C/other.c</label>
+        <link refid="other_8c_source"/>
+      </node>
+      <node id="58">
+        <label>/home/vsc/github/yap/C/parser.c</label>
+        <link refid="parser_8c"/>
+      </node>
+      <node id="78">
+        <label>/home/vsc/github/yap/C/qlyr.c</label>
+        <link refid="qlyr_8c"/>
+      </node>
+      <node id="79">
+        <label>/home/vsc/github/yap/C/qlyw.c</label>
+        <link refid="qlyw_8c_source"/>
+      </node>
+      <node id="59">
+        <label>/home/vsc/github/yap/C/range.c</label>
+        <link refid="range_8c_source"/>
+      </node>
+      <node id="80">
+        <label>/home/vsc/github/yap/C/save.c</label>
+        <link refid="save_8c_source"/>
+      </node>
+      <node id="60">
+        <label>/home/vsc/github/yap/C/scanner.c</label>
+        <link refid="scanner_8c"/>
+      </node>
+      <node id="61">
+        <label>/home/vsc/github/yap/C/signals.c</label>
+        <link refid="signals_8c_source"/>
+      </node>
+      <node id="9">
+        <label>/home/vsc/github/yap/C/sort.c</label>
+        <link refid="sort_8c_source"/>
+      </node>
+      <node id="62">
+        <label>/home/vsc/github/yap/C/stack.c</label>
+        <link refid="C_2stack_8c"/>
+      </node>
+      <node id="63">
+        <label>/home/vsc/github/yap/C/stdpreds.c</label>
+        <link refid="stdpreds_8c_source"/>
+      </node>
+      <node id="64">
+        <label>/home/vsc/github/yap/C/t.c</label>
+        <link refid="t_8c_source"/>
+      </node>
+      <node id="84">
+        <label>/home/vsc/github/yap/C/terms.c</label>
+        <link refid="terms_8c"/>
+      </node>
+      <node id="65">
+        <label>/home/vsc/github/yap/C/text.c</label>
+        <link refid="text_8c"/>
+      </node>
+      <node id="66">
+        <label>/home/vsc/github/yap/C/threads.c</label>
+        <link refid="threads_8c_source"/>
+      </node>
+      <node id="67">
+        <label>/home/vsc/github/yap/C/tracer.c</label>
+        <link refid="tracer_8c_source"/>
+      </node>
+      <node id="68">
+        <label>/home/vsc/github/yap/C/udi.c</label>
+        <link refid="udi_8c_source"/>
+      </node>
+      <node id="97">
+        <label>/home/vsc/github/yap/C/unify.c</label>
+        <link refid="unify_8c_source"/>
+      </node>
+      <node id="69">
+        <label>/home/vsc/github/yap/C/userpreds.c</label>
+        <link refid="userpreds_8c_source"/>
+      </node>
+      <node id="85">
+        <label>/home/vsc/github/yap/C/utilpreds.c</label>
+        <link refid="utilpreds_8c"/>
+      </node>
+      <node id="70">
+        <label>/home/vsc/github/yap/C/write.c</label>
+        <link refid="write_8c_source"/>
+      </node>
+      <node id="71">
+        <label>/home/vsc/github/yap/C/yap-args.c</label>
+        <link refid="yap-args_8c_source"/>
+      </node>
+      <node id="72">
+        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <link refid="cxx4yap_8hh_source"/>
+      </node>
+      <node id="75">
+        <label>/home/vsc/github/yap/CXX/heap.cxx</label>
+        <link refid="heap_8cxx_source"/>
+      </node>
+      <node id="73">
+        <label>/home/vsc/github/yap/CXX/tmp/yapi.hh</label>
+        <link refid="tmp_2yapi_8hh"/>
+      </node>
+      <node id="76">
+        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <link refid="yapi_8cpp_source"/>
+      </node>
+      <node id="74">
+        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <link refid="yapi_8hh"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>/home/vsc/github/yap/H/Foreign.h</label>
+        <link refid="Foreign_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/vsc/github/yap/H/Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/vsc/github/yap/H/Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>/home/vsc/github/yap/H/YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>/home/vsc/github/yap/H/YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>/home/vsc/github/yap/H/YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>/home/vsc/github/yap/H/YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>/home/vsc/github/yap/H/YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>/home/vsc/github/yap/H/Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>/home/vsc/github/yap/H/Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>/home/vsc/github/yap/H/absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/home/vsc/github/yap/H/absmi_insts.h</label>
+        <link refid="H_2absmi__insts_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/amidefs.h</label>
+        <link refid="amidefs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>/home/vsc/github/yap/H/clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>/home/vsc/github/yap/H/fields.h</label>
+        <link refid="fields_8h_source"/>
+      </node>
+      <node id="128">
+        <label>/home/vsc/github/yap/H/generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>/home/vsc/github/yap/H/generated/ilocals.h</label>
+        <link refid="ilocals_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>/home/vsc/github/yap/H/generated/rlocals.h</label>
+        <link refid="rlocals_8h_source"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>/home/vsc/github/yap/H/heap.h</label>
+        <link refid="heap_8h_source"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>/home/vsc/github/yap/H/heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>/home/vsc/github/yap/H/locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>/home/vsc/github/yap/H/rheap.h</label>
+        <link refid="rheap_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>/home/vsc/github/yap/H/terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>/home/vsc/github/yap/OPTYap/opt.init.c</label>
+        <link refid="opt_8init_8c_source"/>
+      </node>
+      <node id="137">
+        <label>/home/vsc/github/yap/OPTYap/opt.preds.c</label>
+        <link refid="opt_8preds_8c_source"/>
+      </node>
+      <node id="138">
+        <label>/home/vsc/github/yap/OPTYap/or.copy_engine.c</label>
+        <link refid="or_8copy__engine_8c_source"/>
+      </node>
+      <node id="139">
+        <label>/home/vsc/github/yap/OPTYap/or.cow_engine.c</label>
+        <link refid="or_8cow__engine_8c_source"/>
+      </node>
+      <node id="140">
+        <label>/home/vsc/github/yap/OPTYap/or.cut.c</label>
+        <link refid="or_8cut_8c_source"/>
+      </node>
+      <node id="141">
+        <label>/home/vsc/github/yap/OPTYap/or.memory.c</label>
+        <link refid="or_8memory_8c_source"/>
+      </node>
+      <node id="142">
+        <label>/home/vsc/github/yap/OPTYap/or.sba_engine.c</label>
+        <link refid="or_8sba__engine_8c_source"/>
+      </node>
+      <node id="143">
+        <label>/home/vsc/github/yap/OPTYap/or.scheduler.c</label>
+        <link refid="or_8scheduler_8c_source"/>
+      </node>
+      <node id="144">
+        <label>/home/vsc/github/yap/OPTYap/or.thread_engine.c</label>
+        <link refid="or_8thread__engine_8c_source"/>
+      </node>
+      <node id="145">
+        <label>/home/vsc/github/yap/OPTYap/tab.completion.c</label>
+        <link refid="tab_8completion_8c_source"/>
+      </node>
+      <node id="146">
+        <label>/home/vsc/github/yap/OPTYap/tab.tries.c</label>
+        <link refid="tab_8tries_8c_source"/>
+      </node>
+      <node id="103">
+        <label>/home/vsc/github/yap/library/dialect/swi/fli/blobs.c</label>
+        <link refid="library_2dialect_2swi_2fli_2blobs_8c"/>
+      </node>
+      <node id="90">
+        <label>/home/vsc/github/yap/library/dialect/swi/fli/swi.c</label>
+        <link refid="swi_8c"/>
+      </node>
+      <node id="148">
+        <label>/home/vsc/github/yap/library/mpi/prologterms2c.c</label>
+        <link refid="prologterms2c_8c_source"/>
+      </node>
+      <node id="147">
+        <label>/home/vsc/github/yap/library/mpi/prologterms2c.h</label>
+        <link refid="prologterms2c_8h_source"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>/home/vsc/github/yap/os/absf.c</label>
+        <link refid="absf_8c"/>
+      </node>
+      <node id="104">
+        <label>/home/vsc/github/yap/os/alias.c</label>
+        <link refid="alias_8c"/>
+      </node>
+      <node id="118">
+        <label>/home/vsc/github/yap/os/assets.c</label>
+        <link refid="assets_8c"/>
+      </node>
+      <node id="105">
+        <label>/home/vsc/github/yap/os/charsio.c</label>
+        <link refid="charsio_8c"/>
+      </node>
+      <node id="106">
+        <label>/home/vsc/github/yap/os/chartypes.c</label>
+        <link refid="chartypes_8c"/>
+      </node>
+      <node id="119">
+        <label>/home/vsc/github/yap/os/console.c</label>
+        <link refid="console_8c"/>
+      </node>
+      <node id="120">
+        <label>/home/vsc/github/yap/os/files.c</label>
+        <link refid="files_8c_source"/>
+      </node>
+      <node id="121">
+        <label>/home/vsc/github/yap/os/fmem.c</label>
+        <link refid="fmem_8c_source"/>
+      </node>
+      <node id="107">
+        <label>/home/vsc/github/yap/os/format.c</label>
+        <link refid="format_8c"/>
+      </node>
+      <node id="149">
+        <label>/home/vsc/github/yap/os/format.h</label>
+        <link refid="format_8h_source"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>/home/vsc/github/yap/os/iopreds.c</label>
+        <link refid="iopreds_8c"/>
+      </node>
+      <node id="150">
+        <label>/home/vsc/github/yap/os/iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>/home/vsc/github/yap/os/pipes.c</label>
+        <link refid="pipes_8c"/>
+      </node>
+      <node id="110">
+        <label>/home/vsc/github/yap/os/random.c</label>
+        <link refid="random_8c_source"/>
+      </node>
+      <node id="111">
+        <label>/home/vsc/github/yap/os/readline/readline.c</label>
+        <link refid="readline_8c"/>
+      </node>
+      <node id="112">
+        <label>/home/vsc/github/yap/os/readterm.c</label>
+        <link refid="readterm_8c"/>
+      </node>
+      <node id="113">
+        <label>/home/vsc/github/yap/os/readutil.c</label>
+        <link refid="readutil_8c_source"/>
+      </node>
+      <node id="122">
+        <label>/home/vsc/github/yap/os/sig.c</label>
+        <link refid="sig_8c_source"/>
+      </node>
+      <node id="114">
+        <label>/home/vsc/github/yap/os/sockets.c</label>
+        <link refid="sockets_8c_source"/>
+      </node>
+      <node id="115">
+        <label>/home/vsc/github/yap/os/streams.c</label>
+        <link refid="streams_8c_source"/>
+      </node>
+      <node id="123">
+        <label>/home/vsc/github/yap/os/sysbits.c</label>
+        <link refid="sysbits_8c_source"/>
+      </node>
+      <node id="116">
+        <label>/home/vsc/github/yap/os/sysbits.h</label>
+        <link refid="sysbits_8h_source"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>/home/vsc/github/yap/os/time.c</label>
+        <link refid="time_8c_source"/>
+      </node>
+      <node id="99">
+        <label>/home/vsc/github/yap/os/writeterm.c</label>
+        <link refid="writeterm_8c"/>
+      </node>
+      <node id="126">
+        <label>/home/vsc/github/yap/os/yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>/home/vsc/github/yap/os/ypsocks.c</label>
+        <link refid="ypsocks_8c_source"/>
+      </node>
+      <node id="151">
+        <label>/home/vsc/github/yap/os/ypstdio.c</label>
+        <link refid="ypstdio_8c_source"/>
+      </node>
+      <node id="81">
+        <label>/home/vsc/github/yap/pl/errors.c</label>
+        <link refid="pl_2errors_8c"/>
+      </node>
+      <node id="100">
+        <label>/home/vsc/github/yap/pl/stack.c</label>
+        <link refid="pl_2stack_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structyami" prot="public">yami</innerclass>
+    <innerclass refid="structchoicept" prot="public">choicept</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="amidefs_8h_1a727b1ce84dfc1baa82edb4ab8de4992b" prot="public" static="no">
+        <name>CACHE_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="95" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a81d3120c2607e96e27544a834d4110f7" prot="public" static="no">
+        <name>CACHE_TYPE1</name>
+        <initializer>void</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="96" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a2ee1b920e54fa29b600e54b2ca29e856" prot="public" static="no">
+        <name>OpRegSize</name>
+        <initializer>sizeof(OPREG)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="104" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a881e46153961e84f53f9eff468481c35" prot="public" static="no">
+        <name>OPCODE</name>
+        <param><defname>OP</defname></param>
+        <param><defname>TYPE</defname></param>
+        <initializer>_##OP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="121" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a8b64370de2a56db0c9e740e09c140b48" prot="public" static="no">
+        <name>_std_top</name>
+        <initializer>_or_last</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="126" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a4016362b01cd34c531d2cc73a89c68ed" prot="public" static="no">
+        <name>OpCodeSize</name>
+        <initializer>sizeof(OPCODE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="227" column="10" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a26a2b534f73f96ca9d0b25558ad1b685" prot="public" static="no">
+        <name>OPCR</name>
+        <initializer>opc</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="866" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1af967603db9a1de29ef4f676247395bf7" prot="public" static="no">
+        <name>OPCW</name>
+        <initializer>u.ox.opcw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="867" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1afddd414e1360e09c953030711efd3089" prot="public" static="no">
+        <name>NEXTOP</name>
+        <param><defname>V</defname></param>
+        <param><defname>TYPE</defname></param>
+        <initializer>((<ref refid="structyami" kindref="compound">yamop</ref> *)(&amp;((V)-&gt;y_u.TYPE.next)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="870" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a11c86dbcca19557fc6565f310aa90e47" prot="public" static="no">
+        <name>PREVOP</name>
+        <param><defname>V</defname></param>
+        <param><defname>TYPE</defname></param>
+        <initializer>((<ref refid="structyami" kindref="compound">yamop</ref> *)((CODEADDR)(V)-(CELL)NEXTOP((<ref refid="structyami" kindref="compound">yamop</ref> *)NULL,TYPE)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="872" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="872" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a41bd2980bc384026dfb509b6639c908f" prot="public" static="no">
+        <name>TrailTerm</name>
+        <param><defname>X</defname></param>
+        <initializer>(*(X))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="885" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="885" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a689c62542b4d97fbfbcd7b169f0fd8b4" prot="public" static="no">
+        <name>TrailVal</name>
+        <param><defname>X</defname></param>
+        <initializer>OOOOOOPS: this program should not compile</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="886" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="886" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1ae935e04076907f4e5d76f34d3bf390da" prot="public" static="no">
+        <name>cp_a1</name>
+        <initializer>cp_args[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="952" column="10" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="952" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a4ed07494eaaae99e6c761ba8bf5e2cf0" prot="public" static="no">
+        <name>cp_a2</name>
+        <initializer>cp_args[1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="953" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="953" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a4bc9942c4af2df9bf9ebd6371a651466" prot="public" static="no">
+        <name>cp_a3</name>
+        <initializer>cp_args[2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="954" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="954" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a4ca1429e19c0afc6e45a6598004dda00" prot="public" static="no">
+        <name>cp_a4</name>
+        <initializer>cp_args[3]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="955" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="955" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a6a7bf8d5a36f0513888b4529fab990b1" prot="public" static="no">
+        <name>cp_a5</name>
+        <initializer>cp_args[4]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="956" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a36419bf8d8201fe8a1d86947aef4caa7" prot="public" static="no">
+        <name>cp_a6</name>
+        <initializer>cp_args[5]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="957" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="957" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a474a2a5c28f8432d3a225fc0af799050" prot="public" static="no">
+        <name>cp_a7</name>
+        <initializer>cp_args[6]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="958" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="958" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a30be77e6aa69e72df41fff2b6138fff6" prot="public" static="no">
+        <name>cp_a8</name>
+        <initializer>cp_args[7]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="959" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="959" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a2acd2ba37a0224e2178b4da3ec89dd74" prot="public" static="no">
+        <name>cp_a9</name>
+        <initializer>cp_args[8]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="960" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="960" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1ac77de4c83995c79622fe22f6214d6cbe" prot="public" static="no">
+        <name>cp_a10</name>
+        <initializer>cp_args[9]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="961" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="961" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1ab11ab5bef4652565bbe7dd2a2c8a7c68" prot="public" static="no">
+        <name>EXTRA_CBACK_ARG</name>
+        <param><defname>Arity</defname></param>
+        <param><defname>Offset</defname></param>
+        <initializer>B-&gt;cp_args[(Arity)+(Offset)-1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="962" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="962" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a2491253ab68fa1eddc192924d051683f" prot="public" static="no">
+        <name>SHOULD_CUT_UP_TO</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <initializer>((X) != (Y))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="966" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="966" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a35bcc765ae40a6921bd00f01dd40fd63" prot="public" static="no">
+        <name>YOUNGER_CP</name>
+        <param><defname>CP1</defname></param>
+        <param><defname>CP2</defname></param>
+        <initializer>((CP1) &lt;  (CP2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="990" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a9f4fc0295cf509383b083052405b9158" prot="public" static="no">
+        <name>EQUAL_OR_YOUNGER_CP</name>
+        <param><defname>CP1</defname></param>
+        <param><defname>CP2</defname></param>
+        <initializer>((CP1) &lt;= (CP2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="991" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1abbbd98f2295f4fcd98449e067c07917d" prot="public" static="no">
+        <name>YOUNGER_H</name>
+        <param><defname>H1</defname></param>
+        <param><defname>H2</defname></param>
+        <initializer>((CELL *)(H1) &gt; (CELL *)(H2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="993" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="993" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1ab9f973fca6487086d8c2c6042861ed38" prot="public" static="no">
+        <name>YOUNGEST_CP</name>
+        <param><defname>CP1</defname></param>
+        <param><defname>CP2</defname></param>
+        <initializer>(YOUNGER_CP(CP1,CP2) ? (CP1) : (CP2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="997" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a2ec40df15ed508f6112c8437302a1a31" prot="public" static="no">
+        <name>YOUNGEST_H</name>
+        <param><defname>H1</defname></param>
+        <param><defname>H2</defname></param>
+        <initializer>(YOUNGER_H(H1,H2) ? (CELL *)(H1) : (CELL *)(H2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="999" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1adb9dae0a06d8b22d0a56d8b02c1d1192" prot="public" static="no">
+        <name>E_CP</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1007" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a163ee47b9cded682520e176690f3647b" prot="public" static="no">
+        <name>E_E</name>
+        <initializer>-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1008" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a2484bd8f85914c24886dc519afcbd8a3" prot="public" static="no">
+        <name>E_CB</name>
+        <initializer>-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1009" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1af59ebc4b3078a33964933d09e37bf0f7" prot="public" static="no">
+        <name>EnvSizeInCells</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1023" column="10" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1023" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1a8ab2858e47adffd464975cc26238e9fb" prot="public" static="no">
+        <name>FixedEnvSize</name>
+        <initializer>(EnvSizeInCells*sizeof(CELL))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1030" column="10" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1aa34317294137ab422cb2e5f00f8ae5e2" prot="public" static="no">
+        <name>RealEnvSize</name>
+        <initializer>(EnvSizeInCells*sizeof(CELL))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1033" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amidefs_8h_1ae707c6d32425fcb3341d2fdfd56f0bce" prot="public" static="no">
+        <name>absmadr</name>
+        <param><defname>i</defname></param>
+        <initializer>((OPCODE)(i))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1085" column="10" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1085" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="amidefs_8h_1a4a8673eb7cb849cabae1980940110483" prot="public" static="no" strong="no">
+        <type></type>
+        <name>op_numbers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="120" column="1" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="enum" id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>basic_preds</name>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aae6a4b86be83667ea6cf04eeb95b97458" prot="public">
+          <name>_atom</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa398cd6f9b7f9f5a4e6ecefcb8992188f" prot="public">
+          <name>_atomic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aabb825098f7362eb05dd9cd05c6e107eb" prot="public">
+          <name>_integer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa76da5aac321ffdb5550a40725936066e" prot="public">
+          <name>_compound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa2a1587ebe072179f69009a368e250e38" prot="public">
+          <name>_float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa9cd40df5f1a8d0d87392f5e65c039bbd" prot="public">
+          <name>_nonvar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa127c31d05dab68ffe43137e2488e4e19" prot="public">
+          <name>_number</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaed339d1be8c03e4079a95f55975da42e" prot="public">
+          <name>_var</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aac72b958bf7e25b91d7c1ee2883317713" prot="public">
+          <name>_cut_by</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa0b4c786239e69a3279aa36f8d487d9c4" prot="public">
+          <name>_soft_cut_by</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa17c08dfef698783e58141483975e1ff6" prot="public">
+          <name>_save_by</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa679aa9c110d22773f4feb32f59b6ea94" prot="public">
+          <name>_db_ref</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aab8c3aa5f8c454fbd331f6b5e61856444" prot="public">
+          <name>_primitive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aac980c139c025c1f5c0b47278595354f5" prot="public">
+          <name>_dif</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aad56601bfd7d75a40c0ef0c1f0ff592ff" prot="public">
+          <name>_eq</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaa1d3764f156d7c7c1d0e7df151fc6b7d" prot="public">
+          <name>_equal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa91bb005526a5848d7674d1e5b43958b8" prot="public">
+          <name>_plus</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aae670ec1bac6390ded822cb54eaee6091" prot="public">
+          <name>_minus</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa377504cab70ad035a440162a376e818a" prot="public">
+          <name>_times</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaa4d82d6160f9e0b6b03047a7e670d0a4" prot="public">
+          <name>_div</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aad907afb95f258b1011a2afbb17d6ea12" prot="public">
+          <name>_and</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aab3fe552fa7cb5910bf5e2e32b26c3a28" prot="public">
+          <name>_or</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa27d5a5accf996a8eea84d6b95573d913" prot="public">
+          <name>_xor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa753370eea6ac68fd94c18cda99fd3fec" prot="public">
+          <name>_sll</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa1e8a4446acaafb3343ec33fc1e1889a3" prot="public">
+          <name>_slr</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa99d8aa9bd0fed2d87751a95641ca7c5d" prot="public">
+          <name>_arg</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aafe0dc00f82d230a8ca68979aa11d1d3a" prot="public">
+          <name>_functor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa844e5e69f7d6f3fb498923d7c991e21d" prot="public">
+          <name>_p_put_fi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aad40ec2dfa86c3553bf849224d56c86c7" prot="public">
+          <name>_p_put_i</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa60c4f2f5eac76958a4d2919223d98d46" prot="public">
+          <name>_p_put_f</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaf21d211c788e35e64d09414e6e4a3fda" prot="public">
+          <name>_p_a_eq_float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa2d6e114288d3e4b50426b1ef7fb2f83f" prot="public">
+          <name>_p_a_eq_int</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa68edbc53529e52521863bbf0949b3ed6" prot="public">
+          <name>_p_a_eq</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa619ab3c6142dc19907e6ab11cf47998b" prot="public">
+          <name>_p_ltc_float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa298d51cff48d46a0bfb53d383f8d351d" prot="public">
+          <name>_p_ltc_int</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa8bbc2b0ebf384e483c78179d5efdaf7e" prot="public">
+          <name>_p_lt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aacf482415ed78c48c3c49676e44c3691d" prot="public">
+          <name>_p_gtc_float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa14d8e4278116dc1f37510062d455d825" prot="public">
+          <name>_p_gtc_int</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa16c89b9db997093c422dd217f1f92f09" prot="public">
+          <name>_p_get_fi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa17b62d5ce9801babfef5a140422f2c13" prot="public">
+          <name>_p_get_i</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa33c8bf08c2125bedd013763109b55581" prot="public">
+          <name>_p_get_f</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa0d353214787665fd154c485ccab7fb53" prot="public">
+          <name>_p_add_float_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa8e70af5813e6240904f59e3df6dff410" prot="public">
+          <name>_p_add_int_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aabcaef23c8d37e455243588ca53adccb3" prot="public">
+          <name>_p_add</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa07d92e79e86fe335a4342fb58e5c3137" prot="public">
+          <name>_p_sub_float_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aab61e5b7b2a284504275acc5917cc4f24" prot="public">
+          <name>_p_sub_int_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aadf1346aab9ff10c86169fe5d7c60e3ae" prot="public">
+          <name>_p_sub</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aafcb6797df5f6b7850f5a766fef64fc92" prot="public">
+          <name>_p_mul_float_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaa805610fcc9f80e5fe0d35950a03d215" prot="public">
+          <name>_p_mul_int_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa386ebf8f9c6f982750cee23743703896" prot="public">
+          <name>_p_mul</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa11dafa8e6cd54aee27c7e1d14645f2d9" prot="public">
+          <name>_p_fdiv_c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa09577e7105aa3762dde736b6f79c9f00" prot="public">
+          <name>_p_fdiv_c2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa04fd0ebf0a45b622d8c0da4bb4135540" prot="public">
+          <name>_p_fdiv</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa949d55139d037adf58af52b2e68fd335" prot="public">
+          <name>_p_idiv_c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa2e2e9748a6f4cd03f8cccad94671b6b8" prot="public">
+          <name>_p_idiv_c2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa9ec2f099acb584f61209f5c3157f55e3" prot="public">
+          <name>_p_idiv</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aac157e514cebed5ab474c3a466a1d1035" prot="public">
+          <name>_p_mod_c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aae6d757937d640f74cc103b5824bd1b79" prot="public">
+          <name>_p_mod_c2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaeff572fdc79d5002d42d627e901d47fe" prot="public">
+          <name>_p_mod</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa43c290d641eacfd927409df4c7e6f126" prot="public">
+          <name>_p_rem_c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaf24fe68f07840de74ee0cbdd84dcc151" prot="public">
+          <name>_p_rem_c2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aac1c39dac3e5d5a941ffdf246a3855269" prot="public">
+          <name>_p_rem</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaf0633ddcf387921b85eb7f7be819247e" prot="public">
+          <name>_p_land_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa0d1adb2055794c165c301bba8b15b757" prot="public">
+          <name>_p_land</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa11169ff37cb3b3f6560b155c087e6e5b" prot="public">
+          <name>_p_lor_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa527a516c0ab8e6f81981c4f70cd42c73" prot="public">
+          <name>_p_lor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa236c3b2829c5808cd4745f86c1acd08e" prot="public">
+          <name>_p_xor_c</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aabdecbe83610e3ba8f9195aefdcc7bca2" prot="public">
+          <name>_p_xor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa47ce47982c788f04fa122d814b0a3ac1" prot="public">
+          <name>_p_uminus</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aaf63c76128a8bd851e4ef2dc0e3e8deb2" prot="public">
+          <name>_p_sr_c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa25e54eab2c08c39b96ea6ae7940e76f0" prot="public">
+          <name>_p_sr_c2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aae114d7f3a28c1767b95e1820cca03f81" prot="public">
+          <name>_p_sr</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa2c0000aa21bd137e71a46162108cd8cd" prot="public">
+          <name>_p_sl_c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aa1c14b545f17a1463a306aa89a6f0704c" prot="public">
+          <name>_p_sl_c2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aafa7afdcfefc6b885a55c2a4576907f24" prot="public">
+          <name>_p_sl</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1a2bb269d8dae1336b22c81674f4ab734aacba7d8ee9e0350f264edbfb772cb7564" prot="public">
+          <name>_p_label_ctl</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="133" column="1" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="133" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="enum" id="amidefs_8h_1ac7c5b9814c1c510a114881d16024178c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>debug_key_t</name>
+        <enumvalue id="amidefs_8h_1ac7c5b9814c1c510a114881d16024178cae725d905dc0167a1b021d16783d9e225" prot="public">
+          <name>DEBUG_CREEP_LEAP_OR_ZIP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1ac7c5b9814c1c510a114881d16024178caf8c1503d3ef9bf857392f6f288cd1c36" prot="public">
+          <name>DEBUG_GOAL_NUMBER</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1ac7c5b9814c1c510a114881d16024178caefd7b3bfb2cdefacdfb2d91250a55c79" prot="public">
+          <name>DEBUG_SPY</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1ac7c5b9814c1c510a114881d16024178caffc50a833c9d96484a72a8af32c9c27a" prot="public">
+          <name>DEBUG_TRACE</name>
+          <initializer>=  3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1ac7c5b9814c1c510a114881d16024178caf1b542047217da140a53b7afc83c871a" prot="public">
+          <name>DEBUG_DEBUG</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="amidefs_8h_1ac7c5b9814c1c510a114881d16024178ca6f47a41b9f8ec9ec99694bed179cd55b" prot="public">
+          <name>DEBUG_NUMBER_OF_OPTS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1100" column="1" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1100" bodyend="1107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="amidefs_8h_1ad9400ed3e2e141dac624bd15bf9d95a7" prot="public" static="no">
+        <type>Short</type>
+        <definition>typedef Short DISPREG</definition>
+        <argsstring></argsstring>
+        <name>DISPREG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="79" column="16" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1afde03fc3a641df2956853100b7c9e251" prot="public" static="no">
+        <type>BITS16</type>
+        <definition>typedef BITS16 SMALLUNSGN</definition>
+        <argsstring></argsstring>
+        <name>SMALLUNSGN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="80" column="17" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a9d3ff39ebc21e99b6ce154cdf8aac7e2" prot="public" static="no">
+        <type>SBITS16</type>
+        <definition>typedef SBITS16 OPREG</definition>
+        <argsstring></argsstring>
+        <name>OPREG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="81" column="18" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a9fdfa78d6fbb0494c42a0a34433f9894" prot="public" static="no">
+        <type>SBITS16</type>
+        <definition>typedef SBITS16 UOPREG</definition>
+        <argsstring></argsstring>
+        <name>UOPREG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="82" column="18" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1ac987dba63146258d0545eea81ae1feef" prot="public" static="no">
+        <type>Int(*</type>
+        <definition>typedef Int(* CPredicate) (CACHE_TYPE1)</definition>
+        <argsstring>)(CACHE_TYPE1)</argsstring>
+        <name>CPredicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="100" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a22eb7251b796ab2d730a705444336727" prot="public" static="no">
+        <type>Int(*</type>
+        <definition>typedef Int(* CmpPredicate) (Term, Term)</definition>
+        <argsstring>)(Term, Term)</argsstring>
+        <name>CmpPredicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="102" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a815a2c46110621b769c6bdf1ba2d638c" prot="public" static="no">
+        <type>OPREG</type>
+        <definition>typedef OPREG wamreg</definition>
+        <argsstring></argsstring>
+        <name>wamreg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="114" column="16" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a8635c466d9059f800c77613934e0cd64" prot="public" static="no">
+        <type>OPREG</type>
+        <definition>typedef OPREG yslot</definition>
+        <argsstring></argsstring>
+        <name>yslot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="115" column="16" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1af17d487b37c76b5e362dc61b55d9bd0f" prot="public" static="no">
+        <type>OPREG</type>
+        <definition>typedef OPREG COUNT</definition>
+        <argsstring></argsstring>
+        <name>COUNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="116" column="16" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a48f09d71210d618e40a10e606d6410e8" prot="public" static="no">
+        <type>op_numbers</type>
+        <definition>typedef op_numbers OPCODE</definition>
+        <argsstring></argsstring>
+        <name>OPCODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="225" column="21" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1aad6e57b5e9f42bbadcb1a8cf08315553" prot="public" static="no">
+        <type>struct <ref refid="structyami" kindref="compound">yami</ref></type>
+        <definition>typedef struct yami yamop</definition>
+        <argsstring></argsstring>
+        <name>yamop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="862" column="7"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a0f3458d62278affc84ec002c4e59aaa4" prot="public" static="no">
+        <type><ref refid="structyami" kindref="compound">yamop</ref></type>
+        <definition>typedef yamop yamopp</definition>
+        <argsstring></argsstring>
+        <name>yamopp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="864" column="15" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1a708b28a6f537497c60060d34bc4786fb" prot="public" static="no">
+        <type>Term *</type>
+        <definition>typedef Term* tr_fr_ptr</definition>
+        <argsstring></argsstring>
+        <name>tr_fr_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="883" column="14" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="883" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="amidefs_8h_1ac8c803fd1f326d8c50aa85f56e5ba19b" prot="public" static="no">
+        <type>struct <ref refid="structchoicept" kindref="compound">choicept</ref> *</type>
+        <definition>typedef struct choicept * choiceptr</definition>
+        <argsstring></argsstring>
+        <name>choiceptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="963" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="amidefs_8h_1abb45db50844eba87fa9565503a2a9a19" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * ENV_Parent</definition>
+        <argsstring>(CELL *env)</argsstring>
+        <name>ENV_Parent</name>
+        <param>
+          <type>CELL *</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1036" column="6" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1036" bodyend="1039"/>
+      </memberdef>
+      <memberdef kind="function" id="amidefs_8h_1a5ebed469c9adac12662f8ae2a3066075" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int ENV_Size</definition>
+        <argsstring>(yamop *cp)</argsstring>
+        <name>ENV_Size</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1042" column="5" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1042" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="amidefs_8h_1a30085cad2da932ec70890fbbfb2a7ada" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct <ref refid="structpred__entry" kindref="compound">pred_entry</ref> *</type>
+        <definition>static struct pred_entry * ENV_ToP</definition>
+        <argsstring>(yamop *cp)</argsstring>
+        <name>ENV_ToP</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1049" column="17" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1049" bodyend="1052"/>
+      </memberdef>
+      <memberdef kind="function" id="amidefs_8h_1aecbfda48011b0ca7a9a7ce4902bae94f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>OPCODE</type>
+        <definition>static OPCODE ENV_ToOp</definition>
+        <argsstring>(yamop *cp)</argsstring>
+        <name>ENV_ToOp</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1055" column="8" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1055" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="amidefs_8h_1accf606573a999c242579532f3cdaf9dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>static int64_t EnvSize</definition>
+        <argsstring>(yamop *cp)</argsstring>
+        <name>EnvSize</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1061" column="9" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1061" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="amidefs_8h_1a21bb1edd54da1dc95fc92bfbd88e6d22" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * EnvBMap</definition>
+        <argsstring>(yamop *p)</argsstring>
+        <name>EnvBMap</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1067" column="6" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1067" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="amidefs_8h_1a0eba9e7657ec161040265a63e96153a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct <ref refid="structpred__entry" kindref="compound">pred_entry</ref> *</type>
+        <definition>static struct pred_entry * EnvPreg</definition>
+        <argsstring>(yamop *p)</argsstring>
+        <name>EnvPreg</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1073" column="17" bodyfile="/home/vsc/github/yap/H/amidefs.h" bodystart="1073" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="amidefs_8h_1aca356bde0b8184f2748ada4064e4fc52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_cleanup_cp</definition>
+        <argsstring>(choiceptr cp_b)</argsstring>
+        <name>is_cleanup_cp</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cp_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amidefs.h" line="1088" column="9" bodyfile="/home/vsc/github/yap/C/exec.c" bodystart="2009" bodyend="2025" declfile="/home/vsc/github/yap/H/amidefs.h" declline="1088" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/amidefs.h"/>
+  </compounddef>
+</doxygen>

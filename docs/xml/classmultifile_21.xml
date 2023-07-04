@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmultifile_21" kind="class" language="Prolog" prot="public">
+    <compoundname>multifile/1</compoundname>
+    <briefdescription>
+<para><bold>multifile</bold>( <emphasis>P</emphasis> ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>Declares that a predicate or several predicates may be defined throughout several files <emphasis>P</emphasis> is a collection of one or more predicate indicators:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="keyword">multifile</highlight><highlight class="normal"><sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">user:portray_message/2<sp/>,<sp/></highlight><highlight class="keyword">multifile</highlight><highlight class="normal"><sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">user:message_hook/3<sp/></highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Instructs the compiler about the declaration of a predicate <emphasis>P</emphasis> in more than one file It must appear in the first of the loaded files where the predicate is declared, and before declaration of any of its clauses</para>
+<para>Multifile declarations must be supported by <ref refid="classreconsult_21" kindref="compound">reconsult/1</ref> and <ref refid="classcompile_21" kindref="compound">compile/1</ref> : when a multifile predicate is reconsulted, only the clauses from the same file are removed</para>
+<para>Since YAP4.3.0 multifile procedures can be static or dynamic</para>
+<para><itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/predtypes.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/predtypes.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="AttributedVariables" kind="page">
+    <compoundname>AttributedVariables</compoundname>
+    <title>Attributed Variables</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>YAP supports attributed variables, originally developed at OFAI by
+</verbatim> Christian Holzbaur Attributes are a means of declaring that an arbitrary term is a property for a variable These properties can be updated during forward execution Moreover, the unification algorithm is aware of attributed variables and will call user defined handlers when trying to unify these variables</para>
+<para>Attributed variables provide an elegant abstraction over which one can extend Prolog systems Their main application so far has been in implementing constraint handlers, such as Holzbaur&apos;s CLPQR, Fruewirth and Holzbaur&apos;s CHR, and CLP(BN)</para>
+<para>Different Prolog systems implement attributed variables in different ways Originally, YAP used the interface designed by SICStus Prolog This interface is still available through the atts library, and is used by CLPBN</para>
+<para>From YAP-6.0.3 onwards we recommend using the hProlog, SWI style interface We believe that this design is easier to understand and work with Most packages included in YAP that use attributed variables, such as CHR, CLP(FD), and CLP(QR), rely on the SWI-Prolog awi interface</para>
+<para><ref refid="group__CohYroutining" kindref="compound">Co-Routining</ref></para>
+<para><ref refid="group__New__Style__Attribute__Declarations" kindref="compound">hProlog and SWI-Prolog style Attribute Declarations</ref></para>
+<para><ref refid="group__SICS__attributes" kindref="compound">SICStus Style attribute declarations</ref></para>
+<para><ref refid="group__SICStusCConst" kindref="compound">SICStus-style Constraints in C</ref></para>
+<para><ref refid="group__SWICConst" kindref="compound">SWI-style Constraints in C</ref> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/AttributedVariables.md"/>
+  </compounddef>
+</doxygen>

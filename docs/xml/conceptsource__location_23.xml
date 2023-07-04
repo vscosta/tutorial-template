@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptsource__location_23" kind="concept">
+    <compoundname>source_location/3</compoundname>
+    <initializer>template&lt;&gt;
+concept source_location/3 =     </initializer>
+    <briefdescription>
+<para>start input for a meta-clause </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Should obtain:<itemizedlist>
+<listitem><para>predicate name</para>
+</listitem><listitem><para>predicate arity</para>
+</listitem><listitem><para>address for 256 cluses</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ARG1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ARG2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adress of predicate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ARG3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Term read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[description]</para>
+</simplesect>
+<bold>source_location</bold>( - <emphasis>File</emphasis> , <emphasis>Line</emphasis>, <emphasis>Offset</emphasis> )</para>
+<para>unify <emphasis>File</emphasis> and <emphasis>Line</emphasis> wuth the position of the last term read, if the term comes from a stream created by opening a file-system path with <ref refid="classopen_23" kindref="compound">open/3</ref> and friends It ignores user_input or sockets</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><emphasis>File</emphasis> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><emphasis>Line</emphasis></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>SWI-Prolog built-in </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="os/readterm.c" line="1584" column="1"/>
+  </compounddef>
+</doxygen>

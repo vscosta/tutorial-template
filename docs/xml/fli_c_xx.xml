@@ -1,0 +1,972 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fli_c_xx" kind="page">
+    <compoundname>fli_c_xx</compoundname>
+    <title>The Foreign Language Interfaces</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>YAP provides the user with three facilities for writing predicates in a language other than Prolog Under Unix systems, most language implementations were linkable to <computeroutput>C</computeroutput>, and the first interface exported the YAP machinery to the C language YAP also implements most of the SWI-Prolog foreign language interface This gives portability with a number of SWI-Prolog packages and avoids garnage collection by using <ref refid="group__slotInterface" kindref="compound">Term Handles or Slots</ref> Last, a new C++ based interface is being designed to work with the swig (www.swig.orgv) interface compiler</para>
+<para><ref refid="fli_c_xx_1ChYinterface" kindref="member">The YAP C-interface</ref></para>
+<para><ref refid="group__swi-c-interface" kindref="compound">SWI-Prolog Foreign Language Interface</ref></para>
+<para><ref refid="group__yap-cplus-interface" kindref="compound">An object oriented interface for YAP.</ref></para>
+<sect1 id="fli_c_xx_1ChYinterface">
+<title>The YAP C-interface</title>
+<para>Before describing in full detail how to interface to C code, we will examine a brief example</para>
+<para>Assume the user requires a predicate <computeroutput>my_process_id(Id)</computeroutput> which succeeds when <emphasis>Id</emphasis> unifies with the number of the process under which YAP is running</para>
+<para>In this case we will create a <computeroutput>my_process.c</computeroutput> file containing the C-code described below</para>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#include<sp/>&quot;<ref refid="YapInterface_8h" kindref="compound">YapInterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>my_process_id(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>YAP_Term<sp/>pid<sp/>=<sp/>YAP_MkIntTerm(getpid());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>YAP_Term<sp/>out<sp/>=<sp/>YAP_ARG1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(YAP_Unify(out,pid));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_my_predicates()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>YAP_UserCPredicate(</highlight><highlight class="stringliteral">&quot;my_process_id&quot;</highlight><highlight class="normal">,my_process_id,1);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>The commands to compile the above file depend on the operating system</para>
+<para>First, we need to compile the C-code Under Linux you should use:</para>
+<para><programlisting><codeline><highlight class="normal">gcc<sp/>-c<sp/>-shared<sp/>-fPIC<sp/>my_process.c</highlight></codeline>
+<codeline><highlight class="normal">ld<sp/>-shared<sp/>-o<sp/>my_process.so<sp/>my_process.o</highlight></codeline>
+</programlisting> Under WIN32 in a MINGW/CYGWIN environment, using the standard installation path you should use:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gcc<sp/>-mno-cygwin<sp/><sp/>-I<sp/>&quot;c:/Yap/include&quot;<sp/>-c<sp/>my_process.c</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gcc<sp/>-mno-cygwin<sp/>&quot;c:/Yap/bin/yap.dll&quot;<sp/>--shared<sp/>-o<sp/>my_process.dll</highlight></codeline>
+<codeline><highlight class="normal">my_process.o</highlight></codeline>
+</programlisting> Under WIN32 in a pure CYGWIN environment, using the standard installation path, you should use:</para>
+<para><programlisting><codeline><highlight class="normal">gcc<sp/>-I/usr/local<sp/>-c<sp/>my_process.c</highlight></codeline>
+<codeline><highlight class="normal">gcc<sp/>-shared<sp/>-o<sp/>my_process.dll<sp/>my_process.o<sp/>/usr/local/bin/yap.dll</highlight></codeline>
+</programlisting></para>
+<para>And could be loaded, under YAP, by executing the following Prolog goal</para>
+<para><programlisting><codeline><highlight class="normal">load_foreign_files([&apos;my_process&apos;],[],init_my_predicates).</highlight></codeline>
+</programlisting> Note that since YAP4.3.3 you should not give the suffix for object files YAP will deduce the correct suffix from the operating system it is running under</para>
+<para>After loading that file the following Prolog goal</para>
+<para><programlisting><codeline><highlight class="normal">my_process_id(N)</highlight></codeline>
+</programlisting> would unify N with the number of the process under which YAP is running</para>
+<para>Having presented a full example, we will now examine in more detail the contents of the C source code file presented above</para>
+<para>The include statement is used to make available to the C source code the macros for the handling of Prolog terms and also some YAP public definitions</para>
+<para>The function <computeroutput>my_process_id</computeroutput> is the implementation, in C, of the desired predicate Note that it returns an integer denoting the success of failure of the goal and also that it has no arguments even though the predicate being defined has one In fact the arguments of a Prolog predicate written in C are accessed through macros, defined in the include file, with names <emphasis>YAP_ARG1</emphasis>, <emphasis>YAP_ARG2</emphasis>, ..., <emphasis>YAP_ARG16</emphasis> or with <emphasis>YAP_A</emphasis>( <emphasis>N</emphasis>)</para>
+<para>where <emphasis>N</emphasis> is the argument number (starting with 1) In the present case the function uses just one local variable of type <computeroutput>YAP_Term</computeroutput>, the type used for holding YAP terms, where the integer returned by the standard unix function <computeroutput>getpid()</computeroutput> is stored as an integer term (the conversion is done by <computeroutput>YAP_MkIntTerm(Int))</computeroutput> Then it calls the pre-defined routine <computeroutput>YAP_Unify(YAP_Term, YAP_Term)</computeroutput> which in turn returns an integer denoting success or failure of the unification</para>
+<para>The role of the procedure <computeroutput>init_my_predicates</computeroutput> is to make known to YAP, by calling <computeroutput>YAP_UserCPredicate()</computeroutput>, the predicates being defined in the file This is in fact why, in the example above, init_my_predicates() was passed as the third argument to <ref refid="classload__foreign__files_23" kindref="compound">load_foreign_files/3</ref></para>
+<para>The rest of this appendix describes exhaustively how to interface C to YAP</para>
+<sect2 id="fli_c_xx_1Manipulating_Terms">
+<title>Term Manipulation</title>
+<para>This section provides information about the primitives available to the C programmer for manipulating Prolog terms</para>
+<para>Several C typedefs are included in the header file <computeroutput>yap/YAPInterface.h</computeroutput> to describe, in a portable way, the C representation of Prolog terms The user should write is programs using this macros to ensure portability of code across different versions of YAP</para>
+<para>The more important typedef is <emphasis>YAP_Term</emphasis> which is used to denote the type of a Prolog term</para>
+<para>Terms, from a point of view of the C-programmer, can be classified as follows</para>
+<para><itemizedlist>
+<listitem><para>uninstantiated variables</para>
+</listitem><listitem><para>instantiated variables</para>
+</listitem><listitem><para>integers</para>
+</listitem><listitem><para>floating-point numbers</para>
+</listitem><listitem><para>database references</para>
+</listitem><listitem><para>atoms</para>
+</listitem><listitem><para>pairs (lists)</para>
+</listitem><listitem><para>compound terms</para>
+</listitem></itemizedlist>
+</para>
+<para>The primitive</para>
+<para>YAP_Bool YAP_IsVarTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para>returns true iff its argument is an uninstantiated variable Conversely the primitive <itemizedlist>
+<listitem>
+<para>YAP_Bool YAP_NonVarTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para>returns true iff its argument is not a variable  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The user can create a new uninstantiated variable using the primitive <itemizedlist>
+<listitem>
+<para>YAP_Term <ref refid="group__slotInterface_1gaf35a51db7ea94ae324531941b39c88c0" kindref="member">YAP_MkVarTerm()</ref>  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The following primitives can be used to discriminate among the different types of non-variable terms:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Bool YAP_IsIntTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Bool YAP_IsFloatTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Bool YAP_IsDbRefTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Bool YAP_IsAtomTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Bool YAP_IsPairTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Bool YAP_IsApplTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Bool YAP_IsCompoundTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The next primitive gives the type of a Prolog term:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_tag_t YAP_TagOfTerm(YAP_Term <emphasis>t</emphasis>)  </para>
+</listitem>
+</itemizedlist>
+The set of possible values is an enumerated type, with the following values:</para>
+<para><itemizedlist>
+<listitem>
+<para><computeroutput>YAP_TAG_ATT</computeroutput>: an attributed variable  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_UNBOUND</computeroutput>: an unbound variable  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_REF</computeroutput>: a reference to a term  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_PAIR</computeroutput>: a list  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_ATOM</computeroutput>: an atom  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_INT</computeroutput>: a small integer  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_LONG_INT</computeroutput>: a word sized integer  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_BIG_INT</computeroutput>: a very large integer  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_RATIONAL</computeroutput>: a rational number  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_FLOAT</computeroutput>: a floating point number  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_OPAQUE</computeroutput>: an opaque term  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TAG_APPL</computeroutput>: a compound term  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>Next, we mention the primitives that allow one to destruct and construct terms All the above primitives ensure that their result is a dereferenced, i.e that it is not a pointer to another term</para>
+<para>The following primitives are provided for creating an integer term from an integer and to access the value of an integer term</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_MkIntTerm(YAP_Int <emphasis>i</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Int YAP_IntOfTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+where <computeroutput>YAP_Int</computeroutput> is a typedef for the C integer type appropriate for the machine or compiler in question (normally a long integer) The size of the allowed integers is implementation dependent but is always greater or equal to 24 bits: usually 32 bits on 32 bit machines, and 64 on 64 bit machines</para>
+<para>The two following primitives play a similar role for floating-point terms</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_MkFloatTerm(YAP_flt <emphasis>double</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_flt YAP_FloatOfTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+where <computeroutput>flt</computeroutput> is a typedef for the appropriate C floating point type, nowadays a <computeroutput>double</computeroutput></para>
+<para>The following primitives are provided for verifying whether a term is a big int, creating a term from a big integer and to access the value of a big int from a term</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Bool YAP_IsBigNumTerm(YAP_Term <emphasis>t</emphasis>) xuuu  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_MkBigNumTerm(void * <emphasis>b</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>void *YAP_BigNumOfTerm(YAP_Term <emphasis>t</emphasis>, void * <emphasis>b</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+YAP must support bignum for the configuration you are using (check the YAP configuration and setup) For now, YAP only supports the GNU GMP library, and <computeroutput>void \*</computeroutput> will be a cast for <computeroutput>mpz_t</computeroutput> Notice that [YAP_BigNumOfTerm](YAP_BigNumOfTerm) requires the number to be already initialized As an example, we show how to print a bignum:</para>
+<para><programlisting><codeline><highlight class="normal">static<sp/>int</highlight></codeline>
+<codeline><highlight class="normal">p_print_bignum(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>mpz_t<sp/>mz;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(!YAP_IsBigNumTerm(YAP_ARG1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>FALSE;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>mpz_init(mz);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>YAP_BigNumOfTerm(YAP_ARG1,<sp/>mz);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gmp_printf(&quot;Shows<sp/>up<sp/>as<sp/>%Zd\n&quot;,<sp/>mz);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>mpz_clear(mz);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>TRUE;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Currently, no primitives are supplied to users for manipulating data base references</para>
+<para>A special typedef <computeroutput>YAP_Atom</computeroutput> is provided to describe Prolog <emphasis>atoms</emphasis> (symbolic constants) The two following primitives can be used to manipulate atom terms</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_MkAtomTerm(YAP_Atom at)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Atom YAP_AtomOfTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The following primitives are available for associating atoms with their names</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Atom YAP_LookupAtom(char * <emphasis>s</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Atom YAP_FullLookupAtom(char * <emphasis>s</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>char *YAP_AtomName(YAP_Atom <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The function <ref refid="group__slotInterface_1gabb0253786863321f6490f51b60804e0d" kindref="member">YAP_LookupAtom</ref> looks up an atom in the standard hash table The function <ref refid="group__slotInterface_1gac076c701439035f82938fa45bddd400b" kindref="member">YAP_FullLookupAtom</ref> will also search if the&lt; atom had been &quot;hidden&quot;: this is useful for system maintenance from C code The functor <ref refid="group__slotInterface_1gacaed558dd067b3d7e50b19a7b15d35b7" kindref="member">YAP_AtomName</ref> returns a pointer to the string for the atom</para>
+<para>The following primitives handle constructing atoms from strings with wide characters, and vice-versa:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Atom YAP_LookupWideAtom(wchar_t * <emphasis>s</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>wchar_t *YAP_WideAtomName(YAP_Atom <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The following primitive tells whether an atom needs wide atoms in its representation:</para>
+<para><itemizedlist>
+<listitem>
+<para>int YAP_IsWideAtom(YAP_Atom <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The following primitive can be used to obtain the size of an atom in a representation-independent way:</para>
+<para><itemizedlist>
+<listitem>
+<para>int YAP_AtomNameLength(YAP_Atom <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The next routines give users some control over the atom garbage collector They allow the user to guarantee that an atom is not to be garbage collected (this is important if the atom is hold externally to the Prolog engine, allow it to be collected, and call a hook on garbage collection:</para>
+<para><itemizedlist>
+<listitem>
+<para>int YAP_AtomGetHold(YAP_Atom <emphasis>at</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>int YAP_AtomReleaseHold(YAP_Atom <emphasis>at</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>int YAP_AGCRegisterHook(YAP_AGC_hook <emphasis>f</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+</para>
+<para>A <emphasis>pair</emphasis> is a Prolog term which consists of a tuple of two Prolog terms designated as the <emphasis>head</emphasis> and the <emphasis>tail</emphasis> of the term Pairs are most often used to build <emphasis>lists</emphasis> The following primitives can be used to manipulate pairs:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_MkPairTerm(YAP_Term <emphasis>Head</emphasis>, YAP_Term <emphasis>Tail</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_MkNewPairTerm(void)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_HeadOfTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_TailOfTerm(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_MkListFromTerms(YAP_Term * <emphasis>pt</emphasis>, YAP_Int * <emphasis>sz</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+One can construct a new pair from two terms, or one can just build a pair whose head and tail are new unbound variables Finally, one can fetch the head or the tail</para>
+<para>The last function supports the common operation of constructing a list from an array of terms of size <emphasis>sz</emphasis> in a simple sweep</para>
+<para>Notice that the list constructors can call the garbage collector if there is not enough space in the global stack</para>
+<para>A <emphasis>compound</emphasis> term consists of a <emphasis>functor</emphasis> and a sequence of terms with length equal to the <emphasis>arity</emphasis> of the functor A functor, described in C by the typedef <computeroutput>Functor</computeroutput>, consists of an atom and of an integer The following primitives were designed to manipulate compound terms and functors</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_MkApplTerm(YAP_Functor <emphasis>f</emphasis>, unsigned long int <emphasis>n</emphasis>, YAP_Term[] <emphasis>args</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_MkNewApplTerm(YAP_Functor <emphasis>f</emphasis>, int <emphasis>n</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_ArgOfTerm(int argno,YAP_Term <emphasis>ts</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Term *YAP_ArgsOfTerm(YAP_Term <emphasis>ts</emphasis>)</para>
+<para></para>
+</listitem>
+<listitem>
+<para>YAP_Functor YAP_FunctorOfTerm(YAP_Term <emphasis>ts</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The [YAP_MkApplTerm() function constructs a new term, with functor <emphasis>f</emphasis> (of arity <emphasis>n</emphasis>), and using an array <emphasis>args</emphasis> of <emphasis>n</emphasis> terms with <emphasis>n</emphasis> equal to the arity of the functor YAP_MkNewApplTerm() builds up a compound term whose arguments are unbound variables YAP_ArgOfTerm gives an argument to a compound term <computeroutput>argno</computeroutput> should be greater or equal to 1 and less or equal to the arity of the functor [YAP_ArgsOfTerm](YAP_ArgsOfTerm) returns a pointer to an array of arguments</para>
+<para>Notice that the compound term constructors can call the garbage collector if there is not enough space in the global stack</para>
+<para>YAP allows one to manipulate the functors of compound term The function YAP_FunctorOfTerm allows one to obtain a variable of type <computeroutput>YAP_Functor</computeroutput> with the functor to a term The following functions then allow one to construct functors, and to obtain their name and arity</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Functor YAP_MkFunctor(YAP_Atom <emphasis>a</emphasis>,unsigned long int <emphasis>arity</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Atom YAP_NameOfFunctor(YAP_Functor <emphasis>f</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Int YAP_ArityOfFunctor(YAP_Functor <emphasis>f</emphasis>)  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>Note that the functor is essentially a pair formed by an atom, and arity</para>
+<para>Constructing terms in the stack may lead to overflow The routine</para>
+<para><itemizedlist>
+<listitem>
+<para>int YAP_RequiresExtraStack(size_t <emphasis>min</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+verifies whether you have at least <emphasis>min</emphasis> cells free in the stack, and it returns true if it has to ensure enough memory by calling the garbage collector and or stack shifter The routine returns false if no memory is needed, and a negative number if it cannot provide enough memory</para>
+<para>You can set <emphasis>min</emphasis> to zero if you do not know how much room you need but you do know you do not need a big chunk at a single go Usually, the routine would usually be called together with a long-jump to restart the code Slots can also be used if there is small state </para>
+</sect2>
+<sect2 id="fli_c_xx_1Unifying_Terms">
+<title>Unification</title>
+<para>YAP provides a single routine to attempt the unification of two Prolog terms The routine may succeed or fail:</para>
+<para><itemizedlist>
+<listitem>
+<para>Int YAP_Unify(YAP_Term <emphasis>a</emphasis>, YAP_Term <emphasis>b</emphasis>) fli  </para>
+</listitem>
+</itemizedlist>
+The routine attempts to unify the terms <emphasis>a</emphasis> and <emphasis>b</emphasis> returning <computeroutput>TRUE</computeroutput> if the unification succeeds and <computeroutput>FALSE</computeroutput> otherwise </para>
+</sect2>
+<sect2 id="fli_c_xx_1Manipulating_Strings">
+<title>Strings</title>
+<para>The YAP C-interface now includes an utility routine to copy a string represented as a list of a character codes to a previously allocated buffer</para>
+<para><itemizedlist>
+<listitem>
+<para>int YAP_StringToBuffer(YAP_Term <emphasis>String</emphasis>, char * <emphasis>buf</emphasis>, unsigned int <emphasis>bufsize</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The routine copies the list of character codes <emphasis>String</emphasis> to a previously allocated buffer <emphasis>buf</emphasis> The string including a terminating null character must fit in <emphasis>bufsize</emphasis> characters, otherwise the routine will simply fail The <emphasis>StringToBuffer</emphasis> routine fails and generates an exception if <emphasis>String</emphasis> is not a valid string</para>
+<para>The C-interface also includes utility routines to do the reverse, that is, to copy a from a buffer to a list of character codes, to a difference list, or to a list of character atoms The routines work either on strings of characters or strings of wide characters:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_BufferToString(char * <emphasis>buf</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_NBufferToString(char * <emphasis>buf</emphasis>, size_t <emphasis>len</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_WideBufferToString(wchar_t * <emphasis>buf</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_NWideBufferToString(wchar_t * <emphasis>buf</emphasis>, size_t <emphasis>len</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_BufferToAtomList(char * <emphasis>buf</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_NBufferToAtomList(char * <emphasis>buf</emphasis>, size_t <emphasis>len</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_WideBufferToAtomList(wchar_t * <emphasis>buf</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_NWideBufferToAtomList(wchar_t * <emphasis>buf</emphasis>, size_t <emphasis>len</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+Users are advised to use the <emphasis>N</emphasis> version of the routines Otherwise, the user-provided string must include a terminating null character</para>
+<para>The C-interface function calls the parser on a sequence of characters stored at <emphasis>buf</emphasis> and returns the resulting term</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_ReadBuffer(char * <emphasis>buf</emphasis>,YAP_Term * <emphasis>error</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The user-provided string must include a terminating null character Syntax errors will cause returning <computeroutput>FALSE</computeroutput> and binding <emphasis>error</emphasis> to a Prolog term</para>
+<para>These C-interface functions are useful when converting chunks of data to Prolog:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_FloatsToList(double * <emphasis>buf</emphasis>,size_t <emphasis>sz</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Term YAP_IntsToList(YAP_Int * <emphasis>buf</emphasis>,size_t <emphasis>sz</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+Notice that they are unsafe, and may call the garbage collector They return 0 on error</para>
+<para>These C-interface functions are useful when converting Prolog lists to arrays:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Int YAP_IntsToList(YAP_Term t, YAP_Int * <emphasis>buf</emphasis>,size_t <emphasis>sz</emphasis>)  </para>
+</listitem>
+<listitem>
+<para>YAP_Int YAP_FloatsToList(YAP_Term t, double * <emphasis>buf</emphasis>,size_t <emphasis>sz</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+They return the number of integers scanned, up to a maximum of <computeroutput>sz</computeroutput>, and <computeroutput>-1</computeroutput> on error </para>
+</sect2>
+<sect2 id="fli_c_xx_1Memory_Allocation">
+<title>Memory Allocation</title>
+<para>The next routine can be used to ask space from the Prolog data-base:</para>
+<para><itemizedlist>
+<listitem>
+<para>void *YAP_AllocSpaceFromYAP(int <emphasis>size</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The routine returns a pointer to a buffer allocated from the code area, or <computeroutput>NULL</computeroutput> if sufficient space was not available</para>
+<para>The space allocated with YAP_AllocSpaceFromYAP can be released back to YAP by using:</para>
+<para><itemizedlist>
+<listitem>
+<para>void YAP_FreeSpaceFromYAP(void * <emphasis>buf</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The routine releases a buffer allocated from the code area The system may crash if <computeroutput>buf</computeroutput> is not a valid pointer to a buffer in the code area </para>
+</sect2>
+<sect2 id="fli_c_xx_1Controlling_Streams">
+<title>Controlling YAP Streams from &lt;tt&gt;C&lt;/tt&gt;</title>
+<para>The C-Interface also provides the C-application with a measure of control over the YAP Input/Output system The first routine allows one to find a file number given a current stream:</para>
+<para><itemizedlist>
+<listitem>
+<para>int YAP_StreamToFileNo(YAP_Term <emphasis>stream</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+This function gives the file descriptor for a currently available stream Note that null streams and in memory streams do not have corresponding open streams, so the routine will return a negative Moreover, YAP will not be aware of any direct operations on this stream, so information on, say, current stream position, may become stale</para>
+<para>A second routine that is sometimes useful is:</para>
+<para><itemizedlist>
+<listitem>
+<para>void YAP_CloseAllOpenStreams(void)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+This routine closes the YAP Input/Output system except for the first three streams, that are always associated with the three standard Unix streams It is most useful if you are doing <computeroutput>fork()</computeroutput></para>
+<para>Last, one may sometimes need to flush all streams:</para>
+<para><itemizedlist>
+<listitem>
+<para>void YAP_CloseAllOpenStreams(void)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+It is also useful before you do a <computeroutput>fork()</computeroutput>, or otherwise you may have trouble with unflushed output</para>
+<para>The next routine allows a currently open file to become a stream The routine receives as arguments a file descriptor, the true file name as a string, an atom with the user name, and a set of flags:</para>
+<para><itemizedlist>
+<listitem>
+<para>void YAP_OpenStream(void * <emphasis>FD</emphasis>, char * <emphasis>name</emphasis>, YAP_Term <emphasis>t</emphasis>, int <emphasis>flags</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The available flags are <computeroutput>YAP_INPUT_STREAM</computeroutput>, <computeroutput>YAP_OUTPUT_STREAM</computeroutput>, <computeroutput>YAP_APPEND_STREAM</computeroutput>, <computeroutput>YAP_PIPE_STREAM</computeroutput>, <computeroutput>YAP_TTY_STREAM</computeroutput>, <computeroutput>YAP_POPEN_STREAM</computeroutput>, <computeroutput>YAP_BINARY_STREAM</computeroutput>, and <computeroutput>YAP_SEEKABLE_STREAM</computeroutput> By default, the stream is supposed to be at position 0 The argument <emphasis>name</emphasis> gives the name by which YAP should know the new stream </para>
+</sect2>
+<sect2 id="fli_c_xx_1Utility_Functions">
+<title>Utility Functions in &lt;tt&gt;C&lt;/tt&gt;</title>
+<para>The C-Interface provides the C-application with a a number of utility functions that are useful</para>
+<para>The first provides a way to insert a term into the data-base</para>
+<para><itemizedlist>
+<listitem>
+<para>void *YAP_Record(YAP_Term <emphasis>t</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+This function returns a pointer to a copy of the term in the database (or to <computeroutput>NULL</computeroutput> if the operation fails</para>
+<para>The next functions provides a way to recover the term from the data-base:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_Recorded(void * <emphasis>handle</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+Notice that the semantics are the same as for <ref refid="classrecorded_23" kindref="compound">recorded/3</ref> : this function creates a new copy of the term in the stack, with fresh variables The function returns <computeroutput>0L</computeroutput> if it cannot create a new term</para>
+<para>Last, the next function allows one to recover space:</para>
+<para><itemizedlist>
+<listitem>
+<para>int YAP_Erase(void * <emphasis>handle</emphasis>)</para>
+<para></para>
+</listitem>
+</itemizedlist>
+Notice that any accesses using <emphasis>handle</emphasis> after this operation may lead to a crash</para>
+<para>The following functions are often required to compare terms</para>
+<para>Succeed if two terms are actually the same term, as in <computeroutput>t1 == t2</computeroutput>:</para>
+<para><programlisting><codeline><highlight class="normal">YAP_ExactlyEqual(YAP_Term<sp/>t1,<sp/>YAP_Term<sp/>t2)</highlight></codeline>
+</programlisting></para>
+<para>The next function succeeds if two terms are variant terms, and returns 0 otherwise, as in <computeroutput>variant(t1,t2)</computeroutput>:</para>
+<para><programlisting><codeline><highlight class="normal">int<sp/><sp/><sp/><sp/><sp/><sp/>YAP_Variant(YAP_Term<sp/>t1,<sp/>YAP_Term<sp/>t2)</highlight></codeline>
+</programlisting></para>
+<para>The next functions deal with numbering variables in terms:</para>
+<para><programlisting><codeline><highlight class="normal">int<sp/><sp/><sp/><sp/><sp/><sp/>YAP_NumberVars(YAP_Term<sp/>t,<sp/>YAP_Int<sp/>first_number)&lt;/li&gt;</highlight></codeline>
+<codeline><highlight class="normal">YAP_Term<sp/>YAP_UnNumberVars(YAP_Term<sp/>t)&lt;/li&gt;</highlight></codeline>
+<codeline><highlight class="normal">bool<sp/><sp/><sp/><sp/><sp/><sp/>YAP_IsNumberedVariable(YAP_Term<sp/>t)&lt;/li&gt;</highlight></codeline>
+</programlisting></para>
+<para>The next one returns the length of a well-formed list <emphasis>t</emphasis>, or <computeroutput>-1</computeroutput> otherwise:</para>
+<para><programlisting><codeline><highlight class="normal">Int<sp/><sp/><sp/><sp/><sp/><sp/>YAP_ListLength(YAP_Term<sp/>t)</highlight></codeline>
+</programlisting></para>
+<para>Last, this function succeeds if two terms are unifiable, eg `t1==t2:</para>
+<para><programlisting><codeline><highlight class="normal">bool<sp/><sp/><sp/><sp/><sp/><sp/>YAP_Unifiable(YAP_Term<sp/>t1,<sp/>YAP_Term<sp/>t2)</highlight></codeline>
+</programlisting></para>
+<para>The second function computes a hash function for a term, as in <computeroutput><ref refid="classterm__hash_24" kindref="compound">term_hash/4</ref> </computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Int YAP_TermHash(YAP_Term t, YAP_Int range, YAP_Int depth, int
+ignore_variables));</para>
+<para></para>
+</listitem>
+</itemizedlist>
+The first three arguments follow <computeroutput>term_has/4 </computeroutput> The last argument indicates what to do if we find a variable: if <computeroutput>0</computeroutput> fail, otherwise ignore the variable </para>
+</sect2>
+<sect2 id="fli_c_xx_1Calling_YAP_From_C">
+<title>From &lt;tt&gt;C&lt;/tt&gt; back to Prolog</title>
+<para>There are several ways to call Prolog code from C-code By default, the <computeroutput>YAP_RunGoal()</computeroutput> should be used for this task It assumes the engine has been initialized before:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Int YAP_RunGoal(YAP_Term Goal)  </para>
+</listitem>
+</itemizedlist>
+Execute query <emphasis>Goal</emphasis> and return 1 if the query succeeds, and 0 otherwise The predicate returns 0 if failure, otherwise it will return an <emphasis>YAP_Term</emphasis></para>
+<para>Quite often, one wants to run a query once In this case you should use <emphasis>Goal</emphasis>:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Int YAP_RunGoalOnce(YAP_Term Goal)  </para>
+</listitem>
+</itemizedlist>
+The <computeroutput>YAP_RunGoal()</computeroutput> function makes sure to recover stack space at the end of execution</para>
+<para>Prolog terms are pointers: a problem users often find is that the term <emphasis>Goal</emphasis> may actually <emphasis>be moved around</emphasis> during the execution of <computeroutput>YAP_RunGoal()</computeroutput>, due to garbage collection or stack shifting If this is possible, <emphasis>Goal</emphasis> will become invalid after executing <computeroutput>YAP_RunGoal()</computeroutput> In this case, it is a good idea to save <emphasis>Goal</emphasis> <emphasis>slots</emphasis>, as shown next:</para>
+<para><programlisting><codeline><highlight class="normal">long<sp/>sl<sp/>=<sp/>YAP_InitSlot(scoreTerm);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">out<sp/>=<sp/>YAP_RunGoal(t);</highlight></codeline>
+<codeline><highlight class="normal">t<sp/>=<sp/>YAP_GetFromSlot(sl);</highlight></codeline>
+<codeline><highlight class="normal">YAP_RecoverSlots(1);</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(out<sp/>==<sp/>0)<sp/>return<sp/>FALSE;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="fli_c_xx_1autotoc_md9">
+<title>Runnin Goals</title>
+<para>The following functions complement <emphasis>YAP_RunGoal</emphasis>:</para>
+<para><itemizedlist>
+<listitem>
+<para><computeroutput>int</computeroutput> YAP_RestartGoal(<computeroutput>void</computeroutput>)</para>
+<para>Look for the next solution to the current query by forcing YAP to backtrack to the latest goal Notice that slots allocated since the last YAP_RunGoal() will become invalid</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>int</computeroutput> YAP_Reset(<computeroutput>yap_reset_t mode</computeroutput>)</para>
+<para>Reset execution environment (similar to the <ref refid="classabort_20" kindref="compound">abort/0</ref> built-in) This is useful when you want to start a new query before asking all solutions to the previous query &apos;mode<computeroutput>specifies how deep the Reset will go and what to do next It will be most often set to</computeroutput>YAP_FULL_RESET`</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>int</computeroutput> YAP_ShutdownGoal(<computeroutput>int backtrack</computeroutput>)</para>
+<para>Clean up the current goal If <computeroutput>backtrack</computeroutput> is true, stack space will be recovered and bindings will be undone In both cases, any slots allocated since the goal was created will become invalid</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_Bool</computeroutput> YAP_GoalHasException(<computeroutput>YAP_Term \*tp</computeroutput>)</para>
+<para>Check if the last goal generated an exception, and if so copy it to the space pointed to by <emphasis>tp</emphasis></para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>void</computeroutput> YAP_ClearExceptions(<computeroutput>void</computeroutput>)</para>
+<para>Reset any exceptions left over by the system  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The YAP_RunGoal() interface is designed to be very robust, but may not be the most efficient when repeated calls to the same goal are made and when there is no interest in processing exception The YAP_EnterGoal() interface should have lower-overhead:</para>
+<para><itemizedlist>
+<listitem>
+<para><computeroutput>YAP_PredEntryPtr</computeroutput> YAP_FunctorToPred(<computeroutput>YAP_Functor</computeroutput> <emphasis>f</emphasis>) Return the predicate whose main functor is <emphasis>f</emphasis></para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_PredEntryPtr</computeroutput> YAP_AtomToPred(<computeroutput>YAP_Atom</computeroutput> <emphasis>at</emphasis>)</para>
+<para>Return the arity 0 predicate whose name is <emphasis>at</emphasis></para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_PredEntryPtr</computeroutput> YAP_FunctorToPredInModule(<computeroutput>YAP_Functor</computeroutput> <emphasis>f</emphasis>, <computeroutput>YAP_Module</computeroutput> <emphasis>m</emphasis>),</para>
+<para>Return the predicate in module <emphasis>m</emphasis> whose main functor is <emphasis>f</emphasis></para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_PredEntryPtr</computeroutput> YAP_AtomToPred(<computeroutput>YAP_Atom</computeroutput> <emphasis>at</emphasis>, <computeroutput>YAP_Module</computeroutput> <emphasis>m</emphasis>),</para>
+<para>Return the arity 0 predicate in module <emphasis>m</emphasis> whose name is <emphasis>at</emphasis></para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_Bool</computeroutput> YAP_EnterGoal(<computeroutput>YAP_PredEntryPtr</computeroutput> <emphasis>pe</emphasis>),</para>
+<para><computeroutput>YAP_Term \*</computeroutput> <emphasis>array</emphasis>, <computeroutput><ref refid="structYAP__dogoalinfo" kindref="compound">YAP_dogoalinfo</ref> \*</computeroutput> <emphasis>infop</emphasis>) Execute a query for predicate <emphasis>pe</emphasis> The query is given as an array of terms <emphasis>Array</emphasis> <emphasis>infop</emphasis> is the address of a goal handle that can be used to backtrack and to recover space Succeeds if a solution was found</para>
+<para>Notice that you cannot create new slots if an YAP_ExnterGoal goal is open</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_Bool</computeroutput> YAP_RetryGoal(<computeroutput><ref refid="structYAP__dogoalinfo" kindref="compound">YAP_dogoalinfo</ref> \*</computeroutput> <emphasis>infop</emphasis>)<anchor id="fli_c_xx_1YAP_RetryGoal"/></para>
+<para>Backtrack to a query created by YAP_EnterGoal The query is given by the handle <emphasis>infop</emphasis> Returns whether a new solution could be be found</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_Bool</computeroutput> YAP_LeaveGoal(<computeroutput>YAP_Bool</computeroutput> <emphasis>backtrack</emphasis>,<anchor id="fli_c_xx_1YAP_LeaveGoal"/> <computeroutput><ref refid="structYAP__dogoalinfo" kindref="compound">YAP_dogoalinfo</ref> \*</computeroutput> <emphasis>infop</emphasis>) Exit a query query created by YAP_EnterGoal If <computeroutput>backtrack</computeroutput> is <computeroutput>TRUE</computeroutput>, variable bindings are undone and Heap space is recovered Otherwise, only stack space is recovered, ie, <computeroutput>LeaveGoal</computeroutput> executes a cut  </para>
+</listitem>
+</itemizedlist>
+Next, follows an example of how to use YAP_EnterGoal:</para>
+<para><programlisting><codeline><highlight class="normal">void</highlight></codeline>
+<codeline><highlight class="normal">runall(YAP_Term<sp/>g)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>YAP_dogoalinfo<sp/>goalInfo;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>YAP_Term<sp/>*goalArgs<sp/>=<sp/>YAP_ArraysOfTerm(g);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>YAP_Functor<sp/>*goalFunctor<sp/>=<sp/>YAP_FunctorOfTerm(g);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>YAP_PredEntryPtr<sp/>goalPred<sp/>=<sp/>YAP_FunctorToPred(goalFunctor);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/>YAP_EnterGoal(<sp/>goalPred,<sp/>goalArgs,<sp/>&amp;goalInfo<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>while<sp/>(result)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>YAP_RetryGoal(<sp/>&amp;goalInfo<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>YAP_LeaveGoal(TRUE,<sp/>&amp;goalInfo);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>YAP allows calling a <emphasis>new</emphasis> Prolog interpreter from <computeroutput>C</computeroutput> One way is to first construct a goal <computeroutput>G</computeroutput>, and then it is sufficient to perform:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Bool YAP_CallProlog(YAP_Term <emphasis>G</emphasis>)  </para>
+</listitem>
+</itemizedlist>
+the result will be <computeroutput>FALSE</computeroutput>, if the goal failed, or <computeroutput>TRUE</computeroutput>, if the goal succeeded In this case, the variables in <emphasis>G</emphasis> will store the values they have been unified with Execution only proceeds until finding the first solution to the goal, but you can call findall/3 or friends if you need all the solutions</para>
+<para>Notice that during execution, garbage collection or stack shifting may have moved the terms </para>
+</sect2>
+<sect2 id="fli_c_xx_1Module_Manipulation_in_C">
+<title>Module Manipulation in C</title>
+<para>YAP allows one to create a new module from C-code To create the new code it is sufficient to call:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Module YAP_CreateModule(YAP_Atom <emphasis>ModuleName</emphasis>)  </para>
+</listitem>
+</itemizedlist>
+Notice that the new module does not have any predicates associated and that it is not the current module To find the current module, you can call:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Module YAP_CurrentModule()  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>Given a module, you may want to obtain the corresponding name This is possible by using:</para>
+<para><itemizedlist>
+<listitem>
+<para>YAP_Term YAP_ModuleName(YAP_Module mod)  </para>
+</listitem>
+</itemizedlist>
+Notice that this function returns a term, and not an atom You can YAP_AtomOfTerm to extract the corresponding Prolog atom </para>
+</sect2>
+<sect2 id="fli_c_xx_1Miscellaneous_ChYFunctions">
+<title>Miscellaneous C Functions</title>
+<para><itemizedlist>
+<listitem>
+<para><computeroutput>void</computeroutput> YAP_Throw(<computeroutput>YAP_Term exception</computeroutput>)  </para>
+</listitem>
+<listitem>
+<para><computeroutput>void</computeroutput> YAP_AsyncThrow(<computeroutput>YAP_Term exception</computeroutput>)<anchor id="fli_c_xx_1YAP_Throw"/></para>
+<para>Throw an exception with term <emphasis>exception</emphasis>, just like if you called <computeroutput>throw/2 </computeroutput> The function <computeroutput>YAP_AsyncThrow</computeroutput> is supposed to be used from interrupt handlers</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>int</computeroutput> YAP_SetYAPFlag(<computeroutput>yap_flag_t flag, int value</computeroutput>)<anchor id="fli_c_xx_1YAP_SetYAPFlag"/></para>
+<para>This function allows setting some YAP flags from <computeroutput>C</computeroutput> .Currently, only two boolean flags are accepted: <computeroutput>YAPC_ENABLE_GC</computeroutput> and <computeroutput>YAPC_ENABLE_AGC</computeroutput> The first enables/disables the standard garbage collector, the second does the same for the atom garbage collector`</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_TERM</computeroutput> YAP_AllocExternalDataInStack(<computeroutput>size_t bytes</computeroutput>)  </para>
+</listitem>
+<listitem>
+<para><computeroutput>void \*</computeroutput> YAP_ExternalDataInStackFromTerm(<computeroutput>YAP_Term t</computeroutput>)  </para>
+</listitem>
+<listitem>
+<para><computeroutput>YAP_Bool</computeroutput> YAP_IsExternalDataInStackTerm(<computeroutput>YAP_Term t</computeroutput>)<anchor id="fli_c_xx_1YAP_AllocExternalDataInStack"/></para>
+<para>The next routines allow one to store external data in the Prolog execution stack The first routine reserves space for <emphasis>sz</emphasis> bytes and returns an opaque handle The second routines receives the handle and returns a pointer to the data The last routine checks if a term is an opaque handle</para>
+<para>Data will be automatically reclaimed during backtracking Also, this storage is opaque to the Prolog garbage compiler, so it should not be used to store Prolog terms On the other hand, it may be useful to store arrays in a compact way, or pointers to external objects</para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>int</computeroutput> YAP_HaltRegisterHook(<computeroutput>YAP_halt_hook f, void \*closure</computeroutput>)<anchor id="fli_c_xx_1YAP_HaltRegisterHook"/></para>
+<para>Register the function <emphasis>f</emphasis> to be called if YAP is halted The function is called with two arguments: the exit code of the process (<computeroutput>0</computeroutput> if this cannot be determined on your operating system) and the closure argument <emphasis>closure</emphasis></para>
+<para></para>
+</listitem>
+<listitem>
+<para><computeroutput>int</computeroutput> YAP_Argv(<computeroutput>char \*\*\*argvp</computeroutput>)<anchor id="fli_c_xx_1YAP_Argv"/> Return the number of arguments to YAP and instantiate argvp to point to the list of such arguments</para>
+<para></para>
+</listitem>
+</itemizedlist>
+</para>
+</sect2>
+<sect2 id="fli_c_xx_1Writing_C">
+<title>Writing predicates in C</title>
+<para>We will distinguish two kinds of predicates:</para>
+<para><itemizedlist>
+<listitem>
+<para><emphasis>deterministic</emphasis> predicates which either fail or succeed but are not backtrackable, like the one in the introduction;  </para>
+</listitem>
+<listitem>
+<para><emphasis>backtrackable</emphasis> predicates which can succeed more than once  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>The first kind of predicates should be implemented as a C function with no arguments which should return zero if the predicate fails and a non-zero value otherwise The predicate should be declared to YAP, in the initialization routine, with a call to</para>
+<para><itemizedlist>
+<listitem>
+<para>void YAP_UserCPredicate(char * <emphasis>name</emphasis>, YAP_Bool * <emphasis>fn</emphasis>(), unsigned long int <emphasis>arity</emphasis>); where <emphasis>name</emphasis> is a string with the name of the predicate, <emphasis>init</emphasis>, <emphasis>cont</emphasis>, <emphasis>cut</emphasis> are the C functions used to start, continue and when pruning the execution of the predicate, <emphasis>arity</emphasis> is the predicate arity, and <emphasis>sizeof</emphasis> is the size of the data to be preserved in the stack</para>
+<para>For the second kind of predicates we need three C functions The first one is called when the predicate is first activated; the second one is called on backtracking to provide (possibly) other solutions; the last one is called on pruning Note also that we normally also need to preserve some information to find out the next solution</para>
+<para>In fact the role of the two functions can be better understood from the following Prolog definition</para>
+<para><programlisting><codeline><highlight class="normal">p<sp/>:-<sp/>start.</highlight></codeline>
+<codeline><highlight class="normal">p<sp/>:-<sp/>repeat,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>continue.</highlight></codeline>
+</programlisting> where <computeroutput>start</computeroutput> and <computeroutput>continue</computeroutput> correspond to the two C functions described above</para>
+<para>The interface works as follows:</para>
+<para><itemizedlist>
+<listitem>
+<para>void YAP_UserBackCutCPredicate(char * <emphasis>name</emphasis>, int * <emphasis>init</emphasis>(), int * <emphasis>cont</emphasis>(), int * <emphasis>cut</emphasis>(), unsigned long int <emphasis>arity</emphasis>, unsigned int <emphasis>sizeof</emphasis>) <anchor id="fli_c_xx_1YAP_UserBackCutCPredicate"/> describes a new predicate where <emphasis>name</emphasis> is the name of the predicate, <emphasis>init</emphasis>, <emphasis>cont</emphasis>, and <emphasis>cut</emphasis> are the C functions that implement the predicate and <emphasis>arity</emphasis> is the predicate&apos;s arity</para>
+<para></para>
+</listitem>
+<listitem>
+<para>void YAP_UserBackCPredicate(char * <emphasis>name</emphasis>, int * <emphasis>init</emphasis>(), int * <emphasis>cont</emphasis>(), unsigned long int <emphasis>arity</emphasis>, unsigned int <emphasis>sizeof</emphasis>)<anchor id="fli_c_xx_1YAP_UserBackCPredicate"/> describes a new predicate where <emphasis>name</emphasis> is the name of the predicate, <emphasis>init</emphasis>, and <emphasis>cont</emphasis> are the C functions that implement the predicate and <emphasis>arity</emphasis> is the predicate&apos;s arity</para>
+<para></para>
+</listitem>
+<listitem>
+<para>void YAP_PRESERVE_DATA( <emphasis>ptr</emphasis>, <emphasis>type</emphasis>);<anchor id="fli_c_xx_1YAP_PRESERVE_DATA"/></para>
+<para></para>
+</listitem>
+<listitem>
+<para>void YAP_PRESERVED_DATA( <emphasis>ptr</emphasis>, <emphasis>type</emphasis>);<anchor id="fli_c_xx_1YAP_PRESERVED_DATA"/></para>
+<para></para>
+</listitem>
+<listitem>
+<para>void YAP_PRESERVED_DATA_CUT( <emphasis>ptr</emphasis>, <emphasis>type</emphasis>);<anchor id="fli_c_xx_1YAP_PRESERVED_DATA_CUT"/></para>
+<para></para>
+</listitem>
+<listitem>
+<para>void YAP_cut_succeed( void );<anchor id="fli_c_xx_1YAP_cut_succeed"/></para>
+<para></para>
+</listitem>
+<listitem>
+<para>void YAP_cut_fail( void );<anchor id="fli_c_xx_1YAP_cut_fail"/></para>
+<para></para>
+</listitem>
+</itemizedlist>
+</para>
+<para>As an example we will consider implementing in C a predicate <computeroutput>n100(N)</computeroutput> which, when called with an instantiated argument should succeed if that argument is a numeral less or equal to 100, and, when called with an uninstantiated argument, should provide, by backtracking, all the positive integers less or equal to 100</para>
+<para>To do that we first declare a structure, which can only consist of Prolog terms, containing the information to be preserved on backtracking and a pointer variable to a structure of that type</para>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&quot;YAPInterface.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">static<sp/>int<sp/>start_n100(void);</highlight></codeline>
+<codeline><highlight class="normal">static<sp/>int<sp/>continue_n100(void);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">typedef<sp/>struct<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>YAP_Term<sp/>next_solution;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}<sp/>n100_data_type;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">n100_data_type<sp/>*n100_data;</highlight></codeline>
+</programlisting></para>
+<para>We now write the <computeroutput>C</computeroutput> function to handle the first call:</para>
+<para><programlisting><codeline><highlight class="normal">static<sp/>int<sp/>start_n100(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>YAP_Term<sp/>t<sp/>=<sp/>YAP_ARG1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>YAP_PRESERVE_DATA(n100_data,n100_data_type);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if(YAP_IsVarTerm(t))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n100_data-&gt;next_solution<sp/>=<sp/>YAP_MkIntTerm(0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>continue_n100();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if(!YAP_IsIntTerm(t)<sp/>||<sp/>YAP_IntOfTerm(t)&lt;0<sp/>||<sp/>YAP_IntOfTerm(t)&gt;100)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAP_cut_fail();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAP_cut_succeed();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>The routine starts by getting the dereference value of the argument The call to <ref refid="fli_c_xx_1YAP_PRESERVE_DATA" kindref="member">YAP_PRESERVE_DATA</ref> is used to initialize the memory which will hold the information to be preserved across backtracking The first argument is the variable we shall use, and the second its type Note that we can only use [YAP_PRESERVE_DATA](<ref refid="fli_c_xx_1YAP_PRESERVE_DATA" kindref="member">YAP_PRESERVE_DATA</ref>) once, so often we will want the variable to be a structure This data is visible to the garbage collector, so it should consist of Prolog terms, as in the example It is also correct to store pointers to objects external to YAP stacks, as the garbage collector will ignore such references</para>
+<para>If the argument of the predicate is a variable, the routine initializes the structure to be preserved across backtracking with the information required to provide the next solution, and exits by calling <computeroutput>continue_n100</computeroutput> to provide that solution</para>
+<para>If the argument was not a variable, the routine then checks if it was an integer, and if so, if its value is positive and less than 100 In that case it exits, denoting success, with <ref refid="fli_c_xx_1YAP_cut_succeed" kindref="member">YAP_cut_succeed</ref>, or otherwise exits with <ref refid="fli_c_xx_1YAP_cut_fail" kindref="member">YAP_cut_fail</ref> denoting failure</para>
+<para>The reason for using for using the functions [YAP_cut_succeed](<ref refid="fli_c_xx_1YAP_cut_succeed" kindref="member">YAP_cut_succeed</ref>) and <ref refid="fli_c_xx_1YAP_cut_fail" kindref="member">YAP_cut_fail</ref> instead of just returning a non-zero value in the first case, and zero in the second case, is that otherwise, if backtracking occurred later, the routine <computeroutput>continue_n100</computeroutput> would be called to provide additional solutions</para>
+<para>The code required for the second function is</para>
+<para><programlisting><codeline><highlight class="normal">static<sp/>int<sp/>continue_n100(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>n;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>YAP_Term<sp/>t;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>YAP_Term<sp/>sol<sp/>=<sp/>YAP_ARG1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>YAP_PRESERVED_DATA(n100_data,n100_data_type);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>YAP_IntOfTerm(n100_data-&gt;next_solution);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if(<sp/>n<sp/>==<sp/>100)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>=<sp/>YAP_MkIntTerm(n);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAP_Unify(sol,t);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAP_cut_succeed();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAP_Unify(sol,n100_data-&gt;next_solution);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n100_data-&gt;next_solution<sp/>=<sp/>YAP_MkIntTerm(n+1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return(TRUE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Note that again the macro <ref refid="fli_c_xx_1YAP_PRESERVED_DATA" kindref="member">YAP_PRESERVED_DATA</ref> is used at the beginning of the function to access the data preserved from the previous solution Then it checks if the last solution was found and in that case exits with <ref refid="fli_c_xx_1YAP_cut_succeed" kindref="member">YAP_cut_succeed</ref> in order to cut any further backtracking If this is not the last solution then we save the value for the next solution in the data structure and exit normally with 1 denoting success Note also that in any of the two cases we use the function <computeroutput>YAP_unify</computeroutput> to bind the argument of the call to the value saved in <computeroutput>n100_state-\&gt;next_solution</computeroutput></para>
+<para>Note also that the only correct way to signal failure in a backtrackable predicate is to use the <ref refid="fli_c_xx_1YAP_cut_fail" kindref="member">YAP_cut_fail</ref> macro</para>
+<para>Backtrackable predicates should be declared to YAP, in a way similar to what happened with deterministic ones, but using instead a call to</para>
+<para><programlisting></programlisting> In this example, we would have something like</para>
+<para><programlisting><codeline><highlight class="normal">void</highlight></codeline>
+<codeline><highlight class="normal">init_n100(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>YAP_UserBackCutCPredicate(&quot;n100&quot;,<sp/>start_n100,<sp/>continue_n100,<sp/>cut_n100,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> The argument before last is the predicate&apos;s arity Notice again the last argument to the call function argument gives the extra space we want to use for <computeroutput>PRESERVED_DATA</computeroutput> Space is given in cells, where a cell is the same size as a pointer The garbage collector has access to this space, hence users should use it either to store terms or to store pointers to objects outside the stacks</para>
+<para>The code for <computeroutput>cut_n100</computeroutput> could be:</para>
+<para><programlisting><codeline><highlight class="normal">static<sp/>int<sp/>cut_n100(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>YAP_PRESERVED_DATA_CUT(n100_data,n100_data_type*);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>fprintf(&quot;n100<sp/>cut<sp/>with<sp/>counter<sp/>%ld\n&quot;,</highlight></codeline>
+<codeline><highlight class="normal">YAP_IntOfTerm(n100_data-&gt;next_solution));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>TRUE;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> Notice that we have to use [YAP_PRESERVED_DATA_CUT](<ref refid="fli_c_xx_1YAP_PRESERVED_DATA_CUT" kindref="member">YAP_PRESERVED_DATA_CUT</ref>): this is because the Prolog engine is at a different state during cut</para>
+<para>If no work is required at cut, we can use:</para>
+<para><programlisting><codeline><highlight class="normal">void</highlight></codeline>
+<codeline><highlight class="normal">init_n100(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>YAP_UserBackCutCPredicate(&quot;n100&quot;,<sp/>start_n100,<sp/>continue_n100,<sp/>NULL,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> in this case no code is executed at cut time </para>
+</listitem>
+</itemizedlist>
+</para>
+</sect2>
+<sect2 id="fli_c_xx_1YAP4_Notes">
+<title>Changes to the C-Interface in YAP4</title>
+<para>YAP4 includes several changes over the previous <computeroutput><ref refid="classload__foreign__files_23" kindref="compound">load_foreign_files/3</ref> </computeroutput> interface These changes were required to support the new binary code formats, such as ELF used in Solaris2 and Linux</para>
+<para><itemizedlist>
+<listitem><para>All Names of YAP objects now start with _YAP__ This is designed to avoid clashes with other code Use <computeroutput>YAPInterface.h</computeroutput> to take advantage of the new interface <computeroutput><ref refid="c__interface_8h" kindref="compound">c_interface.h</ref></computeroutput> is still available if you cannot port the code to the new interface</para>
+</listitem><listitem><para>Access to elements in the new interface always goes through <emphasis>functions</emphasis> This includes access to the argument registers, <computeroutput>YAP_ARG1</computeroutput> to <computeroutput>YAP_ARG16</computeroutput> As an example: <programlisting><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>YAP_Unify(ARG1,<sp/>t);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> unifies the first argument and the contents of <computeroutput>t</computeroutput></para>
+</listitem><listitem><para><computeroutput>cut_fail()</computeroutput> and <computeroutput>cut_succeed()</computeroutput> are now functions<itemizedlist>
+<listitem><para>The use of <computeroutput>Deref</computeroutput> is deprecated All functions that return Prolog terms, including the ones that access arguments, already dereference their arguments</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Space allocated with PRESERVE_DATA is ignored by garbage collection and stack shifting As a result, any pointers to a Prolog stack object, including some terms, may be corrupted after garbage collection or stack shifting Prolog terms should instead be stored as arguments to the backtrackable procedure</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="fli_c_xx_1YAPAsLibrary">
+<title>YAP as a Library</title>
+<para>YAP can be used as a library to be called from other programs To do so, you must first create the YAP library:</para>
+<para><programlisting><codeline><highlight class="normal">make<sp/>library</highlight></codeline>
+<codeline><highlight class="normal">make<sp/>install_library</highlight></codeline>
+</programlisting> This will install a file <computeroutput>libyap.a</computeroutput> in <emphasis>LIBDIR</emphasis> and the Prolog headers in <emphasis>INCLUDEDIR</emphasis> The library contains all the functionality available in YAP, except the foreign function loader and for <computeroutput>YAP</computeroutput>&apos;s startup routines</para>
+<para>To actually use this library you must follow a five step process:</para>
+<para><orderedlist>
+<listitem>
+</listitem>
+</orderedlist>
+must initialize the YAP environment A single function, <computeroutput>YAP_FastInit</computeroutput> asks for a contiguous chunk in your memory space, fills it in with the data-base, and sets up YAP&apos;s stacks and execution registers You can use a saved space from a standard system by calling <ref refid="classsave__program_21" kindref="compound">save_program/1</ref> <verbatim>+ You then have to prepare a query to give to
+</verbatim> YAP A query is a Prolog term, and you just have to use the same functions that are available in the C-interface <verbatim>+ You can then use `YAP_RunGoal(query)` to actually evaluate your
+</verbatim> query The argument is the query term <computeroutput>query</computeroutput>, and the result is 1 if the query succeeded, and 0 if it failed <verbatim>+ You can use the term destructor functions to check how
+</verbatim> arguments were instantiated <verbatim>+ If you want extra solutions, you can use
+</verbatim> <computeroutput>YAP_RestartGoal()</computeroutput> to obtain the next solution</para>
+<para>The next program shows how to use this system We assume the saved program contains two facts for the procedure <computeroutput>b</computeroutput>:</para>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&quot;YAP/YAPInterface.h&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;stdio.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int</highlight></codeline>
+<codeline><highlight class="normal">main(int<sp/>argc,<sp/>char<sp/>*argv[])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(YAP_FastInit(&quot;saved_state&quot;)<sp/>==<sp/>YAP_BOOT_ERROR)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(YAP_RunGoal(YAP_MkAtomTerm(YAP_LookupAtom(&quot;do&quot;))))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(&quot;Success\n&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>while<sp/>(YAP_RestartGoal())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;Success\n&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>printf(&quot;NO\n&quot;);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>The program first initializes YAP, calls the query for the first time and succeeds, and then backtracks twice The first time backtracking succeeds, the second it fails and exits</para>
+<para>To compile this program it should be sufficient to do:</para>
+<para><programlisting><codeline><highlight class="normal">cc<sp/>-o<sp/>exem<sp/>-I../YAP4.3.0<sp/>test.c<sp/>-lYAP<sp/>-lreadline<sp/>-lm</highlight></codeline>
+</programlisting></para>
+<para>You may need to adjust the libraries and library paths depending on the Operating System and your installation of YAP</para>
+<para>Note that YAP4.3.0 provides the first version of the interface The interface may change and improve in the future</para>
+<para>The following C-functions are available from YAP: <verbatim>+ YAP_CompileClause(`YAP_Term`  _Clause_)
+</verbatim> Compile the Prolog term <emphasis>Clause</emphasis> and assert it as the last clause for the corresponding procedure <verbatim>+ YAP_MkExo(`YAP_PredEntryPtr` _pred_, `size_t` _sz_, `void *` _uid_)
+</verbatim> Predicate <emphasis>pred</emphasis> is an exo-predicate that needs <emphasis>sz</emphasis> bytes of contiguous storage If <emphasis>uid</emphasis> is non-null associate user-defined code with <emphasis>pred</emphasis> <verbatim>+ YAP_AssertTuples(`YAP_PredEntryPtr` pred, `const YAP_Term *`  _Facts_,
+</verbatim> <computeroutput>size_t</computeroutput> nb) Add the array of <emphasis>nb</emphasis> Prolog term <computeroutput>Facts</computeroutput> to the table <computeroutput>Predicate</computeroutput> <verbatim>+ `int` YAP_ContinueGoal(`void`)
+</verbatim> Continue execution from the point where it stopped <verbatim>+ `void` YAP_Error(`int`  _ID_,`YAP_Term`  _Cause_,`char \*`
+</verbatim> <emphasis>error_description</emphasis>) Generate an YAP System Error with description given by the string <emphasis>error_description</emphasis> <emphasis>ID</emphasis> is the error ID, if known, or <computeroutput>0</computeroutput> <emphasis>Cause</emphasis> is the term that caused the crash <verbatim>+ `void` YAP_Exit(`int`  _exit_code_)
+</verbatim> Exit YAP immediately The argument <emphasis>exit_code</emphasis> gives the error code and is supposed to be 0 after successful execution in Unix and Unix-like systems <verbatim>+ `YAP_Term` YAP_GetValue(`Atom`  _at_)
+</verbatim> Return the term <emphasis>value</emphasis> associated with the atom <emphasis>at</emphasis> If no such term exists the function will return the empty list <verbatim>+ YAP_FastInit(`char \*`  _SavedState_)
+</verbatim> Initialize a copy of YAP from <emphasis>SavedState</emphasis> The copy is monolithic and currently must be loaded at the same address where it was saved <computeroutput>YAP_FastInit</computeroutput> is a simpler version of <computeroutput>YAP_Init</computeroutput> <verbatim>+ YAP_Init( _InitInfo_)
+</verbatim> Initialize YAP The arguments are in a <computeroutput>C</computeroutput> structure of type <computeroutput>YAP_init_args</computeroutput></para>
+<para>The fields of <emphasis>InitInfo</emphasis> are <computeroutput>char \*</computeroutput> <emphasis>SavedState</emphasis>, <computeroutput>int</computeroutput> <emphasis>HeapSize</emphasis>, <computeroutput>int</computeroutput> <emphasis>StackSize</emphasis>, <computeroutput>int</computeroutput> <emphasis>TrailSize</emphasis>, <computeroutput>int</computeroutput> <emphasis>NumberofWorkers</emphasis>, <computeroutput>int</computeroutput> <emphasis>SchedulerLoop</emphasis>, <computeroutput>int</computeroutput> <emphasis>DelayedReleaseLoad</emphasis>, <computeroutput>int</computeroutput> <emphasis>argc</emphasis>, <computeroutput>char \*\*</computeroutput> <emphasis>argv</emphasis>, <computeroutput>int</computeroutput> <emphasis>ErrorNo</emphasis>, and <computeroutput>char \*</computeroutput> <emphasis>ErrorCause</emphasis> The function returns an integer, which indicates the current status If the result is <computeroutput>YAP_BOOT_ERROR</computeroutput> booting failed</para>
+<para>If <emphasis>SavedState</emphasis> is not NULL, try to open and restore the file <emphasis>SavedState</emphasis> Initially YAP will search in the current directory If the saved state does not exist in the current directory YAP will use either the default library directory or the directory given by the environment variable YAPLIBDIR Note that currently the saved state must be loaded at the same address where it was saved</para>
+<para>If <emphasis>HeapSize</emphasis> is different from 0 use <emphasis>HeapSize</emphasis> as the minimum size of the Heap (or code space) If <emphasis>StackSize</emphasis> is different from 0 use <emphasis>HeapSize</emphasis> as the minimum size for the Stacks If <emphasis>TrailSize</emphasis> is different from 0 use <emphasis>TrailSize</emphasis> as the minimum size for the Trails</para>
+<para>The <emphasis>NumberofWorkers</emphasis>, <emphasis>NumberofWorkers</emphasis>, and <emphasis>DelayedReleaseLoad</emphasis> are only of interest to the or-parallel system</para>
+<para>The argument count <emphasis>argc</emphasis> and string of arguments <emphasis>argv</emphasis> arguments are to be passed to user programs as the arguments used to call YAP</para>
+<para>If booting failed you may consult <computeroutput>ErrorNo</computeroutput> and <computeroutput>ErrorCause</computeroutput> for the cause of the error, or call <computeroutput>YAP_Error(ErrorNo,0L,ErrorCause)</computeroutput> to do default processing <verbatim>+ `void` YAP_PutValue(`Atom`  _at_, `YAP_Term`  _value_)
+</verbatim> Associate the term <emphasis>value</emphasis> with the atom <emphasis>at</emphasis> The term <emphasis>value</emphasis> must be a constant This functionality is used by YAP as a simple way for controlling and communicating with the Prolog run-time <verbatim>+ `YAP_Term` YAP_Read(`IOSTREAM \*Stream`)
+</verbatim> Parse a <emphasis>Term</emphasis> from the stream <emphasis>Stream</emphasis> <verbatim>+ `YAP_Term` YAP_Write(`YAP_Term`  _t_)
+</verbatim> Copy a Term <emphasis>t</emphasis> and all associated constraints May call the garbage collector and returns <computeroutput>0L</computeroutput> on error (such as no space being available) <verbatim>+ `void` YAP_Write(`YAP_Term`  _t_, `IOSTREAM`  _stream_, `int`  _flags_)
+</verbatim> Write a Term <emphasis>t</emphasis> using the stream <emphasis>stream</emphasis> to output characters The term is written according to a mask of the following flags in the <computeroutput>flag</computeroutput> argument: <computeroutput>YAP_WRITE_QUOTED</computeroutput>, <computeroutput>YAP_WRITE_HANDLE_VARS</computeroutput>, <computeroutput>YAP_WRITE_USE_PORTRAY</computeroutput>, and <computeroutput>YAP_WRITE_IGNORE_OPS</computeroutput></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>int</computeroutput> YAP_WriteBuffer(<computeroutput>YAP_Term</computeroutput> <emphasis>t</emphasis>, <computeroutput>char \*</computeroutput> <emphasis>buff</emphasis>, <computeroutput>size_t</computeroutput> <emphasis>size</emphasis>, <computeroutput>int</computeroutput> <emphasis>flags</emphasis>) Write a YAP_Term <emphasis>t</emphasis> to buffer <emphasis>buff</emphasis> with size <emphasis>size</emphasis> The term is written according to a mask of the following flags in the <computeroutput>flag</computeroutput> argument: <computeroutput>YAP_WRITE_QUOTED</computeroutput>, <computeroutput>YAP_WRITE_HANDLE_VARS</computeroutput>, <computeroutput>YAP_WRITE_USE_PORTRAY</computeroutput>, and <computeroutput>YAP_WRITE_IGNORE_OPS</computeroutput> The function will fail if it does not have enough space in the buffer</para>
+</listitem><listitem><para><computeroutput>char \*</computeroutput> YAP_WriteDynamicBuffer(<computeroutput>YAP_Term</computeroutput> <emphasis>t</emphasis>, <computeroutput>char \*</computeroutput> <emphasis>buff</emphasis>, <computeroutput>size_t</computeroutput> <emphasis>size</emphasis>, <computeroutput>size_t</computeroutput> _*lengthp_, <computeroutput>size_t</computeroutput> _*encodingp_, <computeroutput>int</computeroutput> <emphasis>flags</emphasis>) Write a YAP_Term <emphasis>t</emphasis> to buffer <emphasis>buff</emphasis> with size <emphasis>size</emphasis> The code will allocate an extra buffer if <emphasis>buff</emphasis> is <computeroutput>NULL</computeroutput> or if <computeroutput>buffer</computeroutput> does not have enough room The variable <computeroutput>lengthp</computeroutput> is assigned the size of the resulting buffer, and <computeroutput>encodingp</computeroutput> will receive the type of encoding (currently only <computeroutput>PL_ENC_ISO_LATIN_1</computeroutput> and <computeroutput>PL_ENC_WCHAR</computeroutput> are supported)</para>
+</listitem><listitem><para><computeroutput>void</computeroutput> YAP_InitConsult(<computeroutput>int</computeroutput> <emphasis>mode</emphasis>, <computeroutput>char \*</computeroutput> <emphasis>filename</emphasis>) Enter consult mode on file <emphasis>filename</emphasis> This mode maintains a few data-structures internally, for instance to know whether a predicate before or not It is still possible to execute goals in consult mode</para>
+<para>If <emphasis>mode</emphasis> is <computeroutput>TRUE</computeroutput> the file will be reconsulted, otherwise just consulted In practice, this function is most useful for bootstrapping Prolog, as otherwise one may call the Prolog predicate <ref refid="classcompile_21" kindref="compound">compile/1</ref> or <ref refid="classconsult_21" kindref="compound">consult/1</ref> to do compilation</para>
+<para>Note that it is up to the user to open the file <emphasis>filename</emphasis> The <computeroutput>YAP_InitConsult</computeroutput> function only uses the file name for internal bookkeeping</para>
+</listitem><listitem><para><computeroutput>void</computeroutput> YAP_EndConsult(<computeroutput>void</computeroutput>)</para>
+<para>Finish consult mode</para>
+</listitem></itemizedlist>
+</para>
+<para>Some observations:</para>
+<para><itemizedlist>
+<listitem><para>The system will core dump if you try to load the saved state in a different address from where it was made This may be a problem if your program uses <computeroutput>mmap</computeroutput> This problem will be addressed in future versions of YAP</para>
+</listitem><listitem><para>Currently, the YAP library will pollute the name space for your program</para>
+</listitem><listitem><para>The initial library includes the complete YAP system In the future we plan to split this library into several smaller libraries (e.g if you do not want to perform Input/Output)</para>
+</listitem><listitem><para>You can generate your own saved states Look at the <computeroutput><ref refid="boot_8yap" kindref="compound">boot.yap</ref></computeroutput> and <computeroutput><ref refid="init_8yap_source" kindref="compound">init.yap</ref></computeroutput> files</para>
+</listitem></itemizedlist>
+</para>
+<para><blockquote><para><zwj/> </para>
+</blockquote></para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/fli_c_xx.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__arithmetic__operators" kind="group">
+    <compoundname>arithmetic_operators</compoundname>
+    <title>Arithmetic Functions</title>
+    <briefdescription>
+<para>YAP implements several arithmetic functions, they are defined as fields in three enumerations, such that there is one enumeration per each different arity: <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These are the binary numeric operators currently supported by YAP.</para>
+<para><itemizedlist>
+<listitem><para><ref refid="group__Arithmetic_1gabd82341cb7fc61c1880963eb8b1da8cb" kindref="member">arith0_op</ref> defines constants and arity 0 arithmetic functions</para>
+<para>constant operators  </para>
+<para>specifies the available arithmetic`constants"  </para>
+</listitem><listitem><para><ref refid="group__Arithmetic_1ga972b649372335cfb9b37a6fae8e37682" kindref="member">arith1_op</ref> defines single argument arithmetic functions</para>
+<para>unary operators  </para>
+<para>specifies the available unary arithmetic operators  </para>
+</listitem><listitem><para><ref refid="group__Arithmetic_1gaf67611509d3222bba68ab8c1ebab22ad" kindref="member">arith2_op</ref> defines binary arithmetic functions</para>
+<para>binary operators  </para>
+<para>specifies the available binary arithmetic operators  </para>
+</listitem></itemizedlist>
+</para>
+<para>Arithmetic expressions in YAP may use the following operators:</para>
+<para><itemizedlist>
+<listitem><para><bold>pi [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1pi_0"/> An approximation to the value of <emphasis>pi</emphasis>, that is, the ratio of a circle&apos;s circumference to its diameter</para>
+<para><itemizedlist>
+<listitem><para><bold>e</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1e_0"/> Euler&apos;s number, the base of the natural logarithms</para>
+<para><itemizedlist>
+<listitem><para><bold>epsilon</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1epsilon_0"/> The difference between the float <computeroutput>1.0</computeroutput> and the next largest floating point number</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>inf</computeroutput><anchor id="group__arithmetic__operators_1inf_0"/> Infinity according to the IEEE Floating-Point standard Note that evaluating this term will generate a domain error in the <computeroutput>iso</computeroutput> language mode</para>
+</listitem></itemizedlist>
+</para>
+<para>Note also that YAP supports <computeroutput>+inf</computeroutput> and <computeroutput>-inf</computeroutput></para>
+<para><itemizedlist>
+<listitem><para><bold>nan (not a number)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1nan_0"/> Not-a-number according to the IEEE Floating-Point standard Note that evaluating this term will generate a domain error in the <computeroutput>iso</computeroutput> language mode</para>
+<para><itemizedlist>
+<listitem><para><bold>random</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1random_0"/> A &quot;random&quot; floating point number between 0 and 1</para>
+<para><itemizedlist>
+<listitem><para><bold>cputime</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1cputime_0"/> CPU time since YAP was invoked, in seconds</para>
+<para><itemizedlist>
+<listitem><para><bold>heapused</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1heapused_0"/> Heap (data-base) space used, in bytes</para>
+<para><itemizedlist>
+<listitem><para><bold>local</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1local_0"/> Local stack in use, in bytes</para>
+<para><itemizedlist>
+<listitem><para><bold>$b</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1b_0"/> current choicepoint</para>
+<para><itemizedlist>
+<listitem><para><bold>$env</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1env_0"/> Environment</para>
+<para><itemizedlist>
+<listitem><para><bold>$tr</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1tr_0"/> Trail in use</para>
+<para><itemizedlist>
+<listitem><para><bold>$free_stack</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1free_stack_0"/> Amount of free stack space, that is, free space between global and local stacks</para>
+<para><itemizedlist>
+<listitem><para><bold>global</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1global_0"/> Global stack in use, in bytes</para>
+<para><itemizedlist>
+<listitem><para><bold>exp( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1exp_1"/> Natural exponential</para>
+<para><itemizedlist>
+<listitem><para><bold>log( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1log_1"/> Natural logarithm</para>
+<para><itemizedlist>
+<listitem><para><bold>log10( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1log10_1"/> Decimal logarithm</para>
+<para><itemizedlist>
+<listitem><para><bold>sqrt( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1sqrt_1"/> Square root</para>
+<para><itemizedlist>
+<listitem><para><bold>sin( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1sin_1"/> Sine</para>
+<para><itemizedlist>
+<listitem><para><bold>cos( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1cos_1"/> Cosine</para>
+<para><itemizedlist>
+<listitem><para><bold>tan( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1tan_1"/> Tangent</para>
+<para><itemizedlist>
+<listitem><para><bold>asin( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1asin_1"/> Arc sine</para>
+<para><itemizedlist>
+<listitem><para><bold>acos( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1acos_1"/> Arc cosine</para>
+<para><itemizedlist>
+<listitem><para><bold>atan( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1atan_1"/> Arc tangent</para>
+<para><itemizedlist>
+<listitem><para><bold>sinh( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1sinh_1"/> Hyperbolic sine</para>
+<para><itemizedlist>
+<listitem><para><bold>cosh( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1cosh_1"/> Hyperbolic cosine</para>
+<para><itemizedlist>
+<listitem><para><bold>tanh( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1tanh_1"/> Hyperbolic tangent</para>
+<para><itemizedlist>
+<listitem><para><bold>asinh( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1asinh_1"/> Hyperbolic arc sine</para>
+<para><itemizedlist>
+<listitem><para><bold>acosh( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1acosh_1"/> Hyperbolic arc cosine</para>
+<para><itemizedlist>
+<listitem><para><bold>atanh( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1atanh_1"/> Hyperbolic arc tangent</para>
+<para><itemizedlist>
+<listitem><para><bold>lgamma( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1lgamma_1"/> Logarithm of gamma function</para>
+<para><itemizedlist>
+<listitem><para><bold>erf( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1erf_1"/> Gaussian error function</para>
+<para><itemizedlist>
+<listitem><para><bold>erfc( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1erfc_1"/> Complementary gaussian error function</para>
+<para><itemizedlist>
+<listitem><para><bold>random( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1random_1_op"/> An integer random number between 0 and <emphasis>X</emphasis></para>
+<para>In <computeroutput>iso</computeroutput> language mode the argument must be a floating point-number, the result is an integer and it the float is equidistant it is rounded up, that is, to the least integer greater than <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>integer( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1integer_1_op"/> If <emphasis>X</emphasis> evaluates to a float, the integer between the value of <emphasis>X</emphasis> and 0 closest to the value of <emphasis>X</emphasis>, else if <emphasis>X</emphasis> evaluates to an integer, the value of <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>float( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1float_1_op"/> If <emphasis>X</emphasis> evaluates to an integer, the corresponding float, else the float itself</para>
+<para><itemizedlist>
+<listitem><para><bold>float_fractional_part( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1float_fractional_part_1"/> The fractional part of the floating point number <emphasis>X</emphasis>, or <computeroutput>0.0</computeroutput> if <emphasis>X</emphasis> is an integer In the <computeroutput>iso</computeroutput> language mode, <emphasis>X</emphasis> must be an integer</para>
+<para><itemizedlist>
+<listitem><para><bold>float_integer_part( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1float_integer_part_1"/> The float giving the integer part of the floating point number <emphasis>X</emphasis>, or <emphasis>X</emphasis> if <emphasis>X</emphasis> is an integer In the <computeroutput>iso</computeroutput> language mode, <emphasis>X</emphasis> must be an integer</para>
+<para><itemizedlist>
+<listitem><para><bold>abs( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1abs_1"/> The absolute value of <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>ceiling( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1ceiling_1"/> The integer that is the smallest integral value not smaller than <emphasis>X</emphasis></para>
+<para>In <computeroutput>iso</computeroutput> language mode the argument must be a floating point-number and the result is an integer</para>
+<para><itemizedlist>
+<listitem><para><bold>floor( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1floor_1"/> The integer that is the greatest integral value not greater than <emphasis>X</emphasis></para>
+<para>In <computeroutput>iso</computeroutput> language mode the argument must be a floating point-number and the result is an integer</para>
+<para><itemizedlist>
+<listitem><para><bold>round( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1round_1"/> The nearest integral value to <emphasis>X</emphasis> If <emphasis>X</emphasis> is equidistant to two integers, it will be rounded to the closest even integral value</para>
+<para>In <computeroutput>iso</computeroutput> language mode the argument must be a floating point-number, the result is an integer and it the float is equidistant it is rounded up, that is, to the least integer greater than <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>sign( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1sign_1"/> Return 1 if the <emphasis>X</emphasis> evaluates to a positive integer, 0 it if evaluates to 0, and -1 if it evaluates to a negative integer If <emphasis>X</emphasis> evaluates to a floating-point number return 1.0 for a positive <emphasis>X</emphasis>, 0.0 for 0.0, and -1.0 otherwise</para>
+<para><itemizedlist>
+<listitem><para><bold>truncate( <emphasis>X</emphasis>) [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1truncate_1"/> The integral value between <emphasis>X</emphasis> and 0 closest to <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>rational( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1rational_1_op"/> Convert the expression <emphasis>X</emphasis> to a rational number or integer The function returns the input on integers and rational numbers For floating point numbers, the returned rational number exactly represents the float As floats cannot exactly represent all decimal numbers the results may be surprising In the examples below, doubles can represent <computeroutput>0.25</computeroutput> and the result is as expected, in contrast to the result of <computeroutput>rational(0.1)</computeroutput> The function <computeroutput>rationalize/1 </computeroutput> gives a more intuitive result</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">rational(</highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">25</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">rdiv</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">4</highlight></codeline>
+<codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">rational(</highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">3602879701896397</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">rdiv</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">36028797018963968</highlight></codeline>
+</programlisting><itemizedlist>
+<listitem><para><bold>rationalize( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1rationalize_1"/> Convert the expression <emphasis>X</emphasis> to a rational number or integer The function is vvxu similar to rational/1, but the result is only accurate within the rounding error of floating point numbers, generally producing a much smaller denominator</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">rationalize(</highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">25</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">rdiv</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">4</highlight></codeline>
+<codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">rationalize(</highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">A</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">rdiv</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">10</highlight></codeline>
+</programlisting><itemizedlist>
+<listitem><para><bold>\ <emphasis>X</emphasis> [ISO]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para>Integer bitwise negation</para>
+<para><itemizedlist>
+<listitem><para><bold>msb( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1msb_1"/> The most significant bit of the non-negative integer <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>lsb( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1lsb_1"/> The least significant bit of the non-negative integer <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>popcount( <emphasis>X</emphasis>)</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><anchor id="group__arithmetic__operators_1popcount_1"/> The number of bits set to <computeroutput>1</computeroutput> in the binary representation of the non-negative integer <emphasis>X</emphasis></para>
+<para><itemizedlist>
+<listitem><para><bold>[ <emphasis>X</emphasis>]</bold></para>
+</listitem></itemizedlist>
+</para>
+<para>Evaluates to <emphasis>X</emphasis> for expression <emphasis>X</emphasis> Useful because character strings in Prolog are lists of character codes</para>
+<para><programlisting><codeline><highlight class="normal">X<sp/>is<sp/>Y*10+C-</highlight><highlight class="stringliteral">&quot;0&quot;</highlight></codeline>
+</programlisting></para>
+<para>is the same as</para>
+<para><programlisting><codeline><highlight class="normal">X<sp/>is<sp/>Y*10+C-[48].</highlight></codeline>
+</programlisting></para>
+<para>which would be evaluated as:</para>
+<para><programlisting><codeline><highlight class="normal">X<sp/>is<sp/>Y*10+C-48.</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>*_X_+ <emphasis>Y</emphasis> [ISO]*</para>
+</listitem></itemizedlist>
+</para>
+<para>Addition, implemented between any two types of numbers</para>
+<para><itemizedlist>
+<listitem><para>*_X_- <emphasis>Y</emphasis> [ISO]*</para>
+</listitem></itemizedlist>
+</para>
+<para>Addition, implemented between any two types of numbers</para>
+<para><itemizedlist>
+<listitem><para>*_X_* <emphasis>Y</emphasis> [ISO]*</para>
+</listitem></itemizedlist>
+</para>
+<para>Product</para>
+<para><itemizedlist>
+<listitem><para>*_X_/ <emphasis>Y</emphasis> [ISO]*</para>
+</listitem></itemizedlist>
+</para>
+<para>Quotient</para>
+<para>The result of <emphasis>Y</emphasis>/0.0 may return the value <computeroutput>inf</computeroutput>, or it may generate an exception, depending on the value of the Prolog flag <computeroutput>arithmetic_exceptions</computeroutput></para>
+<para>The next example shows zero division handling If the flag is enabled:</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>X<sp/>is<sp/>2/0.</highlight></codeline>
+<codeline><highlight class="normal">ERROR!!</highlight></codeline>
+<codeline><highlight class="normal">ZERO<sp/>DIVISOR<sp/>ERROR-<sp/>X<sp/>is<sp/>Exp</highlight></codeline>
+</programlisting></para>
+<para>If disabled: <programlisting><codeline><highlight class="normal">?-<sp/>X<sp/>is<sp/>2/0.</highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>(+inf).</highlight></codeline>
+</programlisting> It is <computeroutput>true</computeroutput> by default, but it is disabled by packages like CLP(BN) and</para>
+<para>By default the flag is set to <computeroutput>false</computeroutput></para>
+<para><itemizedlist>
+<listitem><para>*_X_// <emphasis>Y</emphasis> [ISO]*</para>
+<para>Integer quotient</para>
+</listitem><listitem><para>*_X_ mod <emphasis>Y</emphasis> [ISO]*<anchor id="group__arithmetic__operators_1mod_2"/> Integer module operator, always positive</para>
+</listitem><listitem><para>*_X_ rem <emphasis>Y</emphasis> [ISO]*<anchor id="group__arithmetic__operators_1rem_2"/> Integer remainder, similar to <computeroutput>mod</computeroutput> but always has the same sign as <computeroutput>X</computeroutput></para>
+</listitem><listitem><para>* <emphasis>X</emphasis> div <emphasis>Y</emphasis> [ISO]*<anchor id="group__arithmetic__operators_1div_2"/> Integer division, as if defined by <computeroutput>( _X_ - _X_ mod _Y_)// _Y_</computeroutput></para>
+</listitem><listitem><para><emphasis>max( <emphasis>X</emphasis>, <emphasis>Y</emphasis>) [ISO]</emphasis><anchor id="group__arithmetic__operators_1max_2"/> The greater value of <emphasis>X</emphasis> and <emphasis>Y</emphasis></para>
+</listitem><listitem><para><emphasis>min( <emphasis>X</emphasis>, <emphasis>Y</emphasis>) [ISO]</emphasis><anchor id="group__arithmetic__operators_1min_2"/> The lesser value of <emphasis>X</emphasis> and <emphasis>Y</emphasis></para>
+</listitem><listitem><para>*_X_ ^ <emphasis>Y</emphasis> [ISO]*</para>
+<para><emphasis>X</emphasis> raised to the power of <emphasis>Y</emphasis>, (from the C-Prolog syntax)</para>
+</listitem><listitem><para><emphasis>exp( <emphasis>X</emphasis>, <emphasis>Y</emphasis>)</emphasis><anchor id="group__arithmetic__operators_1exp_2"/> <emphasis>X</emphasis> raised to the power of <emphasis>Y</emphasis>, (from the Quintus Prolog syntax)</para>
+</listitem><listitem><para>*_X_ ** <emphasis>Y</emphasis> [ISO]*</para>
+<para><emphasis>X</emphasis> raised to the power of <emphasis>Y</emphasis> (from ISO)</para>
+</listitem><listitem><para>*_X_ /\ <emphasis>Y</emphasis> [ISO]*</para>
+<para>Integer bitwise conjunction</para>
+</listitem><listitem><para>*_X_ \/ <emphasis>Y</emphasis> [ISO]*</para>
+<para>Integer bitwise disjunction</para>
+</listitem><listitem><para>*_X_ # <emphasis>Y</emphasis>*</para>
+<para>Integer bitwise exclusive disjunction</para>
+</listitem><listitem><para>*_X_ &gt;&lt; <emphasis>Y</emphasis>*</para>
+<para>Integer bitwise exclusive disjunction</para>
+</listitem><listitem><para><emphasis>xor( <emphasis>X</emphasis> , <emphasis>Y</emphasis>) [ISO]</emphasis><anchor id="group__arithmetic__operators_1xor_2"/> Integer bitwise exclusive disjunction</para>
+</listitem><listitem><para>*_X_ &lt;&lt; <emphasis>Y</emphasis>*</para>
+<para>Integer bitwise left logical shift of <emphasis>X</emphasis> by <emphasis>Y</emphasis> places</para>
+</listitem><listitem><para>*_X_ &gt; <emphasis>Y</emphasis> [ISO]*</para>
+<para>Integer bitwise right logical shift of <emphasis>X</emphasis> by <emphasis>Y</emphasis> places</para>
+</listitem><listitem><para><emphasis>gcd( <emphasis>X</emphasis>, <emphasis>Y</emphasis>)</emphasis><anchor id="group__arithmetic__operators_1gcd_2"/> The greatest common divisor of the two integers <emphasis>X</emphasis> and <emphasis>Y</emphasis></para>
+</listitem><listitem><para><emphasis>atan( <emphasis>X</emphasis>, <emphasis>Y</emphasis>)</emphasis><anchor id="group__arithmetic__operators_1atan_2"/> Four-quadrant arc tangent Also available as <computeroutput>atan2/2 </computeroutput></para>
+</listitem><listitem><para><emphasis>atan2( <emphasis>X</emphasis>, <emphasis>Y</emphasis>) [ISO]</emphasis><anchor id="group__arithmetic__operators_1atan2_2"/> Four-quadrant arc tangent</para>
+</listitem><listitem><para>* <emphasis>X</emphasis> rdiv <emphasis>Y</emphasis> [ISO]*<anchor id="group__arithmetic__operators_1rdiv_2"/> Rational division </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

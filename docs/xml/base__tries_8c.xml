@@ -1,0 +1,931 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="base__tries_8c" kind="file" language="C++">
+    <compoundname>base_tries.c</compoundname>
+    <includes refid="YapInterface_8h" local="no">YapInterface.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="core__tries_8h" local="yes">core_tries.h</includes>
+    <includes refid="base__tries_8h" local="yes">base_tries.h</includes>
+    <includes refid="base__dbtries_8c" local="yes">base_dbtries.c</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="17">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="4">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="16">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="18">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="2">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>base_dbtries.c</label>
+        <link refid="base__dbtries_8c_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>base_dbtries.h</label>
+        <link refid="base__dbtries_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/tries/base_tries.c</label>
+        <link refid="base__tries_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>base_tries.h</label>
+        <link refid="base__tries_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>core_dbtries.h</label>
+        <link refid="core__dbtries_8h_source"/>
+      </node>
+      <node id="20">
+        <label>core_tries.h</label>
+        <link refid="core__tries_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="8">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="9">
+        <label>config.h</label>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="base__tries_8c_1a9cda689d2b46c036f84d1dab79801e28" prot="public" static="yes" mutable="no">
+        <type><ref refid="structtrie__engine" kindref="compound">TrEngine</ref></type>
+        <definition>TrEngine TRIE_ENGINE</definition>
+        <argsstring></argsstring>
+        <name>TRIE_ENGINE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="32" column="17" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="base__tries_8c_1a905c31616182395dab3831e642ea8f44" prot="public" static="yes" mutable="no">
+        <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+        <definition>TrEntry FIRST_TRIE</definition>
+        <argsstring></argsstring>
+        <name>FIRST_TRIE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="33" column="16" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="base__tries_8c_1a7aad267ca0753a1bd269a1def23151ca" prot="public" static="yes" mutable="no">
+        <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+        <definition>TrEntry CURRENT_TRIE</definition>
+        <argsstring></argsstring>
+        <name>CURRENT_TRIE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="33" column="27" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="base__tries_8c_1a541f793ac3c6d9400d339bd2d5e53220" prot="public" static="yes" mutable="no">
+        <type>YAP_Int</type>
+        <definition>YAP_Int CURRENT_TRAVERSE_MODE</definition>
+        <argsstring></argsstring>
+        <name>CURRENT_TRAVERSE_MODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="35" column="16" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="base__tries_8c_1a8791f99f7f43c3dcd0b3d13d46d90b4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>static TrData get_data_from_trie_node</definition>
+        <argsstring>(TrNode node)</argsstring>
+        <name>get_data_from_trie_node</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="419" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="419" bodyend="423" declfile="/home/vsc/github/yap/library/tries/base_tries.c" declline="25" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1aed0e4f16be32c8f2113e76c9ab3ff53e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_init_module</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_init_module</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="42" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a1364d2f02f8de47b9211cc4bd72e3788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_data_load</definition>
+        <argsstring>(TrNode node, YAP_Int depth, FILE *file)</argsstring>
+        <name>trie_data_load</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="51" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="51" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1ac244cb8754e1207f7fa252217208659d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_data_copy</definition>
+        <argsstring>(TrNode node_dest, TrNode node_source)</argsstring>
+        <name>trie_data_copy</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node_dest</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="61" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a7946fdeb1723dcf21ca1398ea6ab09f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_data_destruct</definition>
+        <argsstring>(TrNode node)</argsstring>
+        <name>trie_data_destruct</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="71" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="71" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a4532bb8cf7061c69e37e68082b86d5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+        <definition>TrEntry trie_open</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_open</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="107" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="107" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1aa3d240e24065fb327f3ee23299976e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_close</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>trie_close</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="121" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="121" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1af42168c42d53207e59b12cff414085b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_close_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_close_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="134" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="134" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a3755e6a41ecff1b2380249a694544ab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_set_mode</definition>
+        <argsstring>(YAP_Int mode)</argsstring>
+        <name>trie_set_mode</name>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="148" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a03811f2203a32fc95eecb03fba86b7b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int trie_get_mode</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_get_mode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="155" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a24933ff94ac3715b519fe1da78ce7c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_put_entry</definition>
+        <argsstring>(TrEntry trie, YAP_Term entry)</argsstring>
+        <name>trie_put_entry</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>entry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="161" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="161" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a346ae9ed3729ebdedd326b48bf6b81df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_check_entry</definition>
+        <argsstring>(TrEntry trie, YAP_Term entry)</argsstring>
+        <name>trie_check_entry</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>entry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="175" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="175" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a63c0013775f63ea7032c3d2793d208b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>YAP_Term trie_get_entry</definition>
+        <argsstring>(TrData data)</argsstring>
+        <name>trie_get_entry</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="185" column="10" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a36fec40a8d66ecbb5ecd5e58577a451d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_get_first_entry</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>trie_get_first_entry</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="191" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="191" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a2aeff6b8d8dcfdc9d83ab4f1a1043c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_get_last_entry</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>trie_get_last_entry</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="200" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="200" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1aafa08b24dd667c1f4f8a78504919c629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_traverse_init</definition>
+        <argsstring>(TrEntry trie, TrData init_data)</argsstring>
+        <name>trie_traverse_init</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>init_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="211" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="211" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a0b13e02743ac4acf9a88d5737a53bf0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_traverse_cont</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>trie_traverse_cont</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="228" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="228" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a0e1b63ba667c8a7ed9acf933cb22dd99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_remove_entry</definition>
+        <argsstring>(TrData data)</argsstring>
+        <name>trie_remove_entry</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="258" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1adde581d7088865738badcd21d9b76549" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_remove_subtree</definition>
+        <argsstring>(TrData data)</argsstring>
+        <name>trie_remove_subtree</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="265" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a0704650198b8bd24af101de5f42adf4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_join</definition>
+        <argsstring>(TrEntry trie_dest, TrEntry trie_source)</argsstring>
+        <name>trie_join</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie_dest</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="272" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="272" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a3773cd6126619ee5c61ca021567548ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_intersect</definition>
+        <argsstring>(TrEntry trie_dest, TrEntry trie_source)</argsstring>
+        <name>trie_intersect</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie_dest</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="280" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a218d27c4c75e3a9b61d9a9600705084c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int trie_count_join</definition>
+        <argsstring>(TrEntry trie1, TrEntry trie2)</argsstring>
+        <name>trie_count_join</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie1</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="287" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="287" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a8231deeba64ffdf2a640e06974783a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int trie_count_intersect</definition>
+        <argsstring>(TrEntry trie1, TrEntry trie2)</argsstring>
+        <name>trie_count_intersect</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie1</declname>
+        </param>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="293" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="293" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a65cf0c1756b0039d50155078d8710607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_save</definition>
+        <argsstring>(TrEntry trie, FILE *file)</argsstring>
+        <name>trie_save</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="299" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="299" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a28ab60c3567d3d1ef6fdc30d0cac3538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+        <definition>TrEntry trie_load</definition>
+        <argsstring>(FILE *file)</argsstring>
+        <name>trie_load</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="306" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="306" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a97dbf2287f63119f3c1d492d5e8916f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_stats</definition>
+        <argsstring>(YAP_Int *memory, YAP_Int *tries, YAP_Int *entries, YAP_Int *nodes)</argsstring>
+        <name>trie_stats</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>memory</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>tries</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>entries</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="325" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="325" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a292670532cf601f6657f3cfe42a1219e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_max_stats</definition>
+        <argsstring>(YAP_Int *memory, YAP_Int *tries, YAP_Int *entries, YAP_Int *nodes)</argsstring>
+        <name>trie_max_stats</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>memory</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>tries</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>entries</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="332" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="332" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a60f1e88fc7fc4affdd131db1b0a1f709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_usage</definition>
+        <argsstring>(TrEntry trie, YAP_Int *entries, YAP_Int *nodes, YAP_Int *virtual_nodes)</argsstring>
+        <name>trie_usage</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>entries</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nodes</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>virtual_nodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="338" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a0ba5426c459483aeb33072aea05100f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_print</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>trie_print</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="345" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="345" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1aa8572cd9c60a953d903b44653af57a4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_data_construct</definition>
+        <argsstring>(TrNode node)</argsstring>
+        <name>trie_data_construct</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="352" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="352" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1aa21caf25b614a3ff03c2566124ff4a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_set_traverse_mode</definition>
+        <argsstring>(YAP_Int mode)</argsstring>
+        <name>trie_set_traverse_mode</name>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="361" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="361" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1af206c1597fe26967c195cc8a235b7656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int trie_get_traverse_mode</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_get_traverse_mode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="368" column="9" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="368" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a94db7144db3030454d3a2907a137ddfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_traverse_first</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>trie_traverse_first</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="374" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="374" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1aeefaad57d164fede550ffa771651ebe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+        <definition>TrData trie_traverse_next</definition>
+        <argsstring>(TrData cur)</argsstring>
+        <name>trie_traverse_next</name>
+        <param>
+          <type><ref refid="structitrie__data" kindref="compound">TrData</ref></type>
+          <declname>cur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="385" column="8" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="385" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a85218e7f9d2efce1de1afb70afa9336f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_disable_hash_table</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_disable_hash_table</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="401" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="401" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a914560af59df77bab22045434ae199ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trie_enable_hash_table</definition>
+        <argsstring>(void)</argsstring>
+        <name>trie_enable_hash_table</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="408" column="6" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="408" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="base__tries_8c_1a66fa3c2f9e7214de08d54cc8765b6946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>YAP_Term trie_to_list</definition>
+        <argsstring>(TrEntry trie)</argsstring>
+        <name>trie_to_list</name>
+        <param>
+          <type><ref refid="structitrie__entry" kindref="compound">TrEntry</ref></type>
+          <declname>trie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/base_tries.c" line="427" column="10" bodyfile="/home/vsc/github/yap/library/tries/base_tries.c" bodystart="427" bodyend="429"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/tries/base_tries.c"/>
+  </compounddef>
+</doxygen>

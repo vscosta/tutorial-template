@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__BlobsImplementation" kind="group">
+    <compoundname>BlobsImplementation</compoundname>
+    <title>Implementation of Blobs</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__BlobsImplementation_1gaabaf806bbe05a23f636e1ce8724ea792" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref></type>
+        <definition>blob_type_t unregistered_blob_atom</definition>
+        <argsstring></argsstring>
+        <name>unregistered_blob_atom</name>
+        <initializer>= {
+    YAP_BLOB_MAGIC_B, PL_BLOB_NOCOPY | PL_BLOB_TEXT, &quot;unregistered&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="29" column="20" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__BlobsImplementation_1ga13e1c949a56067d6c343ec27c83d710a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_blob_to_string</definition>
+        <argsstring>(AtomEntry *ref, const char *s0, size_t sz)</argsstring>
+        <name>Yap_blob_to_string</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="32" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="32" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga060a54177f0acebeeacdaa824a5094f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_write_blob</definition>
+        <argsstring>(AtomEntry *ref, FILE *stream)</argsstring>
+        <name>Yap_write_blob</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="76" column="5" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="76" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga577a85a51b761bc0a7bcc25a654775ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool YAP_is_blob</definition>
+        <argsstring>(Term t, blob_type_t **type)</argsstring>
+        <name>YAP_is_blob</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref> **</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="94" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="94" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga43bac509e88e532ad1ff0ae80bb12fc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+        <definition>AtomEntry * Yap_lookupBlob</definition>
+        <argsstring>(void *blob, size_t len, void *type0, int *new)</argsstring>
+        <name>Yap_lookupBlob</name>
+        <param>
+          <type>void *</type>
+          <declname>blob</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>type0</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="124" column="11" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="124" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga6ba61a6b495ab1ab2cb532a638b67b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool YAP_unify_blob</definition>
+        <argsstring>(Term *t, void *blob, size_t len, blob_type_t *type)</argsstring>
+        <name>YAP_unify_blob</name>
+        <param>
+          <type>Term *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>blob</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="175" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="175" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga2504f85fc544ce2e0af4f8c6a737a197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool YAP_get_blob</definition>
+        <argsstring>(Term t, void **blob, size_t *len, blob_type_t **type)</argsstring>
+        <name>YAP_get_blob</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>blob</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref> **</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="191" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="191" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga1235d2ac5825076405c5de07247dc6fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * YAP_blob_data</definition>
+        <argsstring>(YAP_Atom at, size_t *len, blob_type_t **type)</argsstring>
+        <name>YAP_blob_data</name>
+        <param>
+          <type>YAP_Atom</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref> **</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="215" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="215" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga282a1849f75bfe06856d336da939fab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAP_register_blob_type</definition>
+        <argsstring>(blob_type_t *type)</argsstring>
+        <name>YAP_register_blob_type</name>
+        <param>
+          <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="232" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga168566d9017ade0f1cf9b99bcc3e8f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref> *</type>
+        <definition>blob_type_t * YAP_find_blob_type</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>YAP_find_blob_type</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="237" column="13" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="237" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga017572d31f075a19d5fe2742a6df19bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool YAP_unregister_blob_type</definition>
+        <argsstring>(blob_type_t *type)</argsstring>
+        <name>YAP_unregister_blob_type</name>
+        <param>
+          <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref> *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="245" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BlobsImplementation_1ga8e9ed06b7e91e952b96c4c9552f43226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_install_blobs</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_install_blobs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="250" column="6" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="250" bodyend="250"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__BlobsImplementation_1ga62d5212b9bb844cfb4ee1bc382dfd7f7" prot="public" static="no">
+        <name>_WITH_DPRINTF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/blobs.c" line="25" column="9" bodyfile="/home/vsc/github/yap/C/blobs.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

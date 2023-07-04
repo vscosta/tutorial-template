@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Undefined__Procedures" kind="group">
+    <compoundname>Undefined_Procedures</compoundname>
+    <title>Handling Undefined Procedures</title>
+    <innerclass refid="classunknown__predicate__handler_23" prot="public">unknown_predicate_handler/3</innerclass>
+    <innerclass refid="classunknown_22" prot="public">unknown/2</innerclass>
+    <briefdescription>
+<para><itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+    </briefdescription>
+    <detaileddescription>
+<para>A predicate in a module is said to be undefined if there are no clauses defining the predicate, and if the predicate has not been declared to be dynamic What YAP does when trying to execute undefined predicates can be specified in three different ways:</para>
+<para><itemizedlist>
+<listitem><para>By setting an YAP flag, through the <ref refid="classyap__flag_22" kindref="compound">yap_flag/2</ref> or <ref refid="classset__prolog__flag_22" kindref="compound">set_prolog_flag/2</ref> built-ins This solution generalizes the ISO standard by allowing module-specific behavior</para>
+</listitem><listitem><para>By using the <ref refid="classunknown_22" kindref="compound">unknown/2</ref> built-in (this deprecated solution is compatible with previous releases of YAP)</para>
+</listitem><listitem><para>By defining clauses for the hook predicate <computeroutput>user:unknown_predicate_handler/3 </computeroutput> This solution is compatible with SICStus Prolog</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

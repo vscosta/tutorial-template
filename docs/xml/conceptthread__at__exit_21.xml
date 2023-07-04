@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptthread__at__exit_21" kind="concept">
+    <compoundname>thread_at_exit/1</compoundname>
+    <initializer>template&lt;&gt;
+concept thread_at_exit/1 =     </initializer>
+    <briefdescription>
+<para><bold>thread_at_exit</bold>(: <emphasis>Term</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Run <emphasis>Goal</emphasis> just before releasing the thread resources This is to be compared to <computeroutput>at_halt/1 </computeroutput>, but only for the current thread These hooks are ran regardless of why the execution of the thread has been completed As these hooks are run, the return-code is already available through <ref refid="classthread__property_22" kindref="compound">thread_property/2</ref> using the result of <ref refid="classthread__self_21" kindref="compound">thread_self/1</ref> as thread-identifier If you want to guarantee the execution of an exit hook no matter how the thread terminates (the thread can be aborted before reaching the <ref refid="classthread__at__exit_21" kindref="compound">thread_at_exit/1</ref> call), consider using instead the <computeroutput>at_exit/1 </computeroutput> option of <ref refid="classthread__create_23" kindref="compound">thread_create/3</ref> </para>
+    </detaileddescription>
+    <location file="pl/threads.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

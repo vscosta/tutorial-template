@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__sockets" kind="group">
+    <compoundname>sockets</compoundname>
+    <title>SICStus compatible socket library</title>
+    <innerclass refid="classcurrent__host_21" prot="public">current_host/1</innerclass>
+    <innerclass refid="classhostname__address_22" prot="public">hostname_address/2</innerclass>
+    <innerclass refid="classsocket__accept_23" prot="public">socket_accept/3</innerclass>
+    <innerclass refid="classsocket__accept_22" prot="public">socket_accept/2</innerclass>
+    <innerclass refid="classsocket__bind_22" prot="public">socket_bind/2</innerclass>
+    <innerclass refid="classsocket__close_21" prot="public">socket_close/1</innerclass>
+    <innerclass refid="classsocket__listen_22" prot="public">socket_listen/2</innerclass>
+    <innerclass refid="classsocket__buffering_24" prot="public">socket_buffering/4</innerclass>
+    <innerclass refid="classsocket__select_25" prot="public">socket_select/5</innerclass>
+    <briefdescription>
+<para>YAP includes a SICStus Prolog compatible socket interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In YAP-6.3 this uses the <computeroutput>clib</computeroutput> package to emulate the old low level interface that provides direct access to the major socket system calls These calls can be used both to open a new connection in the network or connect to a networked server Socket connections are described as read/write streams, and standard Input/Output built-ins can be used to write on or read from sockets The following calls are available:</para>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Our implementation does not support AF_UNIX sockets</para>
+</xrefdescription></xrefsect><xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>Implement <ref refid="classsocket__select_25" kindref="compound">socket_select/5</ref> </para>
+</xrefdescription></xrefsect><simplesect kind="see"><para><ulink url="http://www.sics.se/sicstus/@ref">http://www.sics.se/sicstus/@ref</ulink> docs/3 .7.1/html/sicstus_28.html</para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

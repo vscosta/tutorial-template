@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="matlab_8c" kind="file" language="C++">
+    <compoundname>matlab.c</compoundname>
+    <includes local="yes">config.h</includes>
+    <includes refid="YapInterface_8h" local="yes">YapInterface.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">mex.h</includes>
+    <includes local="no">engine.h</includes>
+    <includes local="no">matrix.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="17">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="5">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="16">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="18">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="3">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/matlab/matlab.c</label>
+        <link refid="matlab_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="9">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="2">
+        <label>config.h</label>
+      </node>
+      <node id="22">
+        <label>engine.h</label>
+      </node>
+      <node id="20">
+        <label>math.h</label>
+      </node>
+      <node id="23">
+        <label>matrix.h</label>
+      </node>
+      <node id="21">
+        <label>mex.h</label>
+      </node>
+      <node id="6">
+        <label>stdio.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="matlab_8c_1a8829aff3a31e4e461bf3ef11d21bc92f" prot="public" static="no">
+        <name>MAT_ACCESS</name>
+        <param><defname>I</defname></param>
+        <param><defname>J</defname></param>
+        <param><defname>ROWS</defname></param>
+        <param><defname>COLS</defname></param>
+        <initializer>((I)+((J)*(ROWS)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="30" column="9" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="matlab_8c_1aeca034f67218340ecb2261a22c2f3dcd" prot="public" static="no">
+        <name>BUFSIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="32" column="9" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="matlab_8c_1af2672f5836153a63bb226ed2afddfd52" prot="public" static="no">
+        <name>OBUFSIZE</name>
+        <initializer>2048</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="33" column="9" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="matlab_8c_1a09d6997c8d2f397804c5468e60d84849" prot="public" static="yes" mutable="no">
+        <type>YAP_Functor</type>
+        <definition>YAP_Functor MatlabAddress</definition>
+        <argsstring></argsstring>
+        <name>MatlabAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="37" column="20" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="matlab_8c_1abeebd155007e95f133095d00d5fdc243" prot="public" static="yes" mutable="no">
+        <type>Engine *</type>
+        <definition>Engine* Meng</definition>
+        <argsstring></argsstring>
+        <name>Meng</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="38" column="15" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="matlab_8c_1a23bb91e996b31edb1830e2a2bbb84903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_matlab</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_matlab</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="734" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="734" bodyend="759" declfile="/home/vsc/github/yap/library/matlab/matlab.c" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1aa41adc5b19a987c24bea669a7932fada" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mxArray *</type>
+        <definition>static mxArray * matlab_getvar</definition>
+        <argsstring>(YAP_Term t)</argsstring>
+        <name>matlab_getvar</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="41" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a45709ded536d2d3ff0c4d566c4bfef5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term address2term</definition>
+        <argsstring>(mxArray *mat)</argsstring>
+        <name>address2term</name>
+        <param>
+          <type>mxArray *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="47" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a88abd01b0154f3ae1374f7a8bb85c676" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int cp_back</definition>
+        <argsstring>(YAP_Term vart, mxArray *mat)</argsstring>
+        <name>cp_back</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>vart</declname>
+        </param>
+        <param>
+          <type>mxArray *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="56" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1aa5fa9030aadea1f1f499d0b35d092291" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_startmatlab</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_startmatlab</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="66" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="66" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a6d0fd08d0ce79a0c5cb0e1fd18823a70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_matlabon</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_matlabon</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="96" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1af32ea3b4f0dc37bb70a69a5edfe3b976" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_closematlab</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_closematlab</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="102" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="102" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1af53e0d92cbcca3cc6f441ddeac208cae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_evalstring2</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_evalstring2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="114" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="114" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ae6ecb79bd3e769b35e5e0ebe340bac2d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_evalstring3</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_evalstring3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="131" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="131" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ac5138d96d2541109eb5f811cf6a3cd6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_create_cell_vector</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_create_cell_vector</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="154" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="154" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a5367340d601c3417a9b10ec4cdd5284f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_create_cell_array</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_create_cell_array</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="169" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="169" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a0f0c8f78e92a71fe38b3b51dbe43366a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_create_double_vector</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_create_double_vector</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="185" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="185" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a2d850a0a4e2936a340617eb76bfd4386" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_create_double_array</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_create_double_array</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="200" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="200" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a93ddd206201728efdf5f2de94c615b24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_create_double_array3</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_create_double_array3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="216" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="216" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ab27914c2952260f306fa5cc43dd9087b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_set_int_array</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_set_int_array</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="233" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="233" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a617a4da42ad3fc10d6325d1aa59d1a38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_set_float_array</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_set_float_array</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="270" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="270" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ab324d2d71c079ada6ea79b18f2d9e91e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_set_float_vector</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_set_float_vector</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="309" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="309" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ad069a6b585d8eab9ddc986dccc226b5a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_set_int</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_set_int</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="346" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="346" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ac985f83591747da2f6e5c47991ae5d97" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_set_float</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_set_float</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="363" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="363" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1aaa10de7cd10e5cf2979b20ac256a5f99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term cp_ints32</definition>
+        <argsstring>(int ndims, int *dims, INT32_T *input, int factor, int base, YAP_Term t)</argsstring>
+        <name>cp_ints32</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>INT32_T *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="385" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="385" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ae3484281a5c65b1976ea7119a6ffbb54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term cp_ints64</definition>
+        <argsstring>(int ndims, int *dims, INT64_T *input, int factor, int base, YAP_Term t)</argsstring>
+        <name>cp_ints64</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>INT64_T *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="401" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="401" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1ac7ac2f4a657632a6c7aa9e8f6cf0c7fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term cp_cells</definition>
+        <argsstring>(int ndims, int *dims, mxArray *mat, int factor, int base, YAP_Term t)</argsstring>
+        <name>cp_cells</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>mxArray *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="417" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="417" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a43beccfe20c47fd7edeacf77cd835c84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term cp_floats</definition>
+        <argsstring>(int ndims, int *dims, double *input, int factor, int base, YAP_Term t)</argsstring>
+        <name>cp_floats</name>
+        <param>
+          <type>int</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="434" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="434" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a4749d1bfd80ba4527037257cf7512d3d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mxArray *</type>
+        <definition>static mxArray * get_array</definition>
+        <argsstring>(YAP_Term ti)</argsstring>
+        <name>get_array</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>ti</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="451" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="451" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a788ea95db582ed3a11e792ac6bdbb503" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_get_variable</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_get_variable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="487" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="487" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a47fa6a5270a2b8895f76205bee6a7975" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int item1</definition>
+        <argsstring>(YAP_Term tvar, YAP_Term titem, int off)</argsstring>
+        <name>item1</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tvar</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>titem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>off</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="518" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="518" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1abb2fb0e992145baf32068cf2de3aa8cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_item</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_item</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="566" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="566" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a2566e32e0fdb7a0b0b1f469ace0eff1d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_item_1</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_item_1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="576" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="576" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a9288bbcdaa36c280d0a951939de6781e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int item2</definition>
+        <argsstring>(YAP_Term tvar, YAP_Term titem, int offx, int offy)</argsstring>
+        <name>item2</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tvar</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>titem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="587" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="587" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a6ef31be6cc335baf9e397980f7fcbc13" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_item2</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_item2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="642" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="642" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a5be2e3373e239a84f6a434e0314816de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_item2_1</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_item2_1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="653" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="653" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1a60aad3fdbb99ddefaa19e17874da73cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_call_matlab</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_call_matlab</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="664" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="664" bodyend="705"/>
+      </memberdef>
+      <memberdef kind="function" id="matlab_8c_1af914f28e7dcf7703f072c9309d905180" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int p_create_cell_matrix_and_copy1</definition>
+        <argsstring>(void)</argsstring>
+        <name>p_create_cell_matrix_and_copy1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/matlab/matlab.c" line="708" column="1" bodyfile="/home/vsc/github/yap/library/matlab/matlab.c" bodystart="708" bodyend="731"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/matlab/matlab.c"/>
+  </compounddef>
+</doxygen>

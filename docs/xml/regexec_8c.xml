@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="regexec_8c" kind="file" language="C++">
+    <compoundname>regexec.c</compoundname>
+    <includes refid="YapInterface_8h" local="yes">YapInterface.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="regex2_8h" local="yes">regex2.h</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <includes refid="yapregex_8h" local="yes">yapregex.h</includes>
+    <includes refid="engine_8c" local="yes">engine.c</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="17">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="4">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="16">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="18">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="2">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>engine.c</label>
+        <link refid="engine_8c"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>regex2.h</label>
+        <link refid="regex2_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/regex/regexec.c</label>
+        <link refid="regexec_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>yapregex.h</label>
+        <link refid="yapregex_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="8">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="22">
+        <label>assert.h</label>
+      </node>
+      <node id="9">
+        <label>config.h</label>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="regexec_8c_1aed6ba9caf2dd761b586d2a4556b18a46" prot="public" static="no">
+        <name>states</name>
+        <initializer>long</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="79" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a602d88f3fdc69402056326f5b0215216" prot="public" static="no">
+        <name>states1</name>
+        <initializer>states /* for later use in regexec() decision */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="80" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a37ead5efaf13316dc2b72c35a310fccf" prot="public" static="no">
+        <name>CLEAR</name>
+        <param><defname>v</defname></param>
+        <initializer>((v) = 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="81" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1acdacc044d43a471b7e99219445f838c1" prot="public" static="no">
+        <name>SET0</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((v) &amp;= ~((unsigned long)1 &lt;&lt; (n)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="82" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a78b8419959220045f4f26f813506ef84" prot="public" static="no">
+        <name>SET1</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((v) |= (unsigned long)1 &lt;&lt; (n))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="83" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1afd0ec3820b3e40560b07fc954082b93f" prot="public" static="no">
+        <name>ISSET</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(((v) &amp; ((unsigned long)1 &lt;&lt; (n))) != 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="84" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a08cbbed4826d8ea1e614454dfebda354" prot="public" static="no">
+        <name>ASSIGN</name>
+        <param><defname>d</defname></param>
+        <param><defname>s</defname></param>
+        <initializer>((d) = (s))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="85" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1ac07acfbb082b04f5bea72998c8976b3c" prot="public" static="no">
+        <name>EQ</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a) == (b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="86" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1ab817eef95b34c417b50a0ab99eb669d8" prot="public" static="no">
+        <name>STATEVARS</name>
+        <initializer>long dummy /* dummy version */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="87" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a5db6ba9e1c9a83da53632a66469f4d13" prot="public" static="no">
+        <name>STATESETUP</name>
+        <param><defname>m</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>/* nothing */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="88" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1aea3d1f3e02f26f7104a27b3111df5caf" prot="public" static="no">
+        <name>STATETEARDOWN</name>
+        <param><defname>m</defname></param>
+        <initializer>/* nothing */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="89" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a4b5f5ae43eead0baeb0751bd0efa8003" prot="public" static="no">
+        <name>SETUP</name>
+        <param><defname>v</defname></param>
+        <initializer>((v) = 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="90" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a27e2b05318b406a5662fb3078a338d3a" prot="public" static="no">
+        <name>onestate</name>
+        <initializer>long</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="91" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1af319751162595d897c085e511c7e7d4a" prot="public" static="no">
+        <name>INIT</name>
+        <param><defname>o</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((o) = (unsigned long)1 &lt;&lt; (n))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="92" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a68c0da74d68cdce62e77fd6ae2684729" prot="public" static="no">
+        <name>INC</name>
+        <param><defname>o</defname></param>
+        <initializer>((o) &lt;&lt;= 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="93" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a44fd2e8ff7759e602fb9c691fd3ed2e7" prot="public" static="no">
+        <name>ISSTATEIN</name>
+        <param><defname>v</defname></param>
+        <param><defname>o</defname></param>
+        <initializer>(((v) &amp; (o)) != 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="94" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a6858ab421e69248b9222432dbac4f18a" prot="public" static="no">
+        <name>FWD</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((dst) |= ((unsigned long)(src) &amp; (here)) &lt;&lt; (n))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="97" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a53668b16673a2c2e25c9bcb7ffd9903a" prot="public" static="no">
+        <name>BACK</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((dst) |= ((unsigned long)(src) &amp; (here)) &gt;&gt; (n))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="98" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a82ac2430962b07ea93c0d0080839d7b4" prot="public" static="no">
+        <name>ISSETBACK</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(((v) &amp; ((unsigned long)here &gt;&gt; (n))) != 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="99" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a4cbdc62bbcfb34e2333b698565d11d5a" prot="public" static="no">
+        <name>SNAMES</name>
+        <initializer>/* engine.c looks after details */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="101" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1aed6ba9caf2dd761b586d2a4556b18a46" prot="public" static="no">
+        <name>states</name>
+        <initializer>char *</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="127" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a37ead5efaf13316dc2b72c35a310fccf" prot="public" static="no">
+        <name>CLEAR</name>
+        <param><defname>v</defname></param>
+        <initializer>memset(v, 0, <ref refid="structm" kindref="compound">m</ref>-&gt;g-&gt;nstates)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="128" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1acdacc044d43a471b7e99219445f838c1" prot="public" static="no">
+        <name>SET0</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((v)[n] = 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="129" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a78b8419959220045f4f26f813506ef84" prot="public" static="no">
+        <name>SET1</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((v)[n] = 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="130" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1afd0ec3820b3e40560b07fc954082b93f" prot="public" static="no">
+        <name>ISSET</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((v)[n])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="131" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a08cbbed4826d8ea1e614454dfebda354" prot="public" static="no">
+        <name>ASSIGN</name>
+        <param><defname>d</defname></param>
+        <param><defname>s</defname></param>
+        <initializer>memmove(d, s, <ref refid="structm" kindref="compound">m</ref>-&gt;g-&gt;nstates)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="132" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1ac07acfbb082b04f5bea72998c8976b3c" prot="public" static="no">
+        <name>EQ</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>(memcmp(a, b, <ref refid="structm" kindref="compound">m</ref>-&gt;g-&gt;nstates) == 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="133" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1ab817eef95b34c417b50a0ab99eb669d8" prot="public" static="no">
+        <name>STATEVARS</name>
+        <initializer>  long vn;                                                                     \
+  char *space</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="134" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1aa19b2cdfdfb9f7f05c12bf676a48a560" prot="public" static="no">
+        <name>STATESETUP</name>
+        <param><defname>m</defname></param>
+        <param><defname>nv</defname></param>
+        <initializer>  {                                                                            \
+    (<ref refid="structm" kindref="compound">m</ref>)-&gt;space = malloc((nv) * (<ref refid="structm" kindref="compound">m</ref>)-&gt;g-&gt;nstates);                               \
+    if ((<ref refid="structm" kindref="compound">m</ref>)-&gt;space == NULL)                                                    \
+      return (REG_ESPACE);                                                     \
+    (<ref refid="structm" kindref="compound">m</ref>)-&gt;vn = 0;                                                               \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="137" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1aea3d1f3e02f26f7104a27b3111df5caf" prot="public" static="no">
+        <name>STATETEARDOWN</name>
+        <param><defname>m</defname></param>
+        <initializer>  { free((<ref refid="structm" kindref="compound">m</ref>)-&gt;space); }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="144" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a4b5f5ae43eead0baeb0751bd0efa8003" prot="public" static="no">
+        <name>SETUP</name>
+        <param><defname>v</defname></param>
+        <initializer>((v) = &amp;<ref refid="structm" kindref="compound">m</ref>-&gt;space[<ref refid="structm" kindref="compound">m</ref>-&gt;vn++ * <ref refid="structm" kindref="compound">m</ref>-&gt;g-&gt;nstates])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="146" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a27e2b05318b406a5662fb3078a338d3a" prot="public" static="no">
+        <name>onestate</name>
+        <initializer>long</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="147" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1af319751162595d897c085e511c7e7d4a" prot="public" static="no">
+        <name>INIT</name>
+        <param><defname>o</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((o) = (n))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="148" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a68c0da74d68cdce62e77fd6ae2684729" prot="public" static="no">
+        <name>INC</name>
+        <param><defname>o</defname></param>
+        <initializer>((o)++)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="149" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a44fd2e8ff7759e602fb9c691fd3ed2e7" prot="public" static="no">
+        <name>ISSTATEIN</name>
+        <param><defname>v</defname></param>
+        <param><defname>o</defname></param>
+        <initializer>((v)[o])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="150" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a6858ab421e69248b9222432dbac4f18a" prot="public" static="no">
+        <name>FWD</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((dst)[here + (n)] |= (src)[here])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="153" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a53668b16673a2c2e25c9bcb7ffd9903a" prot="public" static="no">
+        <name>BACK</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((dst)[here - (n)] |= (src)[here])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="154" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a82ac2430962b07ea93c0d0080839d7b4" prot="public" static="no">
+        <name>ISSETBACK</name>
+        <param><defname>v</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>((v)[here - (n)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="155" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a7cc56a3f312b3893f4e9d0018c79757e" prot="public" static="no">
+        <name>LNAMES</name>
+        <initializer>/* flag */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="157" column="9" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="regexec_8c_1a8bd4863aae206f6f9c8b949fbec56885" prot="public" static="no">
+        <name>GOODFLAGS</name>
+        <param><defname>f</defname></param>
+        <initializer>((f) &amp; (REG_NOTBOL | REG_NOTEOL | REG_STARTEND))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="187" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="regexec_8c_1a425e7ba253eafd67426d6df84d08b488" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int yap_regexec</definition>
+        <argsstring>(regex_t *preg, const char *string, size_t nmatch, pmatch, int eflags) const</argsstring>
+        <name>yap_regexec</name>
+        <param>
+          <type><ref refid="structregex__t" kindref="compound">regex_t</ref> *</type>
+          <declname>preg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nmatch</declname>
+        </param>
+        <param>
+          <type>pmatch</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>eflags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/regex/regexec.c" line="177" column="5" bodyfile="/home/vsc/github/yap/library/regex/regexec.c" bodystart="177" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/regex/regexec.c"/>
+  </compounddef>
+</doxygen>

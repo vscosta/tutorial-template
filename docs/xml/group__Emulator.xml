@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Emulator" kind="group">
+    <compoundname>Emulator</compoundname>
+    <title>The Abstract Machine Emulator</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__Emulator_1ga73b3066291b5a6ccaf8f8a0d0473ca6e" prot="public" static="no" mutable="no">
+        <type>void **</type>
+        <definition>void** Yap_ABSMI_OPCODES</definition>
+        <argsstring></argsstring>
+        <name>Yap_ABSMI_OPCODES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="127" column="6" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__Emulator_1gaf199a46b47f2aeaf1f533c2afbb1a878" prot="public" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term Yap_XREGS[MaxTemps]</definition>
+        <argsstring>[MaxTemps]</argsstring>
+        <name>Yap_XREGS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="134" column="6" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__Emulator_1gac88797c1aee4eb53682a43f0e90fbc23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term save_goal</definition>
+        <argsstring>(PredEntry *pe USES_REGS)</argsstring>
+        <name>save_goal</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *pe</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="145" column="13" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="145" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gae481a50bf9736534ca2da346d9f73597" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int stack_overflow</definition>
+        <argsstring>(op_numbers op, yamop *pc, gc_entry_info_t *info USES_REGS)</argsstring>
+        <name>stack_overflow</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type><ref refid="structgc__entry__info" kindref="compound">gc_entry_info_t</ref> *info</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="240" column="12" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="240" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gacac6c0c0e8f8e6f83ad226547474a01a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int code_overflow</definition>
+        <argsstring>(CELL *yenv USES_REGS)</argsstring>
+        <name>code_overflow</name>
+        <param>
+          <type>CELL *yenv</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="253" column="12" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="253" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gad8f55a5c337a4d0be454970d312a209e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term save_xregs</definition>
+        <argsstring>(yamop *pco)</argsstring>
+        <name>save_xregs</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pco</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="274" column="13" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="274" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gaff0ef54b952be75c176441ece4c2a778" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term addgs</definition>
+        <argsstring>(Term g, Term tg)</argsstring>
+        <name>addgs</name>
+        <param>
+          <type>Term</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="337" column="13" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="337" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga95c5e927eeb195999b3804debaa85982" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term interrupt_wake_up</definition>
+        <argsstring>(Term nextg USES_REGS)</argsstring>
+        <name>interrupt_wake_up</name>
+        <param>
+          <type>Term nextg</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>interrupt handling code static PredEntry* It creates a conjunction with: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>wake_up_goal, if exists;</para>
+</listitem><listitem><para>generic signal processing;</para>
+</listitem><listitem><para>cut</para>
+</listitem><listitem><para>continuation goal</para>
+</listitem><listitem><para>register recovery </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="364" column="13" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="364" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gaebe20838dca8c9eeb5cd66275a88c443" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_main</definition>
+        <argsstring>(op_numbers op, yamop *pc USES_REGS)</argsstring>
+        <name>interrupt_main</name>
+        <param>
+          <type>op_numbers</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *pc</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="402" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="402" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gae40865dfdf3ab3926862ced32e58378a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_dispatch_interrupts</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Yap_dispatch_interrupts</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="526" column="6" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="526" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gae2090fcdad50ad1edcbd104cc97315cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_fail</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_fail</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="533" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="533" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gabefd868ef9584770caac55832710b284" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_execute</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_execute</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="564" column="18" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="564" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga5828f1ab3d5c70cd034d5d371140df50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_interrupt_execute</definition>
+        <argsstring>(yamop *p USES_REGS)</argsstring>
+        <name>Yap_interrupt_execute</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *p</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="570" column="11" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="570" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gaa9faba4fb98c024d91a39e50f17922c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_executec</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_executec</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="576" column="18" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="576" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga7eaec3a278bab0805701ce0f3edcb41d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_c_call</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_c_call</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="582" column="18" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="582" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga897bc000d103e35fcf06eccb9ec6cc92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_user_call</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_user_call</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="589" column="18" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="589" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga8f316150bb7654297404b06618e96244" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_call</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_call</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="597" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="597" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga84e164d934998f9da4b7009fa8c7914b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_dexecute</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_dexecute</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="605" column="18" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="605" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga6e835e4138d4318188796d067e5eab81" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_cut</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_cut</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="611" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="611" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga1e286ccf33557a27ed4f2f26564b64f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_cut_t</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_cut_t</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="616" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="616" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga469df0205fe72d0450de06b80d80f3e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_cut_e</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_cut_e</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="622" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="622" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga1a8ba689c32ed38ab5b591f27cef415c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_commit_y</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_commit_y</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="628" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="628" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga4864cb9795b232fcd2e5c2675f0f738a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * interrupt_commit_x</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>interrupt_commit_x</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="636" column="19" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="636" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga273ce2165a4911137b7e656bbad54565" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void undef_goal</definition>
+        <argsstring>(PredEntry *pe USES_REGS)</argsstring>
+        <name>undef_goal</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *pe</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="678" column="13" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="678" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gaf485123c7f6bfb7b5a3c29a0b1c356d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void spy_goal</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>spy_goal</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="743" column="13" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="743" bodyend="851"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1ga3c423901cbd264db01d2fa53e5855c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_absmi</definition>
+        <argsstring>(int inp)</argsstring>
+        <name>Yap_absmi</name>
+        <param>
+          <type>int</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="853" column="5" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="853" bodyend="1157"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Emulator_1gaaeacd69c158e335a9e3591f3c8383a38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_absmiEND</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_absmiEND</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="1160" column="5" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="1160" bodyend="1160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__Emulator_1ga7acc72f894c5fa7d39dd00e5bfd12970" prot="public" static="no">
+        <name>IN_ABSMI_C</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="68" column="9" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Emulator_1ga1aae651a135d32325df00e1ef73f905d" prot="public" static="no">
+        <name>_INATIV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="70" column="9" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Emulator_1ga9529e916451e584e814efe1784cff21e" prot="public" static="no">
+        <name>HAS_CACHE_REGS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>use tmp variables that are placed in registers </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="73" column="9" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Emulator_1ga61a10b9b9e8dcd3f1bce94a353667efa" prot="public" static="no">
+        <name>DEBUG_INTERRUPTS</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/absmi.c" line="89" column="9" bodyfile="/home/vsc/github/yap/C/absmi.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

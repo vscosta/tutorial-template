@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptchar__type_22" kind="concept">
+    <compoundname>char_type/2</compoundname>
+    <initializer>template&lt;&gt;
+concept char_type/2 =     </initializer>
+    <briefdescription>
+<para><bold>char_type</bold>(?_Char_ , ?Type) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The character <emphasis>Char</emphasis> has type <emphasis>Type</emphasis> The types included here are based on SWI-Prolog&apos;s documentation, and they include several types from the C-library It it is possible for a character to have different types</para>
+<para><itemizedlist>
+<listitem><para>alnum Char is a letter (upper- or lowercase) or digit</para>
+</listitem></itemizedlist>
+</para>
+<para>+alpha Char is a letter (upper- or lowercase)</para>
+<para><itemizedlist>
+<listitem><para>csym Char is a letter (upper- or lowercase), digit or the underscore (_) These are valid C and Prolog symbol characters</para>
+</listitem><listitem><para>csymf Char is a letter (upper- or lowercase) or the underscore (_) These are valid first characters for C and Prolog symbols</para>
+</listitem><listitem><para>ascii Char is a 7-bit ASCII character (0..127)</para>
+</listitem><listitem><para>white Char is a space or tab, i.e white space inside a line</para>
+</listitem><listitem><para>cntrl Char is an ASCII control character (0..31)</para>
+</listitem><listitem><para>digit Char is a digit</para>
+</listitem><listitem><para>digit(Weight) Char is a digit with value Weight I.e char_type(X, digit(6) yields X = &apos;6&apos; Useful for parsing numbers</para>
+</listitem></itemizedlist>
+</para>
+<para>xdigit(Weight) Char is a hexadecimal digit with value Weight I.e char_type(a, xdigit(X) yields X = &apos;10&apos; Useful for parsing numbers</para>
+<para><itemizedlist>
+<listitem><para>graph Char produces a visible mark on a page when printed Note that the space is not included!</para>
+</listitem><listitem><para>lower Char is a lowercase letter</para>
+</listitem><listitem><para>lower(Upper) Char is a lowercase version of Upper Only true if Char is lowercase and Upper uppercase</para>
+</listitem><listitem><para>to_lower(Upper) Char is a lowercase version of Upper For non-letters, or letter without case, Char and Lower are the same See also upcase_atom/2 and downcase_atom/2</para>
+</listitem><listitem><para>upper Char is an uppercase letter</para>
+</listitem><listitem><para>upper(Lower) Char is an uppercase version of Lower Only true if Char is uppercase and Lower lowercase</para>
+</listitem><listitem><para>to_upper(Lower) Char is an uppercase version of Lower For non-letters, or letter without case, Char and Lower are the same See also upcase_atom/2 and downcase_atom/2</para>
+</listitem><listitem><para>punct Char is a punctuation character This is a graph character that is not a letter or digit</para>
+</listitem><listitem><para>space Char is some form of layout character (tab, vertical tab, newline, etc.)</para>
+</listitem><listitem><para>end_of_file Char is -1</para>
+</listitem><listitem><para>end_of_line Char ends a line (ASCII: 10..13)</para>
+</listitem><listitem><para>newline Char is a newline character (10)</para>
+</listitem><listitem><para>period Char counts as the end of a sentence (.,!,?)</para>
+</listitem><listitem><para>quote Char is a quote character (", &apos;, `)</para>
+</listitem><listitem><para>paren(Close) Char is an open parenthesis and Close is the corresponding close parenthesis</para>
+</listitem><listitem><para>prolog_var_start Char can start a Prolog variable name</para>
+</listitem><listitem><para>prolog_atom_start Char can start a unquoted Prolog atom that is not a symbol</para>
+</listitem><listitem><para>prolog_identifier_continue Char can continue a Prolog variable name or atom</para>
+</listitem><listitem><para>prolog_prolog_symbol Char is a Prolog symbol character Sequences of Prolog symbol characters glue together to form an unquoted atom Examples are =.., =, etc </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="os/chartypes.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

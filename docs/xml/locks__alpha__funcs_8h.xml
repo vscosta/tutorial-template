@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="locks__alpha__funcs_8h" kind="file" language="C++">
+    <compoundname>locks_alpha_funcs.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="locks__alpha__funcs_8h_1aa638fdb2960132b0c419e22e14672a6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ int</type>
+        <definition>static __inline__ int _test_and_set_bit</definition>
+        <argsstring>(unsigned long nr, volatile void *addr)</argsstring>
+        <name>_test_and_set_bit</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>nr</declname>
+        </param>
+        <param>
+          <type>volatile void *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" line="20" column="23" bodyfile="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" bodystart="20" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__alpha__funcs_8h_1a5c848391e4bd349df7e75841be134216" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void _spin_lock</definition>
+        <argsstring>(volatile void *lock)</argsstring>
+        <name>_spin_lock</name>
+        <param>
+          <type>volatile void *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" line="45" column="24" bodyfile="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" bodystart="45" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__alpha__funcs_8h_1a5380fec2dda30007ebdc632a07471611" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _write_lock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>_write_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" line="68" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" bodystart="68" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__alpha__funcs_8h_1a0b5e2f5d3b4d2611763a2aa824623069" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _read_lock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>_read_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" line="89" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" bodystart="89" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__alpha__funcs_8h_1ad3dc18ff849165702ecb1b5a007f549a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _write_unlock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>_write_unlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" line="111" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__alpha__funcs_8h_1a238adee011e95fffc99732bafa951fbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _read_unlock</definition>
+        <argsstring>(rwlock_t *lock)</argsstring>
+        <name>_read_unlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" line="117" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h" bodystart="117" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/locks_alpha_funcs.h"/>
+  </compounddef>
+</doxygen>

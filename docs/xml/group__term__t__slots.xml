@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__term__t__slots" kind="group">
+    <compoundname>term_t_slots</compoundname>
+    <title>Term Handles</title>
+    <briefdescription>
+<para>Also known as term handles, slots are offsets to entries in the local stack. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>YAP never compresses the local stack, so slots are respected by the garbage collector, hence providing a way to access terms without being exposed to stack shifts or garbage-collection</para>
+<para>Space is released when the function terminates Thus, slots will be automatically released at the end of a function Hence, slots should always be used as local variables</para>
+<para>Handles are organized as follows: -<mdash/> Offset of next pointer in chain (tagged as an handle_t) -<mdash/> Number of entries (tagged as handle_t), in the example TAG(INT,4) Entry Entry Entry Entry -<mdash/> Number of entries (tagged as handle_t), in the example TAG(INT,4)</para>
+<para>Handles are not known to the yaam Instead, A new set of slots is created when the emulator calls user C-code (see YAP_Execute* functions) They are also created:</para>
+<para><itemizedlist>
+<listitem><para>by SWI&apos;s PL_foreign_frame() function,</para>
+</listitem><listitem><para>by the YAP_RunGoal() routines and friends, when they exit successfully Notice that all handles created by c-goals within a <computeroutput>Goal</computeroutput> execution should not be used afterwards</para>
+<para>This section lists the main internal functions for slot management These functions are then exported through corresponding FLI C-functions</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

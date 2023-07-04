@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptload__foreign__files_23" kind="concept">
+    <compoundname>load_foreign_files/3</compoundname>
+    <initializer>template&lt;&gt;
+concept load_foreign_files/3 =     </initializer>
+    <briefdescription>
+<para><bold>load_foreign_files</bold>( <emphasis>Files</emphasis>, <emphasis>Libs</emphasis>, <emphasis>InitRoutine</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>should be used, from inside YAP, to load object files produced by the C compiler The argument <emphasis>ObjectFiles</emphasis> should be a list of atoms specifying the object files to load, <emphasis>Libs</emphasis> is a list (possibly empty) of libraries to be passed to the unix loader (<computeroutput>ld</computeroutput>) and InitRoutine is the name of the C routine (to be called after the files are loaded) to perform the necessary declarations to YAP of the predicates defined in the files</para>
+<para>YAP will search for <emphasis>ObjectFiles</emphasis> in the current directory first If it cannot find them it will search for the files using the environment variable:</para>
+<para><itemizedlist>
+<listitem><para>YAPLIBDIR</para>
+</listitem></itemizedlist>
+</para>
+<para>if defined, or in the default library available as YAP supports the SWI-Prolog interface to loading foreign code, the shlib package </para>
+    </detaileddescription>
+    <location file="pl/load_foreign.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

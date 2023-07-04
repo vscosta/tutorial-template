@@ -1,0 +1,1422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="adtdefs_8c" kind="file" language="C++">
+    <compoundname>adtdefs.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="alloc_8h" local="yes">alloc.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">wchar.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/adtdefs.c</label>
+        <link refid="adtdefs_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="54">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="adtdefs_8c_1a8e780ba51b3fc655add64bb514d97c16" prot="public" static="no">
+        <name>ADTDEFS_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="21" column="9" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="adtdefs_8c_1aa7d9e6479d4ab7920876368b93e92336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t HashFunction</definition>
+        <argsstring>(const unsigned char *CHP)</argsstring>
+        <name>HashFunction</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>CHP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="37" column="10" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="37" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ae919380e0e5e724c888881e2679c773c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>static Prop GetFunctorProp</definition>
+        <argsstring>(AtomEntry *ae, arity_t arity)</argsstring>
+        <name>GetFunctorProp</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="56" column="1" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="56" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ad6024f082a0e7da5a959032dd62472be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>static Functor InlinedUnlockedMkFunctor</definition>
+        <argsstring>(AtomEntry *ae, arity_t arity)</argsstring>
+        <name>InlinedUnlockedMkFunctor</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="71" column="23" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="71" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a21b78b0fdb2e2da0c4e6f3cd776f328c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor Yap_UnlockedMkFunctor</definition>
+        <argsstring>(AtomEntry *ae, arity_t arity)</argsstring>
+        <name>Yap_UnlockedMkFunctor</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="92" column="9" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a326faad8959ea75f3aa5fcbd858657db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor Yap_MkFunctor</definition>
+        <argsstring>(Atom ap, arity_t arity)</argsstring>
+        <name>Yap_MkFunctor</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="97" column="9" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="97" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ae325a1288ec37b1ed6af950e5f81bee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_MkFunctorWithAddress</definition>
+        <argsstring>(Atom ap, unsigned int arity, FunctorEntry *p)</argsstring>
+        <name>Yap_MkFunctorWithAddress</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">FunctorEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="108" column="6" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="108" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ad42b2695d58b99b7f18d5fef17abad6d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom SearchInInvisible</definition>
+        <argsstring>(const unsigned char *atom)</argsstring>
+        <name>SearchInInvisible</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>atom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="119" column="20" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="119" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a9e25fd3608ee4b26a8f04eb85951cd8c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom SearchAtom</definition>
+        <argsstring>(const unsigned char *p, Atom a)</argsstring>
+        <name>SearchAtom</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="134" column="20" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="134" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a8da74e83a471f95f4c1ca99e41c6f628" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom LookupAtom</definition>
+        <argsstring>(const unsigned char *atom)</argsstring>
+        <name>LookupAtom</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>atom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="151" column="1" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="151" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a401d0ac6961fc0536d0bd3003f3ad1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_LookupAtomWithLength</definition>
+        <argsstring>(const char *atom, size_t len0)</argsstring>
+        <name>Yap_LookupAtomWithLength</name>
+        <param>
+          <type>const char *</type>
+          <declname>atom</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="215" column="6" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="215" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1aa4ca0d709cd746104fff03ba000f1c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_LookupAtom</definition>
+        <argsstring>(const char *atom)</argsstring>
+        <name>Yap_LookupAtom</name>
+        <param>
+          <type>const char *</type>
+          <declname>atom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="234" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="234" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a8e17d54e0cdcfce4ebd8e05a54136053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_ULookupAtom</definition>
+        <argsstring>(const unsigned char *atom)</argsstring>
+        <name>Yap_ULookupAtom</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>atom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="238" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a3847b4a8880d17bc2dc6b55143c094de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_FullLookupAtom</definition>
+        <argsstring>(const char *atom)</argsstring>
+        <name>Yap_FullLookupAtom</name>
+        <param>
+          <type>const char *</type>
+          <declname>atom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="244" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="244" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a31d34a5defd843a65f360e2e69f45b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_LookupAtomWithAddress</definition>
+        <argsstring>(const char *atom, AtomEntry *ae)</argsstring>
+        <name>Yap_LookupAtomWithAddress</name>
+        <param>
+          <type>const char *</type>
+          <declname>atom</declname>
+        </param>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="253" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="253" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a28cc5c032b5dba1d7c7e557cb18cb215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ReleaseAtom</definition>
+        <argsstring>(Atom atom)</argsstring>
+        <name>Yap_ReleaseAtom</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>atom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="285" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="285" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a855170d4d5e9b44b892d325838c30591" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>static Prop GetAPropHavingLock</definition>
+        <argsstring>(AtomEntry *ae, PropFlags kind)</argsstring>
+        <name>GetAPropHavingLock</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>PropFlags</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="316" column="5" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="316" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a2e6681d379137217db808101038005cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetAPropHavingLock</definition>
+        <argsstring>(AtomEntry *ae, PropFlags kind)</argsstring>
+        <name>Yap_GetAPropHavingLock</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>PropFlags</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="326" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a57972f163689ac651f3f0f3441adc763" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>static Prop GetAProp</definition>
+        <argsstring>(Atom a, PropFlags kind)</argsstring>
+        <name>GetAProp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>PropFlags</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="332" column="5" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="332" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ae430e7856e00fe2a2de3146722c8bbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetAProp</definition>
+        <argsstring>(Atom a, PropFlags kind)</argsstring>
+        <name>Yap_GetAProp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>PropFlags</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="342" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="342" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ac7f4526f936ecde6666b0cea6a3a64ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structoperator__entry" kindref="compound">OpEntry</ref> *</type>
+        <definition>OpEntry * Yap_GetOpPropForAModuleHavingALock</definition>
+        <argsstring>(Atom a, Term mod)</argsstring>
+        <name>Yap_GetOpPropForAModuleHavingALock</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="347" column="11" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="347" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a3abf90e099be6aa5d94392259cc0fd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_HasOp</definition>
+        <argsstring>(Atom a)</argsstring>
+        <name>Yap_HasOp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="362" column="7" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="362" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ade01319c26d93cac480f8916b8396a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structoperator__entry" kindref="compound">OpEntry</ref> *</type>
+        <definition>OpEntry * Yap_OpPropForModule</definition>
+        <argsstring>(Atom a, Term mod)</argsstring>
+        <name>Yap_OpPropForModule</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="379" column="5" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="379" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1aa53c54a119535d714cabd337732f5e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structoperator__entry" kindref="compound">OpEntry</ref> *</type>
+        <definition>OpEntry * Yap_GetOpProp</definition>
+        <argsstring>(Atom a, op_type type, Term cmod USES_REGS)</argsstring>
+        <name>Yap_GetOpProp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>op_type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Term cmod</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="418" column="11" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="418" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1aba413fb3e416b78c348bb01ccde6609d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>static Prop GetPredPropByAtomHavingLock</definition>
+        <argsstring>(AtomEntry *ae, Term cur_mod)</argsstring>
+        <name>GetPredPropByAtomHavingLock</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="467" column="22" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="467" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1abd718972ca41ac83aa294edf6c1206c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetPredPropByAtom</definition>
+        <argsstring>(Atom at, Term cur_mod)</argsstring>
+        <name>Yap_GetPredPropByAtom</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="490" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="490" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ab07a68a4a97b81fd964b641807066e3d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>static Prop GetPredPropByAtomHavingLockInThisModule</definition>
+        <argsstring>(AtomEntry *ae, Term cur_mod)</argsstring>
+        <name>GetPredPropByAtomHavingLockInThisModule</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="502" column="22" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="502" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ac0ddd264d3cf1f39dc9301f7de409200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetPredPropByAtomInThisModule</definition>
+        <argsstring>(Atom at, Term cur_mod)</argsstring>
+        <name>Yap_GetPredPropByAtomInThisModule</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="524" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="524" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a08bcc99e0a6ff837968f4cba1e18798a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetPredPropByFunc</definition>
+        <argsstring>(Functor f, Term cur_mod)</argsstring>
+        <name>Yap_GetPredPropByFunc</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="537" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="537" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a98284aab20c59d5624edbdcfcaa15bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetPredPropByFuncInThisModule</definition>
+        <argsstring>(Functor f, Term cur_mod)</argsstring>
+        <name>Yap_GetPredPropByFuncInThisModule</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="549" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="549" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a23d8060dacc0c36077ba5dc26ea871e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetPredPropHavingLock</definition>
+        <argsstring>(Atom ap, unsigned int arity, Term mod)</argsstring>
+        <name>Yap_GetPredPropHavingLock</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="560" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="560" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1af8d6377e632bd017b661bdef68412568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetExpProp</definition>
+        <argsstring>(Atom at, unsigned int arity)</argsstring>
+        <name>Yap_GetExpProp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="578" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="578" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ad744dde81fe0233c126e63623ff6a589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_GetExpPropHavingLock</definition>
+        <argsstring>(AtomEntry *ae, unsigned int arity)</argsstring>
+        <name>Yap_GetExpPropHavingLock</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="592" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="592" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1aee8c158fa59ebe69eec8dee7d5252e0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ExpandPredHash</definition>
+        <argsstring>(void)</argsstring>
+        <name>ExpandPredHash</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="603" column="14" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="603" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a405c1c4736d04f64ca0e64a033c49cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_NewPredPropByFunctor</definition>
+        <argsstring>(FunctorEntry *fe, Term cur_mod)</argsstring>
+        <name>Yap_NewPredPropByFunctor</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">FunctorEntry</ref> *</type>
+          <declname>fe</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="634" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="634" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1acf7bb68b204f499ee0065db0cb40b43e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_NewPredPropByAtom</definition>
+        <argsstring>(AtomEntry *ae, Term cur_mod)</argsstring>
+        <name>Yap_NewPredPropByAtom</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="779" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="779" bodyend="838"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a387ab2fb88bec8941c2ce1acf1684a28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_PredPropByFunctorNonThreadLocal</definition>
+        <argsstring>(Functor f, Term cur_mod)</argsstring>
+        <name>Yap_PredPropByFunctorNonThreadLocal</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>(p-&gt;PredFlags &amp; MultiFileFlag) ||</para>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="840" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="840" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1abe0ad82d3dead079e8c9954f8119e3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>Prop Yap_PredPropByAtomNonThreadLocal</definition>
+        <argsstring>(Atom at, Term cur_mod)</argsstring>
+        <name>Yap_PredPropByAtomNonThreadLocal</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cur_mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>(pe-&gt;PredFlags &amp; MultiFileFlag) ||</para>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="879" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="879" bodyend="901"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1abec5eaf90dd871d1f824d48ddb216fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_GetValue</definition>
+        <argsstring>(Atom a)</argsstring>
+        <name>Yap_GetValue</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="903" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="903" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a965d70fd481225d8ac424be35ca32da4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_PutValue</definition>
+        <argsstring>(Atom a, Term v)</argsstring>
+        <name>Yap_PutValue</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="933" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="933" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a07b7163573cac15790a7bd205d6de2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_PutAtomTranslation</definition>
+        <argsstring>(Atom a, arity_t arity, Int i)</argsstring>
+        <name>Yap_PutAtomTranslation</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1051" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1051" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a02e11add1abaa852ee20a28b79b26722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_PutFunctorTranslation</definition>
+        <argsstring>(Atom a, arity_t arity, Int i)</argsstring>
+        <name>Yap_PutFunctorTranslation</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1075" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1075" bodyend="1097"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a724a4a0b74d5fb5f7d64eb054fe9fff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_PutAtomMutex</definition>
+        <argsstring>(Atom a, void *i)</argsstring>
+        <name>Yap_PutAtomMutex</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1099" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1099" bodyend="1120"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a3730d62a66d148e444bf220d6f73d55d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_ArrayToList</definition>
+        <argsstring>(register Term *tp, size_t nof)</argsstring>
+        <name>Yap_ArrayToList</name>
+        <param>
+          <type>register Term *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nof</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1122" column="8" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1122" bodyend="1138"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a6b6a73c131512eb1acbf0929f26e47e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_GetName</definition>
+        <argsstring>(char *s, UInt max, Term t)</argsstring>
+        <name>Yap_GetName</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1140" column="7" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1140" bodyend="1161"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ae9fe12ddf8490e035f15dfce6cfa037d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structhold__entry" kindref="compound">HoldEntry</ref> *</type>
+        <definition>static HoldEntry * InitAtomHold</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitAtomHold</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1193" column="20" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1193" bodyend="1202"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a7acbe0d3c020a7ec57d653616ee66050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_AtomIncreaseHold</definition>
+        <argsstring>(Atom at)</argsstring>
+        <name>Yap_AtomIncreaseHold</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1204" column="7" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1204" bodyend="1227"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1ac068796274c44d1badf5216098a6d562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_AtomDecreaseHold</definition>
+        <argsstring>(Atom at)</argsstring>
+        <name>Yap_AtomDecreaseHold</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1229" column="7" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1229" bodyend="1251"/>
+      </memberdef>
+      <memberdef kind="function" id="adtdefs_8c_1a36476f98638e69172d7eeda24938e87a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * IndicatorOfPred</definition>
+        <argsstring>(PredEntry *pe)</argsstring>
+        <name>IndicatorOfPred</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/adtdefs.c" line="1253" column="14" bodyfile="/home/vsc/github/yap/C/adtdefs.c" bodystart="1253" bodyend="1287"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/adtdefs.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__maplist" kind="group">
+    <compoundname>maplist</compoundname>
+    <title>Map List and Term Operations</title>
+    <innerclass refid="classmaplist_23" prot="public">maplist/3</innerclass>
+    <innerclass refid="classmaplist_24" prot="public">maplist/4</innerclass>
+    <innerclass refid="classinclude_23" prot="public">include/3</innerclass>
+    <innerclass refid="classselectlist_23" prot="public">selectlist/3</innerclass>
+    <innerclass refid="classselectlist_24" prot="public">selectlist/4</innerclass>
+    <innerclass refid="classselectlists_25" prot="public">selectlists/5</innerclass>
+    <innerclass refid="classexclude_23" prot="public">exclude/3</innerclass>
+    <innerclass refid="classpartition_24" prot="public">partition/4</innerclass>
+    <innerclass refid="classpartition_25" prot="public">partition/5</innerclass>
+    <innerclass refid="classchecklist_22" prot="public">checklist/2</innerclass>
+    <innerclass refid="classmaplist_22" prot="public">maplist/2</innerclass>
+    <innerclass refid="classmaplist_25" prot="public">maplist/5</innerclass>
+    <innerclass refid="classmaplist_26" prot="public">maplist/6</innerclass>
+    <innerclass refid="classconvlist_23" prot="public">convlist/3</innerclass>
+    <innerclass refid="classmapnodes_23" prot="public">mapnodes/3</innerclass>
+    <innerclass refid="classchecknodes_22" prot="public">checknodes/2</innerclass>
+    <innerclass refid="classsumlist_24" prot="public">sumlist/4</innerclass>
+    <innerclass refid="classsumnodes_24" prot="public">sumnodes/4</innerclass>
+    <innerclass refid="classfoldl_26" prot="public">foldl/6</innerclass>
+    <innerclass refid="classoldl_25" prot="public">oldl/5</innerclass>
+    <innerclass refid="classfoldl_25" prot="public">foldl/5</innerclass>
+    <innerclass refid="classfoldl2_26" prot="public">foldl2/6</innerclass>
+    <innerclass refid="classfoldl2_27" prot="public">foldl2/7</innerclass>
+    <innerclass refid="classfoldl2_28" prot="public">foldl2/8</innerclass>
+    <innerclass refid="classfoldl3_29" prot="public">foldl3/9</innerclass>
+    <innerclass refid="classfoldl4_211" prot="public">foldl4/11</innerclass>
+    <innergroup refid="group__apply__macros">Apply Interface to maplist</innergroup>
+    <briefdescription>
+<para><itemizedlist>
+<listitem><para>This library provides a set of utilities for applying a predicate to all elements of a list </para>
+</listitem></itemizedlist>
+</para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Auxiliary routines</para>
+</listitem><listitem></listitem><listitem><para>They allow one to easily perform the most common do-loop constructs in Prolog To avoid performance degradation, each call creates an equivalent Prolog program, without meta-calls, which is executed by the Prolog engine instead The library was based on code by Joachim Schimpf and on code from SWI-Prolog, and it is also inspired by the GHC libraries</para>
+</listitem><listitem><para>The routines are available once included with the <computeroutput>use_module(library(maplist))</computeroutput> command Examples:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">plus(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Z</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">Z</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">+</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">.</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">plus_if_pos(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,</highlight><highlight class="charliteral">Z</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Z</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">+</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">.</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">vars(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="charliteral">X</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">Y</highlight><highlight class="normal">])<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">var(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">var.</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">vars(</highlight><highlight class="charliteral">_</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Y</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">trans(</highlight><highlight class="charliteral">TermIn</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">TermOut</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">nonvar(</highlight><highlight class="charliteral">TermIn</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">TermIn</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=..</highlight><highlight class="normal"><sp/>[p</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">Args</highlight><highlight class="normal">],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">TermOut</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">=..[q</highlight><highlight class="keyword">|</highlight><highlight class="charliteral">Args</highlight><highlight class="normal">],<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">=...</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">trans(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">,</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> success</para>
+<para>?- maplist(plus(1), [1,2,3,4], [2,3,4,5])</para>
+<para>?- checklist(var, [X,Y,Z])</para>
+<para>?- selectlist(&lt;(0), [-1,0,1], [1])</para>
+<para>?- convlist(plus_if_pos(1), [-1,0,1], [2])</para>
+<para>?- sumlist(plus, [1,2,3,4], 1, 11)</para>
+<para>?- maplist(mapargs(number_atom),[c(1),s(1,2,3)],[c(&apos;1&apos;),s(&apos;1&apos;,&apos;2&apos;,&apos;3&apos;)]) ~~~~</para>
+</listitem><listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

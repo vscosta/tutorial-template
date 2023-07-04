@@ -1,0 +1,982 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="flags_8c" kind="file" language="C++">
+    <compoundname>flags.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <includes refid="YapEval_8h" local="yes">YapEval.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="YapLFlagInfo_8h" local="yes">YapLFlagInfo.h</includes>
+    <includes refid="YapGFlagInfo_8h" local="yes">YapGFlagInfo.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/flags.c</label>
+        <link refid="flags_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="55">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="54">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <member refid="group__YAPFlagsImplemebtation_1ga5a69249e0f5ae132af5fd090cd1474ee" kind="define"><name>INIT_FLAGS</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga6c69577dd0e3c9b9e7df5085dc1f0b04" kind="define"><name>YAP_FLAG</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaaef4b52c4e7e98d8221c0bb4a50278ec" kind="define"><name>END_FLAG</name></member>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="flags_8c_1ab7e354d74f5166a20e2ed6d09c107bb1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>prolog_flag_property_enum_choices</name>
+        <enumvalue id="flags_8c_1ab7e354d74f5166a20e2ed6d09c107bb1a604e0895128ab079ccf8c681d4d0e6c1" prot="public">
+          <name>PROLOG_FLAG_PROPERTY_DEFS</name>
+          <initializer>=()</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1606" column="1" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1606" bodyend="1608"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="flags_8c_1ac580e34070a12328c8a902dfa8c7ddf3" prot="public" static="no">
+        <type>enum prolog_flag_property_enum_choices</type>
+        <definition>typedef enum prolog_flag_property_enum_choices prolog_flag_property_choices_t</definition>
+        <argsstring></argsstring>
+        <name>prolog_flag_property_choices_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1608" column="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <member refid="group__YAPFlagsImplemebtation_1gae6155244eebda5ccec20f5f208efe968" kind="variable"><name>local_flags_setup</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga1445067c3f4cf3d671dc38740e71f30f" kind="variable"><name>global_flags_setup</name></member>
+      <memberdef kind="variable" id="flags_8c_1a5b816d6b74ee7c106f50676a25774c32" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structstruct__param2" kindref="compound">param2_t</ref></type>
+        <definition>const param2_t prolog_flag_property_defs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>prolog_flag_property_defs</name>
+        <initializer>= {
+  PROLOG_FLAG_PROPERTY_DEFS()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1615" column="23" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1615" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__YAPFlagsImplemebtation_1ga19d8523041178d2c8299eba2eb736871" kind="function"><name>ro</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga6c163bd8204b9d4aa1d6d119c80e3122" kind="function"><name>nat</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga7cdd349b412dedad8518f9f6d2b22b4c" kind="function"><name>isatom</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga4594521c5d7dbe92472acf3bdcfdd4ee" kind="function"><name>booleanFlag</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga7479c60e3d7c450638b4a8acc1deb151" kind="function"><name>list_option</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga7a190301cfa45194aa77e0a848a9ae1a" kind="function"><name>argv</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaf5efed4e99a3e045d77e8351ac0ce9a7" kind="function"><name>os_argv</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga0101296e3ee4c9653f8d9d70c58bbfb3" kind="function"><name>agc_threshold</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga8ec196c33d75d6e51eb7975d347e1e55" kind="function"><name>gc_margin</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga15a9d013c287c616178a35512aa5b3ad" kind="function"><name>executable</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga4c1532794d6da1545ebde405910401c0" kind="function"><name>sys_thread_id</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga8a1766c4593baad1ea594595a0729dbe" kind="function"><name>sys_pid</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gab9db9ecf73fdaf734224121f779d2119" kind="function"><name>mkprompt</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga45bf8d29b0ae43a12f426529b3395c61" kind="function"><name>indexer</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaa1f61ee63653c5469e5eafbc20ba82ac" kind="function"><name>stream</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gac21dbd254cc59d84a4d9bc9dcc3fa14b" kind="function"><name>getenc</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga6c7249668f4a901d76d03b73aac85461" kind="function"><name>typein</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga5b645200ceb61ba9bdb3a47955089b55" kind="function"><name>set_error_stream</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga9fd797a4ee88c09af603ac4157e96e41" kind="function"><name>set_input_stream</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga319d45f1018959ba545b4c2622ed1ab4" kind="function"><name>set_output_stream</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga2f9c1485bd9be3da3218a625b546a69b" kind="function"><name>dollar_to_lc</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaef32b006d812529b8f2b310315836525" kind="function"><name>setSignals</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga5dd983a534f95a37a994b33b323b1714" kind="function"><name>newFlag</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gab5c0c1045dc799895d3f31b7db6b494d" kind="function"><name>current_prolog_flag</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gad8f755abf1570ec06ed0f26a8613eb65" kind="function"><name>set_prolog_flag</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaf06733cca341275f7d9618a33cdc8426" kind="function"><name>compiling</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga322fcdfedc6fdf24e47383b4e9d65a29" kind="function"><name>aro</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga917824736ab6c296e2c713b69574fe77" kind="function"><name>mkplus</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gacddc059d425ed8296784df4c78f0e10a" kind="function"><name>febooleanFlag</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga0432ea85b5a81576474553b0d8f48767" kind="function"><name>quote</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga8598acdf0d44b103d9eaf8f2de79b010" kind="function"><name>snglq</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gae80590943f58114d6f5c4f34ee16b1e6" kind="function"><name>dblq</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga33b029fad6508a2ba61e3988cca91c78" kind="function"><name>bckq</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaa82df903d1c224c059965d908927be9a" kind="function"><name>multil</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaf1c945835aa4886ab9e9ccce2399f0ac" kind="function"><name>undefph</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga98d71908f5033d7e2b89cca2f93dbe25" kind="function"><name>synerr</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gabf5b6bf5e9ae205b3197b0b44f32712d" kind="function"><name>isaccess</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gac5d725c998c9cce8f409ce69dcd4ae1b" kind="function"><name>isground</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gae56eb327453f2951479d6b94387a0cfd" kind="function"><name>flagscope</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gabdca2a2cd775bfbbce4b7d1c1ac62134" kind="function"><name>mk_argc_list</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1ga4c238d188eeec732b63d184c4d11e61f" kind="function"><name>mk_os_argc_list</name></member>
+      <member refid="group__YAPFlagsImplemebtation_1gaa5578dafee50e97e9781db20c0321752" kind="function"><name>GetFlagProp</name></member>
+      <memberdef kind="function" id="flags_8c_1a82cfa11483ecf7262eb2cccb314d5407" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void initFlag</definition>
+        <argsstring>(flag_info *f, int fnum, bool global)</argsstring>
+        <name>initFlag</name>
+        <param>
+          <type><ref refid="structflag__info" kindref="compound">flag_info</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fnum</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>global</declname>
+        </param>
+        <briefdescription>
+<para>/** `defgroup YAPflags </para>
+        </briefdescription>
+        <detaileddescription>
+<para>YAP now supports generic access ad uodating the following builins provide read-writeeeeeee access to YAP internals/ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="929" column="13" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="929" bodyend="953"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a6ff320f13358f606699b0daf55870297" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_yap_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_yap_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="989" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="989" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1ae958481e3f95c2de92214de597a6a11c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int yap_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>yap_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1040" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1040" bodyend="1065"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a7c8268a4e3a9cb5398ef60407462fab0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_prolog_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_prolog_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1067" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1067" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a49fb80bfb0b341758a625ffee43b83ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int yap_flag2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>yap_flag2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1100" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1100" bodyend="1106"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a4b1e6cb07f0e9647a900a26776ad34ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int prolog_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>prolog_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1117" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1117" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a7c81d35444f4ff6d0d9cb91966fe80e2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_current_prolog_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_current_prolog_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1132" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1132" bodyend="1153"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a25f9eea8f1c28ca01300e5dda6a1a977" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int current_prolog_flag2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>current_prolog_flag2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1179" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1179" bodyend="1233"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1af97cc16febce0b71210d16e1d47e70a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_set_flag</definition>
+        <argsstring>(Term tflag, Term t2)</argsstring>
+        <name>Yap_set_flag</name>
+        <param>
+          <type>Term</type>
+          <declname>tflag</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1236" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1236" bodyend="1302"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1aff88ed320f32650fa62bc323c732e4ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_UnknownFlag</definition>
+        <argsstring>(Term mod)</argsstring>
+        <name>Yap_UnknownFlag</name>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1304" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1304" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a8d7aac796571660866751cbcff58d1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term getYapFlag</definition>
+        <argsstring>(Term tflag)</argsstring>
+        <name>getYapFlag</name>
+        <param>
+          <type>Term</type>
+          <declname>tflag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1318" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1318" bodyend="1376"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a94ca1e1ea2e50ab608767739bea95bd1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int source</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>source</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1399" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1399" bodyend="1402"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a189e21d432864a57a7e71c5a76ba38f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int no_source</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>no_source</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1410" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1410" bodyend="1413"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1adc1a938c8cba234ac05538c427623c2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int source_mode</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>source_mode</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1424" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1424" bodyend="1434"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a045f2379faf124683f4821bb366cae00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool setInitialValue</definition>
+        <argsstring>(bool bootstrap, flag_func f, const char *s, flag_term *tarr)</argsstring>
+        <name>setInitialValue</name>
+        <param>
+          <type>bool</type>
+          <declname>bootstrap</declname>
+        </param>
+        <param>
+          <type>flag_func</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="YapFlags_8h_1abd0dc36ba859d11ad5b19378f944958c" kindref="member">flag_term</ref> *</type>
+          <declname>tarr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1436" column="13" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1436" bodyend="1593"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a6adfd84d6aad575a9f8970d1e5e9c504" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int do_prolog_flag_property</definition>
+        <argsstring>(Term tflag, Term opts USES_REGS)</argsstring>
+        <name>do_prolog_flag_property</name>
+        <param>
+          <type>Term</type>
+          <declname>tflag</declname>
+        </param>
+        <param>
+          <type>Term opts</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1620" column="1" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1620" bodyend="1701"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a59e2d2ec94b71192bd64019f95024ae3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_prolog_flag_property</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_prolog_flag_property</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1703" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1703" bodyend="1723"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a1c627abac96f4e656e4b8698ca7e5e57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int prolog_flag_property</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>prolog_flag_property</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1738" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1738" bodyend="1765"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a3b83932657942aac5b2d6d6c5d817609" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int do_create_prolog_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>do_create_prolog_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1784" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1784" bodyend="1841"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1ae99cd858fb965884412bb25fdb8d342b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API bool</type>
+        <definition>X_API bool Yap_create_prolog_flag</definition>
+        <argsstring>(const char *name, bool writable, Term ttype, Term v)</argsstring>
+        <name>Yap_create_prolog_flag</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writable</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>ttype</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Create a new global prolog flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>name </para>
+</listitem>
+<listitem><para>whether read-only or writable </para>
+</listitem>
+<listitem><para>type: boolean, integer, atom, any as a pprolog term </para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1851" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1851" bodyend="1872"/>
+      </memberdef>
+      <memberdef kind="function" id="flags_8c_1a1413fdc579d0942cd485bae55b4e648c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitFlags</definition>
+        <argsstring>(bool bootstrap)</argsstring>
+        <name>Yap_InitFlags</name>
+        <param>
+          <type>bool</type>
+          <declname>bootstrap</declname>
+        </param>
+        <briefdescription>
+<para>Init System Prolog flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is done in two phases: early on, it takes care of the atomic flags that are required by other modules; later, it looks at flags that are structured terms</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bootstrap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wether this is done before stack initialization, or afterwards Complex terms can only be built in the second step </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/flags.c" line="1885" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1885" bodyend="1960"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Prolog parameter browsing and setting,. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/flags.c"/>
+  </compounddef>
+</doxygen>

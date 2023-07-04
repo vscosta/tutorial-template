@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classrannum_21" kind="class" language="Prolog" prot="public">
+    <compoundname>rannum/1</compoundname>
+    <briefdescription>
+<para><bold>rannum</bold>(- <emphasis>I</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Produces a random non-negative integer <emphasis>I</emphasis> whose low bits are not all that random, so it should be scaled to a smaller range in general The integer <emphasis>I</emphasis> is in the range 0 2^(w-1) - 1 You can use:</para>
+<para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">rannum(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">yap_flag(max_integer,</highlight><highlight class="charliteral">MI</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">rannum(</highlight><highlight class="charliteral">R</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">R</highlight><highlight class="keyword">/</highlight><highlight class="charliteral">MI</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> to obtain a floating point number uniformly distributed between 0 and 1 </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/prandom.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/library/prandom.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

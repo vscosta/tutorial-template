@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classstatistics_22" kind="class" language="Prolog" prot="public">
+    <compoundname>statistics/2</compoundname>
+    <briefdescription>
+<para><bold>statistics</bold>(? <emphasis>Param</emphasis>,- <emphasis>Info</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Gives statistical information on the system parameter given by first argument:</para>
+<para><itemizedlist>
+<listitem><para>atoms</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _NumberOfAtoms_, _SpaceUsedBy Atoms_]</computeroutput></para>
+<para>This gives the total number of atoms <computeroutput>NumberOfAtoms</computeroutput> and how much space they require in bytes, <emphasis>SpaceUsedBy Atoms</emphasis></para>
+<para><itemizedlist>
+<listitem><para>cputime</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Time since Boot_, _Time From Last Call to Cputime_]</computeroutput></para>
+<para>This gives the total cputime in milliseconds spent executing Prolog code, garbage collection and stack shifts time included</para>
+<para><itemizedlist>
+<listitem><para>dynamic_code</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Clause Size_, _Index Size_, _Tree Index Size_, _Choice Point Instructions Size_, _Expansion Nodes Size_, _Index Switch Size_]</computeroutput></para>
+<para>Size of static code in YAP in bytes: <emphasis>Clause Size</emphasis>, the number of bytes allocated for clauses, plus <emphasis>Index Size</emphasis>, the number of bytes spent in the indexing code The indexing code is divided into main tree, <emphasis>Tree Index Size</emphasis>, tables that implement choice-point manipulation, <emphasis>Choice xsPoint Instructions Size</emphasis>, tables that cache clauses for future expansion of the index tree, <emphasis>Expansion Nodes Size</emphasis>, and tables such as hash tables that select according to value, <emphasis>Index Switch Size</emphasis></para>
+<para><itemizedlist>
+<listitem><para>garbage_collection</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Number of GCs_, _Total Global Recovered_, _Total Time Spent_]</computeroutput></para>
+<para>Number of garbage collections, amount of space recovered in kbytes, and total time spent doing garbage collection in milliseconds More detailed information is available using <computeroutput>yap_flag(gc_trace,verbose)</computeroutput></para>
+<para><itemizedlist>
+<listitem><para>global_stack</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Global Stack Used_, _Execution Stack Free_]</computeroutput></para>
+<para>Space in kbytes currently used in the global stack, and space available for expansion by the local and global stacks</para>
+<para><itemizedlist>
+<listitem><para>local_stack</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Local Stack Used_, _Execution Stack Free_]</computeroutput></para>
+<para>Space in kbytes currently used in the local stack, and space available for expansion by the local and global stacks</para>
+<para><itemizedlist>
+<listitem><para>heap</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Heap Used_, _Heap Free_]</computeroutput></para>
+<para>Total space in kbytes not recoverable in backtracking It includes the program code, internal data base, and, atom symbol table</para>
+<para><itemizedlist>
+<listitem><para>program</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Program Space Used_, _Program Space Free_]</computeroutput></para>
+<para>Equivalent to heap</para>
+<para><itemizedlist>
+<listitem><para>runtime</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Time since Boot_, _Time From Last Call to Runtime_]</computeroutput></para>
+<para>This gives the total cputime in milliseconds spent executing Prolog code, not including garbage collections and stack shifts Note that until YAP4.1.2 the runtime statistics would return time spent on garbage collection and stack shifting</para>
+<para><itemizedlist>
+<listitem><para>stack_shifts</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Number of Heap Shifts_, _Number of Stack Shifts_, _Number of Trail Shifts_]</computeroutput></para>
+<para>Number of times YAP had to expand the heap, the stacks, or the trail More detailed information is available using <computeroutput>yap_flag(gc_trace,verbose)</computeroutput></para>
+<para><itemizedlist>
+<listitem><para>static_code</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Clause Size_, _Index Size_, _Tree Index Size_, _Expansion Nodes Size_, _Index Switch Size_]</computeroutput></para>
+<para>Size of static code in YAP in bytes: <emphasis>Clause Size</emphasis>, the number of bytes allocated for clauses, plus <emphasis>Index Size</emphasis>, the number of bytes spent in the indexing code The indexing code is divided into a main tree, <emphasis>Tree Index Size</emphasis>, table that cache clauses for future expansion of the index tree, <emphasis>Expansion Nodes Size</emphasis>, and and tables such as hash tables that select according to value, <emphasis>Index Switch Size</emphasis></para>
+<para><itemizedlist>
+<listitem><para>trail</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Trail Used_, _Trail Free_]</computeroutput></para>
+<para>Space in kbytes currently being used and still available for the trail</para>
+<para><itemizedlist>
+<listitem><para>walltime</para>
+</listitem></itemizedlist>
+</para>
+<para><computeroutput>[ _Time since Boot_, _Time From Last Call to Walltime_]</computeroutput></para>
+<para>This gives the clock time in milliseconds since starting Prolog </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/statistics.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/statistics.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

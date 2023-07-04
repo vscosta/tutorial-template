@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structrecord__list" kind="struct" language="C++" prot="public">
+    <compoundname>record_list</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrecord__list_1a98af16358991d565c3ce613b4d17ebe6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structDB__TERM" kindref="compound">DB_TERM</ref> *</type>
+        <definition>struct DB_TERM* dbrecord</definition>
+        <argsstring></argsstring>
+        <name>dbrecord</name>
+        <qualifiedname>record_list::dbrecord</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapHeap.h" line="95" column="16" bodyfile="/home/vsc/github/yap/H/YapHeap.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrecord__list_1ac2ae0f29bdd3a4f448be2e1693a71ceb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrecord__list" kindref="compound">record_list</ref> *</type>
+        <definition>struct record_list* next_rec</definition>
+        <argsstring></argsstring>
+        <name>next_rec</name>
+        <qualifiedname>record_list::next_rec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapHeap.h" line="96" column="20" bodyfile="/home/vsc/github/yap/H/YapHeap.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrecord__list_1afa9104078559d0542c258fa70092c569" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrecord__list" kindref="compound">record_list</ref> *</type>
+        <definition>struct record_list * prev_rec</definition>
+        <argsstring></argsstring>
+        <name>prev_rec</name>
+        <qualifiedname>record_list::prev_rec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapHeap.h" line="96" column="29" bodyfile="/home/vsc/github/yap/H/YapHeap.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AtomEntryStruct</label>
+        <link refid="structAtomEntryStruct"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfAE</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PropsOfAE</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>blob</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>DB_STRUCT</label>
+        <link refid="structDB__STRUCT"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Code</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Next</edgelabel>
+          <edgelabel>Prev</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>DBT</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DB_TERM</label>
+        <link refid="structDB__TERM"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>NextDBT</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>DBRefs</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FunctorEntryStruct</label>
+        <link refid="structFunctorEntryStruct"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+          <edgelabel>PropsOfFE</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NameOfFE</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PropEntryStruct</label>
+        <link refid="structPropEntryStruct"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>atom_blob</label>
+        <link refid="structatom__blob"/>
+      </node>
+      <node id="10">
+        <label>logic_upd_clause</label>
+        <link refid="structlogic__upd__clause"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Id</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+          <edgelabel>ClExt</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ClSource</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ClOwner</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ClNext</edgelabel>
+          <edgelabel>ClPrev</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>logic_upd_index</label>
+        <link refid="structlogic__upd__index"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ChildIndex</edgelabel>
+          <edgelabel>ParentIndex</edgelabel>
+          <edgelabel>PrevSiblingIndex</edgelabel>
+          <edgelabel>SiblingIndex</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pred_entry</label>
+        <link refid="structpred__entry"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CodeOfPred</edgelabel>
+          <edgelabel>FirstClause</edgelabel>
+          <edgelabel>LastClause</edgelabel>
+          <edgelabel>MetaEntryOfPred</edgelabel>
+          <edgelabel>TrueCodeOfPred</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>FunctorOfPred</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>OwnerFile</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>StatisticsForPred</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>NextPredOfHash</edgelabel>
+          <edgelabel>NextPredOfModule</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>profile_data</label>
+        <link refid="structprofile__data"/>
+      </node>
+      <node id="1">
+        <label>record_list</label>
+        <link refid="structrecord__list"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dbrecord</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next_rec</edgelabel>
+          <edgelabel>prev_rec</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>struct_dbentry</label>
+        <link refid="structstruct__dbentry"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>FunctorOfDB</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>F0</edgelabel>
+          <edgelabel>First</edgelabel>
+          <edgelabel>L0</edgelabel>
+          <edgelabel>Last</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>yami</label>
+        <link refid="structyami"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>F</edgelabel>
+          <edgelabel>T</edgelabel>
+          <edgelabel>d</edgelabel>
+          <edgelabel>f</edgelabel>
+          <edgelabel>l</edgelabel>
+          <edgelabel>l1</edgelabel>
+          <edgelabel>l2</edgelabel>
+          <edgelabel>l3</edgelabel>
+          <edgelabel>l4</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ClBase</edgelabel>
+          <edgelabel>d</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>I</edgelabel>
+          <edgelabel>block</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>p0</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/H/YapHeap.h" line="93" column="1" bodyfile="/home/vsc/github/yap/H/YapHeap.h" bodystart="93" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structrecord__list_1a98af16358991d565c3ce613b4d17ebe6" prot="public" virt="non-virtual"><scope>record_list</scope><name>dbrecord</name></member>
+      <member refid="structrecord__list_1ac2ae0f29bdd3a4f448be2e1693a71ceb" prot="public" virt="non-virtual"><scope>record_list</scope><name>next_rec</name></member>
+      <member refid="structrecord__list_1afa9104078559d0542c258fa70092c569" prot="public" virt="non-virtual"><scope>record_list</scope><name>prev_rec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

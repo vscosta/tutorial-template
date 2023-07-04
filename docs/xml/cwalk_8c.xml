@@ -1,0 +1,1848 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="cwalk_8c" kind="file" language="C++">
+    <compoundname>cwalk.c</compoundname>
+    <includes local="no">assert.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes refid="cwalk_8h" local="no">cwalk.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/os/cwalk/cwalk.c</label>
+        <link refid="cwalk_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cwalk.h</label>
+        <link refid="cwalk_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>assert.h</label>
+      </node>
+      <node id="3">
+        <label>ctype.h</label>
+      </node>
+      <node id="7">
+        <label>stdarg.h</label>
+      </node>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structcwk__segment__joined" prot="public">cwk_segment_joined</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="cwalk_8c_1aeef7cc01e8dfcb89adcb6f31ac8139e8" prot="public" static="yes" mutable="no">
+        <type>enum cwk_path_style</type>
+        <definition>enum cwk_path_style path_style</definition>
+        <argsstring></argsstring>
+        <name>path_style</name>
+        <initializer>= CWK_STYLE_UNIX</initializer>
+        <briefdescription>
+<para>We try to default to a different path style depending on the operating system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>So this should detect whether we should use windows or unix paths </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="16" column="27" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cwalk_8c_1aa6cb61edbcc7e317d61aafbe5a13fc80" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* separators[]</definition>
+        <argsstring>[]</argsstring>
+        <name>separators</name>
+        <initializer>= {[CWK_STYLE_WINDOWS] = &quot;\\/&quot;,
+  [CWK_STYLE_UNIX] = &quot;/&quot;}</initializer>
+        <briefdescription>
+<para>This is a list of separators used in different styles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Windows can read multiple separators, but it generally outputs just a backslash The output will always use the first character for the output </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="24" column="19" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cwalk_8c_1ae44a699be828ffe58b636e8c6ab13dc0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t cwk_path_output_sized</definition>
+        <argsstring>(char *buffer, size_t buffer_size, size_t position, const char *str, size_t length)</argsstring>
+        <name>cwk_path_output_sized</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="39" column="15" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="39" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a45f6de9e9493fe9ef2771fcace3b5b4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t cwk_path_output_current</definition>
+        <argsstring>(char *buffer, size_t buffer_size, size_t position)</argsstring>
+        <name>cwk_path_output_current</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="68" column="15" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1add919e716831dc9a27b441389d960305" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t cwk_path_output_back</definition>
+        <argsstring>(char *buffer, size_t buffer_size, size_t position)</argsstring>
+        <name>cwk_path_output_back</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="76" column="15" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a6bfc63dd7ba77d04a03cb1dbc2d5524a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t cwk_path_output_separator</definition>
+        <argsstring>(char *buffer, size_t buffer_size, size_t position)</argsstring>
+        <name>cwk_path_output_separator</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="84" column="15" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a3092b83cdcf9746b82022873267c9679" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t cwk_path_output_dot</definition>
+        <argsstring>(char *buffer, size_t buffer_size, size_t position)</argsstring>
+        <name>cwk_path_output_dot</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="92" column="15" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="92" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1aa69c39acc427954362db13d3f4a726a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t cwk_path_output</definition>
+        <argsstring>(char *buffer, size_t buffer_size, size_t position, const char *str)</argsstring>
+        <name>cwk_path_output</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="99" column="15" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="99" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1aa5d775df33238d8c1dc6c24d577bcfd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cwk_path_terminate_output</definition>
+        <argsstring>(char *buffer, size_t buffer_size, size_t pos)</argsstring>
+        <name>cwk_path_terminate_output</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="110" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="110" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1acbff23375c44f9bc11a0e807810fa333" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_is_string_equal</definition>
+        <argsstring>(const char *first, const char *second, size_t n)</argsstring>
+        <name>cwk_path_is_string_equal</name>
+        <param>
+          <type>const char *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="122" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="122" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1abd0210b75df68c37e46d9fc27491a646" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char * cwk_path_find_next_stop</definition>
+        <argsstring>(const char *c)</argsstring>
+        <name>cwk_path_find_next_stop</name>
+        <param>
+          <type>const char *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="149" column="19" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="149" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1af7a9a68338f19285e3d3d02c02cc9e3b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char * cwk_path_find_previous_stop</definition>
+        <argsstring>(const char *begin, const char *c)</argsstring>
+        <name>cwk_path_find_previous_stop</name>
+        <param>
+          <type>const char *</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="161" column="19" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="161" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1aa1280f7545ff0215f95b65f7ac60155f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_get_first_segment_without_root</definition>
+        <argsstring>(const char *path, const char *segments, struct cwk_segment *segment)</argsstring>
+        <name>cwk_path_get_first_segment_without_root</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>segments</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="178" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="178" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1aaf12f585ced2b3fcfe70531641a6fadd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_get_last_segment_without_root</definition>
+        <argsstring>(const char *path, struct cwk_segment *segment)</argsstring>
+        <name>cwk_path_get_last_segment_without_root</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="218" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="218" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a1a43318c3244e8b93d3c686c35821e09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_get_first_segment_joined</definition>
+        <argsstring>(const char **paths, struct cwk_segment_joined *sj)</argsstring>
+        <name>cwk_path_get_first_segment_joined</name>
+        <param>
+          <type>const char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>sj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="238" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="238" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a2ba74980728c6b7c0757fe4ed6491071" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_get_next_segment_joined</definition>
+        <argsstring>(struct cwk_segment_joined *sj)</argsstring>
+        <name>cwk_path_get_next_segment_joined</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>sj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="261" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="261" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a3bda14d20595e25ba1db0bf61c5da1a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_get_previous_segment_joined</definition>
+        <argsstring>(struct cwk_segment_joined *sj)</argsstring>
+        <name>cwk_path_get_previous_segment_joined</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>sj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="300" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="300" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1ac3369d5a83cb4ff98173e3caf6767643" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_segment_back_will_be_removed</definition>
+        <argsstring>(struct cwk_segment_joined *sj)</argsstring>
+        <name>cwk_path_segment_back_will_be_removed</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>sj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="343" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="343" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a7e02691026e505e824f250e9b39c68cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_segment_normal_will_be_removed</definition>
+        <argsstring>(struct cwk_segment_joined *sj)</argsstring>
+        <name>cwk_path_segment_normal_will_be_removed</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>sj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="385" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="385" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a27ea86b6d7730a32eec5de82c21429f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_segment_will_be_removed</definition>
+        <argsstring>(const struct cwk_segment_joined *sj, bool absolute)</argsstring>
+        <name>cwk_path_segment_will_be_removed</name>
+        <param>
+          <type>const struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>sj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="423" column="1" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="423" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a642ae7f0b4af0374c203cbebb03a1ff1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_segment_joined_skip_invisible</definition>
+        <argsstring>(struct cwk_segment_joined *sj, bool absolute)</argsstring>
+        <name>cwk_path_segment_joined_skip_invisible</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>sj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="447" column="1" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="447" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a717ab7b9a683fefc6f2038a1c0e2e57b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cwk_path_get_root_windows</definition>
+        <argsstring>(const char *path, size_t *length)</argsstring>
+        <name>cwk_path_get_root_windows</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="459" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="459" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a0b534513ae6fe9f4ec742f161da022c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cwk_path_get_root_unix</definition>
+        <argsstring>(const char *path, size_t *length)</argsstring>
+        <name>cwk_path_get_root_unix</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="543" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="543" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a7031ed4abfd806cc68acd9ace2d23120" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool cwk_path_is_root_absolute</definition>
+        <argsstring>(const char *path, size_t length)</argsstring>
+        <name>cwk_path_is_root_absolute</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="554" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="554" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1ac88ffacd0f2aa502b9f67c6d5acc9b65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t cwk_path_join_and_normalize_multiple</definition>
+        <argsstring>(const char **paths, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_join_and_normalize_multiple</name>
+        <param>
+          <type>const char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="566" column="15" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="566" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a7f26ae82c88d2561438ce511d4114244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_get_absolute</definition>
+        <argsstring>(const char *base, const char *path, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_get_absolute</name>
+        <param>
+          <type>const char *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Generates an absolute path based on a base. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function generates an absolute path based on a base path and another path It is guaranteed to return an absolute path If the second submitted path is absolute, it will override the base path The result will be written to a buffer, which might be truncated if the buffer is not large enough to hold the full path However, the truncated result will always be null-terminated The returned value is the amount of characters which the resulting path would take if it was not truncated (excluding the null-terminating character)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base path on which the relative path will be applied </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relative path which will be applied on the base path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer where the result will be written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the result buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the total amount of characters of the new absolute path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="635" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="635" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a0af52b6862a6bd25e8678ab004ebf841" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cwk_path_skip_segments_until_diverge</definition>
+        <argsstring>(struct cwk_segment_joined *bsj, struct cwk_segment_joined *osj, bool absolute, bool *base_available, bool *other_available)</argsstring>
+        <name>cwk_path_skip_segments_until_diverge</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>bsj</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structcwk__segment__joined" kindref="compound">cwk_segment_joined</ref> *</type>
+          <declname>osj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>base_available</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>other_available</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="668" column="13" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="668" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1abd1d5366163d7220c6b0891bc90d264a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_get_relative</definition>
+        <argsstring>(const char *base_directory, const char *path, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_get_relative</name>
+        <param>
+          <type>const char *</type>
+          <declname>base_directory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Generates a relative path based on a base. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function generates a relative path based on a base path and another path It determines how to get to the submitted path, starting from the base directory The result will be written to a buffer, which might be truncated if the buffer is not large enough to hold the full path However, the truncated result will always be null-terminated The returned value is the amount of characters which the resulting path would take if it was not truncated (excluding the null-terminating character)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base_directory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base path from which the relative path will start </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target path where the relative path will point to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer where the result will be written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the result buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the total amount of characters of the full path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="704" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="704" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1ad3590f6588b2461fcf8f3ad84bfc5d42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_join</definition>
+        <argsstring>(const char *path_a, const char *path_b, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_join</name>
+        <param>
+          <type>const char *</type>
+          <declname>path_a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path_b</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Joins two paths together. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function generates a new path by combining the two submitted paths It will remove double separators, and unlike cwk_path_get_absolute it permits the use of two relative paths to combine The result will be written to a buffer, which might be truncated if the buffer is not large enough to hold the full path However, the truncated result will always be null-terminated The returned value is the amount of characters which the resulting path would take if it was not truncated (excluding the null-terminating character)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first path which comes first </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second path which comes after the first </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer where the result will be written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the result buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the total amount of characters of the full, combined path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="808" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="808" bodyend="822"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a940c081e6d90d13c77aa41a3bd36e94f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_join_multiple</definition>
+        <argsstring>(const char **paths, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_join_multiple</name>
+        <param>
+          <type>const char **</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Joins multiple paths together. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function generates a new path by joining multiple paths together It will remove double separators, and unlike cwk_path_get_absolute it permits the use of multiple relative paths to combine The last path of the submitted string array must be set to NULL The result will be written to a buffer, which might be truncated if the buffer is not large enough to hold the full path However, the truncated result will always be null-terminated The returned value is the amount of characters which the resulting path would take if it was not truncated (excluding the null-terminating character)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paths</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of paths which will be joined </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer where the result will be written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the result buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the total amount of characters of the full, combined path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="824" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="824" bodyend="830"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1ab85b1ed4f5b36fd22d1e0f0d65be03a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cwk_path_get_root</definition>
+        <argsstring>(const char *path, size_t *length)</argsstring>
+        <name>cwk_path_get_root</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Determines the root of a path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function determines the root of a path by finding it&apos;s length The root always starts at the submitted path If the path has no root, the length will be set to zero</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the root length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="832" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="832" bodyend="841"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a60ae05adcc035bd0f06a8244d4ad7500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_change_root</definition>
+        <argsstring>(const char *path, const char *new_root, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_change_root</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new_root</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Changes the root of a path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function changes the root of a path It does not normalize the result The result will be written to a buffer, which might be truncated if the buffer is not large enough to hold the full path However, the truncated result will always be null-terminated The returned value is the amount of characters which the resulting path would take if it was not truncated (excluding the null-terminating character)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original path which will get a new root </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new root which will be placed in the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output buffer where the result is written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the output buffer where the result is written to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the total amount of characters of the new path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="843" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="843" bodyend="875"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a805349f9c4f2783187e34a236cedb9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_is_absolute</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>cwk_path_is_absolute</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Determine whether the path is absolute or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks whether the path is an absolute path or not A path is considered to be absolute if the root ends with a separator</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be checked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the path is absolute or false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="877" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="877" bodyend="887"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a57a7822bf8af4f0f978579825c24ea33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_is_relative</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>cwk_path_is_relative</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Determine whether the path is relative or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks whether the path is a relative path or not A path is considered to be relative if the root does not end with a separator</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be checked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the path is relative or false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="889" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="889" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1aebab254407554e6b19d1e5ecdd4b619e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cwk_path_get_basename</definition>
+        <argsstring>(const char *path, const char **basename, size_t *length)</argsstring>
+        <name>cwk_path_get_basename</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>basename</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Gets the basename of a file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the basename of a file path A pointer to the beginning of the basename will be returned through the basename parameter This pointer will be positioned on the first letter after the separator The length of the file path will be returned through the length parameter The length will be set to zero and the basename to NULL if there is no basename available</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>basename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the basename pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the length of the basename </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="895" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="895" bodyend="914"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a2e579c3c6b74e488a0170d2bd80a5a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_change_basename</definition>
+        <argsstring>(const char *path, const char *new_basename, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_change_basename</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new_basename</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Changes the basename of a file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function changes the basename of a file path This function will not write out more than the specified buffer can contain However, the generated string is always null-terminated - even if not the whole path is written out The function returns the total number of characters the complete buffer would have, even if it was not written out completely The path may be the same memory address as the buffer</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original path which will be used for the modified path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_basename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new basename which will replace the old one </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer where the changed path will be written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the result buffer where the changed path is written to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the size which the complete new path would have if it was not truncated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="916" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="916" bodyend="963"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a0c697dadb5c17db6253c42d713364565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cwk_path_get_dirname</definition>
+        <argsstring>(const char *path, size_t *length)</argsstring>
+        <name>cwk_path_get_dirname</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Gets the dirname of a file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function determines the dirname of a file path and returns the length up to which character is considered to be part of it If no dirname is found, the length will be set to zero The beginning of the dirname is always equal to the submitted path pointer</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the dirname </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="965" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="965" bodyend="980"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a01bddf6e55305f34c31f720d5c09e149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_get_extension</definition>
+        <argsstring>(const char *path, const char **extension, size_t *length)</argsstring>
+        <name>cwk_path_get_extension</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>extension</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Gets the extension of a file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function extracts the extension portion of a file path A pointer to the beginning of the extension will be returned through the extension parameter if an extension is found and true is returned This pointer will be positioned on the dot The length of the extension name will be returned through the length parameter If no extension is found both parameters won&apos;t be touched and false will be returned</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the extension pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the length of the extension </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if an extension is found or false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="982" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="982" bodyend="1008"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a1ece84c0bbe6e950005264de819c9cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_has_extension</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>cwk_path_has_extension</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether the file path has an extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function determines whether the submitted file path has an extension This will evaluate to true if the last segment of the path contains a dot</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the path has an extension or false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1010" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1010" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a2a04acb86aee8898e935cd9d056e7859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_change_extension</definition>
+        <argsstring>(const char *path, const char *new_extension, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_change_extension</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new_extension</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Changes the extension of a file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function changes the extension of a file name The function will append an extension if the basename does not have an extension, or use the extension as a basename if the path does not have a basename This function will not write out more than the specified buffer can contain However, the generated string is always null-terminated - even if not the whole path is written out The function returns the total number of characters the complete buffer would have, even if it was not written out completely The path may be the same memory address as the buffer</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be used to make the change </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_extension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The extension which will be placed within the new path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output buffer where the result will be written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the output buffer where the result will be written to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the total size which the output would have if it was not truncated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1019" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1019" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a438b605066e389e36ed368ce85c69604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_normalize</definition>
+        <argsstring>(const char *path, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_normalize</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Creates a normalized version of the path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates a normalized version of the path within the specified buffer This function will not write out more than the specified buffer can contain However, the generated string is always null-terminated - even if not the whole path is written out The function returns the total number of characters the complete buffer would have, even if it was not written out completely The path may be the same memory address as the buffer</para>
+<para>The following will be true for the normalized path: 1) &quot;../&quot; will be resolved 2) &quot;./&quot; will be removed 3) double separators will be fixed with a single separator 4) separator suffixes will be removed</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be normalized </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer where the new path is written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The size which the complete normalized path has if it was not truncated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1090" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1090" bodyend="1100"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1ab34ac18259b215d184759bc044aa4832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_get_intersection</definition>
+        <argsstring>(const char *path_base, const char *path_other)</argsstring>
+        <name>cwk_path_get_intersection</name>
+        <param>
+          <type>const char *</type>
+          <declname>path_base</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path_other</declname>
+        </param>
+        <briefdescription>
+<para>Finds common portions in two paths. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function finds common portions in two paths and returns the number characters from the beginning of the base path which are equal to the other path</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base path which will be compared with the other path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path_other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other path which will compared with the base path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the number of characters which are common in the base path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1102" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1102" bodyend="1168"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1ad7f13a9126b2159c07b031a496d654fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_get_first_segment</definition>
+        <argsstring>(const char *path, struct cwk_segment *segment)</argsstring>
+        <name>cwk_path_get_first_segment</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+<para>Gets the first segment of a path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function finds the first segment of a path The position of the segment is set to the first character after the separator, and the length counts all characters until the next separator (excluding the separator)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The segment which will be extracted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if there is a segment or false if there is none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1170" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1170" bodyend="1183"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a2268310f7bba59fe263365ab73b74c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_get_last_segment</definition>
+        <argsstring>(const char *path, struct cwk_segment *segment)</argsstring>
+        <name>cwk_path_get_last_segment</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+<para>Gets the last segment of the path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the last segment of a path This function may return false if the path doesn&apos;t contain any segments, in which case the submitted segment parameter is not modified The position of the segment is set to the first character after the separator, and the length counts all characters until the end of the path (excluding the separator)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The segment which will be extracted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if there is a segment or false if there is none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1185" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1185" bodyend="1202"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1acfd833c41dae993e90dba669564a63f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_get_next_segment</definition>
+        <argsstring>(struct cwk_segment *segment)</argsstring>
+        <name>cwk_path_get_next_segment</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+<para>Advances to the next segment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function advances the current segment to the next segment If there are no more segments left, the submitted segment structure will stay unchanged and false is returned</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current segment which will be advanced to the next one </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if another segment was found or false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1204" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1204" bodyend="1240"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a167a371d2add021c078add363006d813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_get_previous_segment</definition>
+        <argsstring>(struct cwk_segment *segment)</argsstring>
+        <name>cwk_path_get_previous_segment</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+<para>Moves to the previous segment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function moves the current segment to the previous segment If the current segment is the first one, the submitted segment structure will stay unchanged and false is returned</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current segment which will be moved to the previous one </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if there is a segment before this one or false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1242" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1242" bodyend="1271"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a9ab5f0bebf3dc5aa6d4780e6002fd9ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum cwk_segment_type</type>
+        <definition>enum cwk_segment_type cwk_path_get_segment_type</definition>
+        <argsstring>(const struct cwk_segment *segment)</argsstring>
+        <name>cwk_path_get_segment_type</name>
+        <param>
+          <type>const struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+<para>Gets the type of the submitted path segment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function inspects the contents of the segment and determines the type of it Currently, there are three types CWK_NORMAL, CWK_CURRENT and CWK_BACK A CWK_NORMAL segment is a normal folder or file entry A CWK_CURRENT is a &quot;./&quot; and a CWK_BACK a &quot;../&quot; segment</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The segment which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the type of the segment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1273" column="22" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1273" bodyend="1285"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1abe0da5227916fc94608ab66a92daf59f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cwk_path_is_separator</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>cwk_path_is_separator</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the submitted pointer points to a separator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function simply checks whether the submitted pointer points to a separator, which has to be null-terminated (but not necessarily after the separator) The function will return true if it is a separator, or false otherwise</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if it is a separator, or false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1287" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1287" bodyend="1304"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1acdc8c69218f67780f4b8e167a41e1995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t cwk_path_change_segment</definition>
+        <argsstring>(struct cwk_segment *segment, const char *value, char *buffer, size_t buffer_size)</argsstring>
+        <name>cwk_path_change_segment</name>
+        <param>
+          <type>struct <ref refid="structcwk__segment" kindref="compound">cwk_segment</ref> *</type>
+          <declname>segment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Changes the content of a segment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the content of a segment to the submitted value and outputs the whole new path to the submitted buffer The result might require less or more space than before if the new value length differs from the original length The output is truncated if the new path is larger than the submitted buffer size, but it is always null-terminated The source of the segment and the submitted buffer may be the same</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The segment which will be modifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new content of the segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer where the modified path will be written to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the output buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the total size which would have been written if the output was not truncated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1306" column="8" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1306" bodyend="1357"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a4eaff34866380542bc682cb76d9742b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum cwk_path_style</type>
+        <definition>enum cwk_path_style cwk_path_guess_style</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>cwk_path_guess_style</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Guesses the path style. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function guesses the path style based on a submitted path-string The guessing will look at the root and the type of slashes contained in the path and return the style which is more likely used in the path</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path which will be inspected </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the style which is most likely used for the path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1359" column="20" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1359" bodyend="1410"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a1b5f8f116d5f20ea682feb16f4fa6721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cwk_path_set_style</definition>
+        <argsstring>(enum cwk_path_style style)</argsstring>
+        <name>cwk_path_set_style</name>
+        <param>
+          <type>enum cwk_path_style</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+<para>Configures which path style is used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function configures which path style is used The following styles are currently supported</para>
+<para>CWK_STYLE_WINDOWS: Use backslashes as a separator and volume for the root CWK_STYLE_UNIX: Use slashes as a separator and a slash for the root</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The style which will be used from now on </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1412" column="6" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1412" bodyend="1418"/>
+      </memberdef>
+      <memberdef kind="function" id="cwalk_8c_1a243dd2bfd37ea28867e893fb4044bf1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum cwk_path_style</type>
+        <definition>enum cwk_path_style cwk_path_get_style</definition>
+        <argsstring>(void)</argsstring>
+        <name>cwk_path_get_style</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the path style configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the style configuration which is currently used for the paths This configuration determines how paths are parsed and generated</para>
+<para><simplesect kind="return"><para>Returns the current path style configuration </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/cwalk/cwalk.c" line="1420" column="20" bodyfile="/home/vsc/github/yap/os/cwalk/cwalk.c" bodystart="1420" bodyend="1424"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/cwalk/cwalk.c"/>
+  </compounddef>
+</doxygen>

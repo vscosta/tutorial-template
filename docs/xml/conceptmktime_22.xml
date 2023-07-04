@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptmktime_22" kind="concept">
+    <compoundname>mktime/2</compoundname>
+    <initializer>template&lt;&gt;
+concept mktime/2 =     </initializer>
+    <briefdescription>
+<para><bold>mktime</bold>(+_Datime_, - <emphasis>Seconds</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <computeroutput><ref refid="classmktime_22" kindref="compound">mktime/2</ref> </computeroutput> procedure receives a compound term of the form <emphasis>datime(+ _Year</emphasis>, + <emphasis>Month</emphasis>, + <emphasis>DayOfTheMonth</emphasis>, + <emphasis>Hour</emphasis>, + <emphasis>Minute</emphasis>,<itemizedlist>
+<listitem><para><emphasis>Second</emphasis>)_ and returns the number of <emphasis>Seconds</emphasis> elapsed since 00:00:00 on January 1, 1970, Coordinated Universal Time (UTC) The user provides information on <emphasis>Year</emphasis>, <emphasis>Month</emphasis>, <emphasis>DayOfTheMonth</emphasis>, <emphasis>Hour</emphasis>, <emphasis>Minute</emphasis>, and <emphasis>Second</emphasis> The <emphasis>Hour</emphasis> is given on local time</para>
+</listitem></itemizedlist>
+</para>
+<para>The predicate uses the WIN32 <computeroutput>GetLocalTime</computeroutput> function or the Unix <computeroutput>mktime</computeroutput> function</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/>?-<sp/>mktime(datime(2001,5,28,15,29,46),X).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>991081786<sp/>?<sp/>;</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="library/system/sys.c" line="110" column="1"/>
+  </compounddef>
+</doxygen>

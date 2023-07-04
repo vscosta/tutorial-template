@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Monitoring__Threads" kind="group">
+    <compoundname>Monitoring_Threads</compoundname>
+    <title>Monitoring Threads</title>
+    <innerclass refid="classcurrent__thread_22" prot="public">current_thread/2</innerclass>
+    <innerclass refid="classthread__property_22" prot="public">thread_property/2</innerclass>
+    <innerclass refid="classthread__statistics_23" prot="public">thread_statistics/3</innerclass>
+    <briefdescription>
+<para>Normal multi-threaded applications should not need these the predicates from this section because almost any usage of these predicates is unsafe. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For example checking the existence of a thread before signalling it is of no use as it may vanish between the two calls Catching exceptions using catch/3 is the only safe way to deal with thread-existence errors</para>
+<para>These predicates are provided for diagnosis and monitoring tasks</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

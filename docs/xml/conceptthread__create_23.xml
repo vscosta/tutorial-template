@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptthread__create_23" kind="concept">
+    <compoundname>thread_create/3</compoundname>
+    <initializer>template&lt;&gt;
+concept thread_create/3 =     </initializer>
+    <briefdescription>
+<para><bold>thread_create</bold>(: <emphasis>Goal</emphasis>, - <emphasis>Id</emphasis>, + <emphasis>Options</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Create a new Prolog thread (and underlying C-thread) and start it by executing <emphasis>Goal</emphasis> If the thread is created successfully, the thread-identifier of the created thread is unified to <emphasis>Id</emphasis> <emphasis>Options</emphasis> is a list of options Currently defined options are:</para>
+<para><itemizedlist>
+<listitem><para>stack Set the limit in K-Bytes to which the Prolog stacks of this thread may grow If omitted, the limit of the calling thread is used See also the commandline <computeroutput>-S</computeroutput> option</para>
+</listitem><listitem><para>trail Set the limit in K-Bytes to which the trail stack of this thread may grow If omitted, the limit of the calling thread is used See also the commandline option <computeroutput>-<ref refid="classT" kindref="compound">T</ref></computeroutput></para>
+</listitem><listitem><para>alias Associate an alias-name with the thread This named may be used to refer to the thread and remains valid until the thread is joined (see <ref refid="classthread__join_22" kindref="compound">thread_join/2</ref> )</para>
+</listitem><listitem><para>at_exit Define an exit hook for the thread This hook is called when the thread terminates, no matter its exit status</para>
+</listitem><listitem><para>detached If <computeroutput>false</computeroutput> (default), the thread can be waited for using <ref refid="classthread__join_22" kindref="compound">thread_join/2</ref> <ref refid="classthread__join_22" kindref="compound">thread_join/2</ref> must be called on this thread to reclaim the all resources associated to the thread If <computeroutput>true</computeroutput>, the system will reclaim all associated resources automatically after the thread finishes Please note that thread identifiers are freed for reuse after a detached thread finishes or a normal thread has been joined See also <ref refid="classthread__join_22" kindref="compound">thread_join/2</ref> and thread_detach/1</para>
+</listitem></itemizedlist>
+</para>
+<para>The <emphasis>Goal</emphasis> argument is <emphasis>copied</emphasis> to the new Prolog engine This implies further instantiation of this term in either thread does not have consequences for the other thread: Prolog threads do not share data from their stacks </para>
+    </detaileddescription>
+    <location file="pl/threads.yap" line="2" column="1"/>
+  </compounddef>
+</doxygen>

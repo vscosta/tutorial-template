@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__MemAlloc" kind="group">
+    <compoundname>MemAlloc</compoundname>
+    <title>Memory Allocation in YAP</title>
+    <innerclass refid="structFREEB" prot="public">FREEB</innerclass>
+    <innerclass refid="structscratch__buf__struct__t" prot="public">scratch_buf_struct_t</innerclass>
+    <innerclass refid="structscratch__user__buf__struct__t" prot="public">scratch_user_buf_struct_t</innerclass>
+    <innergroup refid="group__ScratchBuf">Using a scratch buffer</innergroup>
+    <innergroup refid="group__StackDisc">Stack Discipline Memory Allocation</innergroup>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__MemAlloc_1ga36e27109dd76ab320fc928d6119a4f31" prot="public" static="no">
+        <type>CELL</type>
+        <definition>typedef CELL YAP_SEG_SIZE</definition>
+        <argsstring></argsstring>
+        <name>YAP_SEG_SIZE</name>
+        <briefdescription>
+<para>definitions required by saver/restorer and memory manager </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="61" column="13" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__MemAlloc_1ga14bd40d09ff8840369f5d3badd393b58" prot="public" static="no">
+        <type>struct <ref refid="structFREEB" kindref="compound">FREEB</ref></type>
+        <definition>typedef struct FREEB BlockHeader</definition>
+        <argsstring></argsstring>
+        <name>BlockHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="67" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__MemAlloc_1gad561bb4e2b66ec5397ddefb38515ec85" prot="public" static="no">
+        <type>struct <ref refid="structscratch__buf__struct__t" kindref="compound">scratch_buf_struct_t</ref></type>
+        <definition>typedef struct scratch_buf_struct_t scratch_sys_struct_t</definition>
+        <argsstring></argsstring>
+        <name>scratch_sys_struct_t</name>
+        <briefdescription>
+<para>thread view of the scratch buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="170" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__MemAlloc_1gae750444cfefb73afb5e1e5c30bac8f22" prot="public" static="no">
+        <type>struct <ref refid="structscratch__user__buf__struct__t" kindref="compound">scratch_user_buf_struct_t</ref></type>
+        <definition>typedef struct scratch_user_buf_struct_t scratch_struct_t</definition>
+        <argsstring></argsstring>
+        <name>scratch_struct_t</name>
+        <briefdescription>
+<para>user view of the scratch buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="177" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Yap_page_size</definition>
+        <argsstring></argsstring>
+        <name>Yap_page_size</name>
+        <briefdescription>
+<para>Operating system and architecture dependent page size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="110" column="15" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="97" bodyend="-1" declfile="/home/vsc/github/yap/H/alloc.h" declline="110" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__MemAlloc_1ga9020fcba1809c343251c23b362183c3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitHeap</definition>
+        <argsstring>(void *)</argsstring>
+        <name>Yap_InitHeap</name>
+        <param>
+          <type>void *</type>
+          <declname>heap_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="112" column="15" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="1480" bodyend="1480" declfile="/home/vsc/github/yap/H/alloc.h" declline="112" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1gacca1fcc2b35de27474836dd5178a5e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>UInt Yap_ExtendWorkSpaceThroughHole</definition>
+        <argsstring>(UInt)</argsstring>
+        <name>Yap_ExtendWorkSpaceThroughHole</name>
+        <param>
+          <type>UInt</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="113" column="15" declfile="/home/vsc/github/yap/H/alloc.h" declline="113" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1ga00de756dec6ad1d6bf6e7887c454266d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_AllocHole</definition>
+        <argsstring>(UInt, UInt)</argsstring>
+        <name>Yap_AllocHole</name>
+        <param>
+          <type>UInt</type>
+          <declname>actual_request</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>total_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="114" column="15" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="1614" bodyend="1634" declfile="/home/vsc/github/yap/H/alloc.h" declline="114" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1gae7ae42bc95f69dd94187496da4e105a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Yap_HeapUsed</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_HeapUsed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="115" column="15" declfile="/home/vsc/github/yap/H/alloc.h" declline="115" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1gabab41c703234576a899bd782116a02be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_add_memory_hole</definition>
+        <argsstring>(ADDR, ADDR)</argsstring>
+        <name>Yap_add_memory_hole</name>
+        <param>
+          <type>ADDR</type>
+          <declname>Start</declname>
+        </param>
+        <param>
+          <type>ADDR</type>
+          <declname>End</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="152" column="6" bodyfile="/home/vsc/github/yap/C/alloc.c" bodystart="1557" bodyend="1557" declfile="/home/vsc/github/yap/H/alloc.h" declline="152" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1ga4b27ece2820024e65633a5530c6cdba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool get_scratch</definition>
+        <argsstring>(scratch_struct_t *handle)</argsstring>
+        <name>get_scratch</name>
+        <param>
+          <type><ref refid="group__MemAlloc_1gae750444cfefb73afb5e1e5c30bac8f22" kindref="member">scratch_struct_t</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="179" column="13" declfile="/home/vsc/github/yap/H/alloc.h" declline="179" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1gaec0eb6068c9a45ad46016f7477be0a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_get_scratch_buf</definition>
+        <argsstring>(scratch_struct_t *handle, size_t nof, size_t each)</argsstring>
+        <name>Yap_get_scratch_buf</name>
+        <param>
+          <type><ref refid="group__MemAlloc_1gae750444cfefb73afb5e1e5c30bac8f22" kindref="member">scratch_struct_t</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nof</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>each</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="180" column="13" declfile="/home/vsc/github/yap/H/alloc.h" declline="180" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1gaa0ef768001e7b1c04578afcc5954b842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_realloc_scratch_buf</definition>
+        <argsstring>(scratch_struct_t *handle, size_t nof)</argsstring>
+        <name>Yap_realloc_scratch_buf</name>
+        <param>
+          <type><ref refid="group__MemAlloc_1gae750444cfefb73afb5e1e5c30bac8f22" kindref="member">scratch_struct_t</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nof</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="181" column="13" declfile="/home/vsc/github/yap/H/alloc.h" declline="181" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemAlloc_1gaf2233d9886044447b443ac6ea8eeba03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_release_scratch_buf</definition>
+        <argsstring>(scratch_struct_t *handle)</argsstring>
+        <name>Yap_release_scratch_buf</name>
+        <param>
+          <type><ref refid="group__MemAlloc_1gae750444cfefb73afb5e1e5c30bac8f22" kindref="member">scratch_struct_t</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="182" column="13" declfile="/home/vsc/github/yap/H/alloc.h" declline="182" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__MemAlloc_1ga97d832ae23af4f215e801e37e4f94254" prot="public" static="no">
+        <name>K</name>
+        <initializer>((Int) 1024)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="69" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1gab022f37b578678cb1e6e695e03db2446" prot="public" static="no">
+        <name>MinBlockSize</name>
+        <initializer>(sizeof(<ref refid="structFREEB" kindref="compound">BlockHeader</ref>)+sizeof(<ref refid="group__MemAlloc_1ga36e27109dd76ab320fc928d6119a4f31" kindref="member">YAP_SEG_SIZE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="71" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga076faa71f8b05f82e42dffb08ced30c8" prot="public" static="no">
+        <name>MaxBlockSize</name>
+        <initializer>0xffffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="72" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1gac3fb4394d065fb6aaf7e7fd5ec689c65" prot="public" static="no">
+        <name>InUseFlag</name>
+        <initializer>0x80000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="73" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga463b37a08f5c415346c97094a4a92851" prot="public" static="no">
+        <name>MaxTmp</name>
+        <param><defname>USES_REGS1</defname></param>
+        <initializer>(MaxBlockSize+1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="75" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga552cd1e5a3b35c3fb1aa29c67efb0e1f" prot="public" static="no">
+        <name>YAP_ALIGN</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="84" column="10" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1gaf0611031352c5e71df4e2540e5fcd03a" prot="public" static="no">
+        <name>YAP_ALIGNMASK</name>
+        <initializer>((CELL)(-8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="85" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga02142c133c1466abb26ad2a1df72ebbe" prot="public" static="no">
+        <name>AdjustSize</name>
+        <param><defname>X</defname></param>
+        <initializer>((X+YAP_ALIGN) &amp; YAP_ALIGNMASK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="88" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1gaa1e0d4f73ac365a64855d4bdb894a3a6" prot="public" static="no">
+        <name>ALIGN_SIZE</name>
+        <param><defname>X</defname></param>
+        <param><defname>SIZE</defname></param>
+        <initializer>(((CELL)(X)+((SIZE)-1)) &amp; ~((SIZE)-1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="91" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga9c5a9beb1ed82b2e98a5817ab68dcbb2" prot="public" static="no">
+        <name>YAP_ALLOC_SIZE</name>
+        <initializer><ref refid="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" kindref="member">Yap_page_size</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="100" column="10" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga07a1e1ea04c0761d0dfce6c193c69b00" prot="public" static="no">
+        <name>LGPAGE_SIZE</name>
+        <initializer>(16*<ref refid="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" kindref="member">Yap_page_size</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="101" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga926a20ca830d1e780c78979d9dc59317" prot="public" static="no">
+        <name>AdjustPageSize</name>
+        <param><defname>X</defname></param>
+        <initializer>(((X)+ (YAP_ALLOC_SIZE-1))/YAP_ALLOC_SIZE)*YAP_ALLOC_SIZE;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="104" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga9a93ae2349645247e71f36ddd0acaeb6" prot="public" static="no">
+        <name>AdjustLargePageSize</name>
+        <param><defname>X</defname></param>
+        <initializer>(((X)+ (LGPAGE_SIZE-1))/LGPAGE_SIZE)*LGPAGE_SIZE;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="105" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga9136373eddf27035cf403c3ee66b732b" prot="public" static="no">
+        <name>BlockTrailer</name>
+        <param><defname>b</defname></param>
+        <initializer>((<ref refid="group__MemAlloc_1ga36e27109dd76ab320fc928d6119a4f31" kindref="member">YAP_SEG_SIZE</ref> *)b)[((<ref refid="structFREEB" kindref="compound">BlockHeader</ref> *) b)-&gt;b_size]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="107" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1gabf586b33b58a114c27689144d3037c1e" prot="public" static="no">
+        <name>SCRATCH_START_SIZE</name>
+        <initializer>K64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="154" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MemAlloc_1ga1d0646a642a0923f76559ebb9202e75c" prot="public" static="no">
+        <name>SCRATCH_INC_SIZE</name>
+        <initializer>K64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/alloc.h" line="155" column="9" bodyfile="/home/vsc/github/yap/H/alloc.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Memory organization and Auxiliary Memory Access Data-structures and routines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>  The data areas is divided in the following way:
+</verbatim> <programlisting><codeline><highlight class="normal">Lower<sp/>Addresses</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>HeapBase<sp/><sp/><sp/><sp/>\<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref><sp/>and<sp/>code<sp/>space</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>HeapTop-1<sp/><sp/><sp/>/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>HeapTop<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Free<sp/>Space</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>HeapMax<sp/><sp/><sp/><sp/><sp/>/</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>GlobalBase-1/</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>GlobalBase<sp/><sp/>\<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Global<sp/>Stack</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>H<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>ASP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Local<sp/>stack</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>LocalBase<sp/><sp/><sp/>/</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>TRBase<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>TR<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Trail</highlight></codeline>
+<codeline><highlight class="normal">Higher<sp/>Adresses</highlight></codeline>
+</programlisting></para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

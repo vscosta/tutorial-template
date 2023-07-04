@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptleash_21" kind="concept">
+    <compoundname>leash/1</compoundname>
+    <initializer>template&lt;&gt;
+concept leash/1 =     </initializer>
+    <briefdescription>
+<para><bold>leash</bold>(+ <emphasis>M</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sets leashing mode to <emphasis>M</emphasis> The mode can be specified as:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>full</computeroutput> prompt on Call, Exit, Redo and Fail</para>
+</listitem><listitem><para><computeroutput>tight</computeroutput> prompt on Call, Redo and Fail</para>
+</listitem><listitem><para><computeroutput>half</computeroutput> prompt on Call and Redo</para>
+</listitem><listitem><para><computeroutput>loose</computeroutput> prompt on Call</para>
+</listitem><listitem><para><computeroutput>off</computeroutput> never prompt</para>
+</listitem><listitem><para><computeroutput>none</computeroutput> never prompt, same as <computeroutput>off</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>The initial leashing mode is <computeroutput>full</computeroutput></para>
+<para>The user may also specify directly the debugger ports where he wants to be prompted If the argument for leash is a number <emphasis>N</emphasis>, each of lower four bits of the number is used to control prompting at one the ports of the box model The debugger will prompt according to the following conditions:</para>
+<para><itemizedlist>
+<listitem><para>if <computeroutput>N/\ 1 =\= 0</computeroutput> prompt on fail</para>
+</listitem><listitem><para>if <computeroutput>N/\ 2 =\= 0</computeroutput> prompt on redo</para>
+</listitem><listitem><para>if <computeroutput>N/\ 4 =\= 0</computeroutput> prompt on exit</para>
+</listitem><listitem><para>if <computeroutput>N/\ 8 =\= 0</computeroutput> prompt on call</para>
+</listitem></itemizedlist>
+</para>
+<para>Therefore, <computeroutput>leash(15)</computeroutput> is equivalent to <computeroutput>leash(full)</computeroutput> and <computeroutput>leash(0)</computeroutput> is equivalent to <computeroutput>leash(off)</computeroutput></para>
+<para>Another way of using <computeroutput>leash</computeroutput> is to give it a list with the names of the ports where the debugger should stop For example, <computeroutput>leash([call,exit,redo,fail])</computeroutput> is the same as <computeroutput>leash(full)</computeroutput> or <computeroutput>leash(15)</computeroutput> and <computeroutput>leash([fail])</computeroutput> might be used instead of <computeroutput>leash(1)</computeroutput> </para>
+    </detaileddescription>
+    <location file="pl/spy.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

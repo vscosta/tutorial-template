@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcompile_21" kind="class" language="Prolog" prot="public">
+    <compoundname>compile/1</compoundname>
+    <briefdescription>
+<para><bold>compile</bold>(+ <emphasis>F</emphasis> ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Updates the program by replacing the previous definitions for the predicates defined in <emphasis>F</emphasis> It differs from <ref refid="classconsult_21" kindref="compound">consult/1</ref> in that it only <ref refid="classmultifile_21" kindref="compound">multifile/1</ref> predicates are not reset in a reconsult Instead, <ref refid="classconsult_21" kindref="compound">consult/1</ref> sees all predicates as multifile</para>
+<para>YAP also offers no difference between <ref refid="classconsult_21" kindref="compound">consult/1</ref> and <ref refid="classcompile_21" kindref="compound">compile/1</ref> The two are implemented by the same exact code</para>
+<para>Example:</para>
+<para><programlisting><codeline><highlight class="keyword">?-<sp/>[file1,<sp/></highlight><highlight class="keyword">-</highlight><highlight class="normal">file2,<sp/></highlight><highlight class="keyword">-</highlight><highlight class="normal">file3,<sp/>file4]</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> will consult <computeroutput>file1</computeroutput> <computeroutput>file4</computeroutput> and reconsult <computeroutput>file2</computeroutput> and <computeroutput>file3</computeroutput> That is, it could be written as:</para>
+<para><programlisting><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">consult(file1),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/lf.yap" line="5" column="1" bodyfile="/home/vsc/github/yap/pl/lf.yap" bodystart="5" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

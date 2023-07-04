@@ -1,0 +1,2449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="amiops_8h" kind="file" language="C++">
+    <compoundname>amiops.h</compoundname>
+    <includes refid="inline-only_8h" local="yes">inline-only.h</includes>
+    <includedby refid="args_8c" local="yes">/home/vsc/github/yap/C/args.c</includedby>
+    <includedby refid="depth__bound_8c" local="yes">/home/vsc/github/yap/C/depth_bound.c</includedby>
+    <includedby refid="load__dll_8c" local="yes">/home/vsc/github/yap/C/load_dll.c</includedby>
+    <includedby refid="sort_8c" local="yes">/home/vsc/github/yap/C/sort.c</includedby>
+    <includedby refid="Yap_8h" local="yes">/home/vsc/github/yap/H/Yap.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/amiops.h</label>
+        <link refid="amiops_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="83">
+        <label>/home/vsc/github/yap/C/absmi.c</label>
+        <link refid="absmi_8c"/>
+      </node>
+      <node id="82">
+        <label>/home/vsc/github/yap/C/absmi_insts.h</label>
+        <link refid="C_2absmi__insts_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/vsc/github/yap/C/adtdefs.c</label>
+        <link refid="adtdefs_8c_source"/>
+      </node>
+      <node id="8">
+        <label>/home/vsc/github/yap/C/agc.c</label>
+        <link refid="agc_8c_source"/>
+      </node>
+      <node id="9">
+        <label>/home/vsc/github/yap/C/alloc.c</label>
+        <link refid="alloc_8c"/>
+      </node>
+      <node id="10">
+        <label>/home/vsc/github/yap/C/amasm.c</label>
+        <link refid="amasm_8c_source"/>
+      </node>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/args.c</label>
+        <link refid="args_8c"/>
+      </node>
+      <node id="11">
+        <label>/home/vsc/github/yap/C/arith0.c</label>
+        <link refid="arith0_8c"/>
+      </node>
+      <node id="12">
+        <label>/home/vsc/github/yap/C/arith1.c</label>
+        <link refid="arith1_8c"/>
+      </node>
+      <node id="13">
+        <label>/home/vsc/github/yap/C/arith2.c</label>
+        <link refid="arith2_8c"/>
+      </node>
+      <node id="14">
+        <label>/home/vsc/github/yap/C/arrays.c</label>
+        <link refid="arrays_8c"/>
+      </node>
+      <node id="15">
+        <label>/home/vsc/github/yap/C/atomic.c</label>
+        <link refid="atomic_8c"/>
+      </node>
+      <node id="16">
+        <label>/home/vsc/github/yap/C/attvar.c</label>
+        <link refid="attvar_8c_source"/>
+      </node>
+      <node id="17">
+        <label>/home/vsc/github/yap/C/bb.c</label>
+        <link refid="bb_8c_source"/>
+      </node>
+      <node id="18">
+        <label>/home/vsc/github/yap/C/bignum.c</label>
+        <link refid="bignum_8c_source"/>
+      </node>
+      <node id="19">
+        <label>/home/vsc/github/yap/C/blobs.c</label>
+        <link refid="C_2blobs_8c_source"/>
+      </node>
+      <node id="20">
+        <label>/home/vsc/github/yap/C/c_interface.c</label>
+        <link refid="c__interface_8c"/>
+      </node>
+      <node id="21">
+        <label>/home/vsc/github/yap/C/cdmgr.c</label>
+        <link refid="cdmgr_8c_source"/>
+      </node>
+      <node id="22">
+        <label>/home/vsc/github/yap/C/clause_list.c</label>
+        <link refid="clause__list_8c_source"/>
+      </node>
+      <node id="23">
+        <label>/home/vsc/github/yap/C/cmppreds.c</label>
+        <link refid="cmppreds_8c"/>
+      </node>
+      <node id="24">
+        <label>/home/vsc/github/yap/C/compiler.c</label>
+        <link refid="compiler_8c_source"/>
+      </node>
+      <node id="25">
+        <label>/home/vsc/github/yap/C/computils.c</label>
+        <link refid="computils_8c_source"/>
+      </node>
+      <node id="26">
+        <label>/home/vsc/github/yap/C/consult.c</label>
+        <link refid="consult_8c_source"/>
+      </node>
+      <node id="27">
+        <label>/home/vsc/github/yap/C/copy.c</label>
+        <link refid="copy_8c"/>
+      </node>
+      <node id="28">
+        <label>/home/vsc/github/yap/C/corout.c</label>
+        <link refid="corout_8c_source"/>
+      </node>
+      <node id="29">
+        <label>/home/vsc/github/yap/C/cut_c.c</label>
+        <link refid="cut__c_8c_source"/>
+      </node>
+      <node id="30">
+        <label>/home/vsc/github/yap/C/dbase.c</label>
+        <link refid="dbase_8c_source"/>
+      </node>
+      <node id="31">
+        <label>/home/vsc/github/yap/C/dbload.c</label>
+        <link refid="dbload_8c_source"/>
+      </node>
+      <node id="32">
+        <label>/home/vsc/github/yap/C/debug.c</label>
+        <link refid="debug_8c_source"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/depth_bound.c</label>
+        <link refid="depth__bound_8c_source"/>
+      </node>
+      <node id="33">
+        <label>/home/vsc/github/yap/C/dlmalloc.c</label>
+        <link refid="dlmalloc_8c_source"/>
+      </node>
+      <node id="34">
+        <label>/home/vsc/github/yap/C/errors.c</label>
+        <link refid="C_2errors_8c"/>
+      </node>
+      <node id="35">
+        <label>/home/vsc/github/yap/C/eval.c</label>
+        <link refid="eval_8c"/>
+      </node>
+      <node id="89">
+        <label>/home/vsc/github/yap/C/exec.c</label>
+        <link refid="exec_8c_source"/>
+      </node>
+      <node id="90">
+        <label>/home/vsc/github/yap/C/execstruct.c</label>
+        <link refid="execstruct_8c_source"/>
+      </node>
+      <node id="36">
+        <label>/home/vsc/github/yap/C/exo.c</label>
+        <link refid="exo_8c_source"/>
+      </node>
+      <node id="37">
+        <label>/home/vsc/github/yap/C/exo_udi.c</label>
+        <link refid="exo__udi_8c_source"/>
+      </node>
+      <node id="38">
+        <label>/home/vsc/github/yap/C/flags.c</label>
+        <link refid="flags_8c"/>
+      </node>
+      <node id="81">
+        <label>/home/vsc/github/yap/C/fli_absmi_insts.h</label>
+        <link refid="fli__absmi__insts_8h_source"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/home/vsc/github/yap/C/globals.c</label>
+        <link refid="globals_8c"/>
+      </node>
+      <node id="40">
+        <label>/home/vsc/github/yap/C/gmp_support.c</label>
+        <link refid="gmp__support_8c_source"/>
+      </node>
+      <node id="91">
+        <label>/home/vsc/github/yap/C/gprof.c</label>
+        <link refid="gprof_8c_source"/>
+      </node>
+      <node id="77">
+        <label>/home/vsc/github/yap/C/grow.c</label>
+        <link refid="grow_8c_source"/>
+      </node>
+      <node id="92">
+        <label>/home/vsc/github/yap/C/heapgc.c</label>
+        <link refid="heapgc_8c_source"/>
+      </node>
+      <node id="93">
+        <label>/home/vsc/github/yap/C/index.c</label>
+        <link refid="index_8c"/>
+      </node>
+      <node id="41">
+        <label>/home/vsc/github/yap/C/init.c</label>
+        <link refid="init_8c_source"/>
+      </node>
+      <node id="94">
+        <label>/home/vsc/github/yap/C/inlines.c</label>
+        <link refid="inlines_8c"/>
+      </node>
+      <node id="42">
+        <label>/home/vsc/github/yap/C/load_aout.c</label>
+        <link refid="load__aout_8c_source"/>
+      </node>
+      <node id="43">
+        <label>/home/vsc/github/yap/C/load_coff.c</label>
+        <link refid="load__coff_8c_source"/>
+      </node>
+      <node id="44">
+        <label>/home/vsc/github/yap/C/load_dl.c</label>
+        <link refid="load__dl_8c_source"/>
+      </node>
+      <node id="4">
+        <label>/home/vsc/github/yap/C/load_dll.c</label>
+        <link refid="load__dll_8c_source"/>
+      </node>
+      <node id="45">
+        <label>/home/vsc/github/yap/C/load_dyld.c</label>
+        <link refid="load__dyld_8c_source"/>
+      </node>
+      <node id="46">
+        <label>/home/vsc/github/yap/C/load_foreign.c</label>
+        <link refid="load__foreign_8c_source"/>
+      </node>
+      <node id="47">
+        <label>/home/vsc/github/yap/C/load_none.c</label>
+        <link refid="load__none_8c_source"/>
+      </node>
+      <node id="48">
+        <label>/home/vsc/github/yap/C/load_shl.c</label>
+        <link refid="load__shl_8c_source"/>
+      </node>
+      <node id="49">
+        <label>/home/vsc/github/yap/C/mavar.c</label>
+        <link refid="mavar_8c"/>
+      </node>
+      <node id="50">
+        <label>/home/vsc/github/yap/C/modules.c</label>
+        <link refid="modules_8c_source"/>
+      </node>
+      <node id="51">
+        <label>/home/vsc/github/yap/C/other.c</label>
+        <link refid="other_8c_source"/>
+      </node>
+      <node id="52">
+        <label>/home/vsc/github/yap/C/parser.c</label>
+        <link refid="parser_8c"/>
+      </node>
+      <node id="72">
+        <label>/home/vsc/github/yap/C/qlyr.c</label>
+        <link refid="qlyr_8c"/>
+      </node>
+      <node id="73">
+        <label>/home/vsc/github/yap/C/qlyw.c</label>
+        <link refid="qlyw_8c_source"/>
+      </node>
+      <node id="53">
+        <label>/home/vsc/github/yap/C/range.c</label>
+        <link refid="range_8c_source"/>
+      </node>
+      <node id="74">
+        <label>/home/vsc/github/yap/C/save.c</label>
+        <link refid="save_8c_source"/>
+      </node>
+      <node id="54">
+        <label>/home/vsc/github/yap/C/scanner.c</label>
+        <link refid="scanner_8c"/>
+      </node>
+      <node id="55">
+        <label>/home/vsc/github/yap/C/signals.c</label>
+        <link refid="signals_8c_source"/>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/C/sort.c</label>
+        <link refid="sort_8c_source"/>
+      </node>
+      <node id="56">
+        <label>/home/vsc/github/yap/C/stack.c</label>
+        <link refid="C_2stack_8c"/>
+      </node>
+      <node id="57">
+        <label>/home/vsc/github/yap/C/stdpreds.c</label>
+        <link refid="stdpreds_8c_source"/>
+      </node>
+      <node id="58">
+        <label>/home/vsc/github/yap/C/t.c</label>
+        <link refid="t_8c_source"/>
+      </node>
+      <node id="78">
+        <label>/home/vsc/github/yap/C/terms.c</label>
+        <link refid="terms_8c"/>
+      </node>
+      <node id="59">
+        <label>/home/vsc/github/yap/C/text.c</label>
+        <link refid="text_8c"/>
+      </node>
+      <node id="60">
+        <label>/home/vsc/github/yap/C/threads.c</label>
+        <link refid="threads_8c_source"/>
+      </node>
+      <node id="61">
+        <label>/home/vsc/github/yap/C/tracer.c</label>
+        <link refid="tracer_8c_source"/>
+      </node>
+      <node id="62">
+        <label>/home/vsc/github/yap/C/udi.c</label>
+        <link refid="udi_8c_source"/>
+      </node>
+      <node id="95">
+        <label>/home/vsc/github/yap/C/unify.c</label>
+        <link refid="unify_8c_source"/>
+      </node>
+      <node id="63">
+        <label>/home/vsc/github/yap/C/userpreds.c</label>
+        <link refid="userpreds_8c_source"/>
+      </node>
+      <node id="79">
+        <label>/home/vsc/github/yap/C/utilpreds.c</label>
+        <link refid="utilpreds_8c"/>
+      </node>
+      <node id="64">
+        <label>/home/vsc/github/yap/C/write.c</label>
+        <link refid="write_8c_source"/>
+      </node>
+      <node id="65">
+        <label>/home/vsc/github/yap/C/yap-args.c</label>
+        <link refid="yap-args_8c_source"/>
+      </node>
+      <node id="66">
+        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <link refid="cxx4yap_8hh_source"/>
+      </node>
+      <node id="69">
+        <label>/home/vsc/github/yap/CXX/heap.cxx</label>
+        <link refid="heap_8cxx_source"/>
+      </node>
+      <node id="67">
+        <label>/home/vsc/github/yap/CXX/tmp/yapi.hh</label>
+        <link refid="tmp_2yapi_8hh"/>
+      </node>
+      <node id="70">
+        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <link refid="yapi_8cpp_source"/>
+      </node>
+      <node id="68">
+        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <link refid="yapi_8hh"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>/home/vsc/github/yap/H/Foreign.h</label>
+        <link refid="Foreign_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/vsc/github/yap/H/Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>/home/vsc/github/yap/H/YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>/home/vsc/github/yap/H/YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>/home/vsc/github/yap/H/YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>/home/vsc/github/yap/H/YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>/home/vsc/github/yap/H/Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>/home/vsc/github/yap/H/Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/home/vsc/github/yap/H/absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>/home/vsc/github/yap/H/absmi_insts.h</label>
+        <link refid="H_2absmi__insts_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/amiops.h</label>
+        <link refid="amiops_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/home/vsc/github/yap/H/clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>/home/vsc/github/yap/H/fields.h</label>
+        <link refid="fields_8h_source"/>
+      </node>
+      <node id="126">
+        <label>/home/vsc/github/yap/H/generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>/home/vsc/github/yap/H/generated/ilocals.h</label>
+        <link refid="ilocals_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>/home/vsc/github/yap/H/generated/rlocals.h</label>
+        <link refid="rlocals_8h_source"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>/home/vsc/github/yap/H/heap.h</label>
+        <link refid="heap_8h_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>/home/vsc/github/yap/H/heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>/home/vsc/github/yap/H/locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>/home/vsc/github/yap/H/rheap.h</label>
+        <link refid="rheap_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>/home/vsc/github/yap/H/terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>/home/vsc/github/yap/OPTYap/opt.init.c</label>
+        <link refid="opt_8init_8c_source"/>
+      </node>
+      <node id="135">
+        <label>/home/vsc/github/yap/OPTYap/opt.preds.c</label>
+        <link refid="opt_8preds_8c_source"/>
+      </node>
+      <node id="136">
+        <label>/home/vsc/github/yap/OPTYap/or.copy_engine.c</label>
+        <link refid="or_8copy__engine_8c_source"/>
+      </node>
+      <node id="137">
+        <label>/home/vsc/github/yap/OPTYap/or.cow_engine.c</label>
+        <link refid="or_8cow__engine_8c_source"/>
+      </node>
+      <node id="138">
+        <label>/home/vsc/github/yap/OPTYap/or.cut.c</label>
+        <link refid="or_8cut_8c_source"/>
+      </node>
+      <node id="139">
+        <label>/home/vsc/github/yap/OPTYap/or.memory.c</label>
+        <link refid="or_8memory_8c_source"/>
+      </node>
+      <node id="140">
+        <label>/home/vsc/github/yap/OPTYap/or.sba_engine.c</label>
+        <link refid="or_8sba__engine_8c_source"/>
+      </node>
+      <node id="141">
+        <label>/home/vsc/github/yap/OPTYap/or.scheduler.c</label>
+        <link refid="or_8scheduler_8c_source"/>
+      </node>
+      <node id="142">
+        <label>/home/vsc/github/yap/OPTYap/or.thread_engine.c</label>
+        <link refid="or_8thread__engine_8c_source"/>
+      </node>
+      <node id="143">
+        <label>/home/vsc/github/yap/OPTYap/tab.completion.c</label>
+        <link refid="tab_8completion_8c_source"/>
+      </node>
+      <node id="144">
+        <label>/home/vsc/github/yap/OPTYap/tab.tries.c</label>
+        <link refid="tab_8tries_8c_source"/>
+      </node>
+      <node id="101">
+        <label>/home/vsc/github/yap/library/dialect/swi/fli/blobs.c</label>
+        <link refid="library_2dialect_2swi_2fli_2blobs_8c"/>
+      </node>
+      <node id="86">
+        <label>/home/vsc/github/yap/library/dialect/swi/fli/swi.c</label>
+        <link refid="swi_8c"/>
+      </node>
+      <node id="146">
+        <label>/home/vsc/github/yap/library/mpi/prologterms2c.c</label>
+        <link refid="prologterms2c_8c_source"/>
+      </node>
+      <node id="145">
+        <label>/home/vsc/github/yap/library/mpi/prologterms2c.h</label>
+        <link refid="prologterms2c_8h_source"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>/home/vsc/github/yap/os/absf.c</label>
+        <link refid="absf_8c"/>
+      </node>
+      <node id="102">
+        <label>/home/vsc/github/yap/os/alias.c</label>
+        <link refid="alias_8c"/>
+      </node>
+      <node id="116">
+        <label>/home/vsc/github/yap/os/assets.c</label>
+        <link refid="assets_8c"/>
+      </node>
+      <node id="103">
+        <label>/home/vsc/github/yap/os/charsio.c</label>
+        <link refid="charsio_8c"/>
+      </node>
+      <node id="104">
+        <label>/home/vsc/github/yap/os/chartypes.c</label>
+        <link refid="chartypes_8c"/>
+      </node>
+      <node id="117">
+        <label>/home/vsc/github/yap/os/console.c</label>
+        <link refid="console_8c"/>
+      </node>
+      <node id="118">
+        <label>/home/vsc/github/yap/os/files.c</label>
+        <link refid="files_8c_source"/>
+      </node>
+      <node id="119">
+        <label>/home/vsc/github/yap/os/fmem.c</label>
+        <link refid="fmem_8c_source"/>
+      </node>
+      <node id="105">
+        <label>/home/vsc/github/yap/os/format.c</label>
+        <link refid="format_8c"/>
+      </node>
+      <node id="147">
+        <label>/home/vsc/github/yap/os/format.h</label>
+        <link refid="format_8h_source"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>/home/vsc/github/yap/os/iopreds.c</label>
+        <link refid="iopreds_8c"/>
+      </node>
+      <node id="148">
+        <label>/home/vsc/github/yap/os/iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>/home/vsc/github/yap/os/pipes.c</label>
+        <link refid="pipes_8c"/>
+      </node>
+      <node id="108">
+        <label>/home/vsc/github/yap/os/random.c</label>
+        <link refid="random_8c_source"/>
+      </node>
+      <node id="109">
+        <label>/home/vsc/github/yap/os/readline/readline.c</label>
+        <link refid="readline_8c"/>
+      </node>
+      <node id="110">
+        <label>/home/vsc/github/yap/os/readterm.c</label>
+        <link refid="readterm_8c"/>
+      </node>
+      <node id="111">
+        <label>/home/vsc/github/yap/os/readutil.c</label>
+        <link refid="readutil_8c_source"/>
+      </node>
+      <node id="120">
+        <label>/home/vsc/github/yap/os/sig.c</label>
+        <link refid="sig_8c_source"/>
+      </node>
+      <node id="112">
+        <label>/home/vsc/github/yap/os/sockets.c</label>
+        <link refid="sockets_8c_source"/>
+      </node>
+      <node id="113">
+        <label>/home/vsc/github/yap/os/streams.c</label>
+        <link refid="streams_8c_source"/>
+      </node>
+      <node id="121">
+        <label>/home/vsc/github/yap/os/sysbits.c</label>
+        <link refid="sysbits_8c_source"/>
+      </node>
+      <node id="114">
+        <label>/home/vsc/github/yap/os/sysbits.h</label>
+        <link refid="sysbits_8h_source"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>/home/vsc/github/yap/os/time.c</label>
+        <link refid="time_8c_source"/>
+      </node>
+      <node id="97">
+        <label>/home/vsc/github/yap/os/writeterm.c</label>
+        <link refid="writeterm_8c"/>
+      </node>
+      <node id="124">
+        <label>/home/vsc/github/yap/os/yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>/home/vsc/github/yap/os/ypsocks.c</label>
+        <link refid="ypsocks_8c_source"/>
+      </node>
+      <node id="149">
+        <label>/home/vsc/github/yap/os/ypstdio.c</label>
+        <link refid="ypstdio_8c_source"/>
+      </node>
+      <node id="75">
+        <label>/home/vsc/github/yap/pl/errors.c</label>
+        <link refid="pl_2errors_8c"/>
+      </node>
+      <node id="98">
+        <label>/home/vsc/github/yap/pl/stack.c</label>
+        <link refid="pl_2stack_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="amiops_8h_1a94e5bdf14debbb56e891b981eade5f55" prot="public" static="no">
+        <name>IsAttVar</name>
+        <param><defname>pt</defname></param>
+        <initializer>__IsAttVar(pt PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="30" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a548a5620512b921c619e2d8a16480647" prot="public" static="no">
+        <name>IsArrayReference</name>
+        <param><defname>a</defname></param>
+        <initializer>((a)-&gt;array_access_func == FunctorArrayAccess)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="45" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a8f734eafe47dcd8b4ceed3d0838b4e33" prot="public" static="no">
+        <name>profiled_deref_head_TEST</name>
+        <param><defname>D</defname></param>
+        <param><defname>Label</defname></param>
+        <initializer>  if (IsVarTerm(D)) {                                                          \
+    if (!strcmp(#D, &quot;d0&quot;)) {                                                   \
+      EMIT_CONDITIONAL_SUCCESS(&quot;IsVarTerm(d0)&quot;);                               \
+    } else if (!strcmp(#D, &quot;d1&quot;)) {                                            \
+      EMIT_CONDITIONAL_SUCCESS(&quot;IsVarTerm(d1)&quot;);                               \
+    }                                                                          \
+    goto Label;                                                                \
+  }                                                                            \
+  if (!strcmp(#D, &quot;d0&quot;)) {                                                     \
+    EMIT_CONDITIONAL_FAIL(&quot;IsVarTerm(d0)&quot;);                                    \
+  } else if (!strcmp(#D, &quot;d1&quot;)) {                                              \
+    EMIT_CONDITIONAL_FAIL(&quot;IsVarTerm(d1)&quot;);                                    \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="58" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a88b04d6c86f871c03485f36233296f66" prot="public" static="no">
+        <name>deref_head</name>
+        <param><defname>D</defname></param>
+        <param><defname>Label</defname></param>
+        <initializer>  if (IsVarTerm(D))                                                            \
+  goto Label</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="73" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a08c4cf54afb5033af7639c5fc42d346b" prot="public" static="no">
+        <name>profiled_deref_body</name>
+        <param><defname>D</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>LabelUnk</defname></param>
+        <param><defname>LabelNonVar</defname></param>
+        <initializer>  do {                                                                         \
+    if (!IsVarTerm(D))                                                         \
+      goto LabelNonVar;                                                        \
+  LabelUnk:                                                                    \
+    (A) = (CELL *)(D);                                                         \
+    (D) = *(CELL *)(D);                                                        \
+    if (!strcmp(#D, &quot;d0&quot;) &amp;&amp; !strcmp(#A, &quot;pt0&quot;)) {                             \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D0PT0);                           \
+    } else if (!strcmp(#D, &quot;d0&quot;) &amp;&amp; !strcmp(#A, &quot;pt1&quot;)) {                      \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D0PT1);                           \
+    } else if (!strcmp(#D, &quot;d0&quot;) &amp;&amp; !strcmp(#A, &quot;S_SREG&quot;)) {                   \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D0S_SREG);                        \
+    } else if (!strcmp(#D, &quot;d1&quot;) &amp;&amp; !strcmp(#A, &quot;pt0&quot;)) {                      \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D1PT0);                           \
+    } else if (!strcmp(#D, &quot;d1&quot;) &amp;&amp; !strcmp(#A, &quot;pt1&quot;)) {                      \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D1PT1);                           \
+    }                                                                          \
+  } while (Unsigned(A) != (D));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="77" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a99e96c73423484972d15610bc749ed4d" prot="public" static="no">
+        <name>deref_body</name>
+        <param><defname>D</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>LabelUnk</defname></param>
+        <param><defname>LabelNonVar</defname></param>
+        <initializer>  do {                                                                         \
+    if (!IsVarTerm(D))                                                         \
+      goto LabelNonVar;                                                        \
+  LabelUnk:                                                                    \
+    (A) = (CELL *)(D);                                                         \
+    (D) = *(CELL *)(D);                                                        \
+  } while (Unsigned(A) != (D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="97" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a99e96c73423484972d15610bc749ed4d" prot="public" static="no">
+        <name>deref_body</name>
+        <param><defname>D</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>LabelUnk</defname></param>
+        <param><defname>LabelNonVar</defname></param>
+        <initializer>  do {                                                                         \
+    if (!IsVarTerm(D))                                                         \
+      goto LabelNonVar;                                                        \
+  LabelUnk:                                                                    \
+    (A) = (CELL *)(D);                                                         \
+    (D) = *(CELL *)(D);                                                        \
+  } while (Unsigned(A) != (D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="106" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1ac12589698fb5832968c15bdcd238b17d" prot="public" static="no">
+        <name>do_derefa</name>
+        <param><defname>D</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>LabelUnk</defname></param>
+        <param><defname>LabelDone</defname></param>
+        <initializer>  (D) = *(CELL *)(A);                                                          \
+  if (IsNonVarTerm(D))                                                         \
+    goto LabelDone;                                                            \
+  goto LabelUnk;                                                               \
+  do {                                                                         \
+    (A) = (CELL *)(D);                                                         \
+    (D) = *(CELL *)(D);                                                        \
+    if (!IsVarTerm(D))                                                         \
+      goto LabelDone;                                                          \
+  LabelUnk:;                                                                   \
+  } while (Unsigned(A) != (D));                                                \
+  LabelDone:</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="115" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a58714668dd410e4a4960de9773d1205b" prot="public" static="no">
+        <name>profiled_derefa_body</name>
+        <param><defname>D</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>LabelUnk</defname></param>
+        <param><defname>LabelNonVar</defname></param>
+        <initializer>  do {                                                                         \
+    (A) = (CELL *)(D);                                                         \
+    (D) = *(CELL *)(D);                                                        \
+    if (!strcmp(#D, &quot;d0&quot;) &amp;&amp; !strcmp(#A, &quot;pt0&quot;)) {                             \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D0PT0);                           \
+    } else if (!strcmp(#D, &quot;d0&quot;) &amp;&amp; !strcmp(#A, &quot;pt1&quot;)) {                      \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D0PT1);                           \
+    } else if (!strcmp(#D, &quot;d0&quot;) &amp;&amp; !strcmp(#A, &quot;S_SREG&quot;)) {                   \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D0S_SREG);                        \
+    } else if (!strcmp(#D, &quot;d1&quot;) &amp;&amp; !strcmp(#A, &quot;pt0&quot;)) {                      \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D1PT0);                           \
+    } else if (!strcmp(#D, &quot;d1&quot;) &amp;&amp; !strcmp(#A, &quot;pt1&quot;)) {                      \
+      EMIT_SIMPLE_BLOCK_TEST(YAAM_DEREF_BODY_D1PT1);                           \
+    }                                                                          \
+    if (!IsVarTerm(D))                                                         \
+      goto LabelNonVar;                                                        \
+  LabelUnk:;                                                                   \
+  } while (Unsigned(A) != (D));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="129" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1aa21ae51c8dd26cbe019788ebb66de3ba" prot="public" static="no">
+        <name>derefa_body</name>
+        <param><defname>D</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>LabelUnk</defname></param>
+        <param><defname>LabelNonVar</defname></param>
+        <initializer>  do {                                                                         \
+    (A) = (CELL *)(D);                                                         \
+    (D) = *(CELL *)(D);                                                        \
+    if (!IsVarTerm(D))                                                         \
+      goto LabelNonVar;                                                        \
+  LabelUnk:;                                                                   \
+  } while (Unsigned(A) != (D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="149" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1affc67945c6bcb982ae00fff813807204" prot="public" static="no">
+        <name>RESET_VARIABLE</name>
+        <param><defname>V</defname></param>
+        <initializer>(*(CELL *)(V) = Unsigned(V))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="207" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a0e1403bb95a1f2d6093891a085468f95" prot="public" static="no">
+        <name>DO_TRAIL</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>TrailTerm(TR++) = (CELL)(A)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="311" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a6aeb58ab0d0de022d7dff00fb6d61bf9" prot="public" static="no">
+        <name>TRAIL</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  if (OUTSIDE(HBREG, A, B))                                                    \
+  DO_TRAIL(A, D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="313" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1ae07f45b0bf6d263fb527321dd09c308e" prot="public" static="no">
+        <name>TRAIL_AND_JUMP</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  if (IN_BETWEEN(HBREG, A, B))                                                 \
+    GONext();                                                                  \
+  DO_TRAIL(A, D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="317" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1aa57f8a3f029ceb676eed03b8b40d1331" prot="public" static="no">
+        <name>TRAIL_GLOBAL</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  if ((A) &lt; HBREG)                                                             \
+  DO_TRAIL(A, D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="322" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1ae4397f48f9b494383ce5465fa8743688" prot="public" static="no">
+        <name>TRAIL_LOCAL</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  if ((A) &gt; ((CELL *)B))                                                       \
+  DO_TRAIL(A, D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="326" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a9e054abbd2de8f5cfbd7cb9c22af232d" prot="public" static="no">
+        <name>DO_MATRAIL</name>
+        <param><defname>VP</defname></param>
+        <param><defname>OLDV</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    TrailTerm(TR + 1) = OLDV;                                                  \
+    TrailTerm(TR) = TrailTerm(TR + 2) = AbsAppl(VP);                           \
+    TR += 3;                                                                   \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="358" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a6d7244020995d2f290939e735a254d9d" prot="public" static="no">
+        <name>MATRAIL</name>
+        <param><defname>VP</defname></param>
+        <param><defname>OLDV</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  if (OUTSIDE(HBREG, VP, B))                                                   \
+  DO_MATRAIL(VP, OLDV, D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="365" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a0375c3ffccb1be440b2dff48e6ff982e" prot="public" static="no">
+        <name>REF_TO_TRENTRY</name>
+        <param><defname>REF</defname></param>
+        <initializer>AbsPair(((CELL *)&amp;((REF)-&gt;Flags)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="371" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a26c8ce132819e2d08268d948416cf4ba" prot="public" static="no">
+        <name>CLREF_TO_TRENTRY</name>
+        <param><defname>REF</defname></param>
+        <initializer>AbsPair(((CELL *)&amp;((REF)-&gt;ClFlags)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="372" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a2d9349aec01286e1c75d3f987c1b5533" prot="public" static="no">
+        <name>TRAIL_REF</name>
+        <param><defname>REF</defname></param>
+        <initializer>TrailTerm(TR++) = REF_TO_TRENTRY(REF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="382" column="10" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a58a829cf291defcdc5eb44ba9d67d0f3" prot="public" static="no">
+        <name>TRAIL_CLREF</name>
+        <param><defname>REF</defname></param>
+        <initializer>TrailTerm(TR++) = CLREF_TO_TRENTRY(REF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="383" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1ab12ab9e97d519dd9ef1229fd54579067" prot="public" static="no">
+        <name>TRAIL_LINK</name>
+        <param><defname>REF</defname></param>
+        <initializer>TrailTerm(TR++) = AbsPair((CELL *)(REF))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="384" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a5bb129dc0ef0b2d825b9d523f6851cab" prot="public" static="no">
+        <name>TRAIL_FRAME</name>
+        <param><defname>FR</defname></param>
+        <initializer>DO_TRAIL(AbsPair((CELL *)(LOCAL_TrailBase)), FR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="386" column="10" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a8ea5b10ac36692064d339bed2f249c25" prot="public" static="no">
+        <name>Bind_Local</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    TRAIL_LOCAL(A, D);                                                         \
+    *(A) = (D);                                                                \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="390" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1ac3329e9ffb30e3610f27d3399a42ead0" prot="public" static="no">
+        <name>YapBind</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    *(A) = (D);                                                                \
+    if (A &lt; HR) {                                                              \
+      if (__builtin_expect(GlobalIsAttVar(A), 0)) {			\
+        Yap_WakeUp(A);                                                         \
+      }  else								\
+        TRAIL_GLOBAL(A, D);                                                    \
+    } else {                                                                   \
+      TRAIL_LOCAL(A, D);                                                       \
+    }                                                                          \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="421" column="10" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1aace0d8e03eee14bf43d78347dd7ba341" prot="public" static="no">
+        <name>Bind_Global</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    *(A) = (D);                                                                \
+    if (__builtin_expect(GlobalIsAttVar(A), 0))                                \
+      Yap_WakeUp(A);                                                           \
+    else                                                                       \
+      TRAIL_GLOBAL(A, D);                                                      \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="433" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a4944d39c0d73cd0f89a35f53273f2f63" prot="public" static="no">
+        <name>Bind_NonAtt</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    *(A) = (D);                                                                \
+    TRAIL(A, D);                                                               \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="442" column="10" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1accb4ae67954eb7122fc4afe2d75d0ff4" prot="public" static="no">
+        <name>Bind_Global_NonAtt</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    *(A) = (D);                                                                \
+    TRAIL_GLOBAL(A, D);                                                        \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="447" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1aa7302e5052d60834fe64b673f27f0508" prot="public" static="no">
+        <name>Bind_and_Trail</name>
+        <param><defname>A</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    *(A) = (D);                                                                \
+    DO_TRAIL(A, D);                                                            \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="452" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1ac019fd023c3f56bad32d79f8f5ef8540" prot="public" static="no">
+        <name>MaBind</name>
+        <param><defname>VP</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  {                                                                            \
+    MATRAIL((VP), *(VP), (D));                                                 \
+    *(VP) = (D);                                                               \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="459" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a063547dd2c0b5ae46d2cfa01f06793b2" prot="public" static="no">
+        <name>EQ_OK_IN_CMP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="600" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a1bf956eabedf0fb8472ad9de8770494a" prot="public" static="no">
+        <name>LT_OK_IN_CMP</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="601" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a32e13ed076b391c8039b4d568022fd26" prot="public" static="no">
+        <name>GT_OK_IN_CMP</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="602" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a3d4a25e0af408874cd7b9d7085d23885" prot="public" static="no">
+        <name>cut_succeed</name>
+        <param></param>
+        <initializer>return do_cut(TRUE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="614" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a5edb69484d27978e90161e83d11430cf" prot="public" static="no">
+        <name>cut_fail</name>
+        <param></param>
+        <initializer>return do_cut(FALSE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="616" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="amiops_8h_1a14051b25d5ab3339203956fd2cbf136f" prot="public" static="no">
+        <name>MkGlobal</name>
+        <param><defname>x</defname></param>
+        <initializer>MkGlobal__(x PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="628" column="9" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="amiops_8h_1ac9a6fa5b6ed95647e0ce032b1d7db465" prot="public" static="no" mutable="no">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor FunctorAtt1</definition>
+        <argsstring></argsstring>
+        <name>FunctorAtt1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="28" column="16" bodyfile="/home/vsc/github/yap/H/generated/iatoms.h" bodystart="531" bodyend="-1" declfile="/home/vsc/github/yap/H/amiops.h" declline="28" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="amiops_8h_1a863d4f58cc1a9162e20b46165bd5ab80" prot="public" static="no" mutable="no">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor FunctorAttVar</definition>
+        <argsstring></argsstring>
+        <name>FunctorAttVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="28" column="28" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="amiops_8h_1a0b1b6c47f7f777d42e9842b0756ae359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY bool</type>
+        <definition>INLINE_ONLY bool __IsAttVar</definition>
+        <argsstring>(CELL *pt USES_REGS)</argsstring>
+        <name>__IsAttVar</name>
+        <param>
+          <type>CELL *pt</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="33" column="18" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="amiops_8h_1ab2ffadc6ecbec18e88f66d256de49a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY bool</type>
+        <definition>INLINE_ONLY bool GlobalIsAttVar</definition>
+        <argsstring>(CELL *pt)</argsstring>
+        <name>GlobalIsAttVar</name>
+        <param>
+          <type>CELL *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="41" column="18" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <member refid="group__AttributedVariables__Builtins_1gae6f223518a91ac01a4db17255b2d42f1" kind="function"><name>Yap_WakeUp</name></member>
+      <memberdef kind="function" id="amiops_8h_1a5f9e660125f2f86587eacc7aabb5cf2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY void</type>
+        <definition>INLINE_ONLY void reset_trail</definition>
+        <argsstring>(tr_fr_ptr TR0)</argsstring>
+        <name>reset_trail</name>
+        <param>
+          <type>tr_fr_ptr</type>
+          <declname>TR0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="473" column="18" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="473" bodyend="500" declfile="/home/vsc/github/yap/H/amiops.h" declline="471" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="amiops_8h_1a40fb9ecc706fcdeb1e91f537258c4c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY void</type>
+        <definition>INLINE_ONLY void reset_attvars</definition>
+        <argsstring>(CELL *dvarsmin, CELL *dvarsmax)</argsstring>
+        <name>reset_attvars</name>
+        <param>
+          <type>CELL *</type>
+          <declname>dvarsmin</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>dvarsmax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="504" column="18" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="504" bodyend="517" declfile="/home/vsc/github/yap/H/amiops.h" declline="502" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="amiops_8h_1a087af5a3a9beebb5e20784c55193bedc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY void</type>
+        <definition>INLINE_ONLY void close_attvar_chain</definition>
+        <argsstring>(CELL *dvarsmin, CELL *dvarsmax)</argsstring>
+        <name>close_attvar_chain</name>
+        <param>
+          <type>CELL *</type>
+          <declname>dvarsmin</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>dvarsmax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="522" column="18" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="522" bodyend="537" declfile="/home/vsc/github/yap/H/amiops.h" declline="519" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="amiops_8h_1a974e26cb372536247c6f1731519c6c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY bool</type>
+        <definition>INLINE_ONLY bool Yap_unify</definition>
+        <argsstring>(Term t0, Term t1)</argsstring>
+        <name>Yap_unify</name>
+        <param>
+          <type>Term</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="541" column="18" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="541" bodyend="551" declfile="/home/vsc/github/yap/H/amiops.h" declline="539" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="amiops_8h_1a158356527a4fdd11ed070f6dfa23b171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Int</type>
+        <definition>INLINE_ONLY Int Yap_unify_constant</definition>
+        <argsstring>(Term a, Term cons)</argsstring>
+        <name>Yap_unify_constant</name>
+        <param>
+          <type>Term</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cons</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="555" column="17" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="555" bodyend="598" declfile="/home/vsc/github/yap/H/amiops.h" declline="553" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="amiops_8h_1ae966bdc321d59fc8c1edfc85e2bd0da8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int do_cut</definition>
+        <argsstring>(int i)</argsstring>
+        <name>do_cut</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="604" column="19" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="604" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="amiops_8h_1adad42ccae954820b9ae98ecfe8df5b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term MkGlobal__</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>MkGlobal__</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/amiops.h" line="618" column="18" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="618" bodyend="627"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/amiops.h"/>
+  </compounddef>
+</doxygen>

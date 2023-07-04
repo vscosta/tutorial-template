@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptcurrent__thread_22" kind="concept">
+    <compoundname>current_thread/2</compoundname>
+    <initializer>template&lt;&gt;
+concept current_thread/2 =     </initializer>
+    <briefdescription>
+<para><bold>current_thread</bold>(+ <emphasis>Id</emphasis>, - <emphasis>Status</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Enumerates identifiers and status of all currently known threads Calling <ref refid="classcurrent__thread_22" kindref="compound">current_thread/2</ref> does not influence any thread See also <ref refid="classthread__join_22" kindref="compound">thread_join/2</ref> For threads that have an alias-name, this name is returned in <emphasis>Id</emphasis> instead of the numerical thread identifier <emphasis>Status</emphasis> is one of:</para>
+<para><itemizedlist>
+<listitem><para>running The thread is running This is the initial status of a thread Please note that threads waiting for something are considered running too</para>
+</listitem><listitem><para>false The <emphasis>Goal</emphasis> of the thread has been completed and failed</para>
+</listitem><listitem><para>true The <emphasis>Goal</emphasis> of the thread has been completed and succeeded</para>
+</listitem><listitem><para>exited( <emphasis>Term</emphasis>) The <emphasis>Goal</emphasis> of the thread has been terminated using <ref refid="classthread__exit_21" kindref="compound">thread_exit/1</ref> with <emphasis>Term</emphasis> as argument If the underlying native thread has exited (using pthread_exit()) <emphasis>Term</emphasis> is unbound</para>
+</listitem><listitem><para>exception( <emphasis>Term</emphasis>) The <emphasis>Goal</emphasis> of the thread has been terminated due to an uncaught exception (see <ref refid="classthrow_21" kindref="compound">throw/1</ref> and catch/3 ) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pl/threads.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

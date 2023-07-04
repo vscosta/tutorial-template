@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="execstruct_8c" kind="file" language="C++">
+    <compoundname>execstruct.c</compoundname>
+    <includes refid="absmi_8h" local="yes">absmi.h</includes>
+    <includes refid="amidefs_8h" local="yes">amidefs.h</includes>
+    <includes refid="attvar_8h" local="yes">attvar.h</includes>
+    <includes refid="cut__c_8h" local="yes">cut_c.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="heapgc_8h" local="yes">heapgc.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/execstruct.c</label>
+        <link refid="execstruct_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="28">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="37">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="27">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="36">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>attvar.h</label>
+        <link refid="attvar_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="60">
+        <label>cut_c.h</label>
+        <link refid="cut__c_8h_source"/>
+      </node>
+      <node id="43">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="35">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="65">
+        <label>heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="45">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="55">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="58">
+        <label>trim_trail.h</label>
+        <link refid="trim__trail_8h_source"/>
+      </node>
+      <node id="50">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="62">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="19">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="21">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="64">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="14">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="12">
+        <label>config.h</label>
+      </node>
+      <node id="46">
+        <label>dlocals.h</label>
+      </node>
+      <node id="29">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="15">
+        <label>string.h</label>
+      </node>
+      <node id="53">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="23">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="execstruct_8c_1a5ba55496f59fb73cd917f8261d33b9fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void prune_inner_computation</definition>
+        <argsstring>(choiceptr parent)</argsstring>
+        <name>prune_inner_computation</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>remove choice points created since a call to top-goal </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="38" column="13" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="38" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1a3856b1b5b5f003dc5172624fba3110a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool set_watch</definition>
+        <argsstring>(Int Bv, Term task)</argsstring>
+        <name>set_watch</name>
+        <param>
+          <type>Int</type>
+          <declname>Bv</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="63" column="13" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="63" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1a88a3e1872fc9b924cefcabc2934ba313" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool watch_cut</definition>
+        <argsstring>(Term ext)</argsstring>
+        <name>watch_cut</name>
+        <param>
+          <type>Term</type>
+          <declname>ext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="80" column="13" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="80" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1a1c32d2848009aeb5b7d9610d254fd9f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool watch_retry</definition>
+        <argsstring>(Term d0)</argsstring>
+        <name>watch_retry</name>
+        <param>
+          <type>Term</type>
+          <declname>d0</declname>
+        </param>
+        <briefdescription>
+<para>external backtrack to current stack frame: call method and control backtracking </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>USES_REGS1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[env for threaded execution] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>c </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="138" column="13" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="138" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1a244440218ca9441d78a62eb902aef8ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int setup_call_catcher_cleanup</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>setup_call_catcher_cleanup</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>First call to non deterministic predicate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Just leaves a choice-point hanging about for the future</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>USES_REGS1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[env for threaded execution] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[always succeed] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="203" column="12" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="203" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1af7de57b36e94a124e317791684506d7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int tag_cleanup</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>tag_cleanup</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="238" column="12" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="238" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1ab12a2716e7f0fd0fe669c5fb8db4aa2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cleanup_on_exit</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cleanup_on_exit</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="245" column="12" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="245" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1acdf0806bc6c29740c8cfde50577085d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool complete_ge</definition>
+        <argsstring>(bool out, Term omod, yhandle_t sl, bool creeping)</argsstring>
+        <name>complete_ge</name>
+        <param>
+          <type>bool</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>omod</declname>
+        </param>
+        <param>
+          <type>yhandle_t</type>
+          <declname>sl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>creeping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="287" column="13" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="287" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1ad207801e191f30e3263d09ea4190bbee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int _user_expand_goal</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>_user_expand_goal</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="299" column="12" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="299" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1ad0100465e41c05be988041382edbb430" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int do_term_expansion</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>do_term_expansion</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="369" column="12" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="369" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="execstruct_8c_1a2dcdfe505f4bc90df0b7d8d905a4363c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitExecStruct</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitExecStruct</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/execstruct.c" line="424" column="6" bodyfile="/home/vsc/github/yap/C/execstruct.c" bodystart="424" bodyend="438"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/execstruct.c"/>
+  </compounddef>
+</doxygen>

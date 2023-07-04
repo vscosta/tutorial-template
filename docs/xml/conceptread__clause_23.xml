@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptread__clause_23" kind="concept">
+    <compoundname>read_clause/3</compoundname>
+    <initializer>template&lt;&gt;
+concept read_clause/3 =     </initializer>
+    <briefdescription>
+<para><bold>read_clause</bold>( +Stream, -Clause, ?Opts) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: deterministic</para>
+<para>x * Same as <ref refid="classread__clause_23" kindref="compound">read_clause/3</ref> , but from the standard input stream</para>
+<para>properties: deterministic</para>
+<para>This predicate receives a set of options <emphasis>OPts</emphasis> based on <ref refid="classread__term_23" kindref="compound">read_term/3</ref> , but specific to readin clauses The following options are considered:</para>
+<para><itemizedlist>
+<listitem><para>The <computeroutput>comments</computeroutput> option unifies its argument with the comments in the term, represented as strings</para>
+</listitem><listitem><para>The <computeroutput>process_comments</computeroutput> option calls a hook, it is current ignored by YAP</para>
+</listitem><listitem><para>The <computeroutput>term_position</computeroutput> unifies its argument with a term describing the position of the term</para>
+</listitem><listitem><para>The <computeroutput>syntax_errors</computeroutput> flag controls response to syntactic errors, the default is <computeroutput>dec10</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>The next two options are called implicitly:</para>
+<para><itemizedlist>
+<listitem><para>The <computeroutput>module</computeroutput> option is initialized to the current source module, by default</para>
+</listitem><listitem><para>The <computeroutput>singletons</computeroutput> option is set from the single var flag </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="os/readterm.c" line="1477" column="1"/>
+  </compounddef>
+</doxygen>

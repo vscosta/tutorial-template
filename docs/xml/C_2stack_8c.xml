@@ -1,0 +1,2387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="C_2stack_8c" kind="file" language="C++">
+    <compoundname>stack.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapTags_8h" local="yes">YapTags.h</includes>
+    <includes refid="Yapproto_8h" local="yes">Yapproto.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="tab_8macros_8h" local="yes">tab.macros.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="attvar_8h" local="yes">attvar.h</includes>
+    <includes refid="heapgc_8h" local="no">heapgc.h</includes>
+    <includes refid="walkclause_8h" local="yes">walkclause.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/stack.c</label>
+        <link refid="C_2stack_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>attvar.h</label>
+        <link refid="attvar_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="59">
+        <label>heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="56">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="60">
+        <label>walkclause.h</label>
+        <link refid="walkclause_8h_source"/>
+      </node>
+      <node id="54">
+        <label>opt.mavar.h</label>
+        <link refid="opt_8mavar_8h_source"/>
+      </node>
+      <node id="53">
+        <label>tab.macros.h</label>
+        <link refid="tab_8macros_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct____cp__frame" prot="public">__cp_frame</innerclass>
+    <innerclass refid="structbuf__struct__t" prot="public">buf_struct_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="C_2stack_8c_1a7188a88844ebd5c439a4ca5eadee501b" prot="public" static="no">
+        <name>IN_BLOCK</name>
+        <param><defname>P</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>SZ</defname></param>
+        <initializer>  ((CODEADDR)(P) &gt;= (CODEADDR)(B) &amp;&amp; (CODEADDR)(P) &lt; (CODEADDR)(B) + (SZ))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="75" column="9" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="C_2stack_8c_1a79a287c1e6857c9ea3c84a55e011532d" prot="public" static="no">
+        <name>ONLOCAL</name>
+        <param><defname>ptr</defname></param>
+        <initializer>  (CellPtr(ptr) &gt; CellPtr(HR) &amp;&amp; CellPtr(ptr) &lt; CellPtr(LOCAL_LocalBase))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1792" column="9" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="C_2stack_8c_1ae116f929ed149522165c2bd405e2ad02" prot="public" static="no">
+        <name>NOGC</name>
+        <param><defname>t</defname></param>
+        <initializer>(t &amp; ~(MBIT|RBIT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2515" column="10" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2515" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="C_2stack_8c_1a60eacc805b31a7dcda063ab1b39fcf65" prot="public" static="no">
+        <type>struct <ref refid="struct____cp__frame" kindref="compound">__cp_frame</ref></type>
+        <definition>typedef struct __cp_frame _copy_frame</definition>
+        <argsstring></argsstring>
+        <name>_copy_frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="59" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="C_2stack_8c_1a74f72cb3223b04b497f73d472af0dd95" prot="public" static="no">
+        <type>struct <ref refid="structbuf__struct__t" kindref="compound">buf_struct_t</ref></type>
+        <definition>typedef struct buf_struct_t buf_t</definition>
+        <argsstring></argsstring>
+        <name>buf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1879" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="C_2stack_8c_1a5205c3c47ec4a161eaef989d56a77cb1" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Yap_DebugDepthMax</definition>
+        <argsstring></argsstring>
+        <name>Yap_DebugDepthMax</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2462" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2462" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="C_2stack_8c_1af47617f07e5ebd127b9d1ed6fcb8fc5a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_pred</definition>
+        <argsstring>(int, PredEntry *)</argsstring>
+        <name>mark_pred</name>
+        <param>
+          <type>int</type>
+          <defname>mark</defname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <defname>pe</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="506" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="506" bodyend="517" declfile="/home/vsc/github/yap/C/stack.c" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1aee38782b474b128210b7e42b91cf4eec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void do_toggle_static_predicates_in_use</definition>
+        <argsstring>(int)</argsstring>
+        <name>do_toggle_static_predicates_in_use</name>
+        <param>
+          <type>int</type>
+          <defname>mask</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="522" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="522" bodyend="561" declfile="/home/vsc/github/yap/C/stack.c" declline="65" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1abb45998a0859d31f8b0b5c9632db7ed1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int in_use</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>in_use</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>Detect whether the predicate describing the goal in A1, module A2 is currently live in the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>USES_REGS1</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>liveness </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1088" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1088" bodyend="1099" declfile="/home/vsc/github/yap/C/stack.c" declline="69" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a8ad58522b70271dde357315ac8e2f39f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+        <definition>static LogUpdIndex * find_owner_log_index</definition>
+        <argsstring>(LogUpdIndex *, yamop *)</argsstring>
+        <name>find_owner_log_index</name>
+        <param>
+          <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+          <defname>cl</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1102" column="20" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1102" bodyend="1118" declfile="/home/vsc/github/yap/C/stack.c" declline="71" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a294971b9772858985064c3aef21d8232" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structstatic__index" kindref="compound">StaticIndex</ref> *</type>
+        <definition>static StaticIndex * find_owner_static_index</definition>
+        <argsstring>(StaticIndex *, yamop *)</argsstring>
+        <name>find_owner_static_index</name>
+        <param>
+          <type><ref refid="structstatic__index" kindref="compound">StaticIndex</ref> *</type>
+          <defname>cl</defname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <defname>code_p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1120" column="20" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1120" bodyend="1136" declfile="/home/vsc/github/yap/C/stack.c" declline="73" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a3896bc7ccba60e7e89a666d72d1e7952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_show_goal</definition>
+        <argsstring>(char *start, char *name, arity_t arity, char *mname, CELL *args, char **s0, char *s, char **top)</argsstring>
+        <name>Yap_show_goal</name>
+        <param>
+          <type>char *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>mname</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="79" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="79" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a3172470d4660d11192d5b83ff3406e5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * get_pred</definition>
+        <argsstring>(Term t, Term tmod, char *pname)</argsstring>
+        <name>get_pred</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tmod</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="169" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="169" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1adb85a6238eee6f8986742bb59477e1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_TermToIndicator</definition>
+        <argsstring>(Term t, Term mod)</argsstring>
+        <name>Yap_TermToIndicator</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="204" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="204" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a6ccbf26fc6a8e7c7d8a7a788d45e441c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int UnifyPredInfo</definition>
+        <argsstring>(PredEntry *pe, int start_arg USES_REGS)</argsstring>
+        <name>UnifyPredInfo</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>int start_arg</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="228" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="228" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a7a0ea50c23cc718a969a06d28a7d4863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_PredForChoicePt</definition>
+        <argsstring>(choiceptr cp)</argsstring>
+        <name>Yap_PredForChoicePt</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="C_2stack_8c_1a7a0ea50c23cc718a969a06d28a7d4863" kindref="member">Yap_PredForChoicePt()</ref>: find out the predicate who generated a CP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the choice point</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A predixate structure or NULL</para>
+</simplesect>
+usually pretty straightforward, it can fall in trouble with 8 OR-P or tabling </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="271" column="11" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="271" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ad7361d7041f98ec17ac14e6234bc1d24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_choicepoint_info</definition>
+        <argsstring>(choiceptr cp, bool full)</argsstring>
+        <name>Yap_choicepoint_info</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cp</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="366" column="1" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="366" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ac737d01846e471b710e347a45abf4b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_Cps</definition>
+        <argsstring>(choiceptr cp)</argsstring>
+        <name>Yap_Cps</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="402" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="402" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ac677aa24e15e40a35d9171b0b668e392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_ChoicePoints</definition>
+        <argsstring>(choiceptr cp)</argsstring>
+        <name>Yap_ChoicePoints</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="414" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="414" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a09fce256c44765dd4fb0212257663d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_search_for_static_predicate_in_use</definition>
+        <argsstring>(PredEntry *p, bool check_everything)</argsstring>
+        <name>Yap_search_for_static_predicate_in_use</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_everything</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="450" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="450" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a15acdf70f8d31c280ec7568475bd3e13" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int toggle_static_predicates_in_use</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>toggle_static_predicates_in_use</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="563" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="563" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a3075798bae187fc9bcf0c5bbbf928ae2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int code_in_pred_lu_index</definition>
+        <argsstring>(LogUpdIndex *icl, yamop *codeptr, void **startp, void **endp)</argsstring>
+        <name>code_in_pred_lu_index</name>
+        <param>
+          <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+          <declname>icl</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="586" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="586" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ad53f7661317ad2dc94f06d8cca8e5189" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int code_in_pred_s_index</definition>
+        <argsstring>(StaticIndex *icl, yamop *codeptr, void **startp, void **endp)</argsstring>
+        <name>code_in_pred_s_index</name>
+        <param>
+          <type><ref refid="structstatic__index" kindref="compound">StaticIndex</ref> *</type>
+          <declname>icl</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="605" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="605" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a1742c7b1f3aea83aa1d2db0b3fa3e83b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int find_code_in_clause</definition>
+        <argsstring>(PredEntry *pp, yamop *codeptr, void **startp, void **endp)</argsstring>
+        <name>find_code_in_clause</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="624" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="624" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a5274c8ed6bef17012fa4e71952d0c224" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term clause_loc</definition>
+        <argsstring>(void *clcode, PredEntry *pp)</argsstring>
+        <name>clause_loc</name>
+        <param>
+          <type>void *</type>
+          <declname>clcode</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="745" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="745" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a102c3a3f3fd11a9ce8ef97b124c5b4ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int cl_code_in_pred</definition>
+        <argsstring>(PredEntry *pp, yamop *codeptr, void **startp, void **endp)</argsstring>
+        <name>cl_code_in_pred</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="778" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="778" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a15d44b8083c447c8ecd1c4135b15ffb1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int code_in_pred</definition>
+        <argsstring>(PredEntry *pp, yamop *codeptr)</argsstring>
+        <name>code_in_pred</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <briefdescription>
+<para>Givem a pred pp and a Prolog code, find the Prolog code either in clause I or in the indexing code, -1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>codeptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="825" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="825" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a7a8af2ef1574a70280869816b209f39d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_PredForCode</definition>
+        <argsstring>(yamop *codeptr, find_pred_type hint, Int *cl, Term *mod)</argsstring>
+        <name>Yap_PredForCode</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>find_pred_type</type>
+          <declname>hint</declname>
+        </param>
+        <param>
+          <type>Int *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>given an arbitrary code point <emphasis>codeptr</emphasis> search the database for the owner predicate <bold>pp</bold> identifying the corresponding clause </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="851" column="11" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="851" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ac1d84321938fc73da78f25e1154eb2c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * walk_got_lu_block</definition>
+        <argsstring>(LogUpdIndex *cl, void **startp, void **endp)</argsstring>
+        <name>walk_got_lu_block</name>
+        <param>
+          <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="913" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="913" bodyend="919"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a7f4041c7d004f37f8addde258beea87b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * walk_got_lu_clause</definition>
+        <argsstring>(LogUpdClause *cl, void **startp, void **endp)</argsstring>
+        <name>walk_got_lu_clause</name>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="922" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="922" bodyend="927"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a462cadf338ced9fb31ae07dd9a448dd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * walk_found_c_pred</definition>
+        <argsstring>(PredEntry *pp, void **startp, void **endp)</argsstring>
+        <name>walk_found_c_pred</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="931" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="931" bodyend="936"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a4fe564bc7071980274a35ee86a9fd5ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * found_mega_clause</definition>
+        <argsstring>(PredEntry *pp, void **startp, void **endp)</argsstring>
+        <name>found_mega_clause</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="939" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="939" bodyend="944"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1acedd22d05e71f5f67dffb2a2ba5a1933" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * found_idb_clause</definition>
+        <argsstring>(yamop *pc, void **startp, void **endp)</argsstring>
+        <name>found_idb_clause</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="947" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="947" bodyend="953"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a358117dd91b8a156185613ffa3cd0bf4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * found_expand_index</definition>
+        <argsstring>(yamop *pc, void **startp, void **endp, yamop *codeptr USES_REGS)</argsstring>
+        <name>found_expand_index</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *codeptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="956" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="956" bodyend="964"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a8dfc4a047b69f0a844d7bb355772d9bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * found_fail</definition>
+        <argsstring>(yamop *pc, void **startp, void **endp USES_REGS)</argsstring>
+        <name>found_fail</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **endp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="967" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="967" bodyend="971"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1aac4abac3544ad7f0deaf451f6c5f9c50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * found_owner_op</definition>
+        <argsstring>(yamop *pc, void **startp, void **endp USES_REGS)</argsstring>
+        <name>found_owner_op</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **endp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="974" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="974" bodyend="981"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a394ca56882b9af4979be8b731b23c27d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * found_expand</definition>
+        <argsstring>(yamop *pc, void **startp, void **endp USES_REGS)</argsstring>
+        <name>found_expand</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **endp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="984" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="984" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1aa0b19ae53c9443552672f0c8774e05ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * found_ystop</definition>
+        <argsstring>(yamop *pc, int clause_code, void **startp, void **endp, PredEntry *pp USES_REGS)</argsstring>
+        <name>found_ystop</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>clause_code</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *pp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="994" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="994" bodyend="1040"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ab9e6e870e289e493d3ca0b0c36fc95df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * ClauseInfoForCode</definition>
+        <argsstring>(yamop *codeptr, void **startp, void **endp USES_REGS)</argsstring>
+        <name>ClauseInfoForCode</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **endp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1042" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1042" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1acf57ac4d73775d65dc356fc7e8549328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_PredEntryForCode</definition>
+        <argsstring>(choiceptr ap, yamop *codeptr, find_pred_type where_from, void **startp, void **endp)</argsstring>
+        <name>Yap_PredEntryForCode</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type>find_pred_type</type>
+          <declname>where_from</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>startp</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>endp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1061" column="11" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1061" bodyend="1078"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a9d0bd8df112745bf26bce7222c104787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionclause__obj" kindref="compound">ClauseUnion</ref> *</type>
+        <definition>ClauseUnion * Yap_find_owner_index</definition>
+        <argsstring>(yamop *ipc, PredEntry *ap)</argsstring>
+        <name>Yap_find_owner_index</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>ipc</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1138" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1138" bodyend="1147"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a534681525ff4105de5f9bd80f0bfe4ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term all_envs</definition>
+        <argsstring>(CELL *env_ptr USES_REGS)</argsstring>
+        <name>all_envs</name>
+        <param>
+          <type>CELL *env_ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1149" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1149" bodyend="1175"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ab13454510d688665f380575cf6f79fd0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term all_cps</definition>
+        <argsstring>(choiceptr b_ptr USES_REGS)</argsstring>
+        <name>all_cps</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref> b_ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1177" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1177" bodyend="1208"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1aae54f878ab8f75aa52b4cded8fd9c310" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_all_choicepoints</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_all_choicepoints</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1210" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1210" bodyend="1219"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a123c2a747b6934dd5ff15c0ee8feddde" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_all_envs</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_all_envs</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1221" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1221" bodyend="1230"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a5d86023c14f731f996e920312651215f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term clause_info</definition>
+        <argsstring>(yamop *codeptr, PredEntry *pp)</argsstring>
+        <name>clause_info</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1243" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1243" bodyend="1267"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a26fe2a3c2de65198cd4addb0b34bc216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * set_clause_info</definition>
+        <argsstring>(yap_error_descriptor_t *t, yamop *codeptr, PredEntry *pp)</argsstring>
+        <name>set_clause_info</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1269" column="24" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1269" bodyend="1299"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a5ef587814e5316ca1ffdf55f53d83184" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term error_culprit</definition>
+        <argsstring>(bool internal USES_REGS)</argsstring>
+        <name>error_culprit</name>
+        <param>
+          <type>bool internal</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1301" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1301" bodyend="1323"/>
+      </memberdef>
+      <member refid="group__ErrorC_1gaea7a81da9526f6c5b67e29c974941cbe" kind="function"><name>Yap_prolog_add_culprit</name></member>
+      <memberdef kind="function" id="C_2stack_8c_1aed29d0f751651b749742563fc302ed24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term all_calls</definition>
+        <argsstring>(bool internal USES_REGS)</argsstring>
+        <name>all_calls</name>
+        <param>
+          <type>bool internal</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1369" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1369" bodyend="1388"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a920c4d98f1cfd0538f4e73a935a5b481" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_all_calls</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_all_calls</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1390" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1390" bodyend="1393"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ac9d071d2c0c0b93753d5eb0f24960678" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int current_stack</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>current_stack</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1404" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1404" bodyend="1413"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a9530a9dcc67751e455e8f8b7ca5753f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_code_in_lu_index</definition>
+        <argsstring>(LogUpdIndex *cl, PredEntry *pp)</argsstring>
+        <name>add_code_in_lu_index</name>
+        <param>
+          <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1417" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1417" bodyend="1425"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a915f08904a6f875da290af4b2854d9b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_code_in_static_index</definition>
+        <argsstring>(StaticIndex *cl, PredEntry *pp)</argsstring>
+        <name>add_code_in_static_index</name>
+        <param>
+          <type><ref refid="structstatic__index" kindref="compound">StaticIndex</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1427" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1427" bodyend="1435"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ac70984d60485691e5d0328d8c2f22bfe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_code_in_pred</definition>
+        <argsstring>(PredEntry *pp)</argsstring>
+        <name>add_code_in_pred</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1437" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1437" bodyend="1507"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1afcff7eccc6ed5c1c82869dba4ebc5e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_dump_code_area_for_profiler</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_dump_code_area_for_profiler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1509" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1509" bodyend="1537"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a457074b3467da6c5f9953e3ed7a097ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term BuildActivePred</definition>
+        <argsstring>(PredEntry *ap, CELL *vect)</argsstring>
+        <name>BuildActivePred</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>vect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1541" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1541" bodyend="1560"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a8129943073f91c0194e03258990de812" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int ClauseId</definition>
+        <argsstring>(yamop *ipc, PredEntry *pe)</argsstring>
+        <name>ClauseId</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>ipc</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1562" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1562" bodyend="1566"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a0d9c21b5cfa89d92dfe3cceab9bc6267" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int env_info</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>env_info</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1568" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1568" bodyend="1582"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a0e7ebfd06a2de94ab704fc844efdb637" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_cpc_info</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_cpc_info</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1584" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1584" bodyend="1591"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ad264d5dd43831e4c95e8baefcc08d781" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * choicepoint_owner</definition>
+        <argsstring>(choiceptr cptr, Term *tp, yamop **nclp)</argsstring>
+        <name>choicepoint_owner</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cptr</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> **</type>
+          <declname>nclp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1593" column="18" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1593" bodyend="1775"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a7d110e8563dbc75e7511054b937177e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_choicepoint_info</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_choicepoint_info</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1777" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1777" bodyend="1786"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a32b8fc69b2578826669f851d4044c5fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int hidden</definition>
+        <argsstring>(Atom)</argsstring>
+        <name>hidden</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <defname>at</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1795" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1795" bodyend="1806" declfile="/home/vsc/github/yap/C/stack.c" declline="1788" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1aadce4c90c3f50872658d151190262e03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int legal_env</definition>
+        <argsstring>(CELL *CACHE_TYPE)</argsstring>
+        <name>legal_env</name>
+        <param>
+          <type>CELL *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1790" column="12" declfile="/home/vsc/github/yap/C/stack.c" declline="1790" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1affa0194bd5ad432271d811b36def3484" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int legal_env</definition>
+        <argsstring>(CELL *ep USES_REGS)</argsstring>
+        <name>legal_env</name>
+        <param>
+          <type>CELL *ep</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1808" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1808" bodyend="1825"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1add4fbcb8bd042856987ef8922787bdda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_dump_stack</definition>
+        <argsstring>(FILE *f)</argsstring>
+        <name>Yap_dump_stack</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="1925" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="1925" bodyend="2049"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a38535fc141af407296c7b22007de7ee2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool outputep</definition>
+        <argsstring>(FILE *f, CELL *ep)</argsstring>
+        <name>outputep</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2052" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2052" bodyend="2081"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a2644dac1b6e48dd5774ad2ba9dc41c11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool outputcp</definition>
+        <argsstring>(FILE *f, choiceptr cp)</argsstring>
+        <name>outputcp</name>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2083" column="14" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2083" bodyend="2168"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a3f8143874466d1a4a1ec98cdc3ff3064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DumpActiveGoals</definition>
+        <argsstring>(FILE *f USES_REGS)</argsstring>
+        <name>DumpActiveGoals</name>
+        <param>
+          <type>FILE *f</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2170" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2170" bodyend="2208"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a2e0caa05a0003960966588b322fb3431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DumpStack</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>DumpStack</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2210" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2210" bodyend="2214"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a6d270798edc7ab766e12f171b95970c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_output_bug_location</definition>
+        <argsstring>(choiceptr ap, yamop *yap_pc, int where_from, int psize)</argsstring>
+        <name>Yap_output_bug_location</name>
+        <param>
+          <type><ref refid="structchoicept" kindref="compound">choiceptr</ref></type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>yap_pc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>where_from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psize</declname>
+        </param>
+        <briefdescription>
+<para>Used for debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2220" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2220" bodyend="2249"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1afa115cd34baf599a7905ad0c74be4b28" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>static yap_error_descriptor_t * add_bug_location</definition>
+        <argsstring>(yap_error_descriptor_t *p, yamop *codeptr, PredEntry *pe)</argsstring>
+        <name>add_bug_location</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>codeptr</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2251" column="31" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2251" bodyend="2304"/>
+      </memberdef>
+      <member refid="group__ErrorC_1ga4ec9b80cd01c608981a50c7ccd3b31c4" kind="function"><name>Yap_pc_add_location</name></member>
+      <member refid="group__ErrorC_1ga65ec8adfc4d6843d135a8b77797d017d" kind="function"><name>Yap_env_add_location</name></member>
+      <memberdef kind="function" id="C_2stack_8c_1ae8146e3ffe4d373f832a62d341e74556" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term mkloc</definition>
+        <argsstring>(yap_error_descriptor_t *t)</argsstring>
+        <name>mkloc</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2388" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2388" bodyend="2388"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ab912534efcaa21b6f2fc6a8d19066632" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int parent_pred</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>parent_pred</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2392" column="1" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2392" bodyend="2402"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a1cd0e1b829982e9d1051e2796d925e75" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int clause_location</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>clause_location</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2405" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2405" bodyend="2410"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ae438401a404aef8d15e811f93cb71919" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_pred_for_code</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_pred_for_code</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2414" column="1" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2414" bodyend="2448"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a9f9478406224bb76a39e23e58ea4fd89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int ancestor_location</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>ancestor_location</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2450" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2450" bodyend="2454"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a96aaa09796dbc6ff9500b9f99147a539" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int parent_choicepoint</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>parent_choicepoint</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2456" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2456" bodyend="2460"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1acf5044afc753076f4a83a9eeea23eb78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShowTerm</definition>
+        <argsstring>(Term *tp, int depth)</argsstring>
+        <name>ShowTerm</name>
+        <param>
+          <type>Term *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2464" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2464" bodyend="2503"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1ac489094d4418741f7dfc18d27b33fc60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ShowTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_ShowTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2506" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2506" bodyend="2510"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1abdefc95c58cb0fa69de58f2eeb6967b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void line</definition>
+        <argsstring>(int c, bool hid, int lvl, void *src, void *tgt, const char s0[], const char s[])</argsstring>
+        <name>line</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lvl</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>tgt</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>s0</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>s</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2518" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2518" bodyend="2520"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a804f839834a31797048d26fcbf6dcb57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void entry</definition>
+        <argsstring>(int c, bool hid, int lvl, void *src, void *tgt, const char is0[], char is[])</argsstring>
+        <name>entry</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lvl</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>tgt</declname>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>is0</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>is</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2522" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2522" bodyend="2565"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a1f0667b5de5a79462e5f67dc8fb0dd7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pp__</definition>
+        <argsstring>(Term *tp, int lvl, char *s0, char *s)</argsstring>
+        <name>pp__</name>
+        <param>
+          <type>Term *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lvl</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2568" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2568" bodyend="2608"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1afb2ac8601a9bcd68dca39ca80092dd6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pp</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>pp</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2610" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2610" bodyend="2615"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1aa8d9b957b3ecd07b7224655ee9823be3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool JumpToEnv</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>JumpToEnv</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2618" column="13" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2618" bodyend="2667"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a802b704e9b1c218adad9de048bdd106a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_JumpToEnv</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_JumpToEnv</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2681" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2681" bodyend="2686"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1aca2567a677364fe77562f93e28ec0e06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int yap_throw</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>yap_throw</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2690" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2690" bodyend="2717"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a60c60dc746bb8df58b798cdf6336eb16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_abort</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_abort</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2729" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2729" bodyend="2735"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a7327e850c33c61e6100d3f2e7ce54d02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int marker</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>marker</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2737" column="12" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2737" bodyend="2741"/>
+      </memberdef>
+      <memberdef kind="function" id="C_2stack_8c_1a4289e7490fdee30902984fd2699c7514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitStInfo</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitStInfo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/stack.c" line="2743" column="6" bodyfile="/home/vsc/github/yap/C/stack.c" bodystart="2743" bodyend="2767"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Get to know what is in your stack. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>VITOR SANTOS COSTA <ulink url="mailto:vsc@VITORs-MacBook-Pro.local">vsc@VITORs-MacBook-Pro.local</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>Tue Sep 8 23:33:02 2015</para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/stack.c"/>
+  </compounddef>
+</doxygen>

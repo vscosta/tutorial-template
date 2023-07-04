@@ -1,0 +1,833 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="terms_8c" kind="file" language="C++">
+    <compoundname>terms.c</compoundname>
+    <includes local="yes">utf8proc.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="absmi_8h" local="yes">absmi.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="heapgc_8h" local="yes">heapgc.h</includes>
+    <includes refid="YapCompoundTerm_8h" local="yes">YapCompoundTerm.h</includes>
+    <includes refid="Yapproto_8h" local="yes">Yapproto.h</includes>
+    <includes refid="attvar_8h" local="yes">attvar.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="term__visit_8h" local="yes">term_visit.h</includes>
+    <incdepgraph>
+      <node id="65">
+        <label>term_visit.h</label>
+        <link refid="term__visit_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/terms.c</label>
+        <link refid="terms_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="29">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="38">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="28">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="37">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>attvar.h</label>
+        <link refid="attvar_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="44">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="43">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="36">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="59">
+        <label>heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="46">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="55">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="58">
+        <label>trim_trail.h</label>
+        <link refid="trim__trail_8h_source"/>
+      </node>
+      <node id="51">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="62">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="20">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="22">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="64">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="15">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="12">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="13">
+        <label>config.h</label>
+      </node>
+      <node id="47">
+        <label>dlocals.h</label>
+      </node>
+      <node id="30">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="16">
+        <label>string.h</label>
+      </node>
+      <node id="2">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="24">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structatt__rec" prot="public">att_rec</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="terms_8c_1a64f4a2e8af6250b5ff6d2cc12104593f" prot="public" static="no">
+        <name>TERMS_C</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="24" column="9" bodyfile="/home/vsc/github/yap/C/terms.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1ga968dc816d760915f204e8066788a4a09" kind="define"><name>DEB_DOOBOUT</name></member>
+      <member refid="group__YAPTerms_1ga9207882be2e3ca2ae32dd175db462641" kind="define"><name>DEB_DOOBIN</name></member>
+      <member refid="group__YAPTerms_1ga8492fe9a11581bea557241c0bc182c49" kind="define"><name>DEB_DOOB</name></member>
+      <member refid="group__YAPTerms_1ga7aca2668b3b478bd235fa866e5d19609" kind="define"><name>push_sub_term</name></member>
+      <member refid="group__YAPTerms_1gae6406857e7bf20a22e81253d416711ff" kind="define"><name>pop_sub_term</name></member>
+      <member refid="group__YAPTerms_1ga22978b0d0fce17cbdf9060c7e9cf67c2" kind="define"><name>RESET_TERM_VISITOR_0</name></member>
+      <member refid="group__YAPTerms_1ga519d3fff1b850bc5dc2ca8ec6a23e86e" kind="define"><name>RESET_TERM_VISITOR_1</name></member>
+      <member refid="group__YAPTerms_1gabd05b5178f601fb0f6305c39d1afd76f" kind="define"><name>RESET_TERM_VISITOR_3</name></member>
+      <member refid="group__YAPTerms_1ga9cfca773157a05da13a50c07f587da22" kind="define"><name>RESET_TERM_VISITOR_4</name></member>
+      <member refid="group__YAPTerms_1ga26c622f608b33f8341f4efc6a714db31" kind="define"><name>RESET_TERM_VISITOR_5</name></member>
+      <member refid="group__YAPTerms_1ga63a9baaeda8955091ad3bb80609c3f7e" kind="define"><name>LIST_HOOK_CODE</name></member>
+      <member refid="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" kind="define"><name>COMPOUND_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="220" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="239" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="259" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="280" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="331" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_1(v,v0);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="371" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_3(first,tail,tail0,end)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="433" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_4()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="457" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <member refid="group__YAPTerms_1gaf84323b2014f38899a25eca0a0e43aeb" kind="define"><name>ATOMIC_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="512" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaf84323b2014f38899a25eca0a0e43aeb" kind="define"><name>ATOMIC_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_3(first,tail,tail0,end)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="551" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_3(first,tail,tail0,end)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="631" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="906" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="987" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <member refid="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" kind="define"><name>COMPOUND_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_0()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="1089" column="9"/>
+      </memberdef>
+      <member refid="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" kind="define"><name>COMPOUND_HOOK_CODE</name></member>
+      <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
+        <name>RESET_TERM_VISITOR</name>
+        <initializer>RESET_TERM_VISITOR_4()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="1201" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="terms_8c_1af58c55f6ee79743773beb5c0a5fc194b" prot="public" static="no">
+        <name>SAVE_EXTRA</name>
+        <param></param>
+        <initializer>yhandle_t yv = Yap_InitHandle(t0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="1255" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="terms_8c_1ae697c3949f3d7a8423c4fe25cbfd427e" prot="public" static="no">
+        <name>RESTORE_EXTRA</name>
+        <param></param>
+        <initializer>t0 = Yap_PopHandle(yv)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="1256" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="terms_8c_1af58c55f6ee79743773beb5c0a5fc194b" prot="public" static="no">
+        <name>SAVE_EXTRA</name>
+        <param></param>
+        <initializer>yhandle_t yv = Yap_InitHandle(vs0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="1262" column="11"/>
+      </memberdef>
+      <memberdef kind="define" id="terms_8c_1ae697c3949f3d7a8423c4fe25cbfd427e" prot="public" static="no">
+        <name>RESTORE_EXTRA</name>
+        <param></param>
+        <initializer>{vs0 = Yap_PopHandle(yv);};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/terms.c" line="1263" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <member refid="group__YAPTerms_1ga1946dcae4845817b7aeb748cdc481107" kind="typedef"><name>att_rec_t</name></member>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__YAPTerms_1gac6e6d5daa7823a3d542e80ec73cde594" kind="function"><name>push_sub_term__</name></member>
+      <member refid="group__YAPTerms_1ga8ec4dc1f101b1716a38946b04bad1272" kind="function"><name>pop_sub_term__</name></member>
+      <member refid="group__YAPTerms_1ga75ab08f664fc559cbd2ea7e1ee35c01b" kind="function"><name>reset_list_of_term_vars</name></member>
+      <member refid="group__YAPTerms_1ga3f8810fdd63b35a27030571c8b49e597" kind="function"><name>term_error_handler</name></member>
+      <member refid="group__YAPTerms_1ga42d0581ae1562d2214e24cd84074e645" kind="function"><name>cyclic_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga055d18e3efaf723770083789e3234d5b" kind="function"><name>Yap_IsCyclicTerm</name></member>
+      <member refid="group__YAPTerms_1gac2f25dde1271b87a031a5af7f0d1ee30" kind="function"><name>cyclic_term</name></member>
+      <member refid="group__YAPTerms_1gad7f87ac9f87649bf4aa40685f372421a" kind="function"><name>ground_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga8b66fe01cb779592adfe55f4aeeab06d" kind="function"><name>Yap_IsGroundTerm</name></member>
+      <member refid="group__YAPTerms_1ga65129b56b2b2ad9cb0d9a9640026ebf2" kind="function"><name>ground</name></member>
+      <member refid="group__YAPTerms_1gaa944d77149a005dc3509f7d30b9f42d3" kind="function"><name>non_ground_complex_term</name></member>
+      <member refid="group__YAPTerms_1gaa245e27bd04ec10c1c3905499a8f8c0c" kind="function"><name>non_ground</name></member>
+      <member refid="group__YAPTerms_1ga52e1a6fdf929ffbf409c9ee4d7227cb2" kind="function"><name>var_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga9d63afc682e4e6761f82c0f7b7e8899e" kind="function"><name>var_in_term</name></member>
+      <member refid="group__YAPTerms_1ga9eebafd214ecbfabdb1f822acbde5999" kind="function"><name>vars_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga43f5b8f52f475f22e2f484bea7b9c0d6" kind="function"><name>mark_vars_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga7d739f8425fd93fdc00c00a0bebb33d0" kind="function"><name>unmark_vars_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga2663f8440857166b74b86de5e3bb31bf" kind="function"><name>marked_vars_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga50760c84e38a52c70b8d808dac1fc24a" kind="function"><name>variables_in_term</name></member>
+      <member refid="group__YAPTerms_1gaffdb74d03b75647f53612b954ef756c0" kind="function"><name>term_variables3</name></member>
+      <member refid="group__YAPTerms_1ga66eaff91454977d90fd8cd7d0f812e90" kind="function"><name>occurrences_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1gaa67a3d27dc004bf9a165cd07a2b12fd0" kind="function"><name>term_variable_occurrences</name></member>
+      <member refid="group__YAPTerms_1ga5291a1e919f6f5f54589c0b26e603d0d" kind="function"><name>term_variable_occurrences3</name></member>
+      <member refid="group__YAPTerms_1ga52339044cfc448d63c5f7049e9e00e0e" kind="function"><name>term_variables_union</name></member>
+      <member refid="group__YAPTerms_1gaa30b4b31ca52d163fc29624cf173582b" kind="function"><name>term_variables_difference</name></member>
+      <member refid="group__YAPTerms_1ga54633a43d7e4b492f3730642ed790c57" kind="function"><name>term_variables_intersection</name></member>
+      <member refid="group__YAPTerms_1ga564b726b1c192d4b6824b6e9db117bdd" kind="function"><name>Yap_TermVariables</name></member>
+      <member refid="group__YAPTerms_1ga6cb45358e8bd85cda70d6cfa66c29410" kind="function"><name>term_variables</name></member>
+      <member refid="group__YAPTerms_1ga7bdcde6bedd405a3de0466f959ed6af8" kind="function"><name>p_new_variables_in_term</name></member>
+      <member refid="group__YAPTerms_1ga0e782e3a011aa6562c6f043c278859a8" kind="function"><name>free_variables_in_term</name></member>
+      <member refid="group__YAPTerms_1ga5a1552944613d4ac11aaefea92b2452e" kind="function"><name>undo_vbindings</name></member>
+      <member refid="group__YAPTerms_1gaa357c0f224a478554dd2a949ee29bff7" kind="function"><name>attvars_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga197e52a273ba5c7a83ff79de74eb8c7b" kind="function"><name>term_attvars</name></member>
+      <member refid="group__YAPTerms_1ga41743a9eb6ba31056b6b1a6a1a226e6c" kind="function"><name>undo_vterms</name></member>
+      <member refid="group__YAPTerms_1gaa12cc6ffc37c456e9e5eae36213b500e" kind="function"><name>attterms_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga724898b7d1a276ae759d147f4c641566" kind="function"><name>term_attterms</name></member>
+      <member refid="group__YAPTerms_1ga5bcf334daa64726a459c35fbe3fd5849" kind="function"><name>numbervars_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga0ef5770cd70fa07496d0693364cde97a" kind="function"><name>Yap_NumberVars</name></member>
+      <member refid="group__YAPTerms_1ga6e2042ca47b23b52f2440fd4b2988d1b" kind="function"><name>numbervars</name></member>
+      <member refid="group__YAPTerms_1ga4b4d56995f6f7ae4cab01bede6d15176" kind="function"><name>singleton_vs_numbervars</name></member>
+      <member refid="group__YAPTerms_1ga9850aafc0c9e6f48d4f0e891e7d39b41" kind="function"><name>unnumbervars_in_complex_term</name></member>
+      <member refid="group__YAPTerms_1ga277b28d3f1a004d0931d8f0e134285da" kind="function"><name>unnumbervars</name></member>
+      <member refid="group__YAPTerms_1ga89e5b91221f1f3c32d772a49d5a9b334" kind="function"><name>Yap_UnNumberTerm</name></member>
+      <member refid="group__YAPTerms_1ga321e8240a6b9f127761b90889a01191b" kind="function"><name>varnumbers</name></member>
+      <member refid="group__YAPTerms_1gab0e2b5563a506dac5f23fdbdcb9b4847" kind="function"><name>Yap_InitTermCPreds</name></member>
+      </sectiondef>
+    <briefdescription>
+<para>applications of the tree walker pattern </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/terms.c"/>
+  </compounddef>
+</doxygen>

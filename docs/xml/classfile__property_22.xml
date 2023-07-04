@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classfile__property_22" kind="class" language="Prolog" prot="public">
+    <compoundname>file_property/2</compoundname>
+    <briefdescription>
+<para><bold>file_property</bold>(+ <emphasis>File</emphasis>,? <emphasis>Property</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The atom <emphasis>File</emphasis> corresponds to an existing file, and <emphasis>Property</emphasis> will be unified with a property of this file The properties are of the form<itemizedlist>
+<listitem><para><computeroutput>type( _Type_)</computeroutput> gives whether the file is a regular file, a directory, a fifo file, or of unknown type;</para>
+</listitem><listitem><para><computeroutput>size( _Size_)</computeroutput> gives the size for a file;</para>
+</listitem><listitem><para><computeroutput>mod_time( _Time_)</computeroutput> gives the last time a file was modified according to somae Operating System dependent timestamp;</para>
+</listitem><listitem><para><computeroutput>mode( _mode_)</computeroutput> gives the permission flags for the file</para>
+</listitem><listitem><para><computeroutput>linkto( _FileName_)</computeroutput>, gives the file pointed to by a symbolic link</para>
+</listitem></itemizedlist>
+</para>
+<para>Properties can be enumerated through backtracking:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">file_property(</highlight><highlight class="stringliteral">&apos;Makefile&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">P</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="charliteral">P</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">type(regular)<sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="charliteral">P</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">size(</highlight><highlight class="vhldigit">2375</highlight><highlight class="normal">)<sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="charliteral">P</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">mod_time(</highlight><highlight class="vhldigit">990826911</highlight><highlight class="normal">)<sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">mod_time</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/system/sys.c" line="334" column="1" bodyfile="/home/vsc/github/yap/library/system/sys.c" bodystart="334" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

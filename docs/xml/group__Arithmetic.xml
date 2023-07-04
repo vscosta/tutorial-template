@@ -1,0 +1,3137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Arithmetic" kind="group">
+    <compoundname>Arithmetic</compoundname>
+    <title>Arithmetic in YAP</title>
+    <innergroup refid="group__arithmetic__cmps">Arithmetic Comparison Predicates</innergroup>
+    <innergroup refid="group__arithmetic__operators">Arithmetic Functions</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__Arithmetic_1gabd82341cb7fc61c1880963eb8b1da8cb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>arith0_op</name>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cba27c6baf6193ff140f15c1832ffbebcd0" prot="public">
+          <name>op_pi</name>
+          <briefdescription>
+<para>pi [ISO] </para>
+          </briefdescription>
+          <detaileddescription>
+<para>An approximation to the value of <emphasis>pi</emphasis>, that is, the ratio of a circle&apos;s circumference to its diameter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbacf80da57b067e9a8e06026cc32be7446" prot="public">
+          <name>op_e</name>
+          <briefdescription>
+<para>e </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Euler&apos;s number, the base of the natural logarithms (approximately 2.718281828) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbaafc99a59ac7b9ee0dfec72d04bb01b27" prot="public">
+          <name>op_epsilon</name>
+          <briefdescription>
+<para>epsilon </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The difference between the float <computeroutput>1.0</computeroutput> and the next largest floating point number </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbaeaa2c4799fc36266a85f729fb6c73d7a" prot="public">
+          <name>op_inf</name>
+          <briefdescription>
+<para>inf </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Infinity according to the IEEE Floating-Point standard Note that evaluating this term will generate a domain error in the <computeroutput>iso</computeroutput> language mode Also note that <computeroutput> ?- +inf =:= -inf false </computeroutput> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbab0bd77b0898759cd31225d6d0f9cfedb" prot="public">
+          <name>op_nan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cba4de3e375b4829fb4bb188048c9e804a2" prot="public">
+          <name>op_random</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbab58b9a6242b905c2e19293aeca59b871" prot="public">
+          <name>op_cputime</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cba27283cb9df171f1f92b9b2e7e2a004ed" prot="public">
+          <name>op_heapused</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbadd8bacb180b2c1fe8be510da4e2f304d" prot="public">
+          <name>op_localsp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cba52db8c7a54506fd353b0cfdbe63408aa" prot="public">
+          <name>op_globalsp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cba26c194bdac67fca3d6945fe171e7795c" prot="public">
+          <name>op_b</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbafb3f01eca05a910ec135de1fe247e7f7" prot="public">
+          <name>op_env</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cba40a44efe5d77b56942442ba0f36ce805" prot="public">
+          <name>op_tr</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbaa90004532af04db16da23cebebffa0ba" prot="public">
+          <name>op_stackfree</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>constant operators </para>
+        </briefdescription>
+        <detaileddescription>
+<para>specifies the available arithmetic`constants" </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="158" column="1" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="158" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__Arithmetic_1ga972b649372335cfb9b37a6fae8e37682" prot="public" static="no" strong="no">
+        <type></type>
+        <name>arith1_op</name>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682aa3258ae9a246ce9431b116cc801d4c3b" prot="public">
+          <name>op_uplus</name>
+          <briefdescription>
+<para>+ <emphasis>X</emphasis>: the value of <emphasis>X</emphasis> </para>
+          </briefdescription>
+          <detaileddescription>
+<para><programlisting filename=".prolog"><codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=:=</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">+</highlight><highlight class="charliteral">X</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a84c44ce4ee2ea096b00dde873aeb3ef0" prot="public">
+          <name>op_uminus</name>
+          <briefdescription>
+<para>- <emphasis>X</emphasis>: the complement of <emphasis>X</emphasis> </para>
+          </briefdescription>
+          <detaileddescription>
+<para><programlisting filename=".prolog"><codeline><highlight class="vhldigit">0</highlight><highlight class="keyword">-</highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=:=</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">-</highlight><highlight class="charliteral">X</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a5650504366f67734c0b02517c258fb99" prot="public">
+          <name>op_unot</name>
+          <briefdescription>
+<para>\ <emphasis>X</emphasis>, The bitwise negation of <emphasis>X</emphasis> </para>
+          </briefdescription>
+          <detaileddescription>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">\</highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">/\</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=:=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Note that the number of bits of an integer is at least the size in bits of a Prolog term cell </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a3eff6cf78c33992343547524047d6bf6" prot="public">
+          <name>op_exp</name>
+          <briefdescription>
+<para>exp( <emphasis>X</emphasis> ), natural exponentiation of <emphasis>X</emphasis> </para>
+          </briefdescription>
+          <detaileddescription>
+<para><programlisting filename=".prolog"><codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">abs(</highlight><highlight class="vhldigit">1</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">-</highlight><highlight class="normal"><sp/>exp(<sp/></highlight><highlight class="charliteral">_X_</highlight><highlight class="normal"><sp/>))<sp/></highlight><highlight class="keyword">&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">0001</highlight></codeline>
+</programlisting> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a18cfc4d8cf518d81aa0ef4b338362993" prot="public">
+          <name>op_log</name>
+          <briefdescription>
+<para>log( <emphasis>X</emphasis> ), natural logarithm of <emphasis>X</emphasis> </para>
+          </briefdescription>
+          <detaileddescription>
+<para><programlisting filename=".prolog"><codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">abs(<sp/>log(<sp/>exp(<sp/></highlight><highlight class="charliteral">_X_</highlight><highlight class="normal"><sp/>))<sp/></highlight><highlight class="keyword">-</highlight><highlight class="vhldigit">1</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">0001</highlight></codeline>
+</programlisting> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a2fe2d808ed537d63bbe5fde5b0a88199" prot="public">
+          <name>op_log10</name>
+          <briefdescription>
+<para>log10( <emphasis>X</emphasis> ) [ISO] </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Decimal logarithm</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">between(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">,<sp/></highlight><highlight class="vhldigit">10</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">I</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">Delta</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">log10(</highlight><highlight class="charliteral">I</highlight><highlight class="keyword">*</highlight><highlight class="vhldigit">10</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">+</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">log10(</highlight><highlight class="vhldigit">1</highlight><highlight class="keyword">/</highlight><highlight class="normal">(</highlight><highlight class="charliteral">I</highlight><highlight class="keyword">*</highlight><highlight class="vhldigit">10</highlight><highlight class="normal">)),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">format(&apos;</highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="keyword">==</highlight><highlight class="normal"><sp/>~</highlight><highlight class="vhldigit">3</highlight><highlight class="normal">g~n&apos;,[</highlight><highlight class="charliteral">Delta</highlight><highlight class="normal">]),<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">2</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">22</highlight><highlight class="stringliteral"></highlight><highlight class="normal">format</highlight><highlight class="keyword">-</highlight><highlight class="vhldigit">16</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="vhldigit">0</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">==</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">format</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a96298689f8172e2794488c3408165801" prot="public">
+          <name>op_sqrt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682ae5f5f57a9e9f4ef2f98817f52caf3f19" prot="public">
+          <name>op_sin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682af7e20d581473989b093b6181f196b3a1" prot="public">
+          <name>op_cos</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682af0c67277bdef518bdb1ea35263691511" prot="public">
+          <name>op_tan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a650426ea646a8ab4c0017b8b7eb66bf9" prot="public">
+          <name>op_sinh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682af2d081902acf872af5579c5f96da457a" prot="public">
+          <name>op_cosh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a2f3ebd75c06a0fade1eaf6afdd0616dd" prot="public">
+          <name>op_tanh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682aab9ab5d70dbf7a793217922b03fca204" prot="public">
+          <name>op_asin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682aee1042952e670b5fe51dcb27e62a676d" prot="public">
+          <name>op_acos</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a3f7d2f2837083f48454fdb580a27edae" prot="public">
+          <name>op_atan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a0e351ef3cc2f1d4677ac9fd60077f106" prot="public">
+          <name>op_asinh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a889f1d10aae2de15f9e99ae2aa02b553" prot="public">
+          <name>op_acosh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a660cfd14360229e26a4cef028fb545bb" prot="public">
+          <name>op_atanh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a3043c21b9a484cd2715531c26618e6e8" prot="public">
+          <name>op_floor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a138b90fd49d49d4d207b0579302c1510" prot="public">
+          <name>op_ceiling</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682aedbe7eaf51ea24da27263bcef524e2ca" prot="public">
+          <name>op_round</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a30a0da5057a1f225a0e3b8a68a1c081b" prot="public">
+          <name>op_truncate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a1f7e7c711af826826f198eb59eaa609d" prot="public">
+          <name>op_integer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a3d0171822b01becf05fe0d4e729ccd66" prot="public">
+          <name>op_float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a84837b88ee35ff4458712d77df9f7435" prot="public">
+          <name>op_abs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a099b72ac0fb2617fe69ccc645e01f9d9" prot="public">
+          <name>op_lsb</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a8f9ed9b108ac35d2758d2dcd11341704" prot="public">
+          <name>op_msb</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682ad1431119a1240ec709b3e2a46e4c252e" prot="public">
+          <name>op_popcount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a807e9825f22aecbee375866848bd0b7e" prot="public">
+          <name>op_ffracp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682adf3cbbe918b2f98dcf7f31926199d5b9" prot="public">
+          <name>op_fintp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a92a32f36704da1a2052521f8adccebae" prot="public">
+          <name>op_sign</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a0786d8f596b5d3fa2c65ba628fc5115b" prot="public">
+          <name>op_lgamma</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682ab1766d78b49d49774d0d3f6b3eda1b3b" prot="public">
+          <name>op_erf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682ac0cc02adbb464fc6a8172415dbde0217" prot="public">
+          <name>op_erfc</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a465d5ac57b4796c0225d404344f7760b" prot="public">
+          <name>op_rational</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a248ca9839d366b6bad046d31b26ab5fa" prot="public">
+          <name>op_rationalize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1gga972b649372335cfb9b37a6fae8e37682a6af7893cbb5630d74cd176e965e0ff74" prot="public">
+          <name>op_random1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>unary operators </para>
+        </briefdescription>
+        <detaileddescription>
+<para>specifies the available unary arithmetic operators </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="208" column="1" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="208" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__Arithmetic_1gaf67611509d3222bba68ab8c1ebab22ad" prot="public" static="no" strong="no">
+        <type></type>
+        <name>arith2_op</name>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adaf9efa0c5eb5eb0a73dfa1f8a10d2b082" prot="public">
+          <name>op_plus</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada675c22b32c3f3803af8549ae82f74cb1" prot="public">
+          <name>op_minus</name>
+          <briefdescription>
+<para>*_X_+ <emphasis>Y</emphasis> [ISO]*, Addition, implemented between any two types of numbers </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada3c3e6a8920af8a968d752c89eb0650e1" prot="public">
+          <name>op_times</name>
+          <briefdescription>
+<para>*_X_- <emphasis>Y</emphasis> [ISO]*, </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Subtraction, implemented between any two types of numbers </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada80f56745e3cdefdf990333214a16c415" prot="public">
+          <name>op_fdiv</name>
+          <briefdescription>
+<para>*_X_* <emphasis>Y</emphasis> [ISO]*, </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Product </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada7740a4205743660e6b9061cc291ecc75" prot="public">
+          <name>op_mod</name>
+          <briefdescription>
+<para>*_X_/ <emphasis>Y</emphasis> [ISO]*, </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Floating Point Division </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada69ce7c74f53c0e9054e6426240b33a48" prot="public">
+          <name>op_rem</name>
+          <briefdescription>
+<para>*_X_ mod <emphasis>Y</emphasis> [ISO]* <linebreak/>
+ </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Integer Modulus, always positive </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada7fb3fe984442359dcfdc3bea9f2c9a2c" prot="public">
+          <name>op_div</name>
+          <briefdescription>
+<para>*_X_ rem <emphasis>Y</emphasis> [ISO]* <linebreak/>
+ </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Integer Remainder, always with the same size as the first argument, <emphasis>X</emphasis> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adaf6dcacc56d410161d4762b3faec0f86e" prot="public">
+          <name>op_idiv</name>
+          <briefdescription>
+<para>*_X_// <emphasis>Y</emphasis> [ISO]*, </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Integer division </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada2a4a8d80c9254723a77a4f0d24bee7c6" prot="public">
+          <name>op_sll</name>
+          <briefdescription>
+<para><emphasis>X</emphasis> div <emphasis>Y</emphasis> [ISO]* </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Integer division, as if defined by <computeroutput>( _X_ - _X_ mod _Y_)// _Y_</computeroutput> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adab49a03e942e81053525fde46018be2c3" prot="public">
+          <name>op_slr</name>
+          <briefdescription>
+<para><emphasis>X</emphasis> &lt;&lt; <emphasis>Y</emphasis>, or shift-left-logical </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adaaa40d345480c83536e8de605817047ac" prot="public">
+          <name>op_and</name>
+          <briefdescription>
+<para><emphasis>X</emphasis> &gt;&gt; <emphasis>Y</emphasis>, or shift-right-logical </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adac756feb5828ea77c0eff49283bcce294" prot="public">
+          <name>op_or</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adaa9308d7f3eb6241245d3c480f22a44c8" prot="public">
+          <name>op_xor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adafd6a25b22125efb7b4637ccd6904c6e8" prot="public">
+          <name>op_atan2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada8c31f1ff5786fc312f307bf7e8077f59" prot="public">
+          <name>op_power</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada221d6cd81b08a205b0aed6cefc6a89e8" prot="public">
+          <name>op_power2</name>
+          <briefdescription>
+<para>ISO-Prolog exponentiation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada9e752ebb614d549606267762512ca1f1" prot="public">
+          <name>op_gcd</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada44cfe139880e5fc8fd0d1efcfdea6e84" prot="public">
+          <name>op_min</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22adabed77666dd324d83c8c9f0f3c88675be" prot="public">
+          <name>op_max</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada137844eed1a2fc1c0f545c7a15c5ef2a" prot="public">
+          <name>op_rdiv</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__Arithmetic_1ggaf67611509d3222bba68ab8c1ebab22ada3b42608dc259fdabcc9ee3b2242a77ed" prot="public">
+          <name>op_log2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>binary operators </para>
+        </briefdescription>
+        <detaileddescription>
+<para>specifies the available binary arithmetic operators </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="307" column="1" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="307" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__Arithmetic_1ga4c27cf88d80f9c33ad808fbc78bec318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yap_error_number</type>
+        <definition>yap_error_number Yap_MathException__</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Yap_MathException__</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="344" column="25" bodyfile="/home/vsc/github/yap/os/sig.c" bodystart="735" bodyend="805" declfile="/home/vsc/github/yap/H/YapEval.h" declline="344" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf023fe9744191ffbedbff6fec02b9720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor EvalArg</definition>
+        <argsstring>(Term)</argsstring>
+        <name>EvalArg</name>
+        <param>
+          <type>Term</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="345" column="16" declfile="/home/vsc/github/yap/H/YapEval.h" declline="345" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga77621760f918f068e3a989c77d5885bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitConstExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitConstExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="385" column="13" bodyfile="/home/vsc/github/yap/C/arith0.c" bodystart="285" bodyend="311" declfile="/home/vsc/github/yap/H/YapEval.h" declline="385" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gae3c7b15ed7c6daacad0ce1ff1197b477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitUnaryExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitUnaryExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="386" column="13" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="1068" bodyend="1096" declfile="/home/vsc/github/yap/H/YapEval.h" declline="386" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaba032c7bbef09fee4c531f1a0dd26723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitBinaryExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitBinaryExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="387" column="13" bodyfile="/home/vsc/github/yap/C/arith2.c" bodystart="1452" bodyend="1489" declfile="/home/vsc/github/yap/H/YapEval.h" declline="387" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga9bc28bdb5acbedd220978ebc20da0fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_ReInitConstExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ReInitConstExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="389" column="12" bodyfile="/home/vsc/github/yap/C/arith0.c" bodystart="315" bodyend="318" declfile="/home/vsc/github/yap/H/YapEval.h" declline="389" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga807ffa2dac199d049902fc491f42b31e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_ReInitUnaryExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ReInitUnaryExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="390" column="12" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="1100" bodyend="1103" declfile="/home/vsc/github/yap/H/YapEval.h" declline="390" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6ab4bbe562c6c25f1eb170aedae2d781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_ReInitBinaryExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ReInitBinaryExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="391" column="12" bodyfile="/home/vsc/github/yap/C/arith2.c" bodystart="1493" bodyend="1496" declfile="/home/vsc/github/yap/H/YapEval.h" declline="391" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab77d5f3e796c5b89de09a8eb23b2dd14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_eval_atom</definition>
+        <argsstring>(Int)</argsstring>
+        <name>Yap_eval_atom</name>
+        <param>
+          <type>Int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="393" column="13" bodyfile="/home/vsc/github/yap/C/arith0.c" bodystart="233" bodyend="236" declfile="/home/vsc/github/yap/H/YapEval.h" declline="393" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gae413223f72a2b73acdc99952aa555ea6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_eval_unary</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_eval_unary</name>
+        <param>
+          <type>Int</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="394" column="13" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="916" bodyend="920" declfile="/home/vsc/github/yap/H/YapEval.h" declline="394" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab32272095cf0067248f1271a6363c308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_eval_binary</definition>
+        <argsstring>(Int, Term, Term)</argsstring>
+        <name>Yap_eval_binary</name>
+        <param>
+          <type>Int</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="395" column="13" bodyfile="/home/vsc/github/yap/C/arith2.c" bodystart="1190" bodyend="1194" declfile="/home/vsc/github/yap/H/YapEval.h" declline="395" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga056ccafffdb8e497b388a4c1fbbcf527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_InnerEval__</definition>
+        <argsstring>(Term USES_REGS)</argsstring>
+        <name>Yap_InnerEval__</name>
+        <param>
+          <type>Term</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="397" column="13" declfile="/home/vsc/github/yap/H/YapEval.h" declline="397" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6a73a92cd28f0181ff0a6aa41992b4d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term Yap_Eval__</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>Yap_Eval__</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="416" column="18" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="416" bodyend="420" declfile="/home/vsc/github/yap/H/YapEval.h" declline="414" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga931b3aebcc2b9298cece2acb43cc2ad2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Yap_ClearExs</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ClearExs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="425" column="20" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="425" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga594dee4fd6abb1fedb3604b966b5fc3a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>yap_error_number</type>
+        <definition>static yap_error_number Yap_FoundArithError__</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Yap_FoundArithError__</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="428" column="32" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="428" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga47ee055895ecd4274e3f95ed65a3eae7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term takeIndicator</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>takeIndicator</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="437" column="20" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="437" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga8e37c09394e1b2db364742d1ff77f22f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_NameOfUnaryOp</definition>
+        <argsstring>(int i)</argsstring>
+        <name>Yap_NameOfUnaryOp</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="453" column="13" declfile="/home/vsc/github/yap/H/YapEval.h" declline="453" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga9c5e7a1ea7f880f2efd88482ef4cdc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom Yap_NameOfBinaryOp</definition>
+        <argsstring>(int i)</argsstring>
+        <name>Yap_NameOfBinaryOp</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="454" column="13" bodyfile="/home/vsc/github/yap/C/arith2.c" bodystart="1445" bodyend="1448" declfile="/home/vsc/github/yap/H/YapEval.h" declline="454" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga704ee37e41c5ef10986e0a9853a51710" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>blob_type</type>
+        <definition>static blob_type ETypeOfTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>ETypeOfTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="464" column="25" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="464" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab1fc7af5bb0a5e151a439db643cb732e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_mpz_to_string</definition>
+        <argsstring>(MP_INT *b, char *s, size_t sz, int base)</argsstring>
+        <name>Yap_mpz_to_string</name>
+        <param>
+          <type><ref refid="structMP__INT" kindref="compound">MP_INT</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="480" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1687" bodyend="1697" declfile="/home/vsc/github/yap/H/YapEval.h" declline="480" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga2c3426f8624515e22e5abc7512c8ea14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_int_int</definition>
+        <argsstring>(Int, Int)</argsstring>
+        <name>Yap_gmq_rdiv_int_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="482" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1057" bodyend="1069" declfile="/home/vsc/github/yap/H/YapEval.h" declline="482" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf190c6c10685950ab5bbea9801815c57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmq_rdiv_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="483" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1072" bodyend="1091" declfile="/home/vsc/github/yap/H/YapEval.h" declline="483" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga56aeef8bf65a7370f0496f38259e7864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmq_rdiv_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="484" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1094" bodyend="1115" declfile="/home/vsc/github/yap/H/YapEval.h" declline="484" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga59fa3c91fdae83e6ffd755587af70044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmq_rdiv_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="485" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1118" bodyend="1146" declfile="/home/vsc/github/yap/H/YapEval.h" declline="485" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gacdb4a47efa74541e63eecbed42a18822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_ints</definition>
+        <argsstring>(Int, Int)</argsstring>
+        <name>Yap_gmp_add_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="487" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="52" bodyend="68" declfile="/home/vsc/github/yap/H/YapEval.h" declline="487" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6b59136343bd343e1a915e0c7f334c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_ints</definition>
+        <argsstring>(Int, Int)</argsstring>
+        <name>Yap_gmp_sub_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="488" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="71" bodyend="91" declfile="/home/vsc/github/yap/H/YapEval.h" declline="488" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad2472778249e8013783096f5684f38d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_ints</definition>
+        <argsstring>(Int, Int)</argsstring>
+        <name>Yap_gmp_mul_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="489" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="94" bodyend="101" declfile="/home/vsc/github/yap/H/YapEval.h" declline="489" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga328952e71af7ed0122c7e00cbd5b20a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sll_ints</definition>
+        <argsstring>(Int, Int)</argsstring>
+        <name>Yap_gmp_sll_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="490" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="104" bodyend="111" declfile="/home/vsc/github/yap/H/YapEval.h" declline="490" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga583ea710dc7554d15b283483bcca94de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_add_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="491" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="115" bodyend="132" declfile="/home/vsc/github/yap/H/YapEval.h" declline="491" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga76995c651ed89b143b36465ae65d8c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_sub_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="492" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="144" bodyend="163" declfile="/home/vsc/github/yap/H/YapEval.h" declline="492" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga229bccdda7be6b69ef1fd03abfe27f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_sub_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="493" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="190" bodyend="210" declfile="/home/vsc/github/yap/H/YapEval.h" declline="493" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga446da4ec3214c0bab785788d29b99592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_mul_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="494" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="167" bodyend="186" declfile="/home/vsc/github/yap/H/YapEval.h" declline="494" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga3aea38a0ada13987b04da544ba3e2440" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_div_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="495" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="214" bodyend="229" declfile="/home/vsc/github/yap/H/YapEval.h" declline="495" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6b95fb03a6307a1e76e9dc79b15767fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_div_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="496" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="233" bodyend="272" declfile="/home/vsc/github/yap/H/YapEval.h" declline="496" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga954e50db6701e6353e9a6d3102049638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div2_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_div2_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="497" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="276" bodyend="303" declfile="/home/vsc/github/yap/H/YapEval.h" declline="497" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad015e9b70580091c5e51e1690d161edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_fdiv_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="498" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1149" bodyend="1173" declfile="/home/vsc/github/yap/H/YapEval.h" declline="498" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab8a766a4bcf62d121dc9c469c78d50cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_fdiv_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="499" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1176" bodyend="1200" declfile="/home/vsc/github/yap/H/YapEval.h" declline="499" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaa53eb7ac80151fd2bee08659d7a95f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_and_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_and_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="500" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="307" bodyend="320" declfile="/home/vsc/github/yap/H/YapEval.h" declline="500" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga54fa0ced3929c1e198d841fa997f5808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_ior_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_ior_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="501" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="324" bodyend="337" declfile="/home/vsc/github/yap/H/YapEval.h" declline="501" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gafa33dbddfc79bb2d142448506dfce6be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_xor_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_xor_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="502" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="361" bodyend="374" declfile="/home/vsc/github/yap/H/YapEval.h" declline="502" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gadf467cd8eb1baf0f8bcb3bc68916a5e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sll_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_sll_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="503" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="378" bodyend="414" declfile="/home/vsc/github/yap/H/YapEval.h" declline="503" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad4f457739ced22d188a9ad7454fa632f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_add_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="504" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="417" bodyend="451" declfile="/home/vsc/github/yap/H/YapEval.h" declline="504" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga5382b86ba7ed81293e252387a2daac0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_sub_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="505" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="454" bodyend="488" declfile="/home/vsc/github/yap/H/YapEval.h" declline="505" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga237eaf4cb8369f0795b73bbe1acd7f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_mul_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="506" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="491" bodyend="531" declfile="/home/vsc/github/yap/H/YapEval.h" declline="506" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaff09166f8737044d598721fba395cce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_div_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="507" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="535" bodyend="573" declfile="/home/vsc/github/yap/H/YapEval.h" declline="507" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad745a7f0e32a9118afb7bc158da2cf21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div2_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_div2_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="508" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="577" bodyend="611" declfile="/home/vsc/github/yap/H/YapEval.h" declline="508" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga0f6e473d69e4db9ed833c4c998d1d411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_fdiv_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="509" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1203" bodyend="1232" declfile="/home/vsc/github/yap/H/YapEval.h" declline="509" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga4b4f12c0fba8ff3946b0e76e6cf18eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_and_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_and_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="510" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="614" bodyend="633" declfile="/home/vsc/github/yap/H/YapEval.h" declline="510" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga4ae2cb91c929f015c294bc3beb91b7a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_ior_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_ior_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="511" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="636" bodyend="655" declfile="/home/vsc/github/yap/H/YapEval.h" declline="511" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga22f72649230126617d257744d81b7334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_xor_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_xor_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="512" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="658" bodyend="677" declfile="/home/vsc/github/yap/H/YapEval.h" declline="512" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaade05ac96e0b5dd251d6971f88a469b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mod_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_mod_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="513" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="680" bodyend="699" declfile="/home/vsc/github/yap/H/YapEval.h" declline="513" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab9a8dd911ec9d78facb3f6d7f50275b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mod_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_mod_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="514" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="702" bodyend="716" declfile="/home/vsc/github/yap/H/YapEval.h" declline="514" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac7b385ecc5c189858dec6d2f7d00bcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mod_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_mod_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="515" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="719" bodyend="757" declfile="/home/vsc/github/yap/H/YapEval.h" declline="515" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga0489a5ae1b2c452788880b7a1293a87f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_rem_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_rem_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="516" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="760" bodyend="779" declfile="/home/vsc/github/yap/H/YapEval.h" declline="516" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf07ce3908b0b5dfab12b0978181c49b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_rem_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_rem_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="517" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="782" bodyend="796" declfile="/home/vsc/github/yap/H/YapEval.h" declline="517" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga23fc697f7d73353b4533e2f036773210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_rem_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_rem_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="518" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="799" bodyend="810" declfile="/home/vsc/github/yap/H/YapEval.h" declline="518" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga983adea5f3f354c212c103ad0fc5bd50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_int_int</definition>
+        <argsstring>(Int, Int)</argsstring>
+        <name>Yap_gmp_exp_int_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="519" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="961" bodyend="968" declfile="/home/vsc/github/yap/H/YapEval.h" declline="519" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6e5a04f3cb4fefd22fa38efbf0040f26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_exp_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="520" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="998" bodyend="1010" declfile="/home/vsc/github/yap/H/YapEval.h" declline="520" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga45fed83ab17ad0752636f4748ec07ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_exp_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="521" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="971" bodyend="995" declfile="/home/vsc/github/yap/H/YapEval.h" declline="521" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaed8188743dac21b381dec67efa41a0d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_exp_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="522" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1013" bodyend="1036" declfile="/home/vsc/github/yap/H/YapEval.h" declline="522" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaec64b44314bb7dcac6576a86f698068a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_gcd_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_gcd_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="523" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="835" bodyend="852" declfile="/home/vsc/github/yap/H/YapEval.h" declline="523" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac3ed691ce0fbc530656f00abbc37b0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_gcd_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_gcd_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="524" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="813" bodyend="832" declfile="/home/vsc/github/yap/H/YapEval.h" declline="524" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga08bde4653d12dbbcf993b4ce3c769056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_big_from_64bits</definition>
+        <argsstring>(YAP_LONG_LONG)</argsstring>
+        <name>Yap_gmp_big_from_64bits</name>
+        <param>
+          <type>YAP_LONG_LONG</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="526" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1040" bodyend="1054" declfile="/home/vsc/github/yap/H/YapEval.h" declline="526" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga503d476516e0ab6faa376fe4e192bc91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_to_big</definition>
+        <argsstring>(Float)</argsstring>
+        <name>Yap_gmp_float_to_big</name>
+        <param>
+          <type>Float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="528" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="855" bodyend="861" declfile="/home/vsc/github/yap/H/YapEval.h" declline="528" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga664bf61dcb2e568a8e2a7551007fc907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_to_rational</definition>
+        <argsstring>(Float)</argsstring>
+        <name>Yap_gmp_float_to_rational</name>
+        <param>
+          <type>Float</type>
+          <declname>dbl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="529" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1410" bodyend="1416" declfile="/home/vsc/github/yap/H/YapEval.h" declline="529" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga010b327e1a8cf7a6adc5d55e556720ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_rationalize</definition>
+        <argsstring>(Float)</argsstring>
+        <name>Yap_gmp_float_rationalize</name>
+        <param>
+          <type>Float</type>
+          <declname>dbl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="530" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1434" bodyend="1457" declfile="/home/vsc/github/yap/H/YapEval.h" declline="530" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga7aa22e3b152fcb1dd7f8303d0af71fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float Yap_gmp_to_float</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_to_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="531" column="14" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="864" bodyend="874" declfile="/home/vsc/github/yap/H/YapEval.h" declline="531" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga7dc61de3867983555907879629ad0dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_float_big</definition>
+        <argsstring>(Float, Term)</argsstring>
+        <name>Yap_gmp_add_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="532" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="877" bodyend="888" declfile="/home/vsc/github/yap/H/YapEval.h" declline="532" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga097f678fcd729991e1e9a155ef759b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_float_big</definition>
+        <argsstring>(Float, Term)</argsstring>
+        <name>Yap_gmp_sub_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="533" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="891" bodyend="902" declfile="/home/vsc/github/yap/H/YapEval.h" declline="533" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga69420d54ece7662b2ad95b94c9b25617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_big_float</definition>
+        <argsstring>(Term, Float)</argsstring>
+        <name>Yap_gmp_sub_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="534" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="905" bodyend="916" declfile="/home/vsc/github/yap/H/YapEval.h" declline="534" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf7154df0a2f97bb2b87826ca1cbf5e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_float_big</definition>
+        <argsstring>(Float, Term)</argsstring>
+        <name>Yap_gmp_mul_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="535" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="919" bodyend="930" declfile="/home/vsc/github/yap/H/YapEval.h" declline="535" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6cea146c80a90a3558fbed3b6f37cb0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_float_big</definition>
+        <argsstring>(Float, Term)</argsstring>
+        <name>Yap_gmp_fdiv_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="536" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="933" bodyend="944" declfile="/home/vsc/github/yap/H/YapEval.h" declline="536" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga7878c8c94f4121a3eb6cae580e1c3fee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_big_float</definition>
+        <argsstring>(Term, Float)</argsstring>
+        <name>Yap_gmp_fdiv_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="537" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="947" bodyend="958" declfile="/home/vsc/github/yap/H/YapEval.h" declline="537" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga480562054af1d007d99481b81e345704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_cmp_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="539" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1235" bodyend="1245" declfile="/home/vsc/github/yap/H/YapEval.h" declline="539" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga36bf12af6afd7190b55b4970e539cd7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_cmp_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="540" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1248" bodyend="1258" declfile="/home/vsc/github/yap/H/YapEval.h" declline="540" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga59eb582a52309beb54f34cb468e3b8a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_big_float</definition>
+        <argsstring>(Term, Float)</argsstring>
+        <name>Yap_gmp_cmp_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="541" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1261" bodyend="1276" declfile="/home/vsc/github/yap/H/YapEval.h" declline="541" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gafdb564e54e455b3cb350addde6a495ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_cmp_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="543" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1279" bodyend="1316" declfile="/home/vsc/github/yap/H/YapEval.h" declline="543" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf028e3310f84ec2067a37a58e5ef99ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_big_int</definition>
+        <argsstring>(Term, Int)</argsstring>
+        <name>Yap_gmp_tcmp_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="545" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1319" bodyend="1328" declfile="/home/vsc/github/yap/H/YapEval.h" declline="545" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf5e3ab82f42c5dce6ffc7a15e44dad5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_int_big</definition>
+        <argsstring>(Int, Term)</argsstring>
+        <name>Yap_gmp_tcmp_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="546" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1331" bodyend="1340" declfile="/home/vsc/github/yap/H/YapEval.h" declline="546" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga1f7943d5f129c285fe61388e7057bac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_big_float</definition>
+        <argsstring>(Term, Float)</argsstring>
+        <name>Yap_gmp_tcmp_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="547" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1343" bodyend="1346" declfile="/home/vsc/github/yap/H/YapEval.h" declline="547" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaffa11280ad8a03b4187b8746b0eb86a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_big_big</definition>
+        <argsstring>(Term, Term)</argsstring>
+        <name>Yap_gmp_tcmp_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="549" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1349" bodyend="1378" declfile="/home/vsc/github/yap/H/YapEval.h" declline="549" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga129e6a09dbd16bbdbbe7fda8c048d6eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_neg_int</definition>
+        <argsstring>(Int)</argsstring>
+        <name>Yap_gmp_neg_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="551" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1381" bodyend="1388" declfile="/home/vsc/github/yap/H/YapEval.h" declline="551" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga9c10701821b12d34a38c394027827af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_abs_big</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_abs_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="552" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1460" bodyend="1476" declfile="/home/vsc/github/yap/H/YapEval.h" declline="552" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga38d282d2bd9bbd0f63996c48b163b8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_neg_big</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_neg_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="553" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1391" bodyend="1407" declfile="/home/vsc/github/yap/H/YapEval.h" declline="553" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga2b8bd33a3ffe7590255c890e489f9aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_unot_big</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_unot_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="554" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1479" bodyend="1492" declfile="/home/vsc/github/yap/H/YapEval.h" declline="554" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga99f6a3504225c06a610f28f1e34b9835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_floor</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_floor</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="555" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1495" bodyend="1510" declfile="/home/vsc/github/yap/H/YapEval.h" declline="555" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga1d256d1ff32f5f8ab2275e7758654a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_ceiling</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_ceiling</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="556" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1513" bodyend="1528" declfile="/home/vsc/github/yap/H/YapEval.h" declline="556" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga48b78af156b83b567d0aadfd29417077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_round</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_round</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="557" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1531" bodyend="1555" declfile="/home/vsc/github/yap/H/YapEval.h" declline="557" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab6a3c9d68204046888cbfa85b55f1bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_trunc</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_trunc</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="558" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1558" bodyend="1578" declfile="/home/vsc/github/yap/H/YapEval.h" declline="558" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga442b0ecc1003851d74a249f31f9486e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_fractional_part</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_float_fractional_part</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="559" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1581" bodyend="1599" declfile="/home/vsc/github/yap/H/YapEval.h" declline="559" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gabbabad992482e6949f60693fedd6741e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_integer_part</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_float_integer_part</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="560" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1602" bodyend="1618" declfile="/home/vsc/github/yap/H/YapEval.h" declline="560" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gafb92bf2d2274efbcc065de90d4fa07bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sign</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_sign</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="561" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1621" bodyend="1630" declfile="/home/vsc/github/yap/H/YapEval.h" declline="561" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga4911848d5919e8cc7295cc9eacf280d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_lsb</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_lsb</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="562" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1633" bodyend="1648" declfile="/home/vsc/github/yap/H/YapEval.h" declline="562" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gacaa396ec602f3556ec6fae99da4f7214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_msb</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_msb</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="563" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1651" bodyend="1666" declfile="/home/vsc/github/yap/H/YapEval.h" declline="563" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga3c5aad0ae32bb3f07ef6735e24fcace3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_popcount</definition>
+        <argsstring>(Term)</argsstring>
+        <name>Yap_gmp_popcount</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="564" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1669" bodyend="1684" declfile="/home/vsc/github/yap/H/YapEval.h" declline="564" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga159673863a1ac387554c0736a335503b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_gmp_to_string</definition>
+        <argsstring>(Term, char *, size_t, int)</argsstring>
+        <name>Yap_gmp_to_string</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="566" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1700" bodyend="1737" declfile="/home/vsc/github/yap/H/YapEval.h" declline="566" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac89546588c3426fbc71d4a3d48b5fb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Yap_gmp_to_size</definition>
+        <argsstring>(Term, int)</argsstring>
+        <name>Yap_gmp_to_size</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="567" column="15" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1740" bodyend="1753" declfile="/home/vsc/github/yap/H/YapEval.h" declline="567" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gadbaf54132d7869516a457dce9d15af19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_term_to_existing_big</definition>
+        <argsstring>(Term, MP_INT *)</argsstring>
+        <name>Yap_term_to_existing_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structMP__INT" kindref="compound">MP_INT</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="569" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1756" bodyend="1771" declfile="/home/vsc/github/yap/H/YapEval.h" declline="569" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac7a3eb8a0b94fb89f7b8a5a95de51007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_term_to_existing_rat</definition>
+        <argsstring>(Term, MP_RAT *)</argsstring>
+        <name>Yap_term_to_existing_rat</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structMP__RAT" kindref="compound">MP_RAT</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="570" column="12" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="1774" bodyend="1794" declfile="/home/vsc/github/yap/H/YapEval.h" declline="570" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga58414d6f9666d9ff5f0ed0ea95cea5f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_gmp_set_bit</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_set_bit</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="572" column="13" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="136" bodyend="140" declfile="/home/vsc/github/yap/H/YapEval.h" declline="572" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf9d690b776604b2a1bcdd5f0c0c7af40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term __Yap_Mk64IntegerTerm</definition>
+        <argsstring>(YAP_LONG_LONG USES_REGS)</argsstring>
+        <name>__Yap_Mk64IntegerTerm</name>
+        <param>
+          <type>YAP_LONG_LONG</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="576" column="18" declfile="/home/vsc/github/yap/H/YapEval.h" declline="576" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gabbe3f0c8cb20170485f2521f89d7f070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term __Yap_Mk64IntegerTerm</definition>
+        <argsstring>(YAP_LONG_LONG i USES_REGS)</argsstring>
+        <name>__Yap_Mk64IntegerTerm</name>
+        <param>
+          <type>YAP_LONG_LONG i</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="579" column="1" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="579" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaec13fc4837daced945d4efcc5c825a24" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term add_int</definition>
+        <argsstring>(Int i, Int j USES_REGS)</argsstring>
+        <name>add_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int j</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="594" column="20" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="594" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga1e8dd1e2720d03599634ae132975a1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_msb</definition>
+        <argsstring>(Int inp USES_REGS)</argsstring>
+        <name>Yap_msb</name>
+        <param>
+          <type>Int inp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="610" column="5" bodyfile="/home/vsc/github/yap/C/arith1.c" bodystart="366" bodyend="369" declfile="/home/vsc/github/yap/H/YapEval.h" declline="610" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gafcfc38d6dd984f576cb9f95c1e6bab4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term p_plus</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>p_plus</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="612" column="20" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="612" bodyend="658"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__Arithmetic_1ga487e0193fe74cf79f80a11b180afbd93" prot="public" static="no">
+        <name>Int_MAX</name>
+        <initializer>((Int)((~((CELL)0)) &gt;&gt; 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="131" column="10" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga1a65dbec08ab3fa8f62b157a5e13216c" prot="public" static="no">
+        <name>Int_MIN</name>
+        <initializer>(-Int_MAX - (CELL)1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="136" column="11" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga76b4ec5e04ef3efe74d26632e63d608e" prot="public" static="no">
+        <name>PLMAXTAGGEDINT</name>
+        <initializer>(MAX_ABS_INT - ((CELL)1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="139" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gaeeaf4f1dc0a4c8b2bdcb1f31ebfcefa8" prot="public" static="no">
+        <name>PLMINTAGGEDINT</name>
+        <initializer>(-MAX_ABS_INT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="140" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga1b336f9bb5d97cb0ce70d1caa496f68c" prot="public" static="no">
+        <name>PLMAXINT</name>
+        <initializer>Int_MAX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="142" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga216eb3b36b667baee74cccc838a67a5e" prot="public" static="no">
+        <name>PLMININT</name>
+        <initializer>Int_MIN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="143" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga956e2723d559858d08644ac99146e910" prot="public" static="no">
+        <name>INFINITY</name>
+        <initializer>(1.0 / 0.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="146" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga8abfcc76130f3f991d124dd22d7e69bc" prot="public" static="no">
+        <name>NAN</name>
+        <initializer>(0.0 / 0.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="150" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gabb287aadde7b67eec60f7af2f7b34376" prot="public" static="no">
+        <name>FlIsInt</name>
+        <param><defname>X</defname></param>
+        <initializer>(FALSE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="353" column="10" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga5844add63a770f9ffa8018bdbac0ec12" prot="public" static="no">
+        <name>MkEvalFl</name>
+        <param><defname>X</defname></param>
+        <initializer>(FlIsInt(X) ? MkIntTerm((Int)(X)) : MkFloatTerm(X))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="359" column="10" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga57c48ce4ac9dcd82ebc0bbe0ba8f4e57" prot="public" static="no">
+        <name>REvalInt</name>
+        <param><defname>I</defname></param>
+        <initializer>  {						\
+    eval_int = (I);				\
+    return (FInt);				\
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="363" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gad992feea2c804fd54f63dc575c8d3818" prot="public" static="no">
+        <name>REvalFl</name>
+        <param><defname>F</defname></param>
+        <initializer>  {						\
+    eval_flt = (F);				\
+    return (FFloat);				\
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="368" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gaa69c953c67363b2e0a3e0b138c6e0580" prot="public" static="no">
+        <name>REvalError</name>
+        <param></param>
+        <initializer>  { return (FError); }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="374" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gaf5ebc0540c4ff64b286c488e69372ded" prot="public" static="no">
+        <name>FL</name>
+        <param><defname>X</defname></param>
+        <initializer>((double)(X))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="382" column="10" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga87d5bce27f7b8ba613d16fae536b1364" prot="public" static="no">
+        <name>Yap_ArithError</name>
+        <param><defname>id</defname></param>
+        <param><defname>t</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>  <ref refid="group__YAPErrors_1ga8ae225428cf24b3bac9d00f529b57ae1" kindref="member">Yap_ThrowError__</ref>(__FILE__, __FUNCTION__, __LINE__, id, t, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="398" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gacb657e07654ba85d7a10e81691e1e30e" prot="public" static="no">
+        <name>Yap_BinError</name>
+        <param><defname>id</defname></param>
+        <initializer>  <ref refid="group__YAPErrors_1ga8ae225428cf24b3bac9d00f529b57ae1" kindref="member">Yap_ThrowError__</ref>(__FILE__, __FUNCTION__, __LINE__, id, 0L, &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="400" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gac3a869ca5526580cb83971d307bc09f7" prot="public" static="no">
+        <name>Yap_AbsmiError</name>
+        <param><defname>id</defname></param>
+        <initializer>  <ref refid="group__YAPErrors_1ga8ae225428cf24b3bac9d00f529b57ae1" kindref="member">Yap_ThrowError__</ref>(__FILE__, __FUNCTION__, __LINE__, id, 0L, &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="402" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga409842555664c24ea56a0f1591d467ef" prot="public" static="no">
+        <name>Yap_MathException</name>
+        <param></param>
+        <initializer>Yap_MathException__(PASS_REGS1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="408" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga55303f1d45a7126a291a2ee96102c750" prot="public" static="no">
+        <name>Yap_InnerEval</name>
+        <param><defname>x</defname></param>
+        <initializer>Yap_InnerEval__(x PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="410" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga7258bdd6370b1ad040f539e86b9256ff" prot="public" static="no">
+        <name>Yap_Eval</name>
+        <param><defname>x</defname></param>
+        <initializer>Yap_Eval__(x PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="411" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga982cd40efa661db8e9d6f218633c70f0" prot="public" static="no">
+        <name>Yap_FoundArithError</name>
+        <param></param>
+        <initializer>Yap_FoundArithError__(PASS_REGS1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="412" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gade89bbcd5b81a1d541620ec1a92550c2" prot="public" static="no">
+        <name>RINT</name>
+        <param><defname>v</defname></param>
+        <initializer>return (MkIntegerTerm(v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="456" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga5343a94d59315ac90c32ff7f2f3647e4" prot="public" static="no">
+        <name>RFLOAT</name>
+        <param><defname>v</defname></param>
+        <initializer>return (MkFloatTerm(v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="457" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga57f3a03f58d0701497c7b0be36535687" prot="public" static="no">
+        <name>RBIG</name>
+        <param><defname>v</defname></param>
+        <initializer>return (Yap_MkBigIntTerm(v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="458" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga2ac9fcfd10aa804e61aae070f9acb3b9" prot="public" static="no">
+        <name>RERROR</name>
+        <param></param>
+        <initializer>  {						\
+    return (0L);				\
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="459" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga56b4908f75d2f83e291cd639a3ae52ad" prot="public" static="no">
+        <name>Yap_gmp_cmp_float_big</name>
+        <param><defname>D</defname></param>
+        <param><defname>T</defname></param>
+        <initializer>(-Yap_gmp_cmp_big_float(<ref refid="classT" kindref="compound">T</ref>, D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="542" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gaf9bfe8236d4d7bc7b997fae97b9f7194" prot="public" static="no">
+        <name>Yap_gmp_tcmp_float_big</name>
+        <param><defname>D</defname></param>
+        <param><defname>T</defname></param>
+        <initializer>(-Yap_gmp_tcmp_big_float(<ref refid="classT" kindref="compound">T</ref>, D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="548" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga550e3e9f8374f85872d1003bcadb1ee4" prot="public" static="no">
+        <name>Yap_Mk64IntegerTerm</name>
+        <param><defname>i</defname></param>
+        <initializer>__Yap_Mk64IntegerTerm((i)PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="574" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga598a3330b3c21701223ee0ca14316eca" prot="public" static="no">
+        <name>PI</name>
+        <initializer>3.14159265358979323846</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="664" column="10" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1ga9bf5d952c5c93c70f9e66c9794d406c9" prot="public" static="no">
+        <name>M_E</name>
+        <initializer>2.7182818284590452354</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="669" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Arithmetic_1gab701824136346377b44fc3adb8050b29" prot="public" static="no">
+        <name>DBL_EPSILON</name>
+        <initializer>0.00000000000000022204</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapEval.h" line="682" column="9" bodyfile="/home/vsc/github/yap/H/YapEval.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>YAP supports the following numeric types: </para>
+    </briefdescription>
+    <detaileddescription>
+<para><orderedlist>
+<listitem><para><emphasis>Tagged integers</emphasis></para>
+<para>YAP supports integers of up to almost the CPU word size: 28 bits on 32-bit machines, and 60-bits on 64-bit machines.The engine tags smaller integers are tagged so that they fit in a single word These are the so called <emphasis>tagged integers</emphasis></para>
+</listitem><listitem><para><emphasis>Large integers</emphasis></para>
+<para>Integers that cannot fit a tag, but who can fit a word are represented by adding a special functor, and a special end cell The difference between these integers and tagged integers should be transparent to the programmer</para>
+</listitem><listitem><para><emphasis>Multiple Precision Integers</emphasis></para>
+<para>When YAP is built using the GNU multiple precision arithmetic library (GMP), integer arithmetic is unbounded, which means that the size of integers is only limited by available memory The type of integer support can be detected using the Prolog flags bounded, min_integer and max_integer As the use of GMP is default, most of the following descriptions assume unbounded integer arithmetic</para>
+</listitem><listitem><para><emphasis>Rational numbers (Q)</emphasis></para>
+<para>Rational numbers are quotients of two integers Rational arithmetic is provided if GMP is used Rational numbers that are returned from <ref refid="classis_22" kindref="compound">is/2</ref> are canonical, which means the denominator <emphasis>M</emphasis> is positive and that the numerator <emphasis>N</emphasis> and <emphasis>M</emphasis> have no common divisors Rational numbers are introduced in the computation using the <ref refid="classrational_21" kindref="compound">rational/1</ref> , rationalize/1 or the rdiv/2 (rational division) function</para>
+</listitem><listitem><para><emphasis>Floating point numbers</emphasis></para>
+<para>Floating point numbers are represented using the C-type double On most today platforms these are 64-bit IEEE-754 floating point numbers YAP now includes the built-in predicates <ref refid="classisinf_21" kindref="compound">isinf/1</ref> and to <ref refid="classisnan_21" kindref="compound">isnan/1</ref> tests</para>
+</listitem></orderedlist>
+</para>
+<para>Arithmetic functions that require integer arguments accept, in addition to integers, rational numbers with denominator <lsquo/>1<rsquo/> and floating point numbers that can be accurately converted to integers If the required argument is a float the argument is converted to float Note that conversion of integers to floating point numbers may raise an overflow exception In all other cases, arguments are converted to the same type using the order integer to rational number to floating point number</para>
+<para>Evaluation generates the following <emphasis>Call</emphasis> exceptions:</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(instantiation_error, Call )1 if not ground</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(evaluable( V ), Call)` if not evaluable term <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(integer( V ), Call)` if must be integer <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(float( V ), Call)` if must be float</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(out_of_range( V ), Call)` if argument invalid <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(not_less_than_zero( V ), Call)` if argument must be positive or zero</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(undefined( V ), Call)` result is not defined (nan) <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+(overflow( V ), Call)` result is arithmetic overflow</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

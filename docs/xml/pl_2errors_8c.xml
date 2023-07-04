@@ -1,0 +1,1316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="pl_2errors_8c" kind="file" language="C++">
+    <compoundname>errors.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="Atoms_8h" local="yes">Atoms.h</includes>
+    <includes refid="YapDefs_8h" local="yes">YapDefs.h</includes>
+    <includes refid="YapError_8h" local="yes">YapError.h</includes>
+    <includes refid="YapInterface_8h" local="yes">YapInterface.h</includes>
+    <includes refid="YapStreams_8h" local="yes">YapStreams.h</includes>
+    <includes refid="YapTags_8h" local="yes">YapTags.h</includes>
+    <includes refid="Yapproto_8h" local="yes">Yapproto.h</includes>
+    <includes refid="absmi_8h" local="yes">absmi.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="Foreign_8h" local="yes">Foreign.h</includes>
+    <includes refid="iopreds_8h" local="no">iopreds.h</includes>
+    <includes refid="YapErrors_8h" local="yes">YapErrors.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Foreign.h</label>
+        <link refid="Foreign_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="57">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="60">
+        <label>trim_trail.h</label>
+        <link refid="trim__trail_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="62">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="53">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/pl/errors.c</label>
+        <link refid="pl_2errors_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structc__error__info" prot="public">c_error_info</innerclass>
+      <sectiondef kind="define">
+      <member refid="group__YAPErrors_1gaf718f8e2d0817aab95d12c9f46ccba9d" kind="define"><name>set_key_b</name></member>
+      <member refid="group__YAPErrors_1gaea052a50cccdb78c11af29c0c52e761e" kind="define"><name>set_key_i</name></member>
+      <member refid="group__YAPErrors_1gab588b8ec1bde14f7d3cb09a378760c13" kind="define"><name>set_key_s</name></member>
+      <member refid="group__YAPErrors_1ga07dcea8abda07db444a7d9ada324a361" kind="define"><name>set_key_t</name></member>
+      <member refid="group__YAPErrors_1ga876e9d0ccf1fd4dde861719cdd73aa3a" kind="define"><name>query_key_b</name></member>
+      <member refid="group__YAPErrors_1ga352b7955c6f175c8f527cf8672a9ff1d" kind="define"><name>query_key_i</name></member>
+      <member refid="group__YAPErrors_1ga934600faadcb727a40fa24bf75b17f80" kind="define"><name>query_key_s</name></member>
+      <member refid="group__YAPErrors_1gaaef7e45e9030ab3403c677239751ecb7" kind="define"><name>query_key_t</name></member>
+      <member refid="group__YAPErrors_1gad8442e941d4159eeeef6273600e584d1" kind="define"><name>YAP_BUF_SIZE</name></member>
+      <member refid="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" kind="define"><name>BEGIN_ERROR_CLASSES</name></member>
+      <member refid="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" kind="define"><name>END_ERROR_CLASSES</name></member>
+      <member refid="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" kind="define"><name>ECLASS</name></member>
+      <member refid="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" kind="define"><name>BEGIN_ERRORS</name></member>
+      <member refid="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" kind="define"><name>END_ERRORS</name></member>
+      <member refid="group__YAPErrors_1ga11444c784c8512ffeec46b934a58df73" kind="define"><name>E0</name></member>
+      <member refid="group__YAPErrors_1ga270ad5f14284eb5ba569e84e1870edf8" kind="define"><name>E</name></member>
+      <member refid="group__YAPErrors_1ga295401ac1f092023dcb57f5413cf0af6" kind="define"><name>E1</name></member>
+      <member refid="group__YAPErrors_1ga22fa5233716ebbee17a6d992a8c981f4" kind="define"><name>ES</name></member>
+      <member refid="group__YAPErrors_1gab972fa0940fc08b062b6e90f285f6229" kind="define"><name>E2</name></member>
+      <member refid="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" kind="define"><name>BEGIN_ERROR_CLASSES</name></member>
+      <member refid="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" kind="define"><name>ECLASS</name></member>
+      <member refid="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" kind="define"><name>END_ERROR_CLASSES</name></member>
+      <member refid="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" kind="define"><name>BEGIN_ERRORS</name></member>
+      <member refid="group__YAPErrors_1ga809ce406facb750b7a5527a174bc68b4" kind="define"><name>E0</name></member>
+      <member refid="group__YAPErrors_1ga94349dda5a01546b896cdf5ec9355e3f" kind="define"><name>E</name></member>
+      <member refid="group__YAPErrors_1ga3f035db927ba20839eda7667b7162d2e" kind="define"><name>E1</name></member>
+      <member refid="group__YAPErrors_1ga825eefa74684d7e00ba7c2fd30f6f0e2" kind="define"><name>ES</name></member>
+      <member refid="group__YAPErrors_1ga2fb952e27d3903cf63d48f81be0cb00c" kind="define"><name>E2</name></member>
+      <member refid="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" kind="define"><name>END_ERRORS</name></member>
+      <member refid="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" kind="define"><name>BEGIN_ERROR_CLASSES</name></member>
+      <member refid="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" kind="define"><name>ECLASS</name></member>
+      <member refid="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" kind="define"><name>END_ERROR_CLASSES</name></member>
+      <member refid="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" kind="define"><name>BEGIN_ERRORS</name></member>
+      <member refid="group__YAPErrors_1ga809ce406facb750b7a5527a174bc68b4" kind="define"><name>E0</name></member>
+      <member refid="group__YAPErrors_1ga94349dda5a01546b896cdf5ec9355e3f" kind="define"><name>E</name></member>
+      <member refid="group__YAPErrors_1ga3f035db927ba20839eda7667b7162d2e" kind="define"><name>E1</name></member>
+      <member refid="group__YAPErrors_1ga825eefa74684d7e00ba7c2fd30f6f0e2" kind="define"><name>ES</name></member>
+      <member refid="group__YAPErrors_1ga2fb952e27d3903cf63d48f81be0cb00c" kind="define"><name>E2</name></member>
+      <member refid="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" kind="define"><name>END_ERRORS</name></member>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <member refid="group__YAPErrors_1ga09b53381e90cf6de8ce35646a52c1cf0" kind="typedef"><name>c_error_t</name></member>
+      </sectiondef>
+      <sectiondef kind="var">
+      <member refid="group__YAPErrors_1gaf5b80d2673b463e101f0affd89d9fb40" kind="variable"><name>tmpbuf</name></member>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__YAPErrors_1ga589007d62586279d2e8b83bacf760f0a" kind="function"><name>Yap_RestartYap</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga44059d881b056e758c73daa2d7b1a38b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool setErr</definition>
+        <argsstring>(const char *q, yap_error_descriptor_t *i, Term t)</argsstring>
+        <name>setErr</name>
+        <param>
+          <type>const char *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="130" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="130" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga1795a1b63f9e8b55e272f27f1d98fc56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term queryErr</definition>
+        <argsstring>(const char *q, yap_error_descriptor_t *i)</argsstring>
+        <name>queryErr</name>
+        <param>
+          <type>const char *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="189" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="189" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga3f894e761cbd7fb64ef4689f4656bac2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_b</definition>
+        <argsstring>(FILE *of, const char *key, bool v)</argsstring>
+        <name>print_key_b</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="222" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gae41e35ebe6c09a7491085d9097c9612a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_i</definition>
+        <argsstring>(FILE *of, const char *key, YAP_Int v)</argsstring>
+        <name>print_key_i</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="227" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gaa132d346aa9232bb82067646239a3f77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_s</definition>
+        <argsstring>(FILE *of, const char *key, const char *v)</argsstring>
+        <name>print_key_s</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="231" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga3e8f8e746366e3650160978b1cb20ea6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_t</definition>
+        <argsstring>(FILE *of, const char *key, YAP_Term v)</argsstring>
+        <name>print_key_t</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="236" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga3c8622c6eabce10f77be4bf9b88e4d98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void printErr</definition>
+        <argsstring>(yap_error_descriptor_t *i, FILE *out)</argsstring>
+        <name>printErr</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="243" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="243" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga061f76775abb3d50abf3fd486bff4fac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_b</definition>
+        <argsstring>(const char *key, bool v, YAP_Term o0)</argsstring>
+        <name>add_key_b</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="286" column="17" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="286" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga80f8a204b7d82ffaf85bb4b73833dd82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_i</definition>
+        <argsstring>(const char *key, YAP_Int v, YAP_Term o0)</argsstring>
+        <name>add_key_i</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="295" column="17" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="295" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga8e2f3c2684a783244264459c3d8765e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_s</definition>
+        <argsstring>(const char *key, const char *v, YAP_Term o0)</argsstring>
+        <name>add_key_s</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="303" column="17" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="303" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gaf82bfb78f31d1887ec3e11fac5826e42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_t</definition>
+        <argsstring>(const char *key, YAP_Term v, YAP_Term o0)</argsstring>
+        <name>add_key_t</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="314" column="17" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="314" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gaa5ffdf8292343bc7214a8674d4dbcd65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term err2list</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>err2list</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="325" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="325" bodyend="360"/>
+      </memberdef>
+      <member refid="group__YAPErrors_1ga33f8453365c1a778b0e6706883936e6e" kind="function"><name>Yap_do_warning__</name></member>
+      <member refid="group__YAPErrors_1gab9385131fd019c8b65e5c5aebc284efa" kind="function"><name>Yap_Warning</name></member>
+      <member refid="group__YAPErrors_1gad6673141a50187dc411005b86508337d" kind="function"><name>Yap_PrintWarning</name></member>
+      <member refid="group__YAPErrors_1ga26cb476983759fffa98bde148bbf7dda" kind="function"><name>Yap_HandleError__</name></member>
+      <member refid="group__YAPErrors_1ga0196d82843c0109456fd62d076fd2e4e" kind="function"><name>Yap_SWIHandleError</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga9815ffe569887fe5afb78d7f503e1031" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void error_exit_yap</definition>
+        <argsstring>(int value)</argsstring>
+        <name>error_exit_yap</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="550" column="13" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="550" bodyend="570"/>
+      </memberdef>
+      <member refid="group__YAPErrors_1ga9846c7fcad4c63a05d8718f59f5c2984" kind="function"><name>mkerrort</name></member>
+      <member refid="group__YAPErrors_1gac51f64c5e17c150e6dd5a53b3a4d6d9a" kind="function"><name>Yap_pushErrorContext</name></member>
+      <member refid="group__YAPErrors_1ga12b8c0e921ee0e13a508b563a2bc9201" kind="function"><name>Yap_popErrorContext</name></member>
+      <member refid="group__YAPErrors_1ga8ae225428cf24b3bac9d00f529b57ae1" kind="function"><name>Yap_ThrowError__</name></member>
+      <member refid="group__YAPErrors_1ga0be57669942cb7dba6a7d9cb07ed4872" kind="function"><name>Yap_ThrowExistingError</name></member>
+      <member refid="group__YAPErrors_1gaa4a194e6bb9225accfdd809ebb2d3c88" kind="function"><name>MkSysError</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga5b7fdf2dcdae40c3b6289ebd1f08ee11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void termToError</definition>
+        <argsstring>(Term t1, Term user_info, yap_error_descriptor_t *i)</argsstring>
+        <name>termToError</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>user_info</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="738" column="1" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="738" bodyend="808"/>
+      </memberdef>
+      <member refid="group__YAPErrors_1ga53c67c642a174bceb446f04ad2948645" kind="function"><name>Yap_MkErrorRecord</name></member>
+      <member refid="group__YAPErrors_1ga960be723836be8cdcae336bc1fe3ab80" kind="function"><name>Yap_MkFullError</name></member>
+      <member refid="group__YAPErrors_1ga4cdaeb67310eb3ef5b801233af95ebcb" kind="function"><name>Yap_Error__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga8721f3648716186ad624ced99d12c011" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int close_error</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>close_error</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1134" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1134" bodyend="1143"/>
+      </memberdef>
+      <member refid="group__YAPErrors_1ga50d283de0371f1a34e8c3237aa3260f2" kind="function"><name>Yap_errorName</name></member>
+      <member refid="group__YAPErrors_1ga73ee3d4af2a1b84ed818eeec7a08beaa" kind="function"><name>Yap_errorName2</name></member>
+      <member refid="group__YAPErrors_1gaf0b9e9309f24fd43955da026af49afee" kind="function"><name>Yap_errorClass</name></member>
+      <member refid="group__YAPErrors_1ga6330ca965b1934e72431fcc2d5ae4c09" kind="function"><name>Yap_errorClassNumber</name></member>
+      <member refid="group__YAPErrors_1ga517895b4996f69dee232f0778eeb8f53" kind="function"><name>Yap_errorClassName</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga5f01232fe71e61058143ab6c4dd3594d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int reset_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>reset_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1242" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1242" bodyend="1242"/>
+      </memberdef>
+      <member refid="group__YAPErrors_1gafb099b73b3f7c0f8fc7c03b6cfb63d1f" kind="function"><name>Yap_MkErrorTerm</name></member>
+      <member refid="group__ExceptionDescriptors_1ga739b86419c074f47242d055446484a82" kind="function"><name>Yap_PeekException</name></member>
+      <member refid="group__ExceptionDescriptors_1gaf9baf98fc19fcd8dc4911370e9e3d042" kind="function"><name>Yap_GetException</name></member>
+      <member refid="group__ExceptionDescriptors_1ga5c48af7e0f0ebb396f1d5fac9823b90f" kind="function"><name>Yap_PrintException</name></member>
+      <member refid="group__ExceptionDescriptors_1ga7cbc225536c6eca32cae2659c3fb1814" kind="function"><name>Yap_RaiseException</name></member>
+      <member refid="group__ExceptionDescriptors_1ga1de83e1bd9791cd7755cc1823e73995f" kind="function"><name>Yap_ResetException</name></member>
+      <member refid="group__ExceptionDescriptors_1gac83dd1bf7cdf7db4aba4c50099dc3bf8" kind="function"><name>Yap_RestartException</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga9d7a974b631fa96be213131fa475b670" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>transform an exception into Prolog shape (dictionary or list) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1349" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1349" bodyend="1362"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gacbaac84074c315c57f6b1f76b0131eef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int print_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>print_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1364" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1364" bodyend="1387"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga20d46193fccccb0741f944e3576d3591" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int query_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>query_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1389" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1389" bodyend="1407"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga9dff473479147558289150943238cbb5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int set_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>set_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1409" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1409" bodyend="1426"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga8889074e877dd1dc5c297b7f5b808860" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int drop_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>drop_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1428" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1428" bodyend="1440"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1ga2f41cda50ed4179c215cea2e29a8ce92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int new_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>new_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1442" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1442" bodyend="1445"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gae2b1896a2bb302aa6852ee9b4a0c0bfc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int user_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>user_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1447" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1447" bodyend="1460"/>
+      </memberdef>
+      <member refid="group__ExceptionDescriptors_1gada64d5e97531bdb364db168a12af2ca5" kind="function"><name>Yap_get_exception</name></member>
+      <member refid="group__ExceptionDescriptors_1ga73cfd0e0589f0e716f37508ab7db7194" kind="function"><name>Yap_errorNumber</name></member>
+      <member refid="group__ExceptionDescriptors_1ga1f8c68bc74b8e666f2312f37875be34a" kind="function"><name>event</name></member>
+      <member refid="group__ErrorBuiltins_1ga7099067ea322b1a1eb72efa722e99d07" kind="function"><name>is_nonvar__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga5aba440144b108fc37fc3597f8f27b01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_nonvar1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_nonvar1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1527" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1527" bodyend="1530"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1ga09f1bb4ff199c8527b4073272ba4bee4" kind="function"><name>is_boolean__</name></member>
+      <member refid="group__ErrorBuiltins_1ga97a1f95218b82e7165307b56a8f19be7" kind="function"><name>is_codes__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1gafdb743ad7185398410c3f9060b490079" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_boolean1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_boolean1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1556" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1556" bodyend="1559"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1gafea136d95da7cf0e0120d628d79ab014" kind="function"><name>must_be_boolean__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga59d5a2af6496422d834aa1120d1c1c3d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_boolean1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_boolean1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1576" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1576" bodyend="1579"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1ga7f10b006ab9ed4c2fba7762fdd5695c0" kind="function"><name>is_atom__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga29ba2cdb21c0affd18415ed6b4f42a78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_atom1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_atom1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1591" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1591" bodyend="1594"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1ga662e46cf5cc1e590eb8a28dfd25b30f7" kind="function"><name>must_be_atom__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1gadf83075b6d8c331261d4e6d305eb3657" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_atom1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_atom1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1611" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1611" bodyend="1614"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1gac7a5deed25c080c310d9ec48a7aac038" kind="function"><name>is_list__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga0e883d9a4ef12a0454e0cdecef6d0f2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_list1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_list1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1636" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1636" bodyend="1639"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1gaae5638c6206e5fe2dc65f39785933544" kind="function"><name>must_be_list__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1gacc889b41755d9b8bcecde0db4d72b03d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_list1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_list1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1654" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1654" bodyend="1657"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1ga2dace63b81bc4637ab3b4bd41d334c8e" kind="function"><name>callable</name></member>
+      <member refid="group__ErrorBuiltins_1ga859a0db5a192245d5b5dec38c013d841" kind="function"><name>is_callable__</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga3a91a207cd07d3bdf325d5ad00be0092" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_callable1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_callable1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1742" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1742" bodyend="1745"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1ga6b1f8b666d8850d3d06a4205b46b97a3" kind="function"><name>Yap_callable</name></member>
+      <member refid="group__ErrorBuiltins_1ga49ee288dbd5edc520b74d29d85771a19" kind="function"><name>Yap_must_be_callable</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1gab5d22ecc80817e71415039c7f00e5fcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_callable1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_callable1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1814" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1814" bodyend="1818"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1ga9fbfc6fc8608925ad7d7d28475581c30" kind="function"><name>Yap_must_be_list</name></member>
+      <memberdef kind="function" id="pl_2errors_8c_1ga8365a0bbf5baf4aa8a709a41067f7f60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_bound1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_bound1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1839" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1839" bodyend="1845"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gab0cf0df35861954b17baf0cc680dc18d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_ground1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_ground1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1851" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1851" bodyend="1857"/>
+      </memberdef>
+      <memberdef kind="function" id="pl_2errors_8c_1gae8d3f28249def169ff2a40e51ca8f8a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_predicate_indicator1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_predicate_indicator1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/pl/errors.c" line="1874" column="12" bodyfile="/home/vsc/github/yap/pl/errors.c" bodystart="1874" bodyend="1926"/>
+      </memberdef>
+      <member refid="group__ErrorBuiltins_1ga59b4762f7ed2427d616f663c9821c94f" kind="function"><name>Yap_InitErrorPreds</name></member>
+      </sectiondef>
+    <briefdescription>
+<para>low-level error handling </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/errors.c"/>
+  </compounddef>
+</doxygen>

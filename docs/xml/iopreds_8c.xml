@@ -1,0 +1,2408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="iopreds_8c" kind="file" language="C++">
+    <compoundname>iopreds.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapEval_8h" local="yes">YapEval.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="sysbits_8h" local="yes">sysbits.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <includes refid="getw_8h" local="yes">getw.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="55">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="57">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>getw.h</label>
+        <link refid="getw_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/os/iopreds.c</label>
+        <link refid="iopreds_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>sysbits.h</label>
+        <link refid="sysbits_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="61">
+        <label>ctype.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="60">
+        <label>math.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="iopreds_8c_1aa8e0b81a04ffb1a43fe7d38fc0505bc3" prot="public" static="no">
+        <name>strncat</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcat(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="105" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1a2c5b8ad33d611ac4e9e9c4e0bd0b069a" prot="public" static="no">
+        <name>strncpy</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcpy(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="108" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1a88a1b2d6ac46174ac7b571dca5b1f274" prot="public" static="no">
+        <name>MB_LEN_MAX</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="795" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1ae8c6741230da796142791d67a28a6799" prot="public" static="no">
+        <name>OPEN_DEFS</name>
+        <param></param>
+        <initializer>  PAR(&quot;alias&quot;, isatom, OPEN_ALIAS)                                             \
+  , PAR(&quot;bom&quot;, booleanFlag, OPEN_BOM), PAR(&quot;buffer&quot;, isatom, OPEN_BUFFER),     \
+      PAR(&quot;close_on_abort&quot;, booleanFlag, OPEN_CLOSE_ON_ABORT),                 \
+      PAR(&quot;create&quot;, isatom, OPEN_CREATE),                                      \
+      PAR(&quot;encoding&quot;, isatom, OPEN_ENCODING),                                  \
+      PAR(&quot;eof_action&quot;, isatom, OPEN_EOF_ACTION),                              \
+      PAR(&quot;expand_filename&quot;, booleanFlag, OPEN_EXPAND_FILENAME),               \
+      PAR(&quot;file_name&quot;, isatom, OPEN_FILE_NAME), PAR(&quot;input&quot;, ok, OPEN_INPUT),  \
+      PAR(&quot;locale&quot;, isatom, OPEN_LOCALE), PAR(&quot;lock&quot;, isatom, OPEN_LOCK),      \
+      PAR(&quot;mode&quot;, isatom, OPEN_MODE), PAR(&quot;output&quot;, ok, OPEN_OUTPUT),          \
+      PAR(&quot;representation_errors&quot;, booleanFlag, OPEN_REPRESENTATION_ERRORS),   \
+      PAR(&quot;reposition&quot;, booleanFlag, OPEN_REPOSITION),                         \
+      PAR(&quot;script&quot;, booleanFlag, OPEN_SCRIPT), PAR(&quot;type&quot;, isatom, OPEN_TYPE), \
+      PAR(&quot;wait&quot;, booleanFlag, OPEN_WAIT), PAR(NULL, ok, OPEN_END)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1313" column="10" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>z</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1329" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>  { x, y, z }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1334" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1a0d9a2f381086df0771ea1965ad477f75" prot="public" static="no">
+        <name>CheckStream</name>
+        <param><defname>arg</defname></param>
+        <param><defname>kind</defname></param>
+        <param><defname>msg</defname></param>
+        <initializer>  CheckStream__(__FILE__, __FUNCTION__, __LINE__, arg, kind, msg)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1822" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1ad1871b89656e8e0144dcac4fc08241d1" prot="public" static="no">
+        <name>CLOSE_DEFS</name>
+        <param></param>
+        <initializer>  PAR(&quot;force&quot;, booleanFlag, CLOSE_FORCE), PAR(NULL, ok, CLOSE_END)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2006" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="2006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>z</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2009" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="iopreds_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>  { x, y, z }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2015" column="9" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1329" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="iopreds_8c_1a4178b8fb07bc7ce3ef525776d22715fd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>open_enum_choices</name>
+        <enumvalue id="iopreds_8c_1a4178b8fb07bc7ce3ef525776d22715fda80733093b645b0decbcb705f184f4d1e" prot="public">
+          <name>OPEN_DEFS</name>
+          <initializer>=()</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1330" column="1" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1330" bodyend="1330"/>
+      </memberdef>
+      <memberdef kind="enum" id="iopreds_8c_1afddcac8ae4c166cc0e456d4db3bd4eb1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>close_enum_choices</name>
+        <enumvalue id="iopreds_8c_1afddcac8ae4c166cc0e456d4db3bd4eb1ae91ec6a8f3342c2aa564c888f5be4849" prot="public">
+          <name>CLOSE_DEFS</name>
+          <initializer>=()</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2011" column="1" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="2011" bodyend="2011"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="iopreds_8c_1a9f5a209937b2fc856c985aba02f11992" prot="public" static="no">
+        <type>enum open_enum_choices</type>
+        <definition>typedef enum open_enum_choices open_choices_t</definition>
+        <argsstring></argsstring>
+        <name>open_choices_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1330" column="46"/>
+      </memberdef>
+      <memberdef kind="typedef" id="iopreds_8c_1af197742f3dd23a66523325743630bbc6" prot="public" static="no">
+        <type>enum close_enum_choices</type>
+        <definition>typedef enum close_enum_choices close_choices_t</definition>
+        <argsstring></argsstring>
+        <name>close_choices_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2011" column="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="iopreds_8c_1afe08af8d9a40d159314b567aad2ee665" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Yap_stdin</definition>
+        <argsstring></argsstring>
+        <name>Yap_stdin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="126" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1a78b782c57174ae57f2be79554b73f5b4" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Yap_stdout</definition>
+        <argsstring></argsstring>
+        <name>Yap_stdout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="127" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1ad13997bcdd11e73c9ddf36b6f6dec753" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Yap_stderr</definition>
+        <argsstring></argsstring>
+        <name>Yap_stderr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="128" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1aa3e3f80aea1dc83aeb7c432e964ecb99" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int eolflg</definition>
+        <argsstring></argsstring>
+        <name>eolflg</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="564" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1a7e8cbbf0dd5ecb10296c311e92f98190" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char my_line[200]</definition>
+        <argsstring>[200]</argsstring>
+        <name>my_line</name>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="566" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1aad78785c1a5df22daf093697be1ed18b" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* lp</definition>
+        <argsstring></argsstring>
+        <name>lp</name>
+        <initializer>= my_line</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="567" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1abe6f01d084b0835d30785b4a17888fe8" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* curfile</definition>
+        <argsstring></argsstring>
+        <name>curfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="569" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1a84ad47fcf8be9c8edef90c13edb93cf0" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE * Yap_logfile</definition>
+        <argsstring></argsstring>
+        <name>Yap_logfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="569" column="14" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1a170b10e7553899af98bc83902cdcc54a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Yap_Option[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>Yap_Option</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="571" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1a7ea6b539dae8913ee2ee1a7022581004" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structstruct__param" kindref="compound">param_t</ref></type>
+        <definition>const param_t open_defs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>open_defs</name>
+        <initializer>= {OPEN_DEFS()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1337" column="22" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iopreds_8c_1a6e4c7008c7ecff961d13fdee634a1973" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structstruct__param" kindref="compound">param_t</ref></type>
+        <definition>const param_t close_defs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>close_defs</name>
+        <initializer>= {CLOSE_DEFS()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2018" column="22" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="2018" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="iopreds_8c_1a97061326f369089f62b9d9fccab60e7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_wchar_from_file</definition>
+        <argsstring>(int)</argsstring>
+        <name>get_wchar_from_file</name>
+        <param>
+          <type>int</type>
+          <defname>sno</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="789" column="19" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="789" bodyend="792" declfile="/home/vsc/github/yap/os/iopreds.c" declline="124" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a63b70372ed63ac4fc154e980ff1aed3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_VF</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>Yap_VF</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="131" column="7" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="131" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1aaecb15b97cd6804da198380823eb2951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_VFAlloc</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>Yap_VFAlloc</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="145" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="145" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a9e8569357fa43d5db99325ca9f2915de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ResetEOF</definition>
+        <argsstring>(StreamDesc *s)</argsstring>
+        <name>ResetEOF</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="160" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="160" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a229054afc7542b44834ab8e08afbb7f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int EOFWGetc</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>EOFWGetc</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="185" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="185" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a0838e485130e2d9294b4a00483294798" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int EOFGetc</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>EOFGetc</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="200" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="200" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ab3a1ec80bbf4853486cdf760e2e6cf9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_stream_id</definition>
+        <argsstring>(StreamDesc *s, Term user_name, Atom system_name)</argsstring>
+        <name>Yap_stream_id</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>user_name</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>system_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="216" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="216" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a861501a713be7b6c3908da15978e3767" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void default_peek</definition>
+        <argsstring>(StreamDesc *st)</argsstring>
+        <name>default_peek</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="312" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="312" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ac4cc1f9cf3011f25db341162f79e10b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int NullPutc</definition>
+        <argsstring>(int sno, int ch)</argsstring>
+        <name>NullPutc</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="330" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="330" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ad2b61675062114b61927668084a8d60c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DefaultStreamOps</definition>
+        <argsstring>(StreamDesc *st)</argsstring>
+        <name>Yap_DefaultStreamOps</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="340" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="340" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a6ad12c849df04456b31e93b77f4a7dbb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitStdStream</definition>
+        <argsstring>(int sno, SMALLUNSGN flags, FILE *file, VFS_t *vfsp)</argsstring>
+        <name>InitStdStream</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>SMALLUNSGN</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="structvfs" kindref="compound">VFS_t</ref> *</type>
+          <declname>vfsp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="404" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="404" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a83255ef49a60591a17ac81b8d77f5527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitStdStream</definition>
+        <argsstring>(int sno, unsigned int flags, FILE *file, VFS_t *vfsp)</argsstring>
+        <name>Yap_InitStdStream</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="structvfs" kindref="compound">VFS_t</ref> *</type>
+          <declname>vfsp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="437" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="437" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ac9f7e1eda75758ef5ae2e2ef403a6e35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitStdStreams</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitStdStreams</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="441" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="441" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1aec17a10314f725be776f32501ce0bb60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitStdStreams</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitStdStreams</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="464" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="464" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a5b6f05cb0ae8575f9fd6c8b904465039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int PlIOError__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, yap_error_number type, Term culprit,...)</argsstring>
+        <name>PlIOError__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>yap_error_number</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>culprit</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="466" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="466" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a35b79ec5ad0a2e2838e8007949224f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnixIOError__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, int error, io_kind_t io_type, Term culprit,...)</argsstring>
+        <name>UnixIOError__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>io_kind_t</type>
+          <declname>io_type</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>culprit</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="494" column="2" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="494" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ac6bed6a6fa21cb8c893e36efb32a4d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DebugSetIFile</definition>
+        <argsstring>(char *fname)</argsstring>
+        <name>Yap_DebugSetIFile</name>
+        <param>
+          <type>char *</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="589" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="589" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a510a4a3b70d765e67cdccf0129141a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DebugEndline</definition>
+        <argsstring>()</argsstring>
+        <name>Yap_DebugEndline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="599" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="599" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a85f91807dce38547691032b26fd465ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_DebugGetc</definition>
+        <argsstring>()</argsstring>
+        <name>Yap_DebugGetc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="601" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="601" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a2cf8ba9f986022ae592afaac05f5c48c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_DebugPutc</definition>
+        <argsstring>(FILE *s, wchar_t ch)</argsstring>
+        <name>Yap_DebugPutc</name>
+        <param>
+          <type>FILE *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>wchar_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="622" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="622" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a785488ea4b8700f5c3c2cbdfab7ee031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_DebugPuts</definition>
+        <argsstring>(FILE *s, const char *sch)</argsstring>
+        <name>Yap_DebugPuts</name>
+        <param>
+          <type>FILE *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>sch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="628" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="628" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a2deed77cf7b382938c1c64ffc8fa04c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DebugErrorPuts</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>Yap_DebugErrorPuts</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="634" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="634" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a97b81fa8f1f7e1ee63619b6e27289d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DebugPlWrite</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_DebugPlWrite</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="636" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="636" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1affdde53c78bbb2799542dee92756a9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DebugPlWriteln</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_DebugPlWriteln</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="645" column="1" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="645" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ae480bc119b39a7daa457e8512b73fb25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DebugErrorPutc</definition>
+        <argsstring>(int c)</argsstring>
+        <name>Yap_DebugErrorPutc</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="654" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="654" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1aeae9979aeb653f4e6bcffeac672f5d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_DebugWriteIndicator</definition>
+        <argsstring>(PredEntry *ap)</argsstring>
+        <name>Yap_DebugWriteIndicator</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="659" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="659" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a023d7f7ae3318752a93ab4fde1489f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FilePutc</definition>
+        <argsstring>(int sno, int ch)</argsstring>
+        <name>FilePutc</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="702" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="702" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1aee235af22fa2086ea8e620349ca1a1aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int console_post_process_eof</definition>
+        <argsstring>(StreamDesc *s)</argsstring>
+        <name>console_post_process_eof</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="720" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="720" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a09441f220a18b0d49f34b53504226b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int post_process_read_wchar</definition>
+        <argsstring>(int ch, size_t n, StreamDesc *s)</argsstring>
+        <name>post_process_read_wchar</name>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="733" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="733" bodyend="753"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a6021ff046e5bca4af5d131a09f5e3670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int post_process_weof</definition>
+        <argsstring>(StreamDesc *s)</argsstring>
+        <name>post_process_weof</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="755" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="755" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a43b789856d75ad7a79eab4ea557b15bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * Yap_RepStreamFromId</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>Yap_RepStreamFromId</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="765" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="765" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a6b300eef1f01c72c5d360414fc41e3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EOFPeek</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>EOFPeek</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+<para>caled after EOF found a peek, it just calls console_post_process to conclude the job </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sno</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EOF </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="776" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="776" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a5bd3234ae74124e4e56ab659d509b30b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EOFWPeek</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>EOFWPeek</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="778" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="778" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a6f9a7787fb69d0c83026b9319a3e42ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlGetc</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>PlGetc</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="783" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="783" bodyend="786"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a76c23978c957b1707bcbaceaf850787c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int handle_write_encoding_error</definition>
+        <argsstring>(int sno, wchar_t ch)</argsstring>
+        <name>handle_write_encoding_error</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>wchar_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="798" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="798" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ae0515d7cf1d53808226c5fa28e3543fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int put_wchar</definition>
+        <argsstring>(int sno, wchar_t ch)</argsstring>
+        <name>put_wchar</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>wchar_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="833" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="833" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a6e3f43cee3a3c4c7ca236c5fe9d2b08f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_PlGetchar</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_PlGetchar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="957" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="957" bodyend="961"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a13683d1a0486c4033f2f499b136b5912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_PlGetWchar</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_PlGetWchar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="963" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="963" bodyend="966"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a34790ba57bc47106d95175f3385d217d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_PlFGetchar</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_PlFGetchar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="969" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="969" bodyend="972"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ae4ab37580b35cf26a058e857544944f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_MkStream</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Yap_MkStream</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="974" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="974" bodyend="978"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ac33a2591939b879119ab364b1a99336e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int GetStreamFd</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>GetStreamFd</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="981" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="981" bodyend="993"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a12b64aead30028b21090c8c22c69ea70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_GetStreamFd</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>Yap_GetStreamFd</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="995" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="995" bodyend="995"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a8c21edc5082c3ed8af677dd3aa115335" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int binary_file</definition>
+        <argsstring>(const char *file_name)</argsstring>
+        <name>binary_file</name>
+        <param>
+          <type>const char *</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="997" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="997" bodyend="1014"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ae28a89931e1cc63437601beff937d203" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int write_bom</definition>
+        <argsstring>(int sno, StreamDesc *st)</argsstring>
+        <name>write_bom</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1016" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1016" bodyend="1069"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a9fd7a84b0bc606cb28d45c57408cddec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int check_bom</definition>
+        <argsstring>(int sno, StreamDesc *st)</argsstring>
+        <name>check_bom</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1071" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1071" bodyend="1171"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a055e22390284376611cd11e9661e9d6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_initStream__</definition>
+        <argsstring>(const char *f, const char *func, int line, int sno, FILE *file, Atom name, const char *io_mode, Term file_name, encoding_t encoding, stream_flags_t flags, void *vfs)</argsstring>
+        <name>Yap_initStream__</name>
+        <param>
+          <type>const char *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>io_mode</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>stream_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>vfs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1173" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1173" bodyend="1227"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ab789c7f74c98dd03c02c8a715c1ec9ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool scan_failed</definition>
+        <argsstring>(int sno, long pos, encoding_t onc)</argsstring>
+        <name>scan_failed</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>onc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1229" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1229" bodyend="1233"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a350ad95c517fe20cf9dcbec9f95f3125" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool scan_encoding</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>scan_encoding</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1239" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1239" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a973e1e095ef8450287ada33703b6ff1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool open_header</definition>
+        <argsstring>(int sno, Atom open_mode)</argsstring>
+        <name>open_header</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>open_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1284" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1284" bodyend="1310"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ae91ab3ebc692dfbeff660622ddc5bfcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool fill_stream</definition>
+        <argsstring>(int sno, StreamDesc *st, Term tin, const char *io_mode, Term user_name, bool *avoid_bomp, encoding_t enc)</argsstring>
+        <name>fill_stream</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tin</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>io_mode</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>user_name</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>avoid_bomp</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1340" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1340" bodyend="1432"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a7017f1eac90e1e3e47a92496acc7bb51" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int do_open</definition>
+        <argsstring>(Term file_name, Term t2, Term tlist USES_REGS)</argsstring>
+        <name>do_open</name>
+        <param>
+          <type>Term</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Term tlist</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1434" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1434" bodyend="1621"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1ae94d3d1325bcf48c74438e3c24cb3ca6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int open3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>open3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1643" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1643" bodyend="1646"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a28cb693a0f47f598b71fb7c8642c1fcc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int open4</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>open4</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1726" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1726" bodyend="1728"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a063e5c9ff794aff7a76fa9d920406dc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_file_expansion</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_file_expansion</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1730" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1730" bodyend="1749"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a9a113ddeeeb414109bd222d54c72039a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_open_null_stream</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_open_null_stream</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1751" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1751" bodyend="1777"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1acba10512872aa3403c8a1dc7001ae779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_OpenStream</definition>
+        <argsstring>(Term tin, const char *io_mode, Term user_name, encoding_t enc)</argsstring>
+        <name>Yap_OpenStream</name>
+        <param>
+          <type>Term</type>
+          <declname>tin</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>io_mode</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>user_name</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>enc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1779" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1779" bodyend="1796"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a4a575b24320a4e9ed122842154a3d7fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_FileStream</definition>
+        <argsstring>(FILE *fd, Atom name, Term file_name, int flags, VFS_t *vfsp)</argsstring>
+        <name>Yap_FileStream</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="structvfs" kindref="compound">VFS_t</ref> *</type>
+          <declname>vfsp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1798" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1798" bodyend="1820"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a487cfeb87ec50f44bc38913abd72b6bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CheckStream__</definition>
+        <argsstring>(const char *file, const char *f, int line, Term arg, int kind, const char *msg)</argsstring>
+        <name>CheckStream__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1825" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1825" bodyend="1883"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a2c1f29c4117941506a420814cb9389ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_CheckStream__</definition>
+        <argsstring>(const char *file, const char *f, int line, Term arg, int kind, const char *msg)</argsstring>
+        <name>Yap_CheckStream__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1885" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1885" bodyend="1888"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a821f68b0fc873ff7c2a052eaee65dd68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_CheckTextStream__</definition>
+        <argsstring>(const char *file, const char *f, int line, Term arg, int kind, const char *msg)</argsstring>
+        <name>Yap_CheckTextStream__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1890" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1890" bodyend="1906"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a164f5dc9fba55e4ae1b0109d486c64dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_CheckTextWriteStream__</definition>
+        <argsstring>(const char *file, const char *f, int line, Term arg, const char *msg)</argsstring>
+        <name>Yap_CheckTextWriteStream__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1908" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1908" bodyend="1923"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a3722dbc0190fa596ee382a38177c7568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_CheckTextReadStream__</definition>
+        <argsstring>(const char *file, const char *f, int line, Term arg, const char *msg)</argsstring>
+        <name>Yap_CheckTextReadStream__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1925" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1925" bodyend="1940"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a62d9d051cc89c62a26dfaea805ed0a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_CheckBinaryStream__</definition>
+        <argsstring>(const char *file, const char *f, int line, Term arg, int kind, const char *msg)</argsstring>
+        <name>Yap_CheckBinaryStream__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1942" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1942" bodyend="1955"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a84889547ee561557d0e443022874cb48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_GetFreeStreamDForReading</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_GetFreeStreamDForReading</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1958" column="5" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1958" bodyend="1971"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1adfaf01e21f09a77db68b49a507e81ada" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int always_prompt_user</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>always_prompt_user</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1980" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1980" bodyend="1986"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a9f9e959c763bcf1e5d1e4fcc7ebd6c24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int close1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>close1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="1994" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1994" bodyend="2004"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a248a39cdc1ef8553305807c3f45635ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int close2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>close2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2030" column="12" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="2030" bodyend="2051"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1a78e87fc916bebace1b675529c7c32529" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term read_line</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>read_line</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2053" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="2053" bodyend="2063"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1acff20dbe0ea37f311ee4cd0e3ac40501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitPlIO</definition>
+        <argsstring>(struct yap_boot_params *argi)</argsstring>
+        <name>Yap_InitPlIO</name>
+        <param>
+          <type>struct <ref refid="structyap__boot__params" kindref="compound">yap_boot_params</ref> *</type>
+          <declname>argi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2064" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="2064" bodyend="2091"/>
+      </memberdef>
+      <memberdef kind="function" id="iopreds_8c_1aafb3a601e5622f2ad3aac44b7d1d879e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitIOPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitIOPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/iopreds.c" line="2093" column="6" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="2093" bodyend="2126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>260-1A A </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>VITOR SANTOS COSTA <ulink url="mailto:vsc@VITORs-MBP.lan">vsc@VITORs-MBP.lan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>Wed Jan 20 00:45:56 2016</para>
+</simplesect>
+main open and close predicates over generic streams</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/iopreds.c"/>
+  </compounddef>
+</doxygen>

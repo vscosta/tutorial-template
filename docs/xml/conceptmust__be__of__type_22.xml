@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptmust__be__of__type_22" kind="concept">
+    <compoundname>must_be_of_type/2</compoundname>
+    <initializer>template&lt;&gt;
+concept must_be_of_type/2 =     </initializer>
+    <briefdescription>
+<para><bold>must_be_of_type</bold>(+Type, ?Term) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: deterministic</para>
+<para>% % True if Term satisfies the type constraints for Type Defined % types are =atom=, =atomic=, =between=, =boolean=, =callable=, % =chars=, =codes=, =text=, =compound=, =constant=, =float=, % =integer=, =nonneg=, =positive_integer=, =negative_integer=, % =nonvar=, =number=, =oneof=, =list=, =list_or_partial_list=, % =symbol=, =var=, =rational= and =string= % % Most of these types are defined by an arity-1 built-in predicate % of the same name Below is a brief definition of the other % types % % | boolean | one of =true= or =false= | % | chars | Proper list of 1-character atoms | % | codes | Proper list of Unicode character codes | % | text | One of =atom=, =string=, =chars= or =codes= | % | between(L,U) | Number between L and U (including L and U) | % | nonneg | Integer &gt;= 0 | % | positive_integer | Integer &gt; 0 | % | negative_integer | Integer &lt; 0 | % | oneof(L) | Ground term that is member of L | % | list(Type) | Proper list with elements of Type | % | list_or_partial_list | A list or an open list (ending in a variable) | % | predicate_indicator | a predicate indicator of the form M:N/A or M:N//A | % % <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>instantiation_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if Term is insufficiently % instantiated and type_error(Type, Term) if Term is not of Type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="pl/error.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

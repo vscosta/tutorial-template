@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptconvlist_23" kind="concept">
+    <compoundname>convlist/3</compoundname>
+    <initializer>template&lt;&gt;
+concept convlist/3 =     </initializer>
+    <briefdescription>
+<para><bold>convlist</bold>(: Pred, + ListIn, ? ListOut) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A combination of <ref refid="classmaplist_23" kindref="compound">maplist/3</ref> and <ref refid="classselectlist_23" kindref="compound">selectlist/3</ref> : creates <emphasis>ListOut</emphasis> by applying the predicate <emphasis>Pred</emphasis> to all list elements on which <emphasis>Pred</emphasis> succeeds</para>
+<para>ROK: convlist(Rewrite, OldList, NewList) is a sort of hybrid of <ref refid="classmaplist_23" kindref="compound">maplist/3</ref> and sublist/3 Each element of NewList is the image under Rewrite of some element of OldList, and order is preserved, but elements of OldList on which Rewrite is undefined (fails) are not represented Thus if foo(X,Y) :- integer(X), Y is X+1 then convlist(foo, [1,a,0,joe(99),101], [2,1,102]) </para>
+    </detaileddescription>
+    <location file="library/maplist.yap" line="2" column="1"/>
+  </compounddef>
+</doxygen>

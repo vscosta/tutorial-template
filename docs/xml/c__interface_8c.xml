@@ -1,0 +1,961 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="c__interface_8c" kind="file" language="C++">
+    <compoundname>c_interface.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapInterface_8h" local="yes">YapInterface.h</includes>
+    <includes refid="YapSignals_8h" local="yes">YapSignals.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <includes refid="attvar_8h" local="yes">attvar.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="TermExt_8h" local="yes">TermExt.h</includes>
+    <includes refid="cut__c_8h" local="yes">cut_c.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <includes refid="Yatom_8h" local="no">Yatom.h</includes>
+    <includes refid="heapgc_8h" local="no">heapgc.h</includes>
+    <includes local="no">libgen.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/c_interface.c</label>
+        <link refid="c__interface_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>attvar.h</label>
+        <link refid="attvar_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="62">
+        <label>cut_c.h</label>
+        <link refid="cut__c_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="64">
+        <label>heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="56">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="59">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="53">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="14">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="12">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="65">
+        <label>libgen.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structforeign__context" prot="public">foreign_context</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="c__interface_8c_1acfe109bce85b680d7afa84cfd11772f3" prot="public" static="no">
+        <name>C_INTERFACE_C</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="29" column="9" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="c__interface_8c_1a9b224d183c45cfb8fe3f6c110a59d06b" prot="public" static="no">
+        <name>_EXPORT_KERNEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="30" column="9" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="c__interface_8c_1a2c5b8ad33d611ac4e9e9c4e0bd0b069a" prot="public" static="no">
+        <name>strncpy</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcpy(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="102" column="9" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="c__interface_8c_1aa8e0b81a04ffb1a43fe7d38fc0505bc3" prot="public" static="no">
+        <name>strncat</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>strcat(X, Y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="105" column="9" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="c__interface_8c_1ab616dc3e98faf53130837884e6a9409c" prot="public" static="no">
+        <name>SOURCEBOOTPath</name>
+        <initializer>NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="112" column="9" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__slotInterface_1ga3c853f0db492f3a01c372b7f21115cf9" kind="define"><name>FRG_REDO_MASK</name></member>
+      <member refid="group__slotInterface_1ga9ae2cac96cee24a81cb5261f56af5a54" kind="define"><name>FRG_REDO_BITS</name></member>
+      <member refid="group__slotInterface_1ga8b70d5953d367ad11a3a5dcdeca8986a" kind="define"><name>REDO_INT</name></member>
+      <member refid="group__slotInterface_1ga33bb7587d229e967beda3302ac3a2a60" kind="define"><name>REDO_PTR</name></member>
+      <memberdef kind="define" id="c__interface_8c_1ad8442e941d4159eeeef6273600e584d1" prot="public" static="no">
+        <name>YAP_BUF_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="1683" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="c__interface_8c_1a67c6787905e61ed120cb06d77c8207cd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>frg_code</name>
+        <enumvalue id="c__interface_8c_1a67c6787905e61ed120cb06d77c8207cda118b3d0852332618f9c895f75b5d962f" prot="public">
+          <name>FRG_FIRST_CALL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="c__interface_8c_1a67c6787905e61ed120cb06d77c8207cdabf19686a0e15d3a76328370b64d20b0b" prot="public">
+          <name>FRG_CUTTED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="c__interface_8c_1a67c6787905e61ed120cb06d77c8207cdaca65e820244a39d08c8cbce26d84ca46" prot="public">
+          <name>FRG_REDO</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="85" column="1" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="85" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="c__interface_8c_1ad59000e77aa8c90edb5aac754738ffdb" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* atom_t</definition>
+        <argsstring></argsstring>
+        <name>atom_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="82" column="14" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="c__interface_8c_1a8bbb851d1f90e312961abaa84bc3460e" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* functor_t</definition>
+        <argsstring></argsstring>
+        <name>functor_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="83" column="14" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__slotInterface_1gaaf6bf15de3e50e9d75bfddc82a5e7eba" kind="typedef"><name>CPredicate0</name></member>
+      <member refid="group__slotInterface_1gafccc041ca033966a40bdf60b6f3d0777" kind="typedef"><name>CPredicate1</name></member>
+      <member refid="group__slotInterface_1ga72115ba0e55b778542cb9ae423c76ef6" kind="typedef"><name>CPredicate2</name></member>
+      <member refid="group__slotInterface_1gae8dfa8d20df87212aff41c429401d9ad" kind="typedef"><name>CPredicate3</name></member>
+      <member refid="group__slotInterface_1gab8c7d6d911bf5f00c144eac0c5161653" kind="typedef"><name>CPredicate4</name></member>
+      <member refid="group__slotInterface_1gae03290858c89f37dca426ded47b65a08" kind="typedef"><name>CPredicate5</name></member>
+      <member refid="group__slotInterface_1ga3ebf88ab133c6d8c78e464a639ebaaec" kind="typedef"><name>CPredicate6</name></member>
+      <member refid="group__slotInterface_1ga29d5acc42a7bfaa9e5fdfaf3031c14b8" kind="typedef"><name>CPredicate7</name></member>
+      <member refid="group__slotInterface_1ga4ad1d8d26f9b27c69b445ef386828eda" kind="typedef"><name>CPredicate8</name></member>
+      <member refid="group__slotInterface_1ga02a1404feea55f2cd69b10543a0f2c82" kind="typedef"><name>CPredicate9</name></member>
+      <member refid="group__slotInterface_1gacec3116cc2ec2aec9f3322f155a63759" kind="typedef"><name>CPredicate10</name></member>
+      <member refid="group__slotInterface_1ga467e3dcfe661542bed89454407995f49" kind="typedef"><name>CPredicateV</name></member>
+      <member refid="group__slotInterface_1gaab35d63180b7e053badb067f73f75dac" kind="typedef"><name>CBPredicate0</name></member>
+      <member refid="group__slotInterface_1ga5ba72dcb0eabdc83058b869b9de6d833" kind="typedef"><name>CBPredicate1</name></member>
+      <member refid="group__slotInterface_1ga06854e2bb4a385b1f76996500bb4e343" kind="typedef"><name>CBPredicate2</name></member>
+      <member refid="group__slotInterface_1ga9113522ff684fe523eec72690bb31c71" kind="typedef"><name>CBPredicate3</name></member>
+      <member refid="group__slotInterface_1ga3a4c5c2bb75a208c607fc2504cd19e3e" kind="typedef"><name>CBPredicate4</name></member>
+      <member refid="group__slotInterface_1ga8528b21d4f47c1f51211573c2d739912" kind="typedef"><name>CBPredicate5</name></member>
+      <member refid="group__slotInterface_1ga34534d7a4c736ebd0801a322a2bb16cf" kind="typedef"><name>CBPredicate6</name></member>
+      <member refid="group__slotInterface_1ga762068b6154f236f68c15bbabf823805" kind="typedef"><name>CBPredicate7</name></member>
+      <member refid="group__slotInterface_1ga949d5bea840a4655245c6f9affd00305" kind="typedef"><name>CBPredicate8</name></member>
+      <member refid="group__slotInterface_1gaee549fbcac0e0b48818ffc6d3df3b6de" kind="typedef"><name>CBPredicate9</name></member>
+      <member refid="group__slotInterface_1gaf4c6f1905865e5fc9e3144661877fb4a" kind="typedef"><name>CBPredicate10</name></member>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="c__interface_8c_1a1b81e0a3017c0edbcd6486a24b687b69" prot="public" static="no" mutable="no">
+        <type>X_API bool</type>
+        <definition>X_API bool python_in_python</definition>
+        <argsstring></argsstring>
+        <name>python_in_python</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/c_interface.c" line="97" column="12" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__slotInterface_1ga9d471dd4a86ac4baac85917e2efb83ff" kind="variable"><name>YAP_BPROLOG_exception</name></member>
+      <member refid="group__slotInterface_1ga16f507c6bde860414cdb9a01b3899014" kind="variable"><name>YAP_BPROLOG_curr_toam_status</name></member>
+      <member refid="group__slotInterface_1ga464248116ebf877d45f23b07e977db0f" kind="variable"><name>TR_Atoms</name></member>
+      <member refid="group__slotInterface_1gac58082bf23cf0f23e5808d5e27abea3f" kind="variable"><name>TR_Functors</name></member>
+      <member refid="group__slotInterface_1gaf859002c87411181de6a58c5eab9b9d8" kind="variable"><name>AtomTranslations</name></member>
+      <member refid="group__slotInterface_1gac05c5ae77809bc1060638245e3126c40" kind="variable"><name>MaxAtomTranslations</name></member>
+      <member refid="group__slotInterface_1gad93387b497aa574fd181a14f09954c96" kind="variable"><name>FunctorTranslations</name></member>
+      <member refid="group__slotInterface_1gad7872d969305d7447e5b4d78bab73c5c" kind="variable"><name>MaxFunctorTranslations</name></member>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__slotInterface_1gaf8537d08f21069ba7e40c6a53b99f6c8" kind="function"><name>YAP_Reset</name></member>
+      <member refid="group__slotInterface_1ga3ff46473109be11eea0caecdd912025f" kind="function"><name>YAP_StartSlots</name></member>
+      <member refid="group__slotInterface_1ga4425d01f5e44e92faba0a34bcf844b89" kind="function"><name>YAP_EndSlots</name></member>
+      <member refid="group__slotInterface_1ga61c63b93386be94977afb31aad69bb23" kind="function"><name>YAP_CurrentSlot</name></member>
+      <member refid="group__slotInterface_1gaed70fe97ce00ee634ad73a8dbdd1332c" kind="function"><name>YAP_InitSlot</name></member>
+      <member refid="group__slotInterface_1ga63f7bc5dd09ba2f7f554a034f24047e8" kind="function"><name>YAP_GetFromSlot</name></member>
+      <member refid="group__slotInterface_1ga34ee03606f45e6ea84094679ae0571da" kind="function"><name>YAP_AddressFromSlot</name></member>
+      <member refid="group__slotInterface_1ga58463bda5952563fc128c2c4748705b3" kind="function"><name>YAP_AddressOfTermInSlot</name></member>
+      <member refid="group__slotInterface_1ga40b5ed4ac6d747ef5682b530ff02534e" kind="function"><name>YAP_PutInSlot</name></member>
+      <member refid="group__slotInterface_1gac8d7ea31016261628cba185337b1d679" kind="function"><name>YAP_RecoverSlots</name></member>
+      <member refid="group__slotInterface_1ga349f8e0e81118d0edd950bfa56abc052" kind="function"><name>YAP_ArgsToSlots</name></member>
+      <member refid="group__slotInterface_1gadb197c14bb7b53d44862b7ae48a8533d" kind="function"><name>YAP_SlotsToArgs</name></member>
+      <member refid="group__slotInterface_1ga2155905c0bd5d9199110c12f456e1c36" kind="function"><name>current_arity</name></member>
+      <member refid="group__slotInterface_1gae28db8fc7b847541a4ebc0128402171d" kind="function"><name>doexpand</name></member>
+      <member refid="group__slotInterface_1ga71751c6edcb98e5005f6de2a978106f1" kind="function"><name>YAP_A</name></member>
+      <member refid="group__slotInterface_1gaecd3c998896db3066e86d64670380335" kind="function"><name>YAP_SetA</name></member>
+      <member refid="group__slotInterface_1ga44efcf9a642d3024471261cca42178bb" kind="function"><name>YAP_IsIntTerm</name></member>
+      <member refid="group__slotInterface_1ga80f1bf960294b39d993de56553ca01c8" kind="function"><name>YAP_IsNumberTerm</name></member>
+      <member refid="group__slotInterface_1ga82e27ef3d81b104f74716ba21bcec36b" kind="function"><name>YAP_IsLongIntTerm</name></member>
+      <member refid="group__slotInterface_1gad43841ae3f1ebab157416af82095b919" kind="function"><name>YAP_IsBigNumTerm</name></member>
+      <member refid="group__slotInterface_1ga6183e9d1e29d5c3fe50bfe9d22037ab6" kind="function"><name>YAP_IsRationalTerm</name></member>
+      <member refid="group__slotInterface_1ga6f2f7413fb55c7788307b6c6fea9d54a" kind="function"><name>YAP_IsStringTerm</name></member>
+      <member refid="group__slotInterface_1ga07b8ca6b5fcb2f51782da379d365e24a" kind="function"><name>YAP_IsVarTerm</name></member>
+      <member refid="group__slotInterface_1ga948f72623223857098003891f297384a" kind="function"><name>YAP_IsNonVarTerm</name></member>
+      <member refid="group__slotInterface_1gade3dc881cfaa79cea4f64ed03fce4acf" kind="function"><name>YAP_IsFloatTerm</name></member>
+      <member refid="group__slotInterface_1gaa69b792a358f2cf725a1e135aad42b19" kind="function"><name>YAP_IsDbRefTerm</name></member>
+      <member refid="group__slotInterface_1ga6bc434565c4c6f8d2ceecfe5833d7755" kind="function"><name>YAP_IsAtomTerm</name></member>
+      <member refid="group__slotInterface_1ga315e63244843fcfa99618ca0127e2905" kind="function"><name>YAP_IsPairTerm</name></member>
+      <member refid="group__slotInterface_1ga393af4d1ec733fa6b6e642f32d6a1a5a" kind="function"><name>YAP_IsApplTerm</name></member>
+      <member refid="group__slotInterface_1gaff4dfc4acb07424e36a0706bce233e9a" kind="function"><name>YAP_IsCompoundTerm</name></member>
+      <member refid="group__slotInterface_1ga6fa1f6fda6922b77e88f0a0f84527748" kind="function"><name>YAP_MkIntTerm</name></member>
+      <member refid="group__slotInterface_1ga75736d881f7f171d4ecb52734ceefb55" kind="function"><name>YAP_MkStringTerm</name></member>
+      <member refid="group__slotInterface_1gacf1c3c96384ac61858aab47a4ad7031b" kind="function"><name>YAP_MkCharPTerm</name></member>
+      <member refid="group__slotInterface_1ga793a3b163e2ec89fb10d75543b5ab3c2" kind="function"><name>YAP_MkUnsignedStringTerm</name></member>
+      <member refid="group__slotInterface_1gaea85437eae802f9889bb491a0de91e7b" kind="function"><name>YAP_StringOfTerm</name></member>
+      <member refid="group__slotInterface_1ga85e8bc84da3e785adf00620de52eaa69" kind="function"><name>YAP_UnsignedStringOfTerm</name></member>
+      <member refid="group__slotInterface_1gaeb1e8938994ed9ae051e834782b7182b" kind="function"><name>YAP_IntOfTerm</name></member>
+      <member refid="group__slotInterface_1ga9ee7c78e3944595b7414e1cd7d9f9af0" kind="function"><name>YAP_MkBigNumTerm</name></member>
+      <member refid="group__slotInterface_1ga33dc376891c0f763b5954d4e3fdf3224" kind="function"><name>YAP_BigNumOfTerm</name></member>
+      <member refid="group__slotInterface_1gacbc7f1d562d195de322e5b835336f0ae" kind="function"><name>YAP_MkRationalTerm</name></member>
+      <member refid="group__slotInterface_1gaafeee75b2212548a92e829db0ac1bfe1" kind="function"><name>YAP_RationalOfTerm</name></member>
+      <member refid="group__slotInterface_1ga7e5e660234965d09b9a3bb02a5f96206" kind="function"><name>YAP_MkBlobTerm</name></member>
+      <member refid="group__slotInterface_1gaf8250a6f7b2391895187ba81ffe25e56" kind="function"><name>YAP_BlobOfTerm</name></member>
+      <member refid="group__slotInterface_1ga666cc486047d9fa4557c76f17d3e0642" kind="function"><name>YAP_MkFloatTerm</name></member>
+      <member refid="group__slotInterface_1gad95a6a3564a250d1933e085aa5255c79" kind="function"><name>YAP_FloatOfTerm</name></member>
+      <member refid="group__slotInterface_1ga52b4b13f201fc2db343ef58244649ead" kind="function"><name>YAP_MkAtomTerm</name></member>
+      <member refid="group__slotInterface_1ga43bb88d71e9ddd154838f5bedb8c3e58" kind="function"><name>YAP_AtomOfTerm</name></member>
+      <member refid="group__slotInterface_1ga52c4f18e5f1c532726b642af14c35522" kind="function"><name>YAP_IsWideAtom</name></member>
+      <member refid="group__slotInterface_1gacaed558dd067b3d7e50b19a7b15d35b7" kind="function"><name>YAP_AtomName</name></member>
+      <member refid="group__slotInterface_1gaddb64406888a018371c256aef00b482b" kind="function"><name>YAP_WideAtomName</name></member>
+      <member refid="group__slotInterface_1gabb0253786863321f6490f51b60804e0d" kind="function"><name>YAP_LookupAtom</name></member>
+      <member refid="group__slotInterface_1gae98d2bd52c98e1bdc6598718da216293" kind="function"><name>YAP_LookupWideAtom</name></member>
+      <member refid="group__slotInterface_1gac076c701439035f82938fa45bddd400b" kind="function"><name>YAP_FullLookupAtom</name></member>
+      <member refid="group__slotInterface_1ga6ea91d79ee30eccba608be5695be005f" kind="function"><name>YAP_AtomNameLength</name></member>
+      <member refid="group__slotInterface_1gaf35a51db7ea94ae324531941b39c88c0" kind="function"><name>YAP_MkVarTerm</name></member>
+      <member refid="group__slotInterface_1gac6feba54cba63dfe2f54ec74ba361209" kind="function"><name>YAP_MkPairTerm</name></member>
+      <member refid="group__slotInterface_1ga65da035295540b81dc6c3b7aa65cf4e4" kind="function"><name>YAP_MkListFromTerms</name></member>
+      <member refid="group__slotInterface_1ga23715185580fff9426cfd4787de17dfd" kind="function"><name>YAP_MkNewPairTerm</name></member>
+      <member refid="group__slotInterface_1ga7ccd45138c2a045e5521b7986eb4585b" kind="function"><name>YAP_HeadOfTerm</name></member>
+      <member refid="group__slotInterface_1ga2f21b2ceb240890dd9bf0ed41fd2d66e" kind="function"><name>YAP_TailOfTerm</name></member>
+      <member refid="group__slotInterface_1ga128be7ab8487b79e2f9d456419d47fb9" kind="function"><name>YAP_SkipList</name></member>
+      <member refid="group__slotInterface_1gad7b353c78dd054ad49f9e892fd966344" kind="function"><name>YAP_MkApplTerm</name></member>
+      <member refid="group__slotInterface_1ga3d171fab198278e6568f7abb9f55b70d" kind="function"><name>YAP_MkNewApplTerm</name></member>
+      <member refid="group__slotInterface_1ga71d0affacaceab9401711caeccceac0c" kind="function"><name>YAP_FunctorOfTerm</name></member>
+      <member refid="group__slotInterface_1gaef0380a537ef4495ca77947c3bb52a51" kind="function"><name>YAP_ArgOfTerm</name></member>
+      <member refid="group__slotInterface_1ga45f09a6654266a06b6f5959af9d7b12c" kind="function"><name>YAP_ArgsOfTerm</name></member>
+      <member refid="group__slotInterface_1ga09e79cbc1cc2a66eaa78ebfd7ffb4146" kind="function"><name>YAP_MkFunctor</name></member>
+      <member refid="group__slotInterface_1ga6f35c66366b8c4e65ec5ae38c797ecef" kind="function"><name>YAP_NameOfFunctor</name></member>
+      <member refid="group__slotInterface_1ga64c21a90dcb807e826f4c868be688a57" kind="function"><name>YAP_ArityOfFunctor</name></member>
+      <member refid="group__slotInterface_1gab8478f138c4cdedcfaa6ff84a12cac13" kind="function"><name>YAP_ExtraSpaceCut</name></member>
+      <member refid="group__slotInterface_1gaf521adb176243bfa6a13e2b04da0bb3f" kind="function"><name>YAP_ExtraSpace</name></member>
+      <member refid="group__slotInterface_1gaba3a79f3c6c0a4c70c24291c95031ce7" kind="function"><name>YAP_cut_up</name></member>
+      <member refid="group__slotInterface_1ga32c4e6cc46f8a25296fd6a553a7bf106" kind="function"><name>YAP_Unify</name></member>
+      <member refid="group__slotInterface_1gabb568ac3e4e756f2e28e19d770955717" kind="function"><name>YAP_Unifiable</name></member>
+      <member refid="group__slotInterface_1gaabc5cbe70abfafe3a93091189cbd9ef8" kind="function"><name>YAP_ExactlyEqual</name></member>
+      <member refid="group__slotInterface_1ga34a7e0771e387395bb2fa82df0575f4d" kind="function"><name>YAP_Variant</name></member>
+      <member refid="group__slotInterface_1ga48df9a9298b215918364c51a499b4873" kind="function"><name>YAP_TermHash</name></member>
+      <member refid="group__slotInterface_1ga8a5b9a3d9cf341605e115f9abf51cd08" kind="function"><name>YAP_NewSlots</name></member>
+      <member refid="group__slotInterface_1ga81ef58147f5079f3c61756a315d72d6f" kind="function"><name>YAP_InitSlot</name></member>
+      <member refid="group__slotInterface_1gaeebad55708b79fbbf398a714cd7b47f4" kind="function"><name>YAP_PutInSlot</name></member>
+      <member refid="group__slotInterface_1ga0b76d9045fb9991f47efd09ea130c354" kind="function"><name>execute_cargs</name></member>
+      <member refid="group__slotInterface_1ga352dfbceb70e03f895705647595cab3e" kind="function"><name>execute_cargs_back</name></member>
+      <member refid="group__slotInterface_1gacd5ef40f6b4f9166d5991f0e03cd91c1" kind="function"><name>complete_fail</name></member>
+      <member refid="group__slotInterface_1ga6f676a904517cc16a3c1b13e2ed826f1" kind="function"><name>complete_exit</name></member>
+      <member refid="group__slotInterface_1ga6f1f68c88a9c0b2d5e65e046be5f3141" kind="function"><name>YAP_Execute</name></member>
+      <member refid="group__slotInterface_1ga579a26d60d9c1c5e1fa137b2c10dfc54" kind="function"><name>YAP_ExecuteFirst</name></member>
+      <member refid="group__slotInterface_1ga329211342b426deacfb8727ac2d3890d" kind="function"><name>YAP_ExecuteOnCut</name></member>
+      <member refid="group__slotInterface_1ga120852a9db55d7cf0e70c91b7ede74d9" kind="function"><name>YAP_ExecuteNext</name></member>
+      <member refid="group__slotInterface_1gaa2e81cad00c70a14008014bfb4fcff65" kind="function"><name>YAP_ReallocSpaceFromYap</name></member>
+      <member refid="group__slotInterface_1gadf91a246b85d37ce665d2b7b534697d7" kind="function"><name>YAP_AllocSpaceFromYap</name></member>
+      <member refid="group__slotInterface_1gabec80454aa9a1eb62b8651a628a868bb" kind="function"><name>YAP_FreeSpaceFromYap</name></member>
+      <member refid="group__slotInterface_1gae53b4bc26cd9d9cfd1b00ebaa49673cb" kind="function"><name>YAP_StringToBuffer</name></member>
+      <member refid="group__slotInterface_1gab1606370b44e17f1a3308bbcccb03d8e" kind="function"><name>YAP_BufferToString</name></member>
+      <member refid="group__slotInterface_1ga2e451eb1c1a095f5ea335399f802795e" kind="function"><name>YAP_NBufferToString</name></member>
+      <member refid="group__slotInterface_1ga7866d10bc6f755095534782c76b50c4c" kind="function"><name>YAP_WideBufferToString</name></member>
+      <member refid="group__slotInterface_1gaffe73857c604fd88226ac71b7089cb3b" kind="function"><name>YAP_NWideBufferToString</name></member>
+      <member refid="group__slotInterface_1gaa21598c8a9534c72950296ba0e5fbf6e" kind="function"><name>YAP_ReadBuffer</name></member>
+      <member refid="group__slotInterface_1ga5ca232d20416519b128f42bd9d22b932" kind="function"><name>YAP_BufferToAtomList</name></member>
+      <member refid="group__slotInterface_1ga2160aff2a8dd20404dadc7d5bf53ebd7" kind="function"><name>YAP_NBufferToAtomList</name></member>
+      <member refid="group__slotInterface_1ga5936cc419deb439e24a193822cff6fbf" kind="function"><name>YAP_WideBufferToAtomList</name></member>
+      <member refid="group__slotInterface_1gacffb80f4fa4a4d41b6ead8bb06abcf14" kind="function"><name>YAP_NWideBufferToAtomList</name></member>
+      <member refid="group__slotInterface_1gaee1313b5b8e03d97c65530c8f22949f1" kind="function"><name>YAP_NWideBufferToAtomDiffList</name></member>
+      <member refid="group__slotInterface_1ga1fd76f078500971f95c60f1997bc283b" kind="function"><name>YAP_BufferToDiffList</name></member>
+      <member refid="group__slotInterface_1ga6cbbe256b6ae79cc3c552cb5ea549c8c" kind="function"><name>YAP_NBufferToDiffList</name></member>
+      <member refid="group__slotInterface_1gaa0e6bf30cc7be241770612ebd75bf4c7" kind="function"><name>YAP_WideBufferToDiffList</name></member>
+      <member refid="group__slotInterface_1ga2b9b4293bdde89a1ee93d85f445fb99d" kind="function"><name>YAP_NWideBufferToDiffList</name></member>
+      <member refid="group__slotInterface_1ga08baf92e00ab8f8f7b12afaa16302a43" kind="function"><name>YAP_Error__</name></member>
+      <member refid="group__slotInterface_1ga53029b9e702a86532b0d852c348dda1d" kind="function"><name>YAP_FunctorToPred</name></member>
+      <member refid="group__slotInterface_1ga573b96fc930cedb3c2824870426dac25" kind="function"><name>YAP_AtomToPred</name></member>
+      <member refid="group__slotInterface_1ga43cc1d4d31229d32daf6c1c32451606e" kind="function"><name>YAP_FunctorToPredInModule</name></member>
+      <member refid="group__slotInterface_1gaa00323c51b17c207cb7a25208c1c4f88" kind="function"><name>YAP_AtomToPredInModule</name></member>
+      <member refid="group__slotInterface_1ga7ca4ed5cb3c43e483b2ba9b95082fad4" kind="function"><name>YAP_EnterGoal</name></member>
+      <member refid="group__slotInterface_1gac067bb26684301548a455e140288a3da" kind="function"><name>YAP_RetryGoal</name></member>
+      <member refid="group__slotInterface_1ga7b57ea03064155bc50a053f9cb2aa657" kind="function"><name>YAP_LeaveGoal</name></member>
+      <member refid="group__slotInterface_1ga2ca22c8566538a9aac7cf555eca114cb" kind="function"><name>YAP_RunGoal</name></member>
+      <member refid="group__slotInterface_1ga12b61fd2d3d7c016da76f68ab0270858" kind="function"><name>YAP_AllocExternalDataInStack</name></member>
+      <member refid="group__slotInterface_1ga553095e69c24603cf96bde2d30876fad" kind="function"><name>YAP_IsExternalDataInStackTerm</name></member>
+      <member refid="group__slotInterface_1ga37de28f0569eb85276b4c5384308af6c" kind="function"><name>YAP_ExternalDataInStackFromTerm</name></member>
+      <member refid="group__slotInterface_1ga17d945af23627dc111316fefc1ff550f" kind="function"><name>YAP_NewOpaqueType</name></member>
+      <member refid="group__slotInterface_1gabd40456ef42975fb3f8a6dc596f63c61" kind="function"><name>YAP_NewOpaqueObject</name></member>
+      <member refid="group__slotInterface_1ga16df672b04ddfed5fbca936b92dea4a1" kind="function"><name>YAP_IsOpaqueObjectTerm</name></member>
+      <member refid="group__slotInterface_1ga932897d82ee094d270ab4735f0779077" kind="function"><name>YAP_OpaqueObjectFromTerm</name></member>
+      <member refid="group__slotInterface_1ga156b3eea2e6c2125b884087e194a0dcb" kind="function"><name>YAP_HeapStoreOpaqueTerm</name></member>
+      <member refid="group__slotInterface_1gab3c03aa66b9a9d65461440ac811a7290" kind="function"><name>YAP_RunGoalOnce</name></member>
+      <member refid="group__slotInterface_1ga9becebe37953bd0597f950eaddb8b33c" kind="function"><name>YAP_RestartGoal</name></member>
+      <member refid="group__slotInterface_1ga30f7ba542ba0bfc22e115ab6c1cffed5" kind="function"><name>YAP_ShutdownGoal</name></member>
+      <member refid="group__slotInterface_1gae592dfe11fc1446a529c5a95a23dc2e6" kind="function"><name>YAP_ContinueGoal</name></member>
+      <member refid="group__slotInterface_1gab597eac1ef0b6783be5d7ff2c8ff047f" kind="function"><name>YAP_PruneGoal</name></member>
+      <member refid="group__slotInterface_1ga344e86e9c28756895720a7b603752bfb" kind="function"><name>YAP_GoalHasException</name></member>
+      <member refid="group__slotInterface_1ga98c08118699d878942b3126c9dc2cdda" kind="function"><name>YAP_ClearExceptions</name></member>
+      <member refid="group__slotInterface_1ga009134916dd9f5f82a381acbd5e6b276" kind="function"><name>YAP_InitConsult</name></member>
+      <member refid="group__slotInterface_1ga07ace9d96f15559930e97bbd3a35e558" kind="function"><name>YAP_GetStreamFromId</name></member>
+      <member refid="group__slotInterface_1gac125ad137ea2847fa8c59905dd659ade" kind="function"><name>YAP_TermToStream</name></member>
+      <member refid="group__slotInterface_1ga9077a7373b8852587387aabed188e10a" kind="function"><name>YAP_EndConsult</name></member>
+      <member refid="group__slotInterface_1ga2a89c071c8fe7202d128f6d8dece4d62" kind="function"><name>YAP_Read</name></member>
+      <member refid="group__slotInterface_1ga233bc82a02c5b9ee612436b51c28c59f" kind="function"><name>YAP_ReadFromStream</name></member>
+      <member refid="group__slotInterface_1gafae94af09db815041c4552ab78d1968c" kind="function"><name>YAP_ReadClauseFromStream</name></member>
+      <member refid="group__slotInterface_1ga207c769cb3a62cb8730f5304c554c15c" kind="function"><name>YAP_Write</name></member>
+      <member refid="group__slotInterface_1gac121ec987c942539bdee4a15c278533c" kind="function"><name>YAP_CopyTerm</name></member>
+      <member refid="group__slotInterface_1ga57aa0b605a82c859874391541455f9fd" kind="function"><name>YAP_WriteBuffer</name></member>
+      <member refid="group__slotInterface_1ga61fa18721b4b705400241325b1e2183f" kind="function"><name>YAP_WriteDynamicBuffer</name></member>
+      <member refid="group__slotInterface_1ga541bd8ab3f671f2bc82d38fa80e64edb" kind="function"><name>YAP_CompileClause</name></member>
+      <member refid="group__slotInterface_1ga909f505e1064541cb2bad48817edda26" kind="function"><name>YAP_PutValue</name></member>
+      <member refid="group__slotInterface_1ga4444e11da8e51ce55d234f9395d9ee73" kind="function"><name>YAP_GetValue</name></member>
+      <member refid="group__slotInterface_1ga47a31aaf8926057872120e62a1dd4a2d" kind="function"><name>YAP_CompareTerms</name></member>
+      <member refid="group__slotInterface_1gab5c87d8a1783c4f3728f8893ef1981ff" kind="function"><name>YAP_Exit</name></member>
+      <member refid="group__slotInterface_1ga592874f2b595061e5ccdf75113f7ea81" kind="function"><name>YAP_InitSocks</name></member>
+      <member refid="group__slotInterface_1gae13704ef694a4b8595e138fbfee5d926" kind="function"><name>YAP_SetOutputMessage</name></member>
+      <member refid="group__slotInterface_1gab2502c0e13c716df6500cabdbf37a42e" kind="function"><name>YAP_StreamToFileNo</name></member>
+      <member refid="group__slotInterface_1ga8b3258917b5538dbb1ece857d98dde86" kind="function"><name>YAP_RepStreamFromId</name></member>
+      <member refid="group__slotInterface_1ga35f1030c3b1e9bafde92cf8f97e908ba" kind="function"><name>YAP_CloseAllOpenStreams</name></member>
+      <member refid="group__slotInterface_1ga3bad13b6b01656b8d3aa7e035e67f4c0" kind="function"><name>YAP_FlushAllStreams</name></member>
+      <member refid="group__slotInterface_1gafb5833728ec5ea885f336254b8cd5a8e" kind="function"><name>YAP_Throw</name></member>
+      <member refid="group__slotInterface_1ga4d9e57e2058c0e3e4c7c9f877c7190c9" kind="function"><name>YAP_AsyncThrow</name></member>
+      <member refid="group__slotInterface_1ga77998ba7f9ee41d8535a0bb8b80fea85" kind="function"><name>YAP_Halt</name></member>
+      <member refid="group__slotInterface_1ga4a39b0e33f924c4c3eb88848afbc17ab" kind="function"><name>YAP_TopOfLocalStack</name></member>
+      <member refid="group__slotInterface_1gafca1e269fe502f2c593883b552842567" kind="function"><name>YAP_Predicate</name></member>
+      <member refid="group__slotInterface_1ga4b9cd53fc3247f4e9cabd2c8e18297f3" kind="function"><name>YAP_PredicateInfo</name></member>
+      <member refid="group__slotInterface_1gaecdcff51105fb4b58b8858961b7e7b35" kind="function"><name>YAP_UserCPredicate</name></member>
+      <member refid="group__slotInterface_1ga63753a821fbe937a021180e1a558624e" kind="function"><name>YAP_UserBackCPredicate_</name></member>
+      <member refid="group__slotInterface_1ga2641300a4a4bd11040ac2f95b762461d" kind="function"><name>YAP_UserBackCutCPredicate</name></member>
+      <member refid="group__slotInterface_1ga9726c7cf513de86dda6500df20402856" kind="function"><name>YAP_UserBackCPredicate</name></member>
+      <member refid="group__slotInterface_1gac969086d719ae3a42292016feb71c189" kind="function"><name>YAP_UserCPredicateWithArgs</name></member>
+      <member refid="group__slotInterface_1gac2fc4974db83813f2f8125f42819547d" kind="function"><name>YAP_CurrentModule</name></member>
+      <member refid="group__slotInterface_1ga4455661d9ea1c4046f4f7a17874fbc92" kind="function"><name>YAP_SetCurrentModule</name></member>
+      <member refid="group__slotInterface_1ga64915243fa1a7a45d02b2d1aa1daad46" kind="function"><name>YAP_CreateModule</name></member>
+      <member refid="group__slotInterface_1ga049c0f97bcdc51af04b13d162cebd475" kind="function"><name>YAP_StripModule</name></member>
+      <member refid="group__slotInterface_1ga57cd74cfb23c546a02ebd18373e17482" kind="function"><name>YAP_ThreadSelf</name></member>
+      <member refid="group__slotInterface_1gad044952d40a993269f619c2e2ce6e1e9" kind="function"><name>YAP_ThreadCreateEngine</name></member>
+      <member refid="group__slotInterface_1ga0d1058247d7e9e17ff6a470ccb063952" kind="function"><name>YAP_ThreadAttachEngine</name></member>
+      <member refid="group__slotInterface_1ga6097d63d2eb1ca0e6b296b149e3afb10" kind="function"><name>YAP_ThreadDetachEngine</name></member>
+      <member refid="group__slotInterface_1ga51cfb6fd7600d4b96e9592f88c63c119" kind="function"><name>YAP_ThreadDestroyEngine</name></member>
+      <member refid="group__slotInterface_1gaf3d8c653fe3069b9341af89c8076c65d" kind="function"><name>YAP_TermNil</name></member>
+      <member refid="group__slotInterface_1gab1bc1332e6d358cc6014b2292a70e5b7" kind="function"><name>YAP_IsTermNil</name></member>
+      <member refid="group__slotInterface_1gade7b480d924b855b96c3a440db06cd74" kind="function"><name>YAP_AtomGetHold</name></member>
+      <member refid="group__slotInterface_1ga23c4fbbaee840db8edde144a9055b282" kind="function"><name>YAP_AtomReleaseHold</name></member>
+      <member refid="group__slotInterface_1ga81dcd27db0f1d45baf3d3415c3ad8760" kind="function"><name>YAP_AGCRegisterHook</name></member>
+      <member refid="group__slotInterface_1ga27559ab0d4ed01c1c8fcbbe28b897651" kind="function"><name>YAP_HaltRegisterHook</name></member>
+      <member refid="group__slotInterface_1ga15faf8d9adecc4b29511c478035f39d5" kind="function"><name>YAP_cwd</name></member>
+      <member refid="group__slotInterface_1ga78756b71b26140969fee003e26cbd465" kind="function"><name>YAP_FloatsToList</name></member>
+      <member refid="group__slotInterface_1ga3dc7949a88b907bea29d6954570d6176" kind="function"><name>YAP_ListToFloats</name></member>
+      <member refid="group__slotInterface_1ga967bd96f8a27f79fb80e4b0c344156b0" kind="function"><name>YAP_IntsToList</name></member>
+      <member refid="group__slotInterface_1gafbb751c72d3582e7022035e059004b34" kind="function"><name>YAP_ListToInts</name></member>
+      <member refid="group__slotInterface_1ga2a3cd1222c8aba9cb8577717b0fc279b" kind="function"><name>YAP_OpenList</name></member>
+      <member refid="group__slotInterface_1ga52f1536faea6963b7cb76b45f46657ba" kind="function"><name>YAP_ExtendList</name></member>
+      <member refid="group__slotInterface_1gaa9d3afa12a4d6c06c3f1d1bab13b648e" kind="function"><name>YAP_CloseList</name></member>
+      <member refid="group__slotInterface_1ga2c3d0608f633d54571387186498c48fd" kind="function"><name>YAP_IsAttVar</name></member>
+      <member refid="group__slotInterface_1ga3acbd1a8cdffb76a0d923fe913f13f70" kind="function"><name>YAP_AttsOfVar</name></member>
+      <member refid="group__slotInterface_1ga966136914c886b414c50fb702ddfdc64" kind="function"><name>YAP_FileNoFromStream</name></member>
+      <member refid="group__slotInterface_1ga08ca3b26b4ea68a9bfa9cd6f138976a6" kind="function"><name>YAP_FileDescriptorFromStream</name></member>
+      <member refid="group__slotInterface_1gaefafeeb135e1f776b16d51e94de8190c" kind="function"><name>YAP_Record</name></member>
+      <member refid="group__slotInterface_1ga5c2e01357258b528596720dd5c031980" kind="function"><name>YAP_Recorded</name></member>
+      <member refid="group__slotInterface_1gaad6e8b93bd0cc57fe340c0ea978cc215" kind="function"><name>YAP_Erase</name></member>
+      <member refid="group__slotInterface_1gaabcafd4dfa6f65ced735c5fdebfd322b" kind="function"><name>YAP_SlotsToArgs</name></member>
+      <member refid="group__slotInterface_1ga19604687f94fb2a301accd682b7366cb" kind="function"><name>YAP_signal</name></member>
+      <member refid="group__slotInterface_1ga2a6dc4cf0f0675ab086b506be58c157d" kind="function"><name>YAP_SetYAPFlag</name></member>
+      <member refid="group__slotInterface_1gabb02a4486506fa20faae41a01f2b1a17" kind="function"><name>YAP_VarSlotToNumber</name></member>
+      <member refid="group__slotInterface_1ga6ff54a37b8e95f4ccfe1d62fb108b0e2" kind="function"><name>YAP_ModuleUser</name></member>
+      <member refid="group__slotInterface_1ga8f2bea5611b90b5941adbd3fd9dd10b9" kind="function"><name>YAP_NumberOfClausesForPredicate</name></member>
+      <member refid="group__slotInterface_1gacccf27c119117fb1631c0d63042ac017" kind="function"><name>YAP_MaxOpPriority</name></member>
+      <member refid="group__slotInterface_1gad329d62a0a0aa7fc8df8cccab559f02e" kind="function"><name>YAP_OpInfo</name></member>
+      <member refid="group__slotInterface_1gaacc0c707a694941e0737e06920b2f297" kind="function"><name>YAP_Argv</name></member>
+      <member refid="group__slotInterface_1ga2d5bad9feca103c6c9c8a3d28fe46eb6" kind="function"><name>YAP_TagOfTerm</name></member>
+      <member refid="group__slotInterface_1gaeff98a1db4f4e0d58bbcebd8a74083c9" kind="function"><name>YAP_PointerOfTerm</name></member>
+      <member refid="group__slotInterface_1ga351000b979590d704d698d59439f2e11" kind="function"><name>YAP_UTF8_TextLength</name></member>
+      <member refid="group__slotInterface_1ga9c56f42224520792322c5c7c5e5b35bb" kind="function"><name>YAP_ListLength</name></member>
+      <member refid="group__slotInterface_1ga99c530f3c156aaa098e5b0b75c8bbe72" kind="function"><name>YAP_NumberVars</name></member>
+      <member refid="group__slotInterface_1ga4a61c6c42b43c2f9e2a56ce1f795294f" kind="function"><name>YAP_UnNumberVars</name></member>
+      <member refid="group__slotInterface_1gab12e2e1b0f2b967590ce74f7de15d806" kind="function"><name>YAP_IsNumberedVariable</name></member>
+      <member refid="group__slotInterface_1gac459628955b1dc8c2048e2add365a32e" kind="function"><name>YAP_ExportTerm</name></member>
+      <member refid="group__slotInterface_1ga72ccfb87f6c390b398fffda88d80f77d" kind="function"><name>YAP_ImportTerm</name></member>
+      <member refid="group__slotInterface_1ga50be8f65df62f06140c8dc9d1f493a8c" kind="function"><name>YAP_SizeOfExportedTerm</name></member>
+      <member refid="group__slotInterface_1ga2e598145f2d1cab01ef1f3aeb445e793" kind="function"><name>YAP_ImportTfunnumberm</name></member>
+      <member refid="group__slotInterface_1gaea1b826ba0129a1d6565e911c0b929f3" kind="function"><name>YAP_RequiresExtraStack</name></member>
+      <member refid="group__slotInterface_1ga8345b9a891df1893c1711a89e4406269" kind="function"><name>YAP_AtomToInt</name></member>
+      <member refid="group__slotInterface_1ga0c633e7f28c7d921954c624e7daf669b" kind="function"><name>YAP_FunctorToInt</name></member>
+      <member refid="group__slotInterface_1gaf4c06cf1220bb297a86f0463822641b5" kind="function"><name>YAP_foreign_stream</name></member>
+      <member refid="group__slotInterface_1ga427dde05bd11daf7c8dda0bee0758a60" kind="function"><name>YAP_IntToFunctor</name></member>
+      <member refid="group__slotInterface_1gac964cb519e149408333dbbc62d9a0948" kind="function"><name>YAP_TopGoal</name></member>
+      <member refid="group__slotInterface_1ga68df8e6f372031076da0e5006f804abb" kind="function"><name>yap_init</name></member>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/c_interface.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Parser" kind="group">
+    <compoundname>Parser</compoundname>
+    <title>Parser Implementation</title>
+    <innerclass refid="structjmp__buff__struct" prot="public">jmp_buff_struct</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__Parser_1ga2ead9d262f3043d3ed8f24c1a431750d" prot="public" static="no">
+        <type>struct <ref refid="structjmp__buff__struct" kindref="compound">jmp_buff_struct</ref></type>
+        <definition>typedef struct jmp_buff_struct JMPBUFF</definition>
+        <argsstring></argsstring>
+        <name>JMPBUFF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="60" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__Parser_1ga44eac51213dc586e51f0f0448b64c4da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void GNextToken</definition>
+        <argsstring>(CACHE_TYPE1)</argsstring>
+        <name>GNextToken</name>
+        <param>
+          <type>CACHE_TYPE1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="62" column="13" declfile="/home/vsc/github/yap/C/parser.c" declline="62" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gaf587e9ba07e98fffb0d3f50808f3c8fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void checkfor</definition>
+        <argsstring>(Term, JMPBUFF *, encoding_t CACHE_TYPE)</argsstring>
+        <name>checkfor</name>
+        <param>
+          <type>Term</type>
+        </param>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="63" column="13" declfile="/home/vsc/github/yap/C/parser.c" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga21d892e9e04159c51010eed419e66360" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term ParseArgs</definition>
+        <argsstring>(Atom, Term, JMPBUFF *, Term, encoding_t, Term CACHE_TYPE)</argsstring>
+        <name>ParseArgs</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        </param>
+        <param>
+          <type>Term</type>
+        </param>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+        </param>
+        <param>
+          <type>Term</type>
+        </param>
+        <param>
+          <type>encoding_t</type>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="64" column="13" declfile="/home/vsc/github/yap/C/parser.c" declline="64" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga8bdca7b77962c091137e17d9bf471b0a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term ParseList</definition>
+        <argsstring>(JMPBUFF *, encoding_t, Term CACHE_TYPE)</argsstring>
+        <name>ParseList</name>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+        </param>
+        <param>
+          <type>encoding_t</type>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="65" column="13" declfile="/home/vsc/github/yap/C/parser.c" declline="65" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga1821d9076a53290cfdf5215b3da02b04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term ParseTerm</definition>
+        <argsstring>(int, JMPBUFF *, encoding_t, Term CACHE_TYPE)</argsstring>
+        <name>ParseTerm</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+        </param>
+        <param>
+          <type>encoding_t</type>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="66" column="13" declfile="/home/vsc/github/yap/C/parser.c" declline="66" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga461f160dccac09f9d70d08672367c538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_tokRep</definition>
+        <argsstring>(void *tokptr)</argsstring>
+        <name>Yap_tokRep</name>
+        <param>
+          <type>void *</type>
+          <declname>tokptr</declname>
+        </param>
+        <briefdescription>
+<para>convert a token to text </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="68" column="13" bodyfile="/home/vsc/github/yap/C/scanner.c" bodystart="829" bodyend="874" declfile="/home/vsc/github/yap/C/parser.c" declline="68" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga45042fadf361c98807108715fc8d60f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * Yap_tokText</definition>
+        <argsstring>(void *tokptr)</argsstring>
+        <name>Yap_tokText</name>
+        <param>
+          <type>void *</type>
+          <declname>tokptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="69" column="19" bodyfile="/home/vsc/github/yap/C/scanner.c" bodystart="889" bodyend="931" declfile="/home/vsc/github/yap/C/parser.c" declline="69" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gae37e39582339146215a188a35dffde7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void syntax_msg</definition>
+        <argsstring>(const char *msg,...)</argsstring>
+        <name>syntax_msg</name>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="71" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="71" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga4e41675bc58e1f8dadbc1510dc2bc5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+        <definition>VarEntry * Yap_LookupVar</definition>
+        <argsstring>(const char *var)</argsstring>
+        <name>Yap_LookupVar</name>
+        <param>
+          <type>const char *</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="126" column="10" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="126" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga0b759cf5c7b14f13641f7220a49e73f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term VarNames</definition>
+        <argsstring>(VarEntry *p, Term l USES_REGS)</argsstring>
+        <name>VarNames</name>
+        <param>
+          <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term l</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="192" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="192" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gae82fda5dc4dcb7e7d56043a899876eec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_VarNames</definition>
+        <argsstring>(VarEntry *p, Term l)</argsstring>
+        <name>Yap_VarNames</name>
+        <param>
+          <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="223" column="6" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga416de655ba2e40c298b99fd393968b64" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term Singletons</definition>
+        <argsstring>(VarEntry *p, Term l USES_REGS)</argsstring>
+        <name>Singletons</name>
+        <param>
+          <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term l</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="228" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="228" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gad7162a92752e940e2298eaa06c8e628f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_Singletons</definition>
+        <argsstring>(VarEntry *p, Term l)</argsstring>
+        <name>Yap_Singletons</name>
+        <param>
+          <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="255" column="6" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga8f096f3f14f5e5f4a5e8479de13f9346" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term Variables</definition>
+        <argsstring>(VarEntry *p, Term l USES_REGS)</argsstring>
+        <name>Variables</name>
+        <param>
+          <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term l</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="260" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="260" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gae69b9246388580bc40d40cec89e9c80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_Variables</definition>
+        <argsstring>(VarEntry *p, Term l)</argsstring>
+        <name>Yap_Variables</name>
+        <param>
+          <type><ref refid="structVARSTRUCT" kindref="compound">VarEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="282" column="6" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="282" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga521eb321a6c33961e0cbfb22b51a4d6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IsPrefixOp</definition>
+        <argsstring>(Atom op, int *pptr, int *rpptr, Term cmod USES_REGS)</argsstring>
+        <name>IsPrefixOp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>rpptr</declname>
+        </param>
+        <param>
+          <type>Term cmod</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="288" column="12" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="288" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga8d79d2f89249ecb7c49e74c31ec33cfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_IsPrefixOp</definition>
+        <argsstring>(Atom op, int *pptr, int *rpptr)</argsstring>
+        <name>Yap_IsPrefixOp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>rpptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="312" column="5" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="312" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga9cd7b42dd8c500ff05aa782c4e690e4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IsInfixOp</definition>
+        <argsstring>(Atom op, int *pptr, int *lpptr, int *rpptr, Term cmod USES_REGS)</argsstring>
+        <name>IsInfixOp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>lpptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>rpptr</declname>
+        </param>
+        <param>
+          <type>Term cmod</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="317" column="12" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="317" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gaed79c02e2c70ca3410ff0ae24fab269c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_IsInfixOp</definition>
+        <argsstring>(Atom op, int *pptr, int *lpptr, int *rpptr)</argsstring>
+        <name>Yap_IsInfixOp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>lpptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>rpptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="344" column="5" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="344" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gaf4a5351c1cc65e5b3141f86d245e0a67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IsPosfixOp</definition>
+        <argsstring>(Atom op, int *pptr, int *lpptr, Term cmod USES_REGS)</argsstring>
+        <name>IsPosfixOp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>lpptr</declname>
+        </param>
+        <param>
+          <type>Term cmod</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="349" column="12" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="349" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gadfb128346d8b94db6efd26be0ce87ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_IsPosfixOp</definition>
+        <argsstring>(Atom op, int *pptr, int *lpptr)</argsstring>
+        <name>Yap_IsPosfixOp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>lpptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="374" column="5" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="374" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gaa4bc24117b4f127872538236bcb42f20" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void GNextToken</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>GNextToken</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="379" column="20" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="379" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gadc3a20438ab51adb6355f098c683b0d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void checkfor</definition>
+        <argsstring>(Term c, JMPBUFF *FailBuff, encoding_t enc USES_REGS)</argsstring>
+        <name>checkfor</name>
+        <param>
+          <type>Term</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+          <declname>FailBuff</declname>
+        </param>
+        <param>
+          <type>encoding_t enc</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="390" column="20" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="390" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga102eacf5a9c22776c10add29d556ecf3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term ParseArgs</definition>
+        <argsstring>(Atom a, Term close, JMPBUFF *FailBuff, Term arg1, encoding_t enc, Term cmod USES_REGS)</argsstring>
+        <name>ParseArgs</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>close</declname>
+        </param>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+          <declname>FailBuff</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>enc</declname>
+        </param>
+        <param>
+          <type>Term cmod</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="458" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="458" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga26c4ca83d0af364a45c99f73626835c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term MakeAccessor</definition>
+        <argsstring>(Term t, Functor f USES_REGS)</argsstring>
+        <name>MakeAccessor</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref> f</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="548" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="548" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga7e34ff485265650a1a0acc7b05cfc4e2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term ParseList</definition>
+        <argsstring>(JMPBUFF *FailBuff, encoding_t enc, Term cmod USES_REGS)</argsstring>
+        <name>ParseList</name>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+          <declname>FailBuff</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>enc</declname>
+        </param>
+        <param>
+          <type>Term cmod</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="561" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="561" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1ga026073752db2b3445a402c64b450e164" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term ParseTerm</definition>
+        <argsstring>(int prio, JMPBUFF *FailBuff, encoding_t enc, Term cmod USES_REGS)</argsstring>
+        <name>ParseTerm</name>
+        <param>
+          <type>int</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type><ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *</type>
+          <declname>FailBuff</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>enc</declname>
+        </param>
+        <param>
+          <type>Term cmod</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="598" column="13" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="598" bodyend="976"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Parser_1gaf142fafbe19f9451e7066771d63230cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_Parse</definition>
+        <argsstring>(UInt prio, encoding_t enc, Term cmod)</argsstring>
+        <name>Yap_Parse</name>
+        <param>
+          <type>UInt</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type>encoding_t</type>
+          <declname>enc</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>cmod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="978" column="6" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="978" bodyend="1029"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__Parser_1ga4180997c1a2141de99f01a2563b30e9d" prot="public" static="no">
+        <name>Volatile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="53" column="10" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parser_1ga6ce9a3fe83634399bc6da26887b7d180" prot="public" static="no">
+        <name>TRY</name>
+        <param><defname>S</defname></param>
+        <param><defname>P</defname></param>
+        <initializer>  {                                                                            \
+    Volatile <ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *saveenv, newenv;                                         \
+    Volatile <ref refid="structTOKEN" kindref="compound">TokEntry</ref> *saveT = LOCAL_tokptr;                                   \
+    Volatile CELL *saveH = HR;                                                 \
+    Volatile int savecurprio = curprio;                                        \
+    saveenv = FailBuff;                                                        \
+    if (!sigsetjmp(newenv.JmpBuff, 0)) {                                       \
+      FailBuff = &amp;newenv;                                                      \
+      S;                                                                       \
+      FailBuff = saveenv;                                                      \
+      P;                                                                       \
+    } else {                                                                   \
+      FailBuff = saveenv;                                                      \
+      HR = saveH;                                                              \
+      curprio = savecurprio;                                                   \
+      LOCAL_tokptr = saveT;                                                    \
+    }                                                                          \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="85" column="9" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parser_1ga304f9a8a1a637327f85bf251b4fa07f1" prot="public" static="no">
+        <name>TRY3</name>
+        <param><defname>S</defname></param>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <initializer>  {                                                                            \
+    Volatile <ref refid="structjmp__buff__struct" kindref="compound">JMPBUFF</ref> *saveenv, newenv;                                         \
+    Volatile <ref refid="structTOKEN" kindref="compound">TokEntry</ref> *saveT = LOCAL_tokptr;                                   \
+    Volatile CELL *saveH = HR;                                                 \
+    saveenv = FailBuff;                                                        \
+    if (!sigsetjmp(newenv.JmpBuff, 0)) {                                       \
+      FailBuff = &amp;newenv;                                                      \
+      S;                                                                       \
+      FailBuff = saveenv;                                                      \
+      P;                                                                       \
+    } else {                                                                   \
+      FailBuff = saveenv;                                                      \
+      HR = saveH;                                                              \
+      LOCAL_tokptr = saveT;                                                    \
+      F                                                                        \
+    }                                                                          \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="105" column="9" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parser_1gac7bfc6e66cc4d55c75c1af203cd583fc" prot="public" static="no">
+        <name>FAIL</name>
+        <initializer>siglongjmp(FailBuff-&gt;JmpBuff, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/parser.c" line="124" column="9" bodyfile="/home/vsc/github/yap/C/parser.c" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>As expected for Prolog, this is a recursive top-down parser. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The algorithm handles ambiguity in the Prolog grammar through setjmp.s</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

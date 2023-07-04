@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dbase_8c" kind="file" language="C++">
+    <compoundname>dbase.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="attvar_8h" local="yes">attvar.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="heapgc_8h" local="yes">heapgc.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/dbase.c</label>
+        <link refid="dbase_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>attvar.h</label>
+        <link refid="attvar_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="57">
+        <label>heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="55">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="59">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="61">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structdb__globs" prot="public">db_globs</innerclass>
+    <innerclass refid="structvisitel" prot="public">visitel</innerclass>
+      <sectiondef kind="define">
+      <member refid="group__Internal__Database_1gad94fa6e7f79b15c722bb2ee0aeff30e5" kind="define"><name>DISCONNECT_OLD_ENTRIES</name></member>
+      <member refid="group__Internal__Database_1gad44967749e6c25fcc0db8919b0268b19" kind="define"><name>Register</name></member>
+      <member refid="group__Internal__Database_1ga12a6cf84b8154fe5ea2c5137bb2ab242" kind="define"><name>MkFirst</name></member>
+      <member refid="group__Internal__Database_1ga8e8395ddd07240781952c581438b9a37" kind="define"><name>MkCode</name></member>
+      <member refid="group__Internal__Database_1ga2cdf20df53727a648188ef33d1deff44" kind="define"><name>MkLast</name></member>
+      <member refid="group__Internal__Database_1ga91e88d5a1d87de7076412af7630ba87c" kind="define"><name>WithRef</name></member>
+      <member refid="group__Internal__Database_1ga35e8348b77110142ca6f4a0be91bcc41" kind="define"><name>MkIfNot</name></member>
+      <member refid="group__Internal__Database_1ga360e4f88f92c668f46a1936180482184" kind="define"><name>InQueue</name></member>
+      <member refid="group__Internal__Database_1ga7cbbd109d32312fe28a8587e627ea32c" kind="define"><name>FrstDBRef</name></member>
+      <member refid="group__Internal__Database_1ga4f5a4d76cc3590e2faff3996b727296b" kind="define"><name>NextDBRef</name></member>
+      <member refid="group__Internal__Database_1ga01c95f1c64692ce4256387720289fa25" kind="define"><name>DBLength</name></member>
+      <member refid="group__Internal__Database_1ga8f3d70e1656e2b3c94c13b800164b0f3" kind="define"><name>AllocDBSpace</name></member>
+      <member refid="group__Internal__Database_1ga67d369ed033fbe2021bdbb090915a914" kind="define"><name>FreeDBSpace</name></member>
+      <member refid="group__Internal__Database_1ga63553a0710134b04e755df0094e89cb0" kind="define"><name>ToSmall</name></member>
+      <member refid="group__Internal__Database_1ga17eedda44eb09276b1409923f8513331" kind="define"><name>HashFieldMask</name></member>
+      <member refid="group__Internal__Database_1gaf3764d6cb1ea13d3842c9c85e336245b" kind="define"><name>DualHashFieldMask</name></member>
+      <member refid="group__Internal__Database_1ga87e02e12e11cf4497fa8075762dcf172" kind="define"><name>TripleHashFieldMask</name></member>
+      <member refid="group__Internal__Database_1ga449ee800ef6a57767acd6cb862010917" kind="define"><name>FourHashFieldMask</name></member>
+      <member refid="group__Internal__Database_1ga2fdea39b64898468db59bb99c0d144b8" kind="define"><name>ONE_FIELD_SHIFT</name></member>
+      <member refid="group__Internal__Database_1ga2d8cff49afa473702dc44413cf6301e7" kind="define"><name>TWO_FIELDS_SHIFT</name></member>
+      <member refid="group__Internal__Database_1ga59d446df9439d38d6a8e501901eb1e64" kind="define"><name>THREE_FIELDS_SHIFT</name></member>
+      <member refid="group__Internal__Database_1ga8d3e1a39752d5cf9d83fdab161f08586" kind="define"><name>AtomHash</name></member>
+      <member refid="group__Internal__Database_1gad1ce9634dc27fa06ab8783e66f49c46e" kind="define"><name>FunctorHash</name></member>
+      <member refid="group__Internal__Database_1ga8d5f3515071ad1046bb1f59408220ed6" kind="define"><name>NumberHash</name></member>
+      <member refid="group__Internal__Database_1gad7ddf906e60854534b1d247a022cceaf" kind="define"><name>LARGE_IDB_LINK_TABLE</name></member>
+      <member refid="group__Internal__Database_1ga5da592569a93729f6897ca3f20754df3" kind="define"><name>SIZEOF_LINK_ENTRY</name></member>
+      <member refid="group__Internal__Database_1ga35f2a6046b9f208eaf8ac9687a96f298" kind="define"><name>db_check_trail</name></member>
+      <member refid="group__Internal__Database_1gac2b34118b158ad2267af5cf83a371610" kind="define"><name>MarkThisRef</name></member>
+      <member refid="group__Internal__Database_1ga091a4c9174ee7d91f404f4b963c393b2" kind="define"><name>DB_UNWIND_CUNIF</name></member>
+      <member refid="group__Internal__Database_1ga18dca446dd060fd27f0a48ca6b7e8c63" kind="define"><name>CheckDBOverflow</name></member>
+      <member refid="group__Internal__Database_1ga2367f15f1469f901df7b642723a84dad" kind="define"><name>CheckVisitOverflow</name></member>
+      <member refid="group__Internal__Database_1ga796bc2e5101adc95ee83fe119e455a51" kind="define"><name>DB_MARKED</name></member>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <member refid="group__Internal__Database_1ga1a49363621efdfa5fc026bada6579559" kind="typedef"><name>link_entry</name></member>
+      <member refid="group__Internal__Database_1ga389203bbd61c383830e48c9fdebd8614" kind="typedef"><name>dbglobs</name></member>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__Internal__Database_1ga2b38caa2ff2409dab57da0505b620ba9" kind="function"><name>cpcells</name></member>
+      <member refid="group__Internal__Database_1ga26f36ee5169501ae1865dd9c3ae9e315" kind="function"><name>linkblk</name></member>
+      <member refid="group__Internal__Database_1ga1f768fc2bd5b3b3cfefee5b61e29c712" kind="function"><name>cmpclls</name></member>
+      <member refid="group__Internal__Database_1ga61e8ae3fdda651ce64e5209e4adb55b1" kind="function"><name>FindDBProp</name></member>
+      <member refid="group__Internal__Database_1ga8d51e9690bc9f42991bb2d8e01606ecb" kind="function"><name>CalcKey</name></member>
+      <member refid="group__Internal__Database_1ga34b93541a6faf2618bbe479fd6e576e0" kind="function"><name>MkDBTerm</name></member>
+      <member refid="group__Internal__Database_1gaa5f36e9f503a1e66513a8ea1d8efd2f8" kind="function"><name>CreateDBStruct</name></member>
+      <member refid="group__Internal__Database_1ga8c35705196b76edde7cb11eac9b62828" kind="function"><name>record</name></member>
+      <member refid="group__Internal__Database_1ga4fd7484ad461294e80e8a9245adae01d" kind="function"><name>check_if_cons</name></member>
+      <member refid="group__Internal__Database_1gabda37725f793bec73c6c98d55bcafcf2" kind="function"><name>check_if_var</name></member>
+      <member refid="group__Internal__Database_1ga42a2386f4001c9bf83ca971182b93ab9" kind="function"><name>check_if_wvars</name></member>
+      <member refid="group__Internal__Database_1gab325e9156276edcecdd85d4f2218634f" kind="function"><name>scheckcells</name></member>
+      <member refid="group__Internal__Database_1gacefec738e6b5372043509cd8eec9eb21" kind="function"><name>check_if_nvars</name></member>
+      <member refid="group__Internal__Database_1ga3f8b5731939ebe1d421f423bb1e2a8e1" kind="function"><name>p_rcda</name></member>
+      <member refid="group__Internal__Database_1ga0b0dcfd7c912e14e08d887a3eb3e6244" kind="function"><name>p_rcdap</name></member>
+      <member refid="group__Internal__Database_1ga921148635699d3bc3f41203b549ec5a5" kind="function"><name>p_rcdz</name></member>
+      <member refid="group__Internal__Database_1gab66d432a0e3c77d66fb4ebe3d8373d16" kind="function"><name>p_rcdzp</name></member>
+      <member refid="group__Internal__Database_1gaa474ea474076410aff69951f9e4cb5a0" kind="function"><name>p_drcdap</name></member>
+      <member refid="group__Internal__Database_1ga29bddaed1bbb2b96ab134833978d3d94" kind="function"><name>p_drcdzp</name></member>
+      <member refid="group__Internal__Database_1gab447a356c1ce7ab6a8064b29d4605dab" kind="function"><name>GetDBTerm</name></member>
+      <member refid="group__Internal__Database_1ga9a148710a752c0bb2ec2377facf9a9f3" kind="function"><name>FetchDBPropFromKey</name></member>
+      <member refid="group__Internal__Database_1ga3a00449a0c401b0fdd1e570b7a73db3e" kind="function"><name>i_recorded</name></member>
+      <member refid="group__Internal__Database_1gaef92883b161019cc1aadf6ec281db3a8" kind="function"><name>c_recorded</name></member>
+      <member refid="group__Internal__Database_1ga757c29b5e4c74762a745a92ef8a3687a" kind="function"><name>co_rded</name></member>
+      <member refid="group__Internal__Database_1ga997944b995396cc31aed5cd5a73585bd" kind="function"><name>in_rdedp</name></member>
+      <member refid="group__Internal__Database_1ga72f6a220eda053dbc96954d7980dc987" kind="function"><name>co_rdedp</name></member>
+      <member refid="group__Internal__Database_1gaa8be3d878bb8999bb239212f6d684d28" kind="function"><name>p_first_instance</name></member>
+      <member refid="group__Internal__Database_1ga60060cea37eb31be4fb3da5ba1946ada" kind="function"><name>ErasePendingRefs</name></member>
+      <member refid="group__Internal__Database_1ga5421231688fda921ca57524308a382a7" kind="function"><name>RemoveDBEntry</name></member>
+      <member refid="group__Internal__Database_1gad74944ddc3f8981f281f40ca53a3feab" kind="function"><name>EraseLogUpdCl</name></member>
+      <member refid="group__Internal__Database_1gad803f214a25136f1288e2af1c74910a2" kind="function"><name>MyEraseClause</name></member>
+      <member refid="group__Internal__Database_1gabf4a081a0d874dab13763b7ab475955a" kind="function"><name>PrepareToEraseClause</name></member>
+      <member refid="group__Internal__Database_1gaefcb465bf705f7104301393136501d2b" kind="function"><name>EraseEntry</name></member>
+      <member refid="group__Internal__Database_1ga1963d89518d6cc60f2cbe0f11b4d90bf" kind="function"><name>p_erase</name></member>
+      <member refid="group__Internal__Database_1gabf1cc2c467430543d53fb2a5d623291d" kind="function"><name>p_eraseall</name></member>
+      <member refid="group__Internal__Database_1gaf3d4e4b87f29b4fc8842625b7ef1d6e0" kind="function"><name>p_erased</name></member>
+      <member refid="group__Internal__Database_1ga348cd7e04f0efcf243fa6171fd4541b2" kind="function"><name>p_instance</name></member>
+      <member refid="group__Internal__Database_1gab94eedd45f1674747eb9e264e1b8a19d" kind="function"><name>NotActiveDB</name></member>
+      <member refid="group__Internal__Database_1ga09c78d1d64964ae2c771993ccd1228f9" kind="function"><name>NextDBProp</name></member>
+      <member refid="group__Internal__Database_1gadf5f163e1d69f0d703444e0c0e80013f" kind="function"><name>init_current_key</name></member>
+      <member refid="group__Internal__Database_1ga6bcf8fd8475cf95afd37f8a72c8b03c2" kind="function"><name>cont_current_key</name></member>
+      <member refid="group__Internal__Database_1ga101497415a49af72441e7d92ca0ee658" kind="function"><name>cont_current_key_integer</name></member>
+      <member refid="group__Internal__Database_1ga2fb06e58aa72370d52a8a3275baf2049" kind="function"><name>p_rcdstatp</name></member>
+      <member refid="group__Internal__Database_1gaff84ac2e1fa8accaccd2047918218696" kind="function"><name>p_somercdedp</name></member>
+      <member refid="group__Internal__Database_1gaf235b1a2359c7cc22464cc897fc9026e" kind="function"><name>find_next_clause</name></member>
+      <member refid="group__Internal__Database_1ga15d2dc60364dcc4892eee4d0500c018c" kind="function"><name>p_jump_to_next_dynamic_clause</name></member>
+      <member refid="group__Internal__Database_1ga34bb3d5c7d9de2c6fec059544a6609d4" kind="function"><name>p_init_queue</name></member>
+      <member refid="group__Internal__Database_1gaa523e372325cdb993ccd65c4b775df2d" kind="function"><name>p_enqueue</name></member>
+      <member refid="group__Internal__Database_1gaee0a06661570042513356a0102454a23" kind="function"><name>keepdbrefs</name></member>
+      <member refid="group__Internal__Database_1gaec6fa3d40e490358f16219eba0d963c7" kind="function"><name>p_dequeue</name></member>
+      <member refid="group__Internal__Database_1gab51712a75d7ace93d8041893dafd8508" kind="function"><name>ErDBE</name></member>
+      <member refid="group__Internal__Database_1ga4693caab549909303f4f46ce47d323fe" kind="function"><name>ReleaseTermFromDB</name></member>
+      <member refid="group__Internal__Database_1ga195daa478cdccdc2d12c73fd5ccde3c4" kind="function"><name>new_lu_entry</name></member>
+      <member refid="group__Internal__Database_1gae07292c01f8ef7214bc51834b1dcbcd6" kind="function"><name>new_lu_int_key</name></member>
+      <member refid="group__Internal__Database_1ga432ccaa9a2ea81479acc9022da4eadc4" kind="function"><name>find_lu_entry</name></member>
+      <member refid="group__Internal__Database_1ga2701a1e04e17fad82dab26c07e5878cb" kind="function"><name>find_int_key</name></member>
+      <member refid="group__Internal__Database_1ga917d4595ae65a199f2b097c5a4533f24" kind="function"><name>new_trail_size</name></member>
+      <member refid="group__Internal__Database_1gac46913d3ad6b117446298438674fff05" kind="function"><name>recover_from_record_error</name></member>
+      <member refid="group__Internal__Database_1ga39ab6b50f50940af5eadb49554d0ee82" kind="function"><name>FindDBPropHavingLock</name></member>
+      <member refid="group__Internal__Database_1ga9b3c0525b83a7b3b833b241878055f36" kind="function"><name>EvalMasks</name></member>
+      <member refid="group__Internal__Database_1ga08bc03abdf06bba46380440d22d49fcf" kind="function"><name>Yap_EvalMasks</name></member>
+      <member refid="group__Internal__Database_1ga384b37ce245e0a6d28cf882ceaddb812" kind="function"><name>copy_long_int</name></member>
+      <member refid="group__Internal__Database_1gac57c679c40d75eff71a4eb3374d0e9c8" kind="function"><name>copy_double</name></member>
+      <member refid="group__Internal__Database_1ga69182d93128c47df99d949efa3222706" kind="function"><name>copy_string</name></member>
+      <member refid="group__Internal__Database_1gad6034085a232c29f223c91d71acce7f0" kind="function"><name>MkDBTerm</name></member>
+      <member refid="group__Internal__Database_1gaf6e83b84db67b591d0a4ed83273f7af1" kind="function"><name>scheckcells</name></member>
+      <member refid="group__Internal__Database_1gae34dc7fdfbe42b8bd8600fb2184eb755" kind="function"><name>generate_dberror_msg</name></member>
+      <member refid="group__Internal__Database_1ga35bc873eb1b1f51a8f618168291f2afa" kind="function"><name>CreateDBWithDBRef</name></member>
+      <member refid="group__Internal__Database_1ga7ac9d05f6003e9c6134bc24af2bd980d" kind="function"><name>CreateDBTermForAtom</name></member>
+      <member refid="group__Internal__Database_1ga21263c275a25ade008f4465be236b326" kind="function"><name>CreateDBTermForVar</name></member>
+      <member refid="group__Internal__Database_1ga214f0c942e2ded7c06275944150bfbbb" kind="function"><name>CreateDBRefForAtom</name></member>
+      <member refid="group__Internal__Database_1ga3fa5f651bb203cb86409cda8d5361511" kind="function"><name>CreateDBRefForVar</name></member>
+      <member refid="group__Internal__Database_1gaed7b697d06b3ffa739326f584cc33884" kind="function"><name>record</name></member>
+      <member refid="group__Internal__Database_1ga0521c8b22976c54b23cacfa5a0093143" kind="function"><name>record_at</name></member>
+      <member refid="group__Internal__Database_1ga9749a8f11c5c9fcb8eb1ff6c01eecb89" kind="function"><name>new_lu_db_entry</name></member>
+      <member refid="group__Internal__Database_1ga3a1ee361024fdc44173e0f171a2d0435" kind="function"><name>Yap_new_ludbe</name></member>
+      <member refid="group__Internal__Database_1ga23e7385cbcce75f2641576b0d75005e5" kind="function"><name>record_lu</name></member>
+      <member refid="group__Internal__Database_1ga110df9006449fa37d6cdcc92459900d0" kind="function"><name>record_lu_at</name></member>
+      <member refid="group__Internal__Database_1ga1c7b574aa7041ab58ecef15b77993e53" kind="function"><name>p_rcda_at</name></member>
+      <member refid="group__Internal__Database_1gac3f442f1bd346a5a5bc592353afaafab" kind="function"><name>Yap_Recordz</name></member>
+      <member refid="group__Internal__Database_1ga42a3344426a149c094b346fb55d24e3b" kind="function"><name>p_rcdz_at</name></member>
+      <member refid="group__Internal__Database_1gaf02af730ee0559223bba922374551c0e" kind="function"><name>p_still_variant</name></member>
+      <member refid="group__Internal__Database_1gaa4a5a65ac15b004cdc8f328bbf95535f" kind="function"><name>copy_attachments</name></member>
+      <member refid="group__Internal__Database_1ga3dcc472e9f36b5179e0cc594254fbf34" kind="function"><name>GetDBLUKey</name></member>
+      <member refid="group__Internal__Database_1ga6d733ec10d789a17d542a7c9ede5b773" kind="function"><name>UnifyDBKey</name></member>
+      <member refid="group__Internal__Database_1gae5b1855ee18469496cf0d1b448126f5c" kind="function"><name>UnifyDBNumber</name></member>
+      <member refid="group__Internal__Database_1gab0b9e50f033140940fac3fbd6e7ee756" kind="function"><name>Yap_unify_immediate_ref</name></member>
+      <member refid="group__Internal__Database_1ga8569755c1071cc40e1a6bc0a604a966b" kind="function"><name>GetDBTermFromDBEntry</name></member>
+      <member refid="group__Internal__Database_1ga597f2bd3ce864f3c0810cf44ce77dbaa" kind="function"><name>init_int_keys</name></member>
+      <member refid="group__Internal__Database_1ga023d0ade1995fde985a539fdb6235b9b" kind="function"><name>init_int_lu_keys</name></member>
+      <member refid="group__Internal__Database_1ga795592244df2c00352833daa897dac1e" kind="function"><name>resize_int_keys</name></member>
+      <member refid="group__Internal__Database_1ga05acf19bf63d7bb677c16f89167709a6" kind="function"><name>find_lu_int_key</name></member>
+      <member refid="group__Internal__Database_1ga14967cd027558c42d4848c6264186f52" kind="function"><name>Yap_FindLUIntKey</name></member>
+      <member refid="group__Internal__Database_1gaa06cc1860804ab00b0fcf75fbde029c8" kind="function"><name>find_entry</name></member>
+      <member refid="group__Internal__Database_1ga5c13a7dc3844c2359d34b0db253e9d1c" kind="function"><name>FetchIntDBPropFromKey</name></member>
+      <member refid="group__Internal__Database_1ga0e07809be015e934328a7a38331107eb" kind="function"><name>lu_nth_recorded</name></member>
+      <member refid="group__Internal__Database_1gaa83a47b682a1158bbc6b7433788458e0" kind="function"><name>nth_recorded</name></member>
+      <member refid="group__Internal__Database_1ga300dc8d38a6698f968e88f9d2ad153a5" kind="function"><name>Yap_db_nth_recorded</name></member>
+      <member refid="group__Internal__Database_1ga27753053e6d51ebbfb9a148833d6e072" kind="function"><name>p_db_key</name></member>
+      <member refid="group__Internal__Database_1ga03e633d2cf1ae09c17bb5a4e52006dc0" kind="function"><name>i_recorded</name></member>
+      <member refid="group__Internal__Database_1gad24af456228396f9fc1db51d1acbad24" kind="function"><name>c_recorded</name></member>
+      <member refid="group__Internal__Database_1ga80ba5b32a527dfa2d8443faeaf1ce8eb" kind="function"><name>lu_recorded</name></member>
+      <member refid="group__Internal__Database_1gaeb376795ef84ce6f89372f18deb1a2c0" kind="function"><name>in_rded_with_key</name></member>
+      <member refid="group__Internal__Database_1gac97700da77beab63991bd22afd03a5df" kind="function"><name>p_recorded</name></member>
+      <member refid="group__Internal__Database_1ga199cb055733cc530a3638add6920227d" kind="function"><name>index_sz</name></member>
+      <member refid="group__Internal__Database_1ga7aa2f554c8414c8b643d1f9a68e88f7f" kind="function"><name>lu_statistics</name></member>
+      <member refid="group__Internal__Database_1ga235f7836687955aa98d595ce75eff3f5" kind="function"><name>p_key_statistics</name></member>
+      <member refid="group__Internal__Database_1ga4b2be86a38306c97b92e0c9287957a37" kind="function"><name>p_lu_statistics</name></member>
+      <member refid="group__Internal__Database_1ga91e9099b15823d20569a2c7f2f8cae98" kind="function"><name>p_total_erased</name></member>
+      <member refid="group__Internal__Database_1ga8ddbeab50a29eaf616d0e94f7a6356af" kind="function"><name>lu_erased_statistics</name></member>
+      <member refid="group__Internal__Database_1ga93166a990625906556be61e5dd5988cf" kind="function"><name>p_key_erased_statistics</name></member>
+      <member refid="group__Internal__Database_1ga94ebf82ba1b463d8f75157b05dbdf58c" kind="function"><name>p_heap_space_info</name></member>
+      <member refid="group__Internal__Database_1gab59e6b161751d950bacdb1f7e7682042" kind="function"><name>ErasePendingRefs</name></member>
+      <member refid="group__Internal__Database_1gaddb9f3b937fbb0b5b912a2bc1088357f" kind="function"><name>RemoveDBEntry</name></member>
+      <member refid="group__Internal__Database_1gaa02320fe0ce1377d2f3b977996511a35" kind="function"><name>find_next_clause</name></member>
+      <member refid="group__Internal__Database_1gaf3ca5b94aa2bea75cb084fa00069b205" kind="function"><name>complete_lu_erase</name></member>
+      <member refid="group__Internal__Database_1ga12f1efe56904e516b7e0cd8d957ae73b" kind="function"><name>MyEraseClause</name></member>
+      <member refid="group__Internal__Database_1gad2d1a6c686ae3f07a4c4c3dd052d5b2c" kind="function"><name>Yap_ErLogUpdCl</name></member>
+      <member refid="group__Internal__Database_1ga680dc6f1a48bb319dcedda7e7b15ecf1" kind="function"><name>Yap_ErCl</name></member>
+      <member refid="group__Internal__Database_1ga08f510f3ff30f3987365913eaab13bfc" kind="function"><name>PrepareToEraseLogUpdClause</name></member>
+      <member refid="group__Internal__Database_1gaf997e9812bfd5ead19dc71d7edce3d8d" kind="function"><name>ErDBE</name></member>
+      <member refid="group__Internal__Database_1gaa8b30979f91908e93d4b55e5e9796dbd" kind="function"><name>Yap_ErDBE</name></member>
+      <member refid="group__Internal__Database_1ga4adbcbff3063dcbb021455c457e4c042" kind="function"><name>p_increase_reference_counter</name></member>
+      <member refid="group__Internal__Database_1gae54148681309eec8a2e5d61f96303b4f" kind="function"><name>p_decrease_reference_counter</name></member>
+      <member refid="group__Internal__Database_1ga11a1b4d45e1973ca49e50758a8093300" kind="function"><name>p_current_reference_counter</name></member>
+      <member refid="group__Internal__Database_1gaacf3b9f24c34549e88e63bbfe97159b4" kind="function"><name>p_erase_clause</name></member>
+      <member refid="group__Internal__Database_1ga05d7c2c8e64665bb451dc51809672fc9" kind="function"><name>static_instance</name></member>
+      <member refid="group__Internal__Database_1ga62af6bcca9b22587f8b56674c99fced4" kind="function"><name>exo_instance</name></member>
+      <member refid="group__Internal__Database_1gac97344a8366ef576a25b88b416e338af" kind="function"><name>mega_instance</name></member>
+      <member refid="group__Internal__Database_1gafa56069a26711a7df4ff79d1bb9a5b15" kind="function"><name>Yap_LUInstance</name></member>
+      <member refid="group__Internal__Database_1gaa15ad575bc9a17f68c8d08016a977194" kind="function"><name>p_instance_module</name></member>
+      <member refid="group__Internal__Database_1ga06b0b86472194437f07141930fc1280a" kind="function"><name>Yap_FetchTermFromDB</name></member>
+      <member refid="group__Internal__Database_1gab264ea9252c08aaffd6943bfa8706635" kind="function"><name>Yap_FetchClauseTermFromDB</name></member>
+      <member refid="group__Internal__Database_1ga80ec4415a920d733b983e9b926ead40c" kind="function"><name>Yap_PopTermFromDB</name></member>
+      <member refid="group__Internal__Database_1gae6a1bf061545b6b4a7dd846e073358f1" kind="function"><name>StoreTermInDB</name></member>
+      <member refid="group__Internal__Database_1ga1c67c88ed4db82dc07ebd26fde44da80" kind="function"><name>Yap_StoreTermInDB</name></member>
+      <member refid="group__Internal__Database_1ga6f2e7291dfbcb50cfcd59ecedb04ff04" kind="function"><name>Yap_StoreTermInDBPlusExtraSpace</name></member>
+      <member refid="group__Internal__Database_1ga751946432bdf396373c251e225da2064" kind="function"><name>Yap_init_tqueue</name></member>
+      <member refid="group__Internal__Database_1ga9f2f7e66a54733845ce636190c266a8d" kind="function"><name>Yap_destroy_tqueue</name></member>
+      <member refid="group__Internal__Database_1gad7bc8bdd5a5f9b41fd124a7cc059d2e7" kind="function"><name>Yap_enqueue_tqueue</name></member>
+      <member refid="group__Internal__Database_1gabf9ecf666b7a204ef8fe1b7e5f5ca141" kind="function"><name>Yap_dequeue_tqueue</name></member>
+      <member refid="group__Internal__Database_1ga7a57d042f493e35d5caa9d286eb819ae" kind="function"><name>p_enqueue_unlocked</name></member>
+      <member refid="group__Internal__Database_1gaefb3e43df306cdd819ac81a78202e0fb" kind="function"><name>keepdbrefs</name></member>
+      <member refid="group__Internal__Database_1ga69d82c2f36e2f730a3d1d06bb06cfd79" kind="function"><name>p_dequeue_unlocked</name></member>
+      <member refid="group__Internal__Database_1ga3230bab0fc833d418de4d83c5c299502" kind="function"><name>p_peek_queue</name></member>
+      <member refid="group__Internal__Database_1gae5d9fbf7fa9b06599698ceeb75e793a8" kind="function"><name>p_clean_queues</name></member>
+      <member refid="group__Internal__Database_1ga31be6b6f31813539e4843fe479355da9" kind="function"><name>p_slu</name></member>
+      <member refid="group__Internal__Database_1ga70bfb38ceabfe680799f2e6503911615" kind="function"><name>p_hold_index</name></member>
+      <member refid="group__Internal__Database_1gac8a4de0ad4d96e3fb302b8d1f48ca277" kind="function"><name>p_fetch_reference_from_index</name></member>
+      <member refid="group__Internal__Database_1ga95a0d04cba925e06191f6b7b462b72d4" kind="function"><name>p_resize_int_keys</name></member>
+      <member refid="group__Internal__Database_1gab23de8f09131b801c2e523ecf8270c3d" kind="function"><name>ReleaseTermFromDB</name></member>
+      <member refid="group__Internal__Database_1ga4dc6a1d35a61ac217c6d8675887ba47f" kind="function"><name>Yap_ReleaseTermFromDB</name></member>
+      <member refid="group__Internal__Database_1gaf7c2c333586f9ab2d6244fa0dc56d8af" kind="function"><name>p_install_thread_local</name></member>
+      <member refid="group__Internal__Database_1gaefeb5d825ce37c8e8846dec6ce2a7111" kind="function"><name>Yap_InitBackDB</name></member>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/dbase.c"/>
+  </compounddef>
+</doxygen>

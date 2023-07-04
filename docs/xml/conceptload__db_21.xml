@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptload__db_21" kind="concept">
+    <compoundname>load_db/1</compoundname>
+    <initializer>template&lt;&gt;
+concept load_db/1 =     </initializer>
+    <briefdescription>
+<para><bold>load_db</bold>(+ <emphasis>Files</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>load_db</bold>( +Files )</para>
+<para>Load a database of ground facts All facts must take up the same amount of storage, so that a fact $I$ can be accessed at position <emphasis>P[I-1]</emphasis> This representation thus stores the facts as a huge continuous array, the so-called mega clause</para>
+<para>See for a motivation for this technique YAP implements this optimization by default whenever it loads a large number of facts (see Yap_BuildMegaClause(PredEntry *ap) ) for the details On the other hand, loading the data-base will cause fragmentation because individual facts facts need extra headers ands tails, and because often new atoms will be stored in the Symbol Table, see LookupAtom(const char *atom) The main advantage of <ref refid="classload__db_21" kindref="compound">load_db/1</ref> is that it allocates the necessary memory only once Just doing this may halve total memory usage in large in-memory database-oriented applications</para>
+<para><simplesect kind="note"><para>Implementation</para>
+</simplesect>
+YAP implements <ref refid="classload__db_21" kindref="compound">load_db/1</ref> as a two-step non-optimised process First, it counts the nmuber of facts and checks their size Second, it allocates and fills the memory The first step of the algorithm is implemented by dbload_get_space(), and the second by dbload_add_facts()</para>
+<para>db_files/1 itself is just a call to <ref refid="classload__files_22" kindref="compound">load_files/2</ref></para>
+<para>properties: deterministic</para>
+<para>Load files each one containing as single predicare composed of facts with the same size </para>
+    </detaileddescription>
+    <location file="pl/consult.yap" line="3" column="1"/>
+  </compounddef>
+</doxygen>

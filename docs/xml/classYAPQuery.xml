@@ -1,0 +1,1318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classYAPQuery" kind="class" language="C++" prot="public">
+    <compoundname>YAPQuery</compoundname>
+    <basecompoundref refid="classYAPPredicate" prot="public" virt="non-virtual">YAPPredicate</basecompoundref>
+    <includes refid="tmp_2yapq_8hh" local="no">yapq.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classYAPQuery_1aadecbccc1a90bd62965778880096fea9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool q_open</definition>
+        <argsstring></argsstring>
+        <name>q_open</name>
+        <qualifiedname>YAPQuery::q_open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="39" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classYAPQuery_1a8821adef59ad8fde8ee36ffe4c383ed5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int q_state</definition>
+        <argsstring></argsstring>
+        <name>q_state</name>
+        <qualifiedname>YAPQuery::q_state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="40" column="7" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classYAPQuery_1aa81a2263fb99f108e98793780b4c7721" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int q_flags</definition>
+        <argsstring></argsstring>
+        <name>q_flags</name>
+        <qualifiedname>YAPQuery::q_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="42" column="7" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classYAPQuery_1a6f91d6122d03ffcf23e64270e3c2fe87" prot="private" static="no" mutable="no">
+        <type><ref refid="structYAP__dogoalinfo" kindref="compound">YAP_dogoalinfo</ref></type>
+        <definition>YAP_dogoalinfo q_h</definition>
+        <argsstring></argsstring>
+        <name>q_h</name>
+        <qualifiedname>YAPQuery::q_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="43" column="18" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classYAPQuery_1acdf813ed40db15306822416d662f2702" prot="private" static="no" mutable="no">
+        <type><ref refid="classYAPPairTerm" kindref="compound">YAPPairTerm</ref> *</type>
+        <definition>YAPPairTerm * names</definition>
+        <argsstring></argsstring>
+        <name>names</name>
+        <qualifiedname>YAPQuery::names</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="44" column="15" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classYAPQuery_1a85b15054e158f67907db838121edc997" prot="private" static="no" mutable="no">
+        <type>Term</type>
+        <definition>Term goal</definition>
+        <argsstring></argsstring>
+        <name>goal</name>
+        <qualifiedname>YAPQuery::goal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="45" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classYAPQuery_1abc8247aeec02b0cac7d41d8ec6df0065" prot="private" static="no" mutable="no">
+        <type>CELL *</type>
+        <definition>CELL * nts</definition>
+        <argsstring></argsstring>
+        <name>nts</name>
+        <qualifiedname>YAPQuery::nts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="46" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classYAPQuery_1adb78a16f8ff7382e443e01c9defeea6a" prot="private" static="no" mutable="no">
+        <type><ref refid="classYAPError" kindref="compound">YAPError</ref> *</type>
+        <definition>YAPError * e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <qualifiedname>YAPQuery::e</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="48" column="12" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classYAPQuery_1aedc6ad49f35497722ccb87001bd22652" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setNext</definition>
+        <argsstring>()</argsstring>
+        <name>setNext</name>
+        <qualifiedname>YAPQuery::setNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="50" column="15" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="50" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a0b95580861612df5d97ee0fd5741809a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openQuery</definition>
+        <argsstring>()</argsstring>
+        <name>openQuery</name>
+        <qualifiedname>YAPQuery::openQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="64" column="8" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="646" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a95f25d534b158fc359d932354e8a4684" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * rewriteUndefQuery</definition>
+        <argsstring>()</argsstring>
+        <name>rewriteUndefQuery</name>
+        <qualifiedname>YAPQuery::rewriteUndefQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="66" column="13" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="958" bodyend="967"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1aedc6ad49f35497722ccb87001bd22652" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setNext</definition>
+        <argsstring>()</argsstring>
+        <name>setNext</name>
+        <qualifiedname>YAPQuery::setNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="49" column="15" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="49" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a0b95580861612df5d97ee0fd5741809a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openQuery</definition>
+        <argsstring>()</argsstring>
+        <name>openQuery</name>
+        <qualifiedname>YAPQuery::openQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a95f25d534b158fc359d932354e8a4684" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * rewriteUndefQuery</definition>
+        <argsstring>()</argsstring>
+        <name>rewriteUndefQuery</name>
+        <qualifiedname>YAPQuery::rewriteUndefQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="65" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classYAPQuery_1a986cfd42b19a42377c6d2cb74c52d748" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>()</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="69" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1af82bd319ea9ef1c649c950dd93ffae6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~YAPQuery</definition>
+        <argsstring>()</argsstring>
+        <name>~YAPQuery</name>
+        <qualifiedname>YAPQuery::~YAPQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="73" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a7a8296dd03e45c9a78a036b93589f453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPPredicate p, YAPTerm t[])</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPPredicate" kindref="compound">YAPPredicate</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>main constructor, uses a predicate and an array of terms </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is given a <ref refid="classYAPPredicate" kindref="compound">YAPPredicate</ref> <emphasis>p</emphasis> , and an array of terms that must have at least the same arity as the functor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="79" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="896" bodyend="915"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a36cfed2c967ed995f8aedaa38bb17c64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPFunctor f, YAPTerm mod, YAPTerm t[])</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>full constructor, </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is given a functor, module, and an array of terms that must have at least the same arity as the functor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="87" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="833" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a64e406899e78f729aa970fde38b27df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPFunctor f, YAPTerm mod, Term t[])</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>often, this is more efficient </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="90" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="857" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1ac5fbb25f8d14bb0b0b009a132fe21325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>functor/term constructor, </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is given a functor, and an array of terms that must have at least the same arity as the functor Works within the current module</para>
+<para>string constructor without varnames</para>
+<para>It is given a string, calls the parser and obtains a Prolog term that should be a callable goal </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="101" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a8ad333da84d0622d14c0494e4fecdf76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPTerm t)</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>string constructor with just an atom </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It i; }; build a query from a term </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="123" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a1feb4faa0ae88e863886a93c0c0829f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setFlag</definition>
+        <argsstring>(int flag)</argsstring>
+        <name>setFlag</name>
+        <qualifiedname>YAPQuery::setFlag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>set flags for query execution, currently only for exception handling </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="130" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1aa12fa66a73df7c1326c70319ae0141bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void resetFlag</definition>
+        <argsstring>(int flag)</argsstring>
+        <name>resetFlag</name>
+        <qualifiedname>YAPQuery::resetFlag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>reset flags for query execution, currently only for exception handling </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="132" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1ae9f7851f510732f6e146ce82bc44979e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool first</definition>
+        <argsstring>()</argsstring>
+        <name>first</name>
+        <qualifiedname>YAPQuery::first</qualifiedname>
+        <briefdescription>
+<para>first query </para>
+        </briefdescription>
+        <detaileddescription>
+<para>actually implemented by calling the <ref refid="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" kindref="member">next()</ref>; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="136" column="15" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <qualifiedname>YAPQuery::next</qualifiedname>
+        <briefdescription>
+<para>ask for the next solution of the current query same call for every solution </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="139" column="8" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="917" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a12c6a7d62384c8dfa10e95dd44605894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool answer</definition>
+        <argsstring>()</argsstring>
+        <name>answer</name>
+        <qualifiedname>YAPQuery::answer</qualifiedname>
+        <briefdescription>
+<para>an alias to avoid saying <ref refid="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" kindref="member">next()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="141" column="15" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a7f8a06e749ea40551e36dce42b19cbbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool deterministic</definition>
+        <argsstring>()</argsstring>
+        <name>deterministic</name>
+        <qualifiedname>YAPQuery::deterministic</qualifiedname>
+        <briefdescription>
+<para>does this query have open choice-points? or is it deterministic? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="144" column="8" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="994" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a3b2c5850daff403f796c2b3d91d3890c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * text</definition>
+        <argsstring>()</argsstring>
+        <name>text</name>
+        <qualifiedname>YAPQuery::text</qualifiedname>
+        <briefdescription>
+<para>represent the top-goal </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="146" column="14" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="440" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a5ae591df94fc66ccb85cbb6565368bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>YAPQuery::close</qualifiedname>
+        <briefdescription>
+<para>remove alternatives in the current search space, and finish the current query finish the current query: undo all bindings </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="150" column="8" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="1008" bodyend="1023"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1ada01f65675afbbc0b8006d58df5acb81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cut</definition>
+        <argsstring>()</argsstring>
+        <name>cut</name>
+        <qualifiedname>YAPQuery::cut</qualifiedname>
+        <briefdescription>
+<para>query variables </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="152" column="8" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="984" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a3e5d8c5923577a38426fc8bafc9c388a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term namedVars</definition>
+        <argsstring>()</argsstring>
+        <name>namedVars</name>
+        <qualifiedname>YAPQuery::namedVars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="153" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a0366637eb8af276f9dbeaf90d49d9533" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPPairTerm" kindref="compound">YAPPairTerm</ref> *</type>
+        <definition>YAPPairTerm * namedVarTerms</definition>
+        <argsstring>()</argsstring>
+        <name>namedVarTerms</name>
+        <qualifiedname>YAPQuery::namedVarTerms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="154" column="15" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a154a78979e7dcfd8a109f5740e908a05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; Term &gt;</type>
+        <definition>std::vector&lt; Term &gt; namedVarsVector</definition>
+        <argsstring>()</argsstring>
+        <name>namedVarsVector</name>
+        <qualifiedname>YAPQuery::namedVarsVector</qualifiedname>
+        <briefdescription>
+<para>query variables, but copied out </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="156" column="15" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a90aad59715a9f4fa17fc252922e2b44a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+        <definition>YAPTerm getTerm</definition>
+        <argsstring>(yhandle_t t)</argsstring>
+        <name>getTerm</name>
+        <qualifiedname>YAPQuery::getTerm</qualifiedname>
+        <param>
+          <type>yhandle_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>convert a ref to a binding </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="158" column="11" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="1005" bodyend="1006"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a0e5fcb12d9d6d14bd8448f0dee0afb09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool command</definition>
+        <argsstring>()</argsstring>
+        <name>command</name>
+        <qualifiedname>YAPQuery::command</qualifiedname>
+        <briefdescription>
+<para>simple YAP Query; just calls YAP and reports success or failure, Useful when we just want things done, eg YAPCommand(&quot;load_files(library(lists), )&quot;) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="162" column="15" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a986cfd42b19a42377c6d2cb74c52d748" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>()</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="68" column="3" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1af82bd319ea9ef1c649c950dd93ffae6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~YAPQuery</definition>
+        <argsstring>()</argsstring>
+        <name>~YAPQuery</name>
+        <qualifiedname>YAPQuery::~YAPQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="72" column="10" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a7a8296dd03e45c9a78a036b93589f453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPPredicate p, YAPTerm t[])</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPPredicate" kindref="compound">YAPPredicate</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>main constructor, uses a predicate and an array of terms </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is given a <ref refid="classYAPPredicate" kindref="compound">YAPPredicate</ref> <emphasis>p</emphasis> , and an array of terms that must have at least the same arity as the functor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="78" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a36cfed2c967ed995f8aedaa38bb17c64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPFunctor f, YAPTerm mod, YAPTerm t[])</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>full constructor, </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is given a functor, module, and an array of terms that must have at least the same arity as the functor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="86" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a64e406899e78f729aa970fde38b27df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPFunctor f, YAPTerm mod, Term t[])</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>often, this is more efficient </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="89" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1ac5fbb25f8d14bb0b0b009a132fe21325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>functor/term constructor, </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is given a functor, and an array of terms that must have at least the same arity as the functor Works within the current module</para>
+<para>string constructor without varnames</para>
+<para>It is given a string, calls the parser and obtains a Prolog term that should be a callable goal </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="100" column="10" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a8ad333da84d0622d14c0494e4fecdf76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPQuery</definition>
+        <argsstring>(YAPTerm t)</argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPQuery::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>string constructor with just an atom </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It i; }; build a query from a term </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="122" column="3" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a1feb4faa0ae88e863886a93c0c0829f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setFlag</definition>
+        <argsstring>(int flag)</argsstring>
+        <name>setFlag</name>
+        <qualifiedname>YAPQuery::setFlag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>set flags for query execution, currently only for exception handling </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="129" column="8" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1aa12fa66a73df7c1326c70319ae0141bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void resetFlag</definition>
+        <argsstring>(int flag)</argsstring>
+        <name>resetFlag</name>
+        <qualifiedname>YAPQuery::resetFlag</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>reset flags for query execution, currently only for exception handling </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="131" column="8" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1ae9f7851f510732f6e146ce82bc44979e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool first</definition>
+        <argsstring>()</argsstring>
+        <name>first</name>
+        <qualifiedname>YAPQuery::first</qualifiedname>
+        <briefdescription>
+<para>first query </para>
+        </briefdescription>
+        <detaileddescription>
+<para>actually implemented by calling the <ref refid="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" kindref="member">next()</ref>; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="135" column="15" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <qualifiedname>YAPQuery::next</qualifiedname>
+        <briefdescription>
+<para>ask for the next solution of the current query same call for every solution </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="138" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a12c6a7d62384c8dfa10e95dd44605894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool answer</definition>
+        <argsstring>()</argsstring>
+        <name>answer</name>
+        <qualifiedname>YAPQuery::answer</qualifiedname>
+        <briefdescription>
+<para>an alias to avoid saying <ref refid="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" kindref="member">next()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="140" column="15" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a7f8a06e749ea40551e36dce42b19cbbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool deterministic</definition>
+        <argsstring>()</argsstring>
+        <name>deterministic</name>
+        <qualifiedname>YAPQuery::deterministic</qualifiedname>
+        <briefdescription>
+<para>does this query have open choice-points? or is it deterministic? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="143" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a3b2c5850daff403f796c2b3d91d3890c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * text</definition>
+        <argsstring>()</argsstring>
+        <name>text</name>
+        <qualifiedname>YAPQuery::text</qualifiedname>
+        <briefdescription>
+<para>represent the top-goal </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="145" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a5ae591df94fc66ccb85cbb6565368bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>YAPQuery::close</qualifiedname>
+        <briefdescription>
+<para>remove alternatives in the current search space, and finish the current query finish the current query: undo all bindings </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="149" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1ada01f65675afbbc0b8006d58df5acb81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cut</definition>
+        <argsstring>()</argsstring>
+        <name>cut</name>
+        <qualifiedname>YAPQuery::cut</qualifiedname>
+        <briefdescription>
+<para>query variables </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="151" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a3e5d8c5923577a38426fc8bafc9c388a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term namedVars</definition>
+        <argsstring>()</argsstring>
+        <name>namedVars</name>
+        <qualifiedname>YAPQuery::namedVars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="152" column="8" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a0366637eb8af276f9dbeaf90d49d9533" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPPairTerm" kindref="compound">YAPPairTerm</ref> *</type>
+        <definition>YAPPairTerm * namedVarTerms</definition>
+        <argsstring>()</argsstring>
+        <name>namedVarTerms</name>
+        <qualifiedname>YAPQuery::namedVarTerms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="153" column="15" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a154a78979e7dcfd8a109f5740e908a05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; Term &gt;</type>
+        <definition>std::vector&lt; Term &gt; namedVarsVector</definition>
+        <argsstring>()</argsstring>
+        <name>namedVarsVector</name>
+        <qualifiedname>YAPQuery::namedVarsVector</qualifiedname>
+        <briefdescription>
+<para>query variables, but copied out </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="155" column="15" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a90aad59715a9f4fa17fc252922e2b44a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+        <definition>YAPTerm getTerm</definition>
+        <argsstring>(yhandle_t t)</argsstring>
+        <name>getTerm</name>
+        <qualifiedname>YAPQuery::getTerm</qualifiedname>
+        <param>
+          <type>yhandle_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>convert a ref to a binding </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="157" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPQuery_1a0e5fcb12d9d6d14bd8448f0dee0afb09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool command</definition>
+        <argsstring>()</argsstring>
+        <name>command</name>
+        <qualifiedname>YAPQuery::command</qualifiedname>
+        <briefdescription>
+<para>simple YAP Query; just calls YAP and reports success or failure, Useful when we just want things done, eg YAPCommand(&quot;load_files(library(lists), )&quot;) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapq.hh" line="161" column="15" bodyfile="/home/vsc/github/yap/CXX/yapq.hh" bodystart="161" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Queries and engines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Queries</para>
+<para>interface to a YAP Query; uses an SWI-like status info internally </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>YAPModuleProp</label>
+        <link refid="classYAPModuleProp"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YAPPredicate</label>
+        <link refid="classYAPPredicate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YAPProp</label>
+        <link refid="classYAPProp"/>
+      </node>
+      <node id="1">
+        <label>YAPQuery</label>
+        <link refid="classYAPQuery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AtomEntryStruct</label>
+        <link refid="structAtomEntryStruct"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>NextOfAE</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>PropsOfAE</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>blob</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>DB_STRUCT</label>
+        <link refid="structDB__STRUCT"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Code</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Next</edgelabel>
+          <edgelabel>Prev</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>DBT</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>DB_TERM</label>
+        <link refid="structDB__TERM"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>NextDBT</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>DBRefs</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FunctorEntryStruct</label>
+        <link refid="structFunctorEntryStruct"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+          <edgelabel>PropsOfFE</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>NameOfFE</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PropEntryStruct</label>
+        <link refid="structPropEntryStruct"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YAPModuleProp</label>
+        <link refid="classYAPModuleProp"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YAPPredicate</label>
+        <link refid="classYAPPredicate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ap</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YAPProp</label>
+        <link refid="classYAPProp"/>
+      </node>
+      <node id="1">
+        <label>YAPQuery</label>
+        <link refid="classYAPQuery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>atom_blob</label>
+        <link refid="structatom__blob"/>
+      </node>
+      <node id="8">
+        <label>logic_upd_clause</label>
+        <link refid="structlogic__upd__clause"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Id</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+          <edgelabel>ClExt</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ClSource</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ClOwner</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ClNext</edgelabel>
+          <edgelabel>ClPrev</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>logic_upd_index</label>
+        <link refid="structlogic__upd__index"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>ChildIndex</edgelabel>
+          <edgelabel>ParentIndex</edgelabel>
+          <edgelabel>PrevSiblingIndex</edgelabel>
+          <edgelabel>SiblingIndex</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pred_entry</label>
+        <link refid="structpred__entry"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>CodeOfPred</edgelabel>
+          <edgelabel>FirstClause</edgelabel>
+          <edgelabel>LastClause</edgelabel>
+          <edgelabel>MetaEntryOfPred</edgelabel>
+          <edgelabel>TrueCodeOfPred</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>FunctorOfPred</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>OwnerFile</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>StatisticsForPred</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextPredOfHash</edgelabel>
+          <edgelabel>NextPredOfModule</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>profile_data</label>
+        <link refid="structprofile__data"/>
+      </node>
+      <node id="14">
+        <label>struct_dbentry</label>
+        <link refid="structstruct__dbentry"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>FunctorOfDB</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>F0</edgelabel>
+          <edgelabel>First</edgelabel>
+          <edgelabel>L0</edgelabel>
+          <edgelabel>Last</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>yami</label>
+        <link refid="structyami"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>F</edgelabel>
+          <edgelabel>T</edgelabel>
+          <edgelabel>d</edgelabel>
+          <edgelabel>f</edgelabel>
+          <edgelabel>l</edgelabel>
+          <edgelabel>l1</edgelabel>
+          <edgelabel>l2</edgelabel>
+          <edgelabel>l3</edgelabel>
+          <edgelabel>l4</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ClBase</edgelabel>
+          <edgelabel>d</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>I</edgelabel>
+          <edgelabel>block</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>p0</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/CXX/tmp/yapq.hh" line="38" column="1" bodyfile="/home/vsc/github/yap/CXX/tmp/yapq.hh" bodystart="38" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classYAPQuery_1a12c6a7d62384c8dfa10e95dd44605894" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>answer</name></member>
+      <member refid="classYAPQuery_1a12c6a7d62384c8dfa10e95dd44605894" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>answer</name></member>
+      <member refid="classYAPPredicate_1a839d6526c02047d6014f3f70ccbf77ca" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>ap</name></member>
+      <member refid="classYAPPredicate_1a1a6c0ed3b23d695428b3cc2659036e30" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>arity</name></member>
+      <member refid="classYAPPredicate_1a1a6c0ed3b23d695428b3cc2659036e30" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>arity</name></member>
+      <member refid="classYAPPredicate_1aa6191e913472b983093c01c1bf932226" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>asPred</name></member>
+      <member refid="classYAPPredicate_1aa6191e913472b983093c01c1bf932226" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>asPred</name></member>
+      <member refid="classYAPQuery_1a5ae591df94fc66ccb85cbb6565368bca" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>close</name></member>
+      <member refid="classYAPQuery_1a5ae591df94fc66ccb85cbb6565368bca" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>close</name></member>
+      <member refid="classYAPQuery_1a0e5fcb12d9d6d14bd8448f0dee0afb09" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>command</name></member>
+      <member refid="classYAPQuery_1a0e5fcb12d9d6d14bd8448f0dee0afb09" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>command</name></member>
+      <member refid="classYAPQuery_1ada01f65675afbbc0b8006d58df5acb81" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>cut</name></member>
+      <member refid="classYAPQuery_1ada01f65675afbbc0b8006d58df5acb81" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>cut</name></member>
+      <member refid="classYAPQuery_1a7f8a06e749ea40551e36dce42b19cbbd" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>deterministic</name></member>
+      <member refid="classYAPQuery_1a7f8a06e749ea40551e36dce42b19cbbd" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>deterministic</name></member>
+      <member refid="classYAPQuery_1adb78a16f8ff7382e443e01c9defeea6a" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>e</name></member>
+      <member refid="classYAPQuery_1ae9f7851f510732f6e146ce82bc44979e" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>first</name></member>
+      <member refid="classYAPQuery_1ae9f7851f510732f6e146ce82bc44979e" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>first</name></member>
+      <member refid="classYAPPredicate_1ab4c33ce3d95491d0ebf1cdd176e5798d" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>functor</name></member>
+      <member refid="classYAPPredicate_1ab4c33ce3d95491d0ebf1cdd176e5798d" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>functor</name></member>
+      <member refid="classYAPPredicate_1af610666f80f3e2cc32141aac455386a9" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>getArity</name></member>
+      <member refid="classYAPPredicate_1af610666f80f3e2cc32141aac455386a9" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>getArity</name></member>
+      <member refid="classYAPPredicate_1a221827607deb87db2a667e3464069dfd" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>getPred</name></member>
+      <member refid="classYAPPredicate_1a221827607deb87db2a667e3464069dfd" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>getPred</name></member>
+      <member refid="classYAPQuery_1a90aad59715a9f4fa17fc252922e2b44a" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>getTerm</name></member>
+      <member refid="classYAPQuery_1a90aad59715a9f4fa17fc252922e2b44a" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>getTerm</name></member>
+      <member refid="classYAPQuery_1a85b15054e158f67907db838121edc997" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>goal</name></member>
+      <member refid="classYAPPredicate_1ad7e7e243814ba75f01ab17f9bdea20c5" prot="public" virt="virtual"><scope>YAPQuery</scope><name>module</name></member>
+      <member refid="classYAPPredicate_1ad7e7e243814ba75f01ab17f9bdea20c5" prot="public" virt="virtual"><scope>YAPQuery</scope><name>module</name></member>
+      <member refid="classYAPPredicate_1aa81cc38dff90358b272f46b7f442b96f" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>name</name></member>
+      <member refid="classYAPPredicate_1aa81cc38dff90358b272f46b7f442b96f" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>name</name></member>
+      <member refid="classYAPQuery_1a3e5d8c5923577a38426fc8bafc9c388a" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>namedVars</name></member>
+      <member refid="classYAPQuery_1a3e5d8c5923577a38426fc8bafc9c388a" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>namedVars</name></member>
+      <member refid="classYAPQuery_1a154a78979e7dcfd8a109f5740e908a05" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>namedVarsVector</name></member>
+      <member refid="classYAPQuery_1a154a78979e7dcfd8a109f5740e908a05" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>namedVarsVector</name></member>
+      <member refid="classYAPQuery_1a0366637eb8af276f9dbeaf90d49d9533" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>namedVarTerms</name></member>
+      <member refid="classYAPQuery_1a0366637eb8af276f9dbeaf90d49d9533" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>namedVarTerms</name></member>
+      <member refid="classYAPQuery_1acdf813ed40db15306822416d662f2702" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>names</name></member>
+      <member refid="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>next</name></member>
+      <member refid="classYAPQuery_1a80870c233d0237e3588a2d6f8d176916" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>next</name></member>
+      <member refid="classYAPQuery_1abc8247aeec02b0cac7d41d8ec6df0065" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>nts</name></member>
+      <member refid="classYAPQuery_1a0b95580861612df5d97ee0fd5741809a" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>openQuery</name></member>
+      <member refid="classYAPQuery_1a0b95580861612df5d97ee0fd5741809a" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>openQuery</name></member>
+      <member refid="classYAPPredicate_1a034c990d9a63b743fd7db59da5455fad" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>predEntry</name></member>
+      <member refid="classYAPPredicate_1a034c990d9a63b743fd7db59da5455fad" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>predEntry</name></member>
+      <member refid="classYAPQuery_1aa81a2263fb99f108e98793780b4c7721" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>q_flags</name></member>
+      <member refid="classYAPQuery_1a6f91d6122d03ffcf23e64270e3c2fe87" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>q_h</name></member>
+      <member refid="classYAPQuery_1aadecbccc1a90bd62965778880096fea9" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>q_open</name></member>
+      <member refid="classYAPQuery_1a8821adef59ad8fde8ee36ffe4c383ed5" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>q_state</name></member>
+      <member refid="classYAPQuery_1aa12fa66a73df7c1326c70319ae0141bf" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>resetFlag</name></member>
+      <member refid="classYAPQuery_1aa12fa66a73df7c1326c70319ae0141bf" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>resetFlag</name></member>
+      <member refid="classYAPQuery_1a95f25d534b158fc359d932354e8a4684" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>rewriteUndefQuery</name></member>
+      <member refid="classYAPQuery_1a95f25d534b158fc359d932354e8a4684" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>rewriteUndefQuery</name></member>
+      <member refid="classYAPQuery_1a1feb4faa0ae88e863886a93c0c0829f8" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>setFlag</name></member>
+      <member refid="classYAPQuery_1a1feb4faa0ae88e863886a93c0c0829f8" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>setFlag</name></member>
+      <member refid="classYAPQuery_1aedc6ad49f35497722ccb87001bd22652" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>setNext</name></member>
+      <member refid="classYAPQuery_1aedc6ad49f35497722ccb87001bd22652" prot="private" virt="non-virtual"><scope>YAPQuery</scope><name>setNext</name></member>
+      <member refid="classYAPQuery_1a3b2c5850daff403f796c2b3d91d3890c" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>text</name></member>
+      <member refid="classYAPQuery_1a3b2c5850daff403f796c2b3d91d3890c" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>text</name></member>
+      <member refid="classYAPModuleProp_1adf690c4e6af7f45d7825ad773b361c7f" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPModuleProp</name></member>
+      <member refid="classYAPModuleProp_1ab14e7d554901cdc212b884cae816f5de" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPModuleProp</name></member>
+      <member refid="classYAPPredicate_1a255d049e4e7504d950d7d5c3aa88b123" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a736af68fff04dcf3e65d2cafe9a94208" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aaafc77158efa32b43c50a4d18414a0e2" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a99c37898eb0dffd137ad1df69c44cc96" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a90447039b725dc6f517258415fd8684f" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1ddef13a05f27efc4f924b996039add1" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6f15eb837f0254301396dabefa9847be" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6e63817a11e3cd53a2fcf7104d853b21" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ae5dc855b114b682b9c539b4ba60d7c87" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1af30be87590acccb6ce7157ce2244e182" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aab7e9cb818ca49a91301cb7cd7a89e43" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a131daa736323a89d0e1c8c5c3c8c8408" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1b010f7b47026ff7ea2fe226fe19748e" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a5ee2f0a3479a7c05d820e7aa33aad41d" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a497c3162a2df06c3d589c7e89b254e51" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a9c40b8f42f91ea7e952c28ba4c9f04c9" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a3818a65b9b966890fb413553aa63e8d5" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ad3c7235fd07739c3234e2e01044db777" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aa580424b7ce0f88c0e4687489dfc02dd" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a255d049e4e7504d950d7d5c3aa88b123" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a736af68fff04dcf3e65d2cafe9a94208" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aaafc77158efa32b43c50a4d18414a0e2" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a99c37898eb0dffd137ad1df69c44cc96" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a90447039b725dc6f517258415fd8684f" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1ddef13a05f27efc4f924b996039add1" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6f15eb837f0254301396dabefa9847be" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6e63817a11e3cd53a2fcf7104d853b21" prot="protected" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ae5dc855b114b682b9c539b4ba60d7c87" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1af30be87590acccb6ce7157ce2244e182" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aab7e9cb818ca49a91301cb7cd7a89e43" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a131daa736323a89d0e1c8c5c3c8c8408" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1b010f7b47026ff7ea2fe226fe19748e" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a5ee2f0a3479a7c05d820e7aa33aad41d" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a497c3162a2df06c3d589c7e89b254e51" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a9c40b8f42f91ea7e952c28ba4c9f04c9" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a3818a65b9b966890fb413553aa63e8d5" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ad3c7235fd07739c3234e2e01044db777" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aa580424b7ce0f88c0e4687489dfc02dd" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPQuery_1a986cfd42b19a42377c6d2cb74c52d748" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a7a8296dd03e45c9a78a036b93589f453" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a36cfed2c967ed995f8aedaa38bb17c64" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a64e406899e78f729aa970fde38b27df1" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1ac5fbb25f8d14bb0b0b009a132fe21325" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a8ad333da84d0622d14c0494e4fecdf76" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a986cfd42b19a42377c6d2cb74c52d748" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a7a8296dd03e45c9a78a036b93589f453" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a36cfed2c967ed995f8aedaa38bb17c64" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a64e406899e78f729aa970fde38b27df1" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1ac5fbb25f8d14bb0b0b009a132fe21325" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPQuery_1a8ad333da84d0622d14c0494e4fecdf76" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>YAPQuery</name></member>
+      <member refid="classYAPProp_1a5c6ec2f85493ee40cd1d06d51e56d90d" prot="public" virt="virtual"><scope>YAPQuery</scope><name>~YAPProp</name></member>
+      <member refid="classYAPProp_1a5c6ec2f85493ee40cd1d06d51e56d90d" prot="public" virt="virtual"><scope>YAPQuery</scope><name>~YAPProp</name></member>
+      <member refid="classYAPQuery_1af82bd319ea9ef1c649c950dd93ffae6b" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>~YAPQuery</name></member>
+      <member refid="classYAPQuery_1af82bd319ea9ef1c649c950dd93ffae6b" prot="public" virt="non-virtual"><scope>YAPQuery</scope><name>~YAPQuery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

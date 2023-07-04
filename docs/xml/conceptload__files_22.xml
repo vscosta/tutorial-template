@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptload__files_22" kind="concept">
+    <compoundname>load_files/2</compoundname>
+    <initializer>template&lt;&gt;
+concept load_files/2 =     </initializer>
+    <briefdescription>
+<para><bold>load_files</bold>(+_Files_, +_Options_) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of the <ref refid="classconsult_21" kindref="compound">consult/1</ref> family Execution is controlled by the following flags:</para>
+<para><itemizedlist>
+<listitem><para>consult(+ <emphasis>Mode</emphasis>)</para>
+<para>This extension controls the type of file to load If <emphasis>Mode</emphasis> is:</para>
+<para><computeroutput>consult</computeroutput>, clauses are added to the data-base, unless from the same file; <computeroutput>reconsult</computeroutput>, clauses are recompiled, <computeroutput>db</computeroutput>, these are facts that need to be added to the data-base, <computeroutput>exo</computeroutput>, these are facts with atoms and integers that can be stored in a compact representation (see load_exo/1 )</para>
+</listitem><listitem><para>silent(+ <emphasis>Bool</emphasis>)</para>
+<para>If true, load the file without printing a message The specified value is the default for all files loaded as a result of loading the specified files</para>
+</listitem><listitem><para>stream(+ <emphasis>Input</emphasis>)</para>
+<para>This SWI-Prolog extension compiles the data from the stream <emphasis>Input</emphasis> If this option is used, <emphasis>Files</emphasis> must be a single atom which is used to identify the source-location of the loaded clauses as well as remove all clauses if the data is re-consulted</para>
+<para>This option is added to allow compiling from non-file locations such as databases, the web, the user (see <ref refid="classconsult_21" kindref="compound">consult/1</ref> ) or other servers</para>
+</listitem><listitem><para>compilation_mode(+ <emphasis>Mode</emphasis>)</para>
+<para>This extension controls how procedures are compiled If <emphasis>Mode</emphasis> is <computeroutput>compact</computeroutput> clauses are compiled and no source code is stored; if it is <computeroutput>source</computeroutput> clauses are compiled and source code is stored; if it is <computeroutput>assert_all</computeroutput> clauses are asserted into the data-base</para>
+</listitem><listitem><para>encoding(+ <emphasis>Encoding</emphasis>)</para>
+<para>Character encoding used in consulting files Please (see Encoding) for supported encodings</para>
+</listitem><listitem><para>expand(+ <emphasis>Bool</emphasis>)</para>
+<para>If <computeroutput>true</computeroutput>, run the filenames through expand_file_name/2 and load the returned files Default is false, except for <ref refid="classconsult_21" kindref="compound">consult/1</ref> which is intended for interactive use</para>
+</listitem><listitem><para>if(+ <emphasis>Condition</emphasis>)</para>
+<para>Load the file only if the specified <emphasis>Condition</emphasis> is satisfied The value <computeroutput>true</computeroutput> the file unconditionally, <computeroutput>changed</computeroutput> loads the file if it was not loaded before, or has been modified since it was loaded the last time, <computeroutput>not_loaded</computeroutput> loads the file if it was not loaded before</para>
+</listitem><listitem><para>imports(+ <emphasis>ListOrAll</emphasis>)</para>
+<para>If <computeroutput>all</computeroutput> and the file is a module file, import all public predicates Otherwise import only the named predicates Each predicate is referred to as <computeroutput>\&lt;name\&gt;/\&lt;arity\&gt;</computeroutput> This option has no effect if the file is not a module file</para>
+</listitem><listitem><para>must_be_module(+ <emphasis>Bool</emphasis>)</para>
+<para>If true, raise an error if the file is not a module file Used by <ref refid="classuse__module_21" kindref="compound">use_module/1</ref> and <ref refid="classuse__module_22" kindref="compound">use_module/2</ref></para>
+</listitem><listitem><para>qcompile(+ <emphasis>Value</emphasis>)</para>
+<para>SWI-Prolog flag that controls whether loaded files should be also compiled into <computeroutput>qly</computeroutput> files The default value is obtained from the flag <computeroutput>qcompile</computeroutput>:</para>
+<para><computeroutput>never</computeroutput>, no <computeroutput>qly</computeroutput> file is generated unless the user calls qsave_file/1 and friends, or sets the qcompile option in <ref refid="classload__files_22" kindref="compound">load_files/2</ref> ;</para>
+<para><computeroutput>auto</computeroutput>, all files are qcompiled</para>
+<para><computeroutput>large</computeroutput>, files above 100KB are qcompiled</para>
+<para><computeroutput>part</computeroutput>, not supported in YAP</para>
+</listitem><listitem><para>autoload(+ <emphasis>Autoload</emphasis>)</para>
+</listitem></itemizedlist>
+</para>
+<para>SWI-compatible option where if <emphasis>Autoload</emphasis> is <computeroutput>true</computeroutput> undefined predicates are loaded on first call</para>
+<para><itemizedlist>
+<listitem><para>derived_from(+ <emphasis>File</emphasis>)</para>
+<para>SWI-compatible option to control make/0 Currently not supported </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pl/consult.yap" line="3" column="1"/>
+  </compounddef>
+</doxygen>

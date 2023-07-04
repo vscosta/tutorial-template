@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptcall__count_23" kind="concept">
+    <compoundname>call_count/3</compoundname>
+    <initializer>template&lt;&gt;
+concept call_count/3 =     </initializer>
+    <briefdescription>
+<para><bold>call_count</bold>(? <emphasis>CallsMax</emphasis>, ? <emphasis>RetriesMax</emphasis>, ? <emphasis>CallsAndRetriesMax</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Set call counters as timers YAP will generate an exception if one of the instantiated call counters decreases to 0:</para>
+<para><itemizedlist>
+<listitem><para><emphasis>CallsMax</emphasis></para>
+<para>throw the exception <computeroutput>call_counter</computeroutput> when the counter <computeroutput>calls</computeroutput> reaches 0;</para>
+</listitem><listitem><para><emphasis>RetriesMax</emphasis></para>
+<para>throw the exception <computeroutput>retry_counter</computeroutput> when the counter <computeroutput>retries</computeroutput> reaches 0;</para>
+</listitem><listitem><para><emphasis>CallsAndRetriesMax</emphasis></para>
+<para>throw the exception <computeroutput>call_and_retry_counter</computeroutput> when the counter <computeroutput>calls_and_retries</computeroutput> reaches 0</para>
+<para>YAP will ignore counters that are called with unbound arguments</para>
+</listitem></itemizedlist>
+</para>
+<para>Next, we show a simple example of how to use call counters:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">prolog_flag(call_counting,on),<sp/>[</highlight><highlight class="keyword">-</highlight><highlight class="normal">user].<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">.<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">.<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">yap_flag(call_counting,off).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">yap_flag</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">yap_flag</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">catch((call_count(</highlight><highlight class="vhldigit">10000</highlight><highlight class="normal">,</highlight><highlight class="charliteral">_</highlight><highlight class="normal">,</highlight><highlight class="charliteral">_</highlight><highlight class="normal">),l),call_counter,format(</highlight><highlight class="stringliteral">&quot;limit_exceeded.~n&quot;</highlight><highlight class="normal">,[])).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">catch.</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">catch</highlight></codeline>
+</programlisting> Notice that we first compile the looping predicate <computeroutput>l/0 </computeroutput> with call_counting <computeroutput>on</computeroutput> Next, we catch/3 to handle an exception when <computeroutput>l/0 </computeroutput> performs more than 10000 reductions </para>
+    </detaileddescription>
+    <location file="pl/callcount.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

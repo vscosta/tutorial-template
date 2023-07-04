@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptlisting_20" kind="concept">
+    <compoundname>listing/0</compoundname>
+    <initializer>template&lt;&gt;
+concept listing/0 =     </initializer>
+    <briefdescription>
+<para><bold>listing</bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para>vxuLists in the current output stream all the clauses for which source code is available (these include all clauses for dynamic predicates and clauses for static predicates compiled when source mode was <computeroutput>on</computeroutput>)</para>
+<para><itemizedlist>
+<listitem><para>listing/0 lists in the current module</para>
+</listitem><listitem><para><ref refid="classlisting_21" kindref="compound">listing/1</ref> receives a generalization of the predicate indicator:<itemizedlist>
+<listitem><para><computeroutput>listing(_)</computeroutput> will list the whole sources</para>
+</listitem><listitem><para><computeroutput>listing(lists:_)</computeroutput> will list the module lists</para>
+</listitem><listitem><para><computeroutput>listing(lists:append)</computeroutput> will list all <computeroutput>append</computeroutput> predicates in the module lists</para>
+</listitem><listitem><para><computeroutput>listing(lists:append/_)</computeroutput> will do the same</para>
+</listitem><listitem><para>listing(lists:append/3 )<computeroutput>will list the popular</computeroutput><ref refid="classappend_23" kindref="compound">append/3</ref> ` predicate in the module lists</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><ref refid="classlisting_22" kindref="compound">listing/2</ref> is similar to <ref refid="classlisting_21" kindref="compound">listing/1</ref> , but t he first argument is a stream reference</para>
+</listitem></itemizedlist>
+</para>
+<para>The <computeroutput>listing</computeroutput> family of built-ins does not enumerate predicates whose name starts with a <computeroutput>$</computeroutput> character </para>
+    </detaileddescription>
+    <location file="pl/listing.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

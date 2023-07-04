@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__trees" kind="group">
+    <compoundname>trees</compoundname>
+    <title>Updatable Binary Trees</title>
+    <innerclass refid="classget__label_23" prot="public">get_label/3</innerclass>
+    <innerclass refid="classlist__to__tree_22" prot="public">list_to_tree/2</innerclass>
+    <innerclass refid="classmap__tree_23" prot="public">map_tree/3</innerclass>
+    <innerclass refid="classput__label_24" prot="public">put_label/4</innerclass>
+    <innerclass refid="classtree__size_22" prot="public">tree_size/2</innerclass>
+    <innerclass refid="classtree__to__list_22" prot="public">tree_to_list/2</innerclass>
+    <briefdescription>
+<para>The following queue manipulation routines are available once included with the <computeroutput>use_module(library(trees))</computeroutput> command. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These are the routines I meant to describe in DAI-WP-150, but the wrong version went in We have<itemizedlist>
+<listitem><para>list_to_tree : O(N)</para>
+</listitem><listitem><para>tree_to_list : O(N)</para>
+</listitem><listitem><para>tree_size : O(N)</para>
+</listitem><listitem><para>map_tree : O(N)</para>
+</listitem><listitem><para>get_label : O(lg N)</para>
+</listitem><listitem><para>put_label : O(lg N) where N is the number of elements in the tree The way get_label and put_label work is worth noting: they build up a pattern which is matched against the whole tree when the position number finally reaches 1 In effect they start out from the desired node and build up a path to the root They still cost O(lg N) time rather than O(N) because the patterns contain O(lg N) distinct variables, with no duplications put_label simultaneously builds up a pattern to match the old tree and a pattern to match the new tree</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

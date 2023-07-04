@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__yap-cplus-term-handling" kind="group">
+    <compoundname>yap-cplus-term-handling</compoundname>
+    <title>Term Handling in the YAP interface.</title>
+    <innerclass refid="classYAPTerm" prot="public">YAPTerm</innerclass>
+    <innerclass refid="classT" prot="public">T</innerclass>
+    <innerclass refid="classYAPApplTerm" prot="public">YAPApplTerm</innerclass>
+    <innerclass refid="classYAPPairTerm" prot="public">YAPPairTerm</innerclass>
+    <innerclass refid="classYAPNumberTerm" prot="public">YAPNumberTerm</innerclass>
+    <innerclass refid="classYAPIntegerTerm" prot="public">YAPIntegerTerm</innerclass>
+    <innerclass refid="classYAPFloatTerm" prot="public">YAPFloatTerm</innerclass>
+    <innerclass refid="classYAPListTerm" prot="public">YAPListTerm</innerclass>
+    <innerclass refid="classYAPConjunctiveTerm" prot="public">YAPConjunctiveTerm</innerclass>
+    <innerclass refid="classYAPStringTerm" prot="public">YAPStringTerm</innerclass>
+    <innerclass refid="classYAPAtomTerm" prot="public">YAPAtomTerm</innerclass>
+    <innerclass refid="classYAPVarTerm" prot="public">YAPVarTerm</innerclass>
+    <innerclass refid="classYAPErrorTerm" prot="public">YAPErrorTerm</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__yap-cplus-term-handling_1gacf1c3c96384ac61858aab47a4ad7031b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API Term</type>
+        <definition>X_API Term YAP_MkCharPTerm</definition>
+        <argsstring>(char *n)</argsstring>
+        <name>YAP_MkCharPTerm</name>
+        <param>
+          <type>char *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="36" column="19" bodyfile="/home/vsc/github/yap/C/c_interface.c" bodystart="314" bodyend="322" declfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" declline="36" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-term-handling_1ga470fa462fb6b5b38b71122603f591fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API Term</type>
+        <definition>X_API Term Yap_MkErrorTerm</definition>
+        <argsstring>(yap_error_descriptor_t *)</argsstring>
+        <name>Yap_MkErrorTerm</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="698" column="26" bodyfile="/home/vsc/github/yap/C/errors.c" bodystart="640" bodyend="663" declfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" declline="698" declcolumn="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__yap-cplus-term-handling_1gaadef9adf2d2fe55d6d703b9dfa4c90da" prot="public" static="no">
+        <name>YAPT_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="30" column="9" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__yap-cplus-term-handling_1gaadef9adf2d2fe55d6d703b9dfa4c90da" prot="public" static="no">
+        <name>YAPT_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="31" column="9" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>These classes offer term construction and access. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Terms are seens as objects that inherit from a virtual class, Currently, all terms must reside in the stack and may be moved around during garbage collection Term objects use an handle, in the SWI-Prolog style</para>
+<para>Notice that terms are forcefully destroyed during backtracking</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

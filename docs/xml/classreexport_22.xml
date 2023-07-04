@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classreexport_22" kind="class" language="Prolog" prot="public">
+    <compoundname>reexport/2</compoundname>
+    <briefdescription>
+<para><bold>reexport</bold>(+F, +Decls ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: directive</para>
+<para>allow a module to use and export predicates from another module</para>
+<para>Export all predicates defined in list <emphasis>F</emphasis> as if they were defined in the current module</para>
+<para>Export predicates defined in file <emphasis>F</emphasis> according to <emphasis>Decls</emphasis> The declarations should be of the form:</para>
+<para><itemizedlist>
+<listitem>
+</listitem>
+</itemizedlist>
+list of predicate declarations to be exported Each declaration may be a predicate indicator or of the form `<computeroutput>_PI_</computeroutput>as<lsquo/> _NewName_<rsquo/>&apos;, meaning that the predicate with indicator <emphasis>PI</emphasis> is to be exported under name <emphasis>NewName</emphasis> <verbatim>`except`( _List_)
+</verbatim> In this case, all predicates not in <emphasis>List</emphasis> are exported Moreover, if <computeroutput>_PI_</computeroutput>as<computeroutput>_NewName_</computeroutput> is found, the predicate with indicator <emphasis>PI</emphasis> is to be exported under name <emphasis>NewName</emphasis> as before</para>
+<para>Re-exporting predicates must be used with some care Please, take into account the following observations:</para>
+<para><itemizedlist>
+<listitem>
+</listitem>
+</itemizedlist>
+The <computeroutput>reexport</computeroutput> declarations must be the first declarations to follow the <computeroutput>module</computeroutput> declaration </para>
+<para><itemizedlist>
+<listitem><para>It is possible to use both <computeroutput>reexport</computeroutput> and <computeroutput>use_module</computeroutput>, but all predicates reexported are automatically available for use in the current module</para>
+</listitem><listitem><para>In order to obtain efficient execution, YAP compiles dependencies between re-exported predicates In practice, this means that changing a <computeroutput>reexport</computeroutput> declaration and then <emphasis>just</emphasis> recompiling the file may result in incorrect execution</para>
+</listitem></itemizedlist>
+</para>
+<para>properties: directive</para>
+<para>allow a module to use and export predicates from another module</para>
+<para>Export all predicates defined in list <emphasis>F</emphasis> as if they were defined in the current module</para>
+<para>Export predicates defined in file <emphasis>F</emphasis> according to <emphasis>Decls</emphasis> The declarations should be of the form:</para>
+<para><itemizedlist>
+<listitem>
+</listitem>
+</itemizedlist>
+list of predicate declarations to be exported Each declaration may be a predicate indicator or of the form `<computeroutput>_PI_</computeroutput>as<lsquo/> _NewName_<rsquo/>&apos;, meaning that the predicate with indicator <emphasis>PI</emphasis> is vto be exported under name <emphasis>NewName</emphasis> <verbatim>`except`( _List_)
+</verbatim> In this case, all predicates not in <emphasis>List</emphasis> are exported Moreover, if <computeroutput>_PI_</computeroutput>as<computeroutput>_NewName_</computeroutput> is found, the predicate with indicator <emphasis>PI</emphasis> is to be exported under name <emphasis>NewName</emphasis> as before</para>
+<para>Re-exporting predicates must be used with some care Please, take into account the following observations:</para>
+<para><itemizedlist>
+<listitem>
+</listitem>
+</itemizedlist>
+The <computeroutput>reexport</computeroutput> declarations must be the first declarations to follow the <computeroutput>module</computeroutput> declaration </para>
+<para><itemizedlist>
+<listitem><para>It is possible to use both <computeroutput>reexport</computeroutput> and <computeroutput>use_module</computeroutput>, but all predicates reexported are automatically available for use in the current module</para>
+</listitem><listitem><para>In order to obtain efficient execution, YAP compiles dependencies between re-exported predicates In practice, this means that changing a <computeroutput>reexport</computeroutput> declaration and then <emphasis>just</emphasis> recompiling the file may result in incorrect execution </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/newmod.yap" line="4" column="1" bodyfile="/home/vsc/github/yap/pl/newmod.yap" bodystart="4" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

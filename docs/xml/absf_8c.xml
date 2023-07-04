@@ -1,0 +1,1002 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="absf_8c" kind="file" language="C++">
+    <compoundname>absf.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapFlags_8h" local="yes">YapFlags.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes refid="sysbits_8h" local="yes">sysbits.h</includes>
+    <includes refid="cwalk_8h" local="no">cwalk.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>YapEval.h</label>
+        <link refid="YapEval_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="54">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="56">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/os/absf.c</label>
+        <link refid="absf_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>cwalk.h</label>
+        <link refid="cwalk_8h_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>sysbits.h</label>
+        <link refid="sysbits_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="61">
+        <label>ctype.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="60">
+        <label>math.h</label>
+      </node>
+      <node id="63">
+        <label>stdbool.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="absf_8c_1a6438b53842b413162439d53361cd41b4" prot="public" static="no">
+        <name>ABSOLUTE_FILE_NAME_DEFS</name>
+        <param></param>
+        <initializer>  PAR(&quot;access&quot;, isatom, ABSOLUTE_FILE_NAME_ACCESS) ,			\
+    PAR(&quot;expand&quot;, booleanFlag, ABSOLUTE_FILE_NAME_EXPAND),		\
+    PAR(&quot;extensions&quot;, ok, ABSOLUTE_FILE_NAME_EXTENSIONS)   ,		\
+    PAR(&quot;file_errors&quot;, is_file_errors, ABSOLUTE_FILE_NAME_FILE_ERRORS),	\
+    PAR(&quot;file_type&quot;, is_file_type, ABSOLUTE_FILE_NAME_FILE_TYPE) ,	\
+    PAR(&quot;glob&quot;, ok, ABSOLUTE_FILE_NAME_GLOB)           ,		\
+    PAR(&quot;relative_to&quot;, isatom, ABSOLUTE_FILE_NAME_RELATIVE_TO),		\
+    PAR(&quot;solutions&quot;, issolutions, ABSOLUTE_FILE_NAME_SOLUTIONS) ,	\
+    PAR(&quot;verbose_file_search&quot;, booleanFlag,   ABSOLUTE_FILE_NAME_VERBOSE_FILE_SEARCH), \
+    PAR(NULL, ok, ABSOLUTE_FILE_NAME_END)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="891" column="9" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="891" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="absf_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>z</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="903" column="9" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="absf_8c_1a6c7d25f61501dedd2f49dda67602b149" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>  { x, y, z }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="911" column="9" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="absf_8c_1a660d14bad42f82b9fbd29fc066fd42d0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ABSOLUTE_FILE_NAME_enum_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="905" column="1" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="905" bodyend="907"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="absf_8c_1a0aa33680ca1663aa397ef1c5948b5d3b" prot="public" static="no">
+        <type>enum ABSOLUTE_FILE_NAME_enum_</type>
+        <definition>typedef enum ABSOLUTE_FILE_NAME_enum_ absolute_file_name_choices_t</definition>
+        <argsstring></argsstring>
+        <name>absolute_file_name_choices_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="907" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="absf_8c_1a71add31c0565d335978f67a15853cd4f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structstruct__param" kindref="compound">param_t</ref></type>
+        <definition>const param_t absolute_file_name_search_defs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>absolute_file_name_search_defs</name>
+        <initializer>= {
+    ABSOLUTE_FILE_NAME_DEFS()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="914" column="22" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="914" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="absf_8c_1a6531c4cd227a6a673a07ae2ec0b87c34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term do_glob</definition>
+        <argsstring>(const char *spec, bool glob_vs_wordexp)</argsstring>
+        <name>do_glob</name>
+        <param>
+          <type>const char *</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>glob_vs_wordexp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="189" column="1" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="189" bodyend="338" declfile="/home/vsc/github/yap/os/absf.c" declline="40" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1aef7671a6c2645997cd1ad9edb0f89cc2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char * PlExpandVars</definition>
+        <argsstring>(const char *source, const char *root)</argsstring>
+        <name>PlExpandVars</name>
+        <param>
+          <type>const char *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="343" column="19" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="343" bodyend="453" declfile="/home/vsc/github/yap/os/absf.c" declline="41" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1ae1b8622be4af043dc5e3b568e233528a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term gethdir</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>gethdir</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="43" column="13" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="43" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1ac556546ecda070221eb288ade62a8f73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term issolutions</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>issolutions</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="71" column="13" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="71" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a2e79c3d2bffe330829a0b9863797572c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term is_file_errors</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>is_file_errors</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="87" column="13" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="87" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1ac4eb3b3b1f3f75d5cbec3f7a63d7180a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term is_file_type</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>is_file_type</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="104" column="13" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="104" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1af1a027cf714fc25e8627d17fd4c7f913" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char * myrealpath</definition>
+        <argsstring>(const char *path USES_REGS)</argsstring>
+        <name>myrealpath</name>
+        <param>
+          <type>const char *path</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="124" column="23" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="124" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a4f82f9c05f67934d1e11178ffd5f999f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * Yap_AbsoluteFile</definition>
+        <argsstring>(const char *spec, bool ok)</argsstring>
+        <name>Yap_AbsoluteFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ok</declname>
+        </param>
+        <briefdescription>
+<para>generate absolute path, if ok first expand SICStus Prolog style </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file path, including <computeroutput>~</computeroutput> and <computeroutput>$</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to process <computeroutput>~</computeroutput> and <computeroutput>$</computeroutput></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tmp, or NULL, in malloced memory </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>spec gothe original spec;</para>
+<para>rc0 may be an outout buffer rc1 the internal buffer</para>
+<para>PlExpandVars</para>
+<para>spec gothe original spec; rc1 the internal buffer</para>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="147" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="147" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1aff3a1d258061a0af2f624aa3d502eff5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int real_path</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>real_path</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="460" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="460" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a0ec99575fe3d619d65e2445c7c73af4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_IsAbsolutePath</definition>
+        <argsstring>(const char *p0, bool expand)</argsstring>
+        <name>Yap_IsAbsolutePath</name>
+        <param>
+          <type>const char *</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>expand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="514" column="6" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="514" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a93bb2341cc450188ac7b2c713eea757b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int true_file_name</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>true_file_name</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="532" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="532" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a838c70847aef7eeeef83583a1f0336a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int absolute_file_system_path</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>absolute_file_system_path</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="559" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="559" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1ae3a678e0512dded26ba9fbf4b437c6a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int prolog_to_os_filename</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>prolog_to_os_filename</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="579" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="579" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a7ee41d36c1c26b20fd3078c0736478e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * Yap_GetFileName</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>Yap_GetFileName</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="608" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="608" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1aef1b22a80eef68b7832caf475b315a65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int file_name_extension</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>file_name_extension</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="642" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="642" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a0d7c8a18b2e4b13bc3b2ac0bfabf5a42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_expand_file_name</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_expand_file_name</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="803" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="803" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1ab4056fc703bdfbb0727f3a3d4b10b223" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int true_file_name3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>true_file_name3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="826" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="826" bodyend="850"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1aae7fa71a006b87b32c48a81820c1c731" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int path_concat</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>path_concat</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="852" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="852" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1af0a0a02da64f0935c352eca99d934cb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int abs_file_parameters</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>abs_file_parameters</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="918" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="918" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a630a33428f21fbedc35f55ec7e979bd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int get_abs_file_parameter</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>get_abs_file_parameter</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="986" column="12" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="986" bodyend="996"/>
+      </memberdef>
+      <memberdef kind="function" id="absf_8c_1a241e3ae09029c9c89bf76feab16724ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitAbsfPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitAbsfPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/os/absf.c" line="999" column="6" bodyfile="/home/vsc/github/yap/os/absf.c" bodystart="999" bodyend="1012"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>absolute file name: C ut in a different light </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>VITOR SANTOS COSTA <ulink url="mailto:vsc@VITORs-MBP.lan">vsc@VITORs-MBP.lan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>Wed Jan 20 00:45:56 2016</para>
+</simplesect>
+lo *</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/absf.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Tick__Profiler" kind="group">
+    <compoundname>Tick_Profiler</compoundname>
+    <title>Tick Profiler</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__Tick__Profiler_1ga2562cee4d001fd40c055b4c29764e277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitLowProf</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitLowProf</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/gprof.c" line="1202" column="1" bodyfile="/home/vsc/github/yap/C/gprof.c" bodystart="1202" bodyend="1220"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__Tick__Profiler_1ga206b2d8cdb98eca05af663ed89c61a04" prot="public" static="no">
+        <name>CONTEXT_PC</name>
+        <param><defname>scv</defname></param>
+        <initializer>NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/gprof.c" line="141" column="9" bodyfile="/home/vsc/github/yap/C/gprof.c" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Tick__Profiler_1ga56273a5e8188ab1fd24bae65b8ad0113" prot="public" static="no">
+        <name>CONTEXT_BP</name>
+        <param><defname>scv</defname></param>
+        <initializer>NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/gprof.c" line="142" column="9" bodyfile="/home/vsc/github/yap/C/gprof.c" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The tick profiler works by interrupting the Prolog code every so often and checking at each point the code was. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The profiler must be able to retrace the state of the abstract machine at every moment The major advantage of this approach is that it gives the actual amount of time being spent per procedure, or whether garbage collection dominates execution time The major drawback is that tracking down the state of the abstract machine may take significant time, and in the worst case may slow down the whole execution</para>
+<para>The following procedures are available:</para>
+<para><itemizedlist>
+<listitem><para>profinit</para>
+</listitem></itemizedlist>
+</para>
+<para>Initialise the data-structures for the profiler Unnecessary for dynamic profiler</para>
+<para><itemizedlist>
+<listitem><para>profon</para>
+</listitem></itemizedlist>
+</para>
+<para>Start profiling</para>
+<para><itemizedlist>
+<listitem><para>profoff</para>
+</listitem></itemizedlist>
+</para>
+<para>Stop profiling</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

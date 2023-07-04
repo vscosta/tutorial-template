@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptop" kind="concept">
+    <compoundname>op</compoundname>
+    <initializer>template&lt;&gt;
+concept op =     </initializer>
+    <briefdescription>
+<para>+ 0:P is iso, meta Negation by failure </para>
+    </briefdescription>
+    <detaileddescription>
+<para>tabling_statistics/0</para>
+<para><computeroutput>C</computeroutput>( <emphasis>S1</emphasis>, <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>, <emphasis>S2</emphasis>)</para>
+<para>&apos;enter_creep&apos;([M|G])<itemizedlist>
+<listitem></listitem><listitem></listitem><listitem><para>Goal <emphasis>P</emphasis> is not provable The execution of this predicate fails if and only if the goal <emphasis>P</emphasis> finitely succeeds It is not a true logical negation, which is impossible in standard Prolog, but &quot;negation-by-failure&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para>This predicate might be defined as:</para>
+<para><programlisting><codeline><highlight class="keyword">\+(</highlight><highlight class="charliteral">P</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">P</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">.</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">\+</highlight><highlight class="normal">(</highlight><highlight class="charliteral">_</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> if <emphasis>P</emphasis> did not include &quot;cuts&quot;</para>
+<para>If <emphasis>P</emphasis> includes cuts, the cuts are defined to be scoped by <emphasis>P</emphasis>: they cannot cut over the calling prredicate</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">go(</highlight><highlight class="charliteral">P</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="keyword">\+</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">P</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">go,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">go.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">\+(</highlight><highlight class="charliteral">_</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>This predicate is used by the grammar rules compiler and is defined as <computeroutput>C</computeroutput>([H|T],H,<ref refid="classT" kindref="compound">T</ref>)`</para>
+<para>Prints statistics on space used by all tables </para>
+    </detaileddescription>
+    <location file="pl/builtins.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

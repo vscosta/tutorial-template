@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="concept" kind="concept">
+    <compoundname></compoundname>
+    <initializer>template&lt;&gt;
+concept  =     </initializer>
+    <briefdescription>
+<para><emphasis>X</emphasis> = <emphasis>Y</emphasis> is iso </para>
+    </briefdescription>
+    <detaileddescription>
+<para>statistics/0</para>
+<para>$stop_at_this_goal( Goal, Module, Id)<itemizedlist>
+<listitem><para>debugger should prompt the user if:</para>
+</listitem></itemizedlist>
+</para>
+<para>% make sure we can continue debugging</para>
+<para>$enter_debugging(G,Mod,CP,G0,NG) %% Internal predicate called by top-level; enable creeping on a goal by just switching execution to debugger</para>
+<para>^(<emphasis>Var</emphasis>,<emphasis>Goal</emphasis>) % The &quot;existential quantifier&quot; symbol is only significant in bagof, setof and similar, where it stops choosing on the quantified variable <emphasis>Var</emphasis></para>
+<para>output error location</para>
+<para>$slave is det</para>
+<para>[ - <emphasis>F</emphasis> ]</para>
+<para>[ <emphasis>F</emphasis> ]</para>
+<para>&apos;$go_compile_clause&apos;(G,Vs,Pos, Where, Source) is det % interfaces the loader and the compiler not 100% compatible with SICStus Prolog, as SICStus Prolog would put module prefixes all over the place, although unnecessarily so</para>
+<para>$load_files(Module, Path, OPtions, InitialGoal) %% actual interface to file-loading machinery</para>
+<para>@predicate is_not(+Type, :Term) % % Throws appropriate error</para>
+<para>@Pred &apos;$enter_trace&apos;(+L, 0:G, +Module, +Info)<itemizedlist>
+<listitem><para>call goal: prelims</para>
+</listitem><listitem><para>@parameter <emphasis>Module</emphasis>:<emphasis>G</emphasis> @parameter <emphasis>L</emphasis> is the list of active goals @parameter <emphasis>Info</emphasis> describes the goal</para>
+</listitem><listitem><para>debugger_io</para>
+</listitem></itemizedlist>
+</para>
+<para>$trace( +Goal, +Context )<itemizedlist>
+<listitem><para>This launches a goal from the debugger with the call</para>
+</listitem></itemizedlist>
+</para>
+<para>$spy( +Goal ) *(Goal)`</para>
+<para><itemizedlist>
+<listitem><para><emphasis>P</emphasis> is nondet</para>
+</listitem></itemizedlist>
+</para>
+<para>0:Condition *-&gt; 0:Action is iso</para>
+<para>0:Condition -&gt; 0:Action is iso</para>
+<para>0:P ; 0:Q is iso Disjuncjtion of goals (or)</para>
+<para>0:P,0:Q is iso, meta Conjunction of goals (and)</para>
+<para>user&quot;goal_expansion(+ &lt;em&gt;G&lt;/em&gt;,+ &lt;em&gt;M&lt;/em&gt;,- &lt;em&gt;NG&lt;/em&gt;)
+
+Module:project_attributes( +AttrVars, +Goal)
+
+Module:attribute_goal( -Var, Goal)
+
+@pred min_of_heap(+ &lt;em&gt;Heap&lt;/em&gt;,  - &lt;em&gt;Key1&lt;/em&gt;,  - &lt;em&gt;Datum1&lt;/em&gt;, -_Key2_,  - &lt;em&gt;Datum2&lt;/em&gt;)
+%
+  returns the smallest (Key1) and second smallest (Key2) pairs in
+  the heap, without deleting them
+
+@pred get_from_heap(+ &lt;em&gt;Heap&lt;/em&gt;,- &lt;em&gt;key&lt;/em&gt;,- &lt;em&gt;Datum&lt;/em&gt;,- &lt;em&gt;Heap&lt;/em&gt;)
+%
+  returns the Key-Datum pair in OldHeap with the smallest Key, and
+  also a New Heap which is the Old Heap with that pair deleted
+
+Module:verify_attributes( &lt;em&gt;-Var&lt;/em&gt;,  &lt;em&gt;+Value&lt;/em&gt;,  &lt;em&gt;-Goals&lt;/em&gt;)
+
+Module:put_atts( &lt;em&gt;-Var&lt;/em&gt;, &lt;em&gt;?ListOfAttributes&lt;/em&gt;)
+
+Module:get_atts( &lt;em&gt;-Var&lt;/em&gt;, &lt;em&gt;?ListOfAttributes&lt;/em&gt;)
+
+Yap_Unnumbervars(+ &lt;em&gt;Term&lt;/em&gt;)
+
+$copy_operators(+Mode, +ModTarget)
+
+&lt;em&gt;X&lt;/em&gt; \=  &lt;em&gt;Y&lt;/em&gt; is iso
+
+Tries to unify terms  &lt;em&gt;X&lt;/em&gt; and  &lt;em&gt;Y&lt;/em&gt;
+
+Succeeds if terms  &lt;em&gt;X&lt;/em&gt; and  &lt;em&gt;Y&lt;/em&gt; are not unifiable
+
+Copy all operators in ModSource to ModTarget
+
+ : &lt;em&gt;Mod&lt;/em&gt; is the current read-in or source module
+
+Replace all terms of the form $VAR(_) by unbound variables
+
+Unify the list  &lt;em&gt;?ListOfAttributes&lt;/em&gt; with the attributes for the unbound
+variable  &lt;em&gt;Var&lt;/em&gt; Each member of the list must be a bound term of the
+form &lt;tt&gt;+( _Attribute_)&lt;/tt&gt;, &lt;tt&gt;-( _Attribute_)&lt;/tt&gt; (the &lt;tt&gt;kbd&lt;/tt&gt;
+prefix may be dropped) The meaning of &lt;tt&gt;+&lt;/tt&gt; and &lt;tt&gt;-&lt;/tt&gt; is:
+   + +( &lt;em&gt;Attribute&lt;/em&gt;)
+   Unifies  &lt;em&gt;Attribute&lt;/em&gt; with a corresponding attribute associated with
+   &lt;em&gt;Var&lt;/em&gt;, fails otherwise
+
+   + -( &lt;em&gt;Attribute&lt;/em&gt;)
+   Succeeds if a corresponding attribute is not associated with
+   &lt;em&gt;Var&lt;/em&gt; The arguments of  &lt;em&gt;Attribute&lt;/em&gt; are ignored
+
+Associate with or remove attributes from a variable  &lt;em&gt;Var&lt;/em&gt; The
+attributes are given in  &lt;em&gt;?ListOfAttributes&lt;/em&gt;, and the action depends
+on how they are prefixed:
+
+   + +( &lt;em&gt;Attribute&lt;/em&gt; )
+   Associate  &lt;em&gt;Var&lt;/em&gt; with  &lt;em&gt;Attribute&lt;/em&gt; A previous value for the
+   attribute is simply replace (like with &lt;tt&gt;@ref set_mutable/2 &lt;/tt&gt;)
+
+   + -( &lt;em&gt;Attribute&lt;/em&gt; )
+   Remove the attribute with the same name If no such attribute existed,
+   simply succeed
+
+The predicate is called when trying to unify the attributed variable
+ &lt;em&gt;Var&lt;/em&gt; with the Prolog term  &lt;em&gt;Value&lt;/em&gt; Note that  &lt;em&gt;Value&lt;/em&gt; may be
+itself an attributed variable, or may contain attributed variables  The
+goal &lt;tt&gt;@ref verify_attributes/3 &lt;/tt&gt; is actually called before  &lt;em&gt;Var&lt;/em&gt; is
+unified with  &lt;em&gt;Value&lt;/em&gt;
+
+It is up to the user to define which actions may be performed by
+&lt;tt&gt;@ref verify_attributes/3 &lt;/tt&gt; but the procedure is expected to return in
+ &lt;em&gt;Goals&lt;/em&gt; a list of goals to be called &lt;em&gt;after&lt;/em&gt;  &lt;em&gt;Var&lt;/em&gt; is
+unified with  &lt;em&gt;Value&lt;/em&gt; If &lt;tt&gt;@ref verify_attributes/3 &lt;/tt&gt; fails, the
+unification will fail
+
+Notice that the &lt;tt&gt;@ref verify_attributes/3 &lt;/tt&gt; may be called even if  &lt;em&gt;Var&lt;/em&gt;&lt;
+has no attributes in module &lt;tt&gt;Module&lt;/tt&gt; In this case the routine should
+simply succeed with  &lt;em&gt;Goals&lt;/em&gt; unified with the empty list
+
+  The easy part is picking off the smallest element  The hard part
+  is repairing the heap structure  @ref repair_heap/4  takes a pair of
+  heaps and returns a new heap built from their elements, and the
+  position number of the gap in the new tree  Note that repair_heap
+  is &lt;em&gt;not&lt;/em&gt; tail-recursive
+
+  It fails if the heap does not
+  have at least two elements
+
+User-defined procedure, called to convert the attributes in  &lt;em&gt;Var&lt;/em&gt; to
+a  &lt;em&gt;Goal&lt;/em&gt; Should fail when no interpretation is available
+
+Given a goal &lt;em&gt;Goal&lt;/em&gt; with variables  &lt;em&gt;QueryVars&lt;/em&gt; and list of attributed
+variables  &lt;em&gt;AttrVars&lt;/em&gt;, project all attributes in  &lt;em&gt;AttrVars&lt;/em&gt; to
+ &lt;em&gt;QueryVars&lt;/em&gt; Although projection is constraint system dependent,
+typically this will involve expressing all constraints in terms of
+ &lt;em&gt;QueryVars&lt;/em&gt; and considering all remaining variables as existentially
+quantified
+
+Projection interacts with @ref attribute_goal/2  at the Prolog top
+level When the query succeeds, the system first calls
+@ref project_attributes/2  The system then calls
+@ref attribute_goal/2  to get a user-level representation of the
+constraints Typically, @ref project_attributes/2  will convert from the
+original constraints into a set of new constraints on the projection,
+and these constraints are the ones that will have an
+@ref attribute_goal/2  handler
+
+also available: Module:goal_expansion(+ &lt;em&gt;G&lt;/em&gt;,+ &lt;em&gt;M&lt;/em&gt;,- &lt;em&gt;NG&lt;/em&gt;)
+
+
+YAP supports @ref goal_expansion/3  This is an user-defined
+procedure that is called after term expansion when compiling or
+asserting goals for each sub-goal in a clause The first argument is
+bound to the goal and the second to the module under which the goal
+ &lt;em&gt;G&lt;/em&gt; will execute If @ref goal_expansion/3  succeeds the new
+sub-goal  &lt;em&gt;NG&lt;/em&gt; will replace  &lt;em&gt;G&lt;/em&gt; and will be processed in the same
+ way If @ref goal_expansion/3  fails the system will use the defaultyap+flrules
+
+The conjunction is a fundamental construct of Prolog Example:
+
+@code 
+ p(X) :- q(X), r(X).
+@endcode
+
+should be read as `p( &lt;em&gt;X&lt;/em&gt;) if q( &lt;em&gt;X&lt;/em&gt;) and r( &lt;em&gt;X&lt;/em&gt;)
+
+Example:
+
+@code 
+ p(X) :- q(X); r(X).
+@endcode
+should be read as &quot;p( _X_) if q( _X_) or r( _X_)&quot;
+
+If &lt;em&gt;Condition__ has a solution, call _Action&lt;/em&gt;;
+
+@long
+Read as &quot;if-then-else&quot; or &quot;commit&quot; This operator is similar to the
+conditional operator of imperative languages and can be used alone or
+with an else part as follows:
+
+
+@code 
+    +P -&gt; +Q
+@endcode
+
+&quot;if P then Q&quot;
+
+
+@code 
+  +P -&gt; +Q; +R
+@endcode
+
+&quot;if P then Q else R&quot;
+
+These two predicates could be defined respectively in Prolog as:
+
+@code 
+ (P -&gt; Q) :- P, !, Q.
+@endcode
+and
+
+@code 
+ (P -&gt; Q; R) :- P, !, Q.
+ (P -&gt; Q; R) :- R.
+@endcode
+if there were no &quot;cuts&quot; in  &lt;em&gt;P&lt;/em&gt;,  &lt;em&gt;Q&lt;/em&gt; and  &lt;em&gt;R&lt;/em&gt;
+
+vNote that the commit operator works by &quot;cutting" any alternative solutions of <emphasis>P</emphasis></para>
+<para>Note also that you can use chains of commit operators like:</para>
+<para><programlisting><codeline><highlight class="normal">P<sp/>-&gt;<sp/>Q<sp/>;<sp/>R<sp/>-&gt;<sp/>S<sp/>;<sp/><ref refid="classT" kindref="compound">T</ref>.</highlight></codeline>
+</programlisting> Note that <computeroutput>(-&gt;)/2 </computeroutput> does not affect the scope of cuts in its arguments</para>
+<para>This construct implements the so-called <emphasis>soft-cut</emphasis> The control is defined as follows:<itemizedlist>
+<listitem><para>If <emphasis>Condition</emphasis> succeeds at least once, the semantics is the same as ( <emphasis>Condition</emphasis>, <emphasis>Action</emphasis>)</para>
+</listitem><listitem><para>If <emphasis>Condition</emphasis> does not succeed, the semantics is that of (\+ <emphasis>Condition</emphasis>, <emphasis>Else</emphasis>)</para>
+</listitem></itemizedlist>
+</para>
+<para>In other words, if <emphasis>Condition</emphasis> succeeds at least once, simply behave as the conjunction of <emphasis>Condition</emphasis> and <emphasis>Action</emphasis>, otherwise execute <emphasis>Else</emphasis></para>
+<para>The construct <emphasis>A *-&gt; B</emphasis>, i.e without an <emphasis>Else</emphasis> branch, is translated as the normal conjunction <emphasis>A</emphasis>, <emphasis>B</emphasis></para>
+<para>The same as <computeroutput>call( _P_)</computeroutput> This feature has been kept to provide compatibility with C-Prolog When compiling a goal, YAP generates a <computeroutput>call( _X_)</computeroutput> whenever a variable <emphasis>X</emphasis> is found as a goal</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">X</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> is converted to:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">call(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>It must:<itemizedlist>
+<listitem><para>disable user interaction;</para>
+</listitem><listitem><para>verify whether debugging is still ok;</para>
+</listitem><listitem><para>enter the debugger core The top gated_call should set up creeping for the next call</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&lt;em&gt;Mod&lt;/em&gt;:&lt;em&gt;Goal&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the goal to be examined </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>call(Goal)</computeroutput></para>
+</simplesect>
+<itemizedlist>
+<listitem><para>set up the stream used for debugging,<itemizedlist>
+<listitem><para>must be interactive</para>
+</listitem><listitem><para>default is <computeroutput>user_input</computeroutput>, but /dev/tty and CONIN$ can be used directly if user_input is bound to a file</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>&apos;$trace_go&apos;(+L, 0:G, +Module, +Info)</para>
+</listitem><listitem><para>It needs to run in two separate steps:<orderedlist>
+<listitem><para>Select a clause;</para>
+</listitem><listitem><para>Debug it We use a marker to track who we are in gated_call</para>
+</listitem></orderedlist>
+</para>
+</listitem><listitem><para>@parameter <emphasis>Module</emphasis>:<emphasis>G</emphasis> @parameter <emphasis>GoalNumber</emphasis> identifies the active goal @parameter <emphasis>Info</emphasis> describes the goal</para>
+</listitem><listitem><para>It is <emphasis>known</emphasis> that Term is not of type % Type % % @error type_error(Type, Term) % @error instantiation_error</para>
+</listitem></itemizedlist>
+</para>
+<para>% <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&lt;em&gt;G&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the clause to compile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">&lt;em&gt;Vs&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a list of variables and their name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">&lt;em&gt;Pos&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source-code position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">&lt;em&gt;N&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a flag telling whether to add first or last </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">&lt;em&gt;Source&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user-tranasformed clause</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Called at boot-time when Prolog is run from another language (eg, Java, Python, Android)</para>
+<para><itemizedlist>
+<listitem><para>% If run on its oWnl, just calls <emphasis>Goal</emphasis> %</para>
+</listitem></itemizedlist>
+</para>
+<para>%%</para>
+<para>%</para>
+<para>$enable_debugging %% Internal predicate called when exiting the debuger through a port; enable creeping on the next goal %%</para>
+<para><itemizedlist>
+<listitem><para>creep on</para>
+</listitem><listitem><para>spy point enabled</para>
+</listitem><listitem><para>the goal is older than ourselves: Id is bound and Id &lt;= StateGoal</para>
+</listitem></itemizedlist>
+</para>
+<para>Send to the current user error stream general information on space used and time spent by the system</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>statistics.</highlight></codeline>
+<codeline><highlight class="normal">memory<sp/>(total)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4784124<sp/>bytes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>program<sp/>space<sp/><sp/><sp/><sp/><sp/><sp/>3055616<sp/>bytes:<sp/><sp/><sp/><sp/>1392224<sp/>in<sp/>use,<sp/><sp/><sp/><sp/><sp/><sp/>1663392<sp/>free</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2228132<sp/><sp/>max</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>stack<sp/>space<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1531904<sp/>bytes:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>464<sp/>in<sp/>use,<sp/><sp/><sp/><sp/><sp/><sp/>1531440<sp/>free</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>global<sp/>stack:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>96<sp/>in<sp/>use,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>616684<sp/><sp/>max</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>local<sp/>stack:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>368<sp/>in<sp/>use,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>546208<sp/><sp/>max</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>trail<sp/>stack<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>196604<sp/>bytes:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8<sp/>in<sp/>use,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>196596<sp/>free</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.010<sp/>sec.<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>5<sp/>code,<sp/>2<sp/>stack,<sp/>and<sp/>1<sp/>trail<sp/>space<sp/>overflows</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.130<sp/>sec.<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>3<sp/>garbage<sp/>collections<sp/>which<sp/>collected<sp/>421000<sp/>bytes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.000<sp/>sec.<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>0<sp/>atom<sp/>garbage<sp/>collections<sp/>which<sp/>collected<sp/>0<sp/>bytes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.880<sp/>sec.<sp/>runtime</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.020<sp/>sec.<sp/>cputime</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>25.055<sp/>sec.<sp/>elapsed<sp/>time</highlight></codeline>
+</programlisting> The example shows how much memory the system spends Memory is divided into Program Space, Stack Space and Trail In the example we have 3MB allocated for program spaces, with less than half being actually used YAP also shows the maximum amount of heap space having been used which was over 2MB</para>
+<para>The stack space is divided into two stacks which grow against each other We are in the top level so very little stack is being used On the other hand, the system did use a lot of global and local stack during the previous execution (we refer the reader to a WAM tutorial in order to understand what are the global and local stacks)</para>
+<para>YAP also shows information on how many memory overflows and garbage collections the system executed, and statistics on total execution time Cputime includes all running time, runtime excludes garbage collection and stack overflow time </para>
+    </detaileddescription>
+    <location file="C/cmppreds.c" line="505" column="1"/>
+  </compounddef>
+</doxygen>

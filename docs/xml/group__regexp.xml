@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__regexp" kind="group">
+    <compoundname>regexp</compoundname>
+    <title>Regular Expressions</title>
+    <innerfile refid="cclass_8h">cclass.h</innerfile>
+    <innerfile refid="cname_8h">cname.h</innerfile>
+    <innerfile refid="engine_8c">engine.c</innerfile>
+    <innerfile refid="regcomp_8c">regcomp.c</innerfile>
+    <innerfile refid="regerror_8c">regerror.c</innerfile>
+    <innerfile refid="regexp_8c">regexp.c</innerfile>
+    <innerclass refid="classregexp_23" prot="public">regexp/3</innerclass>
+    <innerclass refid="classregexp_24" prot="public">regexp/4</innerclass>
+    <briefdescription>
+<para>This library includes routines to determine whether a regular expression matches part or all of a string. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The routines can also return which parts parts of the string matched the expression or subexpressions of it This library relies on Henry Spencer&apos;s <computeroutput>C</computeroutput>-package and is only available in operating systems that support dynamic loading The <computeroutput>C</computeroutput>-code has been obtained from the sources of FreeBSD-4.0 and is protected by copyright from Henry Spencer and from the Regents of the University of California (see the file library/regex/COPYRIGHT for further details)</para>
+<para>Much of the description of regular expressions below is copied verbatim from Henry Spencer&apos;s manual page</para>
+<para>A regular expression is zero or more branches, separated by `<computeroutput>|</computeroutput> It matches anything that matches one of the branches</para>
+<para>A branch is zero or more pieces, concatenated It matches a match for the first, followed by a match for the second, etc</para>
+<para>A piece is an atom possibly followed by <computeroutput>\*</computeroutput>, <computeroutput>+</computeroutput>, or <computeroutput>?</computeroutput> An atom followed by <computeroutput>\*</computeroutput> matches a sequence of 0 or more matches of the atom An atom followed by <computeroutput>+</computeroutput> matches a sequence of 1 or more matches of the atom An atom followed by <computeroutput>?</computeroutput> matches a match of the atom, or the null string</para>
+<para>An atom is a regular expression in parentheses (matching a match for the regular expression), a range (see below), <computeroutput></computeroutput> (matching any single character), <computeroutput>^</computeroutput> (matching the null string at the beginning of the input string), <computeroutput>$</computeroutput> (matching the null string at the end of the input string), a <computeroutput>\</computeroutput> followed by a single character (matching that character), or a single character with no other significance (matching that character)</para>
+<para>A range is a sequence of characters enclosed in <computeroutput>[]</computeroutput> It normally matches any single character from the sequence If the sequence begins with <computeroutput>^</computeroutput>, it matches any single character not from the rest of the sequence If two characters in the sequence are separated by <computeroutput>-</computeroutput>, this is shorthand for the full list of ASCII characters between them (e.g <computeroutput>[0-9]</computeroutput> matches any decimal digit) To include a literal <computeroutput>]</computeroutput> in the sequence, make it the first character (following a possible <computeroutput>^</computeroutput>) To include a literal <computeroutput>-</computeroutput>, make it the first or last character</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__cleanup" kind="group">
+    <compoundname>cleanup</compoundname>
+    <title>Old Call Cleanup</title>
+    <innerclass refid="classcleanup__all_20" prot="private">cleanup_all/0</innerclass>
+    <innerclass refid="classon__cleanup_21" prot="public">on_cleanup/1</innerclass>
+    <briefdescription>
+<para>% call_cleanup/1 and <ref refid="classcall__cleanup_22" kindref="compound">call_cleanup/2</ref> allow predicates to register code for execution after the call is finished </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Predicates can be declared to be fragile to ensure that call_cleanup is called for any Goal which needs it This library is loaded with the <computeroutput>use_module(library(cleanup))</computeroutput> command % <ref refid="cleanup_8yap" kindref="compound">cleanup.yap</ref> Copyright (C) 2002 by Christian Thaeter % public interface: % :- fragile name/arity declares the predicate denoted by name/arity as fragile predicate Whenever such a fragile predicate is used in a query it will be called through call_cleanup/1 % call_cleanup(Goal) call_cleanup(Goal,CleanUpGoal) Goal will be called in a cleanup-context, where any registered CleanUpGoal inside of that context will be called when Goal is left, either by a fail, cut or exeption It is possible to nest cleanup contexts % on_cleanup(CleanUpGoal) registers CleanUpGoal to the current cleanup context CleanUpGoal&apos;s are executed in reverse order of their registration throws an exception if called outside of any cleanup-context % cleanup_all calls all pending CleanUpGoals and resets the cleanup-system to an initial state should only be used as one of the last calls in the main program % hidden predicates: most private predicates could also be used in special cases, such as manually setting up cleanup-contexts Read the Source</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

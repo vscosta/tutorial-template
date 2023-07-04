@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptmpi__isend_24" kind="concept">
+    <compoundname>mpi_isend/4</compoundname>
+    <initializer>template&lt;&gt;
+concept mpi_isend/4 =     </initializer>
+    <briefdescription>
+<para><bold>mpi_isend</bold>(+ <emphasis>Data</emphasis>,+ <emphasis>Dest</emphasis>,+ <emphasis>Tag</emphasis>,- <emphasis>Handle</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Non blocking communication predicate The message in <emphasis>Data</emphasis>, with tag <emphasis>Tag</emphasis>, is sent whenever possible to the processor with rank <emphasis>Dest</emphasis> An <emphasis>Handle</emphasis> to the message is returned to be used to check for the status of the message, using the <computeroutput>mpi_wait</computeroutput> or <computeroutput>mpi_test</computeroutput> predicates Until <computeroutput>mpi_wait</computeroutput> is called, the memory allocated for the buffer containing the message is not released </para>
+    </detaileddescription>
+    <location file="library/mpi/mpi.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

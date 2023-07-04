@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classterm__expansion_22" kind="class" language="Prolog" prot="public">
+    <compoundname>term_expansion/2</compoundname>
+    <briefdescription>
+<para><bold>term_expansion</bold>( <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>,- <emphasis>X</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>also available <emphasis>CurrentModule</emphasis>:term_expansion( <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>,- <emphasis>X</emphasis>),</para>
+<para>This user-defined predicate is called by <computeroutput>expand_term/3 </computeroutput> to preprocess all terms read when consulting a file If it succeeds:</para>
+<para><itemizedlist>
+<listitem><para>If <emphasis>X</emphasis> is of the form <computeroutput>:- G</computeroutput> or <computeroutput>?- G</computeroutput>, it is processed as a directive</para>
+</listitem><listitem><para>If <emphasis>X</emphasis> is of the form <computeroutput>$source_location</computeroutput>( <emphasis>File</emphasis>, <emphasis>Line</emphasis>): <emphasis>Clause</emphasis><computeroutput>it is processed as if from</computeroutput>File<computeroutput>and line</computeroutput>Line`</para>
+</listitem><listitem><para>If <emphasis>X</emphasis> is a list, all terms of the list are asserted or processed as directives</para>
+</listitem><listitem><para>The term <emphasis>X</emphasis> is asserted instead of <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/boot.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/boot.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

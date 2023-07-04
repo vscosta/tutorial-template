@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="locks__mips__funcs_8h" kind="file" language="C++">
+    <compoundname>locks_mips_funcs.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="locks__mips__funcs_8h_1a74cb9c7cf5a7ad0f87f57a8f3eb723a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ int</type>
+        <definition>static __inline__ int test_and_set_bit</definition>
+        <argsstring>(int nr, volatile void *addr)</argsstring>
+        <name>test_and_set_bit</name>
+        <param>
+          <type>int</type>
+          <declname>nr</declname>
+        </param>
+        <param>
+          <type>volatile void *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" line="18" column="23" bodyfile="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" bodystart="18" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__mips__funcs_8h_1ad3997f1b2a7eb84d6ad7109019a16de7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _spin_lock</definition>
+        <argsstring>(__dummy_lock_t *lock)</argsstring>
+        <name>_spin_lock</name>
+        <param>
+          <type><ref refid="struct____dummy__lock__t" kindref="compound">__dummy_lock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" line="31" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" bodystart="31" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__mips__funcs_8h_1a544fdf41601ead3b135d47d246242ff9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void spin_unlock</definition>
+        <argsstring>(__dummy_lock_t *lock)</argsstring>
+        <name>spin_unlock</name>
+        <param>
+          <type><ref refid="struct____dummy__lock__t" kindref="compound">__dummy_lock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" line="49" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" bodystart="49" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__mips__funcs_8h_1a4226adb95d57b74dcc9dc9bdd388bf57" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _read_lock</definition>
+        <argsstring>(rwlock_t *rw)</argsstring>
+        <name>_read_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>rw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" line="61" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" bodystart="61" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__mips__funcs_8h_1aacdab1f29415130684d1185ff1743b29" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _read_unlock</definition>
+        <argsstring>(rwlock_t *rw)</argsstring>
+        <name>_read_unlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>rw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" line="82" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" bodystart="82" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__mips__funcs_8h_1ac780a77dcac9e7f0dc63c0e26a17d254" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _write_lock</definition>
+        <argsstring>(rwlock_t *rw)</argsstring>
+        <name>_write_lock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>rw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" line="98" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" bodystart="98" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="locks__mips__funcs_8h_1a506dc90b24283b2ece75568cc1c19f6c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _write_unlock</definition>
+        <argsstring>(rwlock_t *rw)</argsstring>
+        <name>_write_unlock</name>
+        <param>
+          <type><ref refid="structrwlock__t" kindref="compound">rwlock_t</ref> *</type>
+          <declname>rw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" line="116" column="20" bodyfile="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h" bodystart="116" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/OPTYap/locks_mips_funcs.h"/>
+  </compounddef>
+</doxygen>

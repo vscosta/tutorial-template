@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptgenarg_23" kind="concept">
+    <compoundname>genarg/3</compoundname>
+    <initializer>template&lt;&gt;
+concept genarg/3 =     </initializer>
+    <briefdescription>
+<para><bold>genarg</bold>( ?Index, +Term , -Arg ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Similar to <ref refid="classarg_23" kindref="compound">arg/3</ref> , but it can also backtrack through <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis>&apos;s arguments, that is:</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>arg:genarg(I,<sp/>f(a,b),<sp/>A).</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>=<sp/>a,</highlight></codeline>
+<codeline><highlight class="normal">I<sp/>=<sp/>1.</highlight></codeline>
+<codeline><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>=<sp/>b,</highlight></codeline>
+<codeline><highlight class="normal">I<sp/>=<sp/>2.</highlight></codeline>
+</programlisting></para>
+<para>Note: SWI-Prolog defines <ref refid="classarg_23" kindref="compound">arg/3</ref> as <ref refid="classgenarg_23" kindref="compound">genarg/3</ref> </para>
+    </detaileddescription>
+    <location file="C/inlines.c" line="1090" column="1"/>
+  </compounddef>
+</doxygen>

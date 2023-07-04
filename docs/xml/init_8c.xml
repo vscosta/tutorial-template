@@ -1,0 +1,1530 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="init_8c" kind="file" language="C++">
+    <compoundname>init.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="alloc_8h" local="yes">alloc.h</includes>
+    <includes refid="clause_8h" local="yes">clause.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="Foreign_8h" local="yes">Foreign.h</includes>
+    <includes refid="iglobals_8h" local="yes">iglobals.h</includes>
+    <includes refid="ilocals_8h" local="yes">ilocals.h</includes>
+    <includes refid="ihstruct_8h" local="yes">ihstruct.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/C/init.c</label>
+        <link refid="init_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Foreign.h</label>
+        <link refid="Foreign_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>iatoms.h</label>
+        <link refid="iatoms_8h_source"/>
+      </node>
+      <node id="61">
+        <label>iglobals.h</label>
+        <link refid="iglobals_8h_source"/>
+      </node>
+      <node id="63">
+        <label>ihstruct.h</label>
+        <link refid="ihstruct_8h_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>ilocals.h</label>
+        <link refid="ilocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="54">
+        <label>terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="57">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="59">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structOPSTRUCT" prot="public">OPSTRUCT</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="init_8c_1a9304591d674404fba43581fdd33e4fe8" prot="public" static="no">
+        <name>__INIT_C__</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="26" column="9" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__Operators_1ga1389d67cc667f85023edcded9e962b01" kind="define"><name>xfx</name></member>
+      <member refid="group__Operators_1ga2a2e3fc8dcaeeb271f47d1c4bc81ee2f" kind="define"><name>xfy</name></member>
+      <member refid="group__Operators_1gafb07535327ab83eef6d88cbb667c0740" kind="define"><name>yfx</name></member>
+      <member refid="group__Operators_1ga632f8e33d2cccb50a9dbe9339bb14f1c" kind="define"><name>xf</name></member>
+      <member refid="group__Operators_1gaae8d300fc0d0fbdf09ace914fc886a46" kind="define"><name>yf</name></member>
+      <member refid="group__Operators_1gad2e4727a6cf0085d054c56ac03891665" kind="define"><name>fx</name></member>
+      <member refid="group__Operators_1gaa945d72ec8a9d6422679186c0ce9b21e" kind="define"><name>fy</name></member>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <member refid="group__Operators_1ga8f0ff3cdec36807ba3c4bd51bf297b47" kind="typedef"><name>Opdef</name></member>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="init_8c_1a9a1f8e738f5818b5e79f81f2bfb60081" prot="public" static="no" mutable="no">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom AtomFoundVar</definition>
+        <argsstring></argsstring>
+        <name>AtomFoundVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="63" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1a7f22e7a6fa11b80637a1ae4c7b004afb" prot="public" static="no" mutable="no">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom AtomFreeTerm</definition>
+        <argsstring></argsstring>
+        <name>AtomFreeTerm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="63" column="19" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1ad8a5cef05b43e969d5f661cafcdff563" prot="public" static="no" mutable="no">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom AtomNil</definition>
+        <argsstring></argsstring>
+        <name>AtomNil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="63" column="32" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1a9d41bc61cfe8d8c9a00bc04c2ea68c10" prot="public" static="no" mutable="no">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>Atom AtomDot</definition>
+        <argsstring></argsstring>
+        <name>AtomDot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="63" column="40" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1a9b864c6bc7967be8e55a8f4b527ebb1c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Yap_Embedded</definition>
+        <argsstring></argsstring>
+        <name>Yap_Embedded</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="66" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1a94281778e4ee996d9abddbecc37f3933" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Yap_output_msg</definition>
+        <argsstring></argsstring>
+        <name>Yap_output_msg</name>
+        <initializer>= FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="68" column="5" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1a9296570c86923f77ce49d4f187fcecb1" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Yap_BOOTFILE</definition>
+        <argsstring></argsstring>
+        <name>Yap_BOOTFILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="69" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1ac4ff14b09edc0db50b5061cfa89b85dc" prot="public" static="no" mutable="no">
+        <type>ADDR</type>
+        <definition>ADDR Yap_HeapBase</definition>
+        <argsstring></argsstring>
+        <name>Yap_HeapBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="91" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="init_8c_1a8b81b4ab6c5c9ddb0fabc5a0f49f0532" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* optypes[]</definition>
+        <argsstring>[]</argsstring>
+        <name>optypes</name>
+        <initializer>= {&quot;&quot;, &quot;xfx&quot;, &quot;xfy&quot;, &quot;yfx&quot;, &quot;xf&quot;, &quot;yf&quot;, &quot;fx&quot;, &quot;fy&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="94" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__MemAlloc_1ga7aa9a1f4d6f3fb7f9fd272a43d03bd27" kind="variable"><name>Yap_page_size</name></member>
+      <memberdef kind="variable" id="init_8c_1a427275bb849b7969ad75ab5b4ba2d700" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* YAP_save</definition>
+        <argsstring></argsstring>
+        <name>YAP_save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="105" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__Operators_1gadb87daacfdff68bc09a77475895ea65d" kind="variable"><name>Ops</name></member>
+      <memberdef kind="variable" id="init_8c_1aa1151a5eb9b18fd2de17b8456a52150c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structworker__local" kindref="compound">worker_local</ref></type>
+        <definition>struct worker_local Yap_local</definition>
+        <argsstring></argsstring>
+        <name>Yap_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1289" column="19" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__Operators_1ga3930cf43d618ee1e1bfc6b6fdbcadb08" kind="function"><name>SetOp</name></member>
+      <member refid="group__Operators_1gad5cd620399f0592f29612c0b0f9b0a7a" kind="function"><name>InitOps</name></member>
+      <memberdef kind="function" id="init_8c_1aa79176fa75933b672aecb5f9c9b2aa22" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitDebug</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitDebug</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="444" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="444" bodyend="492" declfile="/home/vsc/github/yap/C/init.c" declline="80" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1af60ac4679ba4006b6220cb9a9ea3c761" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CleanBack</definition>
+        <argsstring>(PredEntry *, CPredicate, CPredicate, CPredicate)</argsstring>
+        <name>CleanBack</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <defname>pe</defname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <defname>Start</defname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <defname>Cont</defname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <defname>Cut</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="840" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="840" bodyend="878" declfile="/home/vsc/github/yap/C/init.c" declline="81" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a8148d106396e26346a59ae2e22c8d6b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitStdPreds</definition>
+        <argsstring>(struct yap_boot_params *yapi)</argsstring>
+        <name>InitStdPreds</name>
+        <param>
+          <type>struct <ref refid="structyap__boot__params" kindref="compound">yap_boot_params</ref> *</type>
+          <declname>yapi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1009" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1009" bodyend="1019" declfile="/home/vsc/github/yap/C/init.c" declline="82" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1aad0914f692e6c89151105f7be348842a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitCodes</definition>
+        <argsstring>(struct yap_boot_params *yapi)</argsstring>
+        <name>InitCodes</name>
+        <param>
+          <type>struct <ref refid="structyap__boot__params" kindref="compound">yap_boot_params</ref> *</type>
+          <declname>yapi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1292" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1292" bodyend="1333" declfile="/home/vsc/github/yap/C/init.c" declline="83" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a460606805bf596f62fe7a56d69f82d5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitVersion</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitVersion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1335" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1335" bodyend="1337" declfile="/home/vsc/github/yap/C/init.c" declline="84" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a6f255d924f7a6bb2c4be0c8c2f2d9ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exit</definition>
+        <argsstring>(int)</argsstring>
+        <name>exit</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="85" column="13" declfile="/home/vsc/github/yap/C/init.c" declline="85" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ac355db9120fa6d17ca72847603c6002a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitWorker</definition>
+        <argsstring>(int wid)</argsstring>
+        <name>InitWorker</name>
+        <param>
+          <type>int</type>
+          <declname>wid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="86" column="13" declfile="/home/vsc/github/yap/C/init.c" declline="86" declcolumn="13"/>
+      </memberdef>
+      <member refid="group__Operators_1gaa405d47654d8fe9b3033ba4eae5bee4d" kind="function"><name>Yap_IsOpType</name></member>
+      <member refid="group__Operators_1ga03898dfb064bb6f1a69407fa66204ad3" kind="function"><name>OpDec</name></member>
+      <member refid="group__Operators_1ga67c2cf24a65ec6962194339adad77f0b" kind="function"><name>Yap_OpDec</name></member>
+      <member refid="group__Operators_1ga37b54f4cc78b256c42f1a48ea6777542" kind="function"><name>Yap_dup_op</name></member>
+      <member refid="group__Operators_1gadaa915632b9b11363bcab57770646a6c" kind="function"><name>Yap_GetOp</name></member>
+      <memberdef kind="function" id="init_8c_1a84d4d1e86d3d47dc8ebc031a54be5307" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>static UInt update_flags_from_prolog</definition>
+        <argsstring>(UInt flags, PredEntry *pe)</argsstring>
+        <name>update_flags_from_prolog</name>
+        <param>
+          <type>UInt</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="494" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="494" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a0cacdca7948dc24e0a866e21f3007b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitCPredInModule</definition>
+        <argsstring>(const char *Name, arity_t Arity, CPredicate code, pred_flags_t flags, Term mod)</argsstring>
+        <name>Yap_InitCPredInModule</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="510" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="510" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a50046807cdb01f7b51d96b46eda12278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitCPred</definition>
+        <argsstring>(const char *Name, arity_t Arity, CPredicate code, pred_flags_t flags)</argsstring>
+        <name>Yap_InitCPred</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="612" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="612" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a2e1c3e27a10c244edaa1b88f4a638e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_AddCallToFli</definition>
+        <argsstring>(PredEntry *pe, CPredicate call)</argsstring>
+        <name>Yap_AddCallToFli</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="619" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="619" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1aefd82f9e1741739970bf5b15afb9ecd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_AddRetryToFli</definition>
+        <argsstring>(PredEntry *pe, CPredicate re)</argsstring>
+        <name>Yap_AddRetryToFli</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="634" column="8" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="634" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ac325ba0f5b41767118a3a2705a5774da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_AddCutToFli</definition>
+        <argsstring>(PredEntry *pe, CPredicate CUT)</argsstring>
+        <name>Yap_AddCutToFli</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>CUT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="647" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="647" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ac5065a7f68b974348956762e17462ba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitCmpPred</definition>
+        <argsstring>(const char *Name, arity_t Arity, CmpPredicate cmp_code, pred_flags_t flags)</argsstring>
+        <name>Yap_InitCmpPred</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>CmpPredicate</type>
+          <declname>cmp_code</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="661" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="661" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ad95c1212475eca1b4ce1b1be0de1aa08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitAsmPred</definition>
+        <argsstring>(const char *Name, arity_t Arity, int code, CPredicate def, pred_flags_t flags)</argsstring>
+        <name>Yap_InitAsmPred</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="740" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="740" bodyend="838"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a679b8412e50fe0392bee35ae6f7bcfb6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Yap_InitCPredBackInModule_</definition>
+        <argsstring>(const char *Name, arity_t Arity, arity_t Extra, CPredicate Start, CPredicate Cont, CPredicate Cut, pred_flags_t flags, Term mod)</argsstring>
+        <name>Yap_InitCPredBackInModule_</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Extra</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Start</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Cont</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Cut</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="880" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="880" bodyend="988"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a24dec8d564b10d9be988ea536e9853e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitCPredBack</definition>
+        <argsstring>(const char *Name, arity_t Arity, arity_t Extra, CPredicate Call, CPredicate Retry, pred_flags_t flags)</argsstring>
+        <name>Yap_InitCPredBack</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Extra</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Call</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Retry</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="990" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="990" bodyend="994"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a64e76c2ac8f90133df9e02fd58c75cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitCPredBackInModule</definition>
+        <argsstring>(const char *Name, arity_t Arity, arity_t Extra, CPredicate Call, CPredicate Retry, pred_flags_t flags, Term mod)</argsstring>
+        <name>Yap_InitCPredBackInModule</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Extra</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Call</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Retry</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="996" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="996" bodyend="999"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ab0e035b37a3a8df8955403d5bc599d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitCPredBackCut</definition>
+        <argsstring>(const char *Name, arity_t Arity, arity_t Extra, CPredicate Start, CPredicate Cont, CPredicate Cut, pred_flags_t flags)</argsstring>
+        <name>Yap_InitCPredBackCut</name>
+        <param>
+          <type>const char *</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Arity</declname>
+        </param>
+        <param>
+          <type>arity_t</type>
+          <declname>Extra</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Start</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Cont</declname>
+        </param>
+        <param>
+          <type>CPredicate</type>
+          <declname>Cut</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1001" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1001" bodyend="1006"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a1179c978a56059af02da2a4eff42f62a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitPredHash</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitPredHash</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1021" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1021" bodyend="1035"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ad40dd4d7af1d03f14c75e782669cc376" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitEnvInst</definition>
+        <argsstring>(yamop start[2], yamop **instp, op_numbers opc, PredEntry *pred)</argsstring>
+        <name>InitEnvInst</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref></type>
+          <declname>start</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> **</type>
+          <declname>instp</declname>
+        </param>
+        <param>
+          <type>op_numbers</type>
+          <declname>opc</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1037" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1037" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a3a40d887968adc9e8495df145c431a83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitOtaplInst</definition>
+        <argsstring>(yamop start[1], OPCODE opc, PredEntry *pe)</argsstring>
+        <name>InitOtaplInst</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref></type>
+          <declname>start</declname>
+          <array>[1]</array>
+        </param>
+        <param>
+          <type>OPCODE</type>
+          <declname>opc</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1052" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1052" bodyend="1066"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ae9b5e8802ee364b84ea470a1958dedbc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitDBErasedMarker</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitDBErasedMarker</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1068" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1068" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a9b85c1543da23f9804b61228f1cd65e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitLogDBErasedMarker</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitLogDBErasedMarker</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1078" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1078" bodyend="1092"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a537a7edddfd9e83507a54ad0299e4030" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitEmptyWakeups</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitEmptyWakeups</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1094" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1094" bodyend="1094"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a220601512a90ec82059ab6c9406ba733" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitAtoms</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitAtoms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1096" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1096" bodyend="1128"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1acee40483ad2e5f2a864d1f4ad7f71889" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitWideAtoms</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitWideAtoms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1130" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1130" bodyend="1144"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1acb2c5b6216c1e84461e237bec81742c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitInvisibleAtoms</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitInvisibleAtoms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1146" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1146" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ae5e8c7bbee2571c342644ce1b8680d98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitScratchPad</definition>
+        <argsstring>(int wid)</argsstring>
+        <name>InitScratchPad</name>
+        <param>
+          <type>int</type>
+          <declname>wid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1253" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1253" bodyend="1257"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1aa3e98ad499dd77624d5a8c36b06388c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * InitHandles</definition>
+        <argsstring>(int wid)</argsstring>
+        <name>InitHandles</name>
+        <param>
+          <type>int</type>
+          <declname>wid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1259" column="14" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1259" bodyend="1264"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a12eb4f95b605ebf7134d53a1a84d7d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_CloseScratchPad</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_CloseScratchPad</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1266" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1266" bodyend="1271"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a3f44f5d5f3003a7160492bf6e864569b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * Yap_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1339" column="12" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1339" bodyend="1342"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1ac957aea5eee6d0065bbac41bbfb1196d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitWorkspace</definition>
+        <argsstring>(struct yap_boot_params *yapi, UInt Heap, UInt Stack, UInt Trail, UInt Atts, UInt max_table_size, int n_workers, int sch_loop, int delay_load)</argsstring>
+        <name>Yap_InitWorkspace</name>
+        <param>
+          <type>struct <ref refid="structyap__boot__params" kindref="compound">yap_boot_params</ref> *</type>
+          <declname>yapi</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>Heap</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>Stack</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>Trail</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>Atts</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>max_table_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_workers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sch_loop</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay_load</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1344" column="6" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1344" bodyend="1466"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1acd0f634fbeb2c8f3489146720a2c7d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_HaltRegisterHook</definition>
+        <argsstring>(HaltHookFunc f, void *env)</argsstring>
+        <name>Yap_HaltRegisterHook</name>
+        <param>
+          <type>HaltHookFunc</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1468" column="5" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1468" bodyend="1480"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1a23817b1bf90e8f3f40a05797537f82a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void run_halt_hooks</definition>
+        <argsstring>(int code)</argsstring>
+        <name>run_halt_hooks</name>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1482" column="13" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1482" bodyend="1489"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8c_1adfea01de27e960538f6c9cd9480810bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noreturn void</type>
+        <definition>noreturn void Yap_exit</definition>
+        <argsstring>(int value)</argsstring>
+        <name>Yap_exit</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/init.c" line="1491" column="16" bodyfile="/home/vsc/github/yap/C/init.c" bodystart="1491" bodyend="1511"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/C/init.c"/>
+  </compounddef>
+</doxygen>

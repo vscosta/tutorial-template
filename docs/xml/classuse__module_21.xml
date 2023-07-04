@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classuse__module_21" kind="class" language="Prolog" prot="public">
+    <compoundname>use_module/1</compoundname>
+    <briefdescription>
+<para><bold>use_module</bold>( +Files ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: directive</para>
+<para>loads a module file</para>
+<para>This predicate loads the file specified by <emphasis>Files</emphasis>, importing all their public predicates into the current type-in module It is implemented as if by:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">use_module(</highlight><highlight class="charliteral">F</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">load_files(</highlight><highlight class="charliteral">F</highlight><highlight class="normal">,<sp/>[if(not_loaded),must_be_module(true)])</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Notice that <emphasis>Files</emphasis> may be a single file, or a list with a number files The <emphasis>Files</emphasis> are loaded in YAP only once, even if they have been updated meanwhile YAP should also verify whether the files actually define modules Please consult load_files/3 for other options when loading a file</para>
+<para>Predicate name clashes between two different modules may arise, either when trying to import predicates that are also defined in the current type-in module, or by trying to import the same predicate from two different modules</para>
+<para>In the first case, the local predicate is considered to have priority and <ref refid="classuse__module_21" kindref="compound">use_module/1</ref> simply gives a warning As an example, if the file <computeroutput>a.pl</computeroutput> contains:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a/1</highlight><highlight class="stringliteral"></highlight><highlight class="normal">module(<sp/>a,<sp/>[]<sp/>).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">use_module(b).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">b(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>and the file <computeroutput>b.pl</computeroutput> contains:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a/1</highlight><highlight class="stringliteral"></highlight><highlight class="normal">b/1</highlight><highlight class="stringliteral"></highlight><highlight class="normal">module(<sp/>b,<sp/>[,]<sp/>).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">b(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>YAP will execute as follows:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="keyword">?-</highlight><highlight class="normal"><sp/>[a].</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">%<sp/>consulting<sp/>.../a.pl...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">%<sp/>consulting<sp/>.../b.pl...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">%<sp/>consulted<sp/>.../b.pl<sp/>in<sp/>module<sp/>b,<sp/>0<sp/>msec<sp/>0<sp/>bytes</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">%<sp/>consulted<sp/>.../a.pl<sp/>in<sp/>module<sp/>a,<sp/>1<sp/>msec<sp/>0<sp/>bytes</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">.<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="normal"><sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">1</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>The example shows that the query <computeroutput>a(X)</computeroutput>has a single answer, the one defined in <computeroutput>a.pl</computeroutput> Calls to <computeroutput>a(X)</computeroutput>succeed in the top-level, because the module <computeroutput>a</computeroutput> was loaded into <computeroutput>user</computeroutput> On the other hand, <computeroutput>b(X)</computeroutput>is not exported by <computeroutput>a.pl</computeroutput>, and is not available to calls, although it can be accessed as a predicate in the module &apos;a&apos; by using the <computeroutput>:</computeroutput> operator</para>
+<para>Next, consider the three files <computeroutput>c.pl</computeroutput>, <computeroutput>d1.pl</computeroutput>, and <computeroutput>d2.pl</computeroutput>:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="comment">%<sp/>c.pl</highlight></codeline>
+<codeline><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a/1</highlight><highlight class="stringliteral"></highlight><highlight class="normal">module(<sp/>c,<sp/>[]<sp/>).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">:-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">use_module([d1,<sp/>d2]).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">b(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">c(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">d(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="comment">%<sp/>d1.pl</highlight></codeline>
+<codeline><highlight class="keyword">:-<sp/>module(</highlight><highlight class="preprocessor"><sp/>d1</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="stringliteral"></highlight><highlight class="normal">b/1,</highlight><highlight class="stringliteral"></highlight><highlight class="normal">c/1]<sp/>).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">b(</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">c(</highlight><highlight class="vhldigit">3</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="comment">%<sp/>d2.pl</highlight></codeline>
+<codeline><highlight class="keyword">:-<sp/>module(</highlight><highlight class="preprocessor"><sp/>d2</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="stringliteral"></highlight><highlight class="normal">b/1,</highlight><highlight class="stringliteral"></highlight><highlight class="normal">d/1]<sp/>).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">b(</highlight><highlight class="vhldigit">1</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal">d(</highlight><highlight class="vhldigit">4</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>The result is as follows:</para>
+<para><programlisting filename=".prolog"><codeline><highlight class="stringliteral"></highlight><highlight class="normal">d</highlight><highlight class="stringliteral"></highlight><highlight class="normal">d<sp/></highlight><highlight class="keyword">-</highlight><highlight class="stringliteral"></highlight><highlight class="normal">d<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">d</highlight></codeline>
+<codeline><highlight class="charliteral">YAP</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">6</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">3</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">4</highlight><highlight class="normal"><sp/>(x86_64</highlight><highlight class="keyword">-</highlight><highlight class="normal">darwin13</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">3</highlight><highlight class="keyword">.</highlight><highlight class="vhldigit">0</highlight><highlight class="normal">)</highlight><highlight class="keyword">:</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">Tue</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">Jul</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">15</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">10</highlight><highlight class="keyword">:</highlight><highlight class="vhldigit">42</highlight><highlight class="keyword">:</highlight><highlight class="vhldigit">11</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">CDT</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">2014</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">ERROR</highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">3</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">/</highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">.</highlight><highlight class="stringliteral"></highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">PERMISSION</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">ERROR</highlight><highlight class="keyword">-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">.</highlight><highlight class="stringliteral"></highlight><highlight class="normal"></highlight><highlight class="keyword">:</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">b/1<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">?-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a(</highlight><highlight class="charliteral">X</highlight><highlight class="normal">).</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="charliteral">X</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">=</highlight><highlight class="normal"><sp/></highlight><highlight class="vhldigit">2</highlight><highlight class="normal"><sp/>?<sp/></highlight><highlight class="keyword">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">ERROR</highlight><highlight class="stringliteral"></highlight><highlight class="normal">a</highlight><highlight class="stringliteral"></highlight><highlight class="normal">a</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">EXISTENCE</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">ERROR</highlight><highlight class="keyword">-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a<sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal">a<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">c/1<sp/><sp/></highlight><highlight class="keyword">is</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a,<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a<sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a</highlight><highlight class="keyword">:</highlight><highlight class="normal">$</highlight><highlight class="stringliteral"></highlight><highlight class="normal">user_call/2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">Goal</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">a</highlight><highlight class="keyword">:</highlight><highlight class="stringliteral"></highlight><highlight class="normal">c(</highlight><highlight class="charliteral">_131290</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting></para>
+<para>The state of the module system after this error is undefined</para>
+<para>properties: directive</para>
+<para>load a module file</para>
+<para>This predicate loads the file specified by <emphasis>Files</emphasis>, importing all their public predicates into the current type-in module It is implemented as if by:</para>
+<para><programlisting><codeline><highlight class="normal">use_module(F)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>load_files(F,<sp/>[if(not_loaded),must_be_module(true)]).</highlight></codeline>
+</programlisting></para>
+<para>Notice that <emphasis>Files</emphasis> may be a single file, or a list with a number files The <emphasis>Files</emphasis> are loaded in YAP only once, even if they have been updated meanwhile YAP should also verify whether the files actually define modules Please consult load_files/3 for other options when loading a file</para>
+<para>Predicate name clashes between two different modules may arise, either when trying to import predicates that are also defined in the current type-in module, or by trying to import the same predicate from two different modules</para>
+<para>In the first case, the local predicate is considered to have priority and <ref refid="classuse__module_21" kindref="compound">use_module/1</ref> simply gives a warning As an example, if the file <computeroutput>a.pl</computeroutput> contains:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/>module(<sp/>a,<sp/>[a/1]<sp/>).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>use_module(b).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">a(1).</highlight></codeline>
+<codeline><highlight class="normal">a(X)<sp/>:-<sp/>b(X).</highlight></codeline>
+</programlisting></para>
+<para>and the file <computeroutput>b.pl</computeroutput> contains:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/>module(<sp/>b,<sp/>[a/1,b/1]<sp/>).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">a(2).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">b(1).</highlight></codeline>
+</programlisting></para>
+<para>YAP will execute as follows:</para>
+<para><programlisting><codeline><highlight class="normal">?-<sp/>[a].</highlight></codeline>
+<codeline><highlight class="normal">consulting<sp/>.../a.pl...</highlight></codeline>
+<codeline><highlight class="normal">consulting<sp/>.../b.pl...</highlight></codeline>
+<codeline><highlight class="normal">consulted<sp/>.../b.pl<sp/>in<sp/>module<sp/>b,<sp/>0<sp/>msec<sp/>0<sp/>bytes</highlight></codeline>
+<codeline><highlight class="normal">consulted<sp/>.../a.pl<sp/>in<sp/>module<sp/>a,<sp/>1<sp/>msec<sp/>0<sp/>bytes</highlight></codeline>
+<codeline><highlight class="normal">true.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>?-<sp/>a(X).</highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>1<sp/>?<sp/>;</highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>1.</highlight></codeline>
+</programlisting></para>
+<para>The example shows that the query <computeroutput>a(X)</computeroutput>has a single answer, the one defined in <computeroutput>a.pl</computeroutput> Calls to <computeroutput>a(X)</computeroutput>succeed in the top-level, because the module <computeroutput>a</computeroutput> was loaded into <computeroutput>user</computeroutput> On the other hand, <computeroutput>b(X)</computeroutput>is not exported by <computeroutput>a.pl</computeroutput>, and is not available to calls, although it can be accessed as a predicate in the module &apos;a&apos; by using the <computeroutput>:</computeroutput> operator</para>
+<para>Next, consider the three files <computeroutput>c.pl</computeroutput>, <computeroutput>d1.pl</computeroutput>, and <computeroutput>d2.pl</computeroutput>:</para>
+<para><programlisting><codeline><highlight class="normal">c.pl</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/>module(<sp/>c,<sp/>[a/1]<sp/>).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>use_module([d1,<sp/>d2]).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">a(X)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>b(X).</highlight></codeline>
+<codeline><highlight class="normal">a(X)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>c(X).</highlight></codeline>
+<codeline><highlight class="normal">a(X)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>d(X).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">d1.pl</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/>module(<sp/>d1,<sp/>[b/1,c/1]<sp/>).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">vvb(2).</highlight></codeline>
+<codeline><highlight class="normal">c(3).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">d2.pl</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/>module(<sp/>d2,<sp/>[b/1,d/1]<sp/>).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">b(1).</highlight></codeline>
+<codeline><highlight class="normal">d(4).</highlight></codeline>
+</programlisting></para>
+<para>The result is as follows:</para>
+<para><programlisting><codeline><highlight class="normal">./yap<sp/>-l<sp/>c</highlight></codeline>
+<codeline><highlight class="normal">YAP<sp/>6.3.4<sp/>(x86_64-darwin13.3.0):<sp/>Tue<sp/>Jul<sp/>15<sp/>10:42:11<sp/>CDT<sp/>2014</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ERROR!!</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>at<sp/>line<sp/>3<sp/>in<sp/>o/d2.pl,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PERMISSION<sp/>ERROR-<sp/>loading<sp/>.../c.pl:<sp/>modules<sp/>d1<sp/>and<sp/>d2<sp/>both<sp/>define<sp/>@ref<sp/>b/1<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>?-<sp/>a(X).</highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>2<sp/>?<sp/>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ERROR!!</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>EXISTENCE<sp/>ERROR-<sp/>procedure<sp/>@ref<sp/>c/1<sp/><sp/>is<sp/>undefined,<sp/>called<sp/>from<sp/>context<sp/><sp/>prolog:$user_call/2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Goal<sp/>was<sp/>c:c(_131290)</highlight></codeline>
+</programlisting></para>
+<para>The state of the module system after this error is undefined</para>
+<para><itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/modules.md" line="118" column="1" bodyfile="/home/vsc/github/yap/docs/md/modules.md" bodystart="118" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

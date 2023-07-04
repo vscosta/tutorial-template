@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classattr__unify__hook_22" kind="class" language="Prolog" prot="public">
+    <compoundname>attr_unify_hook/2</compoundname>
+    <briefdescription>
+<para><bold>attr_unify_hook</bold>(+ <emphasis>AttValue</emphasis>,+ <emphasis>VarValue</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Hook that must be defined in the module an attributed variable refers to Is is called <emphasis>after</emphasis> the attributed variable has been unified with a non-var term, possibly another attributed variable <emphasis>AttValue</emphasis> is the attribute that was associated to the variable in this module and <emphasis>VarValue</emphasis> is the new value of the variable Normally this predicate fails to veto binding the variable to <emphasis>VarValue</emphasis>, forcing backtracking to undo the binding If <emphasis>VarValue</emphasis> is another attributed variable the hook often combines the two attribute and associates the combined attribute with <emphasis>VarValue</emphasis> using <ref refid="classput__attr_23" kindref="compound">put_attr/3</ref> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/corout.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/corout.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

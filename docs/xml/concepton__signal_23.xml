@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="concepton__signal_23" kind="concept">
+    <compoundname>on_signal/3</compoundname>
+    <initializer>template&lt;&gt;
+concept on_signal/3 =     </initializer>
+    <briefdescription>
+<para><bold>on_signal</bold>(+ <emphasis>Signal</emphasis>,? <emphasis>OldAction</emphasis>,+ <emphasis>Callable</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Set the interrupt handler for soft interrupt <emphasis>Signal</emphasis> to be <emphasis>Callable</emphasis> <emphasis>OldAction</emphasis> is unified with the previous handler</para>
+<para>Only a subset of the software interrupts (signals) can have their handlers manipulated through <ref refid="classon__signal_23" kindref="compound">on_signal/3</ref> Their POSIX names, YAP names and default behavior is given below The &quot;YAP name&quot; of the signal is the atom that is associated with each signal, and should be used as the first argument to <ref refid="classon__signal_23" kindref="compound">on_signal/3</ref> It is chosen so that it matches the signal&apos;s POSIX name</para>
+<para><ref refid="classon__signal_23" kindref="compound">on_signal/3</ref> succeeds, unless when called with an invalid signal name or one that is not supported on this platform No checks are made on the handler provided by the user</para>
+<para><itemizedlist>
+<listitem><para>sig_up (Hangup) SIGHUP in Unix/Linux; Reconsult the initialization files ~/.yaprc, ~/.prologrc and ~/prolog.ini</para>
+</listitem><listitem><para>sig_usr1 and sig_usr2 (User signals) SIGUSR1 and SIGUSR2 in Unix/Linux; Print a message and halt</para>
+</listitem></itemizedlist>
+</para>
+<para>A special case is made, where if <emphasis>Callable</emphasis> is bound to <computeroutput>default</computeroutput>, then the default handler is restored for that signal</para>
+<para>A call in the form <computeroutput>on_signal( _S_, _H_, _H_)</computeroutput> can be used to retrieve a signal&apos;s current handler without changing it</para>
+<para>It must be noted that although a signal can be received at all times, the handler is not executed while YAP is waiting for a query at the</para>
+<para>prompt The signal will be, however, registered and dealt with as soon as the user makes a query</para>
+<para>Please also note, that neither POSIX Operating Systems nor YAP guarantee that the order of delivery and handling is going to correspond with the order of dispatch </para>
+    </detaileddescription>
+    <location file="pl/signals.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

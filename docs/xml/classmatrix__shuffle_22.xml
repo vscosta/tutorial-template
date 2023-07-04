@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmatrix__shuffle_22" kind="class" language="Prolog" prot="private">
+    <compoundname>matrix_shuffle/2</compoundname>
+    <briefdescription>
+<para><bold>LHS ==&gt; RHS</bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>?_LHS_ &lt;== ?_RHS_</bold></para>
+<para>%% Matrix operation %% 1 Initialization: %%<itemizedlist>
+<listitem><para>matrix(Dims,Opts) where Dims and Opts are lists: %%</para>
+</listitem><listitem><para>matrix(Dims), same as matrix(Dims, []) %%</para>
+</listitem><listitem><para>ListOfLists, %%</para>
+</listitem><listitem><para>matrix(Dims) of Type %%</para>
+</listitem><listitem><para>matrix(Dims) of Number %%</para>
+</listitem><listitem><para>matrix(Dims) of Goal %%</para>
+</listitem><listitem><para>matrix(Dims) of Offset^Goal %%</para>
+</listitem><listitem><para>matrix(Dims) of call(Goal) %%</para>
+</listitem><listitem><para>vector(Dim,Opts) same as matrix([Dims], []) %%</para>
+</listitem><listitem><para>zeros(Dims), same as matrix(Dims, []) %%</para>
+</listitem><listitem><para>matrix[Dims], same as matrix(Dims, []) %%</para>
+</listitem><listitem><para>matrix[Dims] of Def, same as matrix(Dims) of Def %% Dimensions may be given as:</para>
+</listitem><listitem><para>ListOfNumbers</para>
+</listitem><listitem><para>ListOfIntervals %% Options are: %% -Liveness may be one local (b), global (nb), or foreign (f) defaults: local is LHS is unbound foreign if is bound to an atom %%</para>
+</listitem><listitem><para>One can use use old array routines (check static_array/3 ) for offline arrays/ %%</para>
+</listitem></itemizedlist>
+<orderedlist>
+<listitem><para><computeroutput>Atom &lt;== [1000,1001,1002]</computeroutput></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><computeroutput>Atom &lt;== matrix[1000] of int</computeroutput></para>
+</listitem><listitem><para><computeroutput>Atom &lt;== matrix[333] of 0</computeroutput> %% The local matrices allocate on stack:</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><computeroutput>Var &lt;== [[1000],[1001],[1002]]</computeroutput></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><computeroutput>Var &lt;== matrix[1000] of term</computeroutput></para>
+</listitem><listitem><para><computeroutput>Var &lt;== matrix[333,2] of 3.1415</computeroutput> %% YAP also supports foreign matrices</para>
+</listitem></orderedlist>
+</para>
+<para>properties: semideterministic</para>
+<para>General matrix assignment operation It evaluates the right-hand side according to the left-hand side and to the matrix:</para>
+<para><itemizedlist>
+<listitem><para>if <emphasis>LHS</emphasis> is part of an integer or floating-point matrix, perform non-backtrackable assignment</para>
+</listitem><listitem><para>other unify left-hand side and right-hand size</para>
+</listitem></itemizedlist>
+</para>
+<para>Matrix elements can be accessed through the <computeroutput>matrix_get/2 </computeroutput> predicate or through an <computeroutput>R</computeroutput>-inspired access notation (that uses the ciao style extension to <computeroutput>[]</computeroutput>) Examples include:</para>
+<para><itemizedlist>
+<listitem><para>Access the second row, third column of matrix <computeroutput>X</computeroutput> Indices start from <computeroutput>0</computeroutput>, <programlisting><codeline><highlight class="charliteral">_E_</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">_X_[</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="vhldigit">3</highlight><highlight class="normal">]</highlight></codeline>
+</programlisting></para>
+</listitem></itemizedlist>
+</para>
+<para>Access all the second row, the output is a list ofe elements <programlisting><codeline><highlight class="charliteral">_L_</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">_X_<sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">_X_[</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">,</highlight><highlight class="charliteral">_</highlight><highlight class="normal">]</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>Access all the second, thrd and fourth rows, the output is a list of elements <programlisting><codeline><highlight class="charliteral">_L_</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">_X_<sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">_X_[</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">..</highlight><highlight class="vhldigit">4</highlight><highlight class="normal">,</highlight><highlight class="charliteral">_</highlight><highlight class="normal">]</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>Access all the fifth, sixth and eight rows, the output is a list of elements <programlisting><codeline><highlight class="charliteral">_L_</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">_X_<sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">_X_[</highlight><highlight class="vhldigit">2</highlight><highlight class="normal">..</highlight><highlight class="vhldigit">4</highlight><highlight class="keyword">+</highlight><highlight class="vhldigit">3</highlight><highlight class="normal">,</highlight><highlight class="charliteral">_</highlight><highlight class="normal">]</highlight></codeline>
+</programlisting></para>
+</listitem></itemizedlist>
+</para>
+<para>The right-hand side supports the following operators:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>[]/2</computeroutput></para>
+<para>written as <emphasis>M</emphasis>[ <emphasis>Offset</emphasis>]: obtain an element or list of elements of matrix <emphasis>M</emphasis> at offset <emphasis>Offset</emphasis></para>
+</listitem><listitem><para>&lt;tt&gt;../2 </para>
+<para><emphasis>I</emphasis> <emphasis>J</emphasis> generates a list with all integers from <emphasis>I</emphasis> to <emphasis>J</emphasis>, included</para>
+</listitem><listitem><para>&lt;tt&gt;+/2 </para>
+<para>add two numbers, add two matrices element-by-element, or add a number to all elements of a matrix or list</para>
+</listitem><listitem><para>&lt;tt&gt;-/2 </para>
+<para>subtract two numbers, subtract two matrices or lists element-by-element, or subtract a number from all elements of a matrix or list</para>
+</listitem><listitem><para><computeroutput>* /2</computeroutput></para>
+<para>multiply two numbers, multiply two matrices or lists element-by-element, or multiply a number from all elements of a matrix or list<itemizedlist>
+<listitem><para><computeroutput>log/1 </computeroutput></para>
+<para>natural logarithm of a number, matrix or list</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><computeroutput>exp/1 </computeroutput></para>
+<para>natural exponentiation of a number, matrix or list</para>
+</listitem><listitem><para><emphasis>X</emphasis> &lt;== array[ <emphasis>Dim1</emphasis>,..., <emphasis>Dimn</emphasis>] of <emphasis>Objects</emphasis> The of/2 operator can be used to create a new array of <emphasis>Objects</emphasis> The objects supported are:<itemizedlist>
+<listitem><para><computeroutput>Unbound Variable</computeroutput> create an array of free variables</para>
+</listitem><listitem><para><computeroutput>ints</computeroutput> create an array of integers</para>
+</listitem><listitem><para><computeroutput>floats</computeroutput> create an array of floating-point numbers</para>
+</listitem><listitem><para><computeroutput>_I_: _J_</computeroutput> create an array with integers from <emphasis>I</emphasis> to <emphasis>J</emphasis></para>
+</listitem><listitem><para><computeroutput>[..]</computeroutput> create an array from the values in a list</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>The dimensions can be given as an integer, and the matrix will be indexed <computeroutput>C</computeroutput>-style from <computeroutput>0..( _Max_-1)</computeroutput>, or can be given as an interval <computeroutput>_Base_ _Limit_</computeroutput> In the latter case, matrices of integers and of floating-point numbers should have the same <emphasis>Base</emphasis> on every dimension </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/matrix.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/library/matrix.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

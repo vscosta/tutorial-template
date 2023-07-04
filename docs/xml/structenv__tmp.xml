@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structenv__tmp" kind="struct" language="C++" prot="public">
+    <compoundname>env_tmp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structenv__tmp_1a5287e59a0c7380a5e64678887b1424be" prot="public" static="no" mutable="no">
+        <type><ref refid="structVENTRY" kindref="compound">Ventry</ref> *</type>
+        <definition>Ventry* Var</definition>
+        <argsstring></argsstring>
+        <name>Var</name>
+        <qualifiedname>env_tmp::Var</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2293" column="10" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structenv__tmp_1a604e756e052c9ec2dbdc57e8da9c7d0f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structenv__tmp" kindref="compound">env_tmp</ref> *</type>
+        <definition>struct env_tmp* Next</definition>
+        <argsstring></argsstring>
+        <name>Next</name>
+        <qualifiedname>env_tmp::Next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/compiler.c" line="2294" column="16" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>PSEUDO</label>
+        <link refid="structPSEUDO"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>nextInst</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>VENTRY</label>
+        <link refid="structVENTRY"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>FirstOpForV</edgelabel>
+          <edgelabel>LastOpForV</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>NextOfVE</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>env_tmp</label>
+        <link refid="structenv__tmp"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Var</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/C/compiler.c" line="2292" column="1" bodyfile="/home/vsc/github/yap/C/compiler.c" bodystart="2292" bodyend="2295"/>
+    <listofallmembers>
+      <member refid="structenv__tmp_1a604e756e052c9ec2dbdc57e8da9c7d0f" prot="public" virt="non-virtual"><scope>env_tmp</scope><name>Next</name></member>
+      <member refid="structenv__tmp_1a5287e59a0c7380a5e64678887b1424be" prot="public" virt="non-virtual"><scope>env_tmp</scope><name>Var</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

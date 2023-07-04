@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__SICS__attributes" kind="group">
+    <compoundname>SICS_attributes</compoundname>
+    <title>SICStus Style attribute declarations</title>
+    <innergroup refid="group__sicsatts">SICStus style attribute declarations</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The YAP library <computeroutput>atts</computeroutput> implements attribute variables in the style of SICStus Prolog Attributed variables work as follows:</para>
+<para><itemizedlist>
+<listitem><para>Each attribute must be declared beforehand Attributes are described as a functor with name and arity and are local to a module Each Prolog module declares its own sets of attributes Different modules may have attributes with the same name and arity</para>
+</listitem><listitem><para>The built-in put_atts/2 adds or deletes attributes to a variable The variable may be unbound or may be an attributed variable In the latter case, YAP discards previous values for the attributes</para>
+</listitem><listitem><para>The built-in get_atts/2 can be used to check the values of an attribute associated with a variable</para>
+</listitem><listitem><para>The unification algorithm calls the user-defined predicate verify_attributes/3 before trying to bind an attributed variable Unification will resume after this call</para>
+</listitem><listitem><para>The user-defined predicate attribute_goal/2 converts from an attribute to a goal</para>
+</listitem><listitem><para>The user-defined predicate project_attributes/2 is used from a set of variables into a set of constraints or goals One application of project_attributes/2 is in the top-level, where it is used to output the set of floundered constraints at the end of a query</para>
+</listitem></itemizedlist>
+</para>
+<para>Attributes are compound terms associated with a variable Each attribute has a <emphasis>name</emphasis> which is <emphasis>private</emphasis> to the module in which the attribute was defined Variables may have at most one attribute with a name Attribute names are defined through the following declaration:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/>attribute<sp/>AttributeSpec,<sp/>...,<sp/>AttributeSpec.</highlight></codeline>
+</programlisting></para>
+<para>where each _<computeroutput>AttributeSpec</computeroutput>_ has the form ( <emphasis>Name</emphasis>/ <emphasis>Arity</emphasis>) One single such declaration is allowed per module <emphasis>Module</emphasis></para>
+<para>Although the YAP module system is predicate based, attributes are local to modules This is implemented by rewriting all calls to the built-ins that manipulate attributes so that attribute names are preprocessed depending on the module The <computeroutput>user:goal_expansion/3 </computeroutput> mechanism is used for this purpose</para>
+<para>The attribute manipulation predicates always work as follows:</para>
+<para><itemizedlist>
+<listitem><para>The first argument is the unbound variable associated with attributes,</para>
+</listitem><listitem><para>The second argument is a list of attributes Each attribute will be a Prolog term or a constant, prefixed with the <computeroutput>+</computeroutput> and <computeroutput>-</computeroutput> unary operators The prefix <computeroutput>+</computeroutput> may be dropped for convenience</para>
+</listitem></itemizedlist>
+</para>
+<para>The following three procedures are available to the user Notice that these built-ins are rewritten by the system into internal built-ins, and that the rewriting process <emphasis>depends</emphasis> on the module on which the built-ins have been invoked</para>
+<para>The user-predicate predicate verify_attributes/3 is called when attempting to unify an attributed variable which might have attributes in some Module</para>
+<para>Attributes are usually presented as goals The following routines are used by built-in predicates such as <ref refid="classcall__residue_22" kindref="compound">call_residue/2</ref> and by the Prolog top-level to display attributes:</para>
+<para>Constraint solvers must be able to project a set of constraints to a set of variables This is useful when displaying the solution to a goal, but may also be used to manipulate computations The user-defined project_attributes/2 is responsible for implementing this projection</para>
+<para>The following examples are taken from the SICStus Prolog manual The sketches the implementation of a simple finite domain <emphasis>solver</emphasis> Note that an industrial strength solver would have to provide a wider range of functionality and that it quite likely would utilize a more efficient representation for the domains proper The module exports a single predicate <computeroutput>domain( _-Var_, _?Domain_)</computeroutput> which associates <emphasis>Domain</emphasis> (a list of terms) with <emphasis>Var</emphasis> A variable can be queried for its domain by leaving <emphasis>Domain</emphasis> unbound</para>
+<para>We do not present here a definition for project_attributes/2 Projecting finite domain constraints happens to be difficult</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/>module(domain,<sp/>[domain/2]).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>use_module(library(atts)).</highlight></codeline>
+<codeline><highlight class="normal">:-<sp/>use_module(library(ordsets),<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@ref<sp/>ord_intersection/3<sp/>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@ref<sp/>ord_intersect/2<sp/>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@ref<sp/>list_to_ord_set/2<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>]).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>attribute<sp/>@ref<sp/>dom/1<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">verify_attributes(Var,<sp/>Other,<sp/>Goals)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_atts(Var,<sp/>dom(Da)),<sp/>!,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>are<sp/>we<sp/>involved?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/>var(Other)<sp/>-&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>must<sp/>be<sp/>attributed<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/>get_atts(Other,<sp/>dom(Db))<sp/>-&gt;<sp/>%<sp/><sp/><sp/>has<sp/>a<sp/>domain?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ord_intersection(Da,<sp/>Db,<sp/>Dc),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Dc<sp/>=<sp/>[El|Els],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>at<sp/>least<sp/>one<sp/>element</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/>Els<sp/>=<sp/>[]<sp/>-&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>exactly<sp/>one<sp/>element</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Goals<sp/>=<sp/>[Other=El]<sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>implied<sp/>binding</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/>Goals<sp/>=<sp/>[],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>put_atts(Other,<sp/>dom(Dc))%<sp/>rescue<sp/>intersection</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/>Goals<sp/>=<sp/>[],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>put_atts(Other,<sp/>dom(Da))<sp/><sp/><sp/><sp/>%<sp/>rescue<sp/>the<sp/>domain</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/>Goals<sp/>=<sp/>[],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ord_intersect([Other],<sp/>Da)<sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>value<sp/>in<sp/>domain?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>).</highlight></codeline>
+<codeline><highlight class="normal">verify_attributes(_,<sp/>_,<sp/>[]).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>unification<sp/>triggered</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>because<sp/>of<sp/>attributes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>in<sp/>other<sp/>modules</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">attribute_goal(Var,<sp/>domain(Var,Dom))<sp/>:-<sp/><sp/><sp/><sp/><sp/>%<sp/>interpretation<sp/>as<sp/>goal</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_atts(Var,<sp/>dom(Dom)).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">domain(X,<sp/>Dom)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var(Dom),<sp/>!,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_atts(X,<sp/>dom(Dom)).</highlight></codeline>
+<codeline><highlight class="normal">domain(X,<sp/>List)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_to_ord_set(List,<sp/>Set),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>=<sp/>[El|Els],<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>at<sp/>least<sp/>one<sp/>element</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/>Els<sp/>=<sp/>[]<sp/>-&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>exactly<sp/>one<sp/>element</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>El<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>implied<sp/>binding</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/>put_atts(Fresh,<sp/>dom(Set)),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>Fresh<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>may<sp/>call</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>@ref<sp/>verify_attributes/3<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>).</highlight></codeline>
+</programlisting></para>
+<para>Note that the <emphasis>implied binding</emphasis> <computeroutput>Other=El</computeroutput> was deferred until after the completion of <computeroutput>verify_attribute/3 </computeroutput> Otherwise, there might be a danger of recursively invoking <computeroutput>verify_attribute/3 </computeroutput>, which might bind <computeroutput>Var</computeroutput>, which is not allowed inside the scope of <computeroutput>verify_attribute/3 </computeroutput> Deferring unifications into the third argument of <computeroutput>verify_attribute/3 </computeroutput> effectively serializes the calls to <computeroutput>verify_attribute/3 </computeroutput></para>
+<para>Assuming that the code resides in the file domain.yap, we can use it via:</para>
+<para><programlisting><codeline><highlight class="normal">|<sp/>?-<sp/>use_module(domain).</highlight></codeline>
+</programlisting></para>
+<para>Let&apos;s test it:</para>
+<para><programlisting><codeline><highlight class="normal">|<sp/>?-<sp/>domain(X,[5,6,7,1]),<sp/>domain(Y,[3,4,5,6]),<sp/>domain(Z,[1,6,7,8]).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">domain(X,[1,5,6,7]),</highlight></codeline>
+<codeline><highlight class="normal">domain(Y,[3,4,5,6]),</highlight></codeline>
+<codeline><highlight class="normal">domain(Z,[1,6,7,8])<sp/>?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">yes</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>?-<sp/>domain(X,[5,6,7,1]),<sp/>domain(Y,[3,4,5,6]),<sp/>domain(Z,[1,6,7,8]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>X=Y.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Y<sp/>=<sp/>X,</highlight></codeline>
+<codeline><highlight class="normal">domain(X,[5,6]),</highlight></codeline>
+<codeline><highlight class="normal">domain(Z,[1,6,7,8])<sp/>?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">yes</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>?-<sp/>domain(X,[5,6,7,1]),<sp/>domain(Y,[3,4,5,6]),<sp/>domain(Z,[1,6,7,8]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>X=Y,<sp/>Y=Z.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>6,</highlight></codeline>
+<codeline><highlight class="normal">Y<sp/>=<sp/>6,</highlight></codeline>
+<codeline><highlight class="normal">Z<sp/>=<sp/>6</highlight></codeline>
+</programlisting></para>
+<para>To demonstrate the use of the <emphasis>Goals</emphasis> argument of verify_attributes/3 , we give an implementation of <ref refid="classfreeze_22" kindref="compound">freeze/2</ref> We have to name it <computeroutput>myfreeze/2 </computeroutput> in order to avoid a name clash with the built-in predicate of the same name</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/>module(myfreeze,<sp/>[myfreeze/2]).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>use_module(library(atts)).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>attribute<sp/>@ref<sp/>frozen/1<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">verify_attributes(Var,<sp/>Other,<sp/>Goals)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_atts(Var,<sp/>frozen(Fa)),<sp/>!,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>are<sp/>we<sp/>involved?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/>var(Other)<sp/>-&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>must<sp/>be<sp/>attributed<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><sp/><sp/>get_atts(Other,<sp/>frozen(Fb))<sp/>%<sp/>has<sp/>a<sp/>pending<sp/>goal?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;<sp/><sp/>put_atts(Other,<sp/>frozen((Fa,Fb)))<sp/>%<sp/>rescue<sp/>conjunction</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/>put_atts(Other,<sp/>frozen(Fa))<sp/>%<sp/>rescue<sp/>the<sp/>pending<sp/>goal</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Goals<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/>Goals<sp/>=<sp/>[Fa]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>).</highlight></codeline>
+<codeline><highlight class="normal">verify_attributes(_,<sp/>_,<sp/>[]).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">attribute_goal(Var,<sp/>Goal)<sp/>:-<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>interpretation<sp/>as<sp/>goal</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_atts(Var,<sp/>frozen(Goal)).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">myfreeze(X,<sp/>Goal)<sp/>:-<sp/>put_atts(Fresh,<sp/>frozen(Goal)),<sp/>Fresh<sp/>=<sp/>X.<sp/><sp/>~~~~~</highlight></codeline>
+</programlisting></para>
+<para>Assuming that this code lives in file myfreeze.yap, we would use it via:</para>
+<para><programlisting><codeline><highlight class="normal">|<sp/>?-<sp/>use_module(myfreeze).</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>?-<sp/>myfreeze(X,print(bound(x,X))),<sp/>X=2.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">bound(x,2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>side<sp/>effect</highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>bindings</highlight></codeline>
+</programlisting></para>
+<para>The two solvers even work together:</para>
+<para><programlisting><codeline><highlight class="normal">|<sp/>?-<sp/>myfreeze(X,print(bound(x,X))),<sp/>domain(X,[1,2,3]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>domain(Y,[2,10]),<sp/>X=Y.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">bound(x,2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>side<sp/>effect</highlight></codeline>
+<codeline><highlight class="normal">X<sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>bindings</highlight></codeline>
+<codeline><highlight class="normal">Y<sp/>=<sp/>2</highlight></codeline>
+</programlisting></para>
+<para>The two example solvers interact via bindings to shared attributed variables only More complicated interactions are likely to be found in more sophisticated solvers The corresponding verify_attributes/3 predicates would typically refer to the attributes from other known solvers/modules via the module prefix in Module:get_atts/2</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

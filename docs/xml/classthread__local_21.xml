@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classthread__local_21" kind="class" language="Prolog" prot="public">
+    <compoundname>thread_local/1</compoundname>
+    <briefdescription>
+<para><bold>thread_local</bold>( <emphasis>+Functor/Arity</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>related to the <ref refid="classdynamic_21" kindref="compound">dynamic/1</ref> directive It tells the system that the predicate may be modified using <ref refid="classassert_21" kindref="compound">assert/1</ref> , <ref refid="classretract_21" kindref="compound">retract/1</ref> , etc, during execution of the program Unlike normal shared dynamic data however each thread has its own clause-list for the predicate As a thread starts, this clause list is empty If there are still clauses as the thread terminates these are automatically reclaimed by the system The <computeroutput>thread_local</computeroutput> property implies the property <computeroutput>dynamic</computeroutput></para>
+<para>Thread-local dynamic predicates are intended for maintaining thread-specific state or intermediate results of a computation</para>
+<para>It is not recommended to put clauses for a thread-local predicate into a file as in the example below as the clause is only visible from the thread that loaded the source-file All other threads start with an empty clause-list</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="keyword">thread_local</highlight><highlight class="normal"><sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">foo/1<sp/>.</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">foo(gnat)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/threads.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/threads.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

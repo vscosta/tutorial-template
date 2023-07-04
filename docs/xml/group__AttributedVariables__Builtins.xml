@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__AttributedVariables__Builtins" kind="group">
+    <compoundname>AttributedVariables_Builtins</compoundname>
+    <title>Low-level support for Attributed</title>
+    <innerclass refid="structcp__frame" prot="public">cp_frame</innerclass>
+    <innergroup refid="group__SICStusCConst">SICStus-style Constraints in C</innergroup>
+    <innergroup refid="group__SWICConst">SWI-style Constraints in C</innergroup>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__AttributedVariables__Builtins_1ga8c6e447a9e2f0bcd21a9356f0a31b9c1" prot="public" static="no">
+        <type>struct <ref refid="structcp__frame" kindref="compound">cp_frame</ref></type>
+        <definition>typedef struct cp_frame copy_frame</definition>
+        <argsstring></argsstring>
+        <name>copy_frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="126" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gaf9f50f1a2ece25a407ec7fb84e778a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_wake_goal</definition>
+        <argsstring>(Term tg USES_REGS)</argsstring>
+        <name>Yap_wake_goal</name>
+        <param>
+          <type>Term tg</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="39" column="6" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga41b2475e992d3ec48949e808bd673ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddToQueue</definition>
+        <argsstring>(attvar_record *attv USES_REGS)</argsstring>
+        <name>AddToQueue</name>
+        <param>
+          <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *attv</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="50" column="6" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="50" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gaa6cfa30233698e2a3e613bbda51284c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddCompareToQueue</definition>
+        <argsstring>(Term Cmp, Term t1, Term t2 USES_REGS)</argsstring>
+        <name>AddCompareToQueue</name>
+        <param>
+          <type>Term</type>
+          <declname>Cmp</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="67" column="6" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="67" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga4a69de8899efa697f12db004978b8233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddUnifToQueue</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>AddUnifToQueue</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="77" column="6" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="77" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gad5cb2d20e5088e394f5557d1c5c3d6d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *</type>
+        <definition>static attvar_record * BuildNewAttVar</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>BuildNewAttVar</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="92" column="22" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="92" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga5762e53af435adf77607159f555166c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *</type>
+        <definition>static attvar_record * SetNewAttVar</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>SetNewAttVar</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="105" column="22" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="105" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga62409d2b6a5d62dbe46eda3d6c0ef961" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CopyAttVar</definition>
+        <argsstring>(CELL *orig, void *tvp, CELL *res USES_REGS)</argsstring>
+        <name>CopyAttVar</name>
+        <param>
+          <type>CELL *</type>
+          <declname>orig</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>tvp</declname>
+        </param>
+        <param>
+          <type>CELL *res</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="128" column="12" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="128" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gaeb387796a830b882480a8f09a03953c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term AttVarToTerm</definition>
+        <argsstring>(CELL *orig)</argsstring>
+        <name>AttVarToTerm</name>
+        <param>
+          <type>CELL *</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="154" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="154" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga42767c1baf49b19bd1fdb6b856654033" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int IsEmptyWakeUp</definition>
+        <argsstring>(Term atts)</argsstring>
+        <name>IsEmptyWakeUp</name>
+        <param>
+          <type>Term</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="160" column="12" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="160" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga006428b257bcf79813337b39c66376d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_MkEmptyWakeUp</definition>
+        <argsstring>(Atom mod)</argsstring>
+        <name>Yap_MkEmptyWakeUp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="173" column="6" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gaea60650af4205f16d85d62acb807488f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int TermToAttVar</definition>
+        <argsstring>(Term attvar, Term to USES_REGS)</argsstring>
+        <name>TermToAttVar</name>
+        <param>
+          <type>Term</type>
+          <declname>attvar</declname>
+        </param>
+        <param>
+          <type>Term to</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="180" column="12" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="180" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga8e99feacef8a5d0d26a31c70a829a75e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void WakeAttVar</definition>
+        <argsstring>(CELL *pt1, CELL reg2 USES_REGS)</argsstring>
+        <name>WakeAttVar</name>
+        <param>
+          <type>CELL *</type>
+          <declname>pt1</declname>
+        </param>
+        <param>
+          <type>CELL reg2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="189" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="189" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gae6f223518a91ac01a4db17255b2d42f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_WakeUp</definition>
+        <argsstring>(CELL *pt0)</argsstring>
+        <name>Yap_WakeUp</name>
+        <param>
+          <type>CELL *</type>
+          <declname>pt0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="253" column="6" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="253" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gab19ce36055b94ecd8dd46d8ef14b2c5a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_attvar</definition>
+        <argsstring>(CELL *orig)</argsstring>
+        <name>mark_attvar</name>
+        <param>
+          <type>CELL *</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="265" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="265" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga47d6c14cfab33eeb38a189e5759195da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term BuildAttTerm</definition>
+        <argsstring>(Functor mfun, UInt ar USES_REGS)</argsstring>
+        <name>BuildAttTerm</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>mfun</declname>
+        </param>
+        <param>
+          <type>UInt ar</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="267" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="267" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga60ffc2d3ca03d8a6b422a57bdc88d04a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term SearchAttsForModule</definition>
+        <argsstring>(Term start, Functor mfun)</argsstring>
+        <name>SearchAttsForModule</name>
+        <param>
+          <type>Term</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>mfun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="286" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="286" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gacc755e972189abe874c46b632c1ce78f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term SearchAttsForModuleFunctorName</definition>
+        <argsstring>(Term start, Atom mname)</argsstring>
+        <name>SearchAttsForModuleFunctorName</name>
+        <param>
+          <type>Term</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>mname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="306" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="306" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga0bbf3ea6a4f5a5107723572c5679d4ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term SearchAttsForModuleName</definition>
+        <argsstring>(Term start, Atom mname)</argsstring>
+        <name>SearchAttsForModuleName</name>
+        <param>
+          <type>Term</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>mname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="328" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="328" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga65efcc24528a29d7545986900bba822a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AddNewModule</definition>
+        <argsstring>(attvar_record *attv, Term t, int new, int do_it USES_REGS)</argsstring>
+        <name>AddNewModule</name>
+        <param>
+          <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *</type>
+          <declname>attv</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>int do_it</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>SICStus add new set of constraints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="349" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="349" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gaeb22bdecf0f6d8f4741b4676908fe491" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void DelAllAtts</definition>
+        <argsstring>(attvar_record *attv USES_REGS)</argsstring>
+        <name>DelAllAtts</name>
+        <param>
+          <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *attv</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="436" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="436" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga7caacc143a91a9b31bfb53d44a0e80f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void DelAtts</definition>
+        <argsstring>(attvar_record *attv, Term oatt USES_REGS)</argsstring>
+        <name>DelAtts</name>
+        <param>
+          <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *</type>
+          <declname>attv</declname>
+        </param>
+        <param>
+          <type>Term oatt</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="440" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="440" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga3ebbf83976a7c46110c71dc0d20654af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PutAtt</definition>
+        <argsstring>(Int pos, Term atts, Term att USES_REGS)</argsstring>
+        <name>PutAtt</name>
+        <param>
+          <type>Int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>atts</declname>
+        </param>
+        <param>
+          <type>Term att</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="465" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="465" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1gafd573341a15e73cd72709449e989f4e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int BindAttVar</definition>
+        <argsstring>(attvar_record *attv USES_REGS)</argsstring>
+        <name>BindAttVar</name>
+        <param>
+          <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *attv</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="475" column="12" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="475" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga78af56459028aa23ea6fc38c1c8f231a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int UnBindAttVar</definition>
+        <argsstring>(attvar_record *attv)</argsstring>
+        <name>UnBindAttVar</name>
+        <param>
+          <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *</type>
+          <declname>attv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="512" column="12" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="512" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="group__AttributedVariables__Builtins_1ga02325f32f6cc44afbb8dfe9c3eef640c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term GetAllAtts</definition>
+        <argsstring>(attvar_record *attv)</argsstring>
+        <name>GetAllAtts</name>
+        <param>
+          <type><ref refid="structattvar__struct" kindref="compound">attvar_record</ref> *</type>
+          <declname>attv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/C/attvar.c" line="517" column="13" bodyfile="/home/vsc/github/yap/C/attvar.c" bodystart="517" bodyend="520"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Variables. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of Attribute Declarations</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

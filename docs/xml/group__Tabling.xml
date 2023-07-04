@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Tabling" kind="group">
+    <compoundname>Tabling</compoundname>
+    <title>Tabling</title>
+    <innerclass refid="classabolish__table_21" prot="public">abolish_table/1</innerclass>
+    <innerclass refid="classis__tabled_21" prot="public">is_tabled/1</innerclass>
+    <innerclass refid="classshow__table_21" prot="public">show_table/1</innerclass>
+    <innerclass refid="classtable_21" prot="public">table/1</innerclass>
+    <innerclass refid="classtable__statistics_21" prot="public">table_statistics/1</innerclass>
+    <innerclass refid="classtabling__mode_22" prot="public">tabling_mode/2</innerclass>
+    <innerclass refid="classop" prot="private">op</innerclass>
+    <briefdescription>
+<para><emphasis>YAPTab</emphasis> is the tabling engine that extends YAP&apos;s execution model to support tabled evaluation for definite programs </para>
+    </briefdescription>
+    <detaileddescription>
+<para>YAPTab was implemented by Ricardo Rocha and its implementation is largely based on the ground-breaking design of the XSB Prolog system, which implements the SLG-WAM Tables are implemented using tries and YAPTab supports the dynamic intermixing of batched scheduling and local scheduling at the subgoal level Currently, the following restrictions are of note:</para>
+<para><itemizedlist>
+<listitem><para>YAPTab does not handle tabled predicates with loops through negation (undefined behaviour)</para>
+</listitem><listitem><para>YAPTab does not handle tabled predicates with cuts (undefined behaviour)</para>
+</listitem><listitem><para>YAPTab does not support coroutining (configure error)</para>
+</listitem><listitem><para>YAPTab does not support tabling dynamic predicates (permission error)</para>
+</listitem></itemizedlist>
+</para>
+<para>To experiment with YAPTab use <computeroutput>--enable-tabling</computeroutput> in the configure script or add <computeroutput>-DTABLING</computeroutput> to <computeroutput>YAP_EXTRAS</computeroutput> in the system&apos;s <computeroutput>Makefile</computeroutput> We next describe the set of built-ins predicates designed to interact with YAPTab and control tabled execution:</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

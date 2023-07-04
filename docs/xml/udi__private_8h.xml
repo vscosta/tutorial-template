@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="udi__private_8h" kind="file" language="C++">
+    <compoundname>udi_private.h</compoundname>
+    <includes local="yes">config.h</includes>
+    <includes refid="udi_8h" local="yes">udi.h</includes>
+    <includes refid="utarray_8h" local="yes">utarray.h</includes>
+    <includes refid="uthash_8h" local="yes">uthash.h</includes>
+    <includes refid="clause__list_8h" local="yes">clause_list.h</includes>
+    <includedby refid="udi_8c" local="yes">/home/vsc/github/yap/C/udi.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/udi_private.h</label>
+        <link refid="udi__private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>utarray.h</label>
+        <link refid="utarray_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>uthash.h</label>
+        <link refid="uthash_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>clause_list.h</label>
+        <link refid="clause__list_8h_source"/>
+      </node>
+      <node id="3">
+        <label>udi.h</label>
+        <link refid="udi_8h_source"/>
+      </node>
+      <node id="2">
+        <label>config.h</label>
+      </node>
+      <node id="9">
+        <label>inttypes.h</label>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/udi.c</label>
+        <link refid="udi_8c_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/udi_private.h</label>
+        <link refid="udi__private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structudi__p__args" prot="public">udi_p_args</innerclass>
+    <innerclass refid="structudi__info" prot="public">udi_info</innerclass>
+    <innerclass refid="structsi__callback__h" prot="public">si_callback_h</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="udi__private_8h_1acfb93804fb1851967dca3311d883059a" prot="public" static="no">
+        <name>HASH_FIND_UdiInfo</name>
+        <param><defname>head</defname></param>
+        <param><defname>find</defname></param>
+        <param><defname>out</defname></param>
+        <initializer>  HASH_FIND(hh,head,find,sizeof(<ref refid="structpred__entry" kindref="compound">PredEntry</ref>),out)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="32" column="9" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="udi__private_8h_1a0666f651bb3cefc1d66a92f73a481b01" prot="public" static="no">
+        <name>HASH_ADD_UdiInfo</name>
+        <param><defname>head</defname></param>
+        <param><defname>p</defname></param>
+        <param><defname>add</defname></param>
+        <initializer>  HASH_ADD_KEYPTR(hh,head,p,sizeof(<ref refid="structpred__entry" kindref="compound">PredEntry</ref> *),add)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="34" column="9" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="udi__private_8h_1ab46ee3c074405862d799e176e6c42b13" prot="public" static="no">
+        <type>struct <ref refid="structudi__p__args" kindref="compound">udi_p_args</ref> *</type>
+        <definition>typedef struct udi_p_args* UdiPArg</definition>
+        <argsstring></argsstring>
+        <name>UdiPArg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="12" column="25" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="udi__private_8h_1a9b4adf3955be9d4c0e834d2b7f873d91" prot="public" static="no">
+        <type>struct <ref refid="structudi__info" kindref="compound">udi_info</ref> *</type>
+        <definition>typedef struct udi_info* UdiInfo</definition>
+        <argsstring></argsstring>
+        <name>UdiInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="29" column="23" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="udi__private_8h_1ab964f923be1d5cdadf8542527f248193" prot="public" static="no">
+        <type>struct <ref refid="structsi__callback__h" kindref="compound">si_callback_h</ref> *</type>
+        <definition>typedef struct si_callback_h* si_callback_h_t</definition>
+        <argsstring></argsstring>
+        <name>si_callback_h_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="53" column="29" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="udi__private_8h_1a5422cf0c924ba93d4d4ac1311ed2e758" prot="public" static="no" mutable="no">
+        <type><ref refid="structUT__icd" kindref="compound">UT_icd</ref></type>
+        <definition>UT_icd arg_icd</definition>
+        <argsstring></argsstring>
+        <name>arg_icd</name>
+        <initializer>= {sizeof(struct <ref refid="structudi__p__args" kindref="compound">udi_p_args</ref>), NULL, NULL, NULL }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="13" column="8" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="udi__private_8h_1aa8b74a0526d740e8efd2bee05befe14a" prot="public" static="no" mutable="no">
+        <type><ref refid="structUT__icd" kindref="compound">UT_icd</ref></type>
+        <definition>UT_icd cl_icd</definition>
+        <argsstring></argsstring>
+        <name>cl_icd</name>
+        <initializer>= {sizeof(<ref refid="structyami" kindref="compound">yamop</ref> *), NULL, NULL, NULL }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="16" column="8" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="udi__private_8h_1a1e3f1fda9bf75546214f6fde9f0ddf60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>static YAP_Int p_new_udi</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_new_udi</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="38" column="16" declfile="/home/vsc/github/yap/H/udi_private.h" declline="38" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="udi__private_8h_1a1c288335cbc73f19950f93f52a349613" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>static YAP_Int p_udi_args_init</definition>
+        <argsstring>(Term spec, int arity, UdiInfo blk)</argsstring>
+        <name>p_udi_args_init</name>
+        <param>
+          <type>Term</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type><ref refid="structudi__info" kindref="compound">UdiInfo</ref></type>
+          <declname>blk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="39" column="16" bodyfile="/home/vsc/github/yap/C/udi.c" bodystart="110" bodyend="141" declfile="/home/vsc/github/yap/H/udi_private.h" declline="39" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="udi__private_8h_1a107cd4a96c5ae4941cce8ad7c1edea46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int si_callback</definition>
+        <argsstring>(void *key, void *data, void *arg)</argsstring>
+        <name>si_callback</name>
+        <param>
+          <type>void *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/udi_private.h" line="55" column="19" bodyfile="/home/vsc/github/yap/H/udi_private.h" bodystart="55" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/udi_private.h"/>
+  </compounddef>
+</doxygen>

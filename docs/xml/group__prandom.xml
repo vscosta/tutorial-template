@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__prandom" kind="group">
+    <compoundname>prandom</compoundname>
+    <title>Van Gelder Random Number Generator</title>
+    <innerclass refid="classrannum_21" prot="public">rannum/1</innerclass>
+    <innerclass refid="classranstart_20" prot="private">ranstart/0</innerclass>
+    <innerclass refid="classranstart_21" prot="public">ranstart/1</innerclass>
+    <innerclass refid="classranunif_22" prot="public">ranunif/2</innerclass>
+    <briefdescription>
+<para>% % The following code produces the same random numbers as my previous ranpkg.pl, but is more accurately documented and slightly more efficient </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+</para>
+<para>ranpkg.pl random number package Allen Van Gelder, Stanford % rannum produces a random non-negative integer whose low bits are not all that random, so it should be scaled to a smaller range in general The integer is in the range 0 2^(w-1) - 1, where w is the word size available for integers, e.g., 18 for DEC-10, and 16 or 32 for VAX and most IBM % ranunif produces a uniformly distributed non-negative random integer over a caller-specified range If range is R, the result is in 0 R-1 % ranstart must be called before the first use of rannum or ranunif, and may be called later to redefine the seed ranstart/0 causes a built-in seed to be used ranstart(N), N an integer, varies this, but the same N always produces the same sequence of numbers % According to my reading of Knuth, Vol 2, this generator has period 2^(w-1) and potency w/2 , i.e., 8, 9, or 16 in practice Knuth says potency should be at least 5, so this looks more than adequate Its drawback is the lack of randomness of low-order bits</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

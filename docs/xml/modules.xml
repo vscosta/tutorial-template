@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="modules" kind="page">
+    <compoundname>modules</compoundname>
+    <title>The YAP Module system</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The YAP module system is based on the Quintus/SISCtus module system ˜quintus In this design, modules are named collections of predicates, and all predicates belong to a single module By default, predicates are only visible within a module, or <emphasis>private</emphasis> to that module The module may also define a list of predicates that are <emphasis>exported</emphasis>, that is, visible to other modules</para>
+<para>The main predicates in the module system are:</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classmodule_22" kindref="compound">module/2</ref> associates a source file to a module It has two arguments: the name of the new module, and a list of predicates exported by the module</para>
+</listitem><listitem><para><ref refid="classuse__module_21" kindref="compound">use_module/1</ref> and <ref refid="classuse__module_22" kindref="compound">use_module/2</ref> can be used to load a module They take as first argument the source file for the module Whereas <ref refid="classuse__module_21" kindref="compound">use_module/1</ref> loads all exported predicates, <ref refid="classuse__module_22" kindref="compound">use_module/2</ref> only takes the ones given by the second argument</para>
+</listitem></itemizedlist>
+</para>
+<para>YAP pre-defines a number of modules Most system predicates belong to the module <computeroutput>prolog</computeroutput> Predicates from the module <computeroutput>prolog</computeroutput> are automatically visible to every module The <computeroutput>system</computeroutput> module was introduced for SWI-Prolog compatibility, and in YAP mostly acts as an alias to <computeroutput>prolog</computeroutput> The <computeroutput>user</computeroutput> module is also visible to all other modules</para>
+<para>The YAP engine is always associated to a module, the current <emphasis>source module</emphasis> or <emphasis>type-in module</emphasis> By default, all predicates read-in and all calls to a goal will be made to predicates visible to the current source module, Initially, the source module for YAP is the module <computeroutput>user</computeroutput> Thus Prolog programs that do not define modules will operate within the <computeroutput>user</computeroutput> module In this case, all predicates will be visible to all source files</para>
+<para>YAP includes a number of libraries and packages, most of them defining their own modules Note that there is no system mechanism to avoid clashes between module names, so it is up to the programmer to carefully choose the names for her own program modules</para>
+<para>The main mechanism to change the current type-in module is by using the <ref refid="classmodule_22" kindref="compound">module/2</ref> declaration.This declaration sets the source module when it starts consulting a file, and resets it at the end One can set the type-in module permanently by using the built-in <computeroutput><ref refid="classmodule_21" kindref="compound">module/1</ref> </computeroutput> </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/modules.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="run" kind="page">
+    <compoundname>run</compoundname>
+    <title>Running YAP</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>We next describe how to invoke YAP in Unix systems</para>
+<sect2 id="run_1Running_YAP_Interactively">
+<title>Running YAP Interactively</title>
+<para>Most often you will want to use YAP in interactive mode Assuming that YAP is in the user&apos;s search path, the top-level can be invoked under Unix with the following command:</para>
+<para><programlisting><codeline><highlight class="normal">yap<sp/>[-s<sp/>n]<sp/>[-h<sp/>n]<sp/>[-a<sp/>n]<sp/>[-c<sp/>IP_HOST<sp/>port<sp/>]<sp/>[filename]</highlight></codeline>
+</programlisting></para>
+<para>All the arguments and flags are optional and have the following meaning:</para>
+<para><itemizedlist>
+<listitem><para>-? print a short error message</para>
+</listitem><listitem><para>-s <emphasis>Size</emphasis> allocate <emphasis>Size</emphasis> KBytes for local and global stacks The user may specify <computeroutput>M</computeroutput> bytes</para>
+</listitem><listitem><para>-h <emphasis>Size</emphasis> allocate <emphasis>Size</emphasis> KBytes for heap and auxiliary stacks</para>
+</listitem><listitem><para>-t <emphasis>Size</emphasis> allocate <emphasis>Size</emphasis> KBytes for the trail stack</para>
+</listitem><listitem><para>-L <emphasis>Size</emphasis> SWI-compatible option to allocate <emphasis>Size</emphasis> K bytes for local and global stacks, the local stack cannot be expanded To avoid confusion with the load option, <emphasis>Size</emphasis> must immediately follow the letter <computeroutput>L</computeroutput></para>
+</listitem><listitem><para>-G <emphasis>Size</emphasis> SWI-compatible option to allocate <emphasis>Size</emphasis> K bytes for local and global stacks; the global stack cannot be expanded</para>
+</listitem><listitem><para>-<ref refid="classT" kindref="compound">T</ref> <emphasis>Size</emphasis> SWI-compatible option to allocate <emphasis>Size</emphasis> K bytes for the trail stack; the trail cannot be expanded</para>
+</listitem><listitem><para>-l <emphasis>YAP_FILE</emphasis> compile the Prolog file <emphasis>YAP_FILE</emphasis> before entering the top-level</para>
+</listitem><listitem><para>-L <emphasis>YAP_FILE</emphasis> compile the Prolog file <emphasis>YAP_FILE</emphasis> and then halt This option is useful for implementing scripts</para>
+</listitem><listitem><para>-g <emphasis>Goal</emphasis> run the goal <emphasis>Goal</emphasis> before top-level The goal is converted from an atom to a Prolog term</para>
+</listitem><listitem><para>-z <emphasis>Goal</emphasis> run the goal <emphasis>Goal</emphasis> as top-level The goal is converted from an atom to a Prolog term</para>
+</listitem><listitem><para>-b <emphasis>BOOT_FILE</emphasis> boot code is in Prolog file <emphasis>BOOT_FILE</emphasis> The filename must define the predicate <lsquo/><rsquo/>$live&apos;/0`</para>
+</listitem><listitem><para>-c <computeroutput>IP_HOST</computeroutput> <computeroutput>port</computeroutput> connect standard streams to host <computeroutput>IP_HOST</computeroutput> at port <computeroutput>port</computeroutput></para>
+</listitem><listitem><para>filename restore state saved in the given file</para>
+</listitem><listitem><para>-f do not consult initial files</para>
+</listitem><listitem><para>-q do not print informational messages</para>
+</listitem><listitem><para><ndash/> separator for arguments to Prolog code These arguments are visible through the <ref refid="classunix_21" kindref="compound">unix/1</ref> built-in predicate</para>
+</listitem></itemizedlist>
+</para>
+<para>Note that YAP will output an error message on the following conditions:</para>
+<para><itemizedlist>
+<listitem><para>a file name was given but the file does not exist or is not a saved YAP state;</para>
+</listitem><listitem><para>the necessary amount of memory could not be allocated;</para>
+</listitem><listitem><para>the allocated memory is not enough to restore the state</para>
+</listitem></itemizedlist>
+</para>
+<para><verbatim>When restoring a saved state, YAP will allocate the
+</verbatim> same amount of memory as that in use when the state was saved, unless a different amount is specified by flags in the command line By default, YAP restores the file startup.yss from the current directory or from the YAP library</para>
+<para><itemizedlist>
+<listitem><para>YAP usually boots from a saved state The saved state will use the default installation directory to search for the YAP binary unless you define the environment variable YAPBINDIR</para>
+</listitem><listitem><para>YAP always tries to find saved states from the current directory first If it cannot it will use the environment variable YAPLIBDIR, if defined, or search the default library directory</para>
+</listitem></itemizedlist>
+</para>
+<para>YAP will try to find library files from the YAPSHAREDIR/library directory</para>
+</sect2>
+<sect2 id="run_1Running_Prolog_Files">
+<title>Running Prolog Files</title>
+<para>YAP can also be used to run Prolog files as scripts, at least in Unix-like environments A simple example is shown next (do not forget that the shell comments are very important):</para>
+<para><programlisting><codeline><highlight class="normal">#!/usr/local/bin/yap<sp/>-L<sp/>--</highlight></codeline>
+<codeline><highlight class="normal">#</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Hello<sp/>World<sp/>script<sp/>file<sp/>using<sp/>YAP</highlight></codeline>
+<codeline><highlight class="normal">#</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>put<sp/>a<sp/>dot<sp/>because<sp/>of<sp/>syntax<sp/>errors<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>write(&apos;Hello<sp/>World&apos;),<sp/>nl.</highlight></codeline>
+</programlisting></para>
+<para>The <computeroutput>#!</computeroutput> characters specify that the script should call the binary file YAP Notice that many systems will require the complete path to the YAP binary The <computeroutput>-L</computeroutput> flag indicates that YAP should consult the current file when booting and then halt The remaining arguments are then passed to YAP Note that YAP will skip the first lines if they start with <computeroutput>#</computeroutput> (the comment sign for Unix&apos;s shell) YAP will consult the file and execute any commands</para>
+<para>A slightly more sophisticated example is:</para>
+<para><programlisting><codeline><highlight class="normal">#!/usr/bin/yap<sp/>-L<sp/>--</highlight></codeline>
+<codeline><highlight class="normal">#</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Hello<sp/>World<sp/>script<sp/>file<sp/>using<sp/>YAP</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>initialization(main).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">main<sp/>:-<sp/>write(&apos;Hello<sp/>World&apos;),<sp/>nl.</highlight></codeline>
+</programlisting></para>
+<para>The <computeroutput>initialization</computeroutput> directive tells YAP to execute the goal main after consulting the file Source code is thus compiled and <computeroutput>main</computeroutput> executed at the end The <computeroutput></computeroutput> is useful while debugging the script as a Prolog program: it guarantees that the syntax error will not propagate to the Prolog code</para>
+<para>Notice that the <computeroutput>--</computeroutput> is required so that the shell passes the extra arguments to YAP As an example, consider the following script <computeroutput>dump_args</computeroutput>:</para>
+<para><programlisting><codeline><highlight class="normal">#!/usr/bin/yap<sp/>-L<sp/>--</highlight></codeline>
+<codeline><highlight class="normal">#.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">main(<sp/>[]<sp/>).</highlight></codeline>
+<codeline><highlight class="normal">main(<sp/>[H|T]<sp/>)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write(<sp/>H<sp/>),<sp/>nl,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>main(<sp/>T<sp/>).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>unix(<sp/>argv(AllArgs)<sp/>),<sp/>main(<sp/>AllArgs<sp/>).</highlight></codeline>
+</programlisting></para>
+<para>If you this run this script with the arguments:</para>
+<para><programlisting><codeline><highlight class="normal">./dump_args<sp/>-s<sp/>10000</highlight></codeline>
+</programlisting> the script will start an YAP process with stack size <computeroutput>10MB</computeroutput>, and the list of arguments to the process will be empty</para>
+<para>Often one wants to run the script as any other program, and for this it is convenient to ignore arguments to YAP This is possible by using <computeroutput>L --</computeroutput> as in the next version of <computeroutput>dump_args</computeroutput>:</para>
+<para><programlisting><codeline><highlight class="normal">#!/usr/bin/yap<sp/>-L<sp/>--</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">main(<sp/>[]<sp/>).</highlight></codeline>
+<codeline><highlight class="normal">main(<sp/>[H|T]<sp/>)<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write(<sp/>H<sp/>),<sp/>nl,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>main(<sp/>T<sp/>).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">:-<sp/>unix(<sp/>argv(AllArgs)<sp/>),<sp/>main(<sp/>AllArgs<sp/>).</highlight></codeline>
+</programlisting></para>
+<para>The <computeroutput>--</computeroutput> indicates the next arguments are not for YAP Instead, they must be sent directly to the argv built-in Hence, running</para>
+<para><programlisting><codeline><highlight class="normal">./dump_args<sp/>test</highlight></codeline>
+</programlisting></para>
+<para>will write <computeroutput>test</computeroutput> on the standard output </para>
+</sect2>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/docs/md/run.md"/>
+  </compounddef>
+</doxygen>

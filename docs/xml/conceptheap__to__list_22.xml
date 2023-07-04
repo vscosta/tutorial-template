@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptheap__to__list_22" kind="concept">
+    <compoundname>heap_to_list/2</compoundname>
+    <initializer>template&lt;&gt;
+concept heap_to_list/2 =     </initializer>
+    <briefdescription>
+<para><bold>heap_to_list</bold>(+ <emphasis>Heap</emphasis>, - <emphasis>List</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>% returns the current set of Key-Datum pairs in the Heap as a List, sorted into ascending order of Keys This is included simply because I think every data structure foo ought to have a foo_to_list and list_to_foo relation (where, of course, it makes sense!) so that conversion between arbitrary data structures is as easy as possible This predicate is basically just a merge sort, where we can exploit the fact that the tops of the subtrees are smaller than their descendants </para>
+    </detaileddescription>
+    <location file="library/heaps.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

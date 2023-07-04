@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptfile__filter_23" kind="concept">
+    <compoundname>file_filter/3</compoundname>
+    <initializer>template&lt;&gt;
+concept file_filter/3 =     </initializer>
+    <briefdescription>
+<para><bold>file_filter</bold>(+ <emphasis>FileIn</emphasis>, + <emphasis>FileOut</emphasis>, + <emphasis>Goal</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>meta<itemizedlist>
+<listitem><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&lt;em&gt;FileIn&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to process </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&lt;em&gt;FileOut&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file, often user_error </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&lt;em&gt;Goal&lt;/em&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to be metacalled, receives FileIn and FileOut as extra arguments</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem><listitem><para><simplesect kind="return"><para>succeeds</para>
+</simplesect>
+For every line <emphasis>LineIn</emphasis> in file <emphasis>FileIn</emphasis>, execute <computeroutput>call(Goal,LineIn,LineOut)</computeroutput>, and output <emphasis>LineOut</emphasis> to file <emphasis>FileOut</emphasis></para>
+<para>The input stream is accessible through the alias <computeroutput>filter_input</computeroutput>, and the output stream is accessible through <computeroutput>filter_output</computeroutput> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="library/lineutils.yap" line="2" column="1"/>
+  </compounddef>
+</doxygen>

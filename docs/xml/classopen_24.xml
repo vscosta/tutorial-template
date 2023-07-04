@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classopen_24" kind="class" language="Prolog" prot="public">
+    <compoundname>open/4</compoundname>
+    <briefdescription>
+<para><bold>open</bold>(+ <emphasis>F</emphasis>,+ <emphasis>M</emphasis>,- <emphasis>S</emphasis>,+ <emphasis>Opts</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>defined in the <emphasis>ISO</emphasis> standard</para>
+<para>Opens the file with name <emphasis>F</emphasis> in mode <emphasis>M</emphasis> (<computeroutput>read</computeroutput>, <computeroutput>write</computeroutput> or <computeroutput>append</computeroutput>), returning <emphasis>S</emphasis> unified with the stream name, and following these options:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>type(+ _T_)</computeroutput> is iso</para>
+</listitem></itemizedlist>
+</para>
+<para>Specify whether the stream is a <computeroutput>text</computeroutput> stream (default), or a <computeroutput>binary</computeroutput> stream</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>reposition(+ _Bool_)</computeroutput> is iso Specify whether it is possible to reposition the stream (<computeroutput>true</computeroutput>), or not (<computeroutput>false</computeroutput>) By default, YAP enables repositioning for all files, except terminal files and sockets</para>
+</listitem><listitem><para><computeroutput>eof(+ _Action_)</computeroutput> is iso</para>
+</listitem></itemizedlist>
+</para>
+<para>Specify the action to take if attempting to input characters from a stream where we have previously found an <computeroutput>end_of_file</computeroutput> The possible actions are <computeroutput>error</computeroutput>, that raises an error, <computeroutput>reset</computeroutput>, that tries to reset the stream and is used for <computeroutput>tty</computeroutput> type files, and <computeroutput>eof_code</computeroutput>, which generates a new <computeroutput>end_of_file</computeroutput> (default for non-tty files)</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>alias(+ _Name_)</computeroutput> is iso</para>
+</listitem></itemizedlist>
+</para>
+<para>Specify an alias to the stream The alias <computeroutput>Name</computeroutput> must be an atom The alias can be used instead of the stream descriptor for every operation concerning the stream</para>
+<para>The operation will fail and give an error if the alias name is already in use YAP allows several aliases for the same file, but only one is returned by <ref refid="classstream__property_22" kindref="compound">stream_property/2</ref></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>bom(+ _Bool_)</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>If present and <computeroutput>true</computeroutput>, a BOM (<emphasis>Byte Order Mark</emphasis>) was detected while opening the file for reading or a BOM was written while opening the stream See BOM for details</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>encoding(+ _Encoding_)</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>Set the encoding used for text See Encoding for an overview of wide character and encoding issues</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>representation_errors(+ _Mode_)</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>Change the behaviour when writing characters to the stream that cannot be represented by the encoding The behaviour is one of <computeroutput>error</computeroutput> (throw and Input/Output error exception), <computeroutput>prolog</computeroutput> (write <computeroutput>\u...\</computeroutput> escape code or <computeroutput>xml</computeroutput> (write <computeroutput>\&amp;#...;</computeroutput> XML character entity) The initial mode is <computeroutput>prolog</computeroutput> for the user streams and <computeroutput>error</computeroutput> for all other streams See also Encoding</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>expand_filename(+ _Mode_)</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>If <emphasis>Mode</emphasis> is <computeroutput>true</computeroutput> then do filename expansion, then ask Prolog to do file name expansion before actually trying to opening the file: this includes processing <computeroutput>~</computeroutput> characters and processing <computeroutput>$</computeroutput> environment variables at the beginning of the file Otherwise, just try to open the file using the given name</para>
+<para>The default behavior is given by the Prolog flag open_expands_filename</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>script( + _Boolean_ )</computeroutput> YAP extension</para>
+</listitem></itemizedlist>
+</para>
+<para>The file may be a Prolog script In <computeroutput>read</computeroutput> mode just check for initial lines if they start with the hash symbol, and skip them In <computeroutput>write</computeroutput> mode output an header that can be used to launch the file by calling <computeroutput>yap -l file -- $*</computeroutput> Note that YAP will not set file permissions as executable In <computeroutput>append</computeroutput> mode ignore the flag </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/iopreds.c" line="1648" column="1" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="1648" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classYAPPredicate" kind="class" language="C++" prot="public">
+    <compoundname>YAPPredicate</compoundname>
+    <basecompoundref refid="classYAPModuleProp" prot="public" virt="non-virtual">YAPModuleProp</basecompoundref>
+    <derivedcompoundref refid="classYAPFLIP" prot="public" virt="non-virtual">YAPFLIP</derivedcompoundref>
+    <derivedcompoundref refid="classYAPPrologPredicate" prot="public" virt="non-virtual">YAPPrologPredicate</derivedcompoundref>
+    <derivedcompoundref refid="classYAPQuery" prot="public" virt="non-virtual">YAPQuery</derivedcompoundref>
+    <includes refid="tmp_2yapdb_8hh" local="no">yapdb.hh</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classYAPPredicate_1abce547a0e7fe87f57877644b72180813" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>YAPQuery</definition>
+        <argsstring></argsstring>
+        <name>YAPQuery</name>
+        <qualifiedname>YAPPredicate::YAPQuery</qualifiedname>
+        <param>
+          <type><ref refid="classYAPQuery" kindref="compound">YAPQuery</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="87" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classYAPPredicate_1a03b58dec6f9e452a9bff1f47c99ac196" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>YAPEngine</definition>
+        <argsstring></argsstring>
+        <name>YAPEngine</name>
+        <qualifiedname>YAPPredicate::YAPEngine</qualifiedname>
+        <param>
+          <type><ref refid="classYAPEngine" kindref="compound">YAPEngine</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="88" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classYAPPredicate_1afca26983d817d2a965a30ad6bdfd7b2e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class YAPModule</definition>
+        <argsstring></argsstring>
+        <name>YAPModule</name>
+        <qualifiedname>YAPPredicate::YAPModule</qualifiedname>
+        <param>
+          <type><ref refid="classYAPModule" kindref="compound">YAPModule</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="67" column="16" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classYAPPredicate_1a839d6526c02047d6014f3f70ccbf77ca" prot="protected" static="no" mutable="no">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * ap</definition>
+        <argsstring></argsstring>
+        <name>ap</name>
+        <qualifiedname>YAPPredicate::ap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="91" column="13" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classYAPPredicate_1a221827607deb87db2a667e3464069dfd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * getPred</definition>
+        <argsstring>(Term &amp;t, Term &amp;tm, CELL *&amp;outp)</argsstring>
+        <name>getPred</name>
+        <qualifiedname>YAPPredicate::getPred</qualifiedname>
+        <param>
+          <type>Term &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term &amp;</type>
+          <declname>tm</declname>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>outp</declname>
+          <defname>out</defname>
+        </param>
+        <briefdescription>
+<para>auxiliary routine to find a predicate in the current module </para>
+        </briefdescription>
+        <detaileddescription>
+<para>auxiliary routine to find a predicate in the current module</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="96" column="13" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="1134" bodyend="1167"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aa6191e913472b983093c01c1bf932226" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * asPred</definition>
+        <argsstring>()</argsstring>
+        <name>asPred</name>
+        <qualifiedname>YAPPredicate::asPred</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="98" column="13" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a255d049e4e7504d950d7d5c3aa88b123" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>()</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <briefdescription>
+<para>Empty constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Just do nothing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="103" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a736af68fff04dcf3e65d2cafe9a94208" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Term &amp;to, Term &amp;tmod, CELL *&amp;ts, const char *pname)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>Term &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>Term &amp;</type>
+          <declname>tmod</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>ts</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="104" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="70" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aaafc77158efa32b43c50a4d18414a0e2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Term t, CELL *&amp;v)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Term constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is just a call to getPred </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="109" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="109" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a99c37898eb0dffd137ad1df69c44cc96" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="118" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="118" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a90447039b725dc6f517258415fd8684f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPTerm t, CELL *&amp;v)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Term constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is just a call to getPred </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="131" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="131" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a1ddef13a05f27efc4f924b996039add1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPTerm t)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="137" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="137" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a6f15eb837f0254301396dabefa9847be" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(PredEntry *pe)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+<para>Cast constructor for predicates, if we have the implementation data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="149" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a6e63817a11e3cd53a2fcf7104d853b21" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Functor f, Term mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Functor constructor for predicates, is given a specific module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This version avoids manufacturing objects </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="153" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a221827607deb87db2a667e3464069dfd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * getPred</definition>
+        <argsstring>(Term &amp;t, Term &amp;tm, CELL *&amp;outp)</argsstring>
+        <name>getPred</name>
+        <qualifiedname>YAPPredicate::getPred</qualifiedname>
+        <param>
+          <type>Term &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term &amp;</type>
+          <declname>tm</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>outp</declname>
+        </param>
+        <briefdescription>
+<para>auxiliary routine to find a predicate in the current module </para>
+        </briefdescription>
+        <detaileddescription>
+<para>auxiliary routine to find a predicate in the current module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="75" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aa6191e913472b983093c01c1bf932226" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * asPred</definition>
+        <argsstring>()</argsstring>
+        <name>asPred</name>
+        <qualifiedname>YAPPredicate::asPred</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="77" column="13" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a255d049e4e7504d950d7d5c3aa88b123" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>()</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <briefdescription>
+<para>Empty constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Just do nothing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="82" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a736af68fff04dcf3e65d2cafe9a94208" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Term &amp;to, Term &amp;tmod, CELL *&amp;ts, const char *pname)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>Term &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>Term &amp;</type>
+          <declname>tmod</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>ts</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="83" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aaafc77158efa32b43c50a4d18414a0e2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Term t, CELL *&amp;v)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Term constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is just a call to getPred </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="88" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a99c37898eb0dffd137ad1df69c44cc96" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="97" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="97" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a90447039b725dc6f517258415fd8684f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPTerm t, CELL *&amp;v)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Term constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is just a call to getPred </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="110" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a1ddef13a05f27efc4f924b996039add1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPTerm t)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="116" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="116" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a6f15eb837f0254301396dabefa9847be" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(PredEntry *pe)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+<para>Cast constructor for predicates, if we have the implementation data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="128" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a6e63817a11e3cd53a2fcf7104d853b21" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(Functor f, Term mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Functor constructor for predicates, is given a specific module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This version avoids manufacturing objects </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="131" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="131" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classYAPPredicate_1ae5dc855b114b682b9c539b4ba60d7c87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *s0, Term &amp;tout, YAPPairTerm *&amp;names, CELL *&amp;nts)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>Term &amp;</type>
+          <declname>tout</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPPairTerm" kindref="compound">YAPPairTerm</ref> *&amp;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>nts</declname>
+        </param>
+        <briefdescription>
+<para>String constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It also communicates the array of arguments t[] and the array of variables back to yapquery </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="163" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="163" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1af30be87590acccb6ce7157ce2244e182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPFunctor f)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Functor constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Asssumes that we use the current module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="186" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aab7e9cb818ca49a91301cb7cd7a89e43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPFunctor f, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Functor constructor for predicates, is given a specific module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="193" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a131daa736323a89d0e1c8c5c3c8c8408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Name/arity constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="199" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a1b010f7b47026ff7ea2fe226fe19748e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+<para>Name/0 constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="205" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="1118" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a5ee2f0a3479a7c05d820e7aa33aad41d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at, uintptr_t arity, YAPModule mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPModule" kindref="compound">YAPModule</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Mod:Name/Arity constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="209" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="209" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a497c3162a2df06c3d589c7e89b254e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at, uintptr_t arity)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+<para>Atom/Arity constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="220" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="1123" bodyend="1131"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a9c40b8f42f91ea7e952c28ba4c9f04c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const std::string at, uintptr_t arity, std::string mod=&quot;&quot;)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mod</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>std::string/Arity constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="224" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="224" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a3818a65b9b966890fb413553aa63e8d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *at, uintptr_t arity)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+<para>char *<zwj/>/arity constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="239" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1ad3c7235fd07739c3234e2e01044db777" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *at, uintptr_t arity, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>char *<zwj/>/module constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="248" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aa580424b7ce0f88c0e4687489dfc02dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *at, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>char *<zwj/>/module constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="255" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="255" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1ad7e7e243814ba75f01ab17f9bdea20c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classYAPModule" kindref="compound">YAPModule</ref></type>
+        <definition>YAPModule module</definition>
+        <argsstring>()</argsstring>
+        <name>module</name>
+        <qualifiedname>YAPPredicate::module</qualifiedname>
+        <reimplements refid="classYAPModuleProp_1af8460aab038e557e0ab03e1338503b8e">module</reimplements>
+        <briefdescription>
+<para>module of a predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>notice that modules are currently treated as atoms, this should change </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="262" column="13" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="262" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aa81cc38dff90358b272f46b7f442b96f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+        <definition>YAPAtom name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>YAPPredicate::name</qualifiedname>
+        <briefdescription>
+<para>name of predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>notice that we return the atom, not a string </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="272" column="11" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="272" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1ab4c33ce3d95491d0ebf1cdd176e5798d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+        <definition>YAPFunctor functor</definition>
+        <argsstring>()</argsstring>
+        <name>functor</name>
+        <qualifiedname>YAPPredicate::functor</qualifiedname>
+        <briefdescription>
+<para>functor of predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>onlu defined if arity &gt;= 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="282" column="14" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="282" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1af610666f80f3e2cc32141aac455386a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uintptr_t</type>
+        <definition>uintptr_t getArity</definition>
+        <argsstring>()</argsstring>
+        <name>getArity</name>
+        <qualifiedname>YAPPredicate::getArity</qualifiedname>
+        <briefdescription>
+<para>arity of predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>we return a positive number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="293" column="13" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="293" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a1a6c0ed3b23d695428b3cc2659036e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>arity_t</type>
+        <definition>arity_t arity</definition>
+        <argsstring>()</argsstring>
+        <name>arity</name>
+        <qualifiedname>YAPPredicate::arity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="294" column="11" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="294" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a034c990d9a63b743fd7db59da5455fad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * predEntry</definition>
+        <argsstring>()</argsstring>
+        <name>predEntry</name>
+        <qualifiedname>YAPPredicate::predEntry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="295" column="13" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="295" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1ae5dc855b114b682b9c539b4ba60d7c87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *s0, Term &amp;tout, YAPPairTerm *&amp;names, CELL *&amp;nts)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>s0</declname>
+        </param>
+        <param>
+          <type>Term &amp;</type>
+          <declname>tout</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPPairTerm" kindref="compound">YAPPairTerm</ref> *&amp;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>CELL *&amp;</type>
+          <declname>nts</declname>
+        </param>
+        <briefdescription>
+<para>String constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It also communicates the array of arguments t[] and the array of variables back to yapquery </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="141" column="3" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="141" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1af30be87590acccb6ce7157ce2244e182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPFunctor f)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Functor constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Asssumes that we use the current module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="164" column="3" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aab7e9cb818ca49a91301cb7cd7a89e43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPFunctor f, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Functor constructor for predicates, is given a specific module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="171" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a131daa736323a89d0e1c8c5c3c8c8408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Name/arity constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="177" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a1b010f7b47026ff7ea2fe226fe19748e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+<para>Name/0 constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="183" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a5ee2f0a3479a7c05d820e7aa33aad41d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at, uintptr_t arity, YAPModule mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPModule" kindref="compound">YAPModule</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Mod:Name/Arity constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="187" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="187" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a497c3162a2df06c3d589c7e89b254e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(YAPAtom at, uintptr_t arity)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+<para>Atom/Arity constructor for predicates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="198" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a9c40b8f42f91ea7e952c28ba4c9f04c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const std::string at, uintptr_t arity, std::string mod=&quot;&quot;)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mod</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>std::string/Arity constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="202" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="202" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a3818a65b9b966890fb413553aa63e8d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *at, uintptr_t arity)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+<para>char *<zwj/>/arity constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="217" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="217" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1ad3c7235fd07739c3234e2e01044db777" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *at, uintptr_t arity, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>char *<zwj/>/module constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="226" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aa580424b7ce0f88c0e4687489dfc02dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPPredicate</definition>
+        <argsstring>(const char *at, YAPTerm mod)</argsstring>
+        <name>YAPPredicate</name>
+        <qualifiedname>YAPPredicate::YAPPredicate</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>char *<zwj/>/module constructor for predicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="233" column="10" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1ad7e7e243814ba75f01ab17f9bdea20c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classYAPModule" kindref="compound">YAPModule</ref></type>
+        <definition>YAPModule module</definition>
+        <argsstring>()</argsstring>
+        <name>module</name>
+        <qualifiedname>YAPPredicate::module</qualifiedname>
+        <reimplements refid="classYAPModuleProp_1af8460aab038e557e0ab03e1338503b8e">module</reimplements>
+        <briefdescription>
+<para>module of a predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>notice that modules are currently treated as atoms, this should change </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="240" column="13" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="240" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1aa81cc38dff90358b272f46b7f442b96f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPAtom" kindref="compound">YAPAtom</ref></type>
+        <definition>YAPAtom name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>YAPPredicate::name</qualifiedname>
+        <briefdescription>
+<para>name of predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>notice that we return the atom, not a string </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="250" column="11" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="250" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1ab4c33ce3d95491d0ebf1cdd176e5798d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+        <definition>YAPFunctor functor</definition>
+        <argsstring>()</argsstring>
+        <name>functor</name>
+        <qualifiedname>YAPPredicate::functor</qualifiedname>
+        <briefdescription>
+<para>functor of predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>onlu defined if arity &gt;= 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="260" column="14" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="260" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1af610666f80f3e2cc32141aac455386a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uintptr_t</type>
+        <definition>uintptr_t getArity</definition>
+        <argsstring>()</argsstring>
+        <name>getArity</name>
+        <qualifiedname>YAPPredicate::getArity</qualifiedname>
+        <briefdescription>
+<para>arity of predicate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>we return a positive number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="271" column="13" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="271" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a1a6c0ed3b23d695428b3cc2659036e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>arity_t</type>
+        <definition>arity_t arity</definition>
+        <argsstring>()</argsstring>
+        <name>arity</name>
+        <qualifiedname>YAPPredicate::arity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="272" column="11" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="272" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPPredicate_1a034c990d9a63b743fd7db59da5455fad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * predEntry</definition>
+        <argsstring>()</argsstring>
+        <name>predEntry</name>
+        <qualifiedname>YAPPredicate::predEntry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapdb.hh" line="273" column="13" bodyfile="/home/vsc/github/yap/CXX/yapdb.hh" bodystart="273" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Predicates. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class interfaces with PredEntry in Yatom</para>
+<para>This class interfaces with PredEntry in Yatom </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>YAPFLIP</label>
+        <link refid="classYAPFLIP"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YAPModuleProp</label>
+        <link refid="classYAPModuleProp"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>YAPPredicate</label>
+        <link refid="classYAPPredicate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>YAPPrologPredicate</label>
+        <link refid="classYAPPrologPredicate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YAPProp</label>
+        <link refid="classYAPProp"/>
+      </node>
+      <node id="6">
+        <label>YAPQuery</label>
+        <link refid="classYAPQuery"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AtomEntryStruct</label>
+        <link refid="structAtomEntryStruct"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>NextOfAE</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PropsOfAE</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>blob</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>DB_STRUCT</label>
+        <link refid="structDB__STRUCT"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Code</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Next</edgelabel>
+          <edgelabel>Prev</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>DBT</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>DB_TERM</label>
+        <link refid="structDB__TERM"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>NextDBT</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>DBRefs</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FunctorEntryStruct</label>
+        <link refid="structFunctorEntryStruct"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+          <edgelabel>PropsOfFE</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>NameOfFE</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PropEntryStruct</label>
+        <link refid="structPropEntryStruct"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YAPModuleProp</label>
+        <link refid="classYAPModuleProp"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>YAPPredicate</label>
+        <link refid="classYAPPredicate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ap</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YAPProp</label>
+        <link refid="classYAPProp"/>
+      </node>
+      <node id="10">
+        <label>atom_blob</label>
+        <link refid="structatom__blob"/>
+      </node>
+      <node id="7">
+        <label>logic_upd_clause</label>
+        <link refid="structlogic__upd__clause"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Id</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+          <edgelabel>ClExt</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ClSource</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ClOwner</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClNext</edgelabel>
+          <edgelabel>ClPrev</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>logic_upd_index</label>
+        <link refid="structlogic__upd__index"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ChildIndex</edgelabel>
+          <edgelabel>ParentIndex</edgelabel>
+          <edgelabel>PrevSiblingIndex</edgelabel>
+          <edgelabel>SiblingIndex</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClPred</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ClCode</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pred_entry</label>
+        <link refid="structpred__entry"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>CodeOfPred</edgelabel>
+          <edgelabel>FirstClause</edgelabel>
+          <edgelabel>LastClause</edgelabel>
+          <edgelabel>MetaEntryOfPred</edgelabel>
+          <edgelabel>TrueCodeOfPred</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>FunctorOfPred</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>OwnerFile</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>StatisticsForPred</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>NextPredOfHash</edgelabel>
+          <edgelabel>NextPredOfModule</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>profile_data</label>
+        <link refid="structprofile__data"/>
+      </node>
+      <node id="13">
+        <label>struct_dbentry</label>
+        <link refid="structstruct__dbentry"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NextOfPE</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>FunctorOfDB</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>F0</edgelabel>
+          <edgelabel>First</edgelabel>
+          <edgelabel>L0</edgelabel>
+          <edgelabel>Last</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>yami</label>
+        <link refid="structyami"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>F</edgelabel>
+          <edgelabel>T</edgelabel>
+          <edgelabel>d</edgelabel>
+          <edgelabel>f</edgelabel>
+          <edgelabel>l</edgelabel>
+          <edgelabel>l1</edgelabel>
+          <edgelabel>l2</edgelabel>
+          <edgelabel>l3</edgelabel>
+          <edgelabel>l4</edgelabel>
+          <edgelabel>n</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClBase</edgelabel>
+          <edgelabel>d</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>I</edgelabel>
+          <edgelabel>block</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>p0</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/CXX/tmp/yapdb.hh" line="86" column="1" bodyfile="/home/vsc/github/yap/CXX/tmp/yapdb.hh" bodystart="86" bodyend="296"/>
+    <listofallmembers>
+      <member refid="classYAPPredicate_1a839d6526c02047d6014f3f70ccbf77ca" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>ap</name></member>
+      <member refid="classYAPPredicate_1a1a6c0ed3b23d695428b3cc2659036e30" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>arity</name></member>
+      <member refid="classYAPPredicate_1a1a6c0ed3b23d695428b3cc2659036e30" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>arity</name></member>
+      <member refid="classYAPPredicate_1aa6191e913472b983093c01c1bf932226" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>asPred</name></member>
+      <member refid="classYAPPredicate_1aa6191e913472b983093c01c1bf932226" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>asPred</name></member>
+      <member refid="classYAPPredicate_1ab4c33ce3d95491d0ebf1cdd176e5798d" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>functor</name></member>
+      <member refid="classYAPPredicate_1ab4c33ce3d95491d0ebf1cdd176e5798d" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>functor</name></member>
+      <member refid="classYAPPredicate_1af610666f80f3e2cc32141aac455386a9" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>getArity</name></member>
+      <member refid="classYAPPredicate_1af610666f80f3e2cc32141aac455386a9" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>getArity</name></member>
+      <member refid="classYAPPredicate_1a221827607deb87db2a667e3464069dfd" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>getPred</name></member>
+      <member refid="classYAPPredicate_1a221827607deb87db2a667e3464069dfd" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>getPred</name></member>
+      <member refid="classYAPPredicate_1ad7e7e243814ba75f01ab17f9bdea20c5" prot="public" virt="virtual"><scope>YAPPredicate</scope><name>module</name></member>
+      <member refid="classYAPPredicate_1ad7e7e243814ba75f01ab17f9bdea20c5" prot="public" virt="virtual"><scope>YAPPredicate</scope><name>module</name></member>
+      <member refid="classYAPPredicate_1aa81cc38dff90358b272f46b7f442b96f" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>name</name></member>
+      <member refid="classYAPPredicate_1aa81cc38dff90358b272f46b7f442b96f" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>name</name></member>
+      <member refid="classYAPPredicate_1a034c990d9a63b743fd7db59da5455fad" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>predEntry</name></member>
+      <member refid="classYAPPredicate_1a034c990d9a63b743fd7db59da5455fad" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>predEntry</name></member>
+      <member refid="classYAPPredicate_1a03b58dec6f9e452a9bff1f47c99ac196" prot="private" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPEngine</name></member>
+      <member refid="classYAPPredicate_1afca26983d817d2a965a30ad6bdfd7b2e" prot="private" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPModule</name></member>
+      <member refid="classYAPModuleProp_1adf690c4e6af7f45d7825ad773b361c7f" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPModuleProp</name></member>
+      <member refid="classYAPModuleProp_1ab14e7d554901cdc212b884cae816f5de" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPModuleProp</name></member>
+      <member refid="classYAPPredicate_1a255d049e4e7504d950d7d5c3aa88b123" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a736af68fff04dcf3e65d2cafe9a94208" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aaafc77158efa32b43c50a4d18414a0e2" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a99c37898eb0dffd137ad1df69c44cc96" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a90447039b725dc6f517258415fd8684f" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1ddef13a05f27efc4f924b996039add1" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6f15eb837f0254301396dabefa9847be" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6e63817a11e3cd53a2fcf7104d853b21" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ae5dc855b114b682b9c539b4ba60d7c87" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1af30be87590acccb6ce7157ce2244e182" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aab7e9cb818ca49a91301cb7cd7a89e43" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a131daa736323a89d0e1c8c5c3c8c8408" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1b010f7b47026ff7ea2fe226fe19748e" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a5ee2f0a3479a7c05d820e7aa33aad41d" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a497c3162a2df06c3d589c7e89b254e51" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a9c40b8f42f91ea7e952c28ba4c9f04c9" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a3818a65b9b966890fb413553aa63e8d5" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ad3c7235fd07739c3234e2e01044db777" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aa580424b7ce0f88c0e4687489dfc02dd" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a255d049e4e7504d950d7d5c3aa88b123" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a736af68fff04dcf3e65d2cafe9a94208" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aaafc77158efa32b43c50a4d18414a0e2" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a99c37898eb0dffd137ad1df69c44cc96" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a90447039b725dc6f517258415fd8684f" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1ddef13a05f27efc4f924b996039add1" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6f15eb837f0254301396dabefa9847be" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a6e63817a11e3cd53a2fcf7104d853b21" prot="protected" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ae5dc855b114b682b9c539b4ba60d7c87" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1af30be87590acccb6ce7157ce2244e182" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aab7e9cb818ca49a91301cb7cd7a89e43" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a131daa736323a89d0e1c8c5c3c8c8408" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a1b010f7b47026ff7ea2fe226fe19748e" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a5ee2f0a3479a7c05d820e7aa33aad41d" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a497c3162a2df06c3d589c7e89b254e51" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a9c40b8f42f91ea7e952c28ba4c9f04c9" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1a3818a65b9b966890fb413553aa63e8d5" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1ad3c7235fd07739c3234e2e01044db777" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1aa580424b7ce0f88c0e4687489dfc02dd" prot="public" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPPredicate</name></member>
+      <member refid="classYAPPredicate_1abce547a0e7fe87f57877644b72180813" prot="private" virt="non-virtual"><scope>YAPPredicate</scope><name>YAPQuery</name></member>
+      <member refid="classYAPProp_1a5c6ec2f85493ee40cd1d06d51e56d90d" prot="public" virt="virtual"><scope>YAPPredicate</scope><name>~YAPProp</name></member>
+      <member refid="classYAPProp_1a5c6ec2f85493ee40cd1d06d51e56d90d" prot="public" virt="virtual"><scope>YAPPredicate</scope><name>~YAPProp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

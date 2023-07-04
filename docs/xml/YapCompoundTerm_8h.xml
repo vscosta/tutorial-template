@@ -1,0 +1,1855 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="YapCompoundTerm_8h" kind="file" language="C++">
+    <compoundname>YapCompoundTerm.h</compoundname>
+    <includes refid="inline-only_8h" local="yes">inline-only.h</includes>
+    <includedby refid="absmi_8c" local="yes">/home/vsc/github/yap/C/absmi.c</includedby>
+    <includedby refid="arrays_8c" local="yes">/home/vsc/github/yap/C/arrays.c</includedby>
+    <includedby refid="terms_8c" local="yes">/home/vsc/github/yap/C/terms.c</includedby>
+    <includedby refid="Yap_8h" local="yes">/home/vsc/github/yap/H/Yap.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/absmi.c</label>
+        <link refid="absmi_8c"/>
+      </node>
+      <node id="83">
+        <label>/home/vsc/github/yap/C/absmi_insts.h</label>
+        <link refid="C_2absmi__insts_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/vsc/github/yap/C/adtdefs.c</label>
+        <link refid="adtdefs_8c_source"/>
+      </node>
+      <node id="7">
+        <label>/home/vsc/github/yap/C/agc.c</label>
+        <link refid="agc_8c_source"/>
+      </node>
+      <node id="8">
+        <label>/home/vsc/github/yap/C/alloc.c</label>
+        <link refid="alloc_8c"/>
+      </node>
+      <node id="9">
+        <label>/home/vsc/github/yap/C/amasm.c</label>
+        <link refid="amasm_8c_source"/>
+      </node>
+      <node id="10">
+        <label>/home/vsc/github/yap/C/args.c</label>
+        <link refid="args_8c"/>
+      </node>
+      <node id="11">
+        <label>/home/vsc/github/yap/C/arith0.c</label>
+        <link refid="arith0_8c"/>
+      </node>
+      <node id="12">
+        <label>/home/vsc/github/yap/C/arith1.c</label>
+        <link refid="arith1_8c"/>
+      </node>
+      <node id="13">
+        <label>/home/vsc/github/yap/C/arith2.c</label>
+        <link refid="arith2_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/arrays.c</label>
+        <link refid="arrays_8c"/>
+      </node>
+      <node id="14">
+        <label>/home/vsc/github/yap/C/atomic.c</label>
+        <link refid="atomic_8c"/>
+      </node>
+      <node id="15">
+        <label>/home/vsc/github/yap/C/attvar.c</label>
+        <link refid="attvar_8c_source"/>
+      </node>
+      <node id="16">
+        <label>/home/vsc/github/yap/C/bb.c</label>
+        <link refid="bb_8c_source"/>
+      </node>
+      <node id="17">
+        <label>/home/vsc/github/yap/C/bignum.c</label>
+        <link refid="bignum_8c_source"/>
+      </node>
+      <node id="18">
+        <label>/home/vsc/github/yap/C/blobs.c</label>
+        <link refid="C_2blobs_8c_source"/>
+      </node>
+      <node id="19">
+        <label>/home/vsc/github/yap/C/c_interface.c</label>
+        <link refid="c__interface_8c"/>
+      </node>
+      <node id="20">
+        <label>/home/vsc/github/yap/C/cdmgr.c</label>
+        <link refid="cdmgr_8c_source"/>
+      </node>
+      <node id="21">
+        <label>/home/vsc/github/yap/C/clause_list.c</label>
+        <link refid="clause__list_8c_source"/>
+      </node>
+      <node id="22">
+        <label>/home/vsc/github/yap/C/cmppreds.c</label>
+        <link refid="cmppreds_8c"/>
+      </node>
+      <node id="23">
+        <label>/home/vsc/github/yap/C/compiler.c</label>
+        <link refid="compiler_8c_source"/>
+      </node>
+      <node id="24">
+        <label>/home/vsc/github/yap/C/computils.c</label>
+        <link refid="computils_8c_source"/>
+      </node>
+      <node id="25">
+        <label>/home/vsc/github/yap/C/consult.c</label>
+        <link refid="consult_8c_source"/>
+      </node>
+      <node id="26">
+        <label>/home/vsc/github/yap/C/copy.c</label>
+        <link refid="copy_8c"/>
+      </node>
+      <node id="27">
+        <label>/home/vsc/github/yap/C/corout.c</label>
+        <link refid="corout_8c_source"/>
+      </node>
+      <node id="28">
+        <label>/home/vsc/github/yap/C/cut_c.c</label>
+        <link refid="cut__c_8c_source"/>
+      </node>
+      <node id="29">
+        <label>/home/vsc/github/yap/C/dbase.c</label>
+        <link refid="dbase_8c_source"/>
+      </node>
+      <node id="30">
+        <label>/home/vsc/github/yap/C/dbload.c</label>
+        <link refid="dbload_8c_source"/>
+      </node>
+      <node id="31">
+        <label>/home/vsc/github/yap/C/debug.c</label>
+        <link refid="debug_8c_source"/>
+      </node>
+      <node id="32">
+        <label>/home/vsc/github/yap/C/depth_bound.c</label>
+        <link refid="depth__bound_8c_source"/>
+      </node>
+      <node id="33">
+        <label>/home/vsc/github/yap/C/dlmalloc.c</label>
+        <link refid="dlmalloc_8c_source"/>
+      </node>
+      <node id="34">
+        <label>/home/vsc/github/yap/C/errors.c</label>
+        <link refid="C_2errors_8c"/>
+      </node>
+      <node id="35">
+        <label>/home/vsc/github/yap/C/eval.c</label>
+        <link refid="eval_8c"/>
+      </node>
+      <node id="89">
+        <label>/home/vsc/github/yap/C/exec.c</label>
+        <link refid="exec_8c_source"/>
+      </node>
+      <node id="90">
+        <label>/home/vsc/github/yap/C/execstruct.c</label>
+        <link refid="execstruct_8c_source"/>
+      </node>
+      <node id="36">
+        <label>/home/vsc/github/yap/C/exo.c</label>
+        <link refid="exo_8c_source"/>
+      </node>
+      <node id="37">
+        <label>/home/vsc/github/yap/C/exo_udi.c</label>
+        <link refid="exo__udi_8c_source"/>
+      </node>
+      <node id="38">
+        <label>/home/vsc/github/yap/C/flags.c</label>
+        <link refid="flags_8c"/>
+      </node>
+      <node id="82">
+        <label>/home/vsc/github/yap/C/fli_absmi_insts.h</label>
+        <link refid="fli__absmi__insts_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/home/vsc/github/yap/C/globals.c</label>
+        <link refid="globals_8c"/>
+      </node>
+      <node id="40">
+        <label>/home/vsc/github/yap/C/gmp_support.c</label>
+        <link refid="gmp__support_8c_source"/>
+      </node>
+      <node id="91">
+        <label>/home/vsc/github/yap/C/gprof.c</label>
+        <link refid="gprof_8c_source"/>
+      </node>
+      <node id="79">
+        <label>/home/vsc/github/yap/C/grow.c</label>
+        <link refid="grow_8c_source"/>
+      </node>
+      <node id="92">
+        <label>/home/vsc/github/yap/C/heapgc.c</label>
+        <link refid="heapgc_8c_source"/>
+      </node>
+      <node id="93">
+        <label>/home/vsc/github/yap/C/index.c</label>
+        <link refid="index_8c"/>
+      </node>
+      <node id="41">
+        <label>/home/vsc/github/yap/C/init.c</label>
+        <link refid="init_8c_source"/>
+      </node>
+      <node id="94">
+        <label>/home/vsc/github/yap/C/inlines.c</label>
+        <link refid="inlines_8c"/>
+      </node>
+      <node id="42">
+        <label>/home/vsc/github/yap/C/load_aout.c</label>
+        <link refid="load__aout_8c_source"/>
+      </node>
+      <node id="43">
+        <label>/home/vsc/github/yap/C/load_coff.c</label>
+        <link refid="load__coff_8c_source"/>
+      </node>
+      <node id="44">
+        <label>/home/vsc/github/yap/C/load_dl.c</label>
+        <link refid="load__dl_8c_source"/>
+      </node>
+      <node id="45">
+        <label>/home/vsc/github/yap/C/load_dll.c</label>
+        <link refid="load__dll_8c_source"/>
+      </node>
+      <node id="46">
+        <label>/home/vsc/github/yap/C/load_dyld.c</label>
+        <link refid="load__dyld_8c_source"/>
+      </node>
+      <node id="47">
+        <label>/home/vsc/github/yap/C/load_foreign.c</label>
+        <link refid="load__foreign_8c_source"/>
+      </node>
+      <node id="48">
+        <label>/home/vsc/github/yap/C/load_none.c</label>
+        <link refid="load__none_8c_source"/>
+      </node>
+      <node id="49">
+        <label>/home/vsc/github/yap/C/load_shl.c</label>
+        <link refid="load__shl_8c_source"/>
+      </node>
+      <node id="50">
+        <label>/home/vsc/github/yap/C/mavar.c</label>
+        <link refid="mavar_8c"/>
+      </node>
+      <node id="51">
+        <label>/home/vsc/github/yap/C/modules.c</label>
+        <link refid="modules_8c_source"/>
+      </node>
+      <node id="52">
+        <label>/home/vsc/github/yap/C/other.c</label>
+        <link refid="other_8c_source"/>
+      </node>
+      <node id="53">
+        <label>/home/vsc/github/yap/C/parser.c</label>
+        <link refid="parser_8c"/>
+      </node>
+      <node id="74">
+        <label>/home/vsc/github/yap/C/qlyr.c</label>
+        <link refid="qlyr_8c"/>
+      </node>
+      <node id="75">
+        <label>/home/vsc/github/yap/C/qlyw.c</label>
+        <link refid="qlyw_8c_source"/>
+      </node>
+      <node id="54">
+        <label>/home/vsc/github/yap/C/range.c</label>
+        <link refid="range_8c_source"/>
+      </node>
+      <node id="76">
+        <label>/home/vsc/github/yap/C/save.c</label>
+        <link refid="save_8c_source"/>
+      </node>
+      <node id="55">
+        <label>/home/vsc/github/yap/C/scanner.c</label>
+        <link refid="scanner_8c"/>
+      </node>
+      <node id="56">
+        <label>/home/vsc/github/yap/C/signals.c</label>
+        <link refid="signals_8c_source"/>
+      </node>
+      <node id="57">
+        <label>/home/vsc/github/yap/C/sort.c</label>
+        <link refid="sort_8c_source"/>
+      </node>
+      <node id="58">
+        <label>/home/vsc/github/yap/C/stack.c</label>
+        <link refid="C_2stack_8c"/>
+      </node>
+      <node id="59">
+        <label>/home/vsc/github/yap/C/stdpreds.c</label>
+        <link refid="stdpreds_8c_source"/>
+      </node>
+      <node id="60">
+        <label>/home/vsc/github/yap/C/t.c</label>
+        <link refid="t_8c_source"/>
+      </node>
+      <node id="4">
+        <label>/home/vsc/github/yap/C/terms.c</label>
+        <link refid="terms_8c"/>
+      </node>
+      <node id="61">
+        <label>/home/vsc/github/yap/C/text.c</label>
+        <link refid="text_8c"/>
+      </node>
+      <node id="62">
+        <label>/home/vsc/github/yap/C/threads.c</label>
+        <link refid="threads_8c_source"/>
+      </node>
+      <node id="63">
+        <label>/home/vsc/github/yap/C/tracer.c</label>
+        <link refid="tracer_8c_source"/>
+      </node>
+      <node id="64">
+        <label>/home/vsc/github/yap/C/udi.c</label>
+        <link refid="udi_8c_source"/>
+      </node>
+      <node id="95">
+        <label>/home/vsc/github/yap/C/unify.c</label>
+        <link refid="unify_8c_source"/>
+      </node>
+      <node id="65">
+        <label>/home/vsc/github/yap/C/userpreds.c</label>
+        <link refid="userpreds_8c_source"/>
+      </node>
+      <node id="80">
+        <label>/home/vsc/github/yap/C/utilpreds.c</label>
+        <link refid="utilpreds_8c"/>
+      </node>
+      <node id="66">
+        <label>/home/vsc/github/yap/C/write.c</label>
+        <link refid="write_8c_source"/>
+      </node>
+      <node id="67">
+        <label>/home/vsc/github/yap/C/yap-args.c</label>
+        <link refid="yap-args_8c_source"/>
+      </node>
+      <node id="68">
+        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <link refid="cxx4yap_8hh_source"/>
+      </node>
+      <node id="71">
+        <label>/home/vsc/github/yap/CXX/heap.cxx</label>
+        <link refid="heap_8cxx_source"/>
+      </node>
+      <node id="69">
+        <label>/home/vsc/github/yap/CXX/tmp/yapi.hh</label>
+        <link refid="tmp_2yapi_8hh"/>
+      </node>
+      <node id="72">
+        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <link refid="yapi_8cpp_source"/>
+      </node>
+      <node id="70">
+        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <link refid="yapi_8hh"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>/home/vsc/github/yap/H/Foreign.h</label>
+        <link refid="Foreign_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/H/Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>/home/vsc/github/yap/H/YapArenas.h</label>
+        <link refid="YapArenas_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>/home/vsc/github/yap/H/YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>/home/vsc/github/yap/H/YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>/home/vsc/github/yap/H/YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>/home/vsc/github/yap/H/Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>/home/vsc/github/yap/H/Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/home/vsc/github/yap/H/absmi.h</label>
+        <link refid="absmi_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>/home/vsc/github/yap/H/absmi_insts.h</label>
+        <link refid="H_2absmi__insts_8h_source"/>
+      </node>
+      <node id="87">
+        <label>/home/vsc/github/yap/H/clause.h</label>
+        <link refid="clause_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>/home/vsc/github/yap/H/fields.h</label>
+        <link refid="fields_8h_source"/>
+      </node>
+      <node id="126">
+        <label>/home/vsc/github/yap/H/generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>/home/vsc/github/yap/H/generated/ilocals.h</label>
+        <link refid="ilocals_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>/home/vsc/github/yap/H/generated/rlocals.h</label>
+        <link refid="rlocals_8h_source"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>/home/vsc/github/yap/H/heap.h</label>
+        <link refid="heap_8h_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>/home/vsc/github/yap/H/heapgc.h</label>
+        <link refid="heapgc_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>/home/vsc/github/yap/H/locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>/home/vsc/github/yap/H/rheap.h</label>
+        <link refid="rheap_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>/home/vsc/github/yap/H/terms.h</label>
+        <link refid="terms_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>/home/vsc/github/yap/OPTYap/opt.init.c</label>
+        <link refid="opt_8init_8c_source"/>
+      </node>
+      <node id="135">
+        <label>/home/vsc/github/yap/OPTYap/opt.preds.c</label>
+        <link refid="opt_8preds_8c_source"/>
+      </node>
+      <node id="136">
+        <label>/home/vsc/github/yap/OPTYap/or.copy_engine.c</label>
+        <link refid="or_8copy__engine_8c_source"/>
+      </node>
+      <node id="137">
+        <label>/home/vsc/github/yap/OPTYap/or.cow_engine.c</label>
+        <link refid="or_8cow__engine_8c_source"/>
+      </node>
+      <node id="138">
+        <label>/home/vsc/github/yap/OPTYap/or.cut.c</label>
+        <link refid="or_8cut_8c_source"/>
+      </node>
+      <node id="139">
+        <label>/home/vsc/github/yap/OPTYap/or.memory.c</label>
+        <link refid="or_8memory_8c_source"/>
+      </node>
+      <node id="140">
+        <label>/home/vsc/github/yap/OPTYap/or.sba_engine.c</label>
+        <link refid="or_8sba__engine_8c_source"/>
+      </node>
+      <node id="141">
+        <label>/home/vsc/github/yap/OPTYap/or.scheduler.c</label>
+        <link refid="or_8scheduler_8c_source"/>
+      </node>
+      <node id="142">
+        <label>/home/vsc/github/yap/OPTYap/or.thread_engine.c</label>
+        <link refid="or_8thread__engine_8c_source"/>
+      </node>
+      <node id="143">
+        <label>/home/vsc/github/yap/OPTYap/tab.completion.c</label>
+        <link refid="tab_8completion_8c_source"/>
+      </node>
+      <node id="144">
+        <label>/home/vsc/github/yap/OPTYap/tab.tries.c</label>
+        <link refid="tab_8tries_8c_source"/>
+      </node>
+      <node id="101">
+        <label>/home/vsc/github/yap/library/dialect/swi/fli/blobs.c</label>
+        <link refid="library_2dialect_2swi_2fli_2blobs_8c"/>
+      </node>
+      <node id="86">
+        <label>/home/vsc/github/yap/library/dialect/swi/fli/swi.c</label>
+        <link refid="swi_8c"/>
+      </node>
+      <node id="146">
+        <label>/home/vsc/github/yap/library/mpi/prologterms2c.c</label>
+        <link refid="prologterms2c_8c_source"/>
+      </node>
+      <node id="145">
+        <label>/home/vsc/github/yap/library/mpi/prologterms2c.h</label>
+        <link refid="prologterms2c_8h_source"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>/home/vsc/github/yap/os/absf.c</label>
+        <link refid="absf_8c"/>
+      </node>
+      <node id="102">
+        <label>/home/vsc/github/yap/os/alias.c</label>
+        <link refid="alias_8c"/>
+      </node>
+      <node id="116">
+        <label>/home/vsc/github/yap/os/assets.c</label>
+        <link refid="assets_8c"/>
+      </node>
+      <node id="103">
+        <label>/home/vsc/github/yap/os/charsio.c</label>
+        <link refid="charsio_8c"/>
+      </node>
+      <node id="104">
+        <label>/home/vsc/github/yap/os/chartypes.c</label>
+        <link refid="chartypes_8c"/>
+      </node>
+      <node id="117">
+        <label>/home/vsc/github/yap/os/console.c</label>
+        <link refid="console_8c"/>
+      </node>
+      <node id="118">
+        <label>/home/vsc/github/yap/os/files.c</label>
+        <link refid="files_8c_source"/>
+      </node>
+      <node id="119">
+        <label>/home/vsc/github/yap/os/fmem.c</label>
+        <link refid="fmem_8c_source"/>
+      </node>
+      <node id="105">
+        <label>/home/vsc/github/yap/os/format.c</label>
+        <link refid="format_8c"/>
+      </node>
+      <node id="147">
+        <label>/home/vsc/github/yap/os/format.h</label>
+        <link refid="format_8h_source"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>/home/vsc/github/yap/os/iopreds.c</label>
+        <link refid="iopreds_8c"/>
+      </node>
+      <node id="148">
+        <label>/home/vsc/github/yap/os/iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>/home/vsc/github/yap/os/pipes.c</label>
+        <link refid="pipes_8c"/>
+      </node>
+      <node id="108">
+        <label>/home/vsc/github/yap/os/random.c</label>
+        <link refid="random_8c_source"/>
+      </node>
+      <node id="109">
+        <label>/home/vsc/github/yap/os/readline/readline.c</label>
+        <link refid="readline_8c"/>
+      </node>
+      <node id="110">
+        <label>/home/vsc/github/yap/os/readterm.c</label>
+        <link refid="readterm_8c"/>
+      </node>
+      <node id="111">
+        <label>/home/vsc/github/yap/os/readutil.c</label>
+        <link refid="readutil_8c_source"/>
+      </node>
+      <node id="120">
+        <label>/home/vsc/github/yap/os/sig.c</label>
+        <link refid="sig_8c_source"/>
+      </node>
+      <node id="112">
+        <label>/home/vsc/github/yap/os/sockets.c</label>
+        <link refid="sockets_8c_source"/>
+      </node>
+      <node id="113">
+        <label>/home/vsc/github/yap/os/streams.c</label>
+        <link refid="streams_8c_source"/>
+      </node>
+      <node id="121">
+        <label>/home/vsc/github/yap/os/sysbits.c</label>
+        <link refid="sysbits_8c_source"/>
+      </node>
+      <node id="114">
+        <label>/home/vsc/github/yap/os/sysbits.h</label>
+        <link refid="sysbits_8h_source"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>/home/vsc/github/yap/os/time.c</label>
+        <link refid="time_8c_source"/>
+      </node>
+      <node id="97">
+        <label>/home/vsc/github/yap/os/writeterm.c</label>
+        <link refid="writeterm_8c"/>
+      </node>
+      <node id="124">
+        <label>/home/vsc/github/yap/os/yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>/home/vsc/github/yap/os/ypsocks.c</label>
+        <link refid="ypsocks_8c_source"/>
+      </node>
+      <node id="149">
+        <label>/home/vsc/github/yap/os/ypstdio.c</label>
+        <link refid="ypstdio_8c_source"/>
+      </node>
+      <node id="77">
+        <label>/home/vsc/github/yap/pl/errors.c</label>
+        <link refid="pl_2errors_8c"/>
+      </node>
+      <node id="98">
+        <label>/home/vsc/github/yap/pl/stack.c</label>
+        <link refid="pl_2stack_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="YapCompoundTerm_8h_1a49131ff03cf32f96f8b597f6e493cd69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_unify</definition>
+        <argsstring>(Term a, Term b)</argsstring>
+        <name>Yap_unify</name>
+        <param>
+          <type>Term</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="26" column="13" bodyfile="/home/vsc/github/yap/H/amiops.h" bodystart="541" bodyend="551" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="26" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1a5553887b4b345c3996cd4415fded558c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term Deref</definition>
+        <argsstring>(Term a)</argsstring>
+        <name>Deref</name>
+        <param>
+          <type>Term</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="30" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="30" bodyend="40" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="28" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1aba3bc774c390ed185532a360c6f00484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY CELL *</type>
+        <definition>INLINE_ONLY CELL * GetTermAdress</definition>
+        <argsstring>(Term a)</argsstring>
+        <name>GetTermAdress</name>
+        <param>
+          <type>Term</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="42" column="18" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="42" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1a450fa363a6fdefe76e9aa1dc0577b613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term Derefa</definition>
+        <argsstring>(CELL *b)</argsstring>
+        <name>Derefa</name>
+        <param>
+          <type>CELL *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="45" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="45" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1ab1f64d36f1b0e261561c1ad1d2b3189e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term Derefap</definition>
+        <argsstring>(CELL *b, CELL **ptp)</argsstring>
+        <name>Derefap</name>
+        <param>
+          <type>CELL *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>CELL **</type>
+          <declname>ptp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="59" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="59" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1a5dee773e175c93d5e1c0a0c6d091815b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term ArgOfTerm</definition>
+        <argsstring>(int i, Term t)</argsstring>
+        <name>ArgOfTerm</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="77" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="77" bodyend="81" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="75" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1a3ee118badca08344c0c57d90a7542bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term HeadOfTerm</definition>
+        <argsstring>(Term)</argsstring>
+        <name>HeadOfTerm</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="85" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="85" bodyend="87" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="83" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1ad3b9e814100f6e09242bd892a231163f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term TailOfTerm</definition>
+        <argsstring>(Term)</argsstring>
+        <name>TailOfTerm</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="91" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="91" bodyend="93" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="89" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1aac7407773adee83a30ae40c1d74c11fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term ArgOfTermCell</definition>
+        <argsstring>(int i, Term t)</argsstring>
+        <name>ArgOfTermCell</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="97" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="97" bodyend="99" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="95" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1a634a6259105796bf8787af5f0c3d8e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term HeadOfTermCell</definition>
+        <argsstring>(Term)</argsstring>
+        <name>HeadOfTermCell</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="103" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="103" bodyend="105" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="101" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="YapCompoundTerm_8h_1ab0e027ef9821d01bbf7aec8c80c24f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INLINE_ONLY Term</type>
+        <definition>INLINE_ONLY Term TailOfTermCell</definition>
+        <argsstring>(Term)</argsstring>
+        <name>TailOfTermCell</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/H/YapCompoundTerm.h" line="109" column="18" bodyfile="/home/vsc/github/yap/H/YapCompoundTerm.h" bodystart="109" bodyend="111" declfile="/home/vsc/github/yap/H/YapCompoundTerm.h" declline="107" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/YapCompoundTerm.h"/>
+  </compounddef>
+</doxygen>

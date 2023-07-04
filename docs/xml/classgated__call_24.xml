@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classgated__call_24" kind="class" language="Prolog" prot="public">
+    <compoundname>gated_call/4</compoundname>
+    <briefdescription>
+<para><bold>gated_call</bold>(0:Setup, 0:Goal, ?Port, 0:Handler) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This predicate watches over execution of <emphasis>Goal</emphasis>:<itemizedlist>
+<listitem><para>First, it calls <computeroutput>once(Setup)</computeroutput>;</para>
+</listitem><listitem><para>Next, it executes <computeroutput>call(Goal)</computeroutput>;</para>
+</listitem><listitem><para>if <computeroutput>call(Goal)</computeroutput> succeeds deterministically, it unifies <emphasis>Port</emphasis> with <computeroutput>exit</computeroutput> and if unification succeeds calls <emphasis>Handler</emphasis>;</para>
+</listitem><listitem><para>if <computeroutput>call(Goal)</computeroutput> succeeds not-deterministically, it unifies <emphasis>Port</emphasis> with <computeroutput>answer</computeroutput> and if unification succeeds calls <emphasis>Handler</emphasis>;</para>
+</listitem><listitem><para>if execution backtracks to <emphasis>Goal</emphasis>, it unifies <emphasis>Port</emphasis> with <computeroutput>redo</computeroutput> and if unification succeeds calls <emphasis>Handler</emphasis>;<itemizedlist>
+<listitem><para>if execution of <emphasis>Goal</emphasis> fails, it unifies <emphasis>Port</emphasis> with <computeroutput>fail</computeroutput> and if unification succeeds calls <emphasis>Handler</emphasis>;</para>
+</listitem><listitem><para>if execution of <emphasis>Goal</emphasis> is pruned by an external goal, it unifies <emphasis>Port</emphasis> with <computeroutput>!</computeroutput> and if unification succeeds calls <emphasis>Handler</emphasis>;</para>
+</listitem><listitem><para>if execution of <emphasis>Goal</emphasis> raises an exception <emphasis>E</emphasis>, it unifies <emphasis>Port</emphasis> with <computeroutput>exception(E)</computeroutput> and if unification succeeds calls <emphasis>Handler</emphasis>;</para>
+</listitem><listitem><para>if <emphasis>Goal</emphasis> has open alternatives that are discared by an exception <emphasis>E</emphasis>, it unifies <emphasis>Port</emphasis> with <computeroutput>external_exception(E)</computeroutput> and if unification succeeds calls <emphasis>Handler</emphasis> </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/control.yap" line="2" column="1" bodyfile="/home/vsc/github/yap/pl/control.yap" bodystart="2" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

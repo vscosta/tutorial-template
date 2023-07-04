@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Thread__Synchronisation" kind="group">
+    <compoundname>Thread_Synchronisation</compoundname>
+    <title>Thread Synchronisation</title>
+    <innerclass refid="classmutex__create_21" prot="public">mutex_create/1</innerclass>
+    <innerclass refid="classmutex__unlock__all_20" prot="private">mutex_unlock_all/0</innerclass>
+    <innerclass refid="classcurrent__mutex_23" prot="public">current_mutex/3</innerclass>
+    <briefdescription>
+<para>All internal Prolog operations are thread-safe. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This implies two Prolog threads can operate on the same dynamic predicate without corrupting the consistency of the predicate This section deals with user-level <emphasis>mutexes</emphasis> (called <emphasis>monitors</emphasis> in ADA or <emphasis>critical-sections</emphasis> by Microsoft) A mutex is a <emphasis>MUT</emphasis>ual <emphasis>EX</emphasis>clusive device, which implies at most one thread can <emphasis>hold</emphasis> a mutex</para>
+<para>Mutexes are used to realise related updates to the Prolog database With <lsquo/>related<rsquo/>, we refer to the situation where a <lsquo/>transaction<rsquo/> implies two or more changes to the Prolog database For example, we have a predicate <computeroutput>address/2 </computeroutput>, representing the address of a person and we want to change the address by retracting the old and asserting the new address Between these two operations the database is invalid: this person has either no address or two addresses, depending on the assert/retract order <linebreak/>
+</para>
+<para>Here is how to realise a correct update:</para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="keyword">initialization</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">mutex_create(addressbook).</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight><highlight class="normal">change_address(</highlight><highlight class="charliteral">Id</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Address</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">mutex_lock(addressbook),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">retractall(address(</highlight><highlight class="charliteral">Id</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">_</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">asserta(address(</highlight><highlight class="charliteral">Id</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">Address</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">mutex_unlock(addressbook)</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

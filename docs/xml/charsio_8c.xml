@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="charsio_8c" kind="file" language="C++">
+    <compoundname>charsio.c</compoundname>
+    <includes refid="Yap_8h" local="yes">Yap.h</includes>
+    <includes refid="YapHeap_8h" local="yes">YapHeap.h</includes>
+    <includes refid="YapText_8h" local="yes">YapText.h</includes>
+    <includes refid="Yatom_8h" local="yes">Yatom.h</includes>
+    <includes refid="yapio_8h" local="yes">yapio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>Atoms.h</label>
+        <link refid="Atoms_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Regs.h</label>
+        <link refid="Regs_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="27">
+        <label>TermExt.h</label>
+        <link refid="TermExt_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yap.h</label>
+        <link refid="Yap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>YapCompoundTerm.h</label>
+        <link refid="YapCompoundTerm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>YapFlags.h</label>
+        <link refid="YapFlags_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>YapGFlagInfo.h</label>
+        <link refid="YapGFlagInfo_8h"/>
+      </node>
+      <node id="36">
+        <label>YapHandles.h</label>
+        <link refid="YapHandles_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>YapHeap.h</label>
+        <link refid="YapHeap_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>YapLFlagInfo.h</label>
+        <link refid="YapLFlagInfo_8h"/>
+      </node>
+      <node id="26">
+        <label>YapOpcodes.h</label>
+        <link refid="YapOpcodes_8h_source"/>
+      </node>
+      <node id="35">
+        <label>YapSignals.h</label>
+        <link refid="YapSignals_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>YapTags.h</label>
+        <link refid="YapTags_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>YapText.h</label>
+        <link refid="YapText_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Yapproto.h</label>
+        <link refid="Yapproto_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Yatom.h</label>
+        <link refid="Yatom_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>alloc.h</label>
+        <link refid="alloc_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amidefs.h</label>
+        <link refid="amidefs_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>amiops.h</label>
+        <link refid="amiops_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>arrays.h</label>
+        <link refid="arrays_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>corout.h</label>
+        <link refid="corout_8h_source"/>
+      </node>
+      <node id="42">
+        <label>generated/h0globals.h</label>
+        <link refid="h0globals_8h_source"/>
+      </node>
+      <node id="41">
+        <label>generated/h0struct.h</label>
+        <link refid="h0struct_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>generated/hlocals.h</label>
+        <link refid="hlocals_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>generated/tatoms.h</label>
+        <link refid="tatoms_8h_source"/>
+      </node>
+      <node id="34">
+        <label>gprof.h</label>
+        <link refid="gprof_8h_source"/>
+      </node>
+      <node id="5">
+        <label>inline-only.h</label>
+        <link refid="inline-only_8h_source"/>
+      </node>
+      <node id="44">
+        <label>locals.h</label>
+        <link refid="locals_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nolocks.h</label>
+        <link refid="nolocks_8h_source"/>
+      </node>
+      <node id="19">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="49">
+        <label>GitSHA1.h</label>
+        <link refid="GitSHA1_8h_source"/>
+      </node>
+      <node id="54">
+        <label>VFS.h</label>
+        <link refid="VFS_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>YapEncoding.h</label>
+        <link refid="YapEncoding_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="18">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="20">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="56">
+        <label>YapStreams.h</label>
+        <link refid="YapStreams_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>YapUTF8.h</label>
+        <link refid="YapUTF8_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/os/charsio.c</label>
+        <link refid="charsio_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>iopreds.h</label>
+        <link refid="iopreds_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>yapio.h</label>
+        <link refid="yapio_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="13">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="10">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="11">
+        <label>config.h</label>
+      </node>
+      <node id="45">
+        <label>dlocals.h</label>
+      </node>
+      <node id="28">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>utf8proc.h</label>
+      </node>
+      <node id="22">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <member refid="group__CharIO_1ga18ead40b783c6fc0f96c5e44621c9fd1" kind="function"><name>get_code</name></member>
+      <member refid="group__CharIO_1gabc406fb4fb5c6398f44118a79f5645a1" kind="function"><name>get_byte</name></member>
+      <member refid="group__CharIO_1ga6b16297dd57022dfc7c1f86a89af0ea0" kind="function"><name>put_code</name></member>
+      <member refid="group__CharIO_1gaf899f32f560d5aabee8446f2daa91ac1" kind="function"><name>put_byte</name></member>
+      <member refid="group__CharIO_1ga8fedd38e4e62bfeac3f7a5d98d9de126" kind="function"><name>skip</name></member>
+      <member refid="group__CharIO_1ga6cb0c10034ef0de92de6e192d6325f2f" kind="function"><name>flush_output</name></member>
+      <member refid="group__CharIO_1ga97c9c721f2677766fc3ced4e4d39e622" kind="function"><name>CharOfAtom</name></member>
+      <member refid="group__CharIO_1ga728dd8799d1d39ef7f969193d0d01709" kind="function"><name>popWide</name></member>
+      <member refid="group__CharIO_1ga9f8c60455cb5325df95dc92cb5f73fab" kind="function"><name>Yap_peekWide</name></member>
+      <member refid="group__CharIO_1ga71818d13fed15745a592f02aaf201fb4" kind="function"><name>Yap_popOctet</name></member>
+      <member refid="group__CharIO_1ga11a993049df156e0bd0dd3f843a4f591" kind="function"><name>Yap_popChar</name></member>
+      <member refid="group__CharIO_1ga02ec752fb23d5fb6cd53fdd8acdff6d1" kind="function"><name>Yap_peekChar</name></member>
+      <member refid="group__CharIO_1ga987a43306f25844c2bb58e9fd3bab7fe" kind="function"><name>Yap_peek</name></member>
+      <member refid="group__CharIO_1ga7bd02e50b671b64da9d67e20c18371d2" kind="function"><name>dopeek_byte</name></member>
+      <member refid="group__CharIO_1ga8f5f9fd317f1f1846dfd7670fa312f7d" kind="function"><name>store_code</name></member>
+      <member refid="group__CharIO_1ga8902e0ad48f5474000fa66745939e1f4" kind="function"><name>at_end_of_stream</name></member>
+      <member refid="group__CharIO_1ga3fe881cdce7880761161cade12a822bd" kind="function"><name>at_end_of_stream_0</name></member>
+      <member refid="group__CharIO_1gaece0a2fa87b826721ae180e272bc6732" kind="function"><name>yap_fflush</name></member>
+      <member refid="group__CharIO_1gaea2c45c38a53c3abe11f47ff121965cb" kind="function"><name>get</name></member>
+      <member refid="group__CharIO_1ga606486048eae5bce637a75123a086e8c" kind="function"><name>get_char</name></member>
+      <member refid="group__CharIO_1ga5e490b073caa43eb38a5732aa31e2754" kind="function"><name>get_1</name></member>
+      <member refid="group__CharIO_1ga6fd9b9cf27c4aef5cda08643452c1291" kind="function"><name>getcode_1</name></member>
+      <member refid="group__CharIO_1gaf63d34c2eff1d9fe544939f5fd557a4c" kind="function"><name>getchar_1</name></member>
+      <member refid="group__CharIO_1gaccf0c2cdff0664b4940df7bacd8895da" kind="function"><name>get0_line_codes</name></member>
+      <member refid="group__CharIO_1gae1647d9a5827f1d49afe33fa7bf3d166" kind="function"><name>get_byte_1</name></member>
+      <member refid="group__CharIO_1gaf485d088e4204c37ebb37fb91fbc5d5c" kind="function"><name>put_code_1</name></member>
+      <member refid="group__CharIO_1ga7d7807a624a2c145e8d4bec65a2e8675" kind="function"><name>put_char_1</name></member>
+      <member refid="group__CharIO_1ga74d8853451b871065173adaf20cb5135" kind="function"><name>put_char</name></member>
+      <member refid="group__CharIO_1ga07ad0dccccdbcee43d5ea348905778dd" kind="function"><name>tab_1</name></member>
+      <member refid="group__CharIO_1ga02691f3e3372d97ae1cc8118a9f33eac" kind="function"><name>tab</name></member>
+      <member refid="group__CharIO_1ga0220ce75ca9875c714cad53149b77995" kind="function"><name>nl_1</name></member>
+      <member refid="group__CharIO_1ga5e1c43fe0a7f8adbaccd19aea5b72f29" kind="function"><name>nl</name></member>
+      <member refid="group__CharIO_1ga6ad4d83ab4276090bbe4aa8d1f8e6abe" kind="function"><name>put_byte_1</name></member>
+      <member refid="group__CharIO_1ga1b78d0ba5673bd07eb5fbf3496045dd8" kind="function"><name>skip_1</name></member>
+      <member refid="group__CharIO_1ga993efe82cbde20aa0cca21f5aceaae39" kind="function"><name>flush_output0</name></member>
+      <member refid="group__CharIO_1ga8a5f9a5c768bb7fd031cb28205303131" kind="function"><name>flush_all_streams</name></member>
+      <member refid="group__CharIO_1ga510b6ac201572adbf67500a5fa8cc345" kind="function"><name>peek_code</name></member>
+      <member refid="group__CharIO_1gab21b070556c1bb005869e4fb0775f778" kind="function"><name>peek_code_1</name></member>
+      <member refid="group__CharIO_1ga0597693808ba7dca740ef7cf52e72b49" kind="function"><name>peek_byte</name></member>
+      <member refid="group__CharIO_1ga12274f6c7f6a286354383da8d2c63e72" kind="function"><name>peek_byte_1</name></member>
+      <member refid="group__CharIO_1gabafa9cfc5fd776a95d5e9b42c950b325" kind="function"><name>peek_char</name></member>
+      <member refid="group__CharIO_1gafb64789b872570ee104b6f53420ae4f4" kind="function"><name>peek_char_1</name></member>
+      <member refid="group__CharIO_1ga8a136b14f9f967a70f41be0909ef3d32" kind="function"><name>Yap_flush_all</name></member>
+      <member refid="group__CharIO_1ga353789542c283607bdb188b1727de331" kind="function"><name>Yap_FlushStreams</name></member>
+      <member refid="group__CharIO_1gaafa2d55ec0ba89a5c33e9a0a47f83193" kind="function"><name>Yap_InitCharsio</name></member>
+      </sectiondef>
+    <briefdescription>
+<para>This file includes the definition of character-by-character related IO. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>VITOR SANTOS COSTA <ulink url="mailto:vsc@VITORs-MBP.lan">vsc@VITORs-MBP.lan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>Thu Nov 19 11:37:16 2015</para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/os/charsio.c"/>
+  </compounddef>
+</doxygen>

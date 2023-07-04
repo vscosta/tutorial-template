@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="core__dbtries_8h" kind="file" language="C++">
+    <compoundname>core_dbtries.h</compoundname>
+    <includedby refid="core__tries_8h" local="yes">/home/vsc/github/yap/library/tries/core_tries.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/vsc/github/yap/library/tries/base_itries.c</label>
+        <link refid="base__itries_8c_source"/>
+      </node>
+      <node id="4">
+        <label>/home/vsc/github/yap/library/tries/base_tries.c</label>
+        <link refid="base__tries_8c_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/tries/core_dbtries.h</label>
+        <link refid="core__dbtries_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/vsc/github/yap/library/tries/core_tries.c</label>
+        <link refid="core__tries_8c_source"/>
+      </node>
+      <node id="2">
+        <label>/home/vsc/github/yap/library/tries/core_tries.h</label>
+        <link refid="core__tries_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/vsc/github/yap/library/tries/itries.c</label>
+        <link refid="itries_8c_source"/>
+      </node>
+      <node id="7">
+        <label>/home/vsc/github/yap/library/tries/tries.c</label>
+        <link refid="tries_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="core__dbtries_8h_1aa632ce9a29e98392bd1fdbfcf1236726" prot="public" static="no">
+        <name>NESTED_TRIE_TERM</name>
+        <initializer>&quot;t&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="210" column="9" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="core__dbtries_8h_1a383832a34d94c27f77dd68b53be25223" prot="public" static="no">
+        <name>PairEndTag</name>
+        <initializer>PairEndEmptyTag</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="211" column="9" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="core__dbtries_8h_1a7734b721f3a630bc21de9a4307424390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core_set_label_counter</definition>
+        <argsstring>(YAP_Int value)</argsstring>
+        <name>core_set_label_counter</name>
+        <param>
+          <type>YAP_Int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="218" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="488" bodyend="491" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="218" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1ada38e32f5261fd7e1b9abebf5b57311b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int core_get_label_counter</definition>
+        <argsstring>(void)</argsstring>
+        <name>core_get_label_counter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="219" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="494" bodyend="496" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="219" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1abce35714c23d9e57d00849c9e4c8b348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core_initialize_depth_breadth_trie</definition>
+        <argsstring>(TrNode node, TrNode *depth_node, TrNode *breadth_node)</argsstring>
+        <name>core_initialize_depth_breadth_trie</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref> *</type>
+          <declname>depth_node</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref> *</type>
+          <declname>breadth_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="220" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="499" bodyend="512" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="220" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1ad886aa09e17d8b02bd78f9adb48ade7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core_finalize_depth_breadth_trie</definition>
+        <argsstring>(TrNode depth_node, TrNode breadth_node)</argsstring>
+        <name>core_finalize_depth_breadth_trie</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>depth_node</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>breadth_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="221" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="516" bodyend="526" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="221" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1ad319505f560eb140e14b9c8c12b9bd73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+        <definition>TrNode core_simplification_reduction</definition>
+        <argsstring>(TrEngine engine, TrNode node, void(*destruct_function)(TrNode))</argsstring>
+        <name>core_simplification_reduction</name>
+        <param>
+          <type><ref refid="structtrie__engine" kindref="compound">TrEngine</ref></type>
+          <declname>engine</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>destruct_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="222" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="557" bodyend="570" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="222" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1ad8283c67d5d461b2ad460a2adbcd938e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+        <definition>TrNode core_depth_reduction</definition>
+        <argsstring>(TrEngine engine, TrNode node, TrNode depth_node, YAP_Int opt_level, void(*construct_function)(TrNode), void(*destruct_function)(TrNode), void(*copy_function)(TrNode, TrNode), void(*correct_order_function)(void))</argsstring>
+        <name>core_depth_reduction</name>
+        <param>
+          <type><ref refid="structtrie__engine" kindref="compound">TrEngine</ref></type>
+          <declname>engine</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>depth_node</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>opt_level</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>construct_function</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>destruct_function</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>, <ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>copy_function</declname>
+        </param>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>correct_order_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="223" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="573" bodyend="638" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="223" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1ab8b93326380fe81d10415b462392f68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+        <definition>TrNode core_breadth_reduction</definition>
+        <argsstring>(TrEngine engine, TrNode node, TrNode breadth_node, YAP_Int opt_level, void(*construct_function)(TrNode), void(*destruct_function)(TrNode), void(*copy_function)(TrNode, TrNode), void(*correct_order_function)(void))</argsstring>
+        <name>core_breadth_reduction</name>
+        <param>
+          <type><ref refid="structtrie__engine" kindref="compound">TrEngine</ref></type>
+          <declname>engine</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>breadth_node</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>opt_level</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>construct_function</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>destruct_function</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>, <ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>copy_function</declname>
+        </param>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>correct_order_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="224" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="642" bodyend="795" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="224" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1a046bca3852459682770dc54b0b7a6884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>YAP_Term core_get_trie_db_return_term</definition>
+        <argsstring>(void)</argsstring>
+        <name>core_get_trie_db_return_term</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="225" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="475" bodyend="477" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="225" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1a671c6fee79ecfe3b3032c55e72612f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core_set_trie_db_return_term</definition>
+        <argsstring>(YAP_Term return_value)</argsstring>
+        <name>core_set_trie_db_return_term</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>return_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="226" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="481" bodyend="484" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="226" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1a21edbb6cdb38eaa29d615b7f6981ace5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int core_db_trie_get_optimization_level_count</definition>
+        <argsstring>(YAP_Int opt_level)</argsstring>
+        <name>core_db_trie_get_optimization_level_count</name>
+        <param>
+          <type>YAP_Int</type>
+          <declname>opt_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="227" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="995" bodyend="997" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="227" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1ad06f1015bebc41c04275d390d2c614ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core_depth_breadth_trie_replace_nested_trie</definition>
+        <argsstring>(TrNode node, YAP_Int nested_trie_id, YAP_Term new_term, void(*construct_function)(TrNode), void(*destruct_function)(TrNode))</argsstring>
+        <name>core_depth_breadth_trie_replace_nested_trie</name>
+        <param>
+          <type><ref refid="structtrie__node" kindref="compound">TrNode</ref></type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>nested_trie_id</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>new_term</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>construct_function</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structtrie__node" kindref="compound">TrNode</ref>)</type>
+          <declname>destruct_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="228" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="260" bodyend="263" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="228" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1a6700379cfc6be5c25229c2bf127cd5fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int</type>
+        <definition>YAP_Int core_get_trie_db_opt_min_prefix</definition>
+        <argsstring>(void)</argsstring>
+        <name>core_get_trie_db_opt_min_prefix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="229" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="247" bodyend="249" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="229" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="core__dbtries_8h_1af5aeb737978dae38c4e52ef23b18b756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void core_set_trie_db_opt_min_prefix</definition>
+        <argsstring>(YAP_Int min_prefix)</argsstring>
+        <name>core_set_trie_db_opt_min_prefix</name>
+        <param>
+          <type>YAP_Int</type>
+          <declname>min_prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/library/tries/core_dbtries.h" line="230" column="11" bodyfile="/home/vsc/github/yap/library/tries/core_dbtries.c" bodystart="253" bodyend="256" declfile="/home/vsc/github/yap/library/tries/core_dbtries.h" declline="230" declcolumn="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/tries/core_dbtries.h"/>
+  </compounddef>
+</doxygen>

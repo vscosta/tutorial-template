@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptabsolute__file__name_23" kind="concept">
+    <compoundname>absolute_file_name/3</compoundname>
+    <initializer>template&lt;&gt;
+concept absolute_file_name/3 =     </initializer>
+    <briefdescription>
+<para><bold>absolute_file_name</bold>( -File:atom, +Path:atom, +Options:list) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>properties: nondeterministic</para>
+<para><emphasis>Options</emphasis> is a list of options to guide the conversion:</para>
+<para><itemizedlist>
+<listitem><para>extensions(+ <emphasis>ListOfExtensions</emphasis>)</para>
+<para>List of file-name suffixes to add to try adding to the file The Default is the empty suffix, <lsquo/><rsquo/>&apos;` For each extension, <ref refid="classabsolute__file__name_23" kindref="compound">absolute_file_name/3</ref> will first add the extension and then verify the conditions imposed by the other options If the condition fails, the next extension of the list is tried Extensions may be specified both with dot, as <computeroutput>.ext</computeroutput>, or without, as plain <computeroutput>ext</computeroutput></para>
+</listitem><listitem><para>relative_to(+ <emphasis>FileOrDir</emphasis> )</para>
+<para>Resolve the path relative to the given directory or directory the holding the given file Without this option, paths are resolved relative to the working directory (see <ref refid="classworking__directory_22" kindref="compound">working_directory/2</ref> ) or, if <emphasis>Spec</emphasis> is atomic and <ref refid="classabsolute__file__name_23" kindref="compound">absolute_file_name/3</ref> is executed in a directive, it uses the current source-file as reference</para>
+</listitem><listitem><para>access(+ <emphasis>Mode</emphasis> )</para>
+<para>Imposes the condition access_file( <emphasis>File</emphasis> , <emphasis>Mode</emphasis> ) <emphasis>Mode</emphasis> is one of <computeroutput>read</computeroutput>, <computeroutput>write</computeroutput>, <computeroutput>append</computeroutput>, <computeroutput>exist</computeroutput> or <computeroutput>none</computeroutput> (default)</para>
+<para>See also <ref refid="classaccess__file_22" kindref="compound">access_file/2</ref></para>
+</listitem><listitem><para>file_type(+ <emphasis>Type</emphasis> )</para>
+<para>Defines suffixes matching one of several pre-specified type of files Default mapping is as follows:<orderedlist>
+<listitem><para><computeroutput>txt</computeroutput> implies <lsquo/>[ <rsquo/>&apos; ]`,</para>
+</listitem><listitem><para><computeroutput>prolog</computeroutput> implies <lsquo/>[<rsquo/>.yap&apos;, &apos;.pl&apos;, &apos;.prolog&apos;, &apos;&apos;]`,</para>
+</listitem><listitem><para><computeroutput>executable</computeroutput> implies <lsquo/>[<rsquo/>.so&apos;, &apos;,dylib&apos;, &apos;.dll&apos;]` depending on the Operating system,</para>
+</listitem><listitem><para><computeroutput>qly</computeroutput> implies <lsquo/>[<rsquo/>.qly&apos;, &apos;&apos;]`,</para>
+</listitem><listitem><para><computeroutput>directory</computeroutput> implies <lsquo/>[<rsquo/>&apos;]`,</para>
+</listitem><listitem><para>The file-type <computeroutput>source</computeroutput> is an alias for <computeroutput>prolog</computeroutput> designed to support compatibility with SICStus Prolog See also <ref refid="classprolog__file__type_22" kindref="compound">prolog_file_type/2</ref></para>
+</listitem></orderedlist>
+</para>
+<para>Notice that this predicate only returns non-directories, unless the option <computeroutput>file_type(directory)</computeroutput> is specified, or unless <computeroutput>access(none)</computeroutput></para>
+</listitem><listitem><para>file_errors(<computeroutput>fail</computeroutput>/<computeroutput>error</computeroutput>)</para>
+<para>If <computeroutput>error</computeroutput> (default), throw <computeroutput>existence_error</computeroutput> exception if the file cannot be found If <computeroutput>fail</computeroutput>, stay silent</para>
+</listitem><listitem><para>solutions(<computeroutput>first</computeroutput>/<computeroutput>all</computeroutput>)</para>
+<para>If <computeroutput>first</computeroutput> (default), commit to the first solution Otherwise absolute_file_name will enumerate all solutions via backtracking</para>
+</listitem><listitem><para>expand(<computeroutput>true</computeroutput>/<computeroutput>false</computeroutput>)</para>
+<para>If <computeroutput>true</computeroutput> (default is <computeroutput>false</computeroutput>) and <emphasis>Spec</emphasis> is atomic, call expand_file_name/2 followed by <ref refid="classmember_22" kindref="compound">member/2</ref> on <emphasis>Spec</emphasis> before proceeding This is originally a SWI-Prolog extension, but whereas SWI-Prolog implements its own conventions, YAP uses the shell&apos;s <computeroutput>glob</computeroutput> primitive</para>
+<para>Notice that in <computeroutput>glob</computeroutput> mode YAP will fail if it cannot find a matching file, as <computeroutput>glob</computeroutput> implicitely tests for existence when checking for patterns</para>
+</listitem><listitem><para>glob(<computeroutput>Pattern</computeroutput>)</para>
+<para>If <emphasis>Pattern</emphasis> is atomic, add the pattern as a suffix to the current expansion, and call expand_file_name/2 followed by <ref refid="classmember_22" kindref="compound">member/2</ref> on the result This is originally a SICStus Prolog exception</para>
+<para>Both <computeroutput>glob</computeroutput> and <computeroutput>expand</computeroutput> rely on the same underlying mechanism YAP gives preference to <computeroutput>glob</computeroutput></para>
+</listitem><listitem><para>verbose_file_search(<computeroutput>true</computeroutput>/<computeroutput>false</computeroutput>)</para>
+<para>If <computeroutput>true</computeroutput> (default is <computeroutput>false</computeroutput>) output messages during search This is often helpful when debugging Corresponds to the SWI-Prolog flag <computeroutput>verbose_file_search</computeroutput> (also available in YAP)</para>
+</listitem></itemizedlist>
+</para>
+<para>Compatibility considerations to common argument-order in ISO as well as SICStus <ref refid="classabsolute__file__name_23" kindref="compound">absolute_file_name/3</ref> forced us to be flexible here If the last argument is a list and the second not, the arguments are swapped, thus the call</para>
+<para><programlisting><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">absolute_file_name(<sp/></highlight><highlight class="stringliteral">&apos;pl/absf.yap&apos;</highlight><highlight class="normal">,<sp/>[],<sp/></highlight><highlight class="charliteral">Path</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting> is valid as well </para>
+    </detaileddescription>
+    <location file="pl/absf.yap" line="3" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__parameters" kind="group">
+    <compoundname>parameters</compoundname>
+    <title>Automating test generation</title>
+    <briefdescription>
+<para>This library aims at facilitating test generation in a logic program, namely when interfacing to foreign code. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It introduces the following specs:</para>
+<para><itemizedlist>
+<listitem><para>Named Arguments: you can refer to an argument through a name This allows having optional arguments As an example, you can say:</para>
+</listitem></itemizedlist>
+</para>
+<para>maxlength=MaxLength</para>
+<para>and the original program is extended to support an optional parameter Length, eg:</para>
+<para>vector( Type, Length, V ) :- alloc( Type, Length, MaxLength, V )</para>
+<para>will become</para>
+<para>vector( Type, Length, V, MaxLength ) :- alloc( Type, Length, MaxLength, V )</para>
+<para><itemizedlist>
+<listitem><para>Tests</para>
+</listitem></itemizedlist>
+</para>
+<para>You can write type tests and ISO-like tests offline</para>
+<para><itemizedlist>
+<listitem><para>Initializers</para>
+</listitem></itemizedlist>
+</para>
+<para>It allows default code for variables In the previous code, the initializer MaxLength = 1024 would result in two clauses:</para>
+<para>vector( Type, Length, V, MaxLength ) :- alloc( Type, Length, MaxLength, V ) vector( Type, Length, V ) :- alloc( Type, Length, 1024, V )</para>
+<para>See myddas.yap for a few examples</para>
+<para><simplesect kind="author"><para>Vitor Santos Costa</para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

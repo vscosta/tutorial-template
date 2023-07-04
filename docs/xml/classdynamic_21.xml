@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classdynamic_21" kind="class" language="Prolog" prot="public">
+    <compoundname>dynamic/1</compoundname>
+    <briefdescription>
+<para><bold>dynamic</bold>( + <emphasis>P</emphasis> ) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Declares predicate <emphasis>P</emphasis> or list of predicates [ <emphasis>P1</emphasis>,..., <emphasis>Pn</emphasis>] as a dynamic predicate <emphasis>P</emphasis> must be written as a predicate indicator, that is in form <emphasis>Name/Arity</emphasis> or <emphasis>Module:Name/Arity</emphasis></para>
+<para><programlisting><codeline><highlight class="normal">:-<sp/></highlight><highlight class="keyword">dynamic</highlight><highlight class="normal"><sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">god/1<sp/></highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>a more convenient form can be used:</para>
+<para><programlisting><codeline><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">dynamic</highlight><highlight class="normal"><sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">son/3<sp/>,<sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">father/2<sp/>,<sp/>@</highlight><highlight class="stringliteral"></highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">mother/2<sp/></highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>or, equivalently,</para>
+<para><programlisting><codeline><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">dynamic</highlight><highlight class="normal"><sp/>[</highlight><highlight class="stringliteral"></highlight><highlight class="normal">son/3,<sp/>@ref<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">father/2<sp/>,<sp/>@ref<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">mother/2<sp/>]</highlight><highlight class="keyword">.</highlight></codeline>
+</programlisting></para>
+<para>Note:</para>
+<para>a predicate is assumed to be dynamic when asserted before being defined </para>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/pl/preddyns.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/preddyns.yap" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

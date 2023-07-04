@@ -1,0 +1,1168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classYAPApplTerm" kind="class" language="C++" prot="public">
+    <compoundname>YAPApplTerm</compoundname>
+    <basecompoundref refid="classYAPTerm" prot="public" virt="non-virtual">YAPTerm</basecompoundref>
+    <includes refid="tmp_2yapt_8hh" local="no">yapt.hh</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classYAPApplTerm_1afc97fd5868ee65aac8b220ec43f2bf0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>YAPTerm</definition>
+        <argsstring></argsstring>
+        <name>YAPTerm</name>
+        <qualifiedname>YAPApplTerm::YAPTerm</qualifiedname>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="288" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classYAPApplTerm_1adacde59188edef94a0067208e7a82f9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(Term t0)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>Term</type>
+          <declname>t0</declname>
+        </param>
+        <briefdescription>
+<para>There are very many ways to build one of these terms: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>engine representation to <ref refid="classYAPApplTerm" kindref="compound">YAPApplTerm</ref> </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="294" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="294" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a017b08859493ea50a1778d856df33e96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(Functor f, Term ts[])</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>ts</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>this is the way the engine builds App, but in C you need to give the arity Notice we build from the engine world </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="297" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="297" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a45f19df0a05d06da91c973075beb7a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(YAPFunctor f, YAPTerm ts[])</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>ts</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>similar to beefore, but wwe use objects This is useful if we already got the objects </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="305" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="213" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a03078724d84e7c9942e366925eee032e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, std::vector&lt; Term &gt; ts)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; Term &gt;</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+<para>not really needed, but we may not want to look inside the vector </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="308" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="224" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1af83490beeba8ac6372fefb632ce01573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, std::vector&lt; YAPTerm &gt; ts)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classYAPTerm" kindref="compound">YAPTerm</ref> &gt;</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="309" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="243" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a15f024637d0608597deb0a68607321ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, Term a1)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="374" column="4" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="374" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a0186c3aba78b03443afdd4cf0b43510a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, Term a1, Term a2)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="386" column="1" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="386" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ab70a75a01ffda271eaedebbf7259cb33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, Term a1, Term a2, Term a3)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="401" column="1" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="401" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a52718d99cc84f5856d818f3d68ab8166" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, unsigned int arity)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>build empty compound term, that is, all arguments are free variables </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="420" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a6487c3a6a5f34e63296e97b4adf25058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(YAPFunctor f)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>or use the functor object </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="426" column="3" bodyfile="/home/vsc/github/yap/CXX/yapi.cpp" bodystart="261" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aa8c95af8767dfce8be157ff7c18ea799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor functor</definition>
+        <argsstring>()</argsstring>
+        <name>functor</name>
+        <qualifiedname>YAPApplTerm::functor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="427" column="18" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="427" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ab733c42580e19dafdd35b17e5366fe43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+        <definition>YAPFunctor getFunctor</definition>
+        <argsstring>()</argsstring>
+        <name>getFunctor</name>
+        <qualifiedname>YAPApplTerm::getFunctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="428" column="21" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="428" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aae36bb12ce7dab29e680048725cfb905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Term</type>
+        <definition>Term getArg</definition>
+        <argsstring>(arity_t i)</argsstring>
+        <name>getArg</name>
+        <qualifiedname>YAPApplTerm::getArg</qualifiedname>
+        <reimplements refid="classYAPTerm_1aae36bb12ce7dab29e680048725cfb905">getArg</reimplements>
+        <param>
+          <type>arity_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>term is a list </para>
+        </briefdescription>
+        <detaileddescription>
+<para>extract the argument i of the term, where i in 1...arityvoid *Yap_RepStreamFromId(int sno) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="430" column="10" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="430" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a90d94d59b277bb41dadf81d1d3427e04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void putArg</definition>
+        <argsstring>(int i, Term targ)</argsstring>
+        <name>putArg</name>
+        <qualifiedname>YAPApplTerm::putArg</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>targ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="438" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="438" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ae0a8282635a3d58775ae613298050ab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void putArg</definition>
+        <argsstring>(int i, YAPTerm t)</argsstring>
+        <name>putArg</name>
+        <qualifiedname>YAPApplTerm::putArg</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="444" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="444" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a9ea7108484abde8985bee0ab1d807360" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isVar</definition>
+        <argsstring>()</argsstring>
+        <name>isVar</name>
+        <qualifiedname>YAPApplTerm::isVar</qualifiedname>
+        <reimplements refid="classYAPTerm_1a9ea7108484abde8985bee0ab1d807360">isVar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="450" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="450" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a3fa5279dfa0c98b5272459ec64151325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isAtom</definition>
+        <argsstring>()</argsstring>
+        <name>isAtom</name>
+        <qualifiedname>YAPApplTerm::isAtom</qualifiedname>
+        <reimplements refid="classYAPTerm_1a3fa5279dfa0c98b5272459ec64151325">isAtom</reimplements>
+        <briefdescription>
+<para>type check for unound </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="451" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="451" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a16626d5bc393ef2636260ee174e1a424" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isInteger</definition>
+        <argsstring>()</argsstring>
+        <name>isInteger</name>
+        <qualifiedname>YAPApplTerm::isInteger</qualifiedname>
+        <reimplements refid="classYAPTerm_1a16626d5bc393ef2636260ee174e1a424">isInteger</reimplements>
+        <briefdescription>
+<para>type check for atom </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="452" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="452" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aaf315cdc04d99d6badb9614bbf7197e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isFloat</definition>
+        <argsstring>()</argsstring>
+        <name>isFloat</name>
+        <qualifiedname>YAPApplTerm::isFloat</qualifiedname>
+        <reimplements refid="classYAPTerm_1aaf315cdc04d99d6badb9614bbf7197e2">isFloat</reimplements>
+        <briefdescription>
+<para>type check for integer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="453" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="453" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aca0e42cb6a5f3e3745ea01e86c2c13bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isString</definition>
+        <argsstring>()</argsstring>
+        <name>isString</name>
+        <qualifiedname>YAPApplTerm::isString</qualifiedname>
+        <reimplements refid="classYAPTerm_1aca0e42cb6a5f3e3745ea01e86c2c13bc">isString</reimplements>
+        <briefdescription>
+<para>type check for floating-point </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="454" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="454" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aff847477b25724ebb960ed3445d51400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isCompound</definition>
+        <argsstring>()</argsstring>
+        <name>isCompound</name>
+        <qualifiedname>YAPApplTerm::isCompound</qualifiedname>
+        <reimplements refid="classYAPTerm_1aff847477b25724ebb960ed3445d51400">isCompound</reimplements>
+        <briefdescription>
+<para>type check for a string &quot; ... &quot; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="455" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="455" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a939025805a96e3fd93a61884a3b217f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isAppl</definition>
+        <argsstring>()</argsstring>
+        <name>isAppl</name>
+        <qualifiedname>YAPApplTerm::isAppl</qualifiedname>
+        <reimplements refid="classYAPTerm_1a939025805a96e3fd93a61884a3b217f2">isAppl</reimplements>
+        <briefdescription>
+<para>is a primitive term </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="456" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="456" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a21e0b1a710668c121da5b55cb86e626a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isPair</definition>
+        <argsstring>()</argsstring>
+        <name>isPair</name>
+        <qualifiedname>YAPApplTerm::isPair</qualifiedname>
+        <reimplements refid="classYAPTerm_1a21e0b1a710668c121da5b55cb86e626a">isPair</reimplements>
+        <briefdescription>
+<para>is a structured term </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="457" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="457" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ab11a72e64b950c3001b9fe20fc34682b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isGround</definition>
+        <argsstring>()</argsstring>
+        <name>isGround</name>
+        <qualifiedname>YAPApplTerm::isGround</qualifiedname>
+        <reimplements refid="classYAPTerm_1ab11a72e64b950c3001b9fe20fc34682b">isGround</reimplements>
+        <briefdescription>
+<para>is a pair term </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="458" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="458" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a42e33ecd59575fc1ce1b1f84df6e256e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isList</definition>
+        <argsstring>()</argsstring>
+        <name>isList</name>
+        <qualifiedname>YAPApplTerm::isList</qualifiedname>
+        <reimplements refid="classYAPTerm_1a42e33ecd59575fc1ce1b1f84df6e256e">isList</reimplements>
+        <briefdescription>
+<para>term is ground </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="459" column="16" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="459" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1adacde59188edef94a0067208e7a82f9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(Term t0)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>Term</type>
+          <declname>t0</declname>
+        </param>
+        <briefdescription>
+<para>There are very many ways to build one of these terms: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>engine representation to <ref refid="classYAPApplTerm" kindref="compound">YAPApplTerm</ref> </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="310" column="3" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="310" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a017b08859493ea50a1778d856df33e96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(Functor f, Term ts[])</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>ts</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>this is the way the engine builds App, but in C you need to give the arity Notice we build from the engine world </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="313" column="3" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="313" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a45f19df0a05d06da91c973075beb7a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(YAPFunctor f, YAPTerm ts[])</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>ts</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>similar to beefore, but wwe use objects This is useful if we already got the objects </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="321" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a03078724d84e7c9942e366925eee032e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, std::vector&lt; Term &gt; ts)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; Term &gt;</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+<para>not really needed, but we may not want to look inside the vector </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="324" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1af83490beeba8ac6372fefb632ce01573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, std::vector&lt; YAPTerm &gt; ts)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classYAPTerm" kindref="compound">YAPTerm</ref> &gt;</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="325" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a15f024637d0608597deb0a68607321ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, Term a1)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="390" column="4" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="390" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a0186c3aba78b03443afdd4cf0b43510a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, Term a1, Term a2)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="402" column="1" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="402" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ab70a75a01ffda271eaedebbf7259cb33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, Term a1, Term a2, Term a3)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>a3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="417" column="1" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="417" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a52718d99cc84f5856d818f3d68ab8166" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(const std::string s, unsigned int arity)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>build empty compound term, that is, all arguments are free variables </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="436" column="3" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="436" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a6487c3a6a5f34e63296e97b4adf25058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YAPApplTerm</definition>
+        <argsstring>(YAPFunctor f)</argsstring>
+        <name>YAPApplTerm</name>
+        <qualifiedname>YAPApplTerm::YAPApplTerm</qualifiedname>
+        <param>
+          <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>or use the functor object </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="442" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aa8c95af8767dfce8be157ff7c18ea799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>Functor functor</definition>
+        <argsstring>()</argsstring>
+        <name>functor</name>
+        <qualifiedname>YAPApplTerm::functor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="443" column="18" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="443" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ab733c42580e19dafdd35b17e5366fe43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classYAPFunctor" kindref="compound">YAPFunctor</ref></type>
+        <definition>YAPFunctor getFunctor</definition>
+        <argsstring>()</argsstring>
+        <name>getFunctor</name>
+        <qualifiedname>YAPApplTerm::getFunctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="444" column="21" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="444" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aae36bb12ce7dab29e680048725cfb905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Term</type>
+        <definition>Term getArg</definition>
+        <argsstring>(arity_t i)</argsstring>
+        <name>getArg</name>
+        <qualifiedname>YAPApplTerm::getArg</qualifiedname>
+        <reimplements refid="classYAPTerm_1aae36bb12ce7dab29e680048725cfb905">getArg</reimplements>
+        <param>
+          <type>arity_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>term is a list </para>
+        </briefdescription>
+        <detaileddescription>
+<para>extract the argument i of the term, where i in 1...arityvoid *Yap_RepStreamFromId(int sno) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="446" column="10" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="446" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a90d94d59b277bb41dadf81d1d3427e04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void putArg</definition>
+        <argsstring>(int i, Term targ)</argsstring>
+        <name>putArg</name>
+        <qualifiedname>YAPApplTerm::putArg</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>targ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="454" column="8" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="454" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ae0a8282635a3d58775ae613298050ab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void putArg</definition>
+        <argsstring>(int i, YAPTerm t)</argsstring>
+        <name>putArg</name>
+        <qualifiedname>YAPApplTerm::putArg</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classYAPTerm" kindref="compound">YAPTerm</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="460" column="8" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="460" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a9ea7108484abde8985bee0ab1d807360" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isVar</definition>
+        <argsstring>()</argsstring>
+        <name>isVar</name>
+        <qualifiedname>YAPApplTerm::isVar</qualifiedname>
+        <reimplements refid="classYAPTerm_1a9ea7108484abde8985bee0ab1d807360">isVar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="466" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="466" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a3fa5279dfa0c98b5272459ec64151325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isAtom</definition>
+        <argsstring>()</argsstring>
+        <name>isAtom</name>
+        <qualifiedname>YAPApplTerm::isAtom</qualifiedname>
+        <reimplements refid="classYAPTerm_1a3fa5279dfa0c98b5272459ec64151325">isAtom</reimplements>
+        <briefdescription>
+<para>type check for unound </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="467" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="467" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a16626d5bc393ef2636260ee174e1a424" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isInteger</definition>
+        <argsstring>()</argsstring>
+        <name>isInteger</name>
+        <qualifiedname>YAPApplTerm::isInteger</qualifiedname>
+        <reimplements refid="classYAPTerm_1a16626d5bc393ef2636260ee174e1a424">isInteger</reimplements>
+        <briefdescription>
+<para>type check for atom </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="468" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="468" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aaf315cdc04d99d6badb9614bbf7197e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isFloat</definition>
+        <argsstring>()</argsstring>
+        <name>isFloat</name>
+        <qualifiedname>YAPApplTerm::isFloat</qualifiedname>
+        <reimplements refid="classYAPTerm_1aaf315cdc04d99d6badb9614bbf7197e2">isFloat</reimplements>
+        <briefdescription>
+<para>type check for integer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="469" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="469" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aca0e42cb6a5f3e3745ea01e86c2c13bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isString</definition>
+        <argsstring>()</argsstring>
+        <name>isString</name>
+        <qualifiedname>YAPApplTerm::isString</qualifiedname>
+        <reimplements refid="classYAPTerm_1aca0e42cb6a5f3e3745ea01e86c2c13bc">isString</reimplements>
+        <briefdescription>
+<para>type check for floating-point </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="470" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="470" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1aff847477b25724ebb960ed3445d51400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isCompound</definition>
+        <argsstring>()</argsstring>
+        <name>isCompound</name>
+        <qualifiedname>YAPApplTerm::isCompound</qualifiedname>
+        <reimplements refid="classYAPTerm_1aff847477b25724ebb960ed3445d51400">isCompound</reimplements>
+        <briefdescription>
+<para>type check for a string &quot; ... &quot; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="471" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="471" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a939025805a96e3fd93a61884a3b217f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isAppl</definition>
+        <argsstring>()</argsstring>
+        <name>isAppl</name>
+        <qualifiedname>YAPApplTerm::isAppl</qualifiedname>
+        <reimplements refid="classYAPTerm_1a939025805a96e3fd93a61884a3b217f2">isAppl</reimplements>
+        <briefdescription>
+<para>is a primitive term </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="472" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="472" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a21e0b1a710668c121da5b55cb86e626a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isPair</definition>
+        <argsstring>()</argsstring>
+        <name>isPair</name>
+        <qualifiedname>YAPApplTerm::isPair</qualifiedname>
+        <reimplements refid="classYAPTerm_1a21e0b1a710668c121da5b55cb86e626a">isPair</reimplements>
+        <briefdescription>
+<para>is a structured term </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="473" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="473" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1ab11a72e64b950c3001b9fe20fc34682b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isGround</definition>
+        <argsstring>()</argsstring>
+        <name>isGround</name>
+        <qualifiedname>YAPApplTerm::isGround</qualifiedname>
+        <reimplements refid="classYAPTerm_1ab11a72e64b950c3001b9fe20fc34682b">isGround</reimplements>
+        <briefdescription>
+<para>is a pair term </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="474" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="474" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classYAPApplTerm_1a42e33ecd59575fc1ce1b1f84df6e256e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isList</definition>
+        <argsstring>()</argsstring>
+        <name>isList</name>
+        <qualifiedname>YAPApplTerm::isList</qualifiedname>
+        <reimplements refid="classYAPTerm_1a42e33ecd59575fc1ce1b1f84df6e256e">isList</reimplements>
+        <briefdescription>
+<para>term is ground </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="475" column="16" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="475" bodyend="475"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compound Term. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A compound term, with functor and fixed number of arguments, also known as a function application</para>
+<para>Notice that lists and big numbers do not belong to this class</para>
+<para>A compound term, with functor and fixed number of arguments, also known as a function application</para>
+<para>Notice that lists and big numbers do not belong to this class </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>YAPApplTerm</label>
+        <link refid="classYAPApplTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YAPTerm</label>
+        <link refid="classYAPTerm"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>YAPApplTerm</label>
+        <link refid="classYAPApplTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>YAPTerm</label>
+        <link refid="classYAPTerm"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="287" column="1" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="287" bodyend="460"/>
+    <listofallmembers>
+      <member refid="classYAPTerm_1ab113801eac8ec2c37f7d69f86431a9c2" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>arg</name></member>
+      <member refid="classYAPTerm_1ab113801eac8ec2c37f7d69f86431a9c2" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>arg</name></member>
+      <member refid="classYAPTerm_1abb9a297c2305f37dcbc7ec1f8972fe3c" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>arity</name></member>
+      <member refid="classYAPTerm_1abb9a297c2305f37dcbc7ec1f8972fe3c" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>arity</name></member>
+      <member refid="classYAPTerm_1aacf1aea1fa6911abfa3557843d0a0c8d" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>bind</name></member>
+      <member refid="classYAPTerm_1a7e9c53c62e12aea66b490d43b556a683" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>bind</name></member>
+      <member refid="classYAPTerm_1aacf1aea1fa6911abfa3557843d0a0c8d" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>bind</name></member>
+      <member refid="classYAPTerm_1a7e9c53c62e12aea66b490d43b556a683" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>bind</name></member>
+      <member refid="classYAPTerm_1a0e4a83a87ff58e403d8c4a4e66e5b019" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>deepCopy</name></member>
+      <member refid="classYAPTerm_1a0e4a83a87ff58e403d8c4a4e66e5b019" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>deepCopy</name></member>
+      <member refid="classYAPTerm_1ad68ceb75dac15df87f18353bf4e901ee" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>exactlyEqual</name></member>
+      <member refid="classYAPTerm_1ad68ceb75dac15df87f18353bf4e901ee" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>exactlyEqual</name></member>
+      <member refid="classYAPApplTerm_1aa8c95af8767dfce8be157ff7c18ea799" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>functor</name></member>
+      <member refid="classYAPApplTerm_1aa8c95af8767dfce8be157ff7c18ea799" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>functor</name></member>
+      <member refid="classYAPApplTerm_1aae36bb12ce7dab29e680048725cfb905" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>getArg</name></member>
+      <member refid="classYAPApplTerm_1aae36bb12ce7dab29e680048725cfb905" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>getArg</name></member>
+      <member refid="classYAPApplTerm_1ab733c42580e19dafdd35b17e5366fe43" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>getFunctor</name></member>
+      <member refid="classYAPApplTerm_1ab733c42580e19dafdd35b17e5366fe43" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>getFunctor</name></member>
+      <member refid="classYAPTerm_1a7e2daafeb40df9547e1b3cc3d1ac0e96" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>gt</name></member>
+      <member refid="classYAPTerm_1a7e2daafeb40df9547e1b3cc3d1ac0e96" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>gt</name></member>
+      <member refid="classYAPTerm_1a84518c0718e6650566b120ca5b85db02" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>handle</name></member>
+      <member refid="classYAPTerm_1a84518c0718e6650566b120ca5b85db02" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>handle</name></member>
+      <member refid="classYAPTerm_1a2974e0128f95576a99fc78ed38ae8085" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>hashTerm</name></member>
+      <member refid="classYAPTerm_1a2974e0128f95576a99fc78ed38ae8085" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>hashTerm</name></member>
+      <member refid="classYAPTerm_1a1b2ed9bd9891b4f7f8c58783d9425d71" prot="protected" virt="non-virtual"><scope>YAPApplTerm</scope><name>hdl</name></member>
+      <member refid="classYAPTerm_1a0e887830311eba8605002670b70699ed" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>initialized</name></member>
+      <member refid="classYAPTerm_1a0e887830311eba8605002670b70699ed" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>initialized</name></member>
+      <member refid="classYAPApplTerm_1a939025805a96e3fd93a61884a3b217f2" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isAppl</name></member>
+      <member refid="classYAPApplTerm_1a939025805a96e3fd93a61884a3b217f2" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isAppl</name></member>
+      <member refid="classYAPApplTerm_1a3fa5279dfa0c98b5272459ec64151325" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isAtom</name></member>
+      <member refid="classYAPApplTerm_1a3fa5279dfa0c98b5272459ec64151325" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isAtom</name></member>
+      <member refid="classYAPApplTerm_1aff847477b25724ebb960ed3445d51400" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isCompound</name></member>
+      <member refid="classYAPApplTerm_1aff847477b25724ebb960ed3445d51400" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isCompound</name></member>
+      <member refid="classYAPApplTerm_1aaf315cdc04d99d6badb9614bbf7197e2" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isFloat</name></member>
+      <member refid="classYAPApplTerm_1aaf315cdc04d99d6badb9614bbf7197e2" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isFloat</name></member>
+      <member refid="classYAPApplTerm_1ab11a72e64b950c3001b9fe20fc34682b" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isGround</name></member>
+      <member refid="classYAPApplTerm_1ab11a72e64b950c3001b9fe20fc34682b" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isGround</name></member>
+      <member refid="classYAPApplTerm_1a16626d5bc393ef2636260ee174e1a424" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isInteger</name></member>
+      <member refid="classYAPApplTerm_1a16626d5bc393ef2636260ee174e1a424" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isInteger</name></member>
+      <member refid="classYAPApplTerm_1a42e33ecd59575fc1ce1b1f84df6e256e" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isList</name></member>
+      <member refid="classYAPApplTerm_1a42e33ecd59575fc1ce1b1f84df6e256e" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isList</name></member>
+      <member refid="classYAPApplTerm_1a21e0b1a710668c121da5b55cb86e626a" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isPair</name></member>
+      <member refid="classYAPApplTerm_1a21e0b1a710668c121da5b55cb86e626a" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isPair</name></member>
+      <member refid="classYAPApplTerm_1aca0e42cb6a5f3e3745ea01e86c2c13bc" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isString</name></member>
+      <member refid="classYAPApplTerm_1aca0e42cb6a5f3e3745ea01e86c2c13bc" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isString</name></member>
+      <member refid="classYAPApplTerm_1a9ea7108484abde8985bee0ab1d807360" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isVar</name></member>
+      <member refid="classYAPApplTerm_1a9ea7108484abde8985bee0ab1d807360" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>isVar</name></member>
+      <member refid="classYAPTerm_1a1a37a59d4c80fc3c2606fdedeeb4a218" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>mk</name></member>
+      <member refid="classYAPTerm_1a1a37a59d4c80fc3c2606fdedeeb4a218" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>mk</name></member>
+      <member refid="classYAPTerm_1a5d085ea9020eec5b07e44d3a03a7bdf4" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>numberVars</name></member>
+      <member refid="classYAPTerm_1a5d085ea9020eec5b07e44d3a03a7bdf4" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>numberVars</name></member>
+      <member refid="classYAPTerm_1ae533addedf4448e6fb256e010c28a2e3" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>operator[]</name></member>
+      <member refid="classYAPTerm_1ae533addedf4448e6fb256e010c28a2e3" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>operator[]</name></member>
+      <member refid="classYAPTerm_1a34fc41ad9a79d1823f9278ed78337bc4" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>pop_t</name></member>
+      <member refid="classYAPTerm_1a34fc41ad9a79d1823f9278ed78337bc4" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>pop_t</name></member>
+      <member refid="classYAPTerm_1a47b5bd780cb7d4cd7fa4578c295fb838" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>put</name></member>
+      <member refid="classYAPTerm_1a47b5bd780cb7d4cd7fa4578c295fb838" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>put</name></member>
+      <member refid="classYAPApplTerm_1a90d94d59b277bb41dadf81d1d3427e04" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>putArg</name></member>
+      <member refid="classYAPApplTerm_1ae0a8282635a3d58775ae613298050ab0" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>putArg</name></member>
+      <member refid="classYAPApplTerm_1a90d94d59b277bb41dadf81d1d3427e04" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>putArg</name></member>
+      <member refid="classYAPApplTerm_1ae0a8282635a3d58775ae613298050ab0" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>putArg</name></member>
+      <member refid="classYAPTerm_1ad20897c5c8bd47f5d4005989bead0e55" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>reset</name></member>
+      <member refid="classYAPTerm_1a69fffe0c41e001d6fdd0840f61a56df4" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>tag</name></member>
+      <member refid="classYAPTerm_1a69fffe0c41e001d6fdd0840f61a56df4" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>tag</name></member>
+      <member refid="classYAPTerm_1ab7852318b7495ccd6362d74dd6e5c652" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>term</name></member>
+      <member refid="classYAPTerm_1ab7852318b7495ccd6362d74dd6e5c652" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>term</name></member>
+      <member refid="classYAPTerm_1ad1ea0d530c1ceea2efc1661e83c6ccb7" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>text</name></member>
+      <member refid="classYAPTerm_1ad1ea0d530c1ceea2efc1661e83c6ccb7" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>text</name></member>
+      <member refid="classYAPTerm_1a5373f97ad03301a4eb97808b6c72e12d" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>unifiable</name></member>
+      <member refid="classYAPTerm_1a5373f97ad03301a4eb97808b6c72e12d" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>unifiable</name></member>
+      <member refid="classYAPTerm_1ad10da53c46207ede9f418086ed153d5b" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>unify</name></member>
+      <member refid="classYAPTerm_1ad10da53c46207ede9f418086ed153d5b" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>unify</name></member>
+      <member refid="classYAPTerm_1aceaa99597084fe2049d5de67eb6c4cf1" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>variant</name></member>
+      <member refid="classYAPTerm_1aceaa99597084fe2049d5de67eb6c4cf1" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>variant</name></member>
+      <member refid="classYAPApplTerm_1adacde59188edef94a0067208e7a82f9d" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a017b08859493ea50a1778d856df33e96" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a45f19df0a05d06da91c973075beb7a11" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a03078724d84e7c9942e366925eee032e" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1af83490beeba8ac6372fefb632ce01573" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a15f024637d0608597deb0a68607321ae" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a0186c3aba78b03443afdd4cf0b43510a" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1ab70a75a01ffda271eaedebbf7259cb33" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a52718d99cc84f5856d818f3d68ab8166" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a6487c3a6a5f34e63296e97b4adf25058" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1adacde59188edef94a0067208e7a82f9d" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a017b08859493ea50a1778d856df33e96" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a45f19df0a05d06da91c973075beb7a11" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a03078724d84e7c9942e366925eee032e" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1af83490beeba8ac6372fefb632ce01573" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a15f024637d0608597deb0a68607321ae" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a0186c3aba78b03443afdd4cf0b43510a" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1ab70a75a01ffda271eaedebbf7259cb33" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a52718d99cc84f5856d818f3d68ab8166" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1a6487c3a6a5f34e63296e97b4adf25058" prot="public" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPApplTerm</name></member>
+      <member refid="classYAPApplTerm_1afc97fd5868ee65aac8b220ec43f2bf0d" prot="private" virt="non-virtual"><scope>YAPApplTerm</scope><name>YAPTerm</name></member>
+      <member refid="classYAPTerm_1a0238fde4b780fb0f67ec7c3a1440edba" prot="public" virt="non-virtual" ambiguityscope="YAPTerm::"><scope>YAPApplTerm</scope><name>YAPTerm</name></member>
+      <member refid="classYAPTerm_1a5b95fd101b73207682463ea473b6d2c0" prot="public" virt="non-virtual" ambiguityscope="YAPTerm::"><scope>YAPApplTerm</scope><name>YAPTerm</name></member>
+      <member refid="classYAPTerm_1a8a604a0dd3551e7eac340ff75c06ac16" prot="public" virt="non-virtual" ambiguityscope="YAPTerm::"><scope>YAPApplTerm</scope><name>YAPTerm</name></member>
+      <member refid="classYAPTerm_1aa7618a4103a2b970e30a608516eefb3d" prot="public" virt="non-virtual" ambiguityscope="YAPTerm::"><scope>YAPApplTerm</scope><name>YAPTerm</name></member>
+      <member refid="classYAPTerm_1a9e2cd85e45ba4503adf7ae394d2d74ee" prot="public" virt="non-virtual" ambiguityscope="YAPTerm::"><scope>YAPApplTerm</scope><name>YAPTerm</name></member>
+      <member refid="classYAPTerm_1ab4b05d43c5d28b981566dc5d82e7f8a6" prot="public" virt="non-virtual" ambiguityscope="YAPTerm::"><scope>YAPApplTerm</scope><name>YAPTerm</name></member>
+      <member refid="classYAPTerm_1af294a9767b1ac6cb6519b871ea641b46" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>~YAPTerm</name></member>
+      <member refid="classYAPTerm_1af294a9767b1ac6cb6519b871ea641b46" prot="public" virt="virtual"><scope>YAPApplTerm</scope><name>~YAPTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

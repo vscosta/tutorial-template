@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="qly_8h" kind="file" language="C++">
+    <compoundname>qly.h</compoundname>
+    <includedby refid="qlyr_8c" local="yes">/home/vsc/github/yap/C/qlyr.c</includedby>
+    <includedby refid="qlyw_8c" local="yes">/home/vsc/github/yap/C/qlyw.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/vsc/github/yap/C/qlyr.c</label>
+        <link refid="qlyr_8c"/>
+      </node>
+      <node id="3">
+        <label>/home/vsc/github/yap/C/qlyw.c</label>
+        <link refid="qlyw_8c_source"/>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/H/qly.h</label>
+        <link refid="qly_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structexport__atom__hash__entry__struct" prot="public">export_atom_hash_entry_struct</innerclass>
+    <innerclass refid="structimport__atom__hash__entry__struct" prot="public">import_atom_hash_entry_struct</innerclass>
+    <innerclass refid="structexport__functor__hash__entry__struct" prot="public">export_functor_hash_entry_struct</innerclass>
+    <innerclass refid="structimport__functor__hash__entry__struct" prot="public">import_functor_hash_entry_struct</innerclass>
+    <innerclass refid="structimport__opcode__hash__entry__struct" prot="public">import_opcode_hash_entry_struct</innerclass>
+    <innerclass refid="structexport__pred__entry__hash__entry__struct" prot="public">export_pred_entry_hash_entry_struct</innerclass>
+    <innerclass refid="structimport__pred__entry__hash__entry__struct" prot="public">import_pred_entry_hash_entry_struct</innerclass>
+    <innerclass refid="structexport__dbref__hash__entry__struct" prot="public">export_dbref_hash_entry_struct</innerclass>
+    <innerclass refid="structimport__dbref__hash__entry__struct" prot="public">import_dbref_hash_entry_struct</innerclass>
+      <sectiondef kind="define">
+      <member refid="group__SaveRestoreSupport_1gab2605ac0bb86796dbf223fc4842134e3" kind="define"><name>EXPORT_ATOM_TABLE_SIZE</name></member>
+      <member refid="group__SaveRestoreSupport_1ga14d72b17bd0ebfe3325fc528993d0f22" kind="define"><name>EXPORT_FUNCTOR_TABLE_SIZE</name></member>
+      <member refid="group__SaveRestoreSupport_1gac1fa46cdd159ff75dda1012da8628fc1" kind="define"><name>EXPORT_OPCODE_TABLE_SIZE</name></member>
+      <member refid="group__SaveRestoreSupport_1ga7a3493b98468ba45c2d0ac8d300d7224" kind="define"><name>EXPORT_PRED_ENTRY_TABLE_SIZE</name></member>
+      <member refid="group__SaveRestoreSupport_1ga83ec3c6d30e8441c1a1cb49ae1fc0ff0" kind="define"><name>EXPORT_DBREF_TABLE_SIZE</name></member>
+      <member refid="group__SaveRestoreSupport_1ga1ebf294a41b85874b126efce3e121899" kind="define"><name>STATIC_PRED_FLAGS</name></member>
+      <member refid="group__SaveRestoreSupport_1gaf1c42a159f00f84e180f3eedfb20682a" kind="define"><name>EXTRA_PRED_FLAGS</name></member>
+      <member refid="group__SaveRestoreSupport_1gacbd320beffe7ed527207d4e0c32b56e1" kind="define"><name>SYSTEM_PRED_FLAGS</name></member>
+      <member refid="group__SaveRestoreSupport_1ga1d9650d61ef68601fc6a22b648aeba7e" kind="define"><name>CHECK</name></member>
+      <member refid="group__SaveRestoreSupport_1gab3a4dd4a7e17eb3343cd686d11df3b49" kind="define"><name>RCHECK</name></member>
+      <member refid="group__SaveRestoreSupport_1ga4dc0d40a3b89a0d1dbd13a2e738ee612" kind="define"><name>AllocTempSpace</name></member>
+      <member refid="group__SaveRestoreSupport_1gafaf95c33256ea713dc2cb9cdf5deac4d" kind="define"><name>EnoughTempSpace</name></member>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <member refid="group__SaveRestoreSupport_1gac1a8a3e69ca5b1897affe51aa1d3ba3b" kind="enum"><name>qlf_tag_t</name></member>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <member refid="group__SaveRestoreSupport_1gaaeead82eb695aeb4feffa7dfab60a46b" kind="typedef"><name>export_atom_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1ga25c7d6c71cf338fff4329e39fda04322" kind="typedef"><name>import_atom_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1ga62c1f47d3ed0fa2b8e3a9dd6c162d79b" kind="typedef"><name>export_functor_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1ga3ebe0a371d4255c62d4680d5dd972f90" kind="typedef"><name>import_functor_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1ga432bcc52e7116250c768682324aacf9a" kind="typedef"><name>import_opcode_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1gaee0a1ee77c72fcf6a8cb2fc496b5aa1b" kind="typedef"><name>export_pred_entry_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1gaf4a81b076f11bf54707ac5bf6495e6b5" kind="typedef"><name>import_pred_entry_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1gafc6297b81f1714b45f19b3a4fe249508" kind="typedef"><name>export_dbref_hash_entry_t</name></member>
+      <member refid="group__SaveRestoreSupport_1gaf007cdb9df16a44521bd7438e626a23d" kind="typedef"><name>import_dbref_hash_entry_t</name></member>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/H/qly.h"/>
+  </compounddef>
+</doxygen>

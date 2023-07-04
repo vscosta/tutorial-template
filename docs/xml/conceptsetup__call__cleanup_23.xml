@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="conceptsetup__call__cleanup_23" kind="concept">
+    <compoundname>setup_call_cleanup/3</compoundname>
+    <initializer>template&lt;&gt;
+concept setup_call_cleanup/3 =     </initializer>
+    <briefdescription>
+<para><bold>setup_call_cleanup</bold>(: <emphasis>Setup</emphasis>,: <emphasis>Goal</emphasis>, : <emphasis>CleanUpGoal</emphasis>) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Calls <computeroutput>(once(Setup), Goal)</computeroutput> For each sucessful execution of <emphasis>Setup</emphasis>, calling <emphasis>Goal</emphasis>, YAP will call the cleanup handler with <computeroutput>ignore(_Cleanup_)</computeroutput> The goal is guaranteed to be called exactly once This will happen after <emphasis>Goal</emphasis> completes, either through failure, deterministic success, commit, or an exception <emphasis>Setup</emphasis> will contain the goals that need to be protected from asynchronous interrupts such as the ones received from call_with_time_limit/2 or thread_signal/2 In most uses, <emphasis>Setup</emphasis> will perform temporary side-effects required by <emphasis>Goal</emphasis> that are finally undone by <emphasis>Cleanup</emphasis> </para>
+    </detaileddescription>
+    <location file="pl/control.yap" line="1" column="1"/>
+  </compounddef>
+</doxygen>

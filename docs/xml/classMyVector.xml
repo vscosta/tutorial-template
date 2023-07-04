@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMyVector" kind="class" language="C++" prot="public">
+    <compoundname>MyVector</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class <ref refid="classT" kindref="compound">T</ref></type>
+      </param>
+      <param>
+        <type>class Alloc</type>
+        <defval>std::vector&lt;<ref refid="classT" kindref="compound">T</ref>&gt;</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyVector_1a7eb7af5917b25bcb6565ab20f7a12d22" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t maxlen</definition>
+        <argsstring></argsstring>
+        <name>maxlen</name>
+        <qualifiedname>MyVector::maxlen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="7" column="14" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyVector_1aa3b003e123295ea4f6781f11a982d7d8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t currlen</definition>
+        <argsstring></argsstring>
+        <name>currlen</name>
+        <qualifiedname>MyVector::currlen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="8" column="12" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyVector_1aa3ff051a47d9e18487e7b819852521c5" prot="private" static="no" mutable="no">
+        <type><ref refid="classT" kindref="compound">T</ref></type>
+        <definition>T data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>MyVector::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="9" column="5" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyVector_1a95526e9fe6b61e73d869962ee0ee242c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyVector</definition>
+        <argsstring>()</argsstring>
+        <name>MyVector</name>
+        <qualifiedname>MyVector::MyVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="9" column="5" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyVector_1ae9b054b6823fc2f4db4ba488f0bc7e15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyVector</definition>
+        <argsstring>(int maxlen)</argsstring>
+        <name>MyVector</name>
+        <qualifiedname>MyVector::MyVector</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="9" column="5" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyVector_1aeaa143fcad7c0eeb2dd89ed80a59e850" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyVector</definition>
+        <argsstring>(const MyVector &amp;o)</argsstring>
+        <name>MyVector</name>
+        <qualifiedname>MyVector::MyVector</qualifiedname>
+        <param>
+          <type>const <ref refid="classMyVector" kindref="compound">MyVector</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="9" column="5" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="14" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyVector_1ae07136c96a9f37505529249f3a9cd2a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyVector</definition>
+        <argsstring>(const MyVector&lt; T &gt; &amp;&amp;o)</argsstring>
+        <name>MyVector</name>
+        <qualifiedname>MyVector::MyVector</qualifiedname>
+        <param>
+          <type>const <ref refid="classMyVector" kindref="compound">MyVector</ref>&lt; <ref refid="classT" kindref="compound">T</ref> &gt; &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="9" column="5" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyVector_1abacbb4bd66cf9f1d6ede9fcaab9cf6ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void push_term</definition>
+        <argsstring>(const Term &amp;i)</argsstring>
+        <name>push_term</name>
+        <qualifiedname>MyVector::push_term</qualifiedname>
+        <param>
+          <type>const Term &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="29" column="10" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="29" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMyVector_1aeaf8427f9d7bef4f360c42be737a076c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const MyVector&lt; T &gt; &amp;o)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>MyVector::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMyVector" kindref="compound">MyVector</ref>&lt; <ref refid="classT" kindref="compound">T</ref> &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/vsc/github/yap/CXX/heap.cxx" line="46" column="12" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="46" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/CXX/heap.cxx" line="6" column="17" bodyfile="/home/vsc/github/yap/CXX/heap.cxx" bodystart="6" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classMyVector_1aa3b003e123295ea4f6781f11a982d7d8" prot="private" virt="non-virtual"><scope>MyVector</scope><name>currlen</name></member>
+      <member refid="classMyVector_1aa3ff051a47d9e18487e7b819852521c5" prot="private" virt="non-virtual"><scope>MyVector</scope><name>data</name></member>
+      <member refid="classMyVector_1a7eb7af5917b25bcb6565ab20f7a12d22" prot="private" virt="non-virtual"><scope>MyVector</scope><name>maxlen</name></member>
+      <member refid="classMyVector_1a95526e9fe6b61e73d869962ee0ee242c" prot="public" virt="non-virtual"><scope>MyVector</scope><name>MyVector</name></member>
+      <member refid="classMyVector_1ae9b054b6823fc2f4db4ba488f0bc7e15" prot="public" virt="non-virtual"><scope>MyVector</scope><name>MyVector</name></member>
+      <member refid="classMyVector_1aeaa143fcad7c0eeb2dd89ed80a59e850" prot="public" virt="non-virtual"><scope>MyVector</scope><name>MyVector</name></member>
+      <member refid="classMyVector_1ae07136c96a9f37505529249f3a9cd2a2" prot="public" virt="non-virtual"><scope>MyVector</scope><name>MyVector</name></member>
+      <member refid="classMyVector_1aeaf8427f9d7bef4f360c42be737a076c" prot="public" virt="non-virtual"><scope>MyVector</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classMyVector_1abacbb4bd66cf9f1d6ede9fcaab9cf6ac" prot="public" virt="non-virtual"><scope>MyVector</scope><name>push_term</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

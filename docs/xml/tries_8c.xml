@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tries_8c" kind="file" language="C++">
+    <compoundname>tries.c</compoundname>
+    <includes refid="YapInterface_8h" local="no">YapInterface.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="core__tries_8h" local="yes">core_tries.h</includes>
+    <includes refid="base__tries_8h" local="yes">base_tries.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>ScannerTypes.h</label>
+        <link refid="ScannerTypes_8h_source"/>
+      </node>
+      <node id="17">
+        <label>threads.h</label>
+        <link refid="threads_8h_source"/>
+      </node>
+      <node id="4">
+        <label>YapDefs.h</label>
+        <link refid="YapDefs_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>YapError.h</label>
+        <link refid="YapError_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>YapErrors.h</label>
+        <link refid="YapErrors_8h"/>
+      </node>
+      <node id="16">
+        <label>YapFormat.h</label>
+        <link refid="YapFormat_8h_source"/>
+      </node>
+      <node id="18">
+        <label>YapInit.h</label>
+        <link refid="YapInit_8h"/>
+      </node>
+      <node id="2">
+        <label>YapInterface.h</label>
+        <link refid="YapInterface_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>YapTerm.h</label>
+        <link refid="YapTerm_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>base_dbtries.h</label>
+        <link refid="base__dbtries_8h_source"/>
+      </node>
+      <node id="22">
+        <label>base_tries.h</label>
+        <link refid="base__tries_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>core_dbtries.h</label>
+        <link refid="core__dbtries_8h_source"/>
+      </node>
+      <node id="20">
+        <label>core_tries.h</label>
+        <link refid="core__tries_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/vsc/github/yap/library/tries/tries.c</label>
+        <link refid="tries_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../os/encoding.h</label>
+        <link refid="encoding_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>YapConfig.h</label>
+      </node>
+      <node id="11">
+        <label>YapIOConfig.h</label>
+      </node>
+      <node id="8">
+        <label>YapTermConfig.h</label>
+      </node>
+      <node id="9">
+        <label>config.h</label>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structdb__trie__opt__level" prot="public">db_trie_opt_level</innerclass>
+      <sectiondef kind="define">
+      <member refid="group__tries_1gae6e8f8f1c2bdee8ca695c7c7e7f96123" kind="define"><name>arg_mode</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gae7c2a2d89496d14c960d163e50a0bc71" kind="define"><name>arg_entry</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gae6e8f8f1c2bdee8ca695c7c7e7f96123" kind="define"><name>arg_mode</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gae7c2a2d89496d14c960d163e50a0bc71" kind="define"><name>arg_entry</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gae6e8f8f1c2bdee8ca695c7c7e7f96123" kind="define"><name>arg_mode</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gae7c2a2d89496d14c960d163e50a0bc71" kind="define"><name>arg_entry</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gae7c2a2d89496d14c960d163e50a0bc71" kind="define"><name>arg_entry</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gae7c2a2d89496d14c960d163e50a0bc71" kind="define"><name>arg_entry</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gaf6b6938e0c10a7596afdb1643c248943" kind="define"><name>arg_init_ref</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gaf6b6938e0c10a7596afdb1643c248943" kind="define"><name>arg_init_ref</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gaf8b13ea741e9f883192db9f7bd7eb175" kind="define"><name>arg_trie_dest</name></member>
+      <member refid="group__tries_1gaeff9b8e6e06d998199ffae35903de242" kind="define"><name>arg_trie_source</name></member>
+      <member refid="group__tries_1gaf8b13ea741e9f883192db9f7bd7eb175" kind="define"><name>arg_trie_dest</name></member>
+      <member refid="group__tries_1gaeff9b8e6e06d998199ffae35903de242" kind="define"><name>arg_trie_source</name></member>
+      <member refid="group__tries_1gad193884ef294c4f43907c3f330c3cadf" kind="define"><name>arg_trie1</name></member>
+      <member refid="group__tries_1ga5b8021d661ac9aab815e9ca30bc01522" kind="define"><name>arg_trie2</name></member>
+      <member refid="group__tries_1gacb3bf077eab4cfb7d17aa1c994636c25" kind="define"><name>arg_entries</name></member>
+      <member refid="group__tries_1gad193884ef294c4f43907c3f330c3cadf" kind="define"><name>arg_trie1</name></member>
+      <member refid="group__tries_1ga5b8021d661ac9aab815e9ca30bc01522" kind="define"><name>arg_trie2</name></member>
+      <member refid="group__tries_1gacb3bf077eab4cfb7d17aa1c994636c25" kind="define"><name>arg_entries</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1ga2a04b34d757db3bce5b8840933e44d7c" kind="define"><name>arg_file</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1ga2a04b34d757db3bce5b8840933e44d7c" kind="define"><name>arg_file</name></member>
+      <member refid="group__tries_1ga5ae641f9f3439b233b6500bd0bac353c" kind="define"><name>arg_memory</name></member>
+      <member refid="group__tries_1gabe50485e481fd4c59ca477d77f915ab6" kind="define"><name>arg_tries</name></member>
+      <member refid="group__tries_1gacb3bf077eab4cfb7d17aa1c994636c25" kind="define"><name>arg_entries</name></member>
+      <member refid="group__tries_1gae65d191c55123365bb2949ea88566076" kind="define"><name>arg_nodes</name></member>
+      <member refid="group__tries_1ga5ae641f9f3439b233b6500bd0bac353c" kind="define"><name>arg_memory</name></member>
+      <member refid="group__tries_1gabe50485e481fd4c59ca477d77f915ab6" kind="define"><name>arg_tries</name></member>
+      <member refid="group__tries_1gacb3bf077eab4cfb7d17aa1c994636c25" kind="define"><name>arg_entries</name></member>
+      <member refid="group__tries_1gae65d191c55123365bb2949ea88566076" kind="define"><name>arg_nodes</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gacb3bf077eab4cfb7d17aa1c994636c25" kind="define"><name>arg_entries</name></member>
+      <member refid="group__tries_1gae65d191c55123365bb2949ea88566076" kind="define"><name>arg_nodes</name></member>
+      <member refid="group__tries_1gaa037ec96a833b84650825c3ec1923384" kind="define"><name>arg_virtualnodes</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gae6e8f8f1c2bdee8ca695c7c7e7f96123" kind="define"><name>arg_mode</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gac1c97b73bea1c40bf76abc30f9365382" kind="define"><name>arg_ref</name></member>
+      <member refid="group__tries_1gad6bba1f50a1a13762adec2b7fc46d389" kind="define"><name>arg_cur</name></member>
+      <member refid="group__tries_1gabfb0bfeee9d1b31223a64b9a4d7e0594" kind="define"><name>arg_next</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gabb821de0a9df92f33d827f2008093ddc" kind="define"><name>arg_list</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1ga1ee55621791bda30ae92b31f40ca40dc" kind="define"><name>arg_db_trie</name></member>
+      <member refid="group__tries_1ga8effdfab2e161cb9ac92c3c224fa467f" kind="define"><name>arg_final_label</name></member>
+      <member refid="group__tries_1ga433f0975b56119e372ba93faeaa8adc4" kind="define"><name>arg_opt_level</name></member>
+      <member refid="group__tries_1gac3956bdf730ab598c14998a24d5bdfa3" kind="define"><name>arg_start_counter</name></member>
+      <member refid="group__tries_1ga66867c9d97431f9f174920c0ccf77a52" kind="define"><name>arg_end_counter</name></member>
+      <member refid="group__tries_1gae7c2a2d89496d14c960d163e50a0bc71" kind="define"><name>arg_entry</name></member>
+      <member refid="group__tries_1ga433f0975b56119e372ba93faeaa8adc4" kind="define"><name>arg_opt_level</name></member>
+      <member refid="group__tries_1ga61b6b146737a875775814bca4a136022" kind="define"><name>arg_count</name></member>
+      <member refid="group__tries_1ga433f0975b56119e372ba93faeaa8adc4" kind="define"><name>arg_opt_level</name></member>
+      <member refid="group__tries_1ga61b6b146737a875775814bca4a136022" kind="define"><name>arg_count</name></member>
+      <member refid="group__tries_1ga63148b22aa9b7939d7089d1cf412dc1f" kind="define"><name>arg_trie</name></member>
+      <member refid="group__tries_1gadc59042cfed162e02100ec29308dc3b9" kind="define"><name>arg_nested_id</name></member>
+      <member refid="group__tries_1ga5be6d824dc9df9fcb6618feb7ffd22b9" kind="define"><name>arg_term</name></member>
+      <member refid="group__tries_1gab5c0262dd155d3772bd91ccab97287d2" kind="define"><name>arg_min_prefix</name></member>
+      </sectiondef>
+      <sectiondef kind="var">
+      <member refid="group__tries_1gad6769f46347e4ce311e6894171049e35" kind="variable"><name>opt_level</name></member>
+      </sectiondef>
+      <sectiondef kind="func">
+      <member refid="group__tries_1ga4aaacd5b4f1bd89092555e354a3eb1b3" kind="function"><name>init_tries</name></member>
+      <member refid="group__tries_1ga18f2a0ddef23a9cf943d7f71f2b4f164" kind="function"><name>p_trie_open</name></member>
+      <member refid="group__tries_1gabc1200f6be62102000c91566945ccf5d" kind="function"><name>p_trie_close</name></member>
+      <member refid="group__tries_1ga34bd1cc37ab121e956e0d39201823c51" kind="function"><name>p_trie_close_all</name></member>
+      <member refid="group__tries_1ga262cc3359e9ab3cf2a2a35aac9452b40" kind="function"><name>p_trie_mode</name></member>
+      <member refid="group__tries_1ga7b17cbd1eec4fba0ac55070d3515a458" kind="function"><name>p_trie_put_entry</name></member>
+      <member refid="group__tries_1ga57ded5607894c72bb0a602e6296561c4" kind="function"><name>p_trie_check_entry</name></member>
+      <member refid="group__tries_1ga0a870f85e372fc7b083531ae9d0ad1c6" kind="function"><name>p_trie_get_entry</name></member>
+      <member refid="group__tries_1gafa6b708c715aba3bbcde07bf7eb56a82" kind="function"><name>p_trie_get_first_entry</name></member>
+      <member refid="group__tries_1gac8d9ae4b512d2fe39f6372a97d419f40" kind="function"><name>p_trie_get_last_entry</name></member>
+      <member refid="group__tries_1gaad7112a2852915e767d54aed9a8e34f3" kind="function"><name>p_trie_traverse_init</name></member>
+      <member refid="group__tries_1gadef62a12008f78cb48aeb7cdbe5bb22e" kind="function"><name>p_trie_traverse_cont</name></member>
+      <member refid="group__tries_1ga29d80ffd8e0049b02fa4ec1cd269a5ab" kind="function"><name>p_trie_remove_entry</name></member>
+      <member refid="group__tries_1gae595ae063663495617ec3df66cc7295f" kind="function"><name>p_trie_remove_subtree</name></member>
+      <member refid="group__tries_1ga52bc5041a6321c5c1c5b0b47b26aac5b" kind="function"><name>p_trie_join</name></member>
+      <member refid="group__tries_1gadb4811693bc764340cc2aafcf33fb598" kind="function"><name>p_trie_intersect</name></member>
+      <member refid="group__tries_1gace1c2a39948623c9a5b66b42f6e5b66c" kind="function"><name>p_trie_count_join</name></member>
+      <member refid="group__tries_1ga4d53bff846ce1a4497172b313cfd9231" kind="function"><name>p_trie_count_intersect</name></member>
+      <member refid="group__tries_1gafaddb603a8050ca2cd4083b5b703b7f1" kind="function"><name>p_trie_save</name></member>
+      <member refid="group__tries_1gaf99df72804e94182745bca62376648b5" kind="function"><name>p_trie_load</name></member>
+      <member refid="group__tries_1ga15e49e2fe48fcb4fd209ff524a3623fd" kind="function"><name>p_trie_stats</name></member>
+      <member refid="group__tries_1gaab8dd23e5f6a148111a2e4b32b28816d" kind="function"><name>p_trie_max_stats</name></member>
+      <member refid="group__tries_1gafd3c64da7a21dc7695828c1a48b98246" kind="function"><name>p_trie_usage</name></member>
+      <member refid="group__tries_1ga7847ebeb2f2617f5e58bac2faecb6d45" kind="function"><name>p_trie_print</name></member>
+      <member refid="group__tries_1ga87ea79659292baf6f3e19425a812fbcd" kind="function"><name>p_trie_traverse_mode</name></member>
+      <member refid="group__tries_1ga0806f5c1d849e77e524bab13aea6b002" kind="function"><name>p_trie_disable_hash</name></member>
+      <member refid="group__tries_1ga86084c3b08d55d4a2175e0242a4c66a3" kind="function"><name>p_trie_enable_hash</name></member>
+      <member refid="group__tries_1ga803eeaad88dee1f1b40d8dac196a44d1" kind="function"><name>p_trie_traverse_first</name></member>
+      <member refid="group__tries_1gaed04dad64d67c6a3f27c56db482a9e1a" kind="function"><name>p_trie_traverse_next</name></member>
+      <member refid="group__tries_1ga074f759ed167851c72254a3a2c59bae4" kind="function"><name>p_trie_to_list</name></member>
+      <member refid="group__tries_1gac425664e0804046982727fe221d672df" kind="function"><name>p_trie_depth_breadth</name></member>
+      <member refid="group__tries_1gafb2193418b499d9e28361980c8d2a0d8" kind="function"><name>p_trie_get_depth_breadth_reduction_current_data</name></member>
+      <member refid="group__tries_1gaf396020117c2e1078fc597564656a531" kind="function"><name>p_trie_get_db_opt_level_count_init</name></member>
+      <member refid="group__tries_1ga36d2ddaaf2fd1cf8763dc3c5554eeb47" kind="function"><name>p_trie_get_db_opt_level_count_cont</name></member>
+      <member refid="group__tries_1ga143913651166592728856c6a657e1ed6" kind="function"><name>p_trie_replace_nested_trie</name></member>
+      <member refid="group__tries_1ga85eea1ec61733a15c480ceb491258196" kind="function"><name>p_trie_db_opt_min_prefix</name></member>
+      <member refid="group__tries_1ga471f796f6f9f9d35b4fcf15823dd3ecf" kind="function"><name>p_open_trie</name></member>
+      <member refid="group__tries_1gacb1949b445131b00d2b4016895c30206" kind="function"><name>p_close_trie</name></member>
+      <member refid="group__tries_1ga1784529ccb7cda630e16c02b78792cf2" kind="function"><name>p_close_all_tries</name></member>
+      <member refid="group__tries_1ga59eed19edf28d7c45ef57cdec77e9af2" kind="function"><name>p_put_trie_entry</name></member>
+      <member refid="group__tries_1ga4da7dfea8c1e31e1c14c08901df9d907" kind="function"><name>p_get_trie_entry</name></member>
+      <member refid="group__tries_1ga8617ec07fedbb198bc731e3a9b1260c1" kind="function"><name>p_remove_trie_entry</name></member>
+      <member refid="group__tries_1ga1ffdf4dbad963f8906ad6d34dc9e676a" kind="function"><name>p_print_trie</name></member>
+      </sectiondef>
+    <briefdescription>
+<para>yap-C wrapper for tries </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/vsc/github/yap/library/tries/tries.c"/>
+  </compounddef>
+</doxygen>
