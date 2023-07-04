@@ -4,11 +4,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
-  requires:
-    breathe
-    myst-parser
   jobs:
     pre_create_environment:
       - python -m breathe.apidoc -o docs/source/dox -p YAP -g class,group xml
-
+python:
+   install:
+   - requirements: docs/requirements.txt
       
