@@ -6,7 +6,7 @@ from sphinx.builders.html import StandaloneHTMLBuilder
 import subprocess, os
 
 # Doxygen
-subprocess.call('doxygen-yap ../../Doxyfile.dox', shell=True)
+# subprocess.call('doxygen-yap ../../Doxyfile.dox', shell=True)
 
 
 # -- Project information -----------------------------------------------------
