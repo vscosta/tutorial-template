@@ -6,7 +6,7 @@ build:
     python: "3.11"
   jobs:
     pre_create_environment:
-      - python -m breathe.apidoc -o docs/source/dox -p YAP -g class,group xml
+      - pip import breathe breathe && python -m breathe.apidoc -o docs/source/dox -p YAP -g class,group xml
 python:
    install:
    - requirements: docs/requirements.txt
