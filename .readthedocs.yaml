@@ -6,6 +6,7 @@ build:
     python: "3.11"
   jobs:
     pre_create_environment:
+      - apt install cmake bison flex make
       - git clone --depth=1 https://github.com/vscosta/doxygen-yap
       - mkdir -p  doxygen-yap/Debug
       - cmake -S doxyen-yap -G doxygen-yap/Debug
