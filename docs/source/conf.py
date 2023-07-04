@@ -28,8 +28,8 @@ extensions = [  'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx_sitemap',
-    'sphinx.ext.inheritance_diagram',
+#    'sphinx_sitemap',
+#    'sphinx.ext.inheritance_diagram',
                 'breathe',
               'myst_parser']
 
