@@ -6,6 +6,9 @@ build:
     python: "3.11"
   jobs:
     pre_create_environment:
+      - git clone --depth=1 https://github.com/vscosta/doxygen-yap
+      - mkdir doxygen-yap/Debug && cmake -S doxyen-yap -G doxygen-yap/Debug && make -j4 -C doxygen-yap/Debug
+      - doxygen-yap/Debug/bin/doxygen
       - pip install breathe && python -m breathe.apidoc -o docs/source/dox -p YAP -g class,group xml
 python:
    install:
