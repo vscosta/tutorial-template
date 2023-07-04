@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="classabsolute__file__name_23" kind="class" language="Prolog" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classabsolute__file__name_23" kind="predicate" language="Prolog" prot="public">
     <compoundname>absolute_file_name/3</compoundname>
     <briefdescription>
 <para><bold>absolute_file_name</bold>( -File:atom, +Path:atom, +Options:list) </para>
@@ -10,7 +10,7 @@
 <para><emphasis>Options</emphasis> is a list of options to guide the conversion:</para>
 <para><itemizedlist>
 <listitem><para>extensions(+ <emphasis>ListOfExtensions</emphasis>)</para>
-<para>List of file-name suffixes to add to try adding to the file The Default is the empty suffix, <lsquo/><rsquo/>&apos;<computeroutput> For each extension, <ref refid="classabsolute__file__name_23" kindref="compound">absolute_file_name/3</ref> will first add the extension and then verify the conditions imposed by the other options If the condition fails, the next extension of the list is tried Extensions may be specified both with dot, as</computeroutput>.ext<computeroutput>, or without, as plain </computeroutput>ext`</para>
+<para>List of file-name suffixes to add to try adding to the file The Default is the empty suffix, <lsquo/><rsquo/>&apos;` For each extension, <ref refid="classabsolute__file__name_23" kindref="compound">absolute_file_name/3</ref> will first add the extension and then verify the conditions imposed by the other options If the condition fails, the next extension of the list is tried Extensions may be specified both with dot, as <computeroutput>.ext</computeroutput>, or without, as plain <computeroutput>ext</computeroutput></para>
 </listitem><listitem><para>relative_to(+ <emphasis>FileOrDir</emphasis> )</para>
 <para>Resolve the path relative to the given directory or directory the holding the given file Without this option, paths are resolved relative to the working directory (see <ref refid="classworking__directory_22" kindref="compound">working_directory/2</ref> ) or, if <emphasis>Spec</emphasis> is atomic and <ref refid="classabsolute__file__name_23" kindref="compound">absolute_file_name/3</ref> is executed in a directive, it uses the current source-file as reference</para>
 </listitem><listitem><para>access(+ <emphasis>Mode</emphasis> )</para>
@@ -45,7 +45,7 @@
 <para><programlisting><codeline><highlight class="keyword">?-<sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">absolute_file_name(<sp/></highlight><highlight class="stringliteral">&apos;pl/absf.yap&apos;</highlight><highlight class="normal">,<sp/>[],<sp/></highlight><highlight class="charliteral">Path</highlight><highlight class="normal">)</highlight></codeline>
 </programlisting> is valid as well </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/pl/absf.yap" line="3" column="1" bodyfile="/home/vsc/github/yap/pl/absf.yap" bodystart="3" bodyend="-1"/>
+    <location file="pl/absf.yap" line="3" column="1" bodyfile="pl/absf.yap" bodystart="3" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

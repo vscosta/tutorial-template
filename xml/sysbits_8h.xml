@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="sysbits_8h" kind="file" language="C++">
     <compoundname>sysbits.h</compoundname>
     <includes local="yes">YapConfig.h</includes>
@@ -14,17 +14,18 @@
     <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
     <includes local="no">math.h</includes>
     <includes local="no">ctype.h</includes>
-    <includedby refid="absf_8c" local="yes">/home/vsc/github/yap/os/absf.c</includedby>
-    <includedby refid="alias_8c" local="yes">/home/vsc/github/yap/os/alias.c</includedby>
-    <includedby refid="assets_8c" local="yes">/home/vsc/github/yap/os/assets.c</includedby>
-    <includedby refid="console_8c" local="yes">/home/vsc/github/yap/os/console.c</includedby>
-    <includedby refid="files_8c" local="yes">/home/vsc/github/yap/os/files.c</includedby>
-    <includedby refid="fmem_8c" local="yes">/home/vsc/github/yap/os/fmem.c</includedby>
-    <includedby refid="iopreds_8c" local="yes">/home/vsc/github/yap/os/iopreds.c</includedby>
-    <includedby refid="sig_8c" local="yes">/home/vsc/github/yap/os/sig.c</includedby>
-    <includedby refid="sysbits_8c" local="yes">/home/vsc/github/yap/os/sysbits.c</includedby>
-    <includedby refid="time_8c" local="yes">/home/vsc/github/yap/os/time.c</includedby>
-    <includedby refid="ypsocks_8c" local="yes">/home/vsc/github/yap/os/ypsocks.c</includedby>
+    <includes local="no">readline/readline.h</includes>
+    <includedby refid="absf_8c" local="yes">os/absf.c</includedby>
+    <includedby refid="alias_8c" local="yes">os/alias.c</includedby>
+    <includedby refid="assets_8c" local="yes">os/assets.c</includedby>
+    <includedby refid="console_8c" local="yes">os/console.c</includedby>
+    <includedby refid="files_8c" local="yes">os/files.c</includedby>
+    <includedby refid="fmem_8c" local="yes">os/fmem.c</includedby>
+    <includedby refid="iopreds_8c" local="yes">os/iopreds.c</includedby>
+    <includedby refid="sig_8c" local="yes">os/sig.c</includedby>
+    <includedby refid="sysbits_8c" local="yes">os/sysbits.c</includedby>
+    <includedby refid="time_8c" local="yes">os/time.c</includedby>
+    <includedby refid="ypsocks_8c" local="yes">os/ypsocks.c</includedby>
     <incdepgraph>
       <node id="21">
         <label>Atoms.h</label>
@@ -407,7 +408,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/sysbits.h</label>
+        <label>os/sysbits.h</label>
         <link refid="sysbits_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -432,6 +433,8 @@
         <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="54">
@@ -473,6 +476,9 @@
       <node id="59">
         <label>math.h</label>
       </node>
+      <node id="61">
+        <label>readline/readline.h</label>
+      </node>
       <node id="28">
         <label>stddef.h</label>
       </node>
@@ -494,43 +500,43 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>/home/vsc/github/yap/os/absf.c</label>
+        <label>os/absf.c</label>
         <link refid="absf_8c"/>
       </node>
       <node id="3">
-        <label>/home/vsc/github/yap/os/alias.c</label>
+        <label>os/alias.c</label>
         <link refid="alias_8c"/>
       </node>
       <node id="4">
-        <label>/home/vsc/github/yap/os/assets.c</label>
+        <label>os/assets.c</label>
         <link refid="assets_8c"/>
       </node>
       <node id="5">
-        <label>/home/vsc/github/yap/os/console.c</label>
+        <label>os/console.c</label>
         <link refid="console_8c"/>
       </node>
       <node id="6">
-        <label>/home/vsc/github/yap/os/files.c</label>
+        <label>os/files.c</label>
         <link refid="files_8c_source"/>
       </node>
       <node id="7">
-        <label>/home/vsc/github/yap/os/fmem.c</label>
+        <label>os/fmem.c</label>
         <link refid="fmem_8c_source"/>
       </node>
       <node id="8">
-        <label>/home/vsc/github/yap/os/iopreds.c</label>
+        <label>os/iopreds.c</label>
         <link refid="iopreds_8c"/>
       </node>
       <node id="9">
-        <label>/home/vsc/github/yap/os/sig.c</label>
+        <label>os/sig.c</label>
         <link refid="sig_8c_source"/>
       </node>
       <node id="10">
-        <label>/home/vsc/github/yap/os/sysbits.c</label>
+        <label>os/sysbits.c</label>
         <link refid="sysbits_8c_source"/>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/sysbits.h</label>
+        <label>os/sysbits.h</label>
         <link refid="sysbits_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -556,11 +562,11 @@
         </childnode>
       </node>
       <node id="11">
-        <label>/home/vsc/github/yap/os/time.c</label>
+        <label>os/time.c</label>
         <link refid="time_8c_source"/>
       </node>
       <node id="12">
-        <label>/home/vsc/github/yap/os/ypsocks.c</label>
+        <label>os/ypsocks.c</label>
         <link refid="ypsocks_8c_source"/>
       </node>
     </invincdepgraph>
@@ -574,7 +580,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="46" column="9" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="46" bodyend="-1"/>
+        <location file="os/sysbits.h" line="46" column="9" bodyfile="os/sysbits.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="sysbits_8h_1aa8e0b81a04ffb1a43fe7d38fc0505bc3" prot="public" static="no">
         <name>strncat</name>
@@ -588,7 +594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="99" column="9" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="99" bodyend="-1"/>
+        <location file="os/sysbits.h" line="99" column="9" bodyfile="os/sysbits.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="sysbits_8h_1a2c5b8ad33d611ac4e9e9c4e0bd0b069a" prot="public" static="no">
         <name>strncpy</name>
@@ -602,7 +608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="102" column="9" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="102" bodyend="-1"/>
+        <location file="os/sysbits.h" line="102" column="9" bodyfile="os/sysbits.h" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="sysbits_8h_1a875c2d50ef348f37e02e62cfba84935b" prot="public" static="no">
         <name>SYSTEM_STAT</name>
@@ -613,7 +619,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="175" column="10" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="175" bodyend="-1"/>
+        <location file="os/sysbits.h" line="175" column="10" bodyfile="os/sysbits.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="sysbits_8h_1a095424cefb864227784ada9073a9a454" prot="public" static="no">
         <name>SYSTEM_FSTAT</name>
@@ -624,7 +630,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="176" column="9" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="176" bodyend="-1"/>
+        <location file="os/sysbits.h" line="176" column="9" bodyfile="os/sysbits.h" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="sysbits_8h_1aff05919d3e4fbc33999cabe203ab274a" prot="public" static="no">
         <name>isValidEnvChar</name>
@@ -636,7 +642,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="206" column="9" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="206" bodyend="-1"/>
+        <location file="os/sysbits.h" line="206" column="9" bodyfile="os/sysbits.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -663,7 +669,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="179" column="13" bodyfile="/home/vsc/github/yap/os/iopreds.c" bodystart="216" bodyend="310" declfile="/home/vsc/github/yap/os/sysbits.h" declline="179" declcolumn="13"/>
+        <location file="os/sysbits.h" line="179" column="13" bodyfile="os/iopreds.c" bodystart="216" bodyend="310" declfile="os/sysbits.h" declline="179" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="sysbits_8h_1affd8f097b0c6bbd9c904c0ac8f77070e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -674,14 +680,14 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>Initialize the defaulr tandom number generator. </para>
+<para>Initialize the default random number generator. </para>
         </briefdescription>
         <detaileddescription>
-<para>uses the process&apos;s tome call </para>
+<para>uses the process&apos;s srand call </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="181" column="13" bodyfile="/home/vsc/github/yap/os/random.c" bodystart="152" bodyend="162" declfile="/home/vsc/github/yap/os/sysbits.h" declline="181" declcolumn="13"/>
+        <location file="os/sysbits.h" line="181" column="13" bodyfile="os/random.c" bodystart="258" bodyend="268" declfile="os/sysbits.h" declline="181" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="sysbits_8h_1aaf080f0610a7761e3104c5c30d0fd5c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -698,7 +704,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="182" column="13" declfile="/home/vsc/github/yap/os/sysbits.h" declline="182" declcolumn="13"/>
+        <location file="os/sysbits.h" line="182" column="13" declfile="os/sysbits.h" declline="182" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="sysbits_8h_1a5fc3db8d641ef79512497ee8b4544737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -718,7 +724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="183" column="13" bodyfile="/home/vsc/github/yap/os/sig.c" bodystart="838" bodyend="879" declfile="/home/vsc/github/yap/os/sysbits.h" declline="183" declcolumn="13"/>
+        <location file="os/sysbits.h" line="183" column="13" bodyfile="os/sig.c" bodystart="838" bodyend="879" declfile="os/sysbits.h" declline="183" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="sysbits_8h_1a2f1b8107db05a7f3481cc44c359f9f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -734,7 +740,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="184" column="13" declfile="/home/vsc/github/yap/os/sysbits.h" declline="184" declcolumn="13"/>
+        <location file="os/sysbits.h" line="184" column="13" declfile="os/sysbits.h" declline="184" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="sysbits_8h_1a39440edfb32fc389fde809f832af4b9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char *</type>
@@ -755,7 +761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="186" column="20" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="186" bodyend="186"/>
+        <location file="os/sysbits.h" line="186" column="20" bodyfile="os/sysbits.h" bodystart="186" bodyend="186"/>
       </memberdef>
       <memberdef kind="function" id="sysbits_8h_1a278dd8d0522efc9e363cef848c3f56a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char *</type>
@@ -776,7 +782,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="188" column="20" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="188" bodyend="188"/>
+        <location file="os/sysbits.h" line="188" column="20" bodyfile="os/sysbits.h" bodystart="188" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="sysbits_8h_1a05af43c6947cb58d8b618b79b5605c82" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -805,13 +811,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/sysbits.h" line="192" column="20" bodyfile="/home/vsc/github/yap/os/sysbits.h" bodystart="192" bodyend="203"/>
+        <location file="os/sysbits.h" line="192" column="20" bodyfile="os/sysbits.h" bodystart="192" bodyend="203"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/os/sysbits.h"/>
+    <location file="os/sysbits.h"/>
   </compounddef>
 </doxygen>

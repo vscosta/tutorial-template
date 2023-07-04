@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="matrix_8c" kind="file" language="C++">
     <compoundname>matrix.c</compoundname>
     <includes local="yes">YapConfig.h</includes>
@@ -81,7 +81,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/library/matrix/matrix.c</label>
+        <label>library/matrix/matrix.c</label>
         <link refid="matrix_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -132,12 +132,110 @@
     </incdepgraph>
     <innerclass refid="structm" prot="public">m</innerclass>
       <sectiondef kind="define">
-      <member refid="group__YapMatrix_1ga2d1929791f457e8f5010751e3b767558" kind="define"><name>MAX_DIMS</name></member>
+      <memberdef kind="define" id="group__YapMatrix_1ga2d1929791f457e8f5010751e3b767558" prot="public" static="no">
+        <name>MAX_DIMS</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="70" column="9" bodyfile="library/matrix/matrix.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8d" prot="public" static="no" strong="no">
         <type></type>
         <name>big_blob_type</name>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da565ab4266c7f5fa4c88ccbbc1fbd80ec" prot="public">
+          <name>BIG_INT</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8daeba9073f9506db5c517432ec930ddce1" prot="public">
+          <name>BIG_RATIONAL</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dac64fc4a31ab85727d6bda2c47d636b5a" prot="public">
+          <name>BIG_FLOAT</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da9f0f474acddadbb38c24f36f91991e0b" prot="public">
+          <name>EMPTY_ARENA</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da997458c46f7eca3561ed2b1e59f92603" prot="public">
+          <name>MATRIX_INT</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da56d2db828ff52cc933bd1a0db837a95d" prot="public">
+          <name>MATRIX_FLOAT</name>
+          <initializer>= 0x22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da046243c7ff596f8abe0da922c0fa0e18" prot="public">
+          <name>CLAUSE_LIST</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dab0b8812643f2d1bbb7ddce3199dad12a" prot="public">
+          <name>EXTERNAL_BLOB</name>
+          <initializer>= 0x0A0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dad3681d622584c38eaf47161a479d02f5" prot="public">
+          <name>GOAL_CUT_POINT</name>
+          <initializer>= 0x0A1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8dafb76355ba347062b3ca77e050548e40f" prot="public">
+          <name>USER_BLOB_START</name>
+          <initializer>= 0x0100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8daf9d7c13b7562282ea87dfc2432673a16" prot="public">
+          <name>USER_BLOB_END</name>
+          <initializer>= 0x0200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="matrix_8c_1a2a577dd4ca80b6224fce95d6dff54c8da565ab4266c7f5fa4c88ccbbc1fbd80ec" prot="public">
           <name>BIG_INT</name>
           <initializer>= 0x01</initializer>
@@ -232,11 +330,74 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="31" column="1" bodyfile="/home/vsc/github/yap/library/matrix/matrix.c" bodystart="31" bodyend="43"/>
+        <location file="library/matrix/matrix.c" line="31" column="1" bodyfile="library/matrix/matrix.c" bodystart="31" bodyend="43"/>
       </memberdef>
       <memberdef kind="enum" id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbe" prot="public" static="no" strong="no">
         <type></type>
         <name>static_array_type</name>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeabdd3542b7c71d2f3bd0eceec306162bc" prot="public">
+          <name>array_of_ints</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea970f472605ef6a1ed1078b5f7c20add6" prot="public">
+          <name>array_of_chars</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea444091f71bab4dc7463b820c883adbb3" prot="public">
+          <name>array_of_uchars</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeaedf567c345c677324f1b32e9308650eb" prot="public">
+          <name>array_of_doubles</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea92c04932b968b75144a6a735869e594c" prot="public">
+          <name>array_of_ptrs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeafedc10fc2029ef96754c5fe25b2e2122" prot="public">
+          <name>array_of_atoms</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea6987cefaa247a56e10b96d14f8d870dc" prot="public">
+          <name>array_of_dbrefs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbea1c8f7a516c34d0e6a01057ba409fe3a6" prot="public">
+          <name>array_of_nb_terms</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeae26e7f4b2c0f761f36fe0170be86b78e" prot="public">
+          <name>array_of_terms</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="matrix_8c_1ad6adf7079bdec045c458f4a01332efbeabdd3542b7c71d2f3bd0eceec306162bc" prot="public">
           <name>array_of_ints</name>
           <briefdescription>
@@ -306,9 +467,174 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="47" column="1" bodyfile="/home/vsc/github/yap/library/matrix/matrix.c" bodystart="48" bodyend="58"/>
+        <location file="library/matrix/matrix.c" line="47" column="1" bodyfile="library/matrix/matrix.c" bodystart="48" bodyend="58"/>
       </memberdef>
-      <member refid="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50" kind="enum"><name>op_type</name></member>
+      <memberdef kind="enum" id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50" prot="public" static="no" strong="no">
+        <type></type>
+        <name>op_type</name>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50ae36d2960fe5298d9387ca0958a4d86d0" prot="public">
+          <name>INFIX_OP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a1fd8fcfdb183be7eb606e82f73b23c3f" prot="public">
+          <name>POSFIX_OP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50ac31aa032ce4a69cc11f37224e303d6c0" prot="public">
+          <name>PREFIX_OP</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a81e27f031c4b0c6181437c348f0323fc" prot="public">
+          <name>MAT_PLUS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50ac1ebf84caaf023ae067333067e0faab0" prot="public">
+          <name>MAT_SUB</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a69098a4978acd4518cec4205278c2117" prot="public">
+          <name>MAT_TIMES</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a0054aa0f4d87bbf2e478b71f08149800" prot="public">
+          <name>MAT_DIV</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a88d842bca69953e3858c69c7acab086c" prot="public">
+          <name>MAT_IDIV</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50abc10165c54b1a32d20a74ccc0f4f5e8b" prot="public">
+          <name>MAT_ZDIV</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50ae4828d61a1ed4072914d86d959cd71e0" prot="public">
+          <name>MAT_LOG</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a54551b4fa3bb2dca96791421f110f46e" prot="public">
+          <name>MAT_EXP</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a81e27f031c4b0c6181437c348f0323fc" prot="public">
+          <name>MAT_PLUS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50ac1ebf84caaf023ae067333067e0faab0" prot="public">
+          <name>MAT_SUB</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a69098a4978acd4518cec4205278c2117" prot="public">
+          <name>MAT_TIMES</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a0054aa0f4d87bbf2e478b71f08149800" prot="public">
+          <name>MAT_DIV</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a88d842bca69953e3858c69c7acab086c" prot="public">
+          <name>MAT_IDIV</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50abc10165c54b1a32d20a74ccc0f4f5e8b" prot="public">
+          <name>MAT_ZDIV</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50ae4828d61a1ed4072914d86d959cd71e0" prot="public">
+          <name>MAT_LOG</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__YapMatrix_1ga290e469f41d7741ed85804133516ab50a54551b4fa3bb2dca96791421f110f46e" prot="public">
+          <name>MAT_EXP</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A matrix is something of the form. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE = {int,double} BASE = integer #DIMS = an int DIM1 ... DIMn DATA in C format</para>
+<para>floating point matrixes may need to be aligned, so we always have an extra element at the end </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="87" column="1" bodyfile="library/matrix/matrix.c" bodystart="87" bodyend="96"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="matrix_8c_1ade3e64e074f118f567c5d2f51e34fd8f" prot="public" static="no">
@@ -322,17 +648,102 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="58" column="20"/>
+        <location file="library/matrix/matrix.c" line="58" column="20"/>
       </memberdef>
-      <member refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kind="typedef"><name>M</name></member>
+      <memberdef kind="typedef" id="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" prot="public" static="no">
+        <type>struct <ref refid="structm" kindref="compound">m</ref></type>
+        <definition>typedef struct m M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+<para>A matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="116" column="3"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <member refid="group__YapMatrix_1ga7ceadd7610f6761cce570cd25a7d74bb" kind="variable"><name>MFunctorM</name></member>
-      <member refid="group__YapMatrix_1ga40441c8b1b9cafb4f57ca28d1077c1e4" kind="variable"><name>MFunctorFloats</name></member>
-      <member refid="group__YapMatrix_1gad307f21c85e4a83f2b1c3b2d748c6e9e" kind="variable"><name>MTermTrue</name></member>
-      <member refid="group__YapMatrix_1gaa140a7eca4cc8834bb0359b21d553fff" kind="variable"><name>MTermFalse</name></member>
-      <member refid="group__YapMatrix_1gac02460a13e804f757eaee12d7ec31c8f" kind="variable"><name>MTermFail</name></member>
-      <member refid="group__YapMatrix_1gace6b18337b537722a0ba98631f34f78c" kind="variable"><name>MAtomC</name></member>
+      <memberdef kind="variable" id="group__YapMatrix_1ga7ceadd7610f6761cce570cd25a7d74bb" prot="public" static="yes" mutable="no">
+        <type>YAP_Functor</type>
+        <definition>YAP_Functor MFunctorM</definition>
+        <argsstring></argsstring>
+        <name>MFunctorM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="118" column="20" bodyfile="library/matrix/matrix.c" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__YapMatrix_1ga40441c8b1b9cafb4f57ca28d1077c1e4" prot="public" static="yes" mutable="no">
+        <type>YAP_Functor</type>
+        <definition>YAP_Functor MFunctorFloats</definition>
+        <argsstring></argsstring>
+        <name>MFunctorFloats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="118" column="30" bodyfile="library/matrix/matrix.c" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__YapMatrix_1gad307f21c85e4a83f2b1c3b2d748c6e9e" prot="public" static="yes" mutable="no">
+        <type>YAP_Term</type>
+        <definition>YAP_Term MTermTrue</definition>
+        <argsstring></argsstring>
+        <name>MTermTrue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="119" column="17" bodyfile="library/matrix/matrix.c" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__YapMatrix_1gaa140a7eca4cc8834bb0359b21d553fff" prot="public" static="yes" mutable="no">
+        <type>YAP_Term</type>
+        <definition>YAP_Term MTermFalse</definition>
+        <argsstring></argsstring>
+        <name>MTermFalse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="119" column="27" bodyfile="library/matrix/matrix.c" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__YapMatrix_1gac02460a13e804f757eaee12d7ec31c8f" prot="public" static="yes" mutable="no">
+        <type>YAP_Term</type>
+        <definition>YAP_Term MTermFail</definition>
+        <argsstring></argsstring>
+        <name>MTermFail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="119" column="38" bodyfile="library/matrix/matrix.c" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__YapMatrix_1gace6b18337b537722a0ba98631f34f78c" prot="public" static="yes" mutable="no">
+        <type>YAP_Atom</type>
+        <definition>YAP_Atom MAtomC</definition>
+        <argsstring></argsstring>
+        <name>MAtomC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="120" column="17" bodyfile="library/matrix/matrix.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="matrix_8c_1a44fdc7de67faacad12e55e4430f69ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -366,111 +777,2229 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/library/matrix/matrix.c" line="61" column="1" declfile="/home/vsc/github/yap/library/matrix/matrix.c" declline="61" declcolumn="1"/>
+        <location file="library/matrix/matrix.c" line="61" column="1" declfile="library/matrix/matrix.c" declline="61" declcolumn="1"/>
       </memberdef>
-      <member refid="group__YapMatrix_1ga80bcf19ee15d2fe9079fa925671c49a5" kind="function"><name>matrix_long_data</name></member>
-      <member refid="group__YapMatrix_1ga1a7b926cc6a4ca79080fd08c4a24f5a0" kind="function"><name>matrix_double_data</name></member>
-      <member refid="group__YapMatrix_1ga2e78409225786a00ce626c3507c3acfb" kind="function"><name>matrix_get_offset</name></member>
-      <member refid="group__YapMatrix_1ga37b347610601fc1fb5b965b39a6a035d" kind="function"><name>matrix_get_index</name></member>
-      <member refid="group__YapMatrix_1ga69dfb6f0349d3440a7ad2a9e8ff9b5eb" kind="function"><name>GET_OFFSET</name></member>
-      <member refid="group__YapMatrix_1ga9f2e769a786813e4beaa127da2d91886" kind="function"><name>GET_INDEX</name></member>
-      <member refid="group__YapMatrix_1gad01fb7eb2bf126b43153745e8bc74593" kind="function"><name>matrix_next_index</name></member>
-      <member refid="group__YapMatrix_1ga6caa5b8c0dcb16b0b9fd2af32242fcef" kind="function"><name>IS_MATRIX</name></member>
-      <member refid="group__YapMatrix_1gae5654fd6fb04dd92703b497777def7f3" kind="function"><name>GET_MATRIX</name></member>
-      <member refid="group__YapMatrix_1gae3a5142c880629d3d3a06160ac4c7a64" kind="function"><name>is_matrix</name></member>
-      <member refid="group__YapMatrix_1gab72620ac0ccdf665f240170392344e9f" kind="function"><name>new_int_matrix</name></member>
-      <member refid="group__YapMatrix_1ga0febbc10b5894e63713d0bf320eee089" kind="function"><name>new_float_matrix</name></member>
-      <member refid="group__YapMatrix_1ga6c9e36a1b36ff876af65c10d2578c570" kind="function"><name>scan_dims</name></member>
-      <member refid="group__YapMatrix_1gabfa4452268866f3b87dbd5ef9a2dcac1" kind="function"><name>cp_int_matrix</name></member>
-      <member refid="group__YapMatrix_1gaef620643b299e89ce8e96032331080a2" kind="function"><name>cp_float_matrix</name></member>
-      <member refid="group__YapMatrix_1gae573b77cdcdd9d4ff789d235b9cc80d4" kind="function"><name>set_int_matrix</name></member>
-      <member refid="group__YapMatrix_1ga245e6ec6b3dfc7d88775750d960ff505" kind="function"><name>set_float_matrix</name></member>
-      <member refid="group__YapMatrix_1ga00c16d33010d8fe1a20b4bbd83e92a12" kind="function"><name>new_ints_matrix</name></member>
-      <member refid="group__YapMatrix_1ga0425e28489c929b0b4077de4118697e4" kind="function"><name>new_ints_matrix_set</name></member>
-      <member refid="group__YapMatrix_1gaa4ae7d476dc3fbd6aba3e76db485d6c3" kind="function"><name>new_ints_matrix_copy</name></member>
-      <member refid="group__YapMatrix_1gae453ae4efd2736b1aef81004578b9adc" kind="function"><name>new_floats_matrix_copy</name></member>
-      <member refid="group__YapMatrix_1ga3973c514399e0a87196e6fc68dffacf5" kind="function"><name>new_floats_matrix</name></member>
-      <member refid="group__YapMatrix_1gaade39386bbe555abec5224726df53ae5" kind="function"><name>new_floats_matrix_set</name></member>
-      <member refid="group__YapMatrix_1ga399d431a5a4cce38d47c10797617db02" kind="function"><name>mk_int_list</name></member>
-      <member refid="group__YapMatrix_1ga62e43a02ce826f95df80a4b4edc2cbc6" kind="function"><name>mk_rep_int_list</name></member>
-      <member refid="group__YapMatrix_1gad6af9ce7b97b74d5c29eb605a13f3ddc" kind="function"><name>matrix_float_set</name></member>
-      <member refid="group__YapMatrix_1gadd2f179bf4dacd972be2f4bea3ef02df" kind="function"><name>matrix_long_set</name></member>
-      <member refid="group__YapMatrix_1ga5d7639e8195d054ea41daba293aa135d" kind="function"><name>matrix_get_one</name></member>
-      <member refid="group__YapMatrix_1gaeb624779d02a404dea961b6cc01b5384" kind="function"><name>matrix_set_one</name></member>
-      <member refid="group__YapMatrix_1ga4642d6ec9f16a6b6576d46f73d444267" kind="function"><name>flist</name></member>
-      <member refid="group__YapMatrix_1gafe6515a254b6c5b0f9b0adb005ebb470" kind="function"><name>ilist</name></member>
-      <member refid="group__YapMatrix_1ga15a6a5364fea93f8425c80a3785d3819" kind="function"><name>blist</name></member>
-      <member refid="group__YapMatrix_1ga0cd6a091edf7716cc765d66c96991822" kind="function"><name>matrix_set_all</name></member>
-      <member refid="group__YapMatrix_1ga7d9270c78dc8bb31dfba7b0faf71b78f" kind="function"><name>matrix_add_to_all</name></member>
-      <member refid="group__YapMatrix_1ga0826135a38c1580348bfe2b584b84d0c" kind="function"><name>matrix_inc</name></member>
-      <member refid="group__YapMatrix_1gade8416ea6554506609910e5204c5fde3" kind="function"><name>matrix_inc3</name></member>
-      <member refid="group__YapMatrix_1gaa92fd4983401a781dab5b593c62b1ef0" kind="function"><name>matrix_dec</name></member>
-      <member refid="group__YapMatrix_1ga0ce0116b7e00c17916152faa418a9d6d" kind="function"><name>matrix_dec3</name></member>
-      <member refid="group__YapMatrix_1ga220c38403de72a05839b0fd86b6fcb1a" kind="function"><name>matrix_min</name></member>
-      <member refid="group__YapMatrix_1gacda47cc3ba99262f887f3463e97dd93d" kind="function"><name>matrix_minarg</name></member>
-      <member refid="group__YapMatrix_1ga87ac27edd135546dd72995ed7c413995" kind="function"><name>matrix_max</name></member>
-      <member refid="group__YapMatrix_1ga3715f141c8b58a3d326055798ccc394f" kind="function"><name>matrix_maxarg</name></member>
-      <member refid="group__YapMatrix_1ga1b94b3e06420152226fabdf03188ba48" kind="function"><name>matrix_dims</name></member>
-      <member refid="group__YapMatrix_1ga0235b113094c8df18e824b07c0a71eed" kind="function"><name>matrix_to_list</name></member>
-      <member refid="group__YapMatrix_1ga89e27af184a12200785907498ba901e1" kind="function"><name>matrix_set_base</name></member>
-      <member refid="group__YapMatrix_1gac56aa30a1c574ae5aa66612d1e0e2202" kind="function"><name>matrix_dims3</name></member>
-      <member refid="group__YapMatrix_1ga91213f3b3165ac98f9b779d9faadf05a" kind="function"><name>matrix_size</name></member>
-      <member refid="group__YapMatrix_1ga75c3033587f2d6cdb47acdbdf1d4bce8" kind="function"><name>matrix_ndims</name></member>
-      <member refid="group__YapMatrix_1gaab9325bcef5187b7aa819113d0b1e01c" kind="function"><name>matrix_type</name></member>
-      <member refid="group__YapMatrix_1gac0df8b29621e26ed23e778510ddac8d5" kind="function"><name>matrix_arg_to_offset</name></member>
-      <member refid="group__YapMatrix_1ga9aa18a4e0a6adafbae1ceee84d08adb6" kind="function"><name>matrix_offset_to_arg</name></member>
-      <member refid="group__YapMatrix_1gaff4294062818e452dc1416fae68c9bde" kind="function"><name>matrix_log_all</name></member>
-      <member refid="group__YapMatrix_1ga5c50abc4d428781406ca06c0548bd307" kind="function"><name>matrix_log_all2</name></member>
-      <member refid="group__YapMatrix_1gae6777296aede1cadd3a8d08457c2c047" kind="function"><name>matrix_exp_all</name></member>
-      <member refid="group__YapMatrix_1ga44ac7930fef35c543bff4633c43b0c06" kind="function"><name>matrix_exp2_all</name></member>
-      <member refid="group__YapMatrix_1gafa559491fa80485aa4d23b9599d5a506" kind="function"><name>matrix_exp_all2</name></member>
-      <member refid="group__YapMatrix_1ga1537f67c570cca1ad4bed1f317a05398" kind="function"><name>matrix_sum</name></member>
-      <member refid="group__YapMatrix_1gad6211bbced229e621cbdc0744260094f" kind="function"><name>add_int_lines</name></member>
-      <member refid="group__YapMatrix_1gaababbcf95dc2a5a468e397de3ec488c5" kind="function"><name>add_double_lines</name></member>
-      <member refid="group__YapMatrix_1gac622d1877cf7c08af0f995010ecb4ace" kind="function"><name>matrix_agg_lines</name></member>
-      <member refid="group__YapMatrix_1ga2a06ce3b6fa67ceb035280f119613855" kind="function"><name>add_int_cols</name></member>
-      <member refid="group__YapMatrix_1ga5e94c58fbaeaa26e5ebd9fea5c759944" kind="function"><name>add_double_cols</name></member>
-      <member refid="group__YapMatrix_1gae4407ac2a5659a6df4f4b0ee42db7a09" kind="function"><name>matrix_agg_cols</name></member>
-      <member refid="group__YapMatrix_1ga2f78254e350b366ae7e66658d3c8c733" kind="function"><name>div_int_by_lines</name></member>
-      <member refid="group__YapMatrix_1gacfc5c9a13b082e4026ad0b952e7ba3e6" kind="function"><name>div_int_by_dlines</name></member>
-      <member refid="group__YapMatrix_1ga9edb0a00626730a4d7a248fc89be5c99" kind="function"><name>div_float_long_by_lines</name></member>
-      <member refid="group__YapMatrix_1gabaae22c3f3dccebbf38405c1548ecd8f" kind="function"><name>div_float_by_lines</name></member>
-      <member refid="group__YapMatrix_1ga63893e55f37347ee15884c0c7f049e53" kind="function"><name>matrix_op_to_lines</name></member>
-      <member refid="group__YapMatrix_1gaa46c84a7128e23c3bcf3e215ff1326ba" kind="function"><name>matrix_copy</name></member>
-      <member refid="group__YapMatrix_1ga52fa483a15118e9c5aad0bb342232dfa" kind="function"><name>matrix_long_add_data</name></member>
-      <member refid="group__YapMatrix_1ga5b18a2b82ee2b68470c4627c4acf7520" kind="function"><name>matrix_long_double_add_data</name></member>
-      <member refid="group__YapMatrix_1ga23d3f91db284282a000ae3c4d1ff8aca" kind="function"><name>matrix_double_add_data</name></member>
-      <member refid="group__YapMatrix_1gac26d4e5235a45a3de8fe2ff4f54ced79" kind="function"><name>matrix_long_sub_data</name></member>
-      <member refid="group__YapMatrix_1ga96cdbf25ee1be5de284c378f091fe280" kind="function"><name>matrix_long_double_sub_data</name></member>
-      <member refid="group__YapMatrix_1gaab9332ad2ad95dafd6eb0946a52a4057" kind="function"><name>matrix_long_double_rsub_data</name></member>
-      <member refid="group__YapMatrix_1gab0e93043b22c2e326ec397d9fae13b1b" kind="function"><name>matrix_double_sub_data</name></member>
-      <member refid="group__YapMatrix_1ga355fba05c1ae76b224f91ff87885a906" kind="function"><name>matrix_long_mult_data</name></member>
-      <member refid="group__YapMatrix_1gaab3166c564ace8c64d9ee15c80d284e5" kind="function"><name>matrix_long_double_mult_data</name></member>
-      <member refid="group__YapMatrix_1ga6f6142949a69d602442c011ff413455f" kind="function"><name>matrix_double_mult_data</name></member>
-      <member refid="group__YapMatrix_1gaa3b77a6a7b6bc29ef44b72ad651fba5f" kind="function"><name>matrix_long_div_data</name></member>
-      <member refid="group__YapMatrix_1gaa51e08215c86bd4319a5d4c61098a3da" kind="function"><name>matrix_long_double_div_data</name></member>
-      <member refid="group__YapMatrix_1ga16ea079c093ae0ce6e59a170c46ec4ac" kind="function"><name>matrix_long_double_div2_data</name></member>
-      <member refid="group__YapMatrix_1gad96e7847058ee5f6e12a725c4df574bf" kind="function"><name>matrix_double_div_data</name></member>
-      <member refid="group__YapMatrix_1ga1bc087730050b2c67d597285882db892" kind="function"><name>matrix_long_zdiv_data</name></member>
-      <member refid="group__YapMatrix_1ga9d057a0735a56d08be89b39b5e81e34e" kind="function"><name>matrix_long_double_zdiv_data</name></member>
-      <member refid="group__YapMatrix_1ga9465df1ce3fb39ba543838d47edd9fe5" kind="function"><name>matrix_double_zdiv_data</name></member>
-      <member refid="group__YapMatrix_1gabb29025670f08407d3666e5294a98b84" kind="function"><name>matrix_op</name></member>
-      <member refid="group__YapMatrix_1ga57e271d40c69309ee135b7ae750b45ce" kind="function"><name>add_int_by_cols</name></member>
-      <member refid="group__YapMatrix_1ga54d39810ab8ff5ee7baea227b76aebc2" kind="function"><name>add_int_by_dcols</name></member>
-      <member refid="group__YapMatrix_1ga25a819aeb37fc3ade8bc8ff292ef6c12" kind="function"><name>add_double_by_cols</name></member>
-      <member refid="group__YapMatrix_1ga2d4736eb5764b0f3fa795ec9f1214518" kind="function"><name>matrix_op_to_cols</name></member>
-      <member refid="group__YapMatrix_1gab6ccd10fb27b4945c47f7c1c14c30470" kind="function"><name>matrix_op_to_all</name></member>
-      <member refid="group__YapMatrix_1ga6484627581ef4b54bb71d8d2841382e6" kind="function"><name>matrix_transpose</name></member>
-      <member refid="group__YapMatrix_1gaa70bc63a29fd30a6488ab21f7a43a7b0" kind="function"><name>matrix_select</name></member>
-      <member refid="group__YapMatrix_1gad6671c86e03e1ad4a9c3b3be1dc8f1dd" kind="function"><name>matrix_column</name></member>
-      <member refid="group__YapMatrix_1ga8b611043b268065d3759e68a8d8f310c" kind="function"><name>matrix_sum_out</name></member>
-      <member refid="group__YapMatrix_1ga03002f812fc350b730041b4a0ccfbb38" kind="function"><name>matrix_sum_out_several</name></member>
-      <member refid="group__YapMatrix_1ga8ad2fe8e9f959f383336679a1ec3e79b" kind="function"><name>matrix_sum_out_logs</name></member>
-      <member refid="group__YapMatrix_1ga9676bc4953e492587016dd557983ccc6" kind="function"><name>matrix_sum_out_logs_several</name></member>
-      <member refid="group__YapMatrix_1ga5f399a6d6f00e738c2e55bbda1d6eac5" kind="function"><name>matrix_expand</name></member>
-      <member refid="group__YapMatrix_1ga1c179fb942480e5649766936e1550cc5" kind="function"><name>matrix_set_all_that_disagree</name></member>
-      <member refid="group__YapMatrix_1ga1d974af6c4ba90930bdc2fb30805415e" kind="function"><name>matrix_m</name></member>
-      <member refid="group__YapMatrix_1gaad3a153bc95f5cb3379eea480b4b0023" kind="function"><name>init_matrix</name></member>
+      <memberdef kind="function" id="group__YapMatrix_1ga80bcf19ee15d2fe9079fa925671c49a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Int *</type>
+        <definition>static YAP_Int * matrix_long_data</definition>
+        <argsstring>(intptr_t *mat, intptr_t ndims)</argsstring>
+        <name>matrix_long_data</name>
+        <param>
+          <type>intptr_t *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>ndims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="122" column="16" bodyfile="library/matrix/matrix.c" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga1a7b926cc6a4ca79080fd08c4a24f5a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>static double * matrix_double_data</definition>
+        <argsstring>(intptr_t *mat, intptr_t ndims)</argsstring>
+        <name>matrix_double_data</name>
+        <param>
+          <type>intptr_t *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>ndims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="126" column="15" bodyfile="library/matrix/matrix.c" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga2e78409225786a00ce626c3507c3acfb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>intptr_t</type>
+        <definition>static intptr_t matrix_get_offset</definition>
+        <argsstring>(intptr_t *mat, intptr_t *indx)</argsstring>
+        <name>matrix_get_offset</name>
+        <param>
+          <type>intptr_t *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="130" column="17" bodyfile="library/matrix/matrix.c" bodystart="130" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga37b347610601fc1fb5b965b39a6a035d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_get_index</definition>
+        <argsstring>(intptr_t *mat, intptr_t offset, intptr_t *indx)</argsstring>
+        <name>matrix_get_index</name>
+        <param>
+          <type>intptr_t *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>intptr_t *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="146" column="13" bodyfile="library/matrix/matrix.c" bodystart="146" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga69dfb6f0349d3440a7ad2a9e8ff9b5eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t GET_OFFSET</definition>
+        <argsstring>(YAP_Term t, M *mat, intptr_t *poffset)</argsstring>
+        <name>GET_OFFSET</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kindref="member">M</ref> *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t *</type>
+          <declname>poffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="157" column="15" bodyfile="library/matrix/matrix.c" bodystart="157" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga9f2e769a786813e4beaa127da2d91886" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool GET_INDEX</definition>
+        <argsstring>(M *mat, intptr_t off, YAP_Term *tf)</argsstring>
+        <name>GET_INDEX</name>
+        <param>
+          <type><ref refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kindref="member">M</ref> *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>off</declname>
+        </param>
+        <param>
+          <type>YAP_Term *</type>
+          <declname>tf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="178" column="17" bodyfile="library/matrix/matrix.c" bodystart="178" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gad01fb7eb2bf126b43153745e8bc74593" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_next_index</definition>
+        <argsstring>(intptr_t *dims, intptr_t ndims, intptr_t *indx)</argsstring>
+        <name>matrix_next_index</name>
+        <param>
+          <type>intptr_t *</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>intptr_t *</type>
+          <declname>indx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="200" column="13" bodyfile="library/matrix/matrix.c" bodystart="200" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga6caa5b8c0dcb16b0b9fd2af32242fcef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IS_MATRIX</definition>
+        <argsstring>(YAP_Term)</argsstring>
+        <name>IS_MATRIX</name>
+        <param>
+          <type>YAP_Term</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="213" column="13" declfile="library/matrix/matrix.c" declline="213" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gae5654fd6fb04dd92703b497777def7f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool GET_MATRIX</definition>
+        <argsstring>(YAP_Term inp, M *o)</argsstring>
+        <name>GET_MATRIX</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>inp</declname>
+        </param>
+        <param>
+          <type><ref refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kindref="member">M</ref> *</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="215" column="13" bodyfile="library/matrix/matrix.c" bodystart="215" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gae3a5142c880629d3d3a06160ac4c7a64" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool is_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>is_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="285" column="17" bodyfile="library/matrix/matrix.c" bodystart="285" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gab72620ac0ccdf665f240170392344e9f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term new_int_matrix</definition>
+        <argsstring>(intptr_t ndims, intptr_t dims[], YAP_Int data[])</argsstring>
+        <name>new_int_matrix</name>
+        <param>
+          <type>intptr_t</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>dims</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>data</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="290" column="17" bodyfile="library/matrix/matrix.c" bodystart="290" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga0febbc10b5894e63713d0bf320eee089" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term new_float_matrix</definition>
+        <argsstring>(intptr_t ndims, intptr_t dims[], double data[])</argsstring>
+        <name>new_float_matrix</name>
+        <param>
+          <type>intptr_t</type>
+          <declname>ndims</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>dims</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>data</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="328" column="17" bodyfile="library/matrix/matrix.c" bodystart="328" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga6c9e36a1b36ff876af65c10d2578c570" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int scan_dims</definition>
+        <argsstring>(YAP_Term tl, intptr_t dims[MAX_DIMS])</argsstring>
+        <name>scan_dims</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tl</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>dims</declname>
+          <array>[MAX_DIMS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="363" column="12" bodyfile="library/matrix/matrix.c" bodystart="363" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gabfa4452268866f3b87dbd5ef9a2dcac1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool cp_int_matrix</definition>
+        <argsstring>(YAP_Term tl, M *m)</argsstring>
+        <name>cp_int_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tl</declname>
+        </param>
+        <param>
+          <type><ref refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kindref="member">M</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="392" column="17" bodyfile="library/matrix/matrix.c" bodystart="392" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaef620643b299e89ce8e96032331080a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool cp_float_matrix</definition>
+        <argsstring>(YAP_Term tl, M *m)</argsstring>
+        <name>cp_float_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>tl</declname>
+        </param>
+        <param>
+          <type><ref refid="group__YapMatrix_1ga9480fb6219a92787ed73787b1091d2dd" kindref="member">M</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="421" column="17" bodyfile="library/matrix/matrix.c" bodystart="421" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gae573b77cdcdd9d4ff789d235b9cc80d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool set_int_matrix</definition>
+        <argsstring>(YAP_Term matrix, YAP_Int set)</argsstring>
+        <name>set_int_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="452" column="17" bodyfile="library/matrix/matrix.c" bodystart="452" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga245e6ec6b3dfc7d88775750d960ff505" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool set_float_matrix</definition>
+        <argsstring>(YAP_Term matrix, double set)</argsstring>
+        <name>set_float_matrix</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="463" column="17" bodyfile="library/matrix/matrix.c" bodystart="463" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga00c16d33010d8fe1a20b4bbd83e92a12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_ints_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_ints_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="474" column="17" bodyfile="library/matrix/matrix.c" bodystart="474" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga0425e28489c929b0b4077de4118697e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_ints_matrix_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_ints_matrix_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="487" column="17" bodyfile="library/matrix/matrix.c" bodystart="487" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaa4ae7d476dc3fbd6aba3e76db485d6c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_ints_matrix_copy</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_ints_matrix_copy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="509" column="17" bodyfile="library/matrix/matrix.c" bodystart="509" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gae453ae4efd2736b1aef81004578b9adc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_floats_matrix_copy</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_floats_matrix_copy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="526" column="17" bodyfile="library/matrix/matrix.c" bodystart="526" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga3973c514399e0a87196e6fc68dffacf5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_floats_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_floats_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="543" column="17" bodyfile="library/matrix/matrix.c" bodystart="543" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaade39386bbe555abec5224726df53ae5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool new_floats_matrix_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_floats_matrix_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="553" column="19" bodyfile="library/matrix/matrix.c" bodystart="553" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga399d431a5a4cce38d47c10797617db02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term mk_int_list</definition>
+        <argsstring>(intptr_t nelems, intptr_t *data)</argsstring>
+        <name>mk_int_list</name>
+        <param>
+          <type>intptr_t</type>
+          <declname>nelems</declname>
+        </param>
+        <param>
+          <type>intptr_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="572" column="17" bodyfile="library/matrix/matrix.c" bodystart="572" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga62e43a02ce826f95df80a4b4edc2cbc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term mk_rep_int_list</definition>
+        <argsstring>(intptr_t nelems, int data)</argsstring>
+        <name>mk_rep_int_list</name>
+        <param>
+          <type>intptr_t</type>
+          <declname>nelems</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="604" column="17" bodyfile="library/matrix/matrix.c" bodystart="604" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gad6af9ce7b97b74d5c29eb605a13f3ddc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_float_set</definition>
+        <argsstring>(intptr_t *mat, intptr_t *indx, double nval)</argsstring>
+        <name>matrix_float_set</name>
+        <param>
+          <type>intptr_t *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t *</type>
+          <declname>indx</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="620" column="13" bodyfile="library/matrix/matrix.c" bodystart="620" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gadd2f179bf4dacd972be2f4bea3ef02df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_set</definition>
+        <argsstring>(intptr_t *mat, intptr_t *indx, YAP_Int nval)</argsstring>
+        <name>matrix_long_set</name>
+        <param>
+          <type>intptr_t *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>intptr_t *</type>
+          <declname>indx</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>nval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="627" column="13" bodyfile="library/matrix/matrix.c" bodystart="627" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga5d7639e8195d054ea41daba293aa135d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_get_one</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_get_one</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="633" column="17" bodyfile="library/matrix/matrix.c" bodystart="633" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaeb624779d02a404dea961b6cc01b5384" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set_one</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set_one</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="663" column="17" bodyfile="library/matrix/matrix.c" bodystart="663" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga4642d6ec9f16a6b6576d46f73d444267" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term flist</definition>
+        <argsstring>(YAP_Term t, double *f)</argsstring>
+        <name>flist</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="702" column="17" bodyfile="library/matrix/matrix.c" bodystart="702" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gafe6515a254b6c5b0f9b0adb005ebb470" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term ilist</definition>
+        <argsstring>(YAP_Term t, YAP_Int *f)</argsstring>
+        <name>ilist</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="714" column="17" bodyfile="library/matrix/matrix.c" bodystart="714" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga15a6a5364fea93f8425c80a3785d3819" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term blist</definition>
+        <argsstring>(YAP_Term t, YAP_Bool *f)</argsstring>
+        <name>blist</name>
+        <param>
+          <type>YAP_Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>YAP_Bool *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="726" column="17" bodyfile="library/matrix/matrix.c" bodystart="726" bodyend="736"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga0cd6a091edf7716cc765d66c96991822" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="739" column="17" bodyfile="library/matrix/matrix.c" bodystart="739" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga7d9270c78dc8bb31dfba7b0faf71b78f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_add_to_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_add_to_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="811" column="17" bodyfile="library/matrix/matrix.c" bodystart="811" bodyend="857"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga0826135a38c1580348bfe2b584b84d0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_inc</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_inc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="860" column="17" bodyfile="library/matrix/matrix.c" bodystart="860" bodyend="880"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gade8416ea6554506609910e5204c5fde3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_inc3</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_inc3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="883" column="17" bodyfile="library/matrix/matrix.c" bodystart="883" bodyend="902"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaa92fd4983401a781dab5b593c62b1ef0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_dec</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_dec</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="913" column="17" bodyfile="library/matrix/matrix.c" bodystart="913" bodyend="932"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga0ce0116b7e00c17916152faa418a9d6d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_dec3</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_dec3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="935" column="17" bodyfile="library/matrix/matrix.c" bodystart="935" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga220c38403de72a05839b0fd86b6fcb1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_min</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_min</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="957" column="17" bodyfile="library/matrix/matrix.c" bodystart="957" bodyend="989"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gacda47cc3ba99262f887f3463e97dd93d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_minarg</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_minarg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="992" column="17" bodyfile="library/matrix/matrix.c" bodystart="992" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga87ac27edd135546dd72995ed7c413995" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_max</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_max</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1029" column="17" bodyfile="library/matrix/matrix.c" bodystart="1029" bodyend="1061"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga3715f141c8b58a3d326055798ccc394f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_maxarg</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_maxarg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1064" column="17" bodyfile="library/matrix/matrix.c" bodystart="1064" bodyend="1097"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga1b94b3e06420152226fabdf03188ba48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_dims</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_dims</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1100" column="17" bodyfile="library/matrix/matrix.c" bodystart="1100" bodyend="1112"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga0235b113094c8df18e824b07c0a71eed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_to_list</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_to_list</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1123" column="17" bodyfile="library/matrix/matrix.c" bodystart="1123" bodyend="1181"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga89e27af184a12200785907498ba901e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set_base</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set_base</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1183" column="17" bodyfile="library/matrix/matrix.c" bodystart="1183" bodyend="1193"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gac56aa30a1c574ae5aa66612d1e0e2202" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_dims3</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_dims3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1195" column="17" bodyfile="library/matrix/matrix.c" bodystart="1195" bodyend="1207"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga91213f3b3165ac98f9b779d9faadf05a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1217" column="17" bodyfile="library/matrix/matrix.c" bodystart="1217" bodyend="1222"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga75c3033587f2d6cdb47acdbdf1d4bce8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_ndims</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_ndims</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1224" column="17" bodyfile="library/matrix/matrix.c" bodystart="1224" bodyend="1234"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaab9325bcef5187b7aa819113d0b1e01c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_type</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_type</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1236" column="17" bodyfile="library/matrix/matrix.c" bodystart="1236" bodyend="1244"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gac0df8b29621e26ed23e778510ddac8d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_arg_to_offset</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_arg_to_offset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1255" column="17" bodyfile="library/matrix/matrix.c" bodystart="1255" bodyend="1263"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga9aa18a4e0a6adafbae1ceee84d08adb6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_offset_to_arg</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_offset_to_arg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1265" column="17" bodyfile="library/matrix/matrix.c" bodystart="1265" bodyend="1273"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaff4294062818e452dc1416fae68c9bde" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_log_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_log_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1276" column="17" bodyfile="library/matrix/matrix.c" bodystart="1276" bodyend="1295"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga5c50abc4d428781406ca06c0548bd307" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_log_all2</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_log_all2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1297" column="17" bodyfile="library/matrix/matrix.c" bodystart="1297" bodyend="1350"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gae6777296aede1cadd3a8d08457c2c047" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_exp_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_exp_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1352" column="17" bodyfile="library/matrix/matrix.c" bodystart="1352" bodyend="1371"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga44ac7930fef35c543bff4633c43b0c06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_exp2_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_exp2_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1373" column="17" bodyfile="library/matrix/matrix.c" bodystart="1373" bodyend="1398"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gafa559491fa80485aa4d23b9599d5a506" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_exp_all2</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_exp_all2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1400" column="17" bodyfile="library/matrix/matrix.c" bodystart="1400" bodyend="1453"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga1537f67c570cca1ad4bed1f317a05398" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1463" column="17" bodyfile="library/matrix/matrix.c" bodystart="1463" bodyend="1495"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gad6211bbced229e621cbdc0744260094f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_lines</definition>
+        <argsstring>(int total, intptr_t nlines, YAP_Int *mat0, YAP_Int *matf)</argsstring>
+        <name>add_int_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1497" column="13" bodyfile="library/matrix/matrix.c" bodystart="1497" bodyend="1509"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaababbcf95dc2a5a468e397de3ec488c5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_double_lines</definition>
+        <argsstring>(int total, intptr_t nlines, double *mat0, double *matf)</argsstring>
+        <name>add_double_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1511" column="13" bodyfile="library/matrix/matrix.c" bodystart="1511" bodyend="1523"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gac622d1877cf7c08af0f995010ecb4ace" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_agg_lines</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_agg_lines</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1525" column="17" bodyfile="library/matrix/matrix.c" bodystart="1525" bodyend="1574"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga2a06ce3b6fa67ceb035280f119613855" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_cols</definition>
+        <argsstring>(int total, intptr_t nlines, YAP_Int *mat0, YAP_Int *matf)</argsstring>
+        <name>add_int_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1576" column="13" bodyfile="library/matrix/matrix.c" bodystart="1576" bodyend="1588"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga5e94c58fbaeaa26e5ebd9fea5c759944" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_double_cols</definition>
+        <argsstring>(int total, intptr_t nlines, double *mat0, double *matf)</argsstring>
+        <name>add_double_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat0</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>matf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1590" column="13" bodyfile="library/matrix/matrix.c" bodystart="1590" bodyend="1602"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gae4407ac2a5659a6df4f4b0ee42db7a09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_agg_cols</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_agg_cols</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1604" column="17" bodyfile="library/matrix/matrix.c" bodystart="1604" bodyend="1653"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga2f78254e350b366ae7e66658d3c8c733" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_int_by_lines</definition>
+        <argsstring>(int total, intptr_t nlines, YAP_Int *mat1, YAP_Int *mat2, double *ndata)</argsstring>
+        <name>div_int_by_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1655" column="13" bodyfile="library/matrix/matrix.c" bodystart="1655" bodyend="1661"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gacfc5c9a13b082e4026ad0b952e7ba3e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_int_by_dlines</definition>
+        <argsstring>(int total, intptr_t nlines, YAP_Int *mat1, double *mat2, double *ndata)</argsstring>
+        <name>div_int_by_dlines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1663" column="13" bodyfile="library/matrix/matrix.c" bodystart="1663" bodyend="1669"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga9edb0a00626730a4d7a248fc89be5c99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_float_long_by_lines</definition>
+        <argsstring>(int total, intptr_t nlines, double *mat1, YAP_Int *mat2, double *ndata)</argsstring>
+        <name>div_float_long_by_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1671" column="13" bodyfile="library/matrix/matrix.c" bodystart="1671" bodyend="1677"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gabaae22c3f3dccebbf38405c1548ecd8f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void div_float_by_lines</definition>
+        <argsstring>(int total, intptr_t nlines, double *mat1, double *mat2, double *ndata)</argsstring>
+        <name>div_float_by_lines</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1679" column="13" bodyfile="library/matrix/matrix.c" bodystart="1679" bodyend="1685"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga63893e55f37347ee15884c0c7f049e53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op_to_lines</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op_to_lines</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1697" column="17" bodyfile="library/matrix/matrix.c" bodystart="1697" bodyend="1786"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaa46c84a7128e23c3bcf3e215ff1326ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_copy</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_copy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1796" column="17" bodyfile="library/matrix/matrix.c" bodystart="1796" bodyend="1826"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga52fa483a15118e9c5aad0bb342232dfa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_add_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_add_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1828" column="13" bodyfile="library/matrix/matrix.c" bodystart="1828" bodyend="1835"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga5b18a2b82ee2b68470c4627c4acf7520" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_add_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_add_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1837" column="13" bodyfile="library/matrix/matrix.c" bodystart="1837" bodyend="1844"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga23d3f91db284282a000ae3c4d1ff8aca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_add_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_add_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1846" column="13" bodyfile="library/matrix/matrix.c" bodystart="1846" bodyend="1853"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gac26d4e5235a45a3de8fe2ff4f54ced79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_sub_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_sub_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1855" column="13" bodyfile="library/matrix/matrix.c" bodystart="1855" bodyend="1862"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga96cdbf25ee1be5de284c378f091fe280" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_sub_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_sub_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1864" column="13" bodyfile="library/matrix/matrix.c" bodystart="1864" bodyend="1871"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaab9332ad2ad95dafd6eb0946a52a4057" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_rsub_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_double_rsub_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1873" column="13" bodyfile="library/matrix/matrix.c" bodystart="1873" bodyend="1880"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gab0e93043b22c2e326ec397d9fae13b1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_sub_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_sub_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1882" column="13" bodyfile="library/matrix/matrix.c" bodystart="1882" bodyend="1889"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga355fba05c1ae76b224f91ff87885a906" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_mult_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_mult_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1891" column="13" bodyfile="library/matrix/matrix.c" bodystart="1891" bodyend="1898"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaab3166c564ace8c64d9ee15c80d284e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_mult_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_mult_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1900" column="13" bodyfile="library/matrix/matrix.c" bodystart="1900" bodyend="1907"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga6f6142949a69d602442c011ff413455f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_mult_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_mult_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1909" column="13" bodyfile="library/matrix/matrix.c" bodystart="1909" bodyend="1916"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaa3b77a6a7b6bc29ef44b72ad651fba5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_div_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_div_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1918" column="13" bodyfile="library/matrix/matrix.c" bodystart="1918" bodyend="1925"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaa51e08215c86bd4319a5d4c61098a3da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_div_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_div_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1927" column="13" bodyfile="library/matrix/matrix.c" bodystart="1927" bodyend="1934"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga16ea079c093ae0ce6e59a170c46ec4ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_div2_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_double_div2_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1936" column="13" bodyfile="library/matrix/matrix.c" bodystart="1936" bodyend="1943"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gad96e7847058ee5f6e12a725c4df574bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_div_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_div_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1945" column="13" bodyfile="library/matrix/matrix.c" bodystart="1945" bodyend="1952"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga1bc087730050b2c67d597285882db892" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_zdiv_data</definition>
+        <argsstring>(YAP_Int *nmat, int siz, YAP_Int mat1[], YAP_Int mat2[])</argsstring>
+        <name>matrix_long_zdiv_data</name>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1954" column="13" bodyfile="library/matrix/matrix.c" bodystart="1954" bodyend="1964"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga9d057a0735a56d08be89b39b5e81e34e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_long_double_zdiv_data</definition>
+        <argsstring>(double *nmat, int siz, YAP_Int mat1[], double mat2[])</argsstring>
+        <name>matrix_long_double_zdiv_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1966" column="13" bodyfile="library/matrix/matrix.c" bodystart="1966" bodyend="1976"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga9465df1ce3fb39ba543838d47edd9fe5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void matrix_double_zdiv_data</definition>
+        <argsstring>(double *nmat, int siz, double mat1[], double mat2[])</argsstring>
+        <name>matrix_double_zdiv_data</name>
+        <param>
+          <type>double *</type>
+          <declname>nmat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>siz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mat2</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="1992" column="13" bodyfile="library/matrix/matrix.c" bodystart="1992" bodyend="2003"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gabb29025670f08407d3666e5294a98b84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2005" column="17" bodyfile="library/matrix/matrix.c" bodystart="2005" bodyend="2136"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga57e271d40c69309ee135b7ae750b45ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_by_cols</definition>
+        <argsstring>(int total, intptr_t nlines, YAP_Int *mat1, YAP_Int *mat2, YAP_Int *ndata)</argsstring>
+        <name>add_int_by_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2138" column="13" bodyfile="library/matrix/matrix.c" bodystart="2138" bodyend="2144"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga54d39810ab8ff5ee7baea227b76aebc2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_int_by_dcols</definition>
+        <argsstring>(int total, intptr_t nlines, YAP_Int *mat1, double *mat2, double *ndata)</argsstring>
+        <name>add_int_by_dcols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>YAP_Int *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2146" column="13" bodyfile="library/matrix/matrix.c" bodystart="2146" bodyend="2152"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga25a819aeb37fc3ade8bc8ff292ef6c12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void add_double_by_cols</definition>
+        <argsstring>(int total, intptr_t nlines, double *mat1, double *mat2, double *ndata)</argsstring>
+        <name>add_double_by_cols</name>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>intptr_t</type>
+          <declname>nlines</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ndata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2154" column="13" bodyfile="library/matrix/matrix.c" bodystart="2154" bodyend="2162"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga2d4736eb5764b0f3fa795ec9f1214518" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op_to_cols</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op_to_cols</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2164" column="17" bodyfile="library/matrix/matrix.c" bodystart="2164" bodyend="2241"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gab6ccd10fb27b4945c47f7c1c14c30470" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_op_to_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_op_to_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2255" column="17" bodyfile="library/matrix/matrix.c" bodystart="2255" bodyend="2414"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga6484627581ef4b54bb71d8d2841382e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_transpose</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_transpose</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2419" column="17" bodyfile="library/matrix/matrix.c" bodystart="2419" bodyend="2494"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaa70bc63a29fd30a6488ab21f7a43a7b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_select</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_select</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2499" column="17" bodyfile="library/matrix/matrix.c" bodystart="2499" bodyend="2594"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gad6671c86e03e1ad4a9c3b3be1dc8f1dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_column</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_column</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2598" column="17" bodyfile="library/matrix/matrix.c" bodystart="2598" bodyend="2661"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga8b611043b268065d3759e68a8d8f310c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2665" column="17" bodyfile="library/matrix/matrix.c" bodystart="2665" bodyend="2748"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga03002f812fc350b730041b4a0ccfbb38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out_several</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out_several</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2752" column="17" bodyfile="library/matrix/matrix.c" bodystart="2752" bodyend="2841"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga8ad2fe8e9f959f383336679a1ec3e79b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out_logs</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out_logs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2845" column="17" bodyfile="library/matrix/matrix.c" bodystart="2845" bodyend="2928"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga9676bc4953e492587016dd557983ccc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_sum_out_logs_several</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_sum_out_logs_several</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="2932" column="17" bodyfile="library/matrix/matrix.c" bodystart="2932" bodyend="3022"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga5f399a6d6f00e738c2e55bbda1d6eac5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_expand</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_expand</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="3027" column="17" bodyfile="library/matrix/matrix.c" bodystart="3027" bodyend="3122"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga1c179fb942480e5649766936e1550cc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_set_all_that_disagree</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_set_all_that_disagree</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="3127" column="17" bodyfile="library/matrix/matrix.c" bodystart="3127" bodyend="3202"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1ga1d974af6c4ba90930bdc2fb30805415e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Bool</type>
+        <definition>static YAP_Bool matrix_m</definition>
+        <argsstring>(void)</argsstring>
+        <name>matrix_m</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="3204" column="17" bodyfile="library/matrix/matrix.c" bodystart="3204" bodyend="3242"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YapMatrix_1gaad3a153bc95f5cb3379eea480b4b0023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void init_matrix</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_matrix</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/matrix/matrix.c" line="3247" column="12" bodyfile="library/matrix/matrix.c" bodystart="3247" bodyend="3314" declfile="library/matrix/matrix.c" declline="3245" declcolumn="12"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>numeric operations in matrices </para>
@@ -480,6 +3009,6 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/library/matrix/matrix.c"/>
+    <location file="library/matrix/matrix.c"/>
   </compounddef>
 </doxygen>

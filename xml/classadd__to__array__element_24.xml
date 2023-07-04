@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="classadd__to__array__element_24" kind="class" language="Prolog" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classadd__to__array__element_24" kind="predicate" language="Prolog" prot="public">
     <compoundname>add_to_array_element/4</compoundname>
     <briefdescription>
 <para><bold>add_to_array_element</bold>(+ <emphasis>Name</emphasis>, + <emphasis>Index</emphasis>, + <emphasis>Number</emphasis>, ? <emphasis>NewValue</emphasis>) </para>
@@ -9,7 +9,7 @@
 <para>Add <emphasis>Number</emphasis> <emphasis>Name</emphasis>[ <emphasis>Index</emphasis>] and unify <emphasis>NewValue</emphasis> with the incremented value Observe that <emphasis>Name</emphasis>[ <emphasis>Index</emphasis>] must be an number If <emphasis>Name</emphasis> is a static array the type of the array must be <computeroutput>int</computeroutput> or <computeroutput>float</computeroutput> If the type of the array is <computeroutput>int</computeroutput> you only may add integers, if it is <computeroutput>float</computeroutput> you may add integers or floats If <emphasis>Name</emphasis> corresponds to a dynamic array the array element must have been previously bound to a number and <computeroutput>Number</computeroutput> can be any kind of number</para>
 <para>The <computeroutput>add_to_array_element/3 </computeroutput> built-in actually uses <computeroutput><ref refid="classsetarg_23" kindref="compound">setarg/3</ref> </computeroutput> to update elements of dynamic arrays For intensive operations we suggest it may be less expensive to unify each element of the array with a mutable terms and to use the operations on mutable terms </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/arrays.c" line="2200" column="1" bodyfile="/home/vsc/github/yap/C/arrays.c" bodystart="2200" bodyend="-1"/>
+    <location file="C/arrays.c" line="2200" column="1" bodyfile="C/arrays.c" bodystart="2200" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

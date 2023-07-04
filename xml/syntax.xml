@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="syntax" kind="page">
     <compoundname>syntax</compoundname>
     <title>YAP Syntax</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><anchor id="syntax_1md_docs_md_syntax"/></para>
 <para>We will describe the syntax of YAP at two levels We first will describe the syntax for Prolog terms In a second level we describe the tokens from which Prolog terms are built</para>
 <sect2 id="syntax_1autotoc_md12">
 <title>[Syntax of Terms ](Formal_Syntax)</title>
@@ -46,8 +47,8 @@
 </programlisting></para>
 <para>Notes:</para>
 <para><itemizedlist>
-<listitem><para>op(N,T) denotes an atom which has been previously declared with type <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> and base precedence <emphasis>N</emphasis></para>
-</listitem><listitem><para>Since <computeroutput>,</computeroutput> is itself a pre-declared operator with type <computeroutput>xfy</computeroutput> and precedence 1000, if a subterm starts with a &apos;(&apos;, op must be followed by a space to avoid ambiguity with the case of a functor followed by arguments, e.g.:</para>
+<listitem><para><ref refid="conceptop" kindref="compound">op(N,T)</ref> denotes an atom which has been previously declared with type <emphasis><ref refid="classT" kindref="compound">T</ref></emphasis> and base precedence <emphasis>N</emphasis></para>
+</listitem><listitem><para>Since <computeroutput>,</computeroutput> is itself a pre-declared operator with type <computeroutput>xfy</computeroutput> and precedence 1000, if a subterm starts with a &apos;(&apos;, op must be followed by a space to avoid ambiguity with the case of a functor followed by arguments, e.g:</para>
 </listitem></itemizedlist>
 </para>
 <para><programlisting><codeline><highlight class="normal">+<sp/>(a,b)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -64,79 +65,9 @@
 </sect2>
 <sect2 id="syntax_1autotoc_md13">
 <title>[Prolog Tokens ](Tokens)</title>
-<para>Prolog tokens are grouped into the following categories:</para>
-</sect2>
-<sect2 id="syntax_1autotoc_md14">
-<title>[Numbers ](Numbers)</title>
-<para>Numbers can be further subdivided into integer and floating-point numbers</para>
-<sect3 id="syntax_1autotoc_md15">
-<title>[Integers ](Integers)</title>
-<para>Integer numbers are described by the following regular expression:</para>
-<para><programlisting><codeline><highlight class="normal">&lt;integer&gt;<sp/>:=<sp/><sp/><sp/>{&lt;digit&gt;+&lt;singlequote&gt;|</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>0{xXo}}&lt;alpha_numeric_char&gt;+</highlight></codeline>
-</programlisting></para>
-<para>where:</para>
-<para><orderedlist>
-<listitem><para>{...} stands for optionality, <emphasis>+</emphasis> optional repetition (one or more times),</para>
-</listitem><listitem><para>\&lt;digit\&gt; denotes one of the characters 0 ... 9,</para>
-</listitem><listitem><para>| denotes or,</para>
-</listitem><listitem><para>\&lt;single-quote\&gt; denotes the character &quot;&apos;&quot;</para>
-</listitem></orderedlist>
-</para>
-<para>The digits before the <emphasis>\&lt;single-quote\&gt;</emphasis> character, when present, form the number basis, that can go from 0, 1 and up to 36 Letters from <computeroutput>A</computeroutput> to <computeroutput>Z</computeroutput> are used when the basis is larger than 10</para>
-<para>Note that if no basis is specified then base 10 is assumed Note also that the last digit of an integer token can not be immediately followed by one of the characters &apos;e&apos;, &apos;E&apos;, or &apos;&apos;</para>
-<para>Following the ISO standard, YAP also accepts directives of the form <computeroutput>0x</computeroutput> to represent numbers in hexadecimal base and of the form <computeroutput>0o</computeroutput> to represent numbers in octal base For usefulness, YAP also accepts directives of the form <computeroutput>0X</computeroutput> to represent numbers in hexadecimal base</para>
-<sect4 id="syntax_1autotoc_md16">
-<title>Example:</title>
-<para>the following tokens all denote the same integer</para>
-<para><programlisting><codeline><highlight class="normal">10<sp/><sp/>2&apos;1010<sp/><sp/>3&apos;101<sp/><sp/>8&apos;12<sp/><sp/>16&apos;a<sp/><sp/>36&apos;a<sp/><sp/>0xa<sp/><sp/>0o12</highlight></codeline>
-</programlisting></para>
-<para>Numbers of the form <computeroutput>0&apos;a</computeroutput> are used to represent character constants So, the following tokens denote the same integer:</para>
-<para><programlisting><codeline><highlight class="normal">0&apos;d<sp/><sp/>100</highlight></codeline>
-</programlisting></para>
-<para>YAP (version 6.3.4) supports integers that can fit the word size of the machine This is 32 bits in most current machines, but 64 in some others, such as the Alpha running Linux or Digital Unix The scanner will read larger or smaller integers erroneously</para>
-</sect4>
-</sect3>
-<sect3 id="syntax_1autotoc_md17">
-<title>[Floats](Floats)</title>
-<para>Floating-point numbers are described by:</para>
-<para><programlisting><codeline><highlight class="normal">&lt;float&gt;<sp/>:=<sp/>&lt;digit&gt;+{&lt;dot&gt;&lt;digit&gt;+}</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;exponent-marker&gt;{&lt;sign&gt;}&lt;digit&gt;+</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|&lt;digit&gt;+&lt;dot&gt;&lt;digit&gt;+</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{&lt;exponent-marker&gt;{&lt;sign&gt;}&lt;digit&gt;+}</highlight></codeline>
-</programlisting></para>
-<para>where</para>
-<para><orderedlist>
-<listitem><para>\&lt;dot\&gt; denotes the decimal-point character &apos;&apos;,</para>
-</listitem><listitem><para>\&lt;exponent-marker\&gt; denotes one of &apos;e&apos; or &apos;E&apos;, and</para>
-</listitem><listitem><para>\&lt;sign\&gt; denotes one of &apos;+&apos; or &apos;-&apos;</para>
-</listitem></orderedlist>
-</para>
-<sect4 id="syntax_1autotoc_md18">
-<title>[[Examples:</title>
-<para><programlisting><codeline><highlight class="normal">10.0<sp/><sp/><sp/>10e3<sp/><sp/><sp/>10e-3<sp/><sp/><sp/>3.1415e+3</highlight></codeline>
-</programlisting></para>
-<para>Floating-point numbers are represented as a double in the target machine This is usually a 64-bit number</para>
-</sect4>
-</sect3>
-</sect2>
-<sect2 id="syntax_1autotoc_md19">
-<title>[Character Strings ](Strings)</title>
-<para>Strings are described by the following rules:</para>
-<para><programlisting><codeline><highlight class="normal">string<sp/>--&gt;<sp/>&quot;<sp/>string_quoted_characters<sp/>&quot;</highlight></codeline>
-<codeline><highlight class="normal">string<sp/>--&gt;<sp/>`<sp/>string_quoted_characters<sp/>`</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">string_quoted_characters<sp/>--&gt;<sp/>&apos;&quot;&apos;<sp/>&apos;&quot;&apos;<sp/>string_quoted_characters</highlight></codeline>
-<codeline><highlight class="normal">string_quoted_characters<sp/>--&gt;<sp/>&apos;\&apos;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>escape_sequence<sp/>string_quoted_characters</highlight></codeline>
-<codeline><highlight class="normal">string_quoted_characters<sp/>--&gt;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>string_character<sp/>string_quoted_characters</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">escape_sequence<sp/>--&gt;<sp/>&apos;a&apos;<sp/>|<sp/>&apos;b&apos;<sp/>|<sp/>&apos;r&apos;<sp/>|<sp/>&apos;f&apos;<sp/>|<sp/>&apos;t&apos;<sp/>|<sp/>&apos;n&apos;<sp/>|<sp/>&apos;v&apos;</highlight></codeline>
-<codeline><highlight class="normal">escape_sequence<sp/>--&gt;<sp/>&apos;\&apos;<sp/>|<sp/>&apos;&quot;&apos;<sp/>|<sp/>&apos;&apos;&apos;<sp/>|<sp/>&apos;`&apos;</highlight></codeline>
-<codeline><highlight class="normal">escape_sequence<sp/>--&gt;<sp/>at_most_3_octal_digit_seq_char<sp/>&apos;\&apos;</highlight></codeline>
-<codeline><highlight class="normal">escape_sequence<sp/>--&gt;<sp/>&apos;x&apos;<sp/>at_most_2_hexa_digit_seq_char<sp/>&apos;\&apos;</highlight></codeline>
-</programlisting></para>
+<para>&quot; string_quoted_characters &quot; string --&gt; ` string_quoted_characters `</para>
+<para>string_quoted_characters --&gt; &apos;&quot;&apos; &apos;&quot;&apos; string_quoted_characters string_quoted_characters --&gt; &apos;\&apos; escape_sequence string_quoted_characters string_quoted_characters --&gt; string_character string_quoted_characters</para>
+<para>escape_sequence --&gt; &apos;a&apos; | &apos;b&apos; | &apos;r&apos; | &apos;f&apos; | &apos;t&apos; | &apos;n&apos; | &apos;v&apos; escape_sequence --&gt; &apos;\&apos; | &apos;&quot;&apos; | &apos;&apos;&apos; | &apos;`&apos; escape_sequence --&gt; at_most_3_octal_digit_seq_char &apos;\&apos; escape_sequence --&gt; &apos;x&apos; at_most_2_hexa_digit_seq_char &apos;\&apos; </para>
 <para>where <computeroutput>string_character</computeroutput> is any character except the double quote (back quote) and escape characters</para>
 <para>YAP supports four different textual elements:</para>
 <para><itemizedlist>
@@ -157,206 +88,92 @@ either as an octal or hexadecimal number
 
 The next examples demonstrates the use of escape sequences in YAP:
 
-@icode 
-&quot;\x0c" &quot;\01\&quot; &quot;\f&quot; &quot;\&quot;
-@endicode 
-
-The first three examples return a list including only character 12 (form
-feed) The last example escapes the escape character
-
-Escape sequences were not available in C-Prolog and in original
-versions of YAP up to 4.2.0 Escape sequences can be disabled by using:
-
-@icode 
-:- yap_flag(character_escapes,false).
-@endicode 
-
-
-
-@subsection autotoc_md20 [Atoms ](Atoms)
-
-Atoms are defined by one of the following rules:
-
-@icode 
-   atom --&gt; solo-character
-   atom --&gt; lower-case-letter name-character*
-   atom --&gt; symbol-character+
-   atom --&gt; single-quote  single-quote
-   atom --&gt; &apos;&apos;&apos; atom_quoted_characters &apos;&apos;&apos;
-
-  atom_quoted_characters --&gt; &apos;&apos;&apos; &apos;&apos;&apos; atom_quoted_characters
-  atom_quoted_characters --&gt; &apos;\&apos; atom_sequence string_quoted_characters
-  atom_quoted_characters --&gt; character string_quoted_characters
-@endicode 
-where:
-
-@icode 
-   &lt;solo-character&gt;     denotes one of:    ! ;
-   &lt;symbol-character&gt;   denotes one of:    # &amp; * + - . / : &lt;
-                                           = &gt; ? @ \ ^ ~ `
-   &lt;lower-case-letter&gt;  denotes one of:    a...z
-   &lt;name-character&gt;     denotes one of:    _ a...z A...Z 0....9
-   &lt;single-quote&gt;       denotes:           &apos;
-@endicode 
-
-and &lt;tt&gt;string_character&lt;/tt&gt; denotes any character except the double quote
-and escape characters Note that escape sequences in strings and atoms
-follow the same rules
-
-Examples:
-
-@icode 
-a   a12x   &apos;$a&apos;   !   =&gt;  &apos;1 2&apos;
-@endicode 
-
-Version &lt;tt&gt;4.2.0&lt;/tt&gt; of YAP removed the previous limit of 256
-characters on an atom Size of an atom is now only limited by the space
-available in the system
-
-@subsection autotoc_md21 [Variables ](Variables)
-
-Variables are described by:
-
-@icode 
-   &lt;variable-starter&gt;&lt;variable-character&gt;+
-@endicode 
-where
-
-@icode 
-  &lt;variable-starter&gt;   denotes one of:    _ A...Z
-  &lt;variable-character&gt; denotes one of:    _ a...z A...Z
-@endicode 
-
-If a variable is referred only once in a term, it needs not to be named
-and one can use the character &lt;tt&gt;_&lt;/tt&gt; to represent the variable These
-variables are known as anonymous variables Please note that different
-occurrences of &lt;tt&gt;_&lt;/tt&gt; on the same term represent &lt;em&gt;different&lt;/em&gt;
-anonymous variables
-
-YAP accepts both the character &lt;tt&gt;_&lt;/tt&gt;, or &lt;tt&gt;_&lt;/tt&gt; followed by the usual
-alphanumeric characters In the former case, each &lt;tt&gt;_&lt;/tt&gt; corresponds to a
-different anonymous variable In the latter case, a name can be used
-to represent a singleton variable This allows preserving the name of arguments across clauses, as in the following example:
-
-@icode 
-member(El, [El|_Tail]).
-member(El, [_El|Tail]) :-
-      member(El, Tail).
-@endicode 
-
-In the example &lt;em&gt;El&lt;/em&gt; and &lt;em&gt;Tail&lt;/em&gt; refer to the head and tail of the clause
-clause Using the underscore, we can preserve the name while declaring
-the variables are singletons
-
-@subsection autotoc_md22 [Punctuation Tokens ](Punctuation_Tokens)
-
-Punctuation tokens consist of one of the following characters:
-
-@icode 
-( ) , [ ] { } |
-@endicode 
-
-These characters are used to group terms
-
-@subsection autotoc_md23 [Character Layout ](LayoutComents)
-
-Any characters with ASCII code less than or equal to 32 appearing before
-a token are ignored
-
-All the text appearing in a line after the character \a % is taken to
-be a comment and ignored (including \a %)  Comments can also be
-inserted by using the sequence &lt;tt&gt;/\\*&lt;/tt&gt; to start the comment and
-&lt;tt&gt;\\*&lt;/tt&gt; followed by &lt;tt&gt;/&lt;/tt&gt; to finish it In the presence of any sequence of comments or
-layout characters, the YAP parser behaves as if it had found a
-single blank character The end of a file also counts as a blank
-character for this purpose
-
-
-@subsection autotoc_md24 [Encoding Wide Character Support ](WideChars)
-
-
-
-YAP now implements a SWI-Prolog compatible interface to wide
-characters and the Universal Character Set (UCS) The following text
-was adapted from the SWI-Prolog manual
-
-YAP now  supports wide characters, characters with character
-codes above 255 that cannot be represented in a single byte
-&lt;em&gt;Universal Character Set&lt;/em&gt; (UCS) is the ISO/IEC 10646 standard
-that specifies a unique 31-bits unsigned integer for any character in
-any language  It is a superset of 16-bit Unicode, which in turn is
-a superset of ISO 8859-1 (ISO Latin-1), a superset of US-ASCII  UCS
-can handle strings holding characters from multiple languages and
-character classification (uppercase, lowercase, digit, etc.) and
-operations such as case-conversion are unambiguously defined
-
- YAP uses UTF-8 internally In this encoding, the representation of
-code points can have variable length ASCII codes still take a single
-byte, but western european latin text will have accented
-characeters that require two bytes in UTF-8 This representational
-issue is completely transparent to the Prolog user  Users of the
-foreign language interface sometimes need to be aware of these issues
-though Notice that this will likely change in the future, we probably
-will use an UTF-8 based representation
-
-YAP assumes that strings are null terminated UTF-8 has no support for
-encoding null characters within a sequence of codes, but YAP does
-prove some limited support for an UTF extension that allows such
-encodings
-
-Character coding comes into view when characters of strings need to be
-read from or written to file or when they have to be communicated to
-other software components using the foreign language interface In this
-section we only deal with I/O through streams, which includes file I/O
-as well as I/O through network sockets
-
-@subsubsection autotoc_md25 [Wide character encodings on streams ](Stream_Encoding)
-
-The UCS standard describes all possible characters (or code points, as they include
-ideograms, ligatures, and other symbols) The current version, Unicode 8.0, allows
-code points up to 0x10FFFF, and thus allows for 1,114,112 code points See &lt;a href=&quot;<ulink url="http://unicode.org/charts/">http://unicode.org/charts/</ulink>&quot; &gt;Unicode Charts&lt;/a&gt; for the supported languages
-
-Notice that most symbols are rarely used Encodings represent the Unicode characters in a way
-that is more suited for communication The most popular encoding, especially in the context of the web and in the Unix/Linux/BSD/Mac communities, is
-UTF-8 UTF-8 is compact and as it uses bytes, does not have different endianesses
-Bytes 0...127 represent simply the corresponding US-ASCII
-character, while bytes 128...255 are used for multi-byte
-encoding of characters placed higher in the UCS space
-
-Especially on
-MS-Windows and Java the 16-bit Unicode standard, represented by pairs of bytes is
-also popular Originally, Microsoft supported a UCS-2 with 16 bits that
- could represent only up to 64k characters This was later extended to support the full
- Unicode, we will call the latter version UTF-16 The extension uses a hole in the first 64K code points Characters above 0xFFFF are divided into two 2-byte words, each one in that hole There are two versions of UTF-16: big and low
- endian By default, UTF-16 is big endian, in practice most often it is used on Intel
- hardware that is naturally little endian
-
- UTF-32, often called UCS-4, provides a natural interface where a code point is coded as
- four octets Unfortunately, it is also more expensive, so it is not as widely used
-
- Last, other encodings are also commonly used One such legacy encoding is ISO-LATIN-1, that
- supported latin based languages in western europe YAP currently uses either ISO-LATIN-1 or UTF-32
- internally
-
-Prolog supports the default encoding used by the Operating System,
-Namely, YAP checks the variables LANG, LC_ALL and LC_TYPE Say, if at boot YAP detects that the
-environment variable &lt;tt&gt;LANG&lt;/tt&gt; ends in &quot;UTF-8&quot;, this encoding is
-assumed Otherwise, the default is &lt;tt&gt;text&lt;/tt&gt; and the translation is
-left to the wide-character functions of the C-library (note that the
-Prolog native UTF-8 mode is considerably faster than the generic
-&lt;tt&gt;mbrtowc()&lt;/tt&gt; one)  &lt;br&gt;
-
-Prolog allows the encoding to be specified explicitly in
-@ref load_files/2  for loading Prolog source with an alternative
-encoding, &lt;tt&gt;@ref open/4 &lt;/tt&gt; when opening files or using &lt;tt&gt;@ref set_stream/2 &lt;/tt&gt; on
-any open stream (not yet implemented) For Prolog source files we also
-provide the &lt;tt&gt;@ref encoding/1 &lt;/tt&gt; directive that can be used to switch
-between encodings that are compatible to US-ASCII (&lt;tt&gt;ascii&lt;/tt&gt;,
-&lt;tt&gt;iso_latin_1&lt;/tt&gt;, &lt;tt&gt;utf8&lt;/tt&gt; and many locales)
-
-For
-additional information and Unicode resources, please visit the
-&lt;a href=&quot;<ulink url="http://www.unicode.org/">http://www.unicode.org/</ulink>" &gt;unicode organization web page</computeroutput></para>
+@code 
+&quot;\x0c" &quot;\01\&quot; &quot;\f&quot; &quot;\\&quot; </computeroutput></para>
+<para><computeroutput>The first three examples return a list including only character 12 (form feed) The last example escapes the escape character</computeroutput></para>
+<para><computeroutput>Escape sequences were not available in C-Prolog and in original versions of YAP up to 4.2.0 Escape sequences can be disabled by using:</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal">:-<sp/>yap_flag(character_escapes,false).</highlight></codeline>
+</programlisting></computeroutput></para>
+<para><computeroutput></computeroutput></para>
+</sect2>
+<sect2 id="syntax_1autotoc_md20">
+<title>[Atoms ](Atoms)</title>
+<para><computeroutput> Atoms are defined by one of the following rules:</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal"><sp/>atom<sp/>--&gt;<sp/>solo-character</highlight></codeline>
+<codeline><highlight class="normal"><sp/>atom<sp/>--&gt;<sp/>lower-case-letter<sp/>name-character*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>atom<sp/>--&gt;<sp/>symbol-character+</highlight></codeline>
+<codeline><highlight class="normal"><sp/>atom<sp/>--&gt;<sp/>single-quote<sp/><sp/>single-quote</highlight></codeline>
+<codeline><highlight class="normal"><sp/>atom<sp/>--&gt;<sp/>&apos;&apos;&apos;<sp/>atom_quoted_characters<sp/>&apos;&apos;&apos;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">atom_quoted_characters<sp/>--&gt;<sp/>&apos;&apos;&apos;<sp/>&apos;&apos;&apos;<sp/>atom_quoted_characters</highlight></codeline>
+<codeline><highlight class="normal">atom_quoted_characters<sp/>--&gt;<sp/>&apos;\&apos;<sp/>atom_sequence<sp/>string_quoted_characters</highlight></codeline>
+<codeline><highlight class="normal">atom_quoted_characters<sp/>--&gt;<sp/>character<sp/>string_quoted_characters</highlight></codeline>
+</programlisting> where:</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal">&lt;solo-character&gt;<sp/><sp/><sp/><sp/><sp/>denotes<sp/>one<sp/>of:<sp/><sp/><sp/><sp/>!<sp/>;</highlight></codeline>
+<codeline><highlight class="normal">&lt;symbol-character&gt;<sp/><sp/><sp/>denotes<sp/>one<sp/>of:<sp/><sp/><sp/><sp/>#<sp/>&amp;<sp/>*<sp/>+<sp/>-<sp/>.<sp/>/<sp/>:<sp/>&lt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&gt;<sp/>?<sp/>@<sp/>\<sp/>^<sp/>~<sp/>`</highlight></codeline>
+<codeline><highlight class="normal">&lt;lower-case-letter&gt;<sp/><sp/>denotes<sp/>one<sp/>of:<sp/><sp/><sp/><sp/>a...z</highlight></codeline>
+<codeline><highlight class="normal">&lt;name-character&gt;<sp/><sp/><sp/><sp/><sp/>denotes<sp/>one<sp/>of:<sp/><sp/><sp/><sp/>_<sp/>a...z<sp/>A...Z<sp/>0....9</highlight></codeline>
+<codeline><highlight class="normal">&lt;single-quote&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>denotes:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;</highlight></codeline>
+</programlisting></computeroutput></para>
+<para><computeroutput>and <computeroutput>string_character</computeroutput> denotes any character except the double quote and escape characters Note that escape sequences in strings and atoms follow the same rules</computeroutput></para>
+<para><computeroutput>Examples:</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal">a<sp/><sp/><sp/>a12x<sp/><sp/><sp/>&apos;$a&apos;<sp/><sp/><sp/>!<sp/><sp/><sp/>=&gt;<sp/><sp/>&apos;1<sp/>2&apos;</highlight></codeline>
+</programlisting></computeroutput></para>
+<para><computeroutput>Version <computeroutput>4.2.0</computeroutput> of YAP removed the previous limit of 256 characters on an atom Size of an atom is now only limited by the space available in the system</computeroutput></para>
+<para><computeroutput></computeroutput></para>
+</sect2>
+<sect2 id="syntax_1autotoc_md21">
+<title>[Variables ](Variables)</title>
+<para><computeroutput> Variables are described by:</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal">&lt;variable-starter&gt;&lt;variable-character&gt;+</highlight></codeline>
+</programlisting> where</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal">&lt;variable-starter&gt;<sp/><sp/><sp/>denotes<sp/>one<sp/>of:<sp/><sp/><sp/><sp/>_<sp/>A...Z</highlight></codeline>
+<codeline><highlight class="normal">&lt;variable-character&gt;<sp/>denotes<sp/>one<sp/>of:<sp/><sp/><sp/><sp/>_<sp/>a...z<sp/>A...Z</highlight></codeline>
+</programlisting></computeroutput></para>
+<para><computeroutput>If a variable is referred only once in a term, it needs not to be named and one can use the character <computeroutput>_</computeroutput> to represent the variable These variables are known as anonymous variables Please note that different occurrences of <computeroutput>_</computeroutput> on the same term represent <emphasis>different</emphasis> anonymous variables</computeroutput></para>
+<para><computeroutput>YAP accepts both the character <computeroutput>_</computeroutput>, or <computeroutput>_</computeroutput> followed by the usual alphanumeric characters In the former case, each <computeroutput>_</computeroutput> corresponds to a different anonymous variable In the latter case, a name can be used to represent a singleton variable This allows preserving the name of arguments across clauses, as in the following example:</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal">member(El,<sp/>[El|_Tail]).</highlight></codeline>
+<codeline><highlight class="normal">member(El,<sp/>[_El|Tail])<sp/>:-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>member(El,<sp/>Tail).</highlight></codeline>
+</programlisting></computeroutput></para>
+<para><computeroutput>In the example <emphasis>El</emphasis> and <emphasis>Tail</emphasis> refer to the head and tail of the clause clause Using the underscore, we can preserve the name while declaring the variables are singletons</computeroutput></para>
+<para><computeroutput></computeroutput></para>
+</sect2>
+<sect2 id="syntax_1autotoc_md22">
+<title>[Punctuation Tokens ](Punctuation_Tokens)</title>
+<para><computeroutput> Punctuation tokens consist of one of the following characters:</computeroutput></para>
+<para><computeroutput><programlisting><codeline><highlight class="normal">(<sp/>)<sp/>,<sp/>[<sp/>]<sp/>{<sp/>}<sp/>|</highlight></codeline>
+</programlisting></computeroutput></para>
+<para><computeroutput>These characters are used to group terms</computeroutput></para>
+<para><computeroutput></computeroutput></para>
+</sect2>
+<sect2 id="syntax_1autotoc_md23">
+<title>[Character Layout ](LayoutComents)</title>
+<para><computeroutput> Any characters with ASCII code less than or equal to 32 appearing before a token are ignored</computeroutput></para>
+<para><computeroutput>All the text appearing in a line after the character <emphasis>%</emphasis> is taken to be a comment and ignored (including <emphasis>%</emphasis>) Comments can also be inserted by using the sequence <computeroutput>/\*</computeroutput> to start the comment and <computeroutput>\*</computeroutput> followed by <computeroutput>/</computeroutput> to finish it In the presence of any sequence of comments or layout characters, the YAP parser behaves as if it had found a single blank character The end of a file also counts as a blank character for this purpose</computeroutput></para>
+<para><computeroutput></computeroutput></para>
+</sect2>
+<sect2 id="syntax_1autotoc_md24">
+<title>[Encoding Wide Character Support ](WideChars)</title>
+<para><computeroutput></computeroutput></para>
+<para><computeroutput>YAP now implements a SWI-Prolog compatible interface to wide characters and the Universal Character Set (UCS) The following text was adapted from the SWI-Prolog manual</computeroutput></para>
+<para><computeroutput>YAP now supports wide characters, characters with character codes above 255 that cannot be represented in a single byte <emphasis>Universal Character Set</emphasis> (UCS) is the ISO/IEC 10646 standard that specifies a unique 31-bits unsigned integer for any character in any language It is a superset of 16-bit Unicode, which in turn is a superset of ISO 8859-1 (ISO Latin-1), a superset of US-ASCII UCS can handle strings holding characters from multiple languages and character classification (uppercase, lowercase, digit, etc.) and operations such as case-conversion are unambiguously defined</computeroutput></para>
+<para><computeroutput> YAP uses UTF-8 internally In this encoding, the representation of code points can have variable length ASCII codes still take a single byte, but western european latin text will have accented characeters that require two bytes in UTF-8 This representational issue is completely transparent to the Prolog user Users of the foreign language interface sometimes need to be aware of these issues though Notice that this will likely change in the future, we probably will use an UTF-8 based representation</computeroutput></para>
+<para><computeroutput>YAP assumes that strings are null terminated UTF-8 has no support for encoding null characters within a sequence of codes, but YAP does prove some limited support for an UTF extension that allows such encodings</computeroutput></para>
+<para><computeroutput>Character coding comes into view when characters of strings need to be read from or written to file or when they have to be communicated to other software components using the foreign language interface In this section we only deal with I/O through streams, which includes file I/O as well as I/O through network sockets</computeroutput></para>
+<para><computeroutput></computeroutput></para>
+<sect3 id="syntax_1autotoc_md25">
+<title>[Wide character encodings on streams ](Stream_Encoding)</title>
+<para><computeroutput> The UCS standard describes all possible characters (or code points, as they include ideograms, ligatures, and other symbols) The current version, Unicode 8.0, allows code points up to 0x10FFFF, and thus allows for 1,114,112 code points See <ulink url="http://unicode.org/charts/">Unicode Charts</ulink> for the supported languages</computeroutput></para>
+<para><computeroutput>Notice that most symbols are rarely used Encodings represent the Unicode characters in a way that is more suited for communication The most popular encoding, especially in the context of the web and in the Unix/Linux/BSD/Mac communities, is UTF-8 UTF-8 is compact and as it uses bytes, does not have different endianesses Bytes 0...127 represent simply the corresponding US-ASCII character, while bytes 128...255 are used for multi-byte encoding of characters placed higher in the UCS space</computeroutput></para>
+<para><computeroutput>Especially on MS-Windows and Java the 16-bit Unicode standard, represented by pairs of bytes is also popular Originally, Microsoft supported a UCS-2 with 16 bits that could represent only up to 64k characters This was later extended to support the full Unicode, we will call the latter version UTF-16 The extension uses a hole in the first 64K code points Characters above 0xFFFF are divided into two 2-byte words, each one in that hole There are two versions of UTF-16: big and low endian By default, UTF-16 is big endian, in practice most often it is used on Intel hardware that is naturally little endian</computeroutput></para>
+<para><computeroutput> UTF-32, often called UCS-4, provides a natural interface where a code point is coded as four octets Unfortunately, it is also more expensive, so it is not as widely used</computeroutput></para>
+<para><computeroutput> Last, other encodings are also commonly used One such legacy encoding is ISO-LATIN-1, that supported latin based languages in western europe YAP currently uses either ISO-LATIN-1 or UTF-32 internally</computeroutput></para>
+<para><computeroutput>Prolog supports the default encoding used by the Operating System, Namely, YAP checks the variables LANG, LC_ALL and LC_TYPE Say, if at boot YAP detects that the environment variable <computeroutput>LANG</computeroutput> ends in &quot;UTF-8&quot;, this encoding is assumed Otherwise, the default is <computeroutput>text</computeroutput> and the translation is left to the wide-character functions of the C-library (note that the Prolog native UTF-8 mode is considerably faster than the generic <computeroutput>mbrtowc()</computeroutput> one) <linebreak/>
+</computeroutput></para>
+<para><computeroutput>Prolog allows the encoding to be specified explicitly in <ref refid="classload__files_22" kindref="compound">load_files/2</ref> for loading Prolog source with an alternative encoding, <computeroutput><ref refid="classopen_24" kindref="compound">open/4</ref> </computeroutput> when opening files or using <computeroutput>set_stream/2 </computeroutput> on any open stream (not yet implemented) For Prolog source files we also provide the <computeroutput>encoding/1 </computeroutput> directive that can be used to switch between encodings that are compatible to US-ASCII (<computeroutput>ascii</computeroutput>, <computeroutput>iso_latin_1</computeroutput>, <computeroutput>utf8</computeroutput> and many locales)</computeroutput></para>
+<para><computeroutput>For additional information and Unicode resources, please visit the <ulink url="http://www.unicode.org/">unicode</ulink> organization web page</computeroutput></para>
 <para><computeroutput>YAP currently defines and supports the following encodings:</computeroutput></para>
 <para><computeroutput><itemizedlist>
 <listitem><para><computeroutput>octet</computeroutput> Default encoding for <emphasis>binary</emphasis> streams This causes the stream to be read and written fully untranslated</para>
@@ -381,11 +198,11 @@ additional information and Unicode resources, please visit the
 <para><computeroutput>BOMa are necessary on multi-byte encodings, such as UTF-16 and UTF-32 There is a BOM for UTF-8, but it is rarely used The BOM is handled by the <ref refid="classopen_24" kindref="compound">open/4</ref> predicate By default, text-files are probed for the BOM when opened for reading If a BOM is found, the encoding is set accordingly and the property <computeroutput>bom(true)</computeroutput> is available through <ref refid="classstream__property_22" kindref="compound">stream_property/2</ref> When opening a file for writing, writing a BOM can be requested using the option <computeroutput>bom(true)</computeroutput> with <computeroutput><ref refid="classopen_24" kindref="compound">open/4</ref> </computeroutput> YAP will parse an UTF-8 file for a BOM only if explicitly required to do so Do notice that YAP will write a BOM by default on UTF-16 (including UCS-2) and UTF-32; otherwise the default is not to write a BOM BOMs are not avaliable for ASCII and ISO-LATIN-1</computeroutput></para>
 <para><computeroutput></computeroutput></para>
 </sect4>
+</sect3>
 </sect2>
 <sect2 id="syntax_1autotoc_md27">
 <title>[Summary of YAP Predefined Operators ](Operators)</title>
-<para><computeroutput></computeroutput></para>
-<para><computeroutput>The Prolog syntax caters for operators of three main kinds:</computeroutput></para>
+<para><computeroutput> The Prolog syntax caters for operators of three main kinds:</computeroutput></para>
 <para><computeroutput><itemizedlist>
 <listitem><para>prefix;</para>
 </listitem><listitem><para>infix;</para>
@@ -432,6 +249,6 @@ additional information and Unicode resources, please visit the
 </programlisting> </computeroutput></para>
 </sect2>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/docs/md/syntax.md"/>
+    <location file="docs/md/syntax.md"/>
   </compounddef>
 </doxygen>

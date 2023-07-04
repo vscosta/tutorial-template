@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="t_8c" kind="file" language="C++">
     <compoundname>t.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -11,7 +11,7 @@
     <includes local="no">stdio.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/t.c</label>
+        <label>C/t.c</label>
         <link refid="t_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -449,12 +449,33 @@
       </node>
     </incdepgraph>
       <sectiondef kind="user-defined">
-      <member refid="group__Threads_1ga667eda017b5857ef3ccd7630685e63c3" kind="variable"><name>PL_Message_Queue</name></member>
+      <memberdef kind="variable" id="group__Threads_1ga667eda017b5857ef3ccd7630685e63c3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__PL__blob__t" kindref="compound">blob_type_t</ref></type>
+        <definition>blob_type_t PL_Message_Queue</definition>
+        <argsstring></argsstring>
+        <name>PL_Message_Queue</name>
+        <initializer>= {
+  YAP_BLOB_MAGIC_B,
+  PL_BLOB_UNIQUE | PL_BLOB_NOCOPY,
+  &quot;message_queue&quot;,
+  0, 
+  0, 
+  0, 
+  0 
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/t.c" line="47" column="13" bodyfile="C/t.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/t.c"/>
+    <location file="C/t.c"/>
   </compounddef>
 </doxygen>

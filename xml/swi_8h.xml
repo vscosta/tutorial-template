@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="swi_8h" kind="file" language="C++">
     <compoundname>swi.h</compoundname>
     <includes refid="SWI-Prolog_8h" local="yes">SWI-Prolog.h</includes>
-    <includedby refid="library_2dialect_2swi_2fli_2blobs_8c" local="yes">/home/vsc/github/yap/library/dialect/swi/fli/blobs.c</includedby>
-    <includedby refid="swi_8c" local="yes">/home/vsc/github/yap/library/dialect/swi/fli/swi.c</includedby>
+    <includedby refid="library_2dialect_2swi_2fli_2blobs_8c" local="yes">library/dialect/swi/fli/blobs.c</includedby>
+    <includedby refid="swi_8c" local="yes">library/dialect/swi/fli/swi.c</includedby>
     <incdepgraph>
       <node id="2">
         <label>SWI-Prolog.h</label>
@@ -35,7 +35,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/library/dialect/swi/fli/swi.h</label>
+        <label>library/dialect/swi/fli/swi.h</label>
         <link refid="swi_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -61,15 +61,15 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>/home/vsc/github/yap/library/dialect/swi/fli/blobs.c</label>
+        <label>library/dialect/swi/fli/blobs.c</label>
         <link refid="library_2dialect_2swi_2fli_2blobs_8c"/>
       </node>
       <node id="3">
-        <label>/home/vsc/github/yap/library/dialect/swi/fli/swi.c</label>
+        <label>library/dialect/swi/fli/swi.c</label>
         <link refid="swi_8c"/>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/library/dialect/swi/fli/swi.h</label>
+        <label>library/dialect/swi/fli/swi.h</label>
         <link refid="swi_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -78,23 +78,148 @@
       </node>
     </invincdepgraph>
       <sectiondef kind="user-defined">
-      <member refid="group__swi-c-interface_1gab8a6a8e898a3ff1eadda18c2ce6dd61c" kind="function"><name>Yap_swi_install</name></member>
+      <memberdef kind="function" id="group__swi-c-interface_1gab8a6a8e898a3ff1eadda18c2ce6dd61c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_swi_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_swi_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.c" line="3085" column="6" bodyfile="library/dialect/swi/fli/swi.c" bodystart="3085" bodyend="3085" declfile="library/dialect/swi/fli/swi.h" declline="41" declcolumn="6"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="define">
-      <member refid="group__swi-c-interface_1ga0ef1c30c5e26afc962eb302849eb1ae0" kind="define"><name>isDefinedProcedure</name></member>
+      <memberdef kind="define" id="group__swi-c-interface_1ga0ef1c30c5e26afc962eb302849eb1ae0" prot="public" static="no">
+        <name>isDefinedProcedure</name>
+        <param><defname>pred</defname></param>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.h" line="85" column="9" bodyfile="library/dialect/swi/fli/swi.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__swi-c-interface_1ga8e9ed06b7e91e952b96c4c9552f43226" kind="function"><name>Yap_install_blobs</name></member>
-      <member refid="group__swi-c-interface_1ga95268c5bcd18ee40dba54c8d739d53de" kind="function"><name>SWIModuleToModule</name></member>
-      <member refid="group__swi-c-interface_1ga484e080a72dfa5f8ac1bf471cdf1d758" kind="function"><name>SWIAtomToAtom</name></member>
-      <member refid="group__swi-c-interface_1gaa143cacfd8742c1af59a3060940a2ee3" kind="function"><name>FunctorToSWIFunctor</name></member>
-      <member refid="group__swi-c-interface_1ga3881dd509243a2f4e2de9a3745b51f96" kind="function"><name>SWIFunctorToFunctor</name></member>
-      <member refid="group__swi-c-interface_1ga060a54177f0acebeeacdaa824a5094f4" kind="function"><name>Yap_write_blob</name></member>
+      <memberdef kind="function" id="group__swi-c-interface_1ga8e9ed06b7e91e952b96c4c9552f43226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_install_blobs</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_install_blobs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.h" line="42" column="6" bodyfile="C/blobs.c" bodystart="250" bodyend="250" declfile="library/dialect/swi/fli/swi.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__swi-c-interface_1ga95268c5bcd18ee40dba54c8d739d53de" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term SWIModuleToModule</definition>
+        <argsstring>(module_t m)</argsstring>
+        <name>SWIModuleToModule</name>
+        <param>
+          <type><ref refid="structmod__entry" kindref="compound">module_t</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.h" line="46" column="1" bodyfile="library/dialect/swi/fli/swi.h" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="group__swi-c-interface_1ga484e080a72dfa5f8ac1bf471cdf1d758" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom SWIAtomToAtom</definition>
+        <argsstring>(atom_t at)</argsstring>
+        <name>SWIAtomToAtom</name>
+        <param>
+          <type>atom_t</type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.h" line="68" column="1" bodyfile="library/dialect/swi/fli/swi.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="group__swi-c-interface_1gaa143cacfd8742c1af59a3060940a2ee3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>functor_t</type>
+        <definition>static functor_t FunctorToSWIFunctor</definition>
+        <argsstring>(Functor f)</argsstring>
+        <name>FunctorToSWIFunctor</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.h" line="74" column="1" bodyfile="library/dialect/swi/fli/swi.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="group__swi-c-interface_1ga3881dd509243a2f4e2de9a3745b51f96" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>static Functor SWIFunctorToFunctor</definition>
+        <argsstring>(functor_t f)</argsstring>
+        <name>SWIFunctorToFunctor</name>
+        <param>
+          <type>functor_t</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.h" line="80" column="1" bodyfile="library/dialect/swi/fli/swi.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="group__swi-c-interface_1ga060a54177f0acebeeacdaa824a5094f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_write_blob</definition>
+        <argsstring>(AtomEntry *ref, FILE *stream)</argsstring>
+        <name>Yap_write_blob</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="library/dialect/swi/fli/swi.h" line="87" column="5" bodyfile="C/blobs.c" bodystart="76" bodyend="92" declfile="library/dialect/swi/fli/swi.h" declline="87" declcolumn="5"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/library/dialect/swi/fli/swi.h"/>
+    <location file="library/dialect/swi/fli/swi.h"/>
   </compounddef>
 </doxygen>

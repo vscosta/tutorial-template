@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="qlyr_8c" kind="file" language="C++">
     <compoundname>qlyr.c</compoundname>
     <includes refid="absmi_8h" local="yes">absmi.h</includes>
@@ -12,7 +12,7 @@
     <includes refid="rheap_8h" local="yes">rheap.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/qlyr.c</label>
+        <label>C/qlyr.c</label>
         <link refid="qlyr_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -566,85 +566,948 @@
       </node>
     </incdepgraph>
       <sectiondef kind="define">
-      <member refid="group__SaveRestoreSupport_1ga648d23b3f0e9d807af26a71782c951dc" kind="define"><name>QLYR_ERROR</name></member>
-      <member refid="group__SaveRestoreSupport_1ga747d5d75f847f25fe030b1bfb2d20098" kind="define"><name>IsOldCode</name></member>
-      <member refid="group__SaveRestoreSupport_1gab4784506e6c114e095c8872e233d000a" kind="define"><name>IsOldCodeCellPtr</name></member>
-      <member refid="group__SaveRestoreSupport_1ga0db453e742c37c7000c832b302f071fa" kind="define"><name>IsOldDelay</name></member>
-      <member refid="group__SaveRestoreSupport_1ga7d8f8adfb0ea3e260fd23a00246e9926" kind="define"><name>IsOldDelayPtr</name></member>
-      <member refid="group__SaveRestoreSupport_1gafb1655e1c073aaa2659a171fd458d5df" kind="define"><name>IsOldLocalInTR</name></member>
-      <member refid="group__SaveRestoreSupport_1ga493e796881c8a07ad937203a3b65c551" kind="define"><name>IsOldLocalInTRPtr</name></member>
-      <member refid="group__SaveRestoreSupport_1ga160da2d78b0771df3ae053146fc7e7e0" kind="define"><name>IsOldGlobal</name></member>
-      <member refid="group__SaveRestoreSupport_1gae3ced468bcbbb11718637d37c8dfa794" kind="define"><name>IsOldGlobalPtr</name></member>
-      <member refid="group__SaveRestoreSupport_1ga429356ea471a690ff5cf703b78923f83" kind="define"><name>IsOldTrail</name></member>
-      <member refid="group__SaveRestoreSupport_1gac13ccfa9ee8f5ec091024ac90ff69354" kind="define"><name>IsOldTrailPtr</name></member>
-      <member refid="group__SaveRestoreSupport_1ga698c21fdc0edbc9f0cec20d1ada2cca9" kind="define"><name>CharP</name></member>
-      <member refid="group__SaveRestoreSupport_1ga266d1a97bb2c8c301f28dffca540be12" kind="define"><name>REINIT_LOCK</name></member>
-      <member refid="group__SaveRestoreSupport_1ga727de9fe9f2b900c08e3842e45ba3a32" kind="define"><name>REINIT_RWLOCK</name></member>
-      <member refid="group__SaveRestoreSupport_1ga7c9c57e4afdc786242e592c8e3087961" kind="define"><name>BlobTypeAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaadc5bac9adc7cfcd52efc7bcd986a72e" kind="define"><name>NoAGCAtomAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga3997fc1a691f6ec1283c0e1a576c96a9" kind="define"><name>OrArgAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga914d1ca562e2de2ab26e622d94570b56" kind="define"><name>TabEntryAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga972756e0e40b8518a155f00a8bd7ac70" kind="define"><name>IntegerAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga7c5479875e3433255460c73cc0955ed4" kind="define"><name>AddrAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga9d25f526cfa5973606a5397277a0a9a2" kind="define"><name>MFileAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga9435607b420fbc001239e55b42410a79" kind="define"><name>CodeVarAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gac68938bedacc64b88b649e2938527b76" kind="define"><name>ConstantAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gab474f28b9e5638fbf42fccca59b84ddd" kind="define"><name>ArityAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaa89eddd38bba027c131fa9fa88a9bc0d" kind="define"><name>DoubleInCodeAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8cae6d4ef9c4b727c4dba2de238c923c" kind="define"><name>IntegerInCodeAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga811423b699580c19b08496c2d3605225" kind="define"><name>ExternalFunctionAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf3fee8cad73af71c4187a104ad1e45fa" kind="define"><name>DBRecordAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaed2865ca34de404597be9a20308d1392" kind="define"><name>ModEntryPtrAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga6087ae50332cd53cb89f0ceae42486b1" kind="define"><name>AtomEntryAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga0eb97241e6f2b6545b7c2d8efcbc4111" kind="define"><name>GlobalEntryAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gac02ae4009d58c7eb1d0c29034f93d4c6" kind="define"><name>BlobTermInCodeAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga62000cca5658a563d73d0d4cd7d6a87d" kind="define"><name>DBTermAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf90557e23321f1ccaa6b6ae6690866c8" kind="define"><name>CellPtoHeapAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gae4b9e40ad7e8fc787cc5569c6370733d" kind="define"><name>PtoAtomHashEntryAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga09c8e2d2eec2aabbeb57cd60524312b8" kind="define"><name>CellPtoHeapCellAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga44be8f785a24cc0dad922f6f70a97711" kind="define"><name>CellPtoTRAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga33b12007f4da9ff2b14522b9bbee2c5d" kind="define"><name>CodeAddrAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaac11b6b0664858a2f0c819504f5072b0" kind="define"><name>ConsultObjAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga2b269ebdc1625ada211e9fbf779956d5" kind="define"><name>DelayAddrAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga884d357bad94732a42045e7022b33310" kind="define"><name>DelayAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga29290557f434761cd55269a2c397c3bd" kind="define"><name>GlobalAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga34ff976a31f32421470364e9f26dcc68" kind="define"><name>DBRefAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga9f15cb5692319c0362c1fb7e3542f14c" kind="define"><name>DBRefPAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gade19a3f0d3d89c2d69fd139e2f58c2f0" kind="define"><name>LUIndexAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga027f50bf440d47672c52ed98f7e43e93" kind="define"><name>SIndexAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga9ac77c52ebedfecc93eb16ef5b6da140" kind="define"><name>LocalAddrAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga95e05694add3038d9358576dd48d1acc" kind="define"><name>GlobalAddrAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gab4057df3f92866a7123f66a51a298fc7" kind="define"><name>OpListAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga55fa68ce19da8c784946f54644c91af3" kind="define"><name>PtoLUCAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga1064a7187194d2fc3fe8a63e2bbd234b" kind="define"><name>PtoLUClauseAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8717f3823ea10e2df9b2b2d15b9ef661" kind="define"><name>PtoStCAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gae49381c0109b5e531e21bbbfae946b02" kind="define"><name>PtoArrayEAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga075b59c1e2818b92e993e1113459a537" kind="define"><name>PtoArraySAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gac5104ce9509f270108f9c28dc3f24076" kind="define"><name>PtoGlobalEAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga21fab9dd55ac44e9c33e29c3655a62c9" kind="define"><name>PtoDelayAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga464232e5374f3a88c0afa2299b3b1ded" kind="define"><name>PtoGloAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga75e3974d9b63c471500eb01ff035bac1" kind="define"><name>PtoLocAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaeb62c0eb2194666511810f5d13d4f6ea" kind="define"><name>PtoHeapCellAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaa5915c0c6ee6432904060349bea81c3b" kind="define"><name>TermToGlobalAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga43addf9b70d4d73a504adeb579ce12df" kind="define"><name>PtoOpAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gac2fefa9d8b2b46c26c28c17b13edfe66" kind="define"><name>PtoLUIndexAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga029f60239f76e2094d05c718a7126479" kind="define"><name>PtoDBTLAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga7d1c674f519de140c5d5cdb3d3055fb6" kind="define"><name>PtoPtoPredAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaa755a41475eeb7207caabd31132b078e" kind="define"><name>OpRTableAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga023568f90bae0d43b24ec6a0358e5a0f" kind="define"><name>OpEntryAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gad929255400694afd96b968f2b6198b76" kind="define"><name>PropAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga56ada60f6f9d7fa633d7e31d3710e00e" kind="define"><name>TrailAddrAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga6039858b83a3b2034b52e0fc462e10b0" kind="define"><name>XAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga725eca57fbb84935e3f2b926be9c906f" kind="define"><name>YAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga524a457695b14516acb75d23e0bffd3f" kind="define"><name>HoldEntryAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gabc1963c33b9dcd6907e81eb8aa026007" kind="define"><name>CodeCharPAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga08ccc472fbefdd67764ee9afbac29e7b" kind="define"><name>CodeConstCharPAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf03aa5bdb7b74184e1f1588829b7dc2b" kind="define"><name>CodeVoidPAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gad64775c3875544242b936016b9647b70" kind="define"><name>HaltHookAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gabeb5af372a8a40763b199453af6bb743" kind="define"><name>recompute_mask</name></member>
-      <member refid="group__SaveRestoreSupport_1ga0cbfb4d5967664b7aac820b97e1b693a" kind="define"><name>rehash</name></member>
-      <member refid="group__SaveRestoreSupport_1ga624e97c5c9558360585c2a604dd0e6ea" kind="define"><name>RestoreSWIHash</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8d51fe2fd33a27f6e99702e76aab6b6e" kind="define"><name>Yap_op_from_opcode</name></member>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga648d23b3f0e9d807af26a71782c951dc" prot="public" static="no">
+        <name>QLYR_ERROR</name>
+        <param><defname>err</defname></param>
+        <initializer>  QLYR_ERROR__(__FILE__, __FUNCTION__, __LINE__, err)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="83" column="9" bodyfile="C/qlyr.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga747d5d75f847f25fe030b1bfb2d20098" prot="public" static="no">
+        <name>IsOldCode</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="431" column="9" bodyfile="C/qlyr.c" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gab4784506e6c114e095c8872e233d000a" prot="public" static="no">
+        <name>IsOldCodeCellPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="432" column="9" bodyfile="C/qlyr.c" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga0db453e742c37c7000c832b302f071fa" prot="public" static="no">
+        <name>IsOldDelay</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="433" column="9" bodyfile="C/qlyr.c" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga7d8f8adfb0ea3e260fd23a00246e9926" prot="public" static="no">
+        <name>IsOldDelayPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="434" column="9" bodyfile="C/qlyr.c" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gafb1655e1c073aaa2659a171fd458d5df" prot="public" static="no">
+        <name>IsOldLocalInTR</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="435" column="9" bodyfile="C/qlyr.c" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga493e796881c8a07ad937203a3b65c551" prot="public" static="no">
+        <name>IsOldLocalInTRPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="436" column="9" bodyfile="C/qlyr.c" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga160da2d78b0771df3ae053146fc7e7e0" prot="public" static="no">
+        <name>IsOldGlobal</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="437" column="9" bodyfile="C/qlyr.c" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gae3ced468bcbbb11718637d37c8dfa794" prot="public" static="no">
+        <name>IsOldGlobalPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="438" column="9" bodyfile="C/qlyr.c" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga429356ea471a690ff5cf703b78923f83" prot="public" static="no">
+        <name>IsOldTrail</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="439" column="9" bodyfile="C/qlyr.c" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gac13ccfa9ee8f5ec091024ac90ff69354" prot="public" static="no">
+        <name>IsOldTrailPtr</name>
+        <param><defname>P</defname></param>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="440" column="9" bodyfile="C/qlyr.c" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga698c21fdc0edbc9f0cec20d1ada2cca9" prot="public" static="no">
+        <name>CharP</name>
+        <param><defname>X</defname></param>
+        <initializer>((char *)(X))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="442" column="9" bodyfile="C/qlyr.c" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga266d1a97bb2c8c301f28dffca540be12" prot="public" static="no">
+        <name>REINIT_LOCK</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="444" column="9" bodyfile="C/qlyr.c" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga727de9fe9f2b900c08e3842e45ba3a32" prot="public" static="no">
+        <name>REINIT_RWLOCK</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="445" column="9" bodyfile="C/qlyr.c" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga7c9c57e4afdc786242e592c8e3087961" prot="public" static="no">
+        <name>BlobTypeAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="446" column="9" bodyfile="C/qlyr.c" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaadc5bac9adc7cfcd52efc7bcd986a72e" prot="public" static="no">
+        <name>NoAGCAtomAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="447" column="9" bodyfile="C/qlyr.c" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga3997fc1a691f6ec1283c0e1a576c96a9" prot="public" static="no">
+        <name>OrArgAdjust</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="448" column="9" bodyfile="C/qlyr.c" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga914d1ca562e2de2ab26e622d94570b56" prot="public" static="no">
+        <name>TabEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="449" column="9" bodyfile="C/qlyr.c" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga972756e0e40b8518a155f00a8bd7ac70" prot="public" static="no">
+        <name>IntegerAdjust</name>
+        <param><defname>D</defname></param>
+        <initializer>(D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="450" column="9" bodyfile="C/qlyr.c" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga7c5479875e3433255460c73cc0955ed4" prot="public" static="no">
+        <name>AddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="451" column="9" bodyfile="C/qlyr.c" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga9d25f526cfa5973606a5397277a0a9a2" prot="public" static="no">
+        <name>MFileAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="452" column="9" bodyfile="C/qlyr.c" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga9435607b420fbc001239e55b42410a79" prot="public" static="no">
+        <name>CodeVarAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>CodeVarAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="454" column="9" bodyfile="C/qlyr.c" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gac68938bedacc64b88b649e2938527b76" prot="public" static="no">
+        <name>ConstantAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="461" column="9" bodyfile="C/qlyr.c" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gab474f28b9e5638fbf42fccca59b84ddd" prot="public" static="no">
+        <name>ArityAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="462" column="9" bodyfile="C/qlyr.c" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaa89eddd38bba027c131fa9fa88a9bc0d" prot="public" static="no">
+        <name>DoubleInCodeAdjust</name>
+        <param><defname>P</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="463" column="9" bodyfile="C/qlyr.c" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga8cae6d4ef9c4b727c4dba2de238c923c" prot="public" static="no">
+        <name>IntegerInCodeAdjust</name>
+        <param><defname>Pxb</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="464" column="9" bodyfile="C/qlyr.c" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga811423b699580c19b08496c2d3605225" prot="public" static="no">
+        <name>ExternalFunctionAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="482" column="9" bodyfile="C/qlyr.c" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaf3fee8cad73af71c4187a104ad1e45fa" prot="public" static="no">
+        <name>DBRecordAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="483" column="9" bodyfile="C/qlyr.c" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaed2865ca34de404597be9a20308d1392" prot="public" static="no">
+        <name>ModEntryPtrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="484" column="9" bodyfile="C/qlyr.c" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga6087ae50332cd53cb89f0ceae42486b1" prot="public" static="no">
+        <name>AtomEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="485" column="9" bodyfile="C/qlyr.c" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga0eb97241e6f2b6545b7c2d8efcbc4111" prot="public" static="no">
+        <name>GlobalEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="486" column="9" bodyfile="C/qlyr.c" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gac02ae4009d58c7eb1d0c29034f93d4c6" prot="public" static="no">
+        <name>BlobTermInCodeAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>BlobTermInCodeAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="487" column="9" bodyfile="C/qlyr.c" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga62000cca5658a563d73d0d4cd7d6a87d" prot="public" static="no">
+        <name>DBTermAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>DBTermAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="497" column="10" bodyfile="C/qlyr.c" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaf90557e23321f1ccaa6b6ae6690866c8" prot="public" static="no">
+        <name>CellPtoHeapAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>CellPtoHeapAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="502" column="9" bodyfile="C/qlyr.c" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gae4b9e40ad7e8fc787cc5569c6370733d" prot="public" static="no">
+        <name>PtoAtomHashEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="507" column="9" bodyfile="C/qlyr.c" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga09c8e2d2eec2aabbeb57cd60524312b8" prot="public" static="no">
+        <name>CellPtoHeapCellAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="508" column="9" bodyfile="C/qlyr.c" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga44be8f785a24cc0dad922f6f70a97711" prot="public" static="no">
+        <name>CellPtoTRAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="509" column="9" bodyfile="C/qlyr.c" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga33b12007f4da9ff2b14522b9bbee2c5d" prot="public" static="no">
+        <name>CodeAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="510" column="9" bodyfile="C/qlyr.c" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaac11b6b0664858a2f0c819504f5072b0" prot="public" static="no">
+        <name>ConsultObjAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="511" column="9" bodyfile="C/qlyr.c" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga2b269ebdc1625ada211e9fbf779956d5" prot="public" static="no">
+        <name>DelayAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="512" column="9" bodyfile="C/qlyr.c" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga884d357bad94732a42045e7022b33310" prot="public" static="no">
+        <name>DelayAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="513" column="9" bodyfile="C/qlyr.c" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga29290557f434761cd55269a2c397c3bd" prot="public" static="no">
+        <name>GlobalAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="514" column="9" bodyfile="C/qlyr.c" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga34ff976a31f32421470364e9f26dcc68" prot="public" static="no">
+        <name>DBRefAdjust</name>
+        <param><defname>P</defname></param>
+        <param><defname>Ref</defname></param>
+        <initializer>DBRefAdjust__(P, Ref PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="516" column="9" bodyfile="C/qlyr.c" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga9f15cb5692319c0362c1fb7e3542f14c" prot="public" static="no">
+        <name>DBRefPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>DBRefPAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="521" column="9" bodyfile="C/qlyr.c" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gade19a3f0d3d89c2d69fd139e2f58c2f0" prot="public" static="no">
+        <name>LUIndexAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="526" column="9" bodyfile="C/qlyr.c" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga027f50bf440d47672c52ed98f7e43e93" prot="public" static="no">
+        <name>SIndexAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="527" column="9" bodyfile="C/qlyr.c" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga9ac77c52ebedfecc93eb16ef5b6da140" prot="public" static="no">
+        <name>LocalAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="528" column="9" bodyfile="C/qlyr.c" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga95e05694add3038d9358576dd48d1acc" prot="public" static="no">
+        <name>GlobalAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="529" column="9" bodyfile="C/qlyr.c" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gab4057df3f92866a7123f66a51a298fc7" prot="public" static="no">
+        <name>OpListAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="530" column="9" bodyfile="C/qlyr.c" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga55fa68ce19da8c784946f54644c91af3" prot="public" static="no">
+        <name>PtoLUCAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>PtoLUCAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="532" column="9" bodyfile="C/qlyr.c" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga1064a7187194d2fc3fe8a63e2bbd234b" prot="public" static="no">
+        <name>PtoLUClauseAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>PtoLUCAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="533" column="9" bodyfile="C/qlyr.c" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga8717f3823ea10e2df9b2b2d15b9ef661" prot="public" static="no">
+        <name>PtoStCAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="538" column="9" bodyfile="C/qlyr.c" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gae49381c0109b5e531e21bbbfae946b02" prot="public" static="no">
+        <name>PtoArrayEAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="539" column="9" bodyfile="C/qlyr.c" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga075b59c1e2818b92e993e1113459a537" prot="public" static="no">
+        <name>PtoArraySAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="540" column="9" bodyfile="C/qlyr.c" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gac5104ce9509f270108f9c28dc3f24076" prot="public" static="no">
+        <name>PtoGlobalEAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="541" column="9" bodyfile="C/qlyr.c" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga21fab9dd55ac44e9c33e29c3655a62c9" prot="public" static="no">
+        <name>PtoDelayAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="542" column="9" bodyfile="C/qlyr.c" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga464232e5374f3a88c0afa2299b3b1ded" prot="public" static="no">
+        <name>PtoGloAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="543" column="9" bodyfile="C/qlyr.c" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga75e3974d9b63c471500eb01ff035bac1" prot="public" static="no">
+        <name>PtoLocAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="544" column="9" bodyfile="C/qlyr.c" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaeb62c0eb2194666511810f5d13d4f6ea" prot="public" static="no">
+        <name>PtoHeapCellAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>PtoHeapCellAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="546" column="9" bodyfile="C/qlyr.c" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaa5915c0c6ee6432904060349bea81c3b" prot="public" static="no">
+        <name>TermToGlobalAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="554" column="9" bodyfile="C/qlyr.c" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga43addf9b70d4d73a504adeb579ce12df" prot="public" static="no">
+        <name>PtoOpAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>PtoOpAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="555" column="9" bodyfile="C/qlyr.c" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gac2fefa9d8b2b46c26c28c17b13edfe66" prot="public" static="no">
+        <name>PtoLUIndexAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="564" column="9" bodyfile="C/qlyr.c" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga029f60239f76e2094d05c718a7126479" prot="public" static="no">
+        <name>PtoDBTLAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="565" column="9" bodyfile="C/qlyr.c" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga7d1c674f519de140c5d5cdb3d3055fb6" prot="public" static="no">
+        <name>PtoPtoPredAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="566" column="9" bodyfile="C/qlyr.c" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaa755a41475eeb7207caabd31132b078e" prot="public" static="no">
+        <name>OpRTableAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="567" column="9" bodyfile="C/qlyr.c" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga023568f90bae0d43b24ec6a0358e5a0f" prot="public" static="no">
+        <name>OpEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="568" column="9" bodyfile="C/qlyr.c" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gad929255400694afd96b968f2b6198b76" prot="public" static="no">
+        <name>PropAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="569" column="9" bodyfile="C/qlyr.c" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga56ada60f6f9d7fa633d7e31d3710e00e" prot="public" static="no">
+        <name>TrailAddrAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="570" column="9" bodyfile="C/qlyr.c" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga2c84d5b7c8b66d7b2f6b9bf7186603c0" prot="public" static="no">
+        <name>XAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>XAdjust__(P PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="572" column="9" bodyfile="C/qlyr.c" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga725eca57fbb84935e3f2b926be9c906f" prot="public" static="no">
+        <name>YAdjust</name>
+        <param><defname>X</defname></param>
+        <initializer>(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="579" column="10" bodyfile="C/qlyr.c" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga524a457695b14516acb75d23e0bffd3f" prot="public" static="no">
+        <name>HoldEntryAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="580" column="9" bodyfile="C/qlyr.c" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gabc1963c33b9dcd6907e81eb8aa026007" prot="public" static="no">
+        <name>CodeCharPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="581" column="9" bodyfile="C/qlyr.c" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga08ccc472fbefdd67764ee9afbac29e7b" prot="public" static="no">
+        <name>CodeConstCharPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="582" column="9" bodyfile="C/qlyr.c" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaf03aa5bdb7b74184e1f1588829b7dc2b" prot="public" static="no">
+        <name>CodeVoidPAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="583" column="9" bodyfile="C/qlyr.c" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gad64775c3875544242b936016b9647b70" prot="public" static="no">
+        <name>HaltHookAdjust</name>
+        <param><defname>P</defname></param>
+        <initializer>(P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="584" column="9" bodyfile="C/qlyr.c" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gabeb5af372a8a40763b199453af6bb743" prot="public" static="no">
+        <name>recompute_mask</name>
+        <param><defname>dbr</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="586" column="9" bodyfile="C/qlyr.c" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga0cbfb4d5967664b7aac820b97e1b693a" prot="public" static="no">
+        <name>rehash</name>
+        <param><defname>oldcode</defname></param>
+        <param><defname>NOfE</defname></param>
+        <param><defname>KindOfEntries</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="588" column="9" bodyfile="C/qlyr.c" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga624e97c5c9558360585c2a604dd0e6ea" prot="public" static="no">
+        <name>RestoreSWIHash</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="590" column="9" bodyfile="C/qlyr.c" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga8d51fe2fd33a27f6e99702e76aab6b6e" prot="public" static="no">
+        <name>Yap_op_from_opcode</name>
+        <param><defname>OP</defname></param>
+        <initializer>OpcodeID(OP)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="592" column="9" bodyfile="C/qlyr.c" bodystart="592" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="qlyr_8c_1aea83da9a23050a6028f6bfd882b0876d" prot="public" static="no">
         <name>BUFSIX</name>
         <initializer>4096*256</initializer>
@@ -654,79 +1517,1234 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/qlyr.c" line="1131" column="9"/>
+        <location file="C/qlyr.c" line="1131" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
-      <member refid="group__SaveRestoreSupport_1gad2f0a6a5f60800891f0b9893b4a03ff7" kind="enum"><name>qlfr_err_t</name></member>
+      <memberdef kind="enum" id="group__SaveRestoreSupport_1gad2f0a6a5f60800891f0b9893b4a03ff7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>qlfr_err_t</name>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a2178fdb2d6a67b3279389ce057da8f64" prot="public">
+          <name>OUT_OF_TEMP_SPACE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a51834562b58b5aaf554c3f1a4ba9eeac" prot="public">
+          <name>OUT_OF_ATOM_SPACE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a60babb0063a99e79b928b90aac6f9e49" prot="public">
+          <name>OUT_OF_CODE_SPACE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a28de15aa2d26d4673100c2237a145f69" prot="public">
+          <name>UNKNOWN_ATOM</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a58f745bfd7d48e8633d756beb832605b" prot="public">
+          <name>UNKNOWN_FUNCTOR</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7aea9ffb9f0f2ea6b89b41121cd1bb2351" prot="public">
+          <name>UNKNOWN_PRED_ENTRY</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a4b9f98f8f71f49dcce324329f5b4dc59" prot="public">
+          <name>UNKNOWN_OPCODE</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a8fac9cbe40385c926dbc01dc35119420" prot="public">
+          <name>UNKNOWN_DBREF</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a2fbba76e22a8d2caf0bca11c20811fa2" prot="public">
+          <name>BAD_ATOM</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a9f6e5ca49fdffa107270afa3f5e16cda" prot="public">
+          <name>MISMATCH</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7a1b42c947fad98cf27bfd49b467ffd0dd" prot="public">
+          <name>INCONSISTENT_CPRED</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7aed71210e8d960e7f432b79e7d1573ef5" prot="public">
+          <name>BAD_READ</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggad2f0a6a5f60800891f0b9893b4a03ff7ab4bfb8ae0cf3e292b061b0f7e9957969" prot="public">
+          <name>BAD_HEADER</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="42" column="1" bodyfile="C/qlyr.c" bodystart="42" bodyend="56"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <member refid="group__SaveRestoreSupport_1gaec426593fc336bb507575ee838498e34" kind="variable"><name>qlyr_error</name></member>
+      <memberdef kind="variable" id="group__SaveRestoreSupport_1gaec426593fc336bb507575ee838498e34" prot="public" static="yes" mutable="no">
+        <type>char *</type>
+        <definition>char* qlyr_error[]</definition>
+        <argsstring>[]</argsstring>
+        <name>qlyr_error</name>
+        <initializer>= {
+    &quot;out of temporary space&quot;,
+    &quot;out of temporary space&quot;,
+    &quot;out of code space&quot;,
+    &quot;unknown atom in saved space&quot;,
+    &quot;unknown functor in saved space&quot;,
+    &quot;unknown predicate in saved space&quot;,
+    &quot;unknown YAAM opcode in saved space&quot;,
+    &quot;unknown data-base reference in saved space&quot;,
+    &quot;corrupted atom in saved space&quot;,
+    &quot;formatting mismatch in saved space&quot;,
+    &quot;foreign predicate has different definition in saved space&quot;,
+    &quot;bad read&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="58" column="13" bodyfile="C/qlyr.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__SaveRestoreSupport_1gadfa019902ae262d052fc6fcfab2a8dce" kind="function"><name>RestoreEntries</name></member>
-      <member refid="group__SaveRestoreSupport_1ga4a30c0305ee1664b3b378c648c565ef9" kind="function"><name>CleanCode</name></member>
-      <member refid="group__SaveRestoreSupport_1ga9f8922457a91e19c6b222ba34720b4c2" kind="function"><name>Yap_AlwaysAllocCodeSpace</name></member>
-      <member refid="group__SaveRestoreSupport_1gae2ee79842f2b6866bb4cd0d562f06a6e" kind="function"><name>QLYR_ERROR__</name></member>
-      <member refid="group__SaveRestoreSupport_1gae1ec5432187abb22a10a13460e4a9d30" kind="function"><name>LookupAtom</name></member>
-      <member refid="group__SaveRestoreSupport_1gab9f798025173496019259b98c0974d9b" kind="function"><name>InsertAtom</name></member>
-      <member refid="group__SaveRestoreSupport_1ga238abb26d9ab442e173d4808580da977" kind="function"><name>LookupFunctor</name></member>
-      <member refid="group__SaveRestoreSupport_1ga757b4fed388758a27ae1cbbd78771746" kind="function"><name>InsertFunctor</name></member>
-      <member refid="group__SaveRestoreSupport_1ga324954fee12fe8e4ced6e46f4e2ae0ae" kind="function"><name>LookupPredEntry</name></member>
-      <member refid="group__SaveRestoreSupport_1ga566e6ced76bf2cfe0f22102f4f8400cd" kind="function"><name>InsertPredEntry</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8e02f8b8f79ce900a4d4cfae00823aad" kind="function"><name>LookupOPCODE</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf3a5cbebad8815d9e33cfce3a27ccdc4" kind="function"><name>OpcodeID</name></member>
-      <member refid="group__SaveRestoreSupport_1ga138758f372aa7c85087e306187affebe" kind="function"><name>InsertOPCODE</name></member>
-      <member refid="group__SaveRestoreSupport_1ga37430d8e02942bc49f7094fc3bd6316f" kind="function"><name>LookupDBRef</name></member>
-      <member refid="group__SaveRestoreSupport_1ga81055a0e5cca108e418ae21cbcc2f5fe" kind="function"><name>LookupMayFailDBRef</name></member>
-      <member refid="group__SaveRestoreSupport_1ga25ad538dac28cc0cbb1e2ff41c5b8fe7" kind="function"><name>InsertDBRef</name></member>
-      <member refid="group__SaveRestoreSupport_1ga7728e47fa5a2fdc959d0332e4672d5ec" kind="function"><name>InitHash</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf048a507eed366159497acc07ad6d3b8" kind="function"><name>CloseHash</name></member>
-      <member refid="group__SaveRestoreSupport_1ga34ec8275ebafb98cc4594ae9700133e6" kind="function"><name>AtomAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gac720c0991a7032c4d8dde80e849b8488" kind="function"><name>FuncAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gadee2632446c5732d10fc7c9cb8eb79f0" kind="function"><name>AtomTermAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gafd76541127f36c3e83407226122de809" kind="function"><name>TermToGlobalOrAtomAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga2c9189fe01565a6feaf78f9467fa6d7a" kind="function"><name>CodeVarAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1ga6cd71d1d993e08c245d262ab5131bd30" kind="function"><name>PtoPredAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga080b9749c915bc25781f9814e902c572" kind="function"><name>PredEntryAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga0817faac93246babddd0741344ccd852" kind="function"><name>OpcodeAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1ga297e83493707942e3fa2cca5a808c18d" kind="function"><name>ModuleAdjust</name></member>
-      <member refid="group__SaveRestoreSupport_1gab2b3a4e1db38e669fe6599dfb0a8fb5a" kind="function"><name>BlobTermInCodeAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1gae649a96a288c818cacebc57c56e6168e" kind="function"><name>DBTermAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1ga84feaab16414962b2768c3f5e49033aa" kind="function"><name>CellPtoHeapAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1ga4f9bc97575f667a3efd6ccb9e981afc6" kind="function"><name>DBRefAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1gade32193a98b444a6fcc3ed4f9e66da50" kind="function"><name>DBRefPAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1ga789a79aacc631dd41d69dc9e53446495" kind="function"><name>PtoLUCAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1ga803be5b7dfab34b45c07abc3ec9439f2" kind="function"><name>PtoHeapCellAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1ga2e916b0fef29a0d4abd00375e5c8c59a" kind="function"><name>PtoOpAdjust__</name></member>
-      <member refid="group__SaveRestoreSupport_1ga12dc21eca60fb2396f1f26f025e7e52a" kind="function"><name>RestoreFlags</name></member>
-      <member refid="group__SaveRestoreSupport_1ga85fefcf12ccf720be9307087894fd855" kind="function"><name>RestoreHashPreds</name></member>
-      <member refid="group__SaveRestoreSupport_1ga04dcaf63c27c06fd634eaff92480db61" kind="function"><name>RestoreAtomList</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8c9d677bd713d52eb0015cb5b2f89a48" kind="function"><name>maybe_read_bytes</name></member>
-      <member refid="group__SaveRestoreSupport_1ga43cc1a62298100bc3bb72d72bd992e94" kind="function"><name>read_bytes</name></member>
-      <member refid="group__SaveRestoreSupport_1gabd4931193f0f6b198eb3281bdbedc51e" kind="function"><name>read_byte</name></member>
-      <member refid="group__SaveRestoreSupport_1ga3070d03970c96499474762e384610ab1" kind="function"><name>read_bits16</name></member>
-      <member refid="group__SaveRestoreSupport_1ga537a13ed775fdaba19ec108500714d04" kind="function"><name>read_UInt</name></member>
-      <member refid="group__SaveRestoreSupport_1gadd69a72cf4f0459c430d10e26c4a4dcf" kind="function"><name>read_Int</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8d40f66be72a35c7443f0ecbec4967ec" kind="function"><name>read_tag</name></member>
-      <member refid="group__SaveRestoreSupport_1gae65cc5246fc49e82ba0e626393aded39" kind="function"><name>read_predFlags</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8f98d49b7fcdffcf4ce3623b6e995afe" kind="function"><name>do_header</name></member>
-      <member refid="group__SaveRestoreSupport_1ga308cc6ff96e23d0f81fe9357834787d4" kind="function"><name>get_header</name></member>
-      <member refid="group__SaveRestoreSupport_1ga82ea74c4b6989b1820c8c24de4d49762" kind="function"><name>ReadHash</name></member>
-      <member refid="group__SaveRestoreSupport_1ga980cabe983377165981feda070088222" kind="function"><name>read_clauses</name></member>
-      <member refid="group__SaveRestoreSupport_1ga44b6480b1ff0df5b3922489efa75532f" kind="function"><name>read_pred</name></member>
-      <member refid="group__SaveRestoreSupport_1ga9e36313ed7de60b39bf9637b17612210" kind="function"><name>read_ops</name></member>
-      <member refid="group__SaveRestoreSupport_1ga9f8cc902cf3a79dc838218ef3f38895e" kind="function"><name>read_module</name></member>
-      <member refid="group__SaveRestoreSupport_1ga4c9f42f361326df789d4d2f1f11b90b1" kind="function"><name>p_read_module_preds</name></member>
-      <member refid="group__SaveRestoreSupport_1ga8e3f2b652d7eab02a6f2969729f1686c" kind="function"><name>ReInitProlog</name></member>
-      <member refid="group__SaveRestoreSupport_1gaa52af0dd484a2a8fd0aa314364050f62" kind="function"><name>qload_program</name></member>
-      <member refid="group__SaveRestoreSupport_1ga476c4ec40cc3fdfefc6ced945551427b" kind="function"><name>Yap_Restore</name></member>
-      <member refid="group__SaveRestoreSupport_1ga95bcaa710d1f0f7fd492279a4cc06d8a" kind="function"><name>Yap_InitQLYR</name></member>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gadfa019902ae262d052fc6fcfab2a8dce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreEntries</definition>
+        <argsstring>(PropEntry *, int USES_REGS)</argsstring>
+        <name>RestoreEntries</name>
+        <param>
+          <type><ref refid="structPropEntryStruct" kindref="compound">PropEntry</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="39" column="13" declfile="C/qlyr.c" declline="39" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga4a30c0305ee1664b3b378c648c565ef9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CleanCode</definition>
+        <argsstring>(PredEntry *USES_REGS)</argsstring>
+        <name>CleanCode</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="40" column="13" declfile="C/qlyr.c" declline="40" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga9f8922457a91e19c6b222ba34720b4c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * Yap_AlwaysAllocCodeSpace</definition>
+        <argsstring>(UInt size)</argsstring>
+        <name>Yap_AlwaysAllocCodeSpace</name>
+        <param>
+          <type>UInt</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="72" column="13" bodyfile="C/qlyr.c" bodystart="72" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gae2ee79842f2b6866bb4cd0d562f06a6e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void QLYR_ERROR__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, qlfr_err_t my_err)</argsstring>
+        <name>QLYR_ERROR__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>qlfr_err_t</type>
+          <declname>my_err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="88" column="13" bodyfile="C/qlyr.c" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gae1ec5432187abb22a10a13460e4a9d30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom LookupAtom</definition>
+        <argsstring>(Atom oat)</argsstring>
+        <name>LookupAtom</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>oat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="97" column="13" bodyfile="C/qlyr.c" bodystart="97" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gab9f798025173496019259b98c0974d9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InsertAtom</definition>
+        <argsstring>(Atom oat, Atom at)</argsstring>
+        <name>InsertAtom</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>oat</declname>
+        </param>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="117" column="13" bodyfile="C/qlyr.c" bodystart="117" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga238abb26d9ab442e173d4808580da977" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>static Functor LookupFunctor</definition>
+        <argsstring>(Functor ofun)</argsstring>
+        <name>LookupFunctor</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>ofun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="139" column="16" bodyfile="C/qlyr.c" bodystart="139" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga757b4fed388758a27ae1cbbd78771746" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InsertFunctor</definition>
+        <argsstring>(Functor ofun, Functor fun)</argsstring>
+        <name>InsertFunctor</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>ofun</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="155" column="13" bodyfile="C/qlyr.c" bodystart="155" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga324954fee12fe8e4ced6e46f4e2ae0ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * LookupPredEntry</definition>
+        <argsstring>(PredEntry *op)</argsstring>
+        <name>LookupPredEntry</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="178" column="18" bodyfile="C/qlyr.c" bodystart="178" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga566e6ced76bf2cfe0f22102f4f8400cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InsertPredEntry</definition>
+        <argsstring>(PredEntry *op, PredEntry *pe)</argsstring>
+        <name>InsertPredEntry</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="197" column="13" bodyfile="C/qlyr.c" bodystart="197" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga8e02f8b8f79ce900a4d4cfae00823aad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPCODE</type>
+        <definition>static OPCODE LookupOPCODE</definition>
+        <argsstring>(OPCODE op)</argsstring>
+        <name>LookupOPCODE</name>
+        <param>
+          <type>OPCODE</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="223" column="15" bodyfile="C/qlyr.c" bodystart="223" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gaf3a5cbebad8815d9e33cfce3a27ccdc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int OpcodeID</definition>
+        <argsstring>(OPCODE op)</argsstring>
+        <name>OpcodeID</name>
+        <param>
+          <type>OPCODE</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="239" column="12" bodyfile="C/qlyr.c" bodystart="239" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga138758f372aa7c85087e306187affebe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InsertOPCODE</definition>
+        <argsstring>(OPCODE op0, int i, OPCODE op)</argsstring>
+        <name>InsertOPCODE</name>
+        <param>
+          <type>OPCODE</type>
+          <declname>op0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>OPCODE</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="255" column="13" bodyfile="C/qlyr.c" bodystart="255" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga37430d8e02942bc49f7094fc3bd6316f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef LookupDBRef</definition>
+        <argsstring>(DBRef dbr, int inc_ref)</argsstring>
+        <name>LookupDBRef</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>dbr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inc_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="277" column="14" bodyfile="C/qlyr.c" bodystart="277" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga81055a0e5cca108e418ae21cbcc2f5fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>static LogUpdClause * LookupMayFailDBRef</definition>
+        <argsstring>(DBRef dbr)</argsstring>
+        <name>LookupMayFailDBRef</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>dbr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="299" column="21" bodyfile="C/qlyr.c" bodystart="299" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga25ad538dac28cc0cbb1e2ff41c5b8fe7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InsertDBRef</definition>
+        <argsstring>(DBRef dbr0, DBRef dbr)</argsstring>
+        <name>InsertDBRef</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>dbr0</declname>
+        </param>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>dbr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="318" column="13" bodyfile="C/qlyr.c" bodystart="318" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga7728e47fa5a2fdc959d0332e4672d5ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void InitHash</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitHash</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="341" column="13" bodyfile="C/qlyr.c" bodystart="341" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gaf048a507eed366159497acc07ad6d3b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CloseHash</definition>
+        <argsstring>(void)</argsstring>
+        <name>CloseHash</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="349" column="13" bodyfile="C/qlyr.c" bodystart="349" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga34ec8275ebafb98cc4594ae9700133e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom AtomAdjust</definition>
+        <argsstring>(Atom a)</argsstring>
+        <name>AtomAdjust</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="414" column="20" bodyfile="C/qlyr.c" bodystart="414" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gac720c0991a7032c4d8dde80e849b8488" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+        <definition>static Functor FuncAdjust</definition>
+        <argsstring>(Functor f)</argsstring>
+        <name>FuncAdjust</name>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="416" column="23" bodyfile="C/qlyr.c" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gadee2632446c5732d10fc7c9cb8eb79f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term AtomTermAdjust</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>AtomTermAdjust</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="421" column="20" bodyfile="C/qlyr.c" bodystart="421" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gafd76541127f36c3e83407226122de809" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term TermToGlobalOrAtomAdjust</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>TermToGlobalOrAtomAdjust</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="425" column="20" bodyfile="C/qlyr.c" bodystart="425" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga2c9189fe01565a6feaf78f9467fa6d7a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term CodeVarAdjust__</definition>
+        <argsstring>(Term var USES_REGS)</argsstring>
+        <name>CodeVarAdjust__</name>
+        <param>
+          <type>Term var</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="455" column="20" bodyfile="C/qlyr.c" bodystart="455" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga6cd71d1d993e08c245d262ab5131bd30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * PtoPredAdjust</definition>
+        <argsstring>(PredEntry *p)</argsstring>
+        <name>PtoPredAdjust</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="466" column="25" bodyfile="C/qlyr.c" bodystart="466" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga080b9749c915bc25781f9814e902c572" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * PredEntryAdjust</definition>
+        <argsstring>(PredEntry *p)</argsstring>
+        <name>PredEntryAdjust</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="470" column="25" bodyfile="C/qlyr.c" bodystart="470" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga0817faac93246babddd0741344ccd852" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>OPCODE</type>
+        <definition>static OPCODE OpcodeAdjust</definition>
+        <argsstring>(OPCODE OP)</argsstring>
+        <name>OpcodeAdjust</name>
+        <param>
+          <type>OPCODE</type>
+          <declname>OP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="474" column="22" bodyfile="C/qlyr.c" bodystart="474" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga297e83493707942e3fa2cca5a808c18d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term ModuleAdjust</definition>
+        <argsstring>(Term M)</argsstring>
+        <name>ModuleAdjust</name>
+        <param>
+          <type>Term</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="476" column="20" bodyfile="C/qlyr.c" bodystart="476" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gab2b3a4e1db38e669fe6599dfb0a8fb5a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term BlobTermInCodeAdjust__</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>BlobTermInCodeAdjust__</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="493" column="20" bodyfile="C/qlyr.c" bodystart="493" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gae649a96a288c818cacebc57c56e6168e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        <definition>static DBTerm * DBTermAdjust__</definition>
+        <argsstring>(DBTerm *dbtp USES_REGS)</argsstring>
+        <name>DBTermAdjust__</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *dbtp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="498" column="22" bodyfile="C/qlyr.c" bodystart="498" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga84feaab16414962b2768c3f5e49033aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * CellPtoHeapAdjust__</definition>
+        <argsstring>(CELL *dbtp USES_REGS)</argsstring>
+        <name>CellPtoHeapAdjust__</name>
+        <param>
+          <type>CELL *dbtp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="503" column="20" bodyfile="C/qlyr.c" bodystart="503" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga4f9bc97575f667a3efd6ccb9e981afc6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef DBRefAdjust__</definition>
+        <argsstring>(DBRef dbtp, int do_reference USES_REGS)</argsstring>
+        <name>DBRefAdjust__</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>dbtp</declname>
+        </param>
+        <param>
+          <type>int do_reference</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="517" column="21" bodyfile="C/qlyr.c" bodystart="517" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gade32193a98b444a6fcc3ed4f9e66da50" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref> *</type>
+        <definition>static DBRef * DBRefPAdjust__</definition>
+        <argsstring>(DBRef *dbtp USES_REGS)</argsstring>
+        <name>DBRefPAdjust__</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref> *dbtp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="522" column="21" bodyfile="C/qlyr.c" bodystart="522" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga789a79aacc631dd41d69dc9e53446495" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>static LogUpdClause * PtoLUCAdjust__</definition>
+        <argsstring>(LogUpdClause *dbtp USES_REGS)</argsstring>
+        <name>PtoLUCAdjust__</name>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *dbtp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="534" column="28" bodyfile="C/qlyr.c" bodystart="534" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga803be5b7dfab34b45c07abc3ec9439f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * PtoHeapCellAdjust__</definition>
+        <argsstring>(CELL *ptr USES_REGS)</argsstring>
+        <name>PtoHeapCellAdjust__</name>
+        <param>
+          <type>CELL *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="547" column="20" bodyfile="C/qlyr.c" bodystart="547" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga2e916b0fef29a0d4abd00375e5c8c59a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * PtoOpAdjust__</definition>
+        <argsstring>(yamop *ptr USES_REGS)</argsstring>
+        <name>PtoOpAdjust__</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *ptr</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="556" column="21" bodyfile="C/qlyr.c" bodystart="556" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga4bfc98ef1858592160131fee0fce81e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>wamreg</type>
+        <definition>static wamreg XAdjust__</definition>
+        <argsstring>(wamreg reg USES_REGS)</argsstring>
+        <name>XAdjust__</name>
+        <param>
+          <type>wamreg reg</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="573" column="22" bodyfile="C/qlyr.c" bodystart="573" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga12dc21eca60fb2396f1f26f025e7e52a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreFlags</definition>
+        <argsstring>(UInt NFlags)</argsstring>
+        <name>RestoreFlags</name>
+        <param>
+          <type>UInt</type>
+          <declname>NFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="594" column="13" bodyfile="C/qlyr.c" bodystart="594" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga85fefcf12ccf720be9307087894fd855" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreHashPreds</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>RestoreHashPreds</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="598" column="13" bodyfile="C/qlyr.c" bodystart="598" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga04dcaf63c27c06fd634eaff92480db61" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RestoreAtomList</definition>
+        <argsstring>(Atom atm USES_REGS)</argsstring>
+        <name>RestoreAtomList</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref> atm</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="600" column="13" bodyfile="C/qlyr.c" bodystart="600" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga8c9d677bd713d52eb0015cb5b2f89a48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool maybe_read_bytes</definition>
+        <argsstring>(FILE *stream, void *ptr, size_t sz)</argsstring>
+        <name>maybe_read_bytes</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="602" column="13" bodyfile="C/qlyr.c" bodystart="602" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga43cc1a62298100bc3bb72d72bd992e94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t read_bytes</definition>
+        <argsstring>(FILE *stream, void *ptr, size_t sz)</argsstring>
+        <name>read_bytes</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="614" column="15" bodyfile="C/qlyr.c" bodystart="614" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gabd4931193f0f6b198eb3281bdbedc51e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>static unsigned char read_byte</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_byte</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="630" column="22" bodyfile="C/qlyr.c" bodystart="630" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga3070d03970c96499474762e384610ab1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BITS16</type>
+        <definition>static BITS16 read_bits16</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_bits16</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="632" column="15" bodyfile="C/qlyr.c" bodystart="632" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga537a13ed775fdaba19ec108500714d04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>static UInt read_UInt</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_UInt</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="638" column="13" bodyfile="C/qlyr.c" bodystart="638" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gadd69a72cf4f0459c430d10e26c4a4dcf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_Int</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_Int</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="644" column="12" bodyfile="C/qlyr.c" bodystart="644" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga8d40f66be72a35c7443f0ecbec4967ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qlf_tag_t</type>
+        <definition>static qlf_tag_t read_tag</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_tag</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="650" column="18" bodyfile="C/qlyr.c" bodystart="650" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gae65cc5246fc49e82ba0e626393aded39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pred_flags_t</type>
+        <definition>static pred_flags_t read_predFlags</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_predFlags</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="655" column="21" bodyfile="C/qlyr.c" bodystart="655" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga8f98d49b7fcdffcf4ce3623b6e995afe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+        <definition>static Atom do_header</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>do_header</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="662" column="13" bodyfile="C/qlyr.c" bodystart="662" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga308cc6ff96e23d0f81fe9357834787d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int get_header</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>get_header</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="685" column="12" bodyfile="C/qlyr.c" bodystart="685" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga82ea74c4b6989b1820c8c24de4d49762" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ReadHash</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>ReadHash</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="714" column="13" bodyfile="C/qlyr.c" bodystart="714" bodyend="851"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga980cabe983377165981feda070088222" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void read_clauses</definition>
+        <argsstring>(FILE *stream, PredEntry *pp, UInt nclauses, pred_flags_t flags)</argsstring>
+        <name>read_clauses</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>nclauses</declname>
+        </param>
+        <param>
+          <type>pred_flags_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="853" column="13" bodyfile="C/qlyr.c" bodystart="853" bodyend="957"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga44b6480b1ff0df5b3922489efa75532f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void read_pred</definition>
+        <argsstring>(FILE *stream, Term mod)</argsstring>
+        <name>read_pred</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="959" column="13" bodyfile="C/qlyr.c" bodystart="959" bodyend="1037"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga9e36313ed7de60b39bf9637b17612210" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void read_ops</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_ops</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="1039" column="13" bodyfile="C/qlyr.c" bodystart="1039" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga9f8cc902cf3a79dc838218ef3f38895e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void read_module</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read_module</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="1056" column="13" bodyfile="C/qlyr.c" bodystart="1056" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga4c9f42f361326df789d4d2f1f11b90b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_read_module_preds</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_read_module_preds</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="1075" column="12" bodyfile="C/qlyr.c" bodystart="1075" bodyend="1092"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga8e3f2b652d7eab02a6f2969729f1686c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ReInitProlog</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReInitProlog</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="1094" column="13" bodyfile="C/qlyr.c" bodystart="1094" bodyend="1097"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1gaa52af0dd484a2a8fd0aa314364050f62" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int qload_program</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>qload_program</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="1099" column="12" bodyfile="C/qlyr.c" bodystart="1099" bodyend="1120"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga476c4ec40cc3fdfefc6ced945551427b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_file_type_t</type>
+        <definition>YAP_file_type_t Yap_Restore</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>Yap_Restore</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="1122" column="17" bodyfile="C/qlyr.c" bodystart="1122" bodyend="1147"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SaveRestoreSupport_1ga95bcaa710d1f0f7fd492279a4cc06d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitQLYR</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitQLYR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/qlyr.c" line="1149" column="6" bodyfile="C/qlyr.c" bodystart="1149" bodyend="1160"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/qlyr.c"/>
+    <location file="C/qlyr.c"/>
   </compounddef>
 </doxygen>

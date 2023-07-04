@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="yapa_8hh" kind="file" language="C++">
     <compoundname>yapa.hh</compoundname>
-    <includedby refid="yapdb_8hh" local="yes">/home/vsc/github/yap/CXX/yapdb.hh</includedby>
-    <includedby refid="yapi_8hh" local="yes">/home/vsc/github/yap/CXX/yapi.hh</includedby>
+    <includedby refid="yapdb_8hh" local="yes">CXX/yapdb.hh</includedby>
+    <includedby refid="yapi_8hh" local="yes">CXX/yapi.hh</includedby>
     <invincdepgraph>
       <node id="4">
-        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <label>CXX/cxx4yap.hh</label>
         <link refid="cxx4yap_8hh_source"/>
       </node>
       <node id="5">
-        <label>/home/vsc/github/yap/CXX/heap.cxx</label>
+        <label>CXX/heap.cxx</label>
         <link refid="heap_8cxx_source"/>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/CXX/yapa.hh</label>
+        <label>CXX/yapa.hh</label>
         <link refid="yapa_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -22,17 +22,17 @@
         </childnode>
       </node>
       <node id="2">
-        <label>/home/vsc/github/yap/CXX/yapdb.hh</label>
+        <label>CXX/yapdb.hh</label>
         <link refid="yapdb_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="6">
-        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <label>CXX/yapi.cpp</label>
         <link refid="yapi_8cpp_source"/>
       </node>
       <node id="3">
-        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <label>CXX/yapi.hh</label>
         <link refid="yapi_8hh"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -46,13 +46,275 @@
     <innerclass refid="classYAPProp" prot="public">YAPProp</innerclass>
     <innerclass refid="classYAPFunctor" prot="public">YAPFunctor</innerclass>
       <sectiondef kind="enum">
-      <member refid="group__yap-cplus-interface-atoms_1ga1f7727f842cd8b4e998e6e8ada202948" kind="enum"><name>PropTag</name></member>
+      <memberdef kind="enum" id="group__yap-cplus-interface-atoms_1ga1f7727f842cd8b4e998e6e8ada202948" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PropTag</name>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a0ed15e44eff2c19dcc7ec4f0009a896b" prot="public">
+          <name>PRED_TAG</name>
+          <initializer>= PEProp</initializer>
+          <briefdescription>
+<para>predicate </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ad54546f534ff4b0eee1ccfa6dff68500" prot="public">
+          <name>DB_TAG</name>
+          <initializer>= DBProperty</initializer>
+          <briefdescription>
+<para>db key, may be associated with a functor </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ac6c7b7ac1de70f88343a81afb6f50e91" prot="public">
+          <name>FUNCTOR_TAG</name>
+          <initializer>= FunctorProperty</initializer>
+          <briefdescription>
+<para>generic functor, may include sub-properties </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948aadf62df80e6d28e042de35a0b79464de" prot="public">
+          <name>ARITHMETIC_PROPERTY_TAG</name>
+          <initializer>= ExpProperty</initializer>
+          <briefdescription>
+<para>arithmetic function </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a0344312f08f76dad87921641502547bd" prot="public">
+          <name>TRANSLATION_TAG</name>
+          <initializer>= TranslationProperty</initializer>
+          <briefdescription>
+<para>map the atom to an integer </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948abf046301bc47ea31114a0a7a52f461d8" prot="public">
+          <name>HOLD_TAG</name>
+          <initializer>= HoldProperty</initializer>
+          <briefdescription>
+<para>ensure the atom may not be garbafe colected </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a7b9f9409265a12021f70d7b4de7dea9d" prot="public">
+          <name>MUTEX_TAG</name>
+          <initializer>= MutexProperty</initializer>
+          <briefdescription>
+<para>named mutEX </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a75c607bd326a5e3de7ec3449e13024fb" prot="public">
+          <name>ARRAY_TAG</name>
+          <initializer>= ArrayProperty</initializer>
+          <briefdescription>
+<para>A typed array, may be in-db or in-stack deped. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ac1afb1fea028c27629f1e9c1cfe7e007" prot="public">
+          <name>MODULE_TAG</name>
+          <initializer>= ModProperty</initializer>
+          <briefdescription>
+<para>module </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a64059bde3fd76a5c71ffaafce39c61f4" prot="public">
+          <name>BLACKBOARD_TAG</name>
+          <initializer>= BBProperty</initializer>
+          <briefdescription>
+<para>the original SICStus blackboard </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ad323a66f30680b5db1ca8f18da52aa2f" prot="public">
+          <name>VALUE_TAG</name>
+          <initializer>= ValProperty</initializer>
+          <briefdescription>
+<para>associate an atomic value with the atom </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948aa4329c8ff1487307e1405f2edc147e30" prot="public">
+          <name>GLOBAL_VAR_TAG</name>
+          <initializer>= GlobalProperty</initializer>
+          <briefdescription>
+<para>Demoen&apos;s proposal for gkobal variables. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948aeb1e6f3dc025195836f1e2cc00cb4481" prot="public">
+          <name>BLOB_TAG</name>
+          <initializer>= BlobProperty</initializer>
+          <briefdescription>
+<para>SWI-STYLE ATOM Extension. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a716408463c23cea2e65687d644a58b35" prot="public">
+          <name>OPERATOR_TAG</name>
+          <initializer>= OpProperty</initializer>
+          <briefdescription>
+<para>Prolog operator,. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a0ed15e44eff2c19dcc7ec4f0009a896b" prot="public">
+          <name>PRED_TAG</name>
+          <initializer>= PEProp</initializer>
+          <briefdescription>
+<para>predicate </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ad54546f534ff4b0eee1ccfa6dff68500" prot="public">
+          <name>DB_TAG</name>
+          <initializer>= DBProperty</initializer>
+          <briefdescription>
+<para>db key, may be associated with a functor </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ac6c7b7ac1de70f88343a81afb6f50e91" prot="public">
+          <name>FUNCTOR_TAG</name>
+          <initializer>= FunctorProperty</initializer>
+          <briefdescription>
+<para>generic functor, may include sub-properties </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948aadf62df80e6d28e042de35a0b79464de" prot="public">
+          <name>ARITHMETIC_PROPERTY_TAG</name>
+          <initializer>= ExpProperty</initializer>
+          <briefdescription>
+<para>arithmetic function </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a0344312f08f76dad87921641502547bd" prot="public">
+          <name>TRANSLATION_TAG</name>
+          <initializer>= TranslationProperty</initializer>
+          <briefdescription>
+<para>map the atom to an integer </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948abf046301bc47ea31114a0a7a52f461d8" prot="public">
+          <name>HOLD_TAG</name>
+          <initializer>= HoldProperty</initializer>
+          <briefdescription>
+<para>ensure the atom may not be garbafe colected </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a7b9f9409265a12021f70d7b4de7dea9d" prot="public">
+          <name>MUTEX_TAG</name>
+          <initializer>= MutexProperty</initializer>
+          <briefdescription>
+<para>named mutEX </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a75c607bd326a5e3de7ec3449e13024fb" prot="public">
+          <name>ARRAY_TAG</name>
+          <initializer>= ArrayProperty</initializer>
+          <briefdescription>
+<para>A typed array, may be in-db or in-stack deped. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ac1afb1fea028c27629f1e9c1cfe7e007" prot="public">
+          <name>MODULE_TAG</name>
+          <initializer>= ModProperty</initializer>
+          <briefdescription>
+<para>module </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a64059bde3fd76a5c71ffaafce39c61f4" prot="public">
+          <name>BLACKBOARD_TAG</name>
+          <initializer>= BBProperty</initializer>
+          <briefdescription>
+<para>the original SICStus blackboard </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948ad323a66f30680b5db1ca8f18da52aa2f" prot="public">
+          <name>VALUE_TAG</name>
+          <initializer>= ValProperty</initializer>
+          <briefdescription>
+<para>associate an atomic value with the atom </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948aa4329c8ff1487307e1405f2edc147e30" prot="public">
+          <name>GLOBAL_VAR_TAG</name>
+          <initializer>= GlobalProperty</initializer>
+          <briefdescription>
+<para>Demoen&apos;s proposal for gkobal variables. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948aeb1e6f3dc025195836f1e2cc00cb4481" prot="public">
+          <name>BLOB_TAG</name>
+          <initializer>= BlobProperty</initializer>
+          <briefdescription>
+<para>SWI-STYLE ATOM Extension. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__yap-cplus-interface-atoms_1gga1f7727f842cd8b4e998e6e8ada202948a716408463c23cea2e65687d644a58b35" prot="public">
+          <name>OPERATOR_TAG</name>
+          <initializer>= OpProperty</initializer>
+          <briefdescription>
+<para>Prolog operator,. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/yapa.hh" line="32" column="1" bodyfile="CXX/yapa.hh" bodystart="32" bodyend="62"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>C++ Interface to atoms and their properties. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/CXX/yapa.hh"/>
+    <location file="CXX/yapa.hh"/>
   </compounddef>
 </doxygen>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="classfile__select_22" kind="class" language="Prolog" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classfile__select_22" kind="predicate" language="Prolog" prot="public">
     <compoundname>file_select/2</compoundname>
     <briefdescription>
 <para><bold>file_select</bold>(+ <emphasis>FileIn</emphasis>, + <emphasis>Goal</emphasis>) </para>
@@ -9,7 +9,7 @@
 <para>meta<itemizedlist>
 <listitem><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>_FileIn_</parametername>
+<parametername>&lt;em&gt;FileIn&lt;/em&gt;</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>File or Stream to process </para>
@@ -17,7 +17,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>_Goal_</parametername>
+<parametername>&lt;em&gt;Goal&lt;/em&gt;</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>to be metacalled, receives FileIn as extra arguments</para>
@@ -28,12 +28,12 @@
 </listitem><listitem><para><simplesect kind="return"><para>bindings to arguments of <emphasis>Goal</emphasis></para>
 </simplesect>
 </para>
-</listitem><listitem><para>For every line <emphasis>LineIn</emphasis> in file <emphasis>FileIn</emphasis>, execute <computeroutput>call(</computeroutput>Goal,LineIn)<computeroutput></computeroutput></para>
-</listitem><listitem><para><computeroutput> The input stream is accessible through the alias</computeroutput>filter_input<computeroutput>, and the output stream is accessible through</computeroutput>filter_output` </para>
+</listitem><listitem><para>For every line <emphasis>LineIn</emphasis> in file <emphasis>FileIn</emphasis>, execute <computeroutput>call(</computeroutput>Goal,LineIn)`</para>
+</listitem><listitem><para>The input stream is accessible through the alias <computeroutput>filter_input</computeroutput>, and the output stream is accessible through <computeroutput>filter_output</computeroutput> </para>
 </listitem></itemizedlist>
 </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/library/lineutils.yap" line="2" column="1" bodyfile="/home/vsc/github/yap/library/lineutils.yap" bodystart="2" bodyend="-1"/>
+    <location file="library/lineutils.yap" line="2" column="1" bodyfile="library/lineutils.yap" bodystart="2" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="eval_8c" kind="file" language="C++">
     <compoundname>eval.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -9,7 +9,7 @@
     <includes local="no">stdlib.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/eval.c</label>
+        <label>C/eval.c</label>
         <link refid="eval_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -399,24 +399,248 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <member refid="group__arithmetic__predicates_1ga729e308008a7f842ba38ace94123ee10" kind="function"><name>Eval</name></member>
-      <member refid="group__arithmetic__predicates_1ga29cddfb46470e024050464d5c6bca2d5" kind="function"><name>get_matrix_element</name></member>
-      <member refid="group__arithmetic__predicates_1gabcca76b5af132b1ffe4020696cdb91a5" kind="function"><name>Eval</name></member>
-      <member refid="group__arithmetic__predicates_1ga12d2de7e67ad3961b60b09d59c39d376" kind="function"><name>Yap_InnerEval__</name></member>
-      <member refid="group__arithmetic__predicates_1ga9c9f31978b73477648bbfd7b88888139" kind="function"><name>YAP_Eval</name></member>
-      <member refid="group__arithmetic__predicates_1ga0d8e1598ca8ffdc4db6878a89d3ec18d" kind="function"><name>p_is</name></member>
-      <member refid="group__arithmetic__predicates_1ga29ad127ccba7dcab9e51e30783227e9b" kind="function"><name>p_isnan</name></member>
-      <member refid="group__arithmetic__predicates_1ga4baab370cb3197d75704beeee9c1267e" kind="function"><name>p_isinf</name></member>
-      <member refid="group__arithmetic__predicates_1gaaa57a4b5bbf4570a52aef372b4d4f176" kind="function"><name>p_logsum</name></member>
-      <member refid="group__arithmetic__predicates_1gaf67b01538c36a32df6f200d54298fcb0" kind="function"><name>Yap_ArithError__</name></member>
-      <member refid="group__arithmetic__predicates_1gae4ed9679b1587b6b829cfa5e997c54c2" kind="function"><name>cont_between</name></member>
-      <member refid="group__arithmetic__predicates_1gac787537a763413dddc353a3984041733" kind="function"><name>init_between</name></member>
-      <member refid="group__arithmetic__predicates_1gaaaa87500f4adca379b3ecf1065aa8908" kind="function"><name>Yap_InitEval</name></member>
+      <memberdef kind="function" id="group__arithmetic__predicates_1ga729e308008a7f842ba38ace94123ee10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term Eval</definition>
+        <argsstring>(Term t1 USES_REGS)</argsstring>
+        <name>Eval</name>
+        <param>
+          <type>Term t1</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="46" column="13" declfile="C/eval.c" declline="46" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1ga29cddfb46470e024050464d5c6bca2d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term get_matrix_element</definition>
+        <argsstring>(Term t1, Term t2 USES_REGS)</argsstring>
+        <name>get_matrix_element</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term t2</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="48" column="13" bodyfile="C/eval.c" bodystart="48" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1gabcca76b5af132b1ffe4020696cdb91a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term Eval</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>Eval</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="93" column="13" bodyfile="C/eval.c" bodystart="93" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1ga12d2de7e67ad3961b60b09d59c39d376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_InnerEval__</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>Yap_InnerEval__</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="164" column="6" bodyfile="C/eval.c" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1ga9c9f31978b73477648bbfd7b88888139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API Term</type>
+        <definition>X_API Term YAP_Eval</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>YAP_Eval</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="167" column="12" bodyfile="C/eval.c" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1ga0d8e1598ca8ffdc4db6878a89d3ec18d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_is</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_is</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="202" column="12" bodyfile="C/eval.c" bodystart="202" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1ga29ad127ccba7dcab9e51e30783227e9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_isnan</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_isnan</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="238" column="12" bodyfile="C/eval.c" bodystart="238" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1ga4baab370cb3197d75704beeee9c1267e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_isinf</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_isinf</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="270" column="12" bodyfile="C/eval.c" bodystart="270" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1gaaa57a4b5bbf4570a52aef372b4d4f176" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_logsum</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_logsum</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="304" column="12" bodyfile="C/eval.c" bodystart="304" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1gaf67b01538c36a32df6f200d54298fcb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ArithError__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, yap_error_number type, Term where,...)</argsstring>
+        <name>Yap_ArithError__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>yap_error_number</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="370" column="6" bodyfile="C/eval.c" bodystart="370" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1gae4ed9679b1587b6b829cfa5e997c54c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_between</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_between</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="407" column="12" bodyfile="C/eval.c" bodystart="407" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1gac787537a763413dddc353a3984041733" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int init_between</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>init_between</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="441" column="12" bodyfile="C/eval.c" bodystart="441" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="group__arithmetic__predicates_1gaaaa87500f4adca379b3ecf1065aa8908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitEval</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitEval</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/eval.c" line="534" column="6" bodyfile="C/eval.c" bodystart="534" bodyend="544"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/eval.c"/>
+    <location file="C/eval.c"/>
   </compounddef>
 </doxygen>

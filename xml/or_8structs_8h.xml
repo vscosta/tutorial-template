@@ -1,47 +1,371 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="or_8structs_8h" kind="file" language="C++">
     <compoundname>or.structs.h</compoundname>
     <innerclass refid="structor__frame" prot="public">or_frame</innerclass>
     <innerclass refid="structquery__goal__solution__frame" prot="public">query_goal_solution_frame</innerclass>
     <innerclass refid="structquery__goal__answer__frame" prot="public">query_goal_answer_frame</innerclass>
       <sectiondef kind="define">
-      <member refid="group__Parallelism_1ga2fe31d45614848531aac687e1dcced1c" kind="define"><name>OrFr_lock</name></member>
-      <member refid="group__Parallelism_1ga5131b34df3cea0e1c0f7c1e4aa9d638f" kind="define"><name>OrFr_alternative</name></member>
-      <member refid="group__Parallelism_1ga9b646272c4f90ccc6f738865d7b4aa75" kind="define"><name>OrFr_members</name></member>
-      <member refid="group__Parallelism_1ga7e6b90955e978d0ac6f6599cbbc0f7a1" kind="define"><name>OrFr_node</name></member>
-      <member refid="group__Parallelism_1gafeda0819ed35ea41f3c3f078d0ba7352" kind="define"><name>GetOrFr_node</name></member>
-      <member refid="group__Parallelism_1gab9652dc383447faaa41ff3ad8440d7b6" kind="define"><name>SetOrFr_node</name></member>
-      <member refid="group__Parallelism_1gade3e378d6ec739434c45bcbf2f325397" kind="define"><name>OrFr_nearest_livenode</name></member>
-      <member refid="group__Parallelism_1gae9a15eb178951442290acc8ba9fdf1ec" kind="define"><name>OrFr_depth</name></member>
-      <member refid="group__Parallelism_1gaacc92019c7fe7c8895231109cbef204b" kind="define"><name>OrFr_pend_prune_cp</name></member>
-      <member refid="group__Parallelism_1ga1aabf11fb809ac0be734a6fb78bf0801" kind="define"><name>Get_OrFr_pend_prune_cp</name></member>
-      <member refid="group__Parallelism_1ga2a7b5e9b430883ed6096f3c2d26271a4" kind="define"><name>Set_OrFr_pend_prune_cp</name></member>
-      <member refid="group__Parallelism_1gacbe66054a5f156225dc186fba151aba5" kind="define"><name>OrFr_pend_prune_ltt</name></member>
-      <member refid="group__Parallelism_1gadebb0c7cff271f30e220bd60d25668aa" kind="define"><name>OrFr_nearest_leftnode</name></member>
-      <member refid="group__Parallelism_1gad4d1a2c89ea8f9454080a6f799f89bef" kind="define"><name>OrFr_qg_solutions</name></member>
-      <member refid="group__Parallelism_1ga81b9124f867f63c0778376199327ac1a" kind="define"><name>OrFr_tg_solutions</name></member>
-      <member refid="group__Parallelism_1ga1b311e3cf30853784ee3634fef54ecb4" kind="define"><name>OrFr_owners</name></member>
-      <member refid="group__Parallelism_1ga02a1d7db5b0029eebf63cd999b8271f9" kind="define"><name>OrFr_next_on_stack</name></member>
-      <member refid="group__Parallelism_1ga688521189707562878f73665ab150a5c" kind="define"><name>OrFr_suspensions</name></member>
-      <member refid="group__Parallelism_1ga77fd492da1eda6000372bbf59d3c10b6" kind="define"><name>OrFr_nearest_suspnode</name></member>
-      <member refid="group__Parallelism_1ga01ce7c55a19f33711e24a5d405058755" kind="define"><name>OrFr_next</name></member>
-      <member refid="group__Parallelism_1ga269ebdb7c783d2a3d3b35e34d8e58aa2" kind="define"><name>SolFr_ltt</name></member>
-      <member refid="group__Parallelism_1ga1167672291b1b03455c828a9ed9901f3" kind="define"><name>SolFr_first</name></member>
-      <member refid="group__Parallelism_1ga89c7fe1c057310419923b5e134cc71a9" kind="define"><name>SolFr_last</name></member>
-      <member refid="group__Parallelism_1gae57cd7377eab5d75d7f087bc566cfdfb" kind="define"><name>SolFr_next</name></member>
-      <member refid="group__Parallelism_1ga9a352d711fb454d1f6e8c2d1fc3f50b6" kind="define"><name>AnsFr_answer</name></member>
-      <member refid="group__Parallelism_1ga6e463ebd9355a8b765f75babc78cf7ad" kind="define"><name>AnsFr_next</name></member>
+      <memberdef kind="define" id="group__Parallelism_1ga2fe31d45614848531aac687e1dcced1c" prot="public" static="no">
+        <name>OrFr_lock</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;lock)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="94" column="9" bodyfile="OPTYap/or.structs.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga5131b34df3cea0e1c0f7c1e4aa9d638f" prot="public" static="no">
+        <name>OrFr_alternative</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;alternative)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="95" column="9" bodyfile="OPTYap/or.structs.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga9b646272c4f90ccc6f738865d7b4aa75" prot="public" static="no">
+        <name>OrFr_members</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;members)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="96" column="9" bodyfile="OPTYap/or.structs.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga7e6b90955e978d0ac6f6599cbbc0f7a1" prot="public" static="no">
+        <name>OrFr_node</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="101" column="10" bodyfile="OPTYap/or.structs.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gafeda0819ed35ea41f3c3f078d0ba7352" prot="public" static="no">
+        <name>GetOrFr_node</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="102" column="9" bodyfile="OPTYap/or.structs.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gab9652dc383447faaa41ff3ad8440d7b6" prot="public" static="no">
+        <name>SetOrFr_node</name>
+        <param><defname>X</defname></param>
+        <param><defname>V</defname></param>
+        <initializer>((X)-&gt;node = V)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="103" column="9" bodyfile="OPTYap/or.structs.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gade3e378d6ec739434c45bcbf2f325397" prot="public" static="no">
+        <name>OrFr_nearest_livenode</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;nearest_livenode)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="105" column="10" bodyfile="OPTYap/or.structs.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gae9a15eb178951442290acc8ba9fdf1ec" prot="public" static="no">
+        <name>OrFr_depth</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;depth)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="106" column="9" bodyfile="OPTYap/or.structs.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gaacc92019c7fe7c8895231109cbef204b" prot="public" static="no">
+        <name>OrFr_pend_prune_cp</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;pending_prune_cp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="111" column="10" bodyfile="OPTYap/or.structs.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga1aabf11fb809ac0be734a6fb78bf0801" prot="public" static="no">
+        <name>Get_OrFr_pend_prune_cp</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;pending_prune_cp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="112" column="9" bodyfile="OPTYap/or.structs.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga2a7b5e9b430883ed6096f3c2d26271a4" prot="public" static="no">
+        <name>Set_OrFr_pend_prune_cp</name>
+        <param><defname>X</defname></param>
+        <param><defname>V</defname></param>
+        <initializer>((X)-&gt;pending_prune_cp = (V))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="113" column="9" bodyfile="OPTYap/or.structs.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gacbe66054a5f156225dc186fba151aba5" prot="public" static="no">
+        <name>OrFr_pend_prune_ltt</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;pending_prune_ltt)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="115" column="10" bodyfile="OPTYap/or.structs.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gadebb0c7cff271f30e220bd60d25668aa" prot="public" static="no">
+        <name>OrFr_nearest_leftnode</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;nearest_leftnode)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="116" column="9" bodyfile="OPTYap/or.structs.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gad4d1a2c89ea8f9454080a6f799f89bef" prot="public" static="no">
+        <name>OrFr_qg_solutions</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;query_solutions)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="117" column="9" bodyfile="OPTYap/or.structs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga81b9124f867f63c0778376199327ac1a" prot="public" static="no">
+        <name>OrFr_tg_solutions</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;table_solutions)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="118" column="9" bodyfile="OPTYap/or.structs.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga1b311e3cf30853784ee3634fef54ecb4" prot="public" static="no">
+        <name>OrFr_owners</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;number_owners)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="119" column="9" bodyfile="OPTYap/or.structs.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga02a1d7db5b0029eebf63cd999b8271f9" prot="public" static="no">
+        <name>OrFr_next_on_stack</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="123" column="10" bodyfile="OPTYap/or.structs.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga688521189707562878f73665ab150a5c" prot="public" static="no">
+        <name>OrFr_suspensions</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;suspensions)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="125" column="11" bodyfile="OPTYap/or.structs.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga77fd492da1eda6000372bbf59d3c10b6" prot="public" static="no">
+        <name>OrFr_nearest_suspnode</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;nearest_suspension_node)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="126" column="9" bodyfile="OPTYap/or.structs.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga01ce7c55a19f33711e24a5d405058755" prot="public" static="no">
+        <name>OrFr_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="127" column="9" bodyfile="OPTYap/or.structs.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga269ebdb7c783d2a3d3b35e34d8e58aa2" prot="public" static="no">
+        <name>SolFr_ltt</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;ltt)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="142" column="9" bodyfile="OPTYap/or.structs.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga1167672291b1b03455c828a9ed9901f3" prot="public" static="no">
+        <name>SolFr_first</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;first)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="143" column="9" bodyfile="OPTYap/or.structs.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga89c7fe1c057310419923b5e134cc71a9" prot="public" static="no">
+        <name>SolFr_last</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;last)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="144" column="9" bodyfile="OPTYap/or.structs.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1gae57cd7377eab5d75d7f087bc566cfdfb" prot="public" static="no">
+        <name>SolFr_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="145" column="9" bodyfile="OPTYap/or.structs.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga9a352d711fb454d1f6e8c2d1fc3f50b6" prot="public" static="no">
+        <name>AnsFr_answer</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;answer)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="158" column="9" bodyfile="OPTYap/or.structs.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Parallelism_1ga6e463ebd9355a8b765f75babc78cf7ad" prot="public" static="no">
+        <name>AnsFr_next</name>
+        <param><defname>X</defname></param>
+        <initializer>((X)-&gt;next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="159" column="9" bodyfile="OPTYap/or.structs.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <member refid="group__Parallelism_1ga1c53f91345affff34276e9c827ad28be" kind="typedef"><name>or_fr_ptr</name></member>
-      <member refid="group__Parallelism_1gaba172866d3694aeb97c0453bed134740" kind="typedef"><name>qg_sol_fr_ptr</name></member>
-      <member refid="group__Parallelism_1gad438c8f577465662ae67265a7e97d615" kind="typedef"><name>qg_ans_fr_ptr</name></member>
+      <memberdef kind="typedef" id="group__Parallelism_1ga1c53f91345affff34276e9c827ad28be" prot="public" static="no">
+        <type>struct <ref refid="structor__frame" kindref="compound">or_frame</ref> *</type>
+        <definition>typedef struct or_frame * or_fr_ptr</definition>
+        <argsstring></argsstring>
+        <name>or_fr_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="92" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Parallelism_1gaba172866d3694aeb97c0453bed134740" prot="public" static="no">
+        <type>struct <ref refid="structquery__goal__solution__frame" kindref="compound">query_goal_solution_frame</ref> *</type>
+        <definition>typedef struct query_goal_solution_frame * qg_sol_fr_ptr</definition>
+        <argsstring></argsstring>
+        <name>qg_sol_fr_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="140" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Parallelism_1gad438c8f577465662ae67265a7e97d615" prot="public" static="no">
+        <type>struct <ref refid="structquery__goal__answer__frame" kindref="compound">query_goal_answer_frame</ref> *</type>
+        <definition>typedef struct query_goal_answer_frame * qg_ans_fr_ptr</definition>
+        <argsstring></argsstring>
+        <name>qg_ans_fr_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OPTYap/or.structs.h" line="156" column="16"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/OPTYap/or.structs.h"/>
+    <location file="OPTYap/or.structs.h"/>
   </compounddef>
 </doxygen>

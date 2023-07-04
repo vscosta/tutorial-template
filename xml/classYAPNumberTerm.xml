@@ -1,9 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="classYAPNumberTerm" kind="class" language="C++" prot="public">
     <compoundname>YAPNumberTerm</compoundname>
     <basecompoundref refid="classYAPTerm" prot="public" virt="non-virtual">YAPTerm</basecompoundref>
+    <basecompoundref refid="classYAPTerm" prot="public" virt="non-virtual">YAPTerm</basecompoundref>
     <derivedcompoundref refid="classYAPFloatTerm" prot="public" virt="non-virtual">YAPFloatTerm</derivedcompoundref>
+    <derivedcompoundref refid="classYAPFloatTerm" prot="public" virt="non-virtual">YAPFloatTerm</derivedcompoundref>
+    <derivedcompoundref refid="classYAPIntegerTerm" prot="public" virt="non-virtual">YAPIntegerTerm</derivedcompoundref>
     <derivedcompoundref refid="classYAPIntegerTerm" prot="public" virt="non-virtual">YAPIntegerTerm</derivedcompoundref>
     <includes refid="tmp_2yapt_8hh" local="no">yapt.hh</includes>
       <sectiondef kind="public-func">
@@ -12,56 +15,52 @@
         <definition>YAPNumberTerm</definition>
         <argsstring>()</argsstring>
         <name>YAPNumberTerm</name>
-        <qualifiedname>YAPNumberTerm::YAPNumberTerm</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="493" column="3" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="493" bodyend="493"/>
+        <location file="CXX/tmp/yapt.hh" line="493" column="3" bodyfile="CXX/tmp/yapt.hh" bodystart="493" bodyend="493"/>
       </memberdef>
       <memberdef kind="function" id="classYAPNumberTerm_1a791848416f52ad194367643a43fbc9fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool isTagged</definition>
         <argsstring>()</argsstring>
         <name>isTagged</name>
-        <qualifiedname>YAPNumberTerm::isTagged</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="494" column="8" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="494" bodyend="494"/>
+        <location file="CXX/tmp/yapt.hh" line="494" column="8" bodyfile="CXX/tmp/yapt.hh" bodystart="494" bodyend="494"/>
       </memberdef>
       <memberdef kind="function" id="classYAPNumberTerm_1ac2dad790bc23f47eac903fc775f2ba48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>YAPNumberTerm</definition>
         <argsstring>()</argsstring>
         <name>YAPNumberTerm</name>
-        <qualifiedname>YAPNumberTerm::YAPNumberTerm</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="509" column="3" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="509" bodyend="509"/>
+        <location file="CXX/yapt.hh" line="509" column="3" bodyfile="CXX/yapt.hh" bodystart="509" bodyend="509"/>
       </memberdef>
       <memberdef kind="function" id="classYAPNumberTerm_1a791848416f52ad194367643a43fbc9fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool isTagged</definition>
         <argsstring>()</argsstring>
         <name>isTagged</name>
-        <qualifiedname>YAPNumberTerm::isTagged</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/yapt.hh" line="510" column="8" bodyfile="/home/vsc/github/yap/CXX/yapt.hh" bodystart="510" bodyend="510"/>
+        <location file="CXX/yapt.hh" line="510" column="8" bodyfile="CXX/yapt.hh" bodystart="510" bodyend="510"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -75,16 +74,22 @@
         <link refid="classYAPFloatTerm"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="4">
         <label>YAPIntegerTerm</label>
         <link refid="classYAPIntegerTerm"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="1">
         <label>YAPNumberTerm</label>
         <link refid="classYAPNumberTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
@@ -99,13 +104,15 @@
         <link refid="classYAPNumberTerm"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="2">
         <label>YAPTerm</label>
         <link refid="classYAPTerm"/>
       </node>
     </collaborationgraph>
-    <location file="/home/vsc/github/yap/CXX/tmp/yapt.hh" line="491" column="1" bodyfile="/home/vsc/github/yap/CXX/tmp/yapt.hh" bodystart="491" bodyend="495"/>
+    <location file="CXX/tmp/yapt.hh" line="491" column="1" bodyfile="CXX/tmp/yapt.hh" bodystart="491" bodyend="495"/>
     <listofallmembers>
       <member refid="classYAPTerm_1ab113801eac8ec2c37f7d69f86431a9c2" prot="public" virt="non-virtual"><scope>YAPNumberTerm</scope><name>arg</name></member>
       <member refid="classYAPTerm_1ab113801eac8ec2c37f7d69f86431a9c2" prot="public" virt="non-virtual"><scope>YAPNumberTerm</scope><name>arg</name></member>

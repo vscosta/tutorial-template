@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="fli_c_xx" kind="page">
     <compoundname>fli_c_xx</compoundname>
     <title>The Foreign Language Interfaces</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>YAP provides the user with three facilities for writing predicates in a language other than Prolog Under Unix systems, most language implementations were linkable to <computeroutput>C</computeroutput>, and the first interface exported the YAP machinery to the C language YAP also implements most of the SWI-Prolog foreign language interface This gives portability with a number of SWI-Prolog packages and avoids garnage collection by using <ref refid="group__slotInterface" kindref="compound">Term Handles or Slots</ref> Last, a new C++ based interface is being designed to work with the swig (www.swig.orgv) interface compiler</para>
+<para><anchor id="fli_c_xx_1md_docs_md_fli_c_xx"/> YAP provides the user with three facilities for writing predicates in a language other than Prolog Under Unix systems, most language implementations were linkable to <computeroutput>C</computeroutput>, and the first interface exported the YAP machinery to the C language YAP also implements most of the SWI-Prolog foreign language interface This gives portability with a number of SWI-Prolog packages and avoids garnage collection by using <ref refid="group__slotInterface" kindref="compound">Term Handles or Slots</ref> Last, a new C++ based interface is being designed to work with the swig (www.swig.orgv) interface compiler</para>
 <para><ref refid="fli_c_xx_1ChYinterface" kindref="member">The YAP C-interface</ref></para>
 <para><ref refid="group__swi-c-interface" kindref="compound">SWI-Prolog Foreign Language Interface</ref></para>
 <para><ref refid="group__yap-cplus-interface" kindref="compound">An object oriented interface for YAP.</ref></para>
@@ -244,7 +244,7 @@ The following primitives are available for associating atoms with their names</p
 <para></para>
 </listitem>
 </itemizedlist>
-The function <ref refid="group__slotInterface_1gabb0253786863321f6490f51b60804e0d" kindref="member">YAP_LookupAtom</ref> looks up an atom in the standard hash table The function <ref refid="group__slotInterface_1gac076c701439035f82938fa45bddd400b" kindref="member">YAP_FullLookupAtom</ref> will also search if the&lt; atom had been &quot;hidden&quot;: this is useful for system maintenance from C code The functor <ref refid="group__slotInterface_1gacaed558dd067b3d7e50b19a7b15d35b7" kindref="member">YAP_AtomName</ref> returns a pointer to the string for the atom</para>
+The function <ref refid="group__ChYInterface_1gabb0253786863321f6490f51b60804e0d" kindref="member">YAP_LookupAtom</ref> looks up an atom in the standard hash table The function <ref refid="group__ChYInterface_1gac076c701439035f82938fa45bddd400b" kindref="member">YAP_FullLookupAtom</ref> will also search if the&lt; atom had been &quot;hidden&quot;: this is useful for system maintenance from C code The functor <ref refid="group__ChYInterface_1gacaed558dd067b3d7e50b19a7b15d35b7" kindref="member">YAP_AtomName</ref> returns a pointer to the string for the atom</para>
 <para>The following primitives handle constructing atoms from strings with wide characters, and vice-versa:</para>
 <para><itemizedlist>
 <listitem>
@@ -338,9 +338,9 @@ One can construct a new pair from two terms, or one can just build a pair whose 
 <para></para>
 </listitem>
 </itemizedlist>
-The [YAP_MkApplTerm() function constructs a new term, with functor <emphasis>f</emphasis> (of arity <emphasis>n</emphasis>), and using an array <emphasis>args</emphasis> of <emphasis>n</emphasis> terms with <emphasis>n</emphasis> equal to the arity of the functor YAP_MkNewApplTerm() builds up a compound term whose arguments are unbound variables YAP_ArgOfTerm gives an argument to a compound term <computeroutput>argno</computeroutput> should be greater or equal to 1 and less or equal to the arity of the functor [YAP_ArgsOfTerm](YAP_ArgsOfTerm) returns a pointer to an array of arguments</para>
+The [YAP_MkApplTerm() function constructs a new term, with functor <emphasis>f</emphasis> (of arity <emphasis>n</emphasis>), and using an array <emphasis>args</emphasis> of <emphasis>n</emphasis> terms with <emphasis>n</emphasis> equal to the arity of the functor YAP_MkNewApplTerm() builds up a compound term whose arguments are unbound variables <ref refid="group__ChYInterface_1gaa14861763a2c0c6a2bfb874d6ff3ed79" kindref="member">YAP_ArgOfTerm</ref> gives an argument to a compound term <computeroutput>argno</computeroutput> should be greater or equal to 1 and less or equal to the arity of the functor [YAP_ArgsOfTerm](<ref refid="group__ChYInterface_1ga61068e3467929b37d9f2f50229b60645" kindref="member">YAP_ArgsOfTerm</ref>) returns a pointer to an array of arguments</para>
 <para>Notice that the compound term constructors can call the garbage collector if there is not enough space in the global stack</para>
-<para>YAP allows one to manipulate the functors of compound term The function YAP_FunctorOfTerm allows one to obtain a variable of type <computeroutput>YAP_Functor</computeroutput> with the functor to a term The following functions then allow one to construct functors, and to obtain their name and arity</para>
+<para>YAP allows one to manipulate the functors of compound term The function <ref refid="group__ChYInterface_1ga0106c2f9736ad24ca45885cd24578497" kindref="member">YAP_FunctorOfTerm</ref> allows one to obtain a variable of type <computeroutput>YAP_Functor</computeroutput> with the functor to a term The following functions then allow one to construct functors, and to obtain their name and arity</para>
 <para><itemizedlist>
 <listitem>
 <para>YAP_Functor YAP_MkFunctor(YAP_Atom <emphasis>a</emphasis>,unsigned long int <emphasis>arity</emphasis>)  </para>
@@ -546,8 +546,7 @@ Notice that any accesses using <emphasis>handle</emphasis> after this operation 
 <para>The second function computes a hash function for a term, as in <computeroutput><ref refid="classterm__hash_24" kindref="compound">term_hash/4</ref> </computeroutput></para>
 <para><itemizedlist>
 <listitem>
-<para>YAP_Int YAP_TermHash(YAP_Term t, YAP_Int range, YAP_Int depth, int
-ignore_variables));</para>
+<para>YAP_Int YAP_TermHash(YAP_Term t, YAP_Int range, YAP_Int depth, int ignore_variables));</para>
 <para></para>
 </listitem>
 </itemizedlist>
@@ -963,10 +962,10 @@ must initialize the YAP environment A single function, <computeroutput>YAP_FastI
 </listitem><listitem><para>You can generate your own saved states Look at the <computeroutput><ref refid="boot_8yap" kindref="compound">boot.yap</ref></computeroutput> and <computeroutput><ref refid="init_8yap_source" kindref="compound">init.yap</ref></computeroutput> files</para>
 </listitem></itemizedlist>
 </para>
-<para><blockquote><para><zwj/> </para>
+<para><blockquote><para></para>
 </blockquote></para>
 </sect1>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/docs/md/fli_c_xx.md"/>
+    <location file="docs/md/fli_c_xx.md"/>
   </compounddef>
 </doxygen>

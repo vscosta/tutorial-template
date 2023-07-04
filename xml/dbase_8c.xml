@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="dbase_8c" kind="file" language="C++">
     <compoundname>dbase.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -10,7 +10,7 @@
     <includes local="no">stdlib.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/dbase.c</label>
+        <label>C/dbase.c</label>
         <link refid="dbase_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -478,203 +478,3404 @@
     <innerclass refid="structdb__globs" prot="public">db_globs</innerclass>
     <innerclass refid="structvisitel" prot="public">visitel</innerclass>
       <sectiondef kind="define">
-      <member refid="group__Internal__Database_1gad94fa6e7f79b15c722bb2ee0aeff30e5" kind="define"><name>DISCONNECT_OLD_ENTRIES</name></member>
-      <member refid="group__Internal__Database_1gad44967749e6c25fcc0db8919b0268b19" kind="define"><name>Register</name></member>
-      <member refid="group__Internal__Database_1ga12a6cf84b8154fe5ea2c5137bb2ab242" kind="define"><name>MkFirst</name></member>
-      <member refid="group__Internal__Database_1ga8e8395ddd07240781952c581438b9a37" kind="define"><name>MkCode</name></member>
-      <member refid="group__Internal__Database_1ga2cdf20df53727a648188ef33d1deff44" kind="define"><name>MkLast</name></member>
-      <member refid="group__Internal__Database_1ga91e88d5a1d87de7076412af7630ba87c" kind="define"><name>WithRef</name></member>
-      <member refid="group__Internal__Database_1ga35e8348b77110142ca6f4a0be91bcc41" kind="define"><name>MkIfNot</name></member>
-      <member refid="group__Internal__Database_1ga360e4f88f92c668f46a1936180482184" kind="define"><name>InQueue</name></member>
-      <member refid="group__Internal__Database_1ga7cbbd109d32312fe28a8587e627ea32c" kind="define"><name>FrstDBRef</name></member>
-      <member refid="group__Internal__Database_1ga4f5a4d76cc3590e2faff3996b727296b" kind="define"><name>NextDBRef</name></member>
-      <member refid="group__Internal__Database_1ga01c95f1c64692ce4256387720289fa25" kind="define"><name>DBLength</name></member>
-      <member refid="group__Internal__Database_1ga8f3d70e1656e2b3c94c13b800164b0f3" kind="define"><name>AllocDBSpace</name></member>
-      <member refid="group__Internal__Database_1ga67d369ed033fbe2021bdbb090915a914" kind="define"><name>FreeDBSpace</name></member>
-      <member refid="group__Internal__Database_1ga63553a0710134b04e755df0094e89cb0" kind="define"><name>ToSmall</name></member>
-      <member refid="group__Internal__Database_1ga17eedda44eb09276b1409923f8513331" kind="define"><name>HashFieldMask</name></member>
-      <member refid="group__Internal__Database_1gaf3764d6cb1ea13d3842c9c85e336245b" kind="define"><name>DualHashFieldMask</name></member>
-      <member refid="group__Internal__Database_1ga87e02e12e11cf4497fa8075762dcf172" kind="define"><name>TripleHashFieldMask</name></member>
-      <member refid="group__Internal__Database_1ga449ee800ef6a57767acd6cb862010917" kind="define"><name>FourHashFieldMask</name></member>
-      <member refid="group__Internal__Database_1ga2fdea39b64898468db59bb99c0d144b8" kind="define"><name>ONE_FIELD_SHIFT</name></member>
-      <member refid="group__Internal__Database_1ga2d8cff49afa473702dc44413cf6301e7" kind="define"><name>TWO_FIELDS_SHIFT</name></member>
-      <member refid="group__Internal__Database_1ga59d446df9439d38d6a8e501901eb1e64" kind="define"><name>THREE_FIELDS_SHIFT</name></member>
-      <member refid="group__Internal__Database_1ga8d3e1a39752d5cf9d83fdab161f08586" kind="define"><name>AtomHash</name></member>
-      <member refid="group__Internal__Database_1gad1ce9634dc27fa06ab8783e66f49c46e" kind="define"><name>FunctorHash</name></member>
-      <member refid="group__Internal__Database_1ga8d5f3515071ad1046bb1f59408220ed6" kind="define"><name>NumberHash</name></member>
-      <member refid="group__Internal__Database_1gad7ddf906e60854534b1d247a022cceaf" kind="define"><name>LARGE_IDB_LINK_TABLE</name></member>
-      <member refid="group__Internal__Database_1ga5da592569a93729f6897ca3f20754df3" kind="define"><name>SIZEOF_LINK_ENTRY</name></member>
-      <member refid="group__Internal__Database_1ga35f2a6046b9f208eaf8ac9687a96f298" kind="define"><name>db_check_trail</name></member>
-      <member refid="group__Internal__Database_1gac2b34118b158ad2267af5cf83a371610" kind="define"><name>MarkThisRef</name></member>
-      <member refid="group__Internal__Database_1ga091a4c9174ee7d91f404f4b963c393b2" kind="define"><name>DB_UNWIND_CUNIF</name></member>
-      <member refid="group__Internal__Database_1ga18dca446dd060fd27f0a48ca6b7e8c63" kind="define"><name>CheckDBOverflow</name></member>
-      <member refid="group__Internal__Database_1ga2367f15f1469f901df7b642723a84dad" kind="define"><name>CheckVisitOverflow</name></member>
-      <member refid="group__Internal__Database_1ga796bc2e5101adc95ee83fe119e455a51" kind="define"><name>DB_MARKED</name></member>
+      <memberdef kind="define" id="group__Internal__Database_1gad94fa6e7f79b15c722bb2ee0aeff30e5" prot="public" static="no">
+        <name>DISCONNECT_OLD_ENTRIES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="142" column="9" bodyfile="C/dbase.c" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1gad44967749e6c25fcc0db8919b0268b19" prot="public" static="no">
+        <name>Register</name>
+        <initializer>register</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="147" column="10" bodyfile="C/dbase.c" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga12a6cf84b8154fe5ea2c5137bb2ab242" prot="public" static="no">
+        <name>MkFirst</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="152" column="9" bodyfile="C/dbase.c" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga8e8395ddd07240781952c581438b9a37" prot="public" static="no">
+        <name>MkCode</name>
+        <initializer>CodeDBBit</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="153" column="9" bodyfile="C/dbase.c" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga2cdf20df53727a648188ef33d1deff44" prot="public" static="no">
+        <name>MkLast</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="154" column="9" bodyfile="C/dbase.c" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga91e88d5a1d87de7076412af7630ba87c" prot="public" static="no">
+        <name>WithRef</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="155" column="9" bodyfile="C/dbase.c" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga35e8348b77110142ca6f4a0be91bcc41" prot="public" static="no">
+        <name>MkIfNot</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="156" column="9" bodyfile="C/dbase.c" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga360e4f88f92c668f46a1936180482184" prot="public" static="no">
+        <name>InQueue</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="157" column="9" bodyfile="C/dbase.c" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga7cbbd109d32312fe28a8587e627ea32c" prot="public" static="no">
+        <name>FrstDBRef</name>
+        <param><defname>V</defname></param>
+        <initializer>((V)-&gt;First)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="159" column="9" bodyfile="C/dbase.c" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga4f5a4d76cc3590e2faff3996b727296b" prot="public" static="no">
+        <name>NextDBRef</name>
+        <param><defname>V</defname></param>
+        <initializer>((V)-&gt;Next)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="160" column="9" bodyfile="C/dbase.c" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga01c95f1c64692ce4256387720289fa25" prot="public" static="no">
+        <name>DBLength</name>
+        <param><defname>V</defname></param>
+        <initializer>(sizeof(<ref refid="structDB__STRUCT" kindref="compound">DBStruct</ref>) + (Int)(V) + CellSize)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="162" column="9" bodyfile="C/dbase.c" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga8f3d70e1656e2b3c94c13b800164b0f3" prot="public" static="no">
+        <name>AllocDBSpace</name>
+        <param><defname>V</defname></param>
+        <initializer>((<ref refid="structDB__STRUCT" kindref="compound">DBRef</ref>)Yap_AllocCodeSpace(V))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="163" column="9" bodyfile="C/dbase.c" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga67d369ed033fbe2021bdbb090915a914" prot="public" static="no">
+        <name>FreeDBSpace</name>
+        <param><defname>V</defname></param>
+        <initializer>Yap_FreeCodeSpace(V)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="164" column="9" bodyfile="C/dbase.c" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga63553a0710134b04e755df0094e89cb0" prot="public" static="no">
+        <name>ToSmall</name>
+        <param><defname>V</defname></param>
+        <initializer>((link_entry)(Unsigned(V) &gt;&gt; 3))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="169" column="10" bodyfile="C/dbase.c" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga17eedda44eb09276b1409923f8513331" prot="public" static="no">
+        <name>HashFieldMask</name>
+        <initializer>((CELL)0xffL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="182" column="9" bodyfile="C/dbase.c" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1gaf3764d6cb1ea13d3842c9c85e336245b" prot="public" static="no">
+        <name>DualHashFieldMask</name>
+        <initializer>((CELL)0xffffL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="183" column="9" bodyfile="C/dbase.c" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga87e02e12e11cf4497fa8075762dcf172" prot="public" static="no">
+        <name>TripleHashFieldMask</name>
+        <initializer>((CELL)0xffffffL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="184" column="9" bodyfile="C/dbase.c" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga449ee800ef6a57767acd6cb862010917" prot="public" static="no">
+        <name>FourHashFieldMask</name>
+        <initializer>((CELL)0xffffffffL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="185" column="9" bodyfile="C/dbase.c" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga2fdea39b64898468db59bb99c0d144b8" prot="public" static="no">
+        <name>ONE_FIELD_SHIFT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="187" column="9" bodyfile="C/dbase.c" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga2d8cff49afa473702dc44413cf6301e7" prot="public" static="no">
+        <name>TWO_FIELDS_SHIFT</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="188" column="9" bodyfile="C/dbase.c" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga59d446df9439d38d6a8e501901eb1e64" prot="public" static="no">
+        <name>THREE_FIELDS_SHIFT</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="189" column="9" bodyfile="C/dbase.c" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga8d3e1a39752d5cf9d83fdab161f08586" prot="public" static="no">
+        <name>AtomHash</name>
+        <param><defname>t</defname></param>
+        <initializer>(Unsigned(t) &gt;&gt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="191" column="9" bodyfile="C/dbase.c" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1gad1ce9634dc27fa06ab8783e66f49c46e" prot="public" static="no">
+        <name>FunctorHash</name>
+        <param><defname>t</defname></param>
+        <initializer>(Unsigned(t) &gt;&gt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="192" column="9" bodyfile="C/dbase.c" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga8d5f3515071ad1046bb1f59408220ed6" prot="public" static="no">
+        <name>NumberHash</name>
+        <param><defname>t</defname></param>
+        <initializer>(Unsigned(IntOfTerm(t)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="193" column="9" bodyfile="C/dbase.c" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1gad7ddf906e60854534b1d247a022cceaf" prot="public" static="no">
+        <name>LARGE_IDB_LINK_TABLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="195" column="9" bodyfile="C/dbase.c" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga5da592569a93729f6897ca3f20754df3" prot="public" static="no">
+        <name>SIZEOF_LINK_ENTRY</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="200" column="9" bodyfile="C/dbase.c" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga35f2a6046b9f208eaf8ac9687a96f298" prot="public" static="no">
+        <name>db_check_trail</name>
+        <param><defname>x</defname></param>
+        <initializer>  {                                                                            \
+    if (Unsigned(dbg-&gt;tofref) == Unsigned(x)) {                                \
+      goto error_tr_overflow;                                                  \
+    }                                                                          \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="304" column="9" bodyfile="C/dbase.c" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1gac2b34118b158ad2267af5cf83a371610" prot="public" static="no">
+        <name>MarkThisRef</name>
+        <param><defname>Ref</defname></param>
+        <initializer>((Ref)-&gt;NOfRefsTo++)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="580" column="9" bodyfile="C/dbase.c" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga091a4c9174ee7d91f404f4b963c393b2" prot="public" static="no">
+        <name>DB_UNWIND_CUNIF</name>
+        <param></param>
+        <initializer>  while (<ref refid="structvisited" kindref="compound">visited</ref> &lt; (<ref refid="structvisitel" kindref="compound">visitel</ref> *)AuxSp) {                                         \
+    RESET_VARIABLE(<ref refid="structvisited" kindref="compound">visited</ref>-&gt;addr);                                             \
+    <ref refid="structvisited" kindref="compound">visited</ref>++;                                                                 \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="586" column="9" bodyfile="C/dbase.c" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga18dca446dd060fd27f0a48ca6b7e8c63" prot="public" static="no">
+        <name>CheckDBOverflow</name>
+        <param><defname>X</defname></param>
+        <initializer>  if (CodeMax + X &gt;= (CELL *)<ref refid="structvisited" kindref="compound">visited</ref> - 1024) {                                 \
+    goto error;                                                                \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="593" column="9" bodyfile="C/dbase.c" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga2367f15f1469f901df7b642723a84dad" prot="public" static="no">
+        <name>CheckVisitOverflow</name>
+        <param></param>
+        <initializer>  if ((CELL *)tovisit + 1024 &gt;= ASP) {                                        \
+    goto error2;                                                               \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="599" column="9" bodyfile="C/dbase.c" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Internal__Database_1ga796bc2e5101adc95ee83fe119e455a51" prot="public" static="no">
+        <name>DB_MARKED</name>
+        <param><defname>d0</defname></param>
+        <initializer>((CELL *)(d0) &lt; CodeMax &amp;&amp; (CELL *)(d0) &gt;= tbase)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="653" column="9" bodyfile="C/dbase.c" bodystart="653" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <member refid="group__Internal__Database_1ga1a49363621efdfa5fc026bada6579559" kind="typedef"><name>link_entry</name></member>
-      <member refid="group__Internal__Database_1ga389203bbd61c383830e48c9fdebd8614" kind="typedef"><name>dbglobs</name></member>
+      <memberdef kind="typedef" id="group__Internal__Database_1gaa16389cb823f76b842b6edd81689fe39" prot="public" static="no">
+        <type>BITS32</type>
+        <definition>typedef BITS32 link_entry</definition>
+        <argsstring></argsstring>
+        <name>link_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="199" column="16" bodyfile="C/dbase.c" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__Internal__Database_1ga389203bbd61c383830e48c9fdebd8614" prot="public" static="no">
+        <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref></type>
+        <definition>typedef struct db_globs dbglobs</definition>
+        <argsstring></argsstring>
+        <name>dbglobs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="221" column="9"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__Internal__Database_1ga2b38caa2ff2409dab57da0505b620ba9" kind="function"><name>cpcells</name></member>
-      <member refid="group__Internal__Database_1ga26f36ee5169501ae1865dd9c3ae9e315" kind="function"><name>linkblk</name></member>
-      <member refid="group__Internal__Database_1ga1f768fc2bd5b3b3cfefee5b61e29c712" kind="function"><name>cmpclls</name></member>
-      <member refid="group__Internal__Database_1ga61e8ae3fdda651ce64e5209e4adb55b1" kind="function"><name>FindDBProp</name></member>
-      <member refid="group__Internal__Database_1ga8d51e9690bc9f42991bb2d8e01606ecb" kind="function"><name>CalcKey</name></member>
-      <member refid="group__Internal__Database_1ga34b93541a6faf2618bbe479fd6e576e0" kind="function"><name>MkDBTerm</name></member>
-      <member refid="group__Internal__Database_1gaa5f36e9f503a1e66513a8ea1d8efd2f8" kind="function"><name>CreateDBStruct</name></member>
-      <member refid="group__Internal__Database_1ga8c35705196b76edde7cb11eac9b62828" kind="function"><name>record</name></member>
-      <member refid="group__Internal__Database_1ga4fd7484ad461294e80e8a9245adae01d" kind="function"><name>check_if_cons</name></member>
-      <member refid="group__Internal__Database_1gabda37725f793bec73c6c98d55bcafcf2" kind="function"><name>check_if_var</name></member>
-      <member refid="group__Internal__Database_1ga42a2386f4001c9bf83ca971182b93ab9" kind="function"><name>check_if_wvars</name></member>
-      <member refid="group__Internal__Database_1gab325e9156276edcecdd85d4f2218634f" kind="function"><name>scheckcells</name></member>
-      <member refid="group__Internal__Database_1gacefec738e6b5372043509cd8eec9eb21" kind="function"><name>check_if_nvars</name></member>
-      <member refid="group__Internal__Database_1ga3f8b5731939ebe1d421f423bb1e2a8e1" kind="function"><name>p_rcda</name></member>
-      <member refid="group__Internal__Database_1ga0b0dcfd7c912e14e08d887a3eb3e6244" kind="function"><name>p_rcdap</name></member>
-      <member refid="group__Internal__Database_1ga921148635699d3bc3f41203b549ec5a5" kind="function"><name>p_rcdz</name></member>
-      <member refid="group__Internal__Database_1gab66d432a0e3c77d66fb4ebe3d8373d16" kind="function"><name>p_rcdzp</name></member>
-      <member refid="group__Internal__Database_1gaa474ea474076410aff69951f9e4cb5a0" kind="function"><name>p_drcdap</name></member>
-      <member refid="group__Internal__Database_1ga29bddaed1bbb2b96ab134833978d3d94" kind="function"><name>p_drcdzp</name></member>
-      <member refid="group__Internal__Database_1gab447a356c1ce7ab6a8064b29d4605dab" kind="function"><name>GetDBTerm</name></member>
-      <member refid="group__Internal__Database_1ga9a148710a752c0bb2ec2377facf9a9f3" kind="function"><name>FetchDBPropFromKey</name></member>
-      <member refid="group__Internal__Database_1ga3a00449a0c401b0fdd1e570b7a73db3e" kind="function"><name>i_recorded</name></member>
-      <member refid="group__Internal__Database_1gaef92883b161019cc1aadf6ec281db3a8" kind="function"><name>c_recorded</name></member>
-      <member refid="group__Internal__Database_1ga757c29b5e4c74762a745a92ef8a3687a" kind="function"><name>co_rded</name></member>
-      <member refid="group__Internal__Database_1ga997944b995396cc31aed5cd5a73585bd" kind="function"><name>in_rdedp</name></member>
-      <member refid="group__Internal__Database_1ga72f6a220eda053dbc96954d7980dc987" kind="function"><name>co_rdedp</name></member>
-      <member refid="group__Internal__Database_1gaa8be3d878bb8999bb239212f6d684d28" kind="function"><name>p_first_instance</name></member>
-      <member refid="group__Internal__Database_1ga60060cea37eb31be4fb3da5ba1946ada" kind="function"><name>ErasePendingRefs</name></member>
-      <member refid="group__Internal__Database_1ga5421231688fda921ca57524308a382a7" kind="function"><name>RemoveDBEntry</name></member>
-      <member refid="group__Internal__Database_1gad74944ddc3f8981f281f40ca53a3feab" kind="function"><name>EraseLogUpdCl</name></member>
-      <member refid="group__Internal__Database_1gad803f214a25136f1288e2af1c74910a2" kind="function"><name>MyEraseClause</name></member>
-      <member refid="group__Internal__Database_1gabf4a081a0d874dab13763b7ab475955a" kind="function"><name>PrepareToEraseClause</name></member>
-      <member refid="group__Internal__Database_1gaefcb465bf705f7104301393136501d2b" kind="function"><name>EraseEntry</name></member>
-      <member refid="group__Internal__Database_1ga1963d89518d6cc60f2cbe0f11b4d90bf" kind="function"><name>p_erase</name></member>
-      <member refid="group__Internal__Database_1gabf1cc2c467430543d53fb2a5d623291d" kind="function"><name>p_eraseall</name></member>
-      <member refid="group__Internal__Database_1gaf3d4e4b87f29b4fc8842625b7ef1d6e0" kind="function"><name>p_erased</name></member>
-      <member refid="group__Internal__Database_1ga348cd7e04f0efcf243fa6171fd4541b2" kind="function"><name>p_instance</name></member>
-      <member refid="group__Internal__Database_1gab94eedd45f1674747eb9e264e1b8a19d" kind="function"><name>NotActiveDB</name></member>
-      <member refid="group__Internal__Database_1ga09c78d1d64964ae2c771993ccd1228f9" kind="function"><name>NextDBProp</name></member>
-      <member refid="group__Internal__Database_1gadf5f163e1d69f0d703444e0c0e80013f" kind="function"><name>init_current_key</name></member>
-      <member refid="group__Internal__Database_1ga6bcf8fd8475cf95afd37f8a72c8b03c2" kind="function"><name>cont_current_key</name></member>
-      <member refid="group__Internal__Database_1ga101497415a49af72441e7d92ca0ee658" kind="function"><name>cont_current_key_integer</name></member>
-      <member refid="group__Internal__Database_1ga2fb06e58aa72370d52a8a3275baf2049" kind="function"><name>p_rcdstatp</name></member>
-      <member refid="group__Internal__Database_1gaff84ac2e1fa8accaccd2047918218696" kind="function"><name>p_somercdedp</name></member>
-      <member refid="group__Internal__Database_1gaf235b1a2359c7cc22464cc897fc9026e" kind="function"><name>find_next_clause</name></member>
-      <member refid="group__Internal__Database_1ga15d2dc60364dcc4892eee4d0500c018c" kind="function"><name>p_jump_to_next_dynamic_clause</name></member>
-      <member refid="group__Internal__Database_1ga34bb3d5c7d9de2c6fec059544a6609d4" kind="function"><name>p_init_queue</name></member>
-      <member refid="group__Internal__Database_1gaa523e372325cdb993ccd65c4b775df2d" kind="function"><name>p_enqueue</name></member>
-      <member refid="group__Internal__Database_1gaee0a06661570042513356a0102454a23" kind="function"><name>keepdbrefs</name></member>
-      <member refid="group__Internal__Database_1gaec6fa3d40e490358f16219eba0d963c7" kind="function"><name>p_dequeue</name></member>
-      <member refid="group__Internal__Database_1gab51712a75d7ace93d8041893dafd8508" kind="function"><name>ErDBE</name></member>
-      <member refid="group__Internal__Database_1ga4693caab549909303f4f46ce47d323fe" kind="function"><name>ReleaseTermFromDB</name></member>
-      <member refid="group__Internal__Database_1ga195daa478cdccdc2d12c73fd5ccde3c4" kind="function"><name>new_lu_entry</name></member>
-      <member refid="group__Internal__Database_1gae07292c01f8ef7214bc51834b1dcbcd6" kind="function"><name>new_lu_int_key</name></member>
-      <member refid="group__Internal__Database_1ga432ccaa9a2ea81479acc9022da4eadc4" kind="function"><name>find_lu_entry</name></member>
-      <member refid="group__Internal__Database_1ga2701a1e04e17fad82dab26c07e5878cb" kind="function"><name>find_int_key</name></member>
-      <member refid="group__Internal__Database_1ga917d4595ae65a199f2b097c5a4533f24" kind="function"><name>new_trail_size</name></member>
-      <member refid="group__Internal__Database_1gac46913d3ad6b117446298438674fff05" kind="function"><name>recover_from_record_error</name></member>
-      <member refid="group__Internal__Database_1ga39ab6b50f50940af5eadb49554d0ee82" kind="function"><name>FindDBPropHavingLock</name></member>
-      <member refid="group__Internal__Database_1ga9b3c0525b83a7b3b833b241878055f36" kind="function"><name>EvalMasks</name></member>
-      <member refid="group__Internal__Database_1ga08bc03abdf06bba46380440d22d49fcf" kind="function"><name>Yap_EvalMasks</name></member>
-      <member refid="group__Internal__Database_1ga384b37ce245e0a6d28cf882ceaddb812" kind="function"><name>copy_long_int</name></member>
-      <member refid="group__Internal__Database_1gac57c679c40d75eff71a4eb3374d0e9c8" kind="function"><name>copy_double</name></member>
-      <member refid="group__Internal__Database_1ga69182d93128c47df99d949efa3222706" kind="function"><name>copy_string</name></member>
-      <member refid="group__Internal__Database_1gad6034085a232c29f223c91d71acce7f0" kind="function"><name>MkDBTerm</name></member>
-      <member refid="group__Internal__Database_1gaf6e83b84db67b591d0a4ed83273f7af1" kind="function"><name>scheckcells</name></member>
-      <member refid="group__Internal__Database_1gae34dc7fdfbe42b8bd8600fb2184eb755" kind="function"><name>generate_dberror_msg</name></member>
-      <member refid="group__Internal__Database_1ga35bc873eb1b1f51a8f618168291f2afa" kind="function"><name>CreateDBWithDBRef</name></member>
-      <member refid="group__Internal__Database_1ga7ac9d05f6003e9c6134bc24af2bd980d" kind="function"><name>CreateDBTermForAtom</name></member>
-      <member refid="group__Internal__Database_1ga21263c275a25ade008f4465be236b326" kind="function"><name>CreateDBTermForVar</name></member>
-      <member refid="group__Internal__Database_1ga214f0c942e2ded7c06275944150bfbbb" kind="function"><name>CreateDBRefForAtom</name></member>
-      <member refid="group__Internal__Database_1ga3fa5f651bb203cb86409cda8d5361511" kind="function"><name>CreateDBRefForVar</name></member>
-      <member refid="group__Internal__Database_1gaed7b697d06b3ffa739326f584cc33884" kind="function"><name>record</name></member>
-      <member refid="group__Internal__Database_1ga0521c8b22976c54b23cacfa5a0093143" kind="function"><name>record_at</name></member>
-      <member refid="group__Internal__Database_1ga9749a8f11c5c9fcb8eb1ff6c01eecb89" kind="function"><name>new_lu_db_entry</name></member>
-      <member refid="group__Internal__Database_1ga3a1ee361024fdc44173e0f171a2d0435" kind="function"><name>Yap_new_ludbe</name></member>
-      <member refid="group__Internal__Database_1ga23e7385cbcce75f2641576b0d75005e5" kind="function"><name>record_lu</name></member>
-      <member refid="group__Internal__Database_1ga110df9006449fa37d6cdcc92459900d0" kind="function"><name>record_lu_at</name></member>
-      <member refid="group__Internal__Database_1ga1c7b574aa7041ab58ecef15b77993e53" kind="function"><name>p_rcda_at</name></member>
-      <member refid="group__Internal__Database_1gac3f442f1bd346a5a5bc592353afaafab" kind="function"><name>Yap_Recordz</name></member>
-      <member refid="group__Internal__Database_1ga42a3344426a149c094b346fb55d24e3b" kind="function"><name>p_rcdz_at</name></member>
-      <member refid="group__Internal__Database_1gaf02af730ee0559223bba922374551c0e" kind="function"><name>p_still_variant</name></member>
-      <member refid="group__Internal__Database_1gaa4a5a65ac15b004cdc8f328bbf95535f" kind="function"><name>copy_attachments</name></member>
-      <member refid="group__Internal__Database_1ga3dcc472e9f36b5179e0cc594254fbf34" kind="function"><name>GetDBLUKey</name></member>
-      <member refid="group__Internal__Database_1ga6d733ec10d789a17d542a7c9ede5b773" kind="function"><name>UnifyDBKey</name></member>
-      <member refid="group__Internal__Database_1gae5b1855ee18469496cf0d1b448126f5c" kind="function"><name>UnifyDBNumber</name></member>
-      <member refid="group__Internal__Database_1gab0b9e50f033140940fac3fbd6e7ee756" kind="function"><name>Yap_unify_immediate_ref</name></member>
-      <member refid="group__Internal__Database_1ga8569755c1071cc40e1a6bc0a604a966b" kind="function"><name>GetDBTermFromDBEntry</name></member>
-      <member refid="group__Internal__Database_1ga597f2bd3ce864f3c0810cf44ce77dbaa" kind="function"><name>init_int_keys</name></member>
-      <member refid="group__Internal__Database_1ga023d0ade1995fde985a539fdb6235b9b" kind="function"><name>init_int_lu_keys</name></member>
-      <member refid="group__Internal__Database_1ga795592244df2c00352833daa897dac1e" kind="function"><name>resize_int_keys</name></member>
-      <member refid="group__Internal__Database_1ga05acf19bf63d7bb677c16f89167709a6" kind="function"><name>find_lu_int_key</name></member>
-      <member refid="group__Internal__Database_1ga14967cd027558c42d4848c6264186f52" kind="function"><name>Yap_FindLUIntKey</name></member>
-      <member refid="group__Internal__Database_1gaa06cc1860804ab00b0fcf75fbde029c8" kind="function"><name>find_entry</name></member>
-      <member refid="group__Internal__Database_1ga5c13a7dc3844c2359d34b0db253e9d1c" kind="function"><name>FetchIntDBPropFromKey</name></member>
-      <member refid="group__Internal__Database_1ga0e07809be015e934328a7a38331107eb" kind="function"><name>lu_nth_recorded</name></member>
-      <member refid="group__Internal__Database_1gaa83a47b682a1158bbc6b7433788458e0" kind="function"><name>nth_recorded</name></member>
-      <member refid="group__Internal__Database_1ga300dc8d38a6698f968e88f9d2ad153a5" kind="function"><name>Yap_db_nth_recorded</name></member>
-      <member refid="group__Internal__Database_1ga27753053e6d51ebbfb9a148833d6e072" kind="function"><name>p_db_key</name></member>
-      <member refid="group__Internal__Database_1ga03e633d2cf1ae09c17bb5a4e52006dc0" kind="function"><name>i_recorded</name></member>
-      <member refid="group__Internal__Database_1gad24af456228396f9fc1db51d1acbad24" kind="function"><name>c_recorded</name></member>
-      <member refid="group__Internal__Database_1ga80ba5b32a527dfa2d8443faeaf1ce8eb" kind="function"><name>lu_recorded</name></member>
-      <member refid="group__Internal__Database_1gaeb376795ef84ce6f89372f18deb1a2c0" kind="function"><name>in_rded_with_key</name></member>
-      <member refid="group__Internal__Database_1gac97700da77beab63991bd22afd03a5df" kind="function"><name>p_recorded</name></member>
-      <member refid="group__Internal__Database_1ga199cb055733cc530a3638add6920227d" kind="function"><name>index_sz</name></member>
-      <member refid="group__Internal__Database_1ga7aa2f554c8414c8b643d1f9a68e88f7f" kind="function"><name>lu_statistics</name></member>
-      <member refid="group__Internal__Database_1ga235f7836687955aa98d595ce75eff3f5" kind="function"><name>p_key_statistics</name></member>
-      <member refid="group__Internal__Database_1ga4b2be86a38306c97b92e0c9287957a37" kind="function"><name>p_lu_statistics</name></member>
-      <member refid="group__Internal__Database_1ga91e9099b15823d20569a2c7f2f8cae98" kind="function"><name>p_total_erased</name></member>
-      <member refid="group__Internal__Database_1ga8ddbeab50a29eaf616d0e94f7a6356af" kind="function"><name>lu_erased_statistics</name></member>
-      <member refid="group__Internal__Database_1ga93166a990625906556be61e5dd5988cf" kind="function"><name>p_key_erased_statistics</name></member>
-      <member refid="group__Internal__Database_1ga94ebf82ba1b463d8f75157b05dbdf58c" kind="function"><name>p_heap_space_info</name></member>
-      <member refid="group__Internal__Database_1gab59e6b161751d950bacdb1f7e7682042" kind="function"><name>ErasePendingRefs</name></member>
-      <member refid="group__Internal__Database_1gaddb9f3b937fbb0b5b912a2bc1088357f" kind="function"><name>RemoveDBEntry</name></member>
-      <member refid="group__Internal__Database_1gaa02320fe0ce1377d2f3b977996511a35" kind="function"><name>find_next_clause</name></member>
-      <member refid="group__Internal__Database_1gaf3ca5b94aa2bea75cb084fa00069b205" kind="function"><name>complete_lu_erase</name></member>
-      <member refid="group__Internal__Database_1ga12f1efe56904e516b7e0cd8d957ae73b" kind="function"><name>MyEraseClause</name></member>
-      <member refid="group__Internal__Database_1gad2d1a6c686ae3f07a4c4c3dd052d5b2c" kind="function"><name>Yap_ErLogUpdCl</name></member>
-      <member refid="group__Internal__Database_1ga680dc6f1a48bb319dcedda7e7b15ecf1" kind="function"><name>Yap_ErCl</name></member>
-      <member refid="group__Internal__Database_1ga08f510f3ff30f3987365913eaab13bfc" kind="function"><name>PrepareToEraseLogUpdClause</name></member>
-      <member refid="group__Internal__Database_1gaf997e9812bfd5ead19dc71d7edce3d8d" kind="function"><name>ErDBE</name></member>
-      <member refid="group__Internal__Database_1gaa8b30979f91908e93d4b55e5e9796dbd" kind="function"><name>Yap_ErDBE</name></member>
-      <member refid="group__Internal__Database_1ga4adbcbff3063dcbb021455c457e4c042" kind="function"><name>p_increase_reference_counter</name></member>
-      <member refid="group__Internal__Database_1gae54148681309eec8a2e5d61f96303b4f" kind="function"><name>p_decrease_reference_counter</name></member>
-      <member refid="group__Internal__Database_1ga11a1b4d45e1973ca49e50758a8093300" kind="function"><name>p_current_reference_counter</name></member>
-      <member refid="group__Internal__Database_1gaacf3b9f24c34549e88e63bbfe97159b4" kind="function"><name>p_erase_clause</name></member>
-      <member refid="group__Internal__Database_1ga05d7c2c8e64665bb451dc51809672fc9" kind="function"><name>static_instance</name></member>
-      <member refid="group__Internal__Database_1ga62af6bcca9b22587f8b56674c99fced4" kind="function"><name>exo_instance</name></member>
-      <member refid="group__Internal__Database_1gac97344a8366ef576a25b88b416e338af" kind="function"><name>mega_instance</name></member>
-      <member refid="group__Internal__Database_1gafa56069a26711a7df4ff79d1bb9a5b15" kind="function"><name>Yap_LUInstance</name></member>
-      <member refid="group__Internal__Database_1gaa15ad575bc9a17f68c8d08016a977194" kind="function"><name>p_instance_module</name></member>
-      <member refid="group__Internal__Database_1ga06b0b86472194437f07141930fc1280a" kind="function"><name>Yap_FetchTermFromDB</name></member>
-      <member refid="group__Internal__Database_1gab264ea9252c08aaffd6943bfa8706635" kind="function"><name>Yap_FetchClauseTermFromDB</name></member>
-      <member refid="group__Internal__Database_1ga80ec4415a920d733b983e9b926ead40c" kind="function"><name>Yap_PopTermFromDB</name></member>
-      <member refid="group__Internal__Database_1gae6a1bf061545b6b4a7dd846e073358f1" kind="function"><name>StoreTermInDB</name></member>
-      <member refid="group__Internal__Database_1ga1c67c88ed4db82dc07ebd26fde44da80" kind="function"><name>Yap_StoreTermInDB</name></member>
-      <member refid="group__Internal__Database_1ga6f2e7291dfbcb50cfcd59ecedb04ff04" kind="function"><name>Yap_StoreTermInDBPlusExtraSpace</name></member>
-      <member refid="group__Internal__Database_1ga751946432bdf396373c251e225da2064" kind="function"><name>Yap_init_tqueue</name></member>
-      <member refid="group__Internal__Database_1ga9f2f7e66a54733845ce636190c266a8d" kind="function"><name>Yap_destroy_tqueue</name></member>
-      <member refid="group__Internal__Database_1gad7bc8bdd5a5f9b41fd124a7cc059d2e7" kind="function"><name>Yap_enqueue_tqueue</name></member>
-      <member refid="group__Internal__Database_1gabf9ecf666b7a204ef8fe1b7e5f5ca141" kind="function"><name>Yap_dequeue_tqueue</name></member>
-      <member refid="group__Internal__Database_1ga7a57d042f493e35d5caa9d286eb819ae" kind="function"><name>p_enqueue_unlocked</name></member>
-      <member refid="group__Internal__Database_1gaefb3e43df306cdd819ac81a78202e0fb" kind="function"><name>keepdbrefs</name></member>
-      <member refid="group__Internal__Database_1ga69d82c2f36e2f730a3d1d06bb06cfd79" kind="function"><name>p_dequeue_unlocked</name></member>
-      <member refid="group__Internal__Database_1ga3230bab0fc833d418de4d83c5c299502" kind="function"><name>p_peek_queue</name></member>
-      <member refid="group__Internal__Database_1gae5d9fbf7fa9b06599698ceeb75e793a8" kind="function"><name>p_clean_queues</name></member>
-      <member refid="group__Internal__Database_1ga31be6b6f31813539e4843fe479355da9" kind="function"><name>p_slu</name></member>
-      <member refid="group__Internal__Database_1ga70bfb38ceabfe680799f2e6503911615" kind="function"><name>p_hold_index</name></member>
-      <member refid="group__Internal__Database_1gac8a4de0ad4d96e3fb302b8d1f48ca277" kind="function"><name>p_fetch_reference_from_index</name></member>
-      <member refid="group__Internal__Database_1ga95a0d04cba925e06191f6b7b462b72d4" kind="function"><name>p_resize_int_keys</name></member>
-      <member refid="group__Internal__Database_1gab23de8f09131b801c2e523ecf8270c3d" kind="function"><name>ReleaseTermFromDB</name></member>
-      <member refid="group__Internal__Database_1ga4dc6a1d35a61ac217c6d8675887ba47f" kind="function"><name>Yap_ReleaseTermFromDB</name></member>
-      <member refid="group__Internal__Database_1gaf7c2c333586f9ab2d6244fa0dc56d8af" kind="function"><name>p_install_thread_local</name></member>
-      <member refid="group__Internal__Database_1gaefeb5d825ce37c8e8846dec6ce2a7111" kind="function"><name>Yap_InitBackDB</name></member>
+      <memberdef kind="function" id="group__Internal__Database_1ga2b38caa2ff2409dab57da0505b620ba9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * cpcells</definition>
+        <argsstring>(CELL *, CELL *, Int)</argsstring>
+        <name>cpcells</name>
+        <param>
+          <type>CELL *</type>
+          <defname>to</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>from</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="392" column="20" bodyfile="C/dbase.c" bodystart="392" bodyend="402" declfile="C/dbase.c" declline="237" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga26f36ee5169501ae1865dd9c3ae9e315" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void linkblk</definition>
+        <argsstring>(link_entry *, CELL *, CELL)</argsstring>
+        <name>linkblk</name>
+        <param>
+          <type>link_entry *</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>c</defname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <defname>offs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="404" column="13" bodyfile="C/dbase.c" bodystart="404" bodyend="411" declfile="C/dbase.c" declline="238" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga1f768fc2bd5b3b3cfefee5b61e29c712" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cmpclls</definition>
+        <argsstring>(CELL *, CELL *, Int)</argsstring>
+        <name>cmpclls</name>
+        <param>
+          <type>CELL *</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>Int</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="413" column="12" bodyfile="C/dbase.c" bodystart="413" bodyend="419" declfile="C/dbase.c" declline="239" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga61e8ae3fdda651ce64e5209e4adb55b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>static Prop FindDBProp</definition>
+        <argsstring>(AtomEntry *, int, unsigned int, Term)</argsstring>
+        <name>FindDBProp</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <defname>ae</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>CodeDB</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>arity</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>dbmod</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="438" column="13" bodyfile="C/dbase.c" bodystart="438" bodyend="446" declfile="C/dbase.c" declline="240" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga8d51e9690bc9f42991bb2d8e01606ecb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL</type>
+        <definition>static CELL CalcKey</definition>
+        <argsstring>(Term)</argsstring>
+        <name>CalcKey</name>
+        <param>
+          <type>Term</type>
+          <defname>tw</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="450" column="20" bodyfile="C/dbase.c" bodystart="450" bodyend="468" declfile="C/dbase.c" declline="241" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga34b93541a6faf2618bbe479fd6e576e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * MkDBTerm</definition>
+        <argsstring>(CELL *, CELL *, CELL *, CELL *, CELL *, CELL *, int *, struct db_globs *)</argsstring>
+        <name>MkDBTerm</name>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="243" column="13" declfile="C/dbase.c" declline="243" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa5f36e9f503a1e66513a8ea1d8efd2f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef CreateDBStruct</definition>
+        <argsstring>(Term, DBProp, int, int *, UInt, struct db_globs *)</argsstring>
+        <name>CreateDBStruct</name>
+        <param>
+          <type>Term</type>
+          <defname>Tm</defname>
+        </param>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>InFlag</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>pstat</defname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <defname>extra_size</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <defname>dbg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1399" column="14" bodyfile="C/dbase.c" bodystart="1399" bodyend="1730" declfile="C/dbase.c" declline="249" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga8c35705196b76edde7cb11eac9b62828" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef record</definition>
+        <argsstring>(int, Term, Term, Term CACHE_TYPE)</argsstring>
+        <name>record</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>Term</type>
+        </param>
+        <param>
+          <type>Term</type>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="250" column="14" declfile="C/dbase.c" declline="250" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga4fd7484ad461294e80e8a9245adae01d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef check_if_cons</definition>
+        <argsstring>(DBRef, Term)</argsstring>
+        <name>check_if_cons</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>Term</type>
+          <defname>to_compare</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1138" column="21" bodyfile="C/dbase.c" bodystart="1138" bodyend="1144" declfile="C/dbase.c" declline="251" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gabda37725f793bec73c6c98d55bcafcf2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef check_if_var</definition>
+        <argsstring>(DBRef)</argsstring>
+        <name>check_if_var</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1150" column="14" bodyfile="C/dbase.c" bodystart="1150" bodyend="1155" declfile="C/dbase.c" declline="252" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga42a2386f4001c9bf83ca971182b93ab9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef check_if_wvars</definition>
+        <argsstring>(DBRef, unsigned int, CELL *)</argsstring>
+        <name>check_if_wvars</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>NOfCells</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>BTptr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1166" column="14" bodyfile="C/dbase.c" bodystart="1166" bodyend="1182" declfile="C/dbase.c" declline="253" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab325e9156276edcecdd85d4f2218634f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int scheckcells</definition>
+        <argsstring>(int, CELL *, CELL *, link_entry *, CELL)</argsstring>
+        <name>scheckcells</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>CELL *</type>
+        </param>
+        <param>
+          <type>link_entry *</type>
+        </param>
+        <param>
+          <type>CELL</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="254" column="12" declfile="C/dbase.c" declline="254" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gacefec738e6b5372043509cd8eec9eb21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef check_if_nvars</definition>
+        <argsstring>(DBRef, unsigned int, CELL *, struct db_globs *)</argsstring>
+        <name>check_if_nvars</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <defname>NOfCells</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>BTptr</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <defname>dbg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1220" column="14" bodyfile="C/dbase.c" bodystart="1220" bodyend="1238" declfile="C/dbase.c" declline="255" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga3f8b5731939ebe1d421f423bb1e2a8e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rcda</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rcda</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2019" column="12" bodyfile="C/dbase.c" bodystart="2019" bodyend="2058" declfile="C/dbase.c" declline="256" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga0b0dcfd7c912e14e08d887a3eb3e6244" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rcdap</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rcdap</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2061" column="12" bodyfile="C/dbase.c" bodystart="2061" bodyend="2080" declfile="C/dbase.c" declline="257" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga921148635699d3bc3f41203b549ec5a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rcdz</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rcdz</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2138" column="12" bodyfile="C/dbase.c" bodystart="2138" bodyend="2178" declfile="C/dbase.c" declline="258" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab66d432a0e3c77d66fb4ebe3d8373d16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rcdzp</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rcdzp</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2206" column="12" bodyfile="C/dbase.c" bodystart="2206" bodyend="2224" declfile="C/dbase.c" declline="259" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa474ea474076410aff69951f9e4cb5a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_drcdap</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_drcdap</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2306" column="12" bodyfile="C/dbase.c" bodystart="2306" bodyend="2327" declfile="C/dbase.c" declline="260" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga29bddaed1bbb2b96ab134833978d3d94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_drcdzp</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_drcdzp</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2330" column="12" bodyfile="C/dbase.c" bodystart="2330" bodyend="2351" declfile="C/dbase.c" declline="261" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab447a356c1ce7ab6a8064b29d4605dab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term GetDBTerm</definition>
+        <argsstring>(DBTerm *, int src CACHE_TYPE)</argsstring>
+        <name>GetDBTerm</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+          <defname>DBSP</defname>
+        </param>
+        <param>
+          <type>int src</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2526" column="13" bodyfile="C/dbase.c" bodystart="2526" bodyend="2582" declfile="C/dbase.c" declline="262" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga9a148710a752c0bb2ec2377facf9a9f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+        <definition>static DBProp FetchDBPropFromKey</definition>
+        <argsstring>(Term, int, int, char *)</argsstring>
+        <name>FetchDBPropFromKey</name>
+        <param>
+          <type>Term</type>
+          <defname>twork</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>flag</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>new</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>error_mssg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2875" column="15" bodyfile="C/dbase.c" bodystart="2875" bodyend="2970" declfile="C/dbase.c" declline="263" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga3a00449a0c401b0fdd1e570b7a73db3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int i_recorded</definition>
+        <argsstring>(DBProp, Term CACHE_TYPE)</argsstring>
+        <name>i_recorded</name>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="264" column="12" declfile="C/dbase.c" declline="264" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaef92883b161019cc1aadf6ec281db3a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int c_recorded</definition>
+        <argsstring>(int CACHE_TYPE)</argsstring>
+        <name>c_recorded</name>
+        <param>
+          <type>int</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="265" column="12" declfile="C/dbase.c" declline="265" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga757c29b5e4c74762a745a92ef8a3687a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int co_rded</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>co_rded</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3456" column="12" bodyfile="C/dbase.c" bodystart="3456" bodyend="3456" declfile="C/dbase.c" declline="266" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga997944b995396cc31aed5cd5a73585bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int in_rdedp</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>in_rdedp</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3459" column="12" bodyfile="C/dbase.c" bodystart="3459" bodyend="3491" declfile="C/dbase.c" declline="267" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga72f6a220eda053dbc96954d7980dc987" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int co_rdedp</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>co_rdedp</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3493" column="12" bodyfile="C/dbase.c" bodystart="3493" bodyend="3493" declfile="C/dbase.c" declline="268" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa8be3d878bb8999bb239212f6d684d28" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_first_instance</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_first_instance</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3517" column="12" bodyfile="C/dbase.c" bodystart="3517" bodyend="3577" declfile="C/dbase.c" declline="269" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga60060cea37eb31be4fb3da5ba1946ada" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ErasePendingRefs</definition>
+        <argsstring>(DBTerm *CACHE_TYPE)</argsstring>
+        <name>ErasePendingRefs</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="270" column="13" declfile="C/dbase.c" declline="270" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga5421231688fda921ca57524308a382a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RemoveDBEntry</definition>
+        <argsstring>(DBRef CACHE_TYPE)</argsstring>
+        <name>RemoveDBEntry</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="271" column="13" declfile="C/dbase.c" declline="271" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gad74944ddc3f8981f281f40ca53a3feab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EraseLogUpdCl</definition>
+        <argsstring>(LogUpdClause *)</argsstring>
+        <name>EraseLogUpdCl</name>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <defname>clau</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3940" column="13" bodyfile="C/dbase.c" bodystart="3940" bodyend="4016" declfile="C/dbase.c" declline="272" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gad803f214a25136f1288e2af1c74910a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MyEraseClause</definition>
+        <argsstring>(DynamicClause *CACHE_TYPE)</argsstring>
+        <name>MyEraseClause</name>
+        <param>
+          <type><ref refid="structdynamic__clause" kindref="compound">DynamicClause</ref> *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="273" column="13" declfile="C/dbase.c" declline="273" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gabf4a081a0d874dab13763b7ab475955a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PrepareToEraseClause</definition>
+        <argsstring>(DynamicClause *, DBRef)</argsstring>
+        <name>PrepareToEraseClause</name>
+        <param>
+          <type><ref refid="structdynamic__clause" kindref="compound">DynamicClause</ref> *</type>
+          <defname>clau</defname>
+        </param>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <defname>dbr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4150" column="13" bodyfile="C/dbase.c" bodystart="4150" bodyend="4150" declfile="C/dbase.c" declline="274" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaefcb465bf705f7104301393136501d2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EraseEntry</definition>
+        <argsstring>(DBRef)</argsstring>
+        <name>EraseEntry</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <defname>entryref</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4193" column="13" bodyfile="C/dbase.c" bodystart="4193" bodyend="4226" declfile="C/dbase.c" declline="275" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga1963d89518d6cc60f2cbe0f11b4d90bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_erase</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_erase</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4229" column="12" bodyfile="C/dbase.c" bodystart="4229" bodyend="4242" declfile="C/dbase.c" declline="276" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gabf1cc2c467430543d53fb2a5d623291d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_eraseall</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_eraseall</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4356" column="12" bodyfile="C/dbase.c" bodystart="4356" bodyend="4411" declfile="C/dbase.c" declline="277" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaf3d4e4b87f29b4fc8842625b7ef1d6e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_erased</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_erased</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4422" column="12" bodyfile="C/dbase.c" bodystart="4422" bodyend="4434" declfile="C/dbase.c" declline="278" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga348cd7e04f0efcf243fa6171fd4541b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_instance</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_instance</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4556" column="12" bodyfile="C/dbase.c" bodystart="4556" bodyend="4676" declfile="C/dbase.c" declline="279" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab94eedd45f1674747eb9e264e1b8a19d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int NotActiveDB</definition>
+        <argsstring>(DBRef)</argsstring>
+        <name>NotActiveDB</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <defname>my_dbref</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4748" column="19" bodyfile="C/dbase.c" bodystart="4748" bodyend="4752" declfile="C/dbase.c" declline="280" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga09c78d1d64964ae2c771993ccd1228f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structstruct__dbentry" kindref="compound">DBEntry</ref> *</type>
+        <definition>static DBEntry * NextDBProp</definition>
+        <argsstring>(PropEntry *)</argsstring>
+        <name>NextDBProp</name>
+        <param>
+          <type><ref refid="structPropEntryStruct" kindref="compound">PropEntry</ref> *</type>
+          <defname>pp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4754" column="23" bodyfile="C/dbase.c" bodystart="4754" bodyend="4759" declfile="C/dbase.c" declline="281" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gadf5f163e1d69f0d703444e0c0e80013f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int init_current_key</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>init_current_key</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4761" column="12" bodyfile="C/dbase.c" bodystart="4761" bodyend="4794" declfile="C/dbase.c" declline="282" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga6bcf8fd8475cf95afd37f8a72c8b03c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_current_key</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_current_key</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4796" column="12" bodyfile="C/dbase.c" bodystart="4796" bodyend="4884" declfile="C/dbase.c" declline="283" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga101497415a49af72441e7d92ca0ee658" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_current_key_integer</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_current_key_integer</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4886" column="12" bodyfile="C/dbase.c" bodystart="4886" bodyend="4912" declfile="C/dbase.c" declline="284" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga2fb06e58aa72370d52a8a3275baf2049" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rcdstatp</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rcdstatp</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2275" column="12" bodyfile="C/dbase.c" bodystart="2275" bodyend="2303" declfile="C/dbase.c" declline="285" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaff84ac2e1fa8accaccd2047918218696" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_somercdedp</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_somercdedp</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3496" column="12" bodyfile="C/dbase.c" bodystart="3496" bodyend="3514" declfile="C/dbase.c" declline="286" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaf235b1a2359c7cc22464cc897fc9026e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * find_next_clause</definition>
+        <argsstring>(DBRef USES_REGS)</argsstring>
+        <name>find_next_clause</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="287" column="14" declfile="C/dbase.c" declline="287" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga15d2dc60364dcc4892eee4d0500c018c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_jump_to_next_dynamic_clause</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_jump_to_next_dynamic_clause</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3875" column="12" bodyfile="C/dbase.c" bodystart="3875" bodyend="3890" declfile="C/dbase.c" declline="288" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga34bb3d5c7d9de2c6fec059544a6609d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_init_queue</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_init_queue</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5084" column="12" bodyfile="C/dbase.c" bodystart="5084" bodyend="5098" declfile="C/dbase.c" declline="293" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa523e372325cdb993ccd65c4b775df2d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_enqueue</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_enqueue</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5100" column="12" bodyfile="C/dbase.c" bodystart="5100" bodyend="5117" declfile="C/dbase.c" declline="294" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaee0a06661570042513356a0102454a23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void keepdbrefs</definition>
+        <argsstring>(DBTerm *CACHE_TYPE)</argsstring>
+        <name>keepdbrefs</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="295" column="13" declfile="C/dbase.c" declline="295" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaec6fa3d40e490358f16219eba0d963c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_dequeue</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_dequeue</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5163" column="12" bodyfile="C/dbase.c" bodystart="5163" bodyend="5188" declfile="C/dbase.c" declline="296" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab51712a75d7ace93d8041893dafd8508" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ErDBE</definition>
+        <argsstring>(DBRef CACHE_TYPE)</argsstring>
+        <name>ErDBE</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="297" column="13" declfile="C/dbase.c" declline="297" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga4693caab549909303f4f46ce47d323fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ReleaseTermFromDB</definition>
+        <argsstring>(DBTerm *CACHE_TYPE)</argsstring>
+        <name>ReleaseTermFromDB</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+          <declname>CACHE_TYPE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="298" column="13" declfile="C/dbase.c" declline="298" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga195daa478cdccdc2d12c73fd5ccde3c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * new_lu_entry</definition>
+        <argsstring>(Term)</argsstring>
+        <name>new_lu_entry</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2736" column="18" bodyfile="C/dbase.c" bodystart="2736" bodyend="2774" declfile="C/dbase.c" declline="299" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gae07292c01f8ef7214bc51834b1dcbcd6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * new_lu_int_key</definition>
+        <argsstring>(Int)</argsstring>
+        <name>new_lu_int_key</name>
+        <param>
+          <type>Int</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2702" column="18" bodyfile="C/dbase.c" bodystart="2702" bodyend="2734" declfile="C/dbase.c" declline="300" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga432ccaa9a2ea81479acc9022da4eadc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * find_lu_entry</definition>
+        <argsstring>(Term)</argsstring>
+        <name>find_lu_entry</name>
+        <param>
+          <type>Term</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2801" column="18" bodyfile="C/dbase.c" bodystart="2801" bodyend="2831" declfile="C/dbase.c" declline="301" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga2701a1e04e17fad82dab26c07e5878cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+        <definition>static DBProp find_int_key</definition>
+        <argsstring>(Int)</argsstring>
+        <name>find_int_key</name>
+        <param>
+          <type>Int</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2685" column="15" bodyfile="C/dbase.c" bodystart="2685" bodyend="2700" declfile="C/dbase.c" declline="302" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga917d4595ae65a199f2b097c5a4533f24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>static UInt new_trail_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>new_trail_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="311" column="13" bodyfile="C/dbase.c" bodystart="311" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gac46913d3ad6b117446298438674fff05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int recover_from_record_error</definition>
+        <argsstring>(int nargs)</argsstring>
+        <name>recover_from_record_error</name>
+        <param>
+          <type>int</type>
+          <declname>nargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="321" column="12" bodyfile="C/dbase.c" bodystart="321" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga39ab6b50f50940af5eadb49554d0ee82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPropEntryStruct" kindref="compound">Prop</ref></type>
+        <definition>static Prop FindDBPropHavingLock</definition>
+        <argsstring>(AtomEntry *ae, int CodeDB, unsigned int arity, Term dbmod)</argsstring>
+        <name>FindDBPropHavingLock</name>
+        <param>
+          <type><ref refid="Atoms_8h_1a080f5b2e897dec7704f0ea6f6855f3b7" kindref="member">AtomEntry</ref> *</type>
+          <declname>ae</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CodeDB</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>dbmod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="422" column="13" bodyfile="C/dbase.c" bodystart="422" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga9b3c0525b83a7b3b833b241878055f36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL</type>
+        <definition>static CELL EvalMasks</definition>
+        <argsstring>(register Term tm, CELL *keyp)</argsstring>
+        <name>EvalMasks</name>
+        <param>
+          <type>register Term</type>
+          <declname>tm</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>keyp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="471" column="13" bodyfile="C/dbase.c" bodystart="471" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga08bc03abdf06bba46380440d22d49fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL</type>
+        <definition>CELL Yap_EvalMasks</definition>
+        <argsstring>(register Term tm, CELL *keyp)</argsstring>
+        <name>Yap_EvalMasks</name>
+        <param>
+          <type>register Term</type>
+          <declname>tm</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>keyp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="577" column="6" bodyfile="C/dbase.c" bodystart="577" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga384b37ce245e0a6d28cf882ceaddb812" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * copy_long_int</definition>
+        <argsstring>(CELL *st, CELL *pt)</argsstring>
+        <name>copy_long_int</name>
+        <param>
+          <type>CELL *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="604" column="13" bodyfile="C/dbase.c" bodystart="604" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gac57c679c40d75eff71a4eb3374d0e9c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * copy_double</definition>
+        <argsstring>(CELL *st, CELL *pt)</argsstring>
+        <name>copy_double</name>
+        <param>
+          <type>CELL *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="613" column="13" bodyfile="C/dbase.c" bodystart="613" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga69182d93128c47df99d949efa3222706" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * copy_string</definition>
+        <argsstring>(CELL *st, CELL *pt)</argsstring>
+        <name>copy_string</name>
+        <param>
+          <type>CELL *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="627" column="13" bodyfile="C/dbase.c" bodystart="627" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gad6034085a232c29f223c91d71acce7f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * MkDBTerm</definition>
+        <argsstring>(register CELL *pt0, register CELL *pt0_end, register CELL *StoPoint, CELL *CodeMax, CELL *tbase, CELL *attachmentsp, int *vars_foundp, struct db_globs *dbg)</argsstring>
+        <name>MkDBTerm</name>
+        <param>
+          <type>register CELL *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>register CELL *</type>
+          <declname>pt0_end</declname>
+        </param>
+        <param>
+          <type>register CELL *</type>
+          <declname>StoPoint</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>CodeMax</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>tbase</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>attachmentsp</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>vars_foundp</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <declname>dbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="656" column="13" bodyfile="C/dbase.c" bodystart="656" bodyend="1080"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaf6e83b84db67b591d0a4ed83273f7af1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int scheckcells</definition>
+        <argsstring>(int NOfCells, register CELL *m1, register CELL *m2, link_entry *lp, register CELL bp)</argsstring>
+        <name>scheckcells</name>
+        <param>
+          <type>int</type>
+          <declname>NOfCells</declname>
+        </param>
+        <param>
+          <type>register CELL *</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>register CELL *</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type>link_entry *</type>
+          <declname>lp</declname>
+        </param>
+        <param>
+          <type>register CELL</type>
+          <declname>bp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1184" column="12" bodyfile="C/dbase.c" bodystart="1184" bodyend="1214"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gae34dc7fdfbe42b8bd8600fb2184eb755" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef generate_dberror_msg</definition>
+        <argsstring>(int errnumb, UInt sz, char *msg)</argsstring>
+        <name>generate_dberror_msg</name>
+        <param>
+          <type>int</type>
+          <declname>errnumb</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1240" column="14" bodyfile="C/dbase.c" bodystart="1240" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga35bc873eb1b1f51a8f618168291f2afa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef CreateDBWithDBRef</definition>
+        <argsstring>(Term Tm, DBProp p, struct db_globs *dbg)</argsstring>
+        <name>CreateDBWithDBRef</name>
+        <param>
+          <type>Term</type>
+          <declname>Tm</declname>
+        </param>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <declname>dbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1248" column="14" bodyfile="C/dbase.c" bodystart="1248" bodyend="1292"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga7ac9d05f6003e9c6134bc24af2bd980d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        <definition>static DBTerm * CreateDBTermForAtom</definition>
+        <argsstring>(Term Tm, UInt extra_size, struct db_globs *dbg)</argsstring>
+        <name>CreateDBTermForAtom</name>
+        <param>
+          <type>Term</type>
+          <declname>Tm</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>extra_size</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <declname>dbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1294" column="15" bodyfile="C/dbase.c" bodystart="1294" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga21263c275a25ade008f4465be236b326" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        <definition>static DBTerm * CreateDBTermForVar</definition>
+        <argsstring>(UInt extra_size, struct db_globs *dbg)</argsstring>
+        <name>CreateDBTermForVar</name>
+        <param>
+          <type>UInt</type>
+          <declname>extra_size</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <declname>dbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1318" column="15" bodyfile="C/dbase.c" bodystart="1318" bodyend="1339"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga214f0c942e2ded7c06275944150bfbbb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef CreateDBRefForAtom</definition>
+        <argsstring>(Term Tm, DBProp p, int InFlag, struct db_globs *dbg)</argsstring>
+        <name>CreateDBRefForAtom</name>
+        <param>
+          <type>Term</type>
+          <declname>Tm</declname>
+        </param>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>InFlag</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <declname>dbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1341" column="14" bodyfile="C/dbase.c" bodystart="1341" bodyend="1369"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga3fa5f651bb203cb86409cda8d5361511" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef CreateDBRefForVar</definition>
+        <argsstring>(Term Tm, DBProp p, int InFlag, struct db_globs *dbg)</argsstring>
+        <name>CreateDBRefForVar</name>
+        <param>
+          <type>Term</type>
+          <declname>Tm</declname>
+        </param>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>InFlag</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdb__globs" kindref="compound">db_globs</ref> *</type>
+          <declname>dbg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1371" column="14" bodyfile="C/dbase.c" bodystart="1371" bodyend="1397"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaed7b697d06b3ffa739326f584cc33884" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef record</definition>
+        <argsstring>(int Flag, Term key, Term t_data, Term t_code USES_REGS)</argsstring>
+        <name>record</name>
+        <param>
+          <type>int</type>
+          <declname>Flag</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t_data</declname>
+        </param>
+        <param>
+          <type>Term t_code</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1732" column="14" bodyfile="C/dbase.c" bodystart="1732" bodyend="1805"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga0521c8b22976c54b23cacfa5a0093143" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+        <definition>static DBRef record_at</definition>
+        <argsstring>(int Flag, DBRef r0, Term t_data, Term t_code USES_REGS)</argsstring>
+        <name>record_at</name>
+        <param>
+          <type>int</type>
+          <declname>Flag</declname>
+        </param>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>r0</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t_data</declname>
+        </param>
+        <param>
+          <type>Term t_code</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1808" column="14" bodyfile="C/dbase.c" bodystart="1808" bodyend="1882"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga9749a8f11c5c9fcb8eb1ff6c01eecb89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>static LogUpdClause * new_lu_db_entry</definition>
+        <argsstring>(Term t, PredEntry *pe)</argsstring>
+        <name>new_lu_db_entry</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1884" column="21" bodyfile="C/dbase.c" bodystart="1884" bodyend="1938"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga3a1ee361024fdc44173e0f171a2d0435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>LogUpdClause * Yap_new_ludbe</definition>
+        <argsstring>(Term t, PredEntry *pe, UInt nargs)</argsstring>
+        <name>Yap_new_ludbe</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>nargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1940" column="14" bodyfile="C/dbase.c" bodystart="1940" bodyend="1958"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga23e7385cbcce75f2641576b0d75005e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>static LogUpdClause * record_lu</definition>
+        <argsstring>(PredEntry *pe, Term t, int position)</argsstring>
+        <name>record_lu</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1960" column="21" bodyfile="C/dbase.c" bodystart="1960" bodyend="1972"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga110df9006449fa37d6cdcc92459900d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+        <definition>static LogUpdClause * record_lu_at</definition>
+        <argsstring>(int position, LogUpdClause *ocl, Term t)</argsstring>
+        <name>record_lu_at</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <declname>ocl</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="1974" column="21" bodyfile="C/dbase.c" bodystart="1974" bodyend="2016"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga1c7b574aa7041ab58ecef15b77993e53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rcda_at</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rcda_at</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2091" column="12" bodyfile="C/dbase.c" bodystart="2091" bodyend="2129"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gac3f442f1bd346a5a5bc592353afaafab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_Recordz</definition>
+        <argsstring>(Atom at, Term t2)</argsstring>
+        <name>Yap_Recordz</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2181" column="5" bodyfile="C/dbase.c" bodystart="2181" bodyend="2203"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga42a3344426a149c094b346fb55d24e3b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_rcdz_at</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_rcdz_at</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2235" column="12" bodyfile="C/dbase.c" bodystart="2235" bodyend="2272"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaf02af730ee0559223bba922374551c0e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_still_variant</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_still_variant</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2353" column="12" bodyfile="C/dbase.c" bodystart="2353" bodyend="2421"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa4a5a65ac15b004cdc8f328bbf95535f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int copy_attachments</definition>
+        <argsstring>(CELL *ts USES_REGS)</argsstring>
+        <name>copy_attachments</name>
+        <param>
+          <type>CELL *ts</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2424" column="12" bodyfile="C/dbase.c" bodystart="2424" bodyend="2442"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga3dcc472e9f36b5179e0cc594254fbf34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term GetDBLUKey</definition>
+        <argsstring>(PredEntry *ap)</argsstring>
+        <name>GetDBLUKey</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2445" column="13" bodyfile="C/dbase.c" bodystart="2445" bodyend="2462"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga6d733ec10d789a17d542a7c9ede5b773" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int UnifyDBKey</definition>
+        <argsstring>(DBRef DBSP, PropFlags flags, Term t)</argsstring>
+        <name>UnifyDBKey</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>DBSP</declname>
+        </param>
+        <param>
+          <type>PropFlags</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2464" column="12" bodyfile="C/dbase.c" bodystart="2464" bodyend="2490"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gae5b1855ee18469496cf0d1b448126f5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int UnifyDBNumber</definition>
+        <argsstring>(DBRef DBSP, Term t)</argsstring>
+        <name>UnifyDBNumber</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>DBSP</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2492" column="12" bodyfile="C/dbase.c" bodystart="2492" bodyend="2511"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab0b9e50f033140940fac3fbd6e7ee756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_unify_immediate_ref</definition>
+        <argsstring>(DBRef ref USES_REGS)</argsstring>
+        <name>Yap_unify_immediate_ref</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref> ref</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2513" column="5" bodyfile="C/dbase.c" bodystart="2513" bodyend="2524"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga8569755c1071cc40e1a6bc0a604a966b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term GetDBTermFromDBEntry</definition>
+        <argsstring>(DBRef DBSP USES_REGS)</argsstring>
+        <name>GetDBTermFromDBEntry</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref> DBSP</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2584" column="13" bodyfile="C/dbase.c" bodystart="2584" bodyend="2588"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga597f2bd3ce864f3c0810cf44ce77dbaa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void init_int_keys</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_int_keys</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2590" column="13" bodyfile="C/dbase.c" bodystart="2590" bodyend="2601"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga023d0ade1995fde985a539fdb6235b9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void init_int_lu_keys</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_int_lu_keys</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2603" column="13" bodyfile="C/dbase.c" bodystart="2603" bodyend="2614"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga795592244df2c00352833daa897dac1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int resize_int_keys</definition>
+        <argsstring>(UInt new_size)</argsstring>
+        <name>resize_int_keys</name>
+        <param>
+          <type>UInt</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2616" column="12" bodyfile="C/dbase.c" bodystart="2616" bodyend="2661"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga05acf19bf63d7bb677c16f89167709a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>static PredEntry * find_lu_int_key</definition>
+        <argsstring>(Int key)</argsstring>
+        <name>find_lu_int_key</name>
+        <param>
+          <type>Int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2663" column="18" bodyfile="C/dbase.c" bodystart="2663" bodyend="2681"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga14967cd027558c42d4848c6264186f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+        <definition>PredEntry * Yap_FindLUIntKey</definition>
+        <argsstring>(Int key)</argsstring>
+        <name>Yap_FindLUIntKey</name>
+        <param>
+          <type>Int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2683" column="11" bodyfile="C/dbase.c" bodystart="2683" bodyend="2683"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa06cc1860804ab00b0fcf75fbde029c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+        <definition>static DBProp find_entry</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>find_entry</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2776" column="15" bodyfile="C/dbase.c" bodystart="2776" bodyend="2799"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga5c13a7dc3844c2359d34b0db253e9d1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+        <definition>static DBProp FetchIntDBPropFromKey</definition>
+        <argsstring>(Int key, int flag, int new, char *error_mssg)</argsstring>
+        <name>FetchIntDBPropFromKey</name>
+        <param>
+          <type>Int</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>error_mssg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2833" column="15" bodyfile="C/dbase.c" bodystart="2833" bodyend="2873"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga0e07809be015e934328a7a38331107eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int lu_nth_recorded</definition>
+        <argsstring>(PredEntry *pe, Int Count USES_REGS)</argsstring>
+        <name>lu_nth_recorded</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>Int Count</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2972" column="12" bodyfile="C/dbase.c" bodystart="2972" bodyend="2990"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa83a47b682a1158bbc6b7433788458e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int nth_recorded</definition>
+        <argsstring>(DBProp AtProp, Int Count USES_REGS)</argsstring>
+        <name>nth_recorded</name>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+          <declname>AtProp</declname>
+        </param>
+        <param>
+          <type>Int Count</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="2993" column="12" bodyfile="C/dbase.c" bodystart="2993" bodyend="3029"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga300dc8d38a6698f968e88f9d2ad153a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_db_nth_recorded</definition>
+        <argsstring>(PredEntry *pe, Int Count USES_REGS)</argsstring>
+        <name>Yap_db_nth_recorded</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *</type>
+          <declname>pe</declname>
+        </param>
+        <param>
+          <type>Int Count</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3031" column="5" bodyfile="C/dbase.c" bodystart="3031" bodyend="3043"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga27753053e6d51ebbfb9a148833d6e072" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_db_key</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_db_key</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3045" column="12" bodyfile="C/dbase.c" bodystart="3045" bodyend="3054"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga03e633d2cf1ae09c17bb5a4e52006dc0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int i_recorded</definition>
+        <argsstring>(DBProp AtProp, Term t3 USES_REGS)</argsstring>
+        <name>i_recorded</name>
+        <param>
+          <type><ref refid="structstruct__dbentry" kindref="compound">DBProp</ref></type>
+          <declname>AtProp</declname>
+        </param>
+        <param>
+          <type>Term t3</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3057" column="12" bodyfile="C/dbase.c" bodystart="3057" bodyend="3187"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gad24af456228396f9fc1db51d1acbad24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int c_recorded</definition>
+        <argsstring>(int flags USES_REGS)</argsstring>
+        <name>c_recorded</name>
+        <param>
+          <type>int flags</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3189" column="12" bodyfile="C/dbase.c" bodystart="3189" bodyend="3329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga80ba5b32a527dfa2d8443faeaf1ce8eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int lu_recorded</definition>
+        <argsstring>(PredEntry *pe USES_REGS)</argsstring>
+        <name>lu_recorded</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *pe</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3336" column="12" bodyfile="C/dbase.c" bodystart="3336" bodyend="3368"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaeb376795ef84ce6f89372f18deb1a2c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int in_rded_with_key</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>in_rded_with_key</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3371" column="12" bodyfile="C/dbase.c" bodystart="3371" bodyend="3375"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gac97700da77beab63991bd22afd03a5df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_recorded</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_recorded</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3378" column="12" bodyfile="C/dbase.c" bodystart="3378" bodyend="3454"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga199cb055733cc530a3638add6920227d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>static UInt index_sz</definition>
+        <argsstring>(LogUpdIndex *x)</argsstring>
+        <name>index_sz</name>
+        <param>
+          <type><ref refid="structlogic__upd__index" kindref="compound">LogUpdIndex</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3579" column="13" bodyfile="C/dbase.c" bodystart="3579" bodyend="3612"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga7aa2f554c8414c8b643d1f9a68e88f7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int lu_statistics</definition>
+        <argsstring>(PredEntry *pe USES_REGS)</argsstring>
+        <name>lu_statistics</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *pe</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3614" column="12" bodyfile="C/dbase.c" bodystart="3614" bodyend="3646"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga235f7836687955aa98d595ce75eff3f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_key_statistics</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_key_statistics</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3658" column="12" bodyfile="C/dbase.c" bodystart="3658" bodyend="3685"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga4b2be86a38306c97b92e0c9287957a37" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_lu_statistics</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_lu_statistics</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3687" column="12" bodyfile="C/dbase.c" bodystart="3687" bodyend="3710"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga91e9099b15823d20569a2c7f2f8cae98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_total_erased</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_total_erased</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3712" column="12" bodyfile="C/dbase.c" bodystart="3712" bodyend="3733"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga8ddbeab50a29eaf616d0e94f7a6356af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int lu_erased_statistics</definition>
+        <argsstring>(PredEntry *pe USES_REGS)</argsstring>
+        <name>lu_erased_statistics</name>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *pe</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3735" column="12" bodyfile="C/dbase.c" bodystart="3735" bodyend="3759"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga93166a990625906556be61e5dd5988cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_key_erased_statistics</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_key_erased_statistics</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3761" column="12" bodyfile="C/dbase.c" bodystart="3761" bodyend="3769"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga94ebf82ba1b463d8f75157b05dbdf58c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_heap_space_info</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_heap_space_info</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3771" column="12" bodyfile="C/dbase.c" bodystart="3771" bodyend="3775"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab59e6b161751d950bacdb1f7e7682042" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ErasePendingRefs</definition>
+        <argsstring>(DBTerm *entryref USES_REGS)</argsstring>
+        <name>ErasePendingRefs</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *entryref</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3781" column="13" bodyfile="C/dbase.c" bodystart="3781" bodyend="3793"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaddb9f3b937fbb0b5b912a2bc1088357f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RemoveDBEntry</definition>
+        <argsstring>(DBRef entryref USES_REGS)</argsstring>
+        <name>RemoveDBEntry</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref> entryref</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3795" column="20" bodyfile="C/dbase.c" bodystart="3795" bodyend="3824"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa02320fe0ce1377d2f3b977996511a35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>static yamop * find_next_clause</definition>
+        <argsstring>(DBRef ref0 USES_REGS)</argsstring>
+        <name>find_next_clause</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref> ref0</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3826" column="14" bodyfile="C/dbase.c" bodystart="3826" bodyend="3871"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaf3ca5b94aa2bea75cb084fa00069b205" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void complete_lu_erase</definition>
+        <argsstring>(LogUpdClause *clau)</argsstring>
+        <name>complete_lu_erase</name>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <declname>clau</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="3892" column="13" bodyfile="C/dbase.c" bodystart="3892" bodyend="3938"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga12f1efe56904e516b7e0cd8d957ae73b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MyEraseClause</definition>
+        <argsstring>(DynamicClause *clau USES_REGS)</argsstring>
+        <name>MyEraseClause</name>
+        <param>
+          <type><ref refid="structdynamic__clause" kindref="compound">DynamicClause</ref> *clau</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4018" column="13" bodyfile="C/dbase.c" bodystart="4018" bodyend="4055"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gad2d1a6c686ae3f07a4c4c3dd052d5b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ErLogUpdCl</definition>
+        <argsstring>(LogUpdClause *clau)</argsstring>
+        <name>Yap_ErLogUpdCl</name>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <declname>clau</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4061" column="6" bodyfile="C/dbase.c" bodystart="4061" bodyend="4061"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga680dc6f1a48bb319dcedda7e7b15ecf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ErCl</definition>
+        <argsstring>(DynamicClause *clau)</argsstring>
+        <name>Yap_ErCl</name>
+        <param>
+          <type><ref refid="structdynamic__clause" kindref="compound">DynamicClause</ref> *</type>
+          <declname>clau</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4067" column="6" bodyfile="C/dbase.c" bodystart="4067" bodyend="4070"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga08f510f3ff30f3987365913eaab13bfc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PrepareToEraseLogUpdClause</definition>
+        <argsstring>(LogUpdClause *clau, DBRef dbr)</argsstring>
+        <name>PrepareToEraseLogUpdClause</name>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <declname>clau</declname>
+        </param>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>dbr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4072" column="13" bodyfile="C/dbase.c" bodystart="4072" bodyend="4148"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaf997e9812bfd5ead19dc71d7edce3d8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ErDBE</definition>
+        <argsstring>(DBRef entryref USES_REGS)</argsstring>
+        <name>ErDBE</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref> entryref</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4152" column="13" bodyfile="C/dbase.c" bodystart="4152" bodyend="4186"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa8b30979f91908e93d4b55e5e9796dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ErDBE</definition>
+        <argsstring>(DBRef entryref)</argsstring>
+        <name>Yap_ErDBE</name>
+        <param>
+          <type><ref refid="structDB__STRUCT" kindref="compound">DBRef</ref></type>
+          <declname>entryref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4188" column="6" bodyfile="C/dbase.c" bodystart="4188" bodyend="4191"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga4adbcbff3063dcbb021455c457e4c042" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_increase_reference_counter</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_increase_reference_counter</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4245" column="12" bodyfile="C/dbase.c" bodystart="4245" bodyend="4262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gae54148681309eec8a2e5d61f96303b4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_decrease_reference_counter</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_decrease_reference_counter</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4265" column="12" bodyfile="C/dbase.c" bodystart="4265" bodyend="4286"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga11a1b4d45e1973ca49e50758a8093300" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_current_reference_counter</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_current_reference_counter</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4297" column="12" bodyfile="C/dbase.c" bodystart="4297" bodyend="4311"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaacf3b9f24c34549e88e63bbfe97159b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_erase_clause</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_erase_clause</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4313" column="12" bodyfile="C/dbase.c" bodystart="4313" bodyend="4347"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga05d7c2c8e64665bb451dc51809672fc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int static_instance</definition>
+        <argsstring>(StaticClause *cl, PredEntry *ap USES_REGS)</argsstring>
+        <name>static_instance</name>
+        <param>
+          <type><ref refid="structstatic__clause" kindref="compound">StaticClause</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *ap</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4436" column="12" bodyfile="C/dbase.c" bodystart="4436" bodyend="4486"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga62af6bcca9b22587f8b56674c99fced4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int exo_instance</definition>
+        <argsstring>(Int i, PredEntry *ap USES_REGS)</argsstring>
+        <name>exo_instance</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *ap</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4488" column="12" bodyfile="C/dbase.c" bodystart="4488" bodyend="4515"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gac97344a8366ef576a25b88b416e338af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int mega_instance</definition>
+        <argsstring>(yamop *code, PredEntry *ap USES_REGS)</argsstring>
+        <name>mega_instance</name>
+        <param>
+          <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="structpred__entry" kindref="compound">PredEntry</ref> *ap</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4517" column="12" bodyfile="C/dbase.c" bodystart="4517" bodyend="4542"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gafa56069a26711a7df4ff79d1bb9a5b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_LUInstance</definition>
+        <argsstring>(LogUpdClause *cl, UInt arity)</argsstring>
+        <name>Yap_LUInstance</name>
+        <param>
+          <type><ref refid="structlogic__upd__clause" kindref="compound">LogUpdClause</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4678" column="6" bodyfile="C/dbase.c" bodystart="4678" bodyend="4718"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaa15ad575bc9a17f68c8d08016a977194" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_instance_module</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_instance_module</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4721" column="12" bodyfile="C/dbase.c" bodystart="4721" bodyend="4746"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga06b0b86472194437f07141930fc1280a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_FetchTermFromDB</definition>
+        <argsstring>(void *ref)</argsstring>
+        <name>Yap_FetchTermFromDB</name>
+        <param>
+          <type>void *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4914" column="6" bodyfile="C/dbase.c" bodystart="4914" bodyend="4919"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab264ea9252c08aaffd6943bfa8706635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_FetchClauseTermFromDB</definition>
+        <argsstring>(void *ref)</argsstring>
+        <name>Yap_FetchClauseTermFromDB</name>
+        <param>
+          <type>void *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4921" column="6" bodyfile="C/dbase.c" bodystart="4921" bodyend="4926"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga80ec4415a920d733b983e9b926ead40c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_PopTermFromDB</definition>
+        <argsstring>(void *ref)</argsstring>
+        <name>Yap_PopTermFromDB</name>
+        <param>
+          <type>void *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4928" column="6" bodyfile="C/dbase.c" bodystart="4928" bodyend="4935"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gae6a1bf061545b6b4a7dd846e073358f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        <definition>static DBTerm * StoreTermInDB</definition>
+        <argsstring>(Term t, int nargs USES_REGS)</argsstring>
+        <name>StoreTermInDB</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int nargs</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4937" column="15" bodyfile="C/dbase.c" bodystart="4937" bodyend="4959"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga1c67c88ed4db82dc07ebd26fde44da80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        <definition>DBTerm * Yap_StoreTermInDB</definition>
+        <argsstring>(Term t, int nargs)</argsstring>
+        <name>Yap_StoreTermInDB</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4961" column="8" bodyfile="C/dbase.c" bodystart="4961" bodyend="4964"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga6f2e7291dfbcb50cfcd59ecedb04ff04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *</type>
+        <definition>DBTerm * Yap_StoreTermInDBPlusExtraSpace</definition>
+        <argsstring>(Term t, UInt extra_size, UInt *sz)</argsstring>
+        <name>Yap_StoreTermInDBPlusExtraSpace</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>extra_size</declname>
+        </param>
+        <param>
+          <type>UInt *</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4966" column="8" bodyfile="C/dbase.c" bodystart="4966" bodyend="4975"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga751946432bdf396373c251e225da2064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_init_tqueue</definition>
+        <argsstring>(db_queue *dbq)</argsstring>
+        <name>Yap_init_tqueue</name>
+        <param>
+          <type><ref refid="structidb__queue" kindref="compound">db_queue</ref> *</type>
+          <declname>dbq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4977" column="6" bodyfile="C/dbase.c" bodystart="4977" bodyend="4982"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga9f2f7e66a54733845ce636190c266a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_destroy_tqueue</definition>
+        <argsstring>(db_queue *dbq USES_REGS)</argsstring>
+        <name>Yap_destroy_tqueue</name>
+        <param>
+          <type><ref refid="structidb__queue" kindref="compound">db_queue</ref> *dbq</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4984" column="6" bodyfile="C/dbase.c" bodystart="4984" bodyend="4994"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gad7bc8bdd5a5f9b41fd124a7cc059d2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_enqueue_tqueue</definition>
+        <argsstring>(db_queue *father_key, Term t USES_REGS)</argsstring>
+        <name>Yap_enqueue_tqueue</name>
+        <param>
+          <type><ref refid="structidb__queue" kindref="compound">db_queue</ref> *</type>
+          <declname>father_key</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="4996" column="6" bodyfile="C/dbase.c" bodystart="4996" bodyend="5017"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gabf9ecf666b7a204ef8fe1b7e5f5ca141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_dequeue_tqueue</definition>
+        <argsstring>(db_queue *father_key, Term t, bool first, bool release USES_REGS)</argsstring>
+        <name>Yap_dequeue_tqueue</name>
+        <param>
+          <type><ref refid="structidb__queue" kindref="compound">db_queue</ref> *</type>
+          <declname>father_key</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>bool release</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5019" column="6" bodyfile="C/dbase.c" bodystart="5019" bodyend="5082"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga7a57d042f493e35d5caa9d286eb819ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_enqueue_unlocked</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_enqueue_unlocked</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5119" column="12" bodyfile="C/dbase.c" bodystart="5119" bodyend="5132"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaefb3e43df306cdd819ac81a78202e0fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void keepdbrefs</definition>
+        <argsstring>(DBTerm *entryref USES_REGS)</argsstring>
+        <name>keepdbrefs</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *entryref</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5143" column="13" bodyfile="C/dbase.c" bodystart="5143" bodyend="5161"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga69d82c2f36e2f730a3d1d06bb06cfd79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_dequeue_unlocked</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_dequeue_unlocked</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5190" column="12" bodyfile="C/dbase.c" bodystart="5190" bodyend="5210"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga3230bab0fc833d418de4d83c5c299502" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_peek_queue</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_peek_queue</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5212" column="12" bodyfile="C/dbase.c" bodystart="5212" bodyend="5238"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gae5d9fbf7fa9b06599698ceeb75e793a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_clean_queues</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_clean_queues</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5240" column="12" bodyfile="C/dbase.c" bodystart="5240" bodyend="5240"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga31be6b6f31813539e4843fe479355da9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_slu</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_slu</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5243" column="12" bodyfile="C/dbase.c" bodystart="5243" bodyend="5255"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga70bfb38ceabfe680799f2e6503911615" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_hold_index</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_hold_index</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5258" column="12" bodyfile="C/dbase.c" bodystart="5258" bodyend="5261"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gac8a4de0ad4d96e3fb302b8d1f48ca277" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_fetch_reference_from_index</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_fetch_reference_from_index</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5263" column="12" bodyfile="C/dbase.c" bodystart="5263" bodyend="5288"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga95a0d04cba925e06191f6b7b462b72d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_resize_int_keys</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_resize_int_keys</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5290" column="12" bodyfile="C/dbase.c" bodystart="5290" bodyend="5300"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gab23de8f09131b801c2e523ecf8270c3d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ReleaseTermFromDB</definition>
+        <argsstring>(DBTerm *ref USES_REGS)</argsstring>
+        <name>ReleaseTermFromDB</name>
+        <param>
+          <type><ref refid="structDB__TERM" kindref="compound">DBTerm</ref> *ref</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5302" column="13" bodyfile="C/dbase.c" bodystart="5302" bodyend="5308"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1ga4dc6a1d35a61ac217c6d8675887ba47f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ReleaseTermFromDB</definition>
+        <argsstring>(void *ref)</argsstring>
+        <name>Yap_ReleaseTermFromDB</name>
+        <param>
+          <type>void *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5310" column="6" bodyfile="C/dbase.c" bodystart="5310" bodyend="5313"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaf7c2c333586f9ab2d6244fa0dc56d8af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_install_thread_local</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_install_thread_local</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5315" column="12" bodyfile="C/dbase.c" bodystart="5315" bodyend="5365"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Internal__Database_1gaefeb5d825ce37c8e8846dec6ce2a7111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitBackDB</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitBackDB</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/dbase.c" line="5448" column="6" bodyfile="C/dbase.c" bodystart="5448" bodyend="5460"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/dbase.c"/>
+    <location file="C/dbase.c"/>
   </compounddef>
 </doxygen>

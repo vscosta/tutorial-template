@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="readutil_8c" kind="file" language="C++">
     <compoundname>readutil.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -383,7 +383,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/readutil.c</label>
+        <label>os/readutil.c</label>
         <link refid="readutil_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -453,20 +453,174 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <member refid="group__library_1ga7335414d389fa81e26f68cb7105cee3c" kind="function"><name>rl_to_codes</name></member>
-      <member refid="group__library_1gabf51c1885eeed5fa25f12fc3f995f296" kind="function"><name>read_line_to_codes2</name></member>
-      <member refid="group__library_1gaf8ee070fbc87f5766f2922d9d8037b86" kind="function"><name>read_line_to_chars2</name></member>
-      <member refid="group__library_1ga85e5f09da761cd9ae78062f5747107b4" kind="function"><name>read_line_to_codes</name></member>
-      <member refid="group__library_1gaab57c8788e19d182d27589837638c294" kind="function"><name>read_line_to_chars</name></member>
-      <member refid="group__library_1ga7a9fd8e4267bbc4db8e2a85add23cbba" kind="function"><name>read_line_to_string</name></member>
-      <member refid="group__library_1gacf8618bcea6a4fb911413ccda377a566" kind="function"><name>read_stream_to_codes</name></member>
-      <member refid="group__library_1ga540d49b02b034e7abe56c5bdc9485174" kind="function"><name>read_stream_to_terms</name></member>
-      <member refid="group__library_1gaddb1937a8178c816773d03c86cf84874" kind="function"><name>Yap_InitReadUtil</name></member>
+      <memberdef kind="function" id="group__library_1ga7335414d389fa81e26f68cb7105cee3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int rl_to_codes</definition>
+        <argsstring>(Term TEnd, int do_as_binary, bool codes USES_REGS)</argsstring>
+        <name>rl_to_codes</name>
+        <param>
+          <type>Term</type>
+          <declname>TEnd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>do_as_binary</declname>
+        </param>
+        <param>
+          <type>bool codes</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="36" column="12" bodyfile="os/readutil.c" bodystart="36" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1gabf51c1885eeed5fa25f12fc3f995f296" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_line_to_codes2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_line_to_codes2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>read_line_to_codes( +_Stream_, -_Codes_) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>Stream</emphasis> is a readable text stream, unify <emphasis>Codes</emphasis> with the sequence of character codes forming the first line of the stream </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="112" column="12" bodyfile="os/readutil.c" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1gaf8ee070fbc87f5766f2922d9d8037b86" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_line_to_chars2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_line_to_chars2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>read_line_to_chars( +_Stream_, -_Codes_) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>Stream</emphasis> is a readable text stream, unify <emphasis>Codes</emphasis> with the sequence of character atoms forming the first line of the stream </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="121" column="12" bodyfile="os/readutil.c" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1ga85e5f09da761cd9ae78062f5747107b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_line_to_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_line_to_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>read_line_to_codes( +_Stream_, -_Codes_-_Tail_) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>Stream</emphasis> is a readable text stream, unify <emphasis>Codes</emphasis> with the sequence of character codes available from the first line</para>
+<para>If the stream is exhausted, unify <emphasis>Codes</emphasis> with <computeroutput>end_of_file</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="134" column="12" bodyfile="os/readutil.c" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1gaab57c8788e19d182d27589837638c294" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_line_to_chars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_line_to_chars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>read_line_to_chars( +_Stream_, -_Codes_-_Tail_) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>Stream</emphasis> is a readable text stream, unify <emphasis>Codes</emphasis> with the sequence of characters available from the stream</para>
+<para>If the stream is exhausted, unify <emphasis>Codes</emphasis> with <computeroutput>end_of_file</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="146" column="12" bodyfile="os/readutil.c" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1ga7a9fd8e4267bbc4db8e2a85add23cbba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_line_to_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_line_to_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="158" column="12" bodyfile="os/readutil.c" bodystart="158" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1gacf8618bcea6a4fb911413ccda377a566" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_stream_to_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_stream_to_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="242" column="12" bodyfile="os/readutil.c" bodystart="242" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1ga540d49b02b034e7abe56c5bdc9485174" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_stream_to_terms</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_stream_to_terms</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="292" column="12" bodyfile="os/readutil.c" bodystart="292" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="group__library_1gaddb1937a8178c816773d03c86cf84874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitReadUtil</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitReadUtil</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readutil.c" line="329" column="6" bodyfile="os/readutil.c" bodystart="329" bodyend="342"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/os/readutil.c"/>
+    <location file="os/readutil.c"/>
   </compounddef>
 </doxygen>

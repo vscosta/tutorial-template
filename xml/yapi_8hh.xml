@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="yapi_8hh" kind="file" language="C++">
     <compoundname>yapi.hh</compoundname>
     <includes local="yes">YapConfig.h</includes>
@@ -24,9 +24,9 @@
     <includes refid="yapt_8hh" local="yes">yapt.hh</includes>
     <includes refid="yapdb_8hh" local="yes">yapdb.hh</includes>
     <includes refid="yapq_8hh" local="yes">yapq.hh</includes>
-    <includedby refid="cxx4yap_8hh" local="yes">/home/vsc/github/yap/CXX/cxx4yap.hh</includedby>
-    <includedby refid="heap_8cxx" local="yes">/home/vsc/github/yap/CXX/heap.cxx</includedby>
-    <includedby refid="yapi_8cpp" local="yes">/home/vsc/github/yap/CXX/yapi.cpp</includedby>
+    <includedby refid="cxx4yap_8hh" local="yes">CXX/cxx4yap.hh</includedby>
+    <includedby refid="heap_8cxx" local="yes">CXX/heap.cxx</includedby>
+    <includedby refid="yapi_8cpp" local="yes">CXX/yapi.cpp</includedby>
     <incdepgraph>
       <node id="68">
         <label>yapa.hh</label>
@@ -41,7 +41,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <label>CXX/yapi.hh</label>
         <link refid="yapi_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -601,19 +601,19 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <label>CXX/cxx4yap.hh</label>
         <link refid="cxx4yap_8hh_source"/>
       </node>
       <node id="3">
-        <label>/home/vsc/github/yap/CXX/heap.cxx</label>
+        <label>CXX/heap.cxx</label>
         <link refid="heap_8cxx_source"/>
       </node>
       <node id="4">
-        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <label>CXX/yapi.cpp</label>
         <link refid="yapi_8cpp_source"/>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <label>CXX/yapi.hh</label>
         <link refid="yapi_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -633,23 +633,190 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/yapi.hh" line="9" column="9" bodyfile="/home/vsc/github/yap/CXX/yapi.hh" bodystart="9" bodyend="-1"/>
+        <location file="CXX/yapi.hh" line="9" column="9" bodyfile="CXX/yapi.hh" bodystart="9" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__yap-cplus-interface_1ga5b63dd059139e36a7ef1409c08f1e5a3" kind="function"><name>a1_ptr</name></member>
-      <member refid="group__yap-cplus-interface_1ga2bd86efcc63094a5ae060bd36ce755fc" kind="function"><name>YAP_UserCPredicate</name></member>
-      <member refid="group__yap-cplus-interface_1gac3e790d04e0dcdbbfa4cadfdc9a8759a" kind="function"><name>YAP_UserCPredicateWithArgs</name></member>
-      <member refid="group__yap-cplus-interface_1ga6c7db23824469607e6d0f803bb501c34" kind="function"><name>YAP_UserBackCPredicate</name></member>
-      <member refid="group__yap-cplus-interface_1ga2641300a4a4bd11040ac2f95b762461d" kind="function"><name>YAP_UserBackCutCPredicate</name></member>
-      <member refid="group__yap-cplus-interface_1gac13efe46a914e3b625a6594cfdfb06ff" kind="function"><name>YAP_ReadBuffer</name></member>
-      <member refid="group__yap-cplus-interface_1gadebb72837875d88c49f9f0778fe65bf2" kind="function"><name>YAP_MkcharPTerm</name></member>
+      <memberdef kind="function" id="group__yap-cplus-interface_1ga5b63dd059139e36a7ef1409c08f1e5a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>CELL * a1_ptr</definition>
+        <argsstring>(void)</argsstring>
+        <name>a1_ptr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapi.hh" line="95" column="16" bodyfile="CXX/tmp/yapi.hh" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-interface_1ga2bd86efcc63094a5ae060bd36ce755fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void YAP_UserCPredicate</definition>
+        <argsstring>(const char *, YAP_UserCPred, YAP_Arity arity)</argsstring>
+        <name>YAP_UserCPredicate</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapi.hh" line="100" column="19" bodyfile="C/c_interface.c" bodystart="2366" bodyend="2369" declfile="CXX/tmp/yapi.hh" declline="100" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-interface_1gac3e790d04e0dcdbbfa4cadfdc9a8759a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void YAP_UserCPredicateWithArgs</definition>
+        <argsstring>(const char *, YAP_UserCPred, YAP_Arity, YAP_Term)</argsstring>
+        <name>YAP_UserCPredicateWithArgs</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapi.hh" line="106" column="19" declfile="CXX/tmp/yapi.hh" declline="106" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-interface_1ga6c7db23824469607e6d0f803bb501c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void YAP_UserBackCPredicate</definition>
+        <argsstring>(const char *name, YAP_UserCPred init, YAP_UserCPred cont, YAP_Arity arity, YAP_Arity extra)</argsstring>
+        <name>YAP_UserBackCPredicate</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>cont</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>extra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapi.hh" line="109" column="19" bodyfile="C/c_interface.c" bodystart="2385" bodyend="2390" declfile="CXX/tmp/yapi.hh" declline="109" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-interface_1ga2641300a4a4bd11040ac2f95b762461d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void YAP_UserBackCutCPredicate</definition>
+        <argsstring>(const char *name, YAP_UserCPred init, YAP_UserCPred cont, YAP_UserCPred cut, YAP_Arity arity, YAP_Arity extra)</argsstring>
+        <name>YAP_UserBackCutCPredicate</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>cont</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>cut</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>extra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapi.hh" line="114" column="19" bodyfile="C/c_interface.c" bodystart="2378" bodyend="2383" declfile="CXX/tmp/yapi.hh" declline="114" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-interface_1gac13efe46a914e3b625a6594cfdfb06ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API YAP_Term</type>
+        <definition>X_API YAP_Term YAP_ReadBuffer</definition>
+        <argsstring>(const char *s, YAP_Term *tp)</argsstring>
+        <name>YAP_ReadBuffer</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>YAP_Term *</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapi.hh" line="120" column="23" declfile="CXX/tmp/yapi.hh" declline="120" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-interface_1gadebb72837875d88c49f9f0778fe65bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>YAP_Term YAP_MkcharPTerm</definition>
+        <argsstring>(char *s)</argsstring>
+        <name>YAP_MkcharPTerm</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapi.hh" line="122" column="17" declfile="CXX/tmp/yapi.hh" declline="122" declcolumn="17"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>entry file for the YAP C++ interface </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/CXX/yapi.hh"/>
+    <location file="CXX/yapi.hh"/>
   </compounddef>
 </doxygen>

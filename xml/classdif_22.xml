@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="classdif_22" kind="class" language="Prolog" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classdif_22" kind="predicate" language="Prolog" prot="public">
     <compoundname>dif/2</compoundname>
     <briefdescription>
 <para><bold>dif</bold>( <emphasis>X</emphasis>, <emphasis>Y</emphasis>) </para>
@@ -14,7 +14,7 @@
 <para>First, it needs for the engine to be careful when binding two suspended j variables Basically, in this case the engine must be sure to wake up one of the goals, as they may make dif fail The way the engine does so is by searching the list of suspended variables, and search whether they share a common suspended goal If they do, that suspended goal is added to the WokenList</para>
 <para>Second, thanks to dif we may try to suspend on the same variable several times dif calls a special version of freeze that checks whether that is in fact the case </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/pl/corout.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/corout.yap" bodystart="1" bodyend="-1"/>
+    <location file="pl/corout.yap" line="1" column="1" bodyfile="pl/corout.yap" bodystart="1" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

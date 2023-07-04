@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="scanner_8c" kind="file" language="C++">
     <compoundname>scanner.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -13,7 +13,7 @@
     <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/scanner.c</label>
+        <label>C/scanner.c</label>
         <link refid="scanner_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -468,47 +468,641 @@
     </incdepgraph>
     <innerclass refid="structscanner__extra__alloc" prot="public">scanner_extra_alloc</innerclass>
       <sectiondef kind="define">
-      <member refid="group__Scanner_1gaccfdd64bd8870a0e687b27e18d2bc0d5" kind="define"><name>my_isupper</name></member>
-      <member refid="group__Scanner_1ga52c80a47d825abb4d31801d5f1292428" kind="define"><name>my_islower</name></member>
-      <member refid="group__Scanner_1gad0d940d93962ed5a42fb05338bc1add1" kind="define"><name>CodeSpaceError</name></member>
-      <member refid="group__Scanner_1ga1e96f9465431155b467cba5955ebec54" kind="define"><name>TrailSpaceError</name></member>
-      <member refid="group__Scanner_1gaa1477dea1b76b69759c8990251664a5a" kind="define"><name>number_overflow</name></member>
-      <member refid="group__Scanner_1ga71f2174862a3c7fe786c340996a59afa" kind="define"><name>CHECK_SPACE</name></member>
-      <member refid="group__Scanner_1gad14c5da98d9ec743a27b519c0e059a20" kind="define"><name>safe_add_ch_to_buff</name></member>
-      <member refid="group__Scanner_1gaaf55f6aac3e9a0893c765b58794397bb" kind="define"><name>add_ch_to_buff</name></member>
+      <memberdef kind="define" id="group__Scanner_1gaccfdd64bd8870a0e687b27e18d2bc0d5" prot="public" static="no">
+        <name>my_isupper</name>
+        <param><defname>C</defname></param>
+        <initializer>(chtype(C) == UC)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="81" column="9" bodyfile="C/scanner.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Scanner_1ga52c80a47d825abb4d31801d5f1292428" prot="public" static="no">
+        <name>my_islower</name>
+        <param><defname>C</defname></param>
+        <initializer>(chtype(C) == LC)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="82" column="9" bodyfile="C/scanner.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Scanner_1gad0d940d93962ed5a42fb05338bc1add1" prot="public" static="no">
+        <name>CodeSpaceError</name>
+        <param><defname>t</defname></param>
+        <param><defname>p</defname></param>
+        <param><defname>l</defname></param>
+        <initializer>CodeSpaceError__(t, p, l PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="193" column="9" bodyfile="C/scanner.c" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Scanner_1ga1e96f9465431155b467cba5955ebec54" prot="public" static="no">
+        <name>TrailSpaceError</name>
+        <param><defname>t</defname></param>
+        <param><defname>l</defname></param>
+        <initializer>TrailSpaceError__(t, l PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="206" column="9" bodyfile="C/scanner.c" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Scanner_1gaa1477dea1b76b69759c8990251664a5a" prot="public" static="no">
+        <name>number_overflow</name>
+        <param></param>
+        <initializer>  {                                                                            \
+   CACHE_REGS                                          			       \
+    imgsz = Yap_Min(imgsz * 2, imgsz);                                         \
+    char *nbuf;                                                                \
+    nbuf = Realloc(buf, imgsz);                                                \
+    left = imgsz - max_size;                                                   \
+    max_size = imgsz;                                                          \
+    buf = nbuf;                                                                \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="486" column="9" bodyfile="C/scanner.c" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Scanner_1ga71f2174862a3c7fe786c340996a59afa" prot="public" static="no">
+        <name>CHECK_SPACE</name>
+        <param></param>
+        <initializer>  if (ASP - HR &lt; 1024) {                                                       \
+    LOCAL_ErrorMessage = &quot;Stack Overflow&quot;;                                     \
+    LOCAL_Error_TYPE = RESOURCE_ERROR_STACK;                                   \
+    LOCAL_Error_Size = 0L;                                                     \
+    if (p) {                                                                   \
+      p-&gt;Tok = Ord(kind = eot_tok);                                            \
+      p-&gt;TokInfo = TermOutOfStackError;                                        \
+    }                                                                          \
+    /* serious error now */                                                    \
+    return l;                                                                  \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="812" column="9" bodyfile="C/scanner.c" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Scanner_1gad14c5da98d9ec743a27b519c0e059a20" prot="public" static="no">
+        <name>safe_add_ch_to_buff</name>
+        <param><defname>ch</defname></param>
+        <initializer>charp += put_utf8(charp, ch);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="940" column="9" bodyfile="C/scanner.c" bodystart="940" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Scanner_1gaaf55f6aac3e9a0893c765b58794397bb" prot="public" static="no">
+        <name>add_ch_to_buff</name>
+        <param><defname>ch</defname></param>
+        <initializer>  {\
+  charp += put_utf8(charp, ch); }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="942" column="9" bodyfile="C/scanner.c" bodystart="942" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <member refid="group__Scanner_1gaf7d162d15dedf9f3ae76d59b0a35ca9a" kind="typedef"><name>ScannerExtraBlock</name></member>
+      <memberdef kind="typedef" id="group__Scanner_1gaf7d162d15dedf9f3ae76d59b0a35ca9a" prot="public" static="no">
+        <type>struct <ref refid="structscanner__extra__alloc" kindref="compound">scanner_extra_alloc</ref></type>
+        <definition>typedef struct scanner_extra_alloc ScannerExtraBlock</definition>
+        <argsstring></argsstring>
+        <name>ScannerExtraBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="191" column="19"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <member refid="group__Scanner_1ga8c3c2d65f09551406b1aea1555b8b8fe" kind="variable"><name>Yap_chtype0</name></member>
+      <memberdef kind="variable" id="group__Scanner_1ga8c3c2d65f09551406b1aea1555b8b8fe" prot="public" static="no" mutable="no">
+        <type>char_kind_t</type>
+        <definition>char_kind_t Yap_chtype0[NUMBER_OF_CHARS+1]</definition>
+        <argsstring>[NUMBER_OF_CHARS+1]</argsstring>
+        <name>Yap_chtype0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="108" column="13" bodyfile="C/scanner.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__Scanner_1gad7f060d79bd825b3665b1ba935e09d13" kind="function"><name>my_isxdigit</name></member>
-      <member refid="group__Scanner_1gaee03ec71e3d427c045660df39b3f49f6" kind="function"><name>float_send</name></member>
-      <member refid="group__Scanner_1gaa422d2b472e091bd5bc56471015d91ed" kind="function"><name>get_num</name></member>
-      <member refid="group__Scanner_1gac7500d2864e1bc0a857df836ec338c48" kind="function"><name>Yap_setCurrentSourceLocation</name></member>
-      <member refid="group__Scanner_1ga92e18a71b6bb4e9fd17df86c40cc1d5a" kind="function"><name>getchr</name></member>
-      <member refid="group__Scanner_1gae3491bd0c7424d82d1978e3aebc3bcfc" kind="function"><name>getchrq</name></member>
-      <member refid="group__Scanner_1ga8d649cab3c4d4094c631915a7df5bfac" kind="function"><name>CodeSpaceError__</name></member>
-      <member refid="group__Scanner_1ga6dbe656a6290885d227f6a36986d8096" kind="function"><name>TrailSpaceError__</name></member>
-      <member refid="group__Scanner_1ga969ff418dd63ebb957219da000871b9c" kind="function"><name>bad_nl_error</name></member>
-      <member refid="group__Scanner_1ga3c03a473fd58b46d02952cbb6f4a83af" kind="function"><name>atof</name></member>
-      <member refid="group__Scanner_1ga24f79e17685f2808e547f75670dec0e7" kind="function"><name>number_encoding_error</name></member>
-      <member refid="group__Scanner_1ga947fd7def1c7decf55710a933f64924c" kind="function"><name>read_int_overflow</name></member>
-      <member refid="group__Scanner_1gaa925f9e13071d5029c7cfae13faef3c9" kind="function"><name>read_escaped_char</name></member>
-      <member refid="group__Scanner_1ga42e56efddbe07a9932b2e6e2175a82bb" kind="function"><name>Yap_scan_num</name></member>
-      <member refid="group__Scanner_1gac175450f7731d242ab54fe28dc789087" kind="function"><name>Yap_tokRep</name></member>
-      <member refid="group__Scanner_1gaab5e9b7f16428b75c467751d9a4c8841" kind="function"><name>Yap_tokFullRep</name></member>
-      <member refid="group__Scanner_1ga2fd6e1a64b21876465e4e4831ca58375" kind="function"><name>Yap_tokText</name></member>
-      <member refid="group__Scanner_1ga60c57a71882c691056112dfd4ddb76cb" kind="function"><name>mark_eof</name></member>
-      <member refid="group__Scanner_1ga2f8cbac052c480c2e79d8bd2cba34787" kind="function"><name>Yap_tokenizer</name></member>
-      <member refid="group__Scanner_1ga204b7a53f139cc7680da7de2159a1843" kind="function"><name>Yap_clean_tokenizer</name></member>
+      <memberdef kind="function" id="group__Scanner_1gad7f060d79bd825b3665b1ba935e09d13" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool my_isxdigit</definition>
+        <argsstring>(int C, int SL, int SU)</argsstring>
+        <name>my_isxdigit</name>
+        <param>
+          <type>int</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SL</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>SU</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="75" column="20" bodyfile="C/scanner.c" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1gaee03ec71e3d427c045660df39b3f49f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term float_send</definition>
+        <argsstring>(char *, int)</argsstring>
+        <name>float_send</name>
+        <param>
+          <type>char *</type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>sign</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="244" column="13" bodyfile="C/scanner.c" bodystart="244" bodyend="266" declfile="C/scanner.c" declline="84" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1gaa422d2b472e091bd5bc56471015d91ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term get_num</definition>
+        <argsstring>(int *, struct stream_desc *, int, char **, size_t *, bool)</argsstring>
+        <name>get_num</name>
+        <param>
+          <type>int *</type>
+          <defname>chp</defname>
+        </param>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <defname>st</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>sign</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>bufp</defname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <defname>szp</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>throw_error</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="499" column="13" bodyfile="C/scanner.c" bodystart="499" bodyend="731" declfile="C/scanner.c" declline="85" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1gac7500d2864e1bc0a857df836ec338c48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Yap_setCurrentSourceLocation</definition>
+        <argsstring>(struct stream_desc *s)</argsstring>
+        <name>Yap_setCurrentSourceLocation</name>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>try to tell the parser and friends where we are located </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="91" column="13" bodyfile="C/scanner.c" bodystart="91" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga92e18a71b6bb4e9fd17df86c40cc1d5a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int getchr</definition>
+        <argsstring>(struct stream_desc *inp)</argsstring>
+        <name>getchr</name>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="170" column="19" bodyfile="C/scanner.c" bodystart="170" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1gae3491bd0c7424d82d1978e3aebc3bcfc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int getchrq</definition>
+        <argsstring>(struct stream_desc *inp)</argsstring>
+        <name>getchrq</name>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="182" column="19" bodyfile="C/scanner.c" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga8d649cab3c4d4094c631915a7df5bfac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+        <definition>static TokEntry * CodeSpaceError__</definition>
+        <argsstring>(TokEntry *t, TokEntry *p, TokEntry *l USES_REGS)</argsstring>
+        <name>CodeSpaceError__</name>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *l</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="194" column="17" bodyfile="C/scanner.c" bodystart="194" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga6dbe656a6290885d227f6a36986d8096" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+        <definition>static TokEntry * TrailSpaceError__</definition>
+        <argsstring>(TokEntry *t, TokEntry *l USES_REGS)</argsstring>
+        <name>TrailSpaceError__</name>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *l</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="207" column="17" bodyfile="C/scanner.c" bodystart="207" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga969ff418dd63ebb957219da000871b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bad_nl_error</definition>
+        <argsstring>(TokEntry *tok, char *TokImage, int quote, struct stream_desc *st)</argsstring>
+        <name>bad_nl_error</name>
+        <param>
+          <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+          <declname>tok</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>TokImage</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quote</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="218" column="5" bodyfile="C/scanner.c" bodystart="218" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga3c03a473fd58b46d02952cbb6f4a83af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double atof</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>atof</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="242" column="15" declfile="C/scanner.c" declline="242" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga24f79e17685f2808e547f75670dec0e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int number_encoding_error</definition>
+        <argsstring>(const char *image, int ch, seq_type_t code, struct stream_desc *st, const char *comment)</argsstring>
+        <name>number_encoding_error</name>
+        <param>
+          <type>const char *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>seq_type_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>comment</declname>
+        </param>
+        <briefdescription>
+<para>This is a bug while encoding a symbol, and should always result in a syntax error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="279" column="5" bodyfile="C/scanner.c" bodystart="279" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga947fd7def1c7decf55710a933f64924c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term read_int_overflow</definition>
+        <argsstring>(const char *s, Int base, Int val, int sign)</argsstring>
+        <name>read_int_overflow</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sign</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="302" column="13" bodyfile="C/scanner.c" bodystart="302" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1gaa925f9e13071d5029c7cfae13faef3c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wchar_t</type>
+        <definition>static wchar_t read_escaped_char</definition>
+        <argsstring>(struct stream_desc *st)</argsstring>
+        <name>read_escaped_char</name>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="321" column="16" bodyfile="C/scanner.c" bodystart="321" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga42e56efddbe07a9932b2e6e2175a82bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_scan_num</definition>
+        <argsstring>(StreamDesc *inp, bool throw_error)</argsstring>
+        <name>Yap_scan_num</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>inp</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>throw_error</declname>
+        </param>
+        <briefdescription>
+<para>This routine is used when we need to parse a string into a number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="734" column="6" bodyfile="C/scanner.c" bodystart="734" bodyend="810"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1gac175450f7731d242ab54fe28dc789087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_tokRep</definition>
+        <argsstring>(void *tokptre)</argsstring>
+        <name>Yap_tokRep</name>
+        <param>
+          <type>void *</type>
+          <declname>tokptre</declname>
+        </param>
+        <briefdescription>
+<para>convert a token to text </para>
+        </briefdescription>
+        <detaileddescription>
+<para>represent token *_tokptr_ in string s, maxlength is sz-1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="829" column="6" bodyfile="C/scanner.c" bodystart="829" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1gaab5e9b7f16428b75c467751d9a4c8841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_tokFullRep</definition>
+        <argsstring>(void *tokptre)</argsstring>
+        <name>Yap_tokFullRep</name>
+        <param>
+          <type>void *</type>
+          <declname>tokptre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="876" column="6" bodyfile="C/scanner.c" bodystart="876" bodyend="887"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga2fd6e1a64b21876465e4e4831ca58375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * Yap_tokText</definition>
+        <argsstring>(void *tokptre)</argsstring>
+        <name>Yap_tokText</name>
+        <param>
+          <type>void *</type>
+          <declname>tokptre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="889" column="12" bodyfile="C/scanner.c" bodystart="889" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga60c57a71882c691056112dfd4ddb76cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_eof</definition>
+        <argsstring>(struct stream_desc *st)</argsstring>
+        <name>mark_eof</name>
+        <param>
+          <type>struct <ref refid="structstream__desc" kindref="compound">stream_desc</ref> *</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="935" column="13" bodyfile="C/scanner.c" bodystart="935" bodyend="937"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga2f8cbac052c480c2e79d8bd2cba34787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structTOKEN" kindref="compound">TokEntry</ref> *</type>
+        <definition>TokEntry * Yap_tokenizer</definition>
+        <argsstring>(void *st_, void *params_)</argsstring>
+        <name>Yap_tokenizer</name>
+        <param>
+          <type>void *</type>
+          <declname>st_</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="946" column="10" bodyfile="C/scanner.c" bodystart="946" bodyend="1447"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Scanner_1ga204b7a53f139cc7680da7de2159a1843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_clean_tokenizer</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_clean_tokenizer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>terminate scanning: just closes the comment store </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/scanner.c" line="1452" column="6" bodyfile="C/scanner.c" bodystart="1452" bodyend="1460"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/scanner.c"/>
+    <location file="C/scanner.c"/>
   </compounddef>
 </doxygen>

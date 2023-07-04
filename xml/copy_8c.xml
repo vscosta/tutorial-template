@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="copy_8c" kind="file" language="C++">
     <compoundname>copy.c</compoundname>
     <includes local="no">stdbool.h</includes>
@@ -18,7 +18,7 @@
     <includes refid="terms_8h" local="yes">terms.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/copy.c</label>
+        <label>C/copy.c</label>
         <link refid="copy_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -530,30 +530,500 @@
       </node>
     </incdepgraph>
       <sectiondef kind="define">
-      <member refid="group__TermCopy_1ga9207882be2e3ca2ae32dd175db462641" kind="define"><name>DEB_DOOBIN</name></member>
-      <member refid="group__TermCopy_1ga968dc816d760915f204e8066788a4a09" kind="define"><name>DEB_DOOBOUT</name></member>
-      <member refid="group__TermCopy_1ga2ae1f053f3bd12376b76b79310a457b9" kind="define"><name>DEB_DOOB</name></member>
+      <memberdef kind="define" id="group__TermCopy_1ga9207882be2e3ca2ae32dd175db462641" prot="public" static="no">
+        <name>DEB_DOOBIN</name>
+        <param><defname>d0</defname></param>
+        <initializer>(fprintf(stderr, &quot;+++ %s &quot;, __FUNCTION__), Yap_DebugPlWriteln(d0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="39" column="10" bodyfile="C/copy.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__TermCopy_1ga968dc816d760915f204e8066788a4a09" prot="public" static="no">
+        <name>DEB_DOOBOUT</name>
+        <param><defname>d0</defname></param>
+        <initializer>(fprintf(stderr, &quot;--- &quot;), Yap_DebugPlWriteln(d0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="41" column="9" bodyfile="C/copy.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__TermCopy_1ga2ae1f053f3bd12376b76b79310a457b9" prot="public" static="no">
+        <name>DEB_DOOB</name>
+        <param><defname>S</defname></param>
+        <initializer>(fprintf(stderr, &quot;%s %ld %p=%p %p--%d\n &quot;, S, to_visit - to_visit0, pt0,     \
+ ptf, *AbsAppl(pt0), arity))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="42" column="9" bodyfile="C/copy.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__TermCopy_1ga6bda05421f481067188be59a6e3c100c" kind="function"><name>Yap_ArenaLimit</name></member>
-      <member refid="group__TermCopy_1ga35687b80657a4497f70670c6d1407de6" kind="function"><name>Yap_ArenaPt</name></member>
-      <member refid="group__TermCopy_1ga34973dac70f0b8d5ce5758db70717378" kind="function"><name>Yap_ArenaSz</name></member>
-      <member refid="group__TermCopy_1ga663315661c644b4cc095c2d9c56f13af" kind="function"><name>copy_complex_term</name></member>
-      <member refid="group__TermCopy_1ga39fa670445cc4596b363a45638baa9dc" kind="function"><name>Yap_MkArena</name></member>
-      <member refid="group__TermCopy_1ga88aa845f8ea557827a2d224d9aeb570a" kind="function"><name>Yap_ArenaExpand</name></member>
-      <member refid="group__TermCopy_1ga94bdcb29820bb02a4e87c5d2c5033d86" kind="function"><name>allocate_arena</name></member>
-      <member refid="group__TermCopy_1gafec40de1a4a3a000f0012637d4f05248" kind="function"><name>arena_size</name></member>
-      <member refid="group__TermCopy_1gac2daa8a386716db0c9107726cc16c94b" kind="function"><name>Yap_AllocateDefaultArena</name></member>
-      <member refid="group__TermCopy_1gaa42748ac90a6c2ec460406ac01dcee70" kind="function"><name>visitor_error_handler</name></member>
-      <member refid="group__TermCopy_1gac1ea023dabf1f4658728c858fa05b43f" kind="function"><name>CopyTermToArena</name></member>
-      <member refid="group__TermCopy_1gaf676b089feb4713468ffafa91fed532f" kind="function"><name>Yap_CopyTerm</name></member>
-      <member refid="group__TermCopy_1ga5823b42b14b8dbb52c43f56e5f5c674b" kind="function"><name>Yap_CopyTermNoShare</name></member>
-      <member refid="group__TermCopy_1ga2ef65dfea73215410d3a28740fbc341f" kind="function"><name>copy_term</name></member>
-      <member refid="group__TermCopy_1gaab76851c5648428102c4a91f6a3d1733" kind="function"><name>duplicate_term</name></member>
-      <member refid="group__TermCopy_1ga27167a655c2691a238b40644634e4427" kind="function"><name>rational_term_to_forest</name></member>
-      <member refid="group__TermCopy_1ga56044d22333bd7a4e737ebf33babafaa" kind="function"><name>Yap_TermAsForest</name></member>
-      <member refid="group__TermCopy_1ga11c0c60c513da22ab30dd9c56cc36542" kind="function"><name>copy_term_no_delays</name></member>
-      <member refid="group__TermCopy_1ga59fe82468d4163146c1bec046ee010ae" kind="function"><name>Yap_InitCopyTerm</name></member>
+      <memberdef kind="function" id="group__TermCopy_1ga6bda05421f481067188be59a6e3c100c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>CELL * Yap_ArenaLimit</definition>
+        <argsstring>(Term arena)</argsstring>
+        <name>Yap_ArenaLimit</name>
+        <param>
+          <type>Term</type>
+          <declname>arena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="69" column="6" bodyfile="C/copy.c" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga35687b80657a4497f70670c6d1407de6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>CELL * Yap_ArenaPt</definition>
+        <argsstring>(Term arena)</argsstring>
+        <name>Yap_ArenaPt</name>
+        <param>
+          <type>Term</type>
+          <declname>arena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="71" column="6" bodyfile="C/copy.c" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga34973dac70f0b8d5ce5758db70717378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>UInt Yap_ArenaSz</definition>
+        <argsstring>(Term arena)</argsstring>
+        <name>Yap_ArenaSz</name>
+        <param>
+          <type>Term</type>
+          <declname>arena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="73" column="6" bodyfile="C/copy.c" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga663315661c644b4cc095c2d9c56f13af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int copy_complex_term</definition>
+        <argsstring>(CELL *pt0_, CELL *pt0_end_, bool share, bool copy_att_vars, CELL *ptf_, Term *bindp, Ystack_t *stt USES_REGS)</argsstring>
+        <name>copy_complex_term</name>
+        <param>
+          <type>CELL *</type>
+          <declname>pt0_</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>pt0_end_</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>share</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>copy_att_vars</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>ptf_</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>bindp</declname>
+        </param>
+        <param>
+          <type><ref refid="structYstack__t" kindref="compound">Ystack_t</ref> *stt</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>THis is the key function to copy term, parameters are: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pt0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to start input - 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pt0_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to end input -1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>share</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- share duplicate code, instead of performing multiple copies </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>copy_att_vars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- copy attributes on variables </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- poiter to destination </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bindp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- list of bindings introduce to break cycles in the original term If *bindp == TermFoundVar rewrite any loops as a singleconstant </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stt-&gt;hlow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool</para>
+</simplesect>
+The routine works by marking compund terms the first time they are visited If the term is a listm it marks the head of the list, otherwise it marks the functor The mderef routines then do marker-aware dereferencing </para>
+        </detaileddescription>
+        <inbodydescription>
+<para><blockquote><para>found infinite loop </para>
+</blockquote>p0 is the original sub-term = ...,p0,... ptd0 is the dereferenced version of d0</para>
+        </inbodydescription>
+        <location file="C/copy.c" line="234" column="13" bodyfile="C/copy.c" bodystart="234" bodyend="503" declfile="C/copy.c" declline="81" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga39fa670445cc4596b363a45638baa9dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_MkArena</definition>
+        <argsstring>(CELL *ptr, CELL *max)</argsstring>
+        <name>Yap_MkArena</name>
+        <param>
+          <type>CELL *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="88" column="6" bodyfile="C/copy.c" bodystart="88" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga88aa845f8ea557827a2d224d9aeb570a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_ArenaExpand</definition>
+        <argsstring>(size_t sz, CELL *arenap, bool first_try)</argsstring>
+        <name>Yap_ArenaExpand</name>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>arenap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>first_try</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="104" column="6" bodyfile="C/copy.c" bodystart="104" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga94bdcb29820bb02a4e87c5d2c5033d86" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int allocate_arena</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>allocate_arena</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="155" column="12" bodyfile="C/copy.c" bodystart="155" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1gafec40de1a4a3a000f0012637d4f05248" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int arena_size</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>arena_size</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="169" column="12" bodyfile="C/copy.c" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1gac2daa8a386716db0c9107726cc16c94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_AllocateDefaultArena</definition>
+        <argsstring>(size_t gsizeW, int wid, void *cs)</argsstring>
+        <name>Yap_AllocateDefaultArena</name>
+        <param>
+          <type>size_t</type>
+          <declname>gsizeW</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wid</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="173" column="6" bodyfile="C/copy.c" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1gaa42748ac90a6c2ec460406ac01dcee70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool visitor_error_handler</definition>
+        <argsstring>(yap_error_number err, Ystack_t *stt, size_t min_grow, Term *arenap)</argsstring>
+        <name>visitor_error_handler</name>
+        <param>
+          <type>yap_error_number</type>
+          <declname>err</declname>
+        </param>
+        <param>
+          <type><ref refid="structYstack__t" kindref="compound">Ystack_t</ref> *</type>
+          <declname>stt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>min_grow</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>arenap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="190" column="13" bodyfile="C/copy.c" bodystart="190" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1gac1ea023dabf1f4658728c858fa05b43f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term CopyTermToArena</definition>
+        <argsstring>(Term t, bool share, bool copy_att_vars, yap_error_number *errp, Term *arenap, Term *bindp USES_REGS)</argsstring>
+        <name>CopyTermToArena</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>share</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>copy_att_vars</declname>
+        </param>
+        <param>
+          <type>yap_error_number *</type>
+          <declname>errp</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>arenap</declname>
+        </param>
+        <param>
+          <type>Term *bindp</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="505" column="6" bodyfile="C/copy.c" bodystart="505" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1gaf676b089feb4713468ffafa91fed532f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_CopyTerm</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>Yap_CopyTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="657" column="6" bodyfile="C/copy.c" bodystart="657" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga5823b42b14b8dbb52c43f56e5f5c674b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_CopyTermNoShare</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>Yap_CopyTermNoShare</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="662" column="6" bodyfile="C/copy.c" bodystart="662" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga2ef65dfea73215410d3a28740fbc341f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int copy_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>copy_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="685" column="12" bodyfile="C/copy.c" bodystart="685" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1gaab76851c5648428102c4a91f6a3d1733" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int duplicate_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>duplicate_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="709" column="12" bodyfile="C/copy.c" bodystart="709" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga27167a655c2691a238b40644634e4427" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int rational_term_to_forest</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>rational_term_to_forest</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="736" column="1" bodyfile="C/copy.c" bodystart="736" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga56044d22333bd7a4e737ebf33babafaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_TermAsForest</definition>
+        <argsstring>(Term t1)</argsstring>
+        <name>Yap_TermAsForest</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="748" column="6" bodyfile="C/copy.c" bodystart="748" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga11c0c60c513da22ab30dd9c56cc36542" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int copy_term_no_delays</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>copy_term_no_delays</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="773" column="1" bodyfile="C/copy.c" bodystart="773" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="group__TermCopy_1ga59fe82468d4163146c1bec046ee010ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitCopyTerm</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitCopyTerm</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/copy.c" line="786" column="6" bodyfile="C/copy.c" bodystart="786" bodyend="796"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>support for backtrable and non-backtrackable variables in Prolog </para>
@@ -565,6 +1035,6 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/copy.c"/>
+    <location file="C/copy.c"/>
   </compounddef>
 </doxygen>

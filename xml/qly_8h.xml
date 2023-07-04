@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="qly_8h" kind="file" language="C++">
     <compoundname>qly.h</compoundname>
-    <includedby refid="qlyr_8c" local="yes">/home/vsc/github/yap/C/qlyr.c</includedby>
-    <includedby refid="qlyw_8c" local="yes">/home/vsc/github/yap/C/qlyw.c</includedby>
+    <includedby refid="qlyr_8c" local="yes">C/qlyr.c</includedby>
+    <includedby refid="qlyw_8c" local="yes">C/qlyw.c</includedby>
     <invincdepgraph>
       <node id="2">
-        <label>/home/vsc/github/yap/C/qlyr.c</label>
+        <label>C/qlyr.c</label>
         <link refid="qlyr_8c"/>
       </node>
       <node id="3">
-        <label>/home/vsc/github/yap/C/qlyw.c</label>
+        <label>C/qlyw.c</label>
         <link refid="qlyw_8c_source"/>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/H/qly.h</label>
+        <label>H/qly.h</label>
         <link refid="qly_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -32,37 +32,427 @@
     <innerclass refid="structexport__dbref__hash__entry__struct" prot="public">export_dbref_hash_entry_struct</innerclass>
     <innerclass refid="structimport__dbref__hash__entry__struct" prot="public">import_dbref_hash_entry_struct</innerclass>
       <sectiondef kind="define">
-      <member refid="group__SaveRestoreSupport_1gab2605ac0bb86796dbf223fc4842134e3" kind="define"><name>EXPORT_ATOM_TABLE_SIZE</name></member>
-      <member refid="group__SaveRestoreSupport_1ga14d72b17bd0ebfe3325fc528993d0f22" kind="define"><name>EXPORT_FUNCTOR_TABLE_SIZE</name></member>
-      <member refid="group__SaveRestoreSupport_1gac1fa46cdd159ff75dda1012da8628fc1" kind="define"><name>EXPORT_OPCODE_TABLE_SIZE</name></member>
-      <member refid="group__SaveRestoreSupport_1ga7a3493b98468ba45c2d0ac8d300d7224" kind="define"><name>EXPORT_PRED_ENTRY_TABLE_SIZE</name></member>
-      <member refid="group__SaveRestoreSupport_1ga83ec3c6d30e8441c1a1cb49ae1fc0ff0" kind="define"><name>EXPORT_DBREF_TABLE_SIZE</name></member>
-      <member refid="group__SaveRestoreSupport_1ga1ebf294a41b85874b126efce3e121899" kind="define"><name>STATIC_PRED_FLAGS</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf1c42a159f00f84e180f3eedfb20682a" kind="define"><name>EXTRA_PRED_FLAGS</name></member>
-      <member refid="group__SaveRestoreSupport_1gacbd320beffe7ed527207d4e0c32b56e1" kind="define"><name>SYSTEM_PRED_FLAGS</name></member>
-      <member refid="group__SaveRestoreSupport_1ga1d9650d61ef68601fc6a22b648aeba7e" kind="define"><name>CHECK</name></member>
-      <member refid="group__SaveRestoreSupport_1gab3a4dd4a7e17eb3343cd686d11df3b49" kind="define"><name>RCHECK</name></member>
-      <member refid="group__SaveRestoreSupport_1ga4dc0d40a3b89a0d1dbd13a2e738ee612" kind="define"><name>AllocTempSpace</name></member>
-      <member refid="group__SaveRestoreSupport_1gafaf95c33256ea713dc2cb9cdf5deac4d" kind="define"><name>EnoughTempSpace</name></member>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gab2605ac0bb86796dbf223fc4842134e3" prot="public" static="no">
+        <name>EXPORT_ATOM_TABLE_SIZE</name>
+        <initializer>(16 * 4096)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="31" column="9" bodyfile="H/qly.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga14d72b17bd0ebfe3325fc528993d0f22" prot="public" static="no">
+        <name>EXPORT_FUNCTOR_TABLE_SIZE</name>
+        <initializer>(16 * 4096)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="32" column="9" bodyfile="H/qly.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gac1fa46cdd159ff75dda1012da8628fc1" prot="public" static="no">
+        <name>EXPORT_OPCODE_TABLE_SIZE</name>
+        <initializer>(4096)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="33" column="9" bodyfile="H/qly.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga7a3493b98468ba45c2d0ac8d300d7224" prot="public" static="no">
+        <name>EXPORT_PRED_ENTRY_TABLE_SIZE</name>
+        <initializer>(128)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="34" column="9" bodyfile="H/qly.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga83ec3c6d30e8441c1a1cb49ae1fc0ff0" prot="public" static="no">
+        <name>EXPORT_DBREF_TABLE_SIZE</name>
+        <initializer>(128)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="35" column="9" bodyfile="H/qly.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga1ebf294a41b85874b126efce3e121899" prot="public" static="no">
+        <name>STATIC_PRED_FLAGS</name>
+        <initializer>  (SourcePredFlag | DynamicPredFlag | LogUpdatePredFlag | CompiledPredFlag | \
+   MultiFileFlag | TabledPredFlag | MegaClausePredFlag | CountPredFlag | \
+   ProfiledPredFlag | ThreadLocalPredFlag | AtomDBPredFlag |		\
+   ModuleTransparentPredFlag | NumberDBPredFlag | MetaPredFlag |	\
+   SyncPredFlag | BackCPredFlag)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="115" column="9" bodyfile="H/qly.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gaf1c42a159f00f84e180f3eedfb20682a" prot="public" static="no">
+        <name>EXTRA_PRED_FLAGS</name>
+        <initializer>  (QuasiQuotationPredFlag | NoTracePredFlag | NoSpyPredFlag)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="121" column="9" bodyfile="H/qly.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gacbd320beffe7ed527207d4e0c32b56e1" prot="public" static="no">
+        <name>SYSTEM_PRED_FLAGS</name>
+        <initializer>  (BackCPredFlag | UserCPredFlag | CArgsPredFlag | AsmPredFlag | CPredFlag |   \
+   BinaryPredFlag)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="124" column="9" bodyfile="H/qly.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga1d9650d61ef68601fc6a22b648aeba7e" prot="public" static="no">
+        <name>CHECK</name>
+        <param><defname>F</defname></param>
+        <initializer>  {                                                                            \
+    size_t r = (F);                                                            \
+    if (!r)                                                                    \
+      return r;                                                                \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="128" column="9" bodyfile="H/qly.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gab3a4dd4a7e17eb3343cd686d11df3b49" prot="public" static="no">
+        <name>RCHECK</name>
+        <param><defname>F</defname></param>
+        <initializer>  if (!(F)) {                                                                  \
+    QLYR_ERROR(MISMATCH);                                                      \
+    return;                                                                    \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="134" column="9" bodyfile="H/qly.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1ga4dc0d40a3b89a0d1dbd13a2e738ee612" prot="public" static="no">
+        <name>AllocTempSpace</name>
+        <param></param>
+        <initializer>(HR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="140" column="9" bodyfile="H/qly.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SaveRestoreSupport_1gafaf95c33256ea713dc2cb9cdf5deac4d" prot="public" static="no">
+        <name>EnoughTempSpace</name>
+        <param><defname>sz</defname></param>
+        <initializer>((ASP - HR) * sizeof(CELL) &gt; sz)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="141" column="9" bodyfile="H/qly.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
-      <member refid="group__SaveRestoreSupport_1gac1a8a3e69ca5b1897affe51aa1d3ba3b" kind="enum"><name>qlf_tag_t</name></member>
+      <memberdef kind="enum" id="group__SaveRestoreSupport_1gac1a8a3e69ca5b1897affe51aa1d3ba3b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>qlf_tag_t</name>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3bafca227caf23026ef2166190a622b0f06" prot="public">
+          <name>QLY_START_X</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3bae727422ea919d879b6a8fdb41ca9b143" prot="public">
+          <name>QLY_START_OPCODES</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba4f62e7cdeb630885355ecd7fcb03c321" prot="public">
+          <name>QLY_START_ATOMS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba987dad697045dc893dddc130297aa127" prot="public">
+          <name>QLY_START_FUNCTORS</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba9c9506ccd02478249e20264081b38342" prot="public">
+          <name>QLY_START_PRED_ENTRIES</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba41c43aee5d34f423be3686bea8c94ec7" prot="public">
+          <name>QLY_START_DBREFS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3bae430f2a447f18174043f3e2724f98327" prot="public">
+          <name>QLY_START_MODULE</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3bae4d3a04321a52c5dfa5b0c6423472b7b" prot="public">
+          <name>QLY_END_MODULES</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba7f8172c6fbb63b691727244643e9c3ce" prot="public">
+          <name>QLY_START_LU_CLAUSE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3bafdddd81dee0e721ac6020852b4897f04" prot="public">
+          <name>QLY_END_LU_CLAUSES</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3bab9b52201ad3fadbea3514988f2d73be8" prot="public">
+          <name>QLY_NEW_OP</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3bab67ade41e53f9be25933ce6898862d04" prot="public">
+          <name>QLY_END_OPS</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba18ac9967d5248e9f26e4a38425276277" prot="public">
+          <name>QLY_START_PREDICATE</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3baad200d21d39600bce66e3107e092ff7b" prot="public">
+          <name>QLY_END_PREDICATES</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba34fa6009d9e69d4f75a3923cc329c735" prot="public">
+          <name>QLY_FAILCODE</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3ba338c3fed12d54141a1c5ad4c89b45b49" prot="public">
+          <name>QLY_ATOM</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SaveRestoreSupport_1ggac1a8a3e69ca5b1897affe51aa1d3ba3baba45e56bc6c6794b1b292a409bb3f658" prot="public">
+          <name>QLY_ATOM_BLOB</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="95" column="1" bodyfile="H/qly.h" bodystart="95" bodyend="113"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <member refid="group__SaveRestoreSupport_1gaaeead82eb695aeb4feffa7dfab60a46b" kind="typedef"><name>export_atom_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1ga25c7d6c71cf338fff4329e39fda04322" kind="typedef"><name>import_atom_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1ga62c1f47d3ed0fa2b8e3a9dd6c162d79b" kind="typedef"><name>export_functor_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1ga3ebe0a371d4255c62d4680d5dd972f90" kind="typedef"><name>import_functor_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1ga432bcc52e7116250c768682324aacf9a" kind="typedef"><name>import_opcode_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1gaee0a1ee77c72fcf6a8cb2fc496b5aa1b" kind="typedef"><name>export_pred_entry_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf4a81b076f11bf54707ac5bf6495e6b5" kind="typedef"><name>import_pred_entry_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1gafc6297b81f1714b45f19b3a4fe249508" kind="typedef"><name>export_dbref_hash_entry_t</name></member>
-      <member refid="group__SaveRestoreSupport_1gaf007cdb9df16a44521bd7438e626a23d" kind="typedef"><name>import_dbref_hash_entry_t</name></member>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1gaaeead82eb695aeb4feffa7dfab60a46b" prot="public" static="no">
+        <type>struct <ref refid="structexport__atom__hash__entry__struct" kindref="compound">export_atom_hash_entry_struct</ref></type>
+        <definition>typedef struct export_atom_hash_entry_struct export_atom_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>export_atom_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="39" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1ga25c7d6c71cf338fff4329e39fda04322" prot="public" static="no">
+        <type>struct <ref refid="structimport__atom__hash__entry__struct" kindref="compound">import_atom_hash_entry_struct</ref></type>
+        <definition>typedef struct import_atom_hash_entry_struct import_atom_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>import_atom_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="45" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1ga62c1f47d3ed0fa2b8e3a9dd6c162d79b" prot="public" static="no">
+        <type>struct <ref refid="structexport__functor__hash__entry__struct" kindref="compound">export_functor_hash_entry_struct</ref></type>
+        <definition>typedef struct export_functor_hash_entry_struct export_functor_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>export_functor_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="51" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1ga3ebe0a371d4255c62d4680d5dd972f90" prot="public" static="no">
+        <type>struct <ref refid="structimport__functor__hash__entry__struct" kindref="compound">import_functor_hash_entry_struct</ref></type>
+        <definition>typedef struct import_functor_hash_entry_struct import_functor_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>import_functor_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="57" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1ga432bcc52e7116250c768682324aacf9a" prot="public" static="no">
+        <type>struct <ref refid="structimport__opcode__hash__entry__struct" kindref="compound">import_opcode_hash_entry_struct</ref></type>
+        <definition>typedef struct import_opcode_hash_entry_struct import_opcode_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>import_opcode_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="64" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1gaee0a1ee77c72fcf6a8cb2fc496b5aa1b" prot="public" static="no">
+        <type>struct <ref refid="structexport__pred__entry__hash__entry__struct" kindref="compound">export_pred_entry_hash_entry_struct</ref></type>
+        <definition>typedef struct export_pred_entry_hash_entry_struct export_pred_entry_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>export_pred_entry_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="74" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1gaf4a81b076f11bf54707ac5bf6495e6b5" prot="public" static="no">
+        <type>struct <ref refid="structimport__pred__entry__hash__entry__struct" kindref="compound">import_pred_entry_hash_entry_struct</ref></type>
+        <definition>typedef struct import_pred_entry_hash_entry_struct import_pred_entry_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>import_pred_entry_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="80" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1gafc6297b81f1714b45f19b3a4fe249508" prot="public" static="no">
+        <type>struct <ref refid="structexport__dbref__hash__entry__struct" kindref="compound">export_dbref_hash_entry_struct</ref></type>
+        <definition>typedef struct export_dbref_hash_entry_struct export_dbref_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>export_dbref_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="86" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SaveRestoreSupport_1gaf007cdb9df16a44521bd7438e626a23d" prot="public" static="no">
+        <type>struct <ref refid="structimport__dbref__hash__entry__struct" kindref="compound">import_dbref_hash_entry_struct</ref></type>
+        <definition>typedef struct import_dbref_hash_entry_struct import_dbref_hash_entry_t</definition>
+        <argsstring></argsstring>
+        <name>import_dbref_hash_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H/qly.h" line="93" column="27"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/H/qly.h"/>
+    <location file="H/qly.h"/>
   </compounddef>
 </doxygen>

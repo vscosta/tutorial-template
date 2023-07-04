@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="flags_8c" kind="file" language="C++">
     <compoundname>flags.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -11,7 +11,7 @@
     <includes refid="YapGFlagInfo_8h" local="yes">YapGFlagInfo.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/flags.c</label>
+        <label>C/flags.c</label>
         <link refid="flags_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -461,29 +461,104 @@
       </node>
     </incdepgraph>
       <sectiondef kind="define">
-      <member refid="group__YAPFlagsImplemebtation_1ga5a69249e0f5ae132af5fd090cd1474ee" kind="define"><name>INIT_FLAGS</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga6c69577dd0e3c9b9e7df5085dc1f0b04" kind="define"><name>YAP_FLAG</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaaef4b52c4e7e98d8221c0bb4a50278ec" kind="define"><name>END_FLAG</name></member>
-      </sectiondef>
-      <sectiondef kind="enum">
-      <memberdef kind="enum" id="flags_8c_1ab7e354d74f5166a20e2ed6d09c107bb1" prot="public" static="no" strong="no">
-        <type></type>
-        <name>prolog_flag_property_enum_choices</name>
-        <enumvalue id="flags_8c_1ab7e354d74f5166a20e2ed6d09c107bb1a604e0895128ab079ccf8c681d4d0e6c1" prot="public">
-          <name>PROLOG_FLAG_PROPERTY_DEFS</name>
-          <initializer>=()</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
+      <memberdef kind="define" id="group__YAPFlagsImplemebtation_1ga5a69249e0f5ae132af5fd090cd1474ee" prot="public" static="no">
+        <name>INIT_FLAGS</name>
+        <initializer>1</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1606" column="1" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1606" bodyend="1608"/>
+        <location file="C/flags.c" line="38" column="9" bodyfile="C/flags.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPFlagsImplemebtation_1ga6c69577dd0e3c9b9e7df5085dc1f0b04" prot="public" static="no">
+        <name>YAP_FLAG</name>
+        <param><defname>ID</defname></param>
+        <param><defname>NAME</defname></param>
+        <param><defname>WRITABLE</defname></param>
+        <param><defname>DEF</defname></param>
+        <param><defname>INIT</defname></param>
+        <param><defname>HELPER</defname></param>
+        <initializer>{ NAME, WRITABLE, DEF, INIT, HELPER }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="361" column="9" bodyfile="C/flags.c" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPFlagsImplemebtation_1gaaef4b52c4e7e98d8221c0bb4a50278ec" prot="public" static="no">
+        <name>END_FLAG</name>
+        <param></param>
+        <initializer>, { NULL, false, NULL, NULL, NULL }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="363" column="9" bodyfile="C/flags.c" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flags_8c_1aafc2773cbbcec9396abb67917cf79244" prot="public" static="no">
+        <name>PROLOG_FLAG_PROPERTY_DEFS</name>
+        <param></param>
+        <initializer>  PAR(&quot;access&quot;, isaccess, PROLOG_FLAG_PROPERTY_ACCESS, &quot;read_write&quot;)	\
+  , PAR(&quot;type&quot;, isground, PROLOG_FLAG_PROPERTY_TYPE, &quot;term&quot;),		\
+    PAR(&quot;scope&quot;, flagscope, PROLOG_FLAG_PROPERTY_SCOPE, &quot;global&quot;),	\
+    PAR(&quot;keep&quot;, booleanFlag, PROLOG_FLAG_PROPERTY_KEEP, &quot;false&quot;),	\
+    PAR(NULL, ok, PROLOG_FLAG_PROPERTY_END, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="1598" column="9" bodyfile="C/flags.c" bodystart="1598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flags_8c_1a12a6a829122c6358caec1c47b6c37236" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <param><defname>w</defname></param>
+        <initializer>z</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="1605" column="9" bodyfile="C/flags.c" bodystart="1613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flags_8c_1a12a6a829122c6358caec1c47b6c37236" prot="public" static="no">
+        <name>PAR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <param><defname>w</defname></param>
+        <initializer>  { x, y, z, w }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="1613" column="9" bodyfile="C/flags.c" bodystart="1613" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="flags_8c_1ab7e354d74f5166a20e2ed6d09c107bb1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>prolog_flag_property_enum_choices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="1607" column="1" bodyfile="C/flags.c" bodystart="1607" bodyend="1609"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -498,12 +573,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1608" column="32"/>
+        <location file="C/flags.c" line="1609" column="32"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <member refid="group__YAPFlagsImplemebtation_1gae6155244eebda5ccec20f5f208efe968" kind="variable"><name>local_flags_setup</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga1445067c3f4cf3d671dc38740e71f30f" kind="variable"><name>global_flags_setup</name></member>
+      <memberdef kind="variable" id="group__YAPFlagsImplemebtation_1gae6155244eebda5ccec20f5f208efe968" prot="public" static="yes" mutable="no">
+        <type><ref refid="structflag__info" kindref="compound">flag_info</ref></type>
+        <definition>flag_info local_flags_setup[]</definition>
+        <argsstring>[]</argsstring>
+        <name>local_flags_setup</name>
+        <initializer>= {
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="365" column="18" bodyfile="C/flags.c" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__YAPFlagsImplemebtation_1ga1445067c3f4cf3d671dc38740e71f30f" prot="public" static="yes" mutable="no">
+        <type><ref refid="structflag__info" kindref="compound">flag_info</ref></type>
+        <definition>flag_info global_flags_setup[]</definition>
+        <argsstring>[]</argsstring>
+        <name>global_flags_setup</name>
+        <initializer>= {
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="368" column="18" bodyfile="C/flags.c" bodystart="368" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="flags_8c_1a5b816d6b74ee7c106f50676a25774c32" prot="public" static="yes" mutable="no">
         <type>const <ref refid="structstruct__param2" kindref="compound">param2_t</ref></type>
         <definition>const param2_t prolog_flag_property_defs[]</definition>
@@ -517,52 +620,738 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1615" column="23" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1615" bodyend="-1"/>
+        <location file="C/flags.c" line="1616" column="23" bodyfile="C/flags.c" bodystart="1616" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__YAPFlagsImplemebtation_1ga19d8523041178d2c8299eba2eb736871" kind="function"><name>ro</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga6c163bd8204b9d4aa1d6d119c80e3122" kind="function"><name>nat</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga7cdd349b412dedad8518f9f6d2b22b4c" kind="function"><name>isatom</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga4594521c5d7dbe92472acf3bdcfdd4ee" kind="function"><name>booleanFlag</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga7479c60e3d7c450638b4a8acc1deb151" kind="function"><name>list_option</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga7a190301cfa45194aa77e0a848a9ae1a" kind="function"><name>argv</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaf5efed4e99a3e045d77e8351ac0ce9a7" kind="function"><name>os_argv</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga0101296e3ee4c9653f8d9d70c58bbfb3" kind="function"><name>agc_threshold</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga8ec196c33d75d6e51eb7975d347e1e55" kind="function"><name>gc_margin</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga15a9d013c287c616178a35512aa5b3ad" kind="function"><name>executable</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga4c1532794d6da1545ebde405910401c0" kind="function"><name>sys_thread_id</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga8a1766c4593baad1ea594595a0729dbe" kind="function"><name>sys_pid</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gab9db9ecf73fdaf734224121f779d2119" kind="function"><name>mkprompt</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga45bf8d29b0ae43a12f426529b3395c61" kind="function"><name>indexer</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaa1f61ee63653c5469e5eafbc20ba82ac" kind="function"><name>stream</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gac21dbd254cc59d84a4d9bc9dcc3fa14b" kind="function"><name>getenc</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga6c7249668f4a901d76d03b73aac85461" kind="function"><name>typein</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga5b645200ceb61ba9bdb3a47955089b55" kind="function"><name>set_error_stream</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga9fd797a4ee88c09af603ac4157e96e41" kind="function"><name>set_input_stream</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga319d45f1018959ba545b4c2622ed1ab4" kind="function"><name>set_output_stream</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga2f9c1485bd9be3da3218a625b546a69b" kind="function"><name>dollar_to_lc</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaef32b006d812529b8f2b310315836525" kind="function"><name>setSignals</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga5dd983a534f95a37a994b33b323b1714" kind="function"><name>newFlag</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gab5c0c1045dc799895d3f31b7db6b494d" kind="function"><name>current_prolog_flag</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gad8f755abf1570ec06ed0f26a8613eb65" kind="function"><name>set_prolog_flag</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaf06733cca341275f7d9618a33cdc8426" kind="function"><name>compiling</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga322fcdfedc6fdf24e47383b4e9d65a29" kind="function"><name>aro</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga917824736ab6c296e2c713b69574fe77" kind="function"><name>mkplus</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gacddc059d425ed8296784df4c78f0e10a" kind="function"><name>febooleanFlag</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga0432ea85b5a81576474553b0d8f48767" kind="function"><name>quote</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga8598acdf0d44b103d9eaf8f2de79b010" kind="function"><name>snglq</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gae80590943f58114d6f5c4f34ee16b1e6" kind="function"><name>dblq</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga33b029fad6508a2ba61e3988cca91c78" kind="function"><name>bckq</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaa82df903d1c224c059965d908927be9a" kind="function"><name>multil</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaf1c945835aa4886ab9e9ccce2399f0ac" kind="function"><name>undefph</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga98d71908f5033d7e2b89cca2f93dbe25" kind="function"><name>synerr</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gabf5b6bf5e9ae205b3197b0b44f32712d" kind="function"><name>isaccess</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gac5d725c998c9cce8f409ce69dcd4ae1b" kind="function"><name>isground</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gae56eb327453f2951479d6b94387a0cfd" kind="function"><name>flagscope</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gabdca2a2cd775bfbbce4b7d1c1ac62134" kind="function"><name>mk_argc_list</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1ga4c238d188eeec732b63d184c4d11e61f" kind="function"><name>mk_os_argc_list</name></member>
-      <member refid="group__YAPFlagsImplemebtation_1gaa5578dafee50e97e9781db20c0321752" kind="function"><name>GetFlagProp</name></member>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga19d8523041178d2c8299eba2eb736871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term ro</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>ro</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="84" column="6" bodyfile="C/flags.c" bodystart="84" bodyend="93" declfile="C/flags.c" declline="44" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga6c163bd8204b9d4aa1d6d119c80e3122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term nat</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>nat</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="45" column="7" declfile="C/flags.c" declline="45" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga7cdd349b412dedad8518f9f6d2b22b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term isatom</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>isatom</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="46" column="7" declfile="C/flags.c" declline="46" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga4594521c5d7dbe92472acf3bdcfdd4ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term booleanFlag</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>booleanFlag</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="114" column="6" bodyfile="C/flags.c" bodystart="114" bodyend="136" declfile="C/flags.c" declline="47" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga7479c60e3d7c450638b4a8acc1deb151" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term list_option</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>list_option</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="750" column="13" bodyfile="C/flags.c" bodystart="750" bodyend="798" declfile="C/flags.c" declline="50" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga7a190301cfa45194aa77e0a848a9ae1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term argv</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>argv</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="892" column="13" bodyfile="C/flags.c" bodystart="892" bodyend="895" declfile="C/flags.c" declline="51" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gaf5efed4e99a3e045d77e8351ac0ce9a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term os_argv</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>os_argv</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="897" column="13" bodyfile="C/flags.c" bodystart="897" bodyend="900" declfile="C/flags.c" declline="52" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga0101296e3ee4c9653f8d9d70c58bbfb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool agc_threshold</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>agc_threshold</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="800" column="13" bodyfile="C/flags.c" bodystart="800" bodyend="818" declfile="C/flags.c" declline="53" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga8ec196c33d75d6e51eb7975d347e1e55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool gc_margin</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>gc_margin</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="820" column="13" bodyfile="C/flags.c" bodystart="820" bodyend="838" declfile="C/flags.c" declline="54" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga15a9d013c287c616178a35512aa5b3ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term executable</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>executable</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="956" column="13" bodyfile="C/flags.c" bodystart="956" bodyend="959" declfile="C/flags.c" declline="55" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga4c1532794d6da1545ebde405910401c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term sys_thread_id</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>sys_thread_id</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="961" column="13" bodyfile="C/flags.c" bodystart="961" bodyend="975" declfile="C/flags.c" declline="56" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga8a1766c4593baad1ea594595a0729dbe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term sys_pid</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>sys_pid</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="977" column="13" bodyfile="C/flags.c" bodystart="977" bodyend="987" declfile="C/flags.c" declline="57" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gab9db9ecf73fdaf734224121f779d2119" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool mkprompt</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>mkprompt</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="519" column="13" bodyfile="C/flags.c" bodystart="519" bodyend="534" declfile="C/flags.c" declline="58" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga45bf8d29b0ae43a12f426529b3395c61" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term indexer</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>indexer</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="375" column="13" bodyfile="C/flags.c" bodystart="375" bodyend="391" declfile="C/flags.c" declline="59" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gaa1f61ee63653c5469e5eafbc20ba82ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term stream</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>stream</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="444" column="13" bodyfile="C/flags.c" bodystart="444" bodyend="453" declfile="C/flags.c" declline="60" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gac21dbd254cc59d84a4d9bc9dcc3fa14b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool getenc</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>getenc</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="536" column="13" bodyfile="C/flags.c" bodystart="536" bodyend="552" declfile="C/flags.c" declline="61" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga6c7249668f4a901d76d03b73aac85461" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool typein</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>typein</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="570" column="13" bodyfile="C/flags.c" bodystart="570" bodyend="589" declfile="C/flags.c" declline="62" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga5b645200ceb61ba9bdb3a47955089b55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool set_error_stream</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>set_error_stream</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="482" column="13" bodyfile="C/flags.c" bodystart="482" bodyend="494" declfile="C/flags.c" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga9fd797a4ee88c09af603ac4157e96e41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool set_input_stream</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>set_input_stream</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="455" column="13" bodyfile="C/flags.c" bodystart="455" bodyend="466" declfile="C/flags.c" declline="64" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga319d45f1018959ba545b4c2622ed1ab4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool set_output_stream</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>set_output_stream</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="468" column="13" bodyfile="C/flags.c" bodystart="468" bodyend="480" declfile="C/flags.c" declline="65" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga2f9c1485bd9be3da3218a625b546a69b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool dollar_to_lc</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>dollar_to_lc</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="411" column="13" bodyfile="C/flags.c" bodystart="411" bodyend="423" declfile="C/flags.c" declline="66" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gaef32b006d812529b8f2b310315836525" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool setSignals</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>setSignals</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+<para>set or reset signal handlers </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The act is only performed if the flag changed values</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to enable or disable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>always true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="400" column="13" bodyfile="C/flags.c" bodystart="400" bodyend="407" declfile="C/flags.c" declline="67" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga5dd983a534f95a37a994b33b323b1714" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void newFlag</definition>
+        <argsstring>(Term fl, Term val)</argsstring>
+        <name>newFlag</name>
+        <param>
+          <type>Term</type>
+          <declname>fl</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="1768" column="13" bodyfile="C/flags.c" bodystart="1768" bodyend="1783" declfile="C/flags.c" declline="69" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gab5c0c1045dc799895d3f31b7db6b494d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int current_prolog_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>current_prolog_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="1161" column="12" bodyfile="C/flags.c" bodystart="1161" bodyend="1171" declfile="C/flags.c" declline="70" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gad8f755abf1570ec06ed0f26a8613eb65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int set_prolog_flag</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>set_prolog_flag</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="1385" column="12" bodyfile="C/flags.c" bodystart="1385" bodyend="1388" declfile="C/flags.c" declline="71" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gaf06733cca341275f7d9618a33cdc8426" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term compiling</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>compiling</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="78" column="13" bodyfile="C/flags.c" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga322fcdfedc6fdf24e47383b4e9d65a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term aro</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>aro</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="95" column="6" bodyfile="C/flags.c" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga917824736ab6c296e2c713b69574fe77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term mkplus</definition>
+        <argsstring>(Term val)</argsstring>
+        <name>mkplus</name>
+        <param>
+          <type>Term</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="104" column="13" bodyfile="C/flags.c" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gacddc059d425ed8296784df4c78f0e10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term febooleanFlag</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>febooleanFlag</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="139" column="7" bodyfile="C/flags.c" bodystart="139" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga0432ea85b5a81576474553b0d8f48767" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term quote</definition>
+        <argsstring>(mod_entry_flags_t qt)</argsstring>
+        <name>quote</name>
+        <param>
+          <type>mod_entry_flags_t</type>
+          <declname>qt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="162" column="13" bodyfile="C/flags.c" bodystart="162" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga8598acdf0d44b103d9eaf8f2de79b010" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term snglq</definition>
+        <argsstring>(Term val)</argsstring>
+        <name>snglq</name>
+        <param>
+          <type>Term</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="195" column="14" bodyfile="C/flags.c" bodystart="195" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gae80590943f58114d6f5c4f34ee16b1e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term dblq</definition>
+        <argsstring>(Term val)</argsstring>
+        <name>dblq</name>
+        <param>
+          <type>Term</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="226" column="20" bodyfile="C/flags.c" bodystart="226" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga33b029fad6508a2ba61e3988cca91c78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term bckq</definition>
+        <argsstring>(Term val)</argsstring>
+        <name>bckq</name>
+        <param>
+          <type>Term</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="258" column="20" bodyfile="C/flags.c" bodystart="258" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gaa82df903d1c224c059965d908927be9a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term multil</definition>
+        <argsstring>(Term val)</argsstring>
+        <name>multil</name>
+        <param>
+          <type>Term</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="289" column="20" bodyfile="C/flags.c" bodystart="289" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gaf1c945835aa4886ab9e9ccce2399f0ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term undefph</definition>
+        <argsstring>(Term val)</argsstring>
+        <name>undefph</name>
+        <param>
+          <type>Term</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="311" column="13" bodyfile="C/flags.c" bodystart="311" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga98d71908f5033d7e2b89cca2f93dbe25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term synerr</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>synerr</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="341" column="6" bodyfile="C/flags.c" bodystart="341" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gabf5b6bf5e9ae205b3197b0b44f32712d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term isaccess</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>isaccess</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="425" column="13" bodyfile="C/flags.c" bodystart="425" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gac5d725c998c9cce8f409ce69dcd4ae1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term isground</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>isground</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="497" column="13" bodyfile="C/flags.c" bodystart="497" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gae56eb327453f2951479d6b94387a0cfd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term flagscope</definition>
+        <argsstring>(Term inp)</argsstring>
+        <name>flagscope</name>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="501" column="13" bodyfile="C/flags.c" bodystart="501" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gabdca2a2cd775bfbbce4b7d1c1ac62134" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term mk_argc_list</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>mk_argc_list</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="840" column="13" bodyfile="C/flags.c" bodystart="840" bodyend="879"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1ga4c238d188eeec732b63d184c4d11e61f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term mk_os_argc_list</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>mk_os_argc_list</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="881" column="13" bodyfile="C/flags.c" bodystart="881" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPFlagsImplemebtation_1gaa5578dafee50e97e9781db20c0321752" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structFlagEntry" kindref="compound">FlagEntry</ref> *</type>
+        <definition>static FlagEntry * GetFlagProp</definition>
+        <argsstring>(Atom a)</argsstring>
+        <name>GetFlagProp</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/flags.c" line="903" column="1" bodyfile="C/flags.c" bodystart="903" bodyend="915"/>
+      </memberdef>
       <memberdef kind="function" id="flags_8c_1a82cfa11483ecf7262eb2cccb314d5407" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>static void initFlag</definition>
@@ -581,14 +1370,14 @@
           <declname>global</declname>
         </param>
         <briefdescription>
-<para>/** `defgroup YAPflags </para>
+<para>`defgroup YAPflags </para>
         </briefdescription>
         <detaileddescription>
 <para>YAP now supports generic access ad uodating the following builins provide read-writeeeeeee access to YAP internals/ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="929" column="13" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="929" bodyend="953"/>
+        <location file="C/flags.c" line="930" column="13" bodyfile="C/flags.c" bodystart="930" bodyend="954"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a6ff320f13358f606699b0daf55870297" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -604,7 +1393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="989" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="989" bodyend="1026"/>
+        <location file="C/flags.c" line="990" column="12" bodyfile="C/flags.c" bodystart="990" bodyend="1027"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1ae958481e3f95c2de92214de597a6a11c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -620,7 +1409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1040" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1040" bodyend="1065"/>
+        <location file="C/flags.c" line="1041" column="12" bodyfile="C/flags.c" bodystart="1041" bodyend="1066"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a7c8268a4e3a9cb5398ef60407462fab0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -636,7 +1425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1067" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1067" bodyend="1090"/>
+        <location file="C/flags.c" line="1068" column="12" bodyfile="C/flags.c" bodystart="1068" bodyend="1091"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a49fb80bfb0b341758a625ffee43b83ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -652,7 +1441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1100" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1100" bodyend="1106"/>
+        <location file="C/flags.c" line="1101" column="12" bodyfile="C/flags.c" bodystart="1101" bodyend="1107"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a4b1e6cb07f0e9647a900a26776ad34ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -668,7 +1457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1117" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1117" bodyend="1130"/>
+        <location file="C/flags.c" line="1118" column="12" bodyfile="C/flags.c" bodystart="1118" bodyend="1131"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a7c81d35444f4ff6d0d9cb91966fe80e2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -684,7 +1473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1132" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1132" bodyend="1153"/>
+        <location file="C/flags.c" line="1133" column="12" bodyfile="C/flags.c" bodystart="1133" bodyend="1154"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a25f9eea8f1c28ca01300e5dda6a1a977" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -700,7 +1489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1179" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1179" bodyend="1233"/>
+        <location file="C/flags.c" line="1180" column="12" bodyfile="C/flags.c" bodystart="1180" bodyend="1234"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1af97cc16febce0b71210d16e1d47e70a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -721,7 +1510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1236" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1236" bodyend="1302"/>
+        <location file="C/flags.c" line="1237" column="6" bodyfile="C/flags.c" bodystart="1237" bodyend="1303"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1aff88ed320f32650fa62bc323c732e4ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Term</type>
@@ -738,7 +1527,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1304" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1304" bodyend="1316"/>
+        <location file="C/flags.c" line="1305" column="6" bodyfile="C/flags.c" bodystart="1305" bodyend="1317"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a8d7aac796571660866751cbcff58d1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Term</type>
@@ -755,7 +1544,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1318" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1318" bodyend="1376"/>
+        <location file="C/flags.c" line="1319" column="6" bodyfile="C/flags.c" bodystart="1319" bodyend="1377"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a94ca1e1ea2e50ab608767739bea95bd1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -771,7 +1560,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1399" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1399" bodyend="1402"/>
+        <location file="C/flags.c" line="1400" column="12" bodyfile="C/flags.c" bodystart="1400" bodyend="1403"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a189e21d432864a57a7e71c5a76ba38f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -787,7 +1576,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1410" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1410" bodyend="1413"/>
+        <location file="C/flags.c" line="1411" column="12" bodyfile="C/flags.c" bodystart="1411" bodyend="1414"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1adc1a938c8cba234ac05538c427623c2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -803,7 +1592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1424" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1424" bodyend="1434"/>
+        <location file="C/flags.c" line="1425" column="12" bodyfile="C/flags.c" bodystart="1425" bodyend="1435"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a045f2379faf124683f4821bb366cae00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -832,7 +1621,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1436" column="13" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1436" bodyend="1593"/>
+        <location file="C/flags.c" line="1437" column="13" bodyfile="C/flags.c" bodystart="1437" bodyend="1594"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a6adfd84d6aad575a9f8970d1e5e9c504" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -853,7 +1642,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1620" column="1" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1620" bodyend="1701"/>
+        <location file="C/flags.c" line="1621" column="1" bodyfile="C/flags.c" bodystart="1621" bodyend="1702"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a59e2d2ec94b71192bd64019f95024ae3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -869,7 +1658,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1703" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1703" bodyend="1723"/>
+        <location file="C/flags.c" line="1704" column="12" bodyfile="C/flags.c" bodystart="1704" bodyend="1724"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a1c627abac96f4e656e4b8698ca7e5e57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -885,7 +1674,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1738" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1738" bodyend="1765"/>
+        <location file="C/flags.c" line="1739" column="12" bodyfile="C/flags.c" bodystart="1739" bodyend="1766"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a3b83932657942aac5b2d6d6c5d817609" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -901,7 +1690,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1784" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1784" bodyend="1841"/>
+        <location file="C/flags.c" line="1785" column="12" bodyfile="C/flags.c" bodystart="1785" bodyend="1842"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1ae99cd858fb965884412bb25fdb8d342b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>X_API bool</type>
@@ -940,7 +1729,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1851" column="12" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1851" bodyend="1872"/>
+        <location file="C/flags.c" line="1852" column="12" bodyfile="C/flags.c" bodystart="1852" bodyend="1873"/>
       </memberdef>
       <memberdef kind="function" id="flags_8c_1a1413fdc579d0942cd485bae55b4e648c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -969,7 +1758,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/flags.c" line="1885" column="6" bodyfile="/home/vsc/github/yap/C/flags.c" bodystart="1885" bodyend="1960"/>
+        <location file="C/flags.c" line="1886" column="6" bodyfile="C/flags.c" bodystart="1886" bodyend="1961"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -977,6 +1766,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/flags.c"/>
+    <location file="C/flags.c"/>
   </compounddef>
 </doxygen>

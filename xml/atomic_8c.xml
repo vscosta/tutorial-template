@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="atomic_8c" kind="file" language="C++">
     <compoundname>atomic.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -12,7 +12,7 @@
     <includes local="no">wchar.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/atomic.c</label>
+        <label>C/atomic.c</label>
         <link refid="atomic_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -448,85 +448,1157 @@
       </node>
     </incdepgraph>
       <sectiondef kind="define">
-      <member refid="group__Predicates__on__Text_1ga9529e916451e584e814efe1784cff21e" kind="define"><name>HAS_CACHE_REGS</name></member>
-      <member refid="group__Predicates__on__Text_1ga5c80edb6f601477a2c4d0a16c885811a" kind="define"><name>CastToNumeric</name></member>
-      <member refid="group__Predicates__on__Text_1gaa04c167d33615685e06e1b6b700e3471" kind="define"><name>SUB_ATOM_HAS_MIN</name></member>
-      <member refid="group__Predicates__on__Text_1ga154031896077c727e5afaf0f8b14b61e" kind="define"><name>SUB_ATOM_HAS_SIZE</name></member>
-      <member refid="group__Predicates__on__Text_1gaba2b9ccef44972eb0f1c2a9b026a3f5d" kind="define"><name>SUB_ATOM_HAS_AFTER</name></member>
-      <member refid="group__Predicates__on__Text_1ga912ef4efecf0b967efe7902bc27949c5" kind="define"><name>SUB_ATOM_HAS_VAL</name></member>
-      <member refid="group__Predicates__on__Text_1ga390152c8c7a6b6732e178de45eb47881" kind="define"><name>SUB_ATOM_HAS_ATOM</name></member>
-      <member refid="group__Predicates__on__Text_1gab9490f426a01f5953f47e91cfb19334b" kind="define"><name>SUB_ATOM_HAS_UTF8</name></member>
+      <memberdef kind="define" id="group__Predicates__on__Text_1ga9529e916451e584e814efe1784cff21e" prot="public" static="no">
+        <name>HAS_CACHE_REGS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="38" column="9" bodyfile="C/atomic.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Predicates__on__Text_1ga5c80edb6f601477a2c4d0a16c885811a" prot="public" static="no">
+        <name>CastToNumeric</name>
+        <param><defname>x</defname></param>
+        <initializer>CastToNumeric__(x PASS_REGS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1098" column="9" bodyfile="C/atomic.c" bodystart="1098" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Predicates__on__Text_1gaa04c167d33615685e06e1b6b700e3471" prot="public" static="no">
+        <name>SUB_ATOM_HAS_MIN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2318" column="9" bodyfile="C/atomic.c" bodystart="2318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Predicates__on__Text_1ga154031896077c727e5afaf0f8b14b61e" prot="public" static="no">
+        <name>SUB_ATOM_HAS_SIZE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2319" column="9" bodyfile="C/atomic.c" bodystart="2319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Predicates__on__Text_1gaba2b9ccef44972eb0f1c2a9b026a3f5d" prot="public" static="no">
+        <name>SUB_ATOM_HAS_AFTER</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2320" column="9" bodyfile="C/atomic.c" bodystart="2320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Predicates__on__Text_1ga912ef4efecf0b967efe7902bc27949c5" prot="public" static="no">
+        <name>SUB_ATOM_HAS_VAL</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2321" column="9" bodyfile="C/atomic.c" bodystart="2321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Predicates__on__Text_1ga390152c8c7a6b6732e178de45eb47881" prot="public" static="no">
+        <name>SUB_ATOM_HAS_ATOM</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2322" column="9" bodyfile="C/atomic.c" bodystart="2322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Predicates__on__Text_1gab9490f426a01f5953f47e91cfb19334b" prot="public" static="no">
+        <name>SUB_ATOM_HAS_UTF8</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2323" column="9" bodyfile="C/atomic.c" bodystart="2323" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__Predicates__on__Text_1ga1515500d723af23ed4a2f6c14ee4f1f8" kind="function"><name>name</name></member>
-      <member refid="group__Predicates__on__Text_1gadaeb1ab1f542858d3f4d8b8e9a54d6b7" kind="function"><name>atom_chars</name></member>
-      <member refid="group__Predicates__on__Text_1ga6141c0273ead4eecb55177e283006246" kind="function"><name>atom_codes</name></member>
-      <member refid="group__Predicates__on__Text_1gac59319bb5e8441598f7ccb61fdedce4a" kind="function"><name>atom_length</name></member>
-      <member refid="group__Predicates__on__Text_1gaf202814979f421342bbe028cf6307d7c" kind="function"><name>string_length</name></member>
-      <member refid="group__Predicates__on__Text_1ga51bbf7c6eef6b418a923ee6dc8720503" kind="function"><name>atom_split</name></member>
-      <member refid="group__Predicates__on__Text_1ga237473961525c5d8ec2c96cee70d7061" kind="function"><name>number_chars</name></member>
-      <member refid="group__Predicates__on__Text_1ga54e5ad53f9864afd0d9658a3e993287f" kind="function"><name>number_codes</name></member>
-      <member refid="group__Predicates__on__Text_1ga600247649f71eda395ec295fd8489cc8" kind="function"><name>current_atom</name></member>
-      <member refid="group__Predicates__on__Text_1ga66aac256566ff91aed925ba6a7f0d103" kind="function"><name>cont_current_atom</name></member>
-      <member refid="group__Predicates__on__Text_1ga5723390b5e26c71a2ad08b2d7b1c3edc" kind="function"><name>AlreadyHidden</name></member>
-      <member refid="group__Predicates__on__Text_1gaebf1f8b5c6667e2d68789963802238f4" kind="function"><name>hide_atom</name></member>
-      <member refid="group__Predicates__on__Text_1gac6d412419030fad78d1fb1835876fbac" kind="function"><name>hidden_atom</name></member>
-      <member refid="group__Predicates__on__Text_1gaec42962bb9feb68d463197565b74f725" kind="function"><name>unhide_atom</name></member>
-      <member refid="group__Predicates__on__Text_1gae936aab337a0e9aa223f577c68aab1d1" kind="function"><name>det_atom_concat3</name></member>
-      <member refid="group__Predicates__on__Text_1ga084d2cdac4225860a85edbc84b533411" kind="function"><name>char_code</name></member>
-      <member refid="group__Predicates__on__Text_1ga3cddf5d55d04d603e0b03cd69f31f395" kind="function"><name>string_to_atomic</name></member>
-      <member refid="group__Predicates__on__Text_1gac619e5c55526befb24aef5971a82d0b2" kind="function"><name>atomic_to_string</name></member>
-      <member refid="group__Predicates__on__Text_1ga93a689a8fee386a6737efe353c1198ab" kind="function"><name>string_to_atom</name></member>
-      <member refid="group__Predicates__on__Text_1ga89b1d9b4b8636ff5d27bd7b9295c274e" kind="function"><name>atom_to_string</name></member>
-      <member refid="group__Predicates__on__Text_1ga781340f325b8af457e55bd89da874f43" kind="function"><name>string_to_list</name></member>
-      <member refid="group__Predicates__on__Text_1gae13f67a1086ba544a9463db3e10463f2" kind="function"><name>atom_string</name></member>
-      <member refid="group__Predicates__on__Text_1ga6d7192beb375716eb4fa0bfbd932ab15" kind="function"><name>string_atom</name></member>
-      <member refid="group__Predicates__on__Text_1ga6f924bd47c2395a5541b6490a7065242" kind="function"><name>string_codes</name></member>
-      <member refid="group__Predicates__on__Text_1ga8e3f5bce15ecafbebc43190f80d83df1" kind="function"><name>string_chars</name></member>
-      <member refid="group__Predicates__on__Text_1gafa95f239ad3cfc3b2b796b5917c902e0" kind="function"><name>number_atom</name></member>
-      <member refid="group__Predicates__on__Text_1gaffa74be9ab89486398422fa1b0c931d4" kind="function"><name>number_string</name></member>
-      <member refid="group__Predicates__on__Text_1ga8b66d190872692ad63faab91fd58aecf" kind="function"><name>cont_atom_concat3</name></member>
-      <member refid="group__Predicates__on__Text_1ga2359f84b7a33a86b03e60a423baf3928" kind="function"><name>non_det_atom_concat3</name></member>
-      <member refid="group__Predicates__on__Text_1gaaa0dda37dc914ee9a46bc50da978330c" kind="function"><name>CastToNumeric__</name></member>
-      <member refid="group__Predicates__on__Text_1ga14e9755998112ab00cb143a4d5391643" kind="function"><name>cont_atomic_concat3</name></member>
-      <member refid="group__Predicates__on__Text_1gad70a8af0f90506fba29eb9775de35a75" kind="function"><name>atomic_concat3</name></member>
-      <member refid="group__Predicates__on__Text_1gad0f1bff6eb7284ad8c7e61f08ae1ec55" kind="function"><name>cont_string_concat3</name></member>
-      <member refid="group__Predicates__on__Text_1ga227bce528ee32399d63ce4cbb9cb4a0e" kind="function"><name>string_concat3</name></member>
-      <member refid="group__Predicates__on__Text_1ga77de0c7687011735bc6cb6e58ecf54ed" kind="function"><name>cont_string_code3</name></member>
-      <member refid="group__Predicates__on__Text_1gaf11074477adf0dfc8136dbb52b081061" kind="function"><name>string_code3</name></member>
-      <member refid="group__Predicates__on__Text_1ga500da1f0aa3bd4a045a70d088e39d7e6" kind="function"><name>get_string_code3</name></member>
-      <member refid="group__Predicates__on__Text_1ga4b20c15c0435cf55954bf2a0f0aa1884" kind="function"><name>atom_concat2</name></member>
-      <member refid="group__Predicates__on__Text_1gad2d56ecd582a72be1b31a175c3cb9eed" kind="function"><name>string_concat2</name></member>
-      <member refid="group__Predicates__on__Text_1ga9c9163e909aea75e3f73e7b1f3f49802" kind="function"><name>atomic_concat2</name></member>
-      <member refid="group__Predicates__on__Text_1ga98c54397b860749d75ca29a53a2e19f8" kind="function"><name>atomics_to_string2</name></member>
-      <member refid="group__Predicates__on__Text_1ga5712d52c5252f4affce00d665525a910" kind="function"><name>atomics_to_string3</name></member>
-      <member refid="group__Predicates__on__Text_1ga06e345c027b744b30927f762d5458d8b" kind="function"><name>atomic_length</name></member>
-      <member refid="group__Predicates__on__Text_1ga42ccc1232f1d0a11d56a51300d6c609b" kind="function"><name>downcase_text_to_atom</name></member>
-      <member refid="group__Predicates__on__Text_1ga66337e1f8006601e7ac7720a5d0b3abc" kind="function"><name>upcase_text_to_atom</name></member>
-      <member refid="group__Predicates__on__Text_1gac18f01ee2e9f7023547ca2ecfdc9a0db" kind="function"><name>downcase_text_to_string</name></member>
-      <member refid="group__Predicates__on__Text_1ga19f1e10408fdc46f595f00bda3337cae" kind="function"><name>upcase_text_to_string</name></member>
-      <member refid="group__Predicates__on__Text_1ga3d460e8450d6154b277188967e84ab32" kind="function"><name>downcase_text_to_codes</name></member>
-      <member refid="group__Predicates__on__Text_1gab27933f091f7b1efbf5fc9ed5d91cadc" kind="function"><name>upcase_text_to_codes</name></member>
-      <member refid="group__Predicates__on__Text_1gac6fdc9ee01ff31a0ac868074d570779d" kind="function"><name>downcase_text_to_chars</name></member>
-      <member refid="group__Predicates__on__Text_1ga32a4024b4929929b8229100026f896c1" kind="function"><name>upcase_text_to_chars</name></member>
-      <member refid="group__Predicates__on__Text_1gaff92f91a41a8786281fad9efca172885" kind="function"><name>atom_number</name></member>
-      <member refid="group__Predicates__on__Text_1gaf2924c9ce92aba1e1a79597a084cc327" kind="function"><name>string_number</name></member>
-      <member refid="group__Predicates__on__Text_1gaa966df865c1ccddd1ce2040d86b628e1" kind="function"><name>build_new_atomic</name></member>
-      <member refid="group__Predicates__on__Text_1ga5331284e85e05880d29eba9801178d2c" kind="function"><name>check_sub_string_at</name></member>
-      <member refid="group__Predicates__on__Text_1ga8276879dc9d961d67d21301b67958c18" kind="function"><name>check_sub_string_bef</name></member>
-      <member refid="group__Predicates__on__Text_1ga3cab1eaf175342589087ecdd37278e65" kind="function"><name>cont_sub_atomic</name></member>
-      <member refid="group__Predicates__on__Text_1ga11f68a1bf73f70573509d2a3a7080fc3" kind="function"><name>sub_atomic</name></member>
-      <member refid="group__Predicates__on__Text_1gaff2c03a95a3fa13aac3b01535ac16ae8" kind="function"><name>sub_atom</name></member>
-      <member refid="group__Predicates__on__Text_1gaffe454ee32126b2e2007158db9a8dcd2" kind="function"><name>sub_string</name></member>
-      <member refid="group__Predicates__on__Text_1ga3ea4a55f8c62eff5028dc9c2c0c7970f" kind="function"><name>sub_text</name></member>
-      <member refid="group__Predicates__on__Text_1ga3d9a4f58f47b49afe81d516638eeaf8c" kind="function"><name>Yap_InitBackAtoms</name></member>
-      <member refid="group__Predicates__on__Text_1ga41dcec486f433b4bc233a562360155ee" kind="function"><name>Yap_InitAtomPreds</name></member>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga1515500d723af23ed4a2f6c14ee4f1f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int name</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>name</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="326" column="12" bodyfile="C/atomic.c" bodystart="326" bodyend="363" declfile="C/atomic.c" declline="58" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gadaeb1ab1f542858d3f4d8b8e9a54d6b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_chars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_chars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="580" column="12" bodyfile="C/atomic.c" bodystart="580" bodyend="611" declfile="C/atomic.c" declline="59" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga6141c0273ead4eecb55177e283006246" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="637" column="12" bodyfile="C/atomic.c" bodystart="637" bodyend="667" declfile="C/atomic.c" declline="60" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gac59319bb5e8441598f7ccb61fdedce4a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_length</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_length</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1721" column="12" bodyfile="C/atomic.c" bodystart="1721" bodyend="1765" declfile="C/atomic.c" declline="61" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaf202814979f421342bbe028cf6307d7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_length</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_length</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1822" column="12" bodyfile="C/atomic.c" bodystart="1822" bodyend="1860" declfile="C/atomic.c" declline="62" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga51bbf7c6eef6b418a923ee6dc8720503" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_split</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_split</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2186" column="12" bodyfile="C/atomic.c" bodystart="2186" bodyend="2228" declfile="C/atomic.c" declline="63" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga237473961525c5d8ec2c96cee70d7061" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int number_chars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>number_chars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="757" column="12" bodyfile="C/atomic.c" bodystart="757" bodyend="796" declfile="C/atomic.c" declline="64" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga54e5ad53f9864afd0d9658a3e993287f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int number_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>number_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="809" column="12" bodyfile="C/atomic.c" bodystart="809" bodyend="848" declfile="C/atomic.c" declline="65" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga600247649f71eda395ec295fd8489cc8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int current_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>current_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2844" column="12" bodyfile="C/atomic.c" bodystart="2844" bodyend="2862" declfile="C/atomic.c" declline="66" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga66aac256566ff91aed925ba6a7f0d103" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_current_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_current_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2787" column="12" bodyfile="C/atomic.c" bodystart="2787" bodyend="2842" declfile="C/atomic.c" declline="67" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga5723390b5e26c71a2ad08b2d7b1c3edc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int AlreadyHidden</definition>
+        <argsstring>(unsigned char *)</argsstring>
+        <name>AlreadyHidden</name>
+        <param>
+          <type>unsigned char *</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="75" column="12" bodyfile="C/atomic.c" bodystart="75" bodyend="87" declfile="C/atomic.c" declline="68" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaebf1f8b5c6667e2d68789963802238f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int hide_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>hide_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="97" column="12" bodyfile="C/atomic.c" bodystart="97" bodyend="141" declfile="C/atomic.c" declline="69" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gac6d412419030fad78d1fb1835876fbac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int hidden_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>hidden_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="147" column="12" bodyfile="C/atomic.c" bodystart="147" bodyend="168" declfile="C/atomic.c" declline="70" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaec42962bb9feb68d463197565b74f725" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int unhide_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>unhide_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="177" column="12" bodyfile="C/atomic.c" bodystart="177" bodyend="213" declfile="C/atomic.c" declline="71" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gae936aab337a0e9aa223f577c68aab1d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int det_atom_concat3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>det_atom_concat3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="989" column="12" bodyfile="C/atomic.c" bodystart="989" bodyend="1039" declfile="C/atomic.c" declline="73" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga084d2cdac4225860a85edbc84b533411" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int char_code</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>char_code</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="225" column="12" bodyfile="C/atomic.c" bodystart="225" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga3cddf5d55d04d603e0b03cd69f31f395" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_to_atomic</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_to_atomic</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="374" column="12" bodyfile="C/atomic.c" bodystart="374" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gac619e5c55526befb24aef5971a82d0b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atomic_to_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atomic_to_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="416" column="12" bodyfile="C/atomic.c" bodystart="416" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga93a689a8fee386a6737efe353c1198ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_to_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_to_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="431" column="12" bodyfile="C/atomic.c" bodystart="431" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga89b1d9b4b8636ff5d27bd7b9295c274e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_to_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_to_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="476" column="12" bodyfile="C/atomic.c" bodystart="476" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga781340f325b8af457e55bd89da874f43" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_to_list</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_to_list</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="484" column="12" bodyfile="C/atomic.c" bodystart="484" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gae13f67a1086ba544a9463db3e10463f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="521" column="12" bodyfile="C/atomic.c" bodystart="521" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga6d7192beb375716eb4fa0bfbd932ab15" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="562" column="12" bodyfile="C/atomic.c" bodystart="562" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga6f924bd47c2395a5541b6490a7065242" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="669" column="12" bodyfile="C/atomic.c" bodystart="669" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga8e3f5bce15ecafbebc43190f80d83df1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_chars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_chars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="708" column="12" bodyfile="C/atomic.c" bodystart="708" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gafa95f239ad3cfc3b2b796b5917c902e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int number_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>number_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="864" column="12" bodyfile="C/atomic.c" bodystart="864" bodyend="901"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaffa74be9ab89486398422fa1b0c931d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int number_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>number_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="914" column="12" bodyfile="C/atomic.c" bodystart="914" bodyend="951"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga8b66d190872692ad63faab91fd58aecf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_atom_concat3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_atom_concat3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="954" column="12" bodyfile="C/atomic.c" bodystart="954" bodyend="987"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga2359f84b7a33a86b03e60a423baf3928" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int non_det_atom_concat3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>non_det_atom_concat3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1041" column="12" bodyfile="C/atomic.c" bodystart="1041" bodyend="1096"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaaa0dda37dc914ee9a46bc50da978330c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term CastToNumeric__</definition>
+        <argsstring>(Atom at USES_REGS)</argsstring>
+        <name>CastToNumeric__</name>
+        <param>
+          <type><ref refid="structAtomEntryStruct" kindref="compound">Atom</ref> at</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1100" column="13" bodyfile="C/atomic.c" bodystart="1100" bodyend="1107"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga14e9755998112ab00cb143a4d5391643" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_atomic_concat3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_atomic_concat3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1109" column="12" bodyfile="C/atomic.c" bodystart="1109" bodyend="1143"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gad70a8af0f90506fba29eb9775de35a75" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atomic_concat3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atomic_concat3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1145" column="12" bodyfile="C/atomic.c" bodystart="1145" bodyend="1199"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gad0f1bff6eb7284ad8c7e61f08ae1ec55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_string_concat3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_string_concat3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1201" column="12" bodyfile="C/atomic.c" bodystart="1201" bodyend="1232"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga227bce528ee32399d63ce4cbb9cb4a0e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_concat3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_concat3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1234" column="12" bodyfile="C/atomic.c" bodystart="1234" bodyend="1290"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga77de0c7687011735bc6cb6e58ecf54ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_string_code3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_string_code3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1292" column="12" bodyfile="C/atomic.c" bodystart="1292" bodyend="1329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaf11074477adf0dfc8136dbb52b081061" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_code3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_code3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1331" column="12" bodyfile="C/atomic.c" bodystart="1331" bodyend="1389"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga500da1f0aa3bd4a045a70d088e39d7e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int get_string_code3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>get_string_code3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1391" column="12" bodyfile="C/atomic.c" bodystart="1391" bodyend="1444"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga4b20c15c0435cf55954bf2a0f0aa1884" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_concat2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_concat2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1446" column="12" bodyfile="C/atomic.c" bodystart="1446" bodyend="1494"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gad2d56ecd582a72be1b31a175c3cb9eed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_concat2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_concat2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1496" column="12" bodyfile="C/atomic.c" bodystart="1496" bodyend="1538"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga9c9163e909aea75e3f73e7b1f3f49802" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atomic_concat2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atomic_concat2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1540" column="12" bodyfile="C/atomic.c" bodystart="1540" bodyend="1605"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga98c54397b860749d75ca29a53a2e19f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atomics_to_string2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atomics_to_string2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1607" column="12" bodyfile="C/atomic.c" bodystart="1607" bodyend="1656"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga5712d52c5252f4affce00d665525a910" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atomics_to_string3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atomics_to_string3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1658" column="12" bodyfile="C/atomic.c" bodystart="1658" bodyend="1710"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga06e345c027b744b30927f762d5458d8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atomic_length</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atomic_length</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1776" column="12" bodyfile="C/atomic.c" bodystart="1776" bodyend="1820"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga42ccc1232f1d0a11d56a51300d6c609b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int downcase_text_to_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>downcase_text_to_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1869" column="12" bodyfile="C/atomic.c" bodystart="1869" bodyend="1906"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga66337e1f8006601e7ac7720a5d0b3abc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int upcase_text_to_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>upcase_text_to_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1915" column="12" bodyfile="C/atomic.c" bodystart="1915" bodyend="1954"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gac18f01ee2e9f7023547ca2ecfdc9a0db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int downcase_text_to_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>downcase_text_to_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1963" column="12" bodyfile="C/atomic.c" bodystart="1963" bodyend="1989"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga19f1e10408fdc46f595f00bda3337cae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int upcase_text_to_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>upcase_text_to_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="1998" column="12" bodyfile="C/atomic.c" bodystart="1998" bodyend="2030"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga3d460e8450d6154b277188967e84ab32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int downcase_text_to_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>downcase_text_to_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2039" column="12" bodyfile="C/atomic.c" bodystart="2039" bodyend="2068"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gab27933f091f7b1efbf5fc9ed5d91cadc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int upcase_text_to_codes</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>upcase_text_to_codes</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2077" column="12" bodyfile="C/atomic.c" bodystart="2077" bodyend="2106"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gac6fdc9ee01ff31a0ac868074d570779d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int downcase_text_to_chars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>downcase_text_to_chars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2115" column="12" bodyfile="C/atomic.c" bodystart="2115" bodyend="2145"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga32a4024b4929929b8229100026f896c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int upcase_text_to_chars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>upcase_text_to_chars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2154" column="12" bodyfile="C/atomic.c" bodystart="2154" bodyend="2183"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaff92f91a41a8786281fad9efca172885" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int atom_number</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>atom_number</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2241" column="12" bodyfile="C/atomic.c" bodystart="2241" bodyend="2271"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaf2924c9ce92aba1e1a79597a084cc327" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int string_number</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>string_number</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2284" column="12" bodyfile="C/atomic.c" bodystart="2284" bodyend="2316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaa966df865c1ccddd1ce2040d86b628e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term build_new_atomic</definition>
+        <argsstring>(int mask, const unsigned char *p, ssize_t minv, ssize_t len, ssize_t sz USES_REGS)</argsstring>
+        <name>build_new_atomic</name>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>ssize_t</type>
+          <declname>minv</declname>
+        </param>
+        <param>
+          <type>ssize_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>ssize_t sz</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2325" column="13" bodyfile="C/atomic.c" bodystart="2325" bodyend="2344"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga5331284e85e05880d29eba9801178d2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool check_sub_string_at</definition>
+        <argsstring>(ssize_t minv, const unsigned char *p1, const unsigned char *p2, ssize_t len)</argsstring>
+        <name>check_sub_string_at</name>
+        <param>
+          <type>ssize_t</type>
+          <declname>minv</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>ssize_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2346" column="13" bodyfile="C/atomic.c" bodystart="2346" bodyend="2352"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga8276879dc9d961d67d21301b67958c18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool check_sub_string_bef</definition>
+        <argsstring>(int max, const unsigned char *p1, const unsigned char *p2)</argsstring>
+        <name>check_sub_string_bef</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2354" column="13" bodyfile="C/atomic.c" bodystart="2354" bodyend="2369"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga3cab1eaf175342589087ecdd37278e65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cont_sub_atomic</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cont_sub_atomic</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2371" column="12" bodyfile="C/atomic.c" bodystart="2371" bodyend="2494"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga11f68a1bf73f70573509d2a3a7080fc3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int sub_atomic</definition>
+        <argsstring>(bool sub_atom, bool sub_string USES_REGS)</argsstring>
+        <name>sub_atomic</name>
+        <param>
+          <type>bool</type>
+          <declname>sub_atom</declname>
+        </param>
+        <param>
+          <type>bool sub_string</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2496" column="12" bodyfile="C/atomic.c" bodystart="2496" bodyend="2744"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaff2c03a95a3fa13aac3b01535ac16ae8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int sub_atom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>sub_atom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2761" column="12" bodyfile="C/atomic.c" bodystart="2761" bodyend="2761"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1gaffe454ee32126b2e2007158db9a8dcd2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int sub_string</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>sub_string</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2778" column="12" bodyfile="C/atomic.c" bodystart="2778" bodyend="2778"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga3ea4a55f8c62eff5028dc9c2c0c7970f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int sub_text</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>sub_text</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2784" column="12" bodyfile="C/atomic.c" bodystart="2784" bodyend="2784"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga3d9a4f58f47b49afe81d516638eeaf8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitBackAtoms</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitBackAtoms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2864" column="6" bodyfile="C/atomic.c" bodystart="2864" bodyend="2876"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Predicates__on__Text_1ga41dcec486f433b4bc233a562360155ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitAtomPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitAtomPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/atomic.c" line="2878" column="6" bodyfile="C/atomic.c" bodystart="2878" bodyend="2927"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Text Processing. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/atomic.c"/>
+    <location file="C/atomic.c"/>
   </compounddef>
 </doxygen>

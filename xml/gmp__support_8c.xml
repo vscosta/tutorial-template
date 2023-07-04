@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="gmp__support_8c" kind="file" language="C++">
     <compoundname>gmp_support.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -9,7 +9,7 @@
     <includes local="no">wchar.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/gmp_support.c</label>
+        <label>C/gmp_support.c</label>
         <link refid="gmp__support_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -414,7 +414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/gmp_support.c" line="29" column="1" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="29" bodyend="37"/>
+        <location file="C/gmp_support.c" line="29" column="1" bodyfile="C/gmp_support.c" bodystart="29" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="gmp__support_8c_1a475b38b1a68d40fcdebcfc94afb8e5ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Term</type>
@@ -431,22 +431,302 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/gmp_support.c" line="40" column="1" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="40" bodyend="48"/>
+        <location file="C/gmp_support.c" line="40" column="1" bodyfile="C/gmp_support.c" bodystart="40" bodyend="48"/>
       </memberdef>
-      <member refid="group__Arithmetic_1gacdb4a47efa74541e63eecbed42a18822" kind="function"><name>Yap_gmp_add_ints</name></member>
-      <member refid="group__Arithmetic_1ga6b59136343bd343e1a915e0c7f334c45" kind="function"><name>Yap_gmp_sub_ints</name></member>
-      <member refid="group__Arithmetic_1gad2472778249e8013783096f5684f38d2" kind="function"><name>Yap_gmp_mul_ints</name></member>
-      <member refid="group__Arithmetic_1ga328952e71af7ed0122c7e00cbd5b20a3" kind="function"><name>Yap_gmp_sll_ints</name></member>
-      <member refid="group__Arithmetic_1ga583ea710dc7554d15b283483bcca94de" kind="function"><name>Yap_gmp_add_int_big</name></member>
-      <member refid="group__Arithmetic_1ga58414d6f9666d9ff5f0ed0ea95cea5f6" kind="function"><name>Yap_gmp_set_bit</name></member>
-      <member refid="group__Arithmetic_1ga76995c651ed89b143b36465ae65d8c91" kind="function"><name>Yap_gmp_sub_int_big</name></member>
-      <member refid="group__Arithmetic_1ga446da4ec3214c0bab785788d29b99592" kind="function"><name>Yap_gmp_mul_int_big</name></member>
-      <member refid="group__Arithmetic_1ga229bccdda7be6b69ef1fd03abfe27f00" kind="function"><name>Yap_gmp_sub_big_int</name></member>
-      <member refid="group__Arithmetic_1ga3aea38a0ada13987b04da544ba3e2440" kind="function"><name>Yap_gmp_div_int_big</name></member>
-      <member refid="group__Arithmetic_1ga6b95fb03a6307a1e76e9dc79b15767fc" kind="function"><name>Yap_gmp_div_big_int</name></member>
-      <member refid="group__Arithmetic_1ga954e50db6701e6353e9a6d3102049638" kind="function"><name>Yap_gmp_div2_big_int</name></member>
-      <member refid="group__Arithmetic_1gaa53eb7ac80151fd2bee08659d7a95f31" kind="function"><name>Yap_gmp_and_int_big</name></member>
-      <member refid="group__Arithmetic_1ga54fa0ced3929c1e198d841fa997f5808" kind="function"><name>Yap_gmp_ior_int_big</name></member>
+      <memberdef kind="function" id="group__Arithmetic_1gacdb4a47efa74541e63eecbed42a18822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_ints</definition>
+        <argsstring>(Int i, Int j)</argsstring>
+        <name>Yap_gmp_add_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="52" column="1" bodyfile="C/gmp_support.c" bodystart="52" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6b59136343bd343e1a915e0c7f334c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_ints</definition>
+        <argsstring>(Int i, Int j)</argsstring>
+        <name>Yap_gmp_sub_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="71" column="1" bodyfile="C/gmp_support.c" bodystart="71" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad2472778249e8013783096f5684f38d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_ints</definition>
+        <argsstring>(Int i, Int j)</argsstring>
+        <name>Yap_gmp_mul_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="94" column="1" bodyfile="C/gmp_support.c" bodystart="94" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga328952e71af7ed0122c7e00cbd5b20a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sll_ints</definition>
+        <argsstring>(Int i, Int j)</argsstring>
+        <name>Yap_gmp_sll_ints</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="104" column="1" bodyfile="C/gmp_support.c" bodystart="104" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga583ea710dc7554d15b283483bcca94de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_add_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="115" column="1" bodyfile="C/gmp_support.c" bodystart="115" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga58414d6f9666d9ff5f0ed0ea95cea5f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_gmp_set_bit</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_set_bit</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="136" column="1" bodyfile="C/gmp_support.c" bodystart="136" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga76995c651ed89b143b36465ae65d8c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_sub_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="144" column="1" bodyfile="C/gmp_support.c" bodystart="144" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga446da4ec3214c0bab785788d29b99592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_mul_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="167" column="1" bodyfile="C/gmp_support.c" bodystart="167" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga229bccdda7be6b69ef1fd03abfe27f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_big_int</definition>
+        <argsstring>(Term t, Int i)</argsstring>
+        <name>Yap_gmp_sub_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="190" column="1" bodyfile="C/gmp_support.c" bodystart="190" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga3aea38a0ada13987b04da544ba3e2440" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_div_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="214" column="1" bodyfile="C/gmp_support.c" bodystart="214" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6b95fb03a6307a1e76e9dc79b15767fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div_big_int</definition>
+        <argsstring>(Term t, Int i)</argsstring>
+        <name>Yap_gmp_div_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="233" column="1" bodyfile="C/gmp_support.c" bodystart="233" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga954e50db6701e6353e9a6d3102049638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div2_big_int</definition>
+        <argsstring>(Term t, Int i)</argsstring>
+        <name>Yap_gmp_div2_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="276" column="1" bodyfile="C/gmp_support.c" bodystart="276" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaa53eb7ac80151fd2bee08659d7a95f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_and_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_and_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="307" column="1" bodyfile="C/gmp_support.c" bodystart="307" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga54fa0ced3929c1e198d841fa997f5808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_ior_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_ior_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="324" column="1" bodyfile="C/gmp_support.c" bodystart="324" bodyend="337"/>
+      </memberdef>
       <memberdef kind="function" id="gmp__support_8c_1a2c19fc3cc1ba188870278f01f716d635" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>static void mpz_xor</definition>
@@ -470,80 +750,1360 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/gmp_support.c" line="342" column="1" bodyfile="/home/vsc/github/yap/C/gmp_support.c" bodystart="342" bodyend="356"/>
+        <location file="C/gmp_support.c" line="342" column="1" bodyfile="C/gmp_support.c" bodystart="342" bodyend="356"/>
       </memberdef>
-      <member refid="group__Arithmetic_1gafa33dbddfc79bb2d142448506dfce6be" kind="function"><name>Yap_gmp_xor_int_big</name></member>
-      <member refid="group__Arithmetic_1gadf467cd8eb1baf0f8bcb3bc68916a5e5" kind="function"><name>Yap_gmp_sll_big_int</name></member>
-      <member refid="group__Arithmetic_1gad4f457739ced22d188a9ad7454fa632f" kind="function"><name>Yap_gmp_add_big_big</name></member>
-      <member refid="group__Arithmetic_1ga5382b86ba7ed81293e252387a2daac0f" kind="function"><name>Yap_gmp_sub_big_big</name></member>
-      <member refid="group__Arithmetic_1ga237eaf4cb8369f0795b73bbe1acd7f22" kind="function"><name>Yap_gmp_mul_big_big</name></member>
-      <member refid="group__Arithmetic_1gaff09166f8737044d598721fba395cce5" kind="function"><name>Yap_gmp_div_big_big</name></member>
-      <member refid="group__Arithmetic_1gad745a7f0e32a9118afb7bc158da2cf21" kind="function"><name>Yap_gmp_div2_big_big</name></member>
-      <member refid="group__Arithmetic_1ga4b4f12c0fba8ff3946b0e76e6cf18eef" kind="function"><name>Yap_gmp_and_big_big</name></member>
-      <member refid="group__Arithmetic_1ga4ae2cb91c929f015c294bc3beb91b7a4" kind="function"><name>Yap_gmp_ior_big_big</name></member>
-      <member refid="group__Arithmetic_1ga22f72649230126617d257744d81b7334" kind="function"><name>Yap_gmp_xor_big_big</name></member>
-      <member refid="group__Arithmetic_1gaade05ac96e0b5dd251d6971f88a469b5" kind="function"><name>Yap_gmp_mod_big_big</name></member>
-      <member refid="group__Arithmetic_1gab9a8dd911ec9d78facb3f6d7f50275b9" kind="function"><name>Yap_gmp_mod_big_int</name></member>
-      <member refid="group__Arithmetic_1gac7b385ecc5c189858dec6d2f7d00bcaa" kind="function"><name>Yap_gmp_mod_int_big</name></member>
-      <member refid="group__Arithmetic_1ga0489a5ae1b2c452788880b7a1293a87f" kind="function"><name>Yap_gmp_rem_big_big</name></member>
-      <member refid="group__Arithmetic_1gaf07ce3908b0b5dfab12b0978181c49b0" kind="function"><name>Yap_gmp_rem_big_int</name></member>
-      <member refid="group__Arithmetic_1ga23fc697f7d73353b4533e2f036773210" kind="function"><name>Yap_gmp_rem_int_big</name></member>
-      <member refid="group__Arithmetic_1gac3ed691ce0fbc530656f00abbc37b0a7" kind="function"><name>Yap_gmp_gcd_big_big</name></member>
-      <member refid="group__Arithmetic_1gaec64b44314bb7dcac6576a86f698068a" kind="function"><name>Yap_gmp_gcd_int_big</name></member>
-      <member refid="group__Arithmetic_1ga503d476516e0ab6faa376fe4e192bc91" kind="function"><name>Yap_gmp_float_to_big</name></member>
-      <member refid="group__Arithmetic_1ga7aa22e3b152fcb1dd7f8303d0af71fc3" kind="function"><name>Yap_gmp_to_float</name></member>
-      <member refid="group__Arithmetic_1ga7dc61de3867983555907879629ad0dfa" kind="function"><name>Yap_gmp_add_float_big</name></member>
-      <member refid="group__Arithmetic_1ga097f678fcd729991e1e9a155ef759b2c" kind="function"><name>Yap_gmp_sub_float_big</name></member>
-      <member refid="group__Arithmetic_1ga69420d54ece7662b2ad95b94c9b25617" kind="function"><name>Yap_gmp_sub_big_float</name></member>
-      <member refid="group__Arithmetic_1gaf7154df0a2f97bb2b87826ca1cbf5e67" kind="function"><name>Yap_gmp_mul_float_big</name></member>
-      <member refid="group__Arithmetic_1ga6cea146c80a90a3558fbed3b6f37cb0b" kind="function"><name>Yap_gmp_fdiv_float_big</name></member>
-      <member refid="group__Arithmetic_1ga7878c8c94f4121a3eb6cae580e1c3fee" kind="function"><name>Yap_gmp_fdiv_big_float</name></member>
-      <member refid="group__Arithmetic_1ga983adea5f3f354c212c103ad0fc5bd50" kind="function"><name>Yap_gmp_exp_int_int</name></member>
-      <member refid="group__Arithmetic_1ga45fed83ab17ad0752636f4748ec07ed4" kind="function"><name>Yap_gmp_exp_big_int</name></member>
-      <member refid="group__Arithmetic_1ga6e5a04f3cb4fefd22fa38efbf0040f26" kind="function"><name>Yap_gmp_exp_int_big</name></member>
-      <member refid="group__Arithmetic_1gaed8188743dac21b381dec67efa41a0d4" kind="function"><name>Yap_gmp_exp_big_big</name></member>
-      <member refid="group__Arithmetic_1ga08bde4653d12dbbcf993b4ce3c769056" kind="function"><name>Yap_gmp_big_from_64bits</name></member>
-      <member refid="group__Arithmetic_1ga2c3426f8624515e22e5abc7512c8ea14" kind="function"><name>Yap_gmq_rdiv_int_int</name></member>
-      <member refid="group__Arithmetic_1gaf190c6c10685950ab5bbea9801815c57" kind="function"><name>Yap_gmq_rdiv_int_big</name></member>
-      <member refid="group__Arithmetic_1ga56aeef8bf65a7370f0496f38259e7864" kind="function"><name>Yap_gmq_rdiv_big_int</name></member>
-      <member refid="group__Arithmetic_1ga59fa3c91fdae83e6ffd755587af70044" kind="function"><name>Yap_gmq_rdiv_big_big</name></member>
-      <member refid="group__Arithmetic_1gad015e9b70580091c5e51e1690d161edd" kind="function"><name>Yap_gmp_fdiv_int_big</name></member>
-      <member refid="group__Arithmetic_1gab8a766a4bcf62d121dc9c469c78d50cc" kind="function"><name>Yap_gmp_fdiv_big_int</name></member>
-      <member refid="group__Arithmetic_1ga0f6e473d69e4db9ed833c4c998d1d411" kind="function"><name>Yap_gmp_fdiv_big_big</name></member>
-      <member refid="group__Arithmetic_1ga480562054af1d007d99481b81e345704" kind="function"><name>Yap_gmp_cmp_big_int</name></member>
-      <member refid="group__Arithmetic_1ga36bf12af6afd7190b55b4970e539cd7c" kind="function"><name>Yap_gmp_cmp_int_big</name></member>
-      <member refid="group__Arithmetic_1ga59eb582a52309beb54f34cb468e3b8a1" kind="function"><name>Yap_gmp_cmp_big_float</name></member>
-      <member refid="group__Arithmetic_1gafdb564e54e455b3cb350addde6a495ed" kind="function"><name>Yap_gmp_cmp_big_big</name></member>
-      <member refid="group__Arithmetic_1gaf028e3310f84ec2067a37a58e5ef99ba" kind="function"><name>Yap_gmp_tcmp_big_int</name></member>
-      <member refid="group__Arithmetic_1gaf5e3ab82f42c5dce6ffc7a15e44dad5b" kind="function"><name>Yap_gmp_tcmp_int_big</name></member>
-      <member refid="group__Arithmetic_1ga1f7943d5f129c285fe61388e7057bac0" kind="function"><name>Yap_gmp_tcmp_big_float</name></member>
-      <member refid="group__Arithmetic_1gaffa11280ad8a03b4187b8746b0eb86a2" kind="function"><name>Yap_gmp_tcmp_big_big</name></member>
-      <member refid="group__Arithmetic_1ga129e6a09dbd16bbdbbe7fda8c048d6eb" kind="function"><name>Yap_gmp_neg_int</name></member>
-      <member refid="group__Arithmetic_1ga38d282d2bd9bbd0f63996c48b163b8f5" kind="function"><name>Yap_gmp_neg_big</name></member>
-      <member refid="group__Arithmetic_1ga664bf61dcb2e568a8e2a7551007fc907" kind="function"><name>Yap_gmp_float_to_rational</name></member>
-      <member refid="group__Arithmetic_1ga010b327e1a8cf7a6adc5d55e556720ed" kind="function"><name>Yap_gmp_float_rationalize</name></member>
-      <member refid="group__Arithmetic_1ga9c10701821b12d34a38c394027827af4" kind="function"><name>Yap_gmp_abs_big</name></member>
-      <member refid="group__Arithmetic_1ga2b8bd33a3ffe7590255c890e489f9aab" kind="function"><name>Yap_gmp_unot_big</name></member>
-      <member refid="group__Arithmetic_1ga99f6a3504225c06a610f28f1e34b9835" kind="function"><name>Yap_gmp_floor</name></member>
-      <member refid="group__Arithmetic_1ga1d256d1ff32f5f8ab2275e7758654a8a" kind="function"><name>Yap_gmp_ceiling</name></member>
-      <member refid="group__Arithmetic_1ga48b78af156b83b567d0aadfd29417077" kind="function"><name>Yap_gmp_round</name></member>
-      <member refid="group__Arithmetic_1gab6a3c9d68204046888cbfa85b55f1bc5" kind="function"><name>Yap_gmp_trunc</name></member>
-      <member refid="group__Arithmetic_1ga442b0ecc1003851d74a249f31f9486e9" kind="function"><name>Yap_gmp_float_fractional_part</name></member>
-      <member refid="group__Arithmetic_1gabbabad992482e6949f60693fedd6741e" kind="function"><name>Yap_gmp_float_integer_part</name></member>
-      <member refid="group__Arithmetic_1gafb92bf2d2274efbcc065de90d4fa07bf" kind="function"><name>Yap_gmp_sign</name></member>
-      <member refid="group__Arithmetic_1ga4911848d5919e8cc7295cc9eacf280d1" kind="function"><name>Yap_gmp_lsb</name></member>
-      <member refid="group__Arithmetic_1gacaa396ec602f3556ec6fae99da4f7214" kind="function"><name>Yap_gmp_msb</name></member>
-      <member refid="group__Arithmetic_1ga3c5aad0ae32bb3f07ef6735e24fcace3" kind="function"><name>Yap_gmp_popcount</name></member>
-      <member refid="group__Arithmetic_1gab1fc7af5bb0a5e151a439db643cb732e" kind="function"><name>Yap_mpz_to_string</name></member>
-      <member refid="group__Arithmetic_1ga159673863a1ac387554c0736a335503b" kind="function"><name>Yap_gmp_to_string</name></member>
-      <member refid="group__Arithmetic_1gac89546588c3426fbc71d4a3d48b5fb29" kind="function"><name>Yap_gmp_to_size</name></member>
-      <member refid="group__Arithmetic_1gadbaf54132d7869516a457dce9d15af19" kind="function"><name>Yap_term_to_existing_big</name></member>
-      <member refid="group__Arithmetic_1gac7a3eb8a0b94fb89f7b8a5a95de51007" kind="function"><name>Yap_term_to_existing_rat</name></member>
+      <memberdef kind="function" id="group__Arithmetic_1gafa33dbddfc79bb2d142448506dfce6be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_xor_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_xor_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="361" column="1" bodyfile="C/gmp_support.c" bodystart="361" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gadf467cd8eb1baf0f8bcb3bc68916a5e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sll_big_int</definition>
+        <argsstring>(Term t, Int i)</argsstring>
+        <name>Yap_gmp_sll_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="378" column="1" bodyfile="C/gmp_support.c" bodystart="378" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad4f457739ced22d188a9ad7454fa632f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_add_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="417" column="1" bodyfile="C/gmp_support.c" bodystart="417" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga5382b86ba7ed81293e252387a2daac0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_sub_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="454" column="1" bodyfile="C/gmp_support.c" bodystart="454" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga237eaf4cb8369f0795b73bbe1acd7f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_mul_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="491" column="1" bodyfile="C/gmp_support.c" bodystart="491" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaff09166f8737044d598721fba395cce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_div_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="535" column="1" bodyfile="C/gmp_support.c" bodystart="535" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad745a7f0e32a9118afb7bc158da2cf21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_div2_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_div2_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="577" column="1" bodyfile="C/gmp_support.c" bodystart="577" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga4b4f12c0fba8ff3946b0e76e6cf18eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_and_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_and_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="614" column="1" bodyfile="C/gmp_support.c" bodystart="614" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga4ae2cb91c929f015c294bc3beb91b7a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_ior_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_ior_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="636" column="1" bodyfile="C/gmp_support.c" bodystart="636" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga22f72649230126617d257744d81b7334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_xor_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_xor_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="658" column="1" bodyfile="C/gmp_support.c" bodystart="658" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaade05ac96e0b5dd251d6971f88a469b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mod_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_mod_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="680" column="1" bodyfile="C/gmp_support.c" bodystart="680" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab9a8dd911ec9d78facb3f6d7f50275b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mod_big_int</definition>
+        <argsstring>(Term t, Int i2)</argsstring>
+        <name>Yap_gmp_mod_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="702" column="1" bodyfile="C/gmp_support.c" bodystart="702" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac7b385ecc5c189858dec6d2f7d00bcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mod_int_big</definition>
+        <argsstring>(Int i1, Term t)</argsstring>
+        <name>Yap_gmp_mod_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="719" column="1" bodyfile="C/gmp_support.c" bodystart="719" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga0489a5ae1b2c452788880b7a1293a87f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_rem_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_rem_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="760" column="1" bodyfile="C/gmp_support.c" bodystart="760" bodyend="779"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf07ce3908b0b5dfab12b0978181c49b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_rem_big_int</definition>
+        <argsstring>(Term t, Int i2)</argsstring>
+        <name>Yap_gmp_rem_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="782" column="1" bodyfile="C/gmp_support.c" bodystart="782" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga23fc697f7d73353b4533e2f036773210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_rem_int_big</definition>
+        <argsstring>(Int i1, Term t)</argsstring>
+        <name>Yap_gmp_rem_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="799" column="1" bodyfile="C/gmp_support.c" bodystart="799" bodyend="810"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac3ed691ce0fbc530656f00abbc37b0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_gcd_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_gcd_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="813" column="1" bodyfile="C/gmp_support.c" bodystart="813" bodyend="832"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaec64b44314bb7dcac6576a86f698068a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_gcd_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_gcd_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="835" column="1" bodyfile="C/gmp_support.c" bodystart="835" bodyend="852"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga503d476516e0ab6faa376fe4e192bc91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_to_big</definition>
+        <argsstring>(Float v)</argsstring>
+        <name>Yap_gmp_float_to_big</name>
+        <param>
+          <type>Float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="855" column="1" bodyfile="C/gmp_support.c" bodystart="855" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga7aa22e3b152fcb1dd7f8303d0af71fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float Yap_gmp_to_float</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_to_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="864" column="1" bodyfile="C/gmp_support.c" bodystart="864" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga7dc61de3867983555907879629ad0dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_add_float_big</definition>
+        <argsstring>(Float d, Term t)</argsstring>
+        <name>Yap_gmp_add_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="877" column="1" bodyfile="C/gmp_support.c" bodystart="877" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga097f678fcd729991e1e9a155ef759b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_float_big</definition>
+        <argsstring>(Float d, Term t)</argsstring>
+        <name>Yap_gmp_sub_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="891" column="1" bodyfile="C/gmp_support.c" bodystart="891" bodyend="902"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga69420d54ece7662b2ad95b94c9b25617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sub_big_float</definition>
+        <argsstring>(Term t, Float d)</argsstring>
+        <name>Yap_gmp_sub_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="905" column="1" bodyfile="C/gmp_support.c" bodystart="905" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf7154df0a2f97bb2b87826ca1cbf5e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_mul_float_big</definition>
+        <argsstring>(Float d, Term t)</argsstring>
+        <name>Yap_gmp_mul_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="919" column="1" bodyfile="C/gmp_support.c" bodystart="919" bodyend="930"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6cea146c80a90a3558fbed3b6f37cb0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_float_big</definition>
+        <argsstring>(Float d, Term t)</argsstring>
+        <name>Yap_gmp_fdiv_float_big</name>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="933" column="1" bodyfile="C/gmp_support.c" bodystart="933" bodyend="944"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga7878c8c94f4121a3eb6cae580e1c3fee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_big_float</definition>
+        <argsstring>(Term t, Float d)</argsstring>
+        <name>Yap_gmp_fdiv_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="947" column="1" bodyfile="C/gmp_support.c" bodystart="947" bodyend="958"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga983adea5f3f354c212c103ad0fc5bd50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_int_int</definition>
+        <argsstring>(Int i1, Int i2)</argsstring>
+        <name>Yap_gmp_exp_int_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="961" column="1" bodyfile="C/gmp_support.c" bodystart="961" bodyend="968"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga45fed83ab17ad0752636f4748ec07ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_big_int</definition>
+        <argsstring>(Term t, Int i)</argsstring>
+        <name>Yap_gmp_exp_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="971" column="1" bodyfile="C/gmp_support.c" bodystart="971" bodyend="995"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga6e5a04f3cb4fefd22fa38efbf0040f26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_exp_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="998" column="1" bodyfile="C/gmp_support.c" bodystart="998" bodyend="1010"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaed8188743dac21b381dec67efa41a0d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_exp_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_exp_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1013" column="1" bodyfile="C/gmp_support.c" bodystart="1013" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga08bde4653d12dbbcf993b4ce3c769056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_big_from_64bits</definition>
+        <argsstring>(YAP_LONG_LONG i)</argsstring>
+        <name>Yap_gmp_big_from_64bits</name>
+        <param>
+          <type>YAP_LONG_LONG</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1040" column="1" bodyfile="C/gmp_support.c" bodystart="1040" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga2c3426f8624515e22e5abc7512c8ea14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_int_int</definition>
+        <argsstring>(Int i1, Int i2)</argsstring>
+        <name>Yap_gmq_rdiv_int_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1057" column="1" bodyfile="C/gmp_support.c" bodystart="1057" bodyend="1069"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf190c6c10685950ab5bbea9801815c57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_int_big</definition>
+        <argsstring>(Int i1, Term t2)</argsstring>
+        <name>Yap_gmq_rdiv_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1072" column="1" bodyfile="C/gmp_support.c" bodystart="1072" bodyend="1091"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga56aeef8bf65a7370f0496f38259e7864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_big_int</definition>
+        <argsstring>(Term t1, Int i2)</argsstring>
+        <name>Yap_gmq_rdiv_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1094" column="1" bodyfile="C/gmp_support.c" bodystart="1094" bodyend="1115"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga59fa3c91fdae83e6ffd755587af70044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmq_rdiv_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmq_rdiv_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1118" column="1" bodyfile="C/gmp_support.c" bodystart="1118" bodyend="1146"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gad015e9b70580091c5e51e1690d161edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_int_big</definition>
+        <argsstring>(Int i1, Term t2)</argsstring>
+        <name>Yap_gmp_fdiv_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1149" column="1" bodyfile="C/gmp_support.c" bodystart="1149" bodyend="1173"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab8a766a4bcf62d121dc9c469c78d50cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_big_int</definition>
+        <argsstring>(Term t2, Int i1)</argsstring>
+        <name>Yap_gmp_fdiv_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1176" column="1" bodyfile="C/gmp_support.c" bodystart="1176" bodyend="1200"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga0f6e473d69e4db9ed833c4c998d1d411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_fdiv_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_fdiv_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1203" column="1" bodyfile="C/gmp_support.c" bodystart="1203" bodyend="1232"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga480562054af1d007d99481b81e345704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_big_int</definition>
+        <argsstring>(Term t, Int i)</argsstring>
+        <name>Yap_gmp_cmp_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1235" column="1" bodyfile="C/gmp_support.c" bodystart="1235" bodyend="1245"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga36bf12af6afd7190b55b4970e539cd7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_cmp_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1248" column="1" bodyfile="C/gmp_support.c" bodystart="1248" bodyend="1258"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga59eb582a52309beb54f34cb468e3b8a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_big_float</definition>
+        <argsstring>(Term t, Float d)</argsstring>
+        <name>Yap_gmp_cmp_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1261" column="1" bodyfile="C/gmp_support.c" bodystart="1261" bodyend="1276"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gafdb564e54e455b3cb350addde6a495ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_cmp_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_cmp_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1279" column="1" bodyfile="C/gmp_support.c" bodystart="1279" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf028e3310f84ec2067a37a58e5ef99ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_big_int</definition>
+        <argsstring>(Term t, Int i)</argsstring>
+        <name>Yap_gmp_tcmp_big_int</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1319" column="1" bodyfile="C/gmp_support.c" bodystart="1319" bodyend="1328"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaf5e3ab82f42c5dce6ffc7a15e44dad5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_int_big</definition>
+        <argsstring>(Int i, Term t)</argsstring>
+        <name>Yap_gmp_tcmp_int_big</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1331" column="1" bodyfile="C/gmp_support.c" bodystart="1331" bodyend="1340"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga1f7943d5f129c285fe61388e7057bac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_big_float</definition>
+        <argsstring>(Term t, Float d)</argsstring>
+        <name>Yap_gmp_tcmp_big_float</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1343" column="1" bodyfile="C/gmp_support.c" bodystart="1343" bodyend="1346"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gaffa11280ad8a03b4187b8746b0eb86a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_gmp_tcmp_big_big</definition>
+        <argsstring>(Term t1, Term t2)</argsstring>
+        <name>Yap_gmp_tcmp_big_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1349" column="1" bodyfile="C/gmp_support.c" bodystart="1349" bodyend="1378"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga129e6a09dbd16bbdbbe7fda8c048d6eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_neg_int</definition>
+        <argsstring>(Int i)</argsstring>
+        <name>Yap_gmp_neg_int</name>
+        <param>
+          <type>Int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1381" column="1" bodyfile="C/gmp_support.c" bodystart="1381" bodyend="1388"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga38d282d2bd9bbd0f63996c48b163b8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_neg_big</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_neg_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1391" column="1" bodyfile="C/gmp_support.c" bodystart="1391" bodyend="1407"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga664bf61dcb2e568a8e2a7551007fc907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_to_rational</definition>
+        <argsstring>(Float dbl)</argsstring>
+        <name>Yap_gmp_float_to_rational</name>
+        <param>
+          <type>Float</type>
+          <declname>dbl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1410" column="1" bodyfile="C/gmp_support.c" bodystart="1410" bodyend="1416"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga010b327e1a8cf7a6adc5d55e556720ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_rationalize</definition>
+        <argsstring>(Float dbl)</argsstring>
+        <name>Yap_gmp_float_rationalize</name>
+        <param>
+          <type>Float</type>
+          <declname>dbl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1434" column="1" bodyfile="C/gmp_support.c" bodystart="1434" bodyend="1457"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga9c10701821b12d34a38c394027827af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_abs_big</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_abs_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1460" column="1" bodyfile="C/gmp_support.c" bodystart="1460" bodyend="1476"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga2b8bd33a3ffe7590255c890e489f9aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_unot_big</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_unot_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1479" column="1" bodyfile="C/gmp_support.c" bodystart="1479" bodyend="1492"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga99f6a3504225c06a610f28f1e34b9835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_floor</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_floor</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1495" column="1" bodyfile="C/gmp_support.c" bodystart="1495" bodyend="1510"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga1d256d1ff32f5f8ab2275e7758654a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_ceiling</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_ceiling</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1513" column="1" bodyfile="C/gmp_support.c" bodystart="1513" bodyend="1528"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga48b78af156b83b567d0aadfd29417077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_round</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_round</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1531" column="1" bodyfile="C/gmp_support.c" bodystart="1531" bodyend="1555"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab6a3c9d68204046888cbfa85b55f1bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_trunc</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_trunc</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1558" column="1" bodyfile="C/gmp_support.c" bodystart="1558" bodyend="1578"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga442b0ecc1003851d74a249f31f9486e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_fractional_part</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_float_fractional_part</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1581" column="1" bodyfile="C/gmp_support.c" bodystart="1581" bodyend="1599"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gabbabad992482e6949f60693fedd6741e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_float_integer_part</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_float_integer_part</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1602" column="1" bodyfile="C/gmp_support.c" bodystart="1602" bodyend="1618"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gafb92bf2d2274efbcc065de90d4fa07bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_sign</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_sign</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1621" column="1" bodyfile="C/gmp_support.c" bodystart="1621" bodyend="1630"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga4911848d5919e8cc7295cc9eacf280d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_lsb</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_lsb</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1633" column="1" bodyfile="C/gmp_support.c" bodystart="1633" bodyend="1648"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gacaa396ec602f3556ec6fae99da4f7214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_msb</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_msb</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1651" column="1" bodyfile="C/gmp_support.c" bodystart="1651" bodyend="1666"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga3c5aad0ae32bb3f07ef6735e24fcace3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_gmp_popcount</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_gmp_popcount</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1669" column="1" bodyfile="C/gmp_support.c" bodystart="1669" bodyend="1684"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gab1fc7af5bb0a5e151a439db643cb732e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_mpz_to_string</definition>
+        <argsstring>(MP_INT *b, char *s, size_t sz, int base)</argsstring>
+        <name>Yap_mpz_to_string</name>
+        <param>
+          <type><ref refid="structMP__INT" kindref="compound">MP_INT</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1687" column="1" bodyfile="C/gmp_support.c" bodystart="1687" bodyend="1697"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga159673863a1ac387554c0736a335503b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_gmp_to_string</definition>
+        <argsstring>(Term t, char *s, size_t sz, int base)</argsstring>
+        <name>Yap_gmp_to_string</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1700" column="1" bodyfile="C/gmp_support.c" bodystart="1700" bodyend="1737"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac89546588c3426fbc71d4a3d48b5fb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Yap_gmp_to_size</definition>
+        <argsstring>(Term t, int base)</argsstring>
+        <name>Yap_gmp_to_size</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1740" column="1" bodyfile="C/gmp_support.c" bodystart="1740" bodyend="1753"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gadbaf54132d7869516a457dce9d15af19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_term_to_existing_big</definition>
+        <argsstring>(Term t, MP_INT *b)</argsstring>
+        <name>Yap_term_to_existing_big</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structMP__INT" kindref="compound">MP_INT</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1756" column="1" bodyfile="C/gmp_support.c" bodystart="1756" bodyend="1771"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1gac7a3eb8a0b94fb89f7b8a5a95de51007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_term_to_existing_rat</definition>
+        <argsstring>(Term t, MP_RAT *b)</argsstring>
+        <name>Yap_term_to_existing_rat</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structMP__RAT" kindref="compound">MP_RAT</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/gmp_support.c" line="1774" column="1" bodyfile="C/gmp_support.c" bodystart="1774" bodyend="1794"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/gmp_support.c"/>
+    <location file="C/gmp_support.c"/>
   </compounddef>
 </doxygen>

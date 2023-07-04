@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="modules" kind="page">
-    <compoundname>modules</compoundname>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="YAPModules" kind="page">
+    <compoundname>YAPModules</compoundname>
     <title>The YAP Module system</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><anchor id="YAPModules_1md_docs_md_modules"/></para>
 <para>The YAP module system is based on the Quintus/SISCtus module system ˜quintus In this design, modules are named collections of predicates, and all predicates belong to a single module By default, predicates are only visible within a module, or <emphasis>private</emphasis> to that module The module may also define a list of predicates that are <emphasis>exported</emphasis>, that is, visible to other modules</para>
 <para>The main predicates in the module system are:</para>
 <para><itemizedlist>
@@ -18,6 +19,6 @@
 <para>YAP includes a number of libraries and packages, most of them defining their own modules Note that there is no system mechanism to avoid clashes between module names, so it is up to the programmer to carefully choose the names for her own program modules</para>
 <para>The main mechanism to change the current type-in module is by using the <ref refid="classmodule_22" kindref="compound">module/2</ref> declaration.This declaration sets the source module when it starts consulting a file, and resets it at the end One can set the type-in module permanently by using the built-in <computeroutput><ref refid="classmodule_21" kindref="compound">module/1</ref> </computeroutput> </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/docs/md/modules.md"/>
+    <location file="docs/md/modules.md"/>
   </compounddef>
 </doxygen>

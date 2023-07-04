@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="yapt_8hh" kind="file" language="C++">
     <compoundname>yapt.hh</compoundname>
     <includes refid="YapTerm_8h" local="yes">YapTerm.h</includes>
     <includes local="no">vector</includes>
-    <includedby refid="yapi_8hh" local="yes">/home/vsc/github/yap/CXX/yapi.hh</includedby>
+    <includedby refid="yapi_8hh" local="yes">CXX/yapi.hh</includedby>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/CXX/yapt.hh</label>
+        <label>CXX/yapt.hh</label>
         <link refid="yapt_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -81,19 +81,19 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <label>CXX/cxx4yap.hh</label>
         <link refid="cxx4yap_8hh_source"/>
       </node>
       <node id="4">
-        <label>/home/vsc/github/yap/CXX/heap.cxx</label>
+        <label>CXX/heap.cxx</label>
         <link refid="heap_8cxx_source"/>
       </node>
       <node id="5">
-        <label>/home/vsc/github/yap/CXX/yapi.cpp</label>
+        <label>CXX/yapi.cpp</label>
         <link refid="yapi_8cpp_source"/>
       </node>
       <node id="2">
-        <label>/home/vsc/github/yap/CXX/yapi.hh</label>
+        <label>CXX/yapi.hh</label>
         <link refid="yapi_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -103,7 +103,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/CXX/yapt.hh</label>
+        <label>CXX/yapt.hh</label>
         <link refid="yapt_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -123,16 +123,58 @@
     <innerclass refid="classYAPVarTerm" prot="public">YAPVarTerm</innerclass>
     <innerclass refid="classYAPErrorTerm" prot="public">YAPErrorTerm</innerclass>
       <sectiondef kind="define">
-      <member refid="group__yap-cplus-term-handling_1gaadef9adf2d2fe55d6d703b9dfa4c90da" kind="define"><name>YAPT_HH</name></member>
+      <memberdef kind="define" id="group__yap-cplus-term-handling_1gaadef9adf2d2fe55d6d703b9dfa4c90da" prot="public" static="no">
+        <name>YAPT_HH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/yapt.hh" line="31" column="9" bodyfile="CXX/yapt.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__yap-cplus-term-handling_1gacf1c3c96384ac61858aab47a4ad7031b" kind="function"><name>YAP_MkCharPTerm</name></member>
-      <member refid="group__yap-cplus-term-handling_1ga470fa462fb6b5b38b71122603f591fc3" kind="function"><name>Yap_MkErrorTerm</name></member>
+      <memberdef kind="function" id="group__yap-cplus-term-handling_1gacf1c3c96384ac61858aab47a4ad7031b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API Term</type>
+        <definition>X_API Term YAP_MkCharPTerm</definition>
+        <argsstring>(char *n)</argsstring>
+        <name>YAP_MkCharPTerm</name>
+        <param>
+          <type>char *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapt.hh" line="36" column="19" bodyfile="C/c_interface.c" bodystart="314" bodyend="322" declfile="CXX/tmp/yapt.hh" declline="36" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__yap-cplus-term-handling_1ga470fa462fb6b5b38b71122603f591fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API Term</type>
+        <definition>X_API Term Yap_MkErrorTerm</definition>
+        <argsstring>(yap_error_descriptor_t *)</argsstring>
+        <name>Yap_MkErrorTerm</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/tmp/yapt.hh" line="698" column="26" bodyfile="C/errors.c" bodystart="640" bodyend="663" declfile="CXX/tmp/yapt.hh" declline="698" declcolumn="26"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/CXX/yapt.hh"/>
+    <location file="CXX/yapt.hh"/>
   </compounddef>
 </doxygen>

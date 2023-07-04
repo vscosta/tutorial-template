@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="readline_8c" kind="file" language="C++">
     <compoundname>readline.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -8,6 +8,8 @@
     <includes refid="yapio_8h" local="yes">yapio.h</includes>
     <includes local="no">stdlib.h</includes>
     <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
+    <includes local="no">readline/history.h</includes>
+    <includes local="no">readline/readline.h</includes>
     <incdepgraph>
       <node id="21">
         <label>Atoms.h</label>
@@ -382,7 +384,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/readline/readline.c</label>
+        <label>os/readline/readline.c</label>
         <link refid="readline_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -395,6 +397,10 @@
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
         </childnode>
       </node>
       <node id="53">
@@ -430,6 +436,12 @@
       <node id="45">
         <label>dlocals.h</label>
       </node>
+      <node id="58">
+        <label>readline/history.h</label>
+      </node>
+      <node id="59">
+        <label>readline/readline.h</label>
+      </node>
       <node id="28">
         <label>stddef.h</label>
       </node>
@@ -449,7 +461,284 @@
         <label>wchar.h</label>
       </node>
     </incdepgraph>
+    <innerclass refid="structscan__atoms" prot="public">scan_atoms</innerclass>
+    <innerclass refid="structchain" prot="public">chain</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="readline_8c_1a048c5789eb847122f52ef2d2e2492c2a" prot="public" static="no">
+        <name>READLINE_OUT_BUF_MAX</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="63" column="9" bodyfile="os/readline/readline.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readline_8c_1abbc101726ec72d1ada80421cf0cfb237" prot="public" static="no">
+        <name>rl_clear_signals</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="327" column="9" bodyfile="os/readline/readline.c" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="readline_8c_1aea0d6a7f8276919ed3614d0b4c654d4b" prot="public" static="no">
+        <name>rl_set_signals</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="328" column="9" bodyfile="os/readline/readline.c" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="readline_8c_1ace7ab749c646c7818f86211dd23ce7fe" prot="public" static="no">
+        <type>struct <ref refid="structscan__atoms" kindref="compound">scan_atoms</ref></type>
+        <definition>typedef struct scan_atoms scan_atoms_t</definition>
+        <argsstring></argsstring>
+        <name>scan_atoms_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="89" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="readline_8c_1a6c7caba8ebdc1339e5b11c1775c551e4" prot="public" static="no">
+        <type>struct <ref refid="structchain" kindref="compound">chain</ref></type>
+        <definition>typedef struct chain chain_t</definition>
+        <argsstring></argsstring>
+        <name>chain_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="156" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="readline_8c_1a9c80ed43117aeeef56858ace488a2be2" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* history_file</definition>
+        <argsstring></argsstring>
+        <name>history_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="61" column="19" bodyfile="os/readline/readline.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="readline_8c_1a9b864c6bc7967be8e55a8f4b527ebb1c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Yap_Embedded</definition>
+        <argsstring></argsstring>
+        <name>Yap_Embedded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="292" column="13" bodyfile="C/init.c" bodystart="66" bodyend="-1" declfile="os/readline/readline.c" declline="292" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="readline_8c_1ac93962788aaa852ef785409afcb41711" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int usable_readline</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>usable_readline</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="65" column="12" bodyfile="os/readline/readline.c" bodystart="65" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1ac3383c3938c789c647aab5cbcfdd7c74" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * atom_enumerate</definition>
+        <argsstring>(const char *prefix, int state)</argsstring>
+        <name>atom_enumerate</name>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="91" column="13" bodyfile="os/readline/readline.c" bodystart="91" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1af50e0de4fbcb0ad3778d1e4527cdfcca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * atom_generator</definition>
+        <argsstring>(const char *prefix, int state)</argsstring>
+        <name>atom_generator</name>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="139" column="13" bodyfile="os/readline/readline.c" bodystart="139" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a6906b0b22922c2446dc44c7ea529067d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * predicate_enumerate</definition>
+        <argsstring>(const char *prefix, int state, char *buf0, size_t sz)</argsstring>
+        <name>predicate_enumerate</name>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf0</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="158" column="13" bodyfile="os/readline/readline.c" bodystart="158" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a1670279f8625cfef361bbfcf2c2ed341" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * predicate_generator</definition>
+        <argsstring>(const char *prefix, int state)</argsstring>
+        <name>predicate_generator</name>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="214" column="13" bodyfile="os/readline/readline.c" bodystart="214" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1af66e66fd1db1a4204eaa0eaf11ee8a35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>static char ** prolog_completion</definition>
+        <argsstring>(const char *text, int start, int end)</argsstring>
+        <name>prolog_completion</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="230" column="13" bodyfile="os/readline/readline.c" bodystart="230" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a6578d8e886d1fe83bae2645f19262bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ReadlineFlush</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>Yap_ReadlineFlush</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="260" column="6" bodyfile="os/readline/readline.c" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a95f7bf41376fc6f34d1ce136e2dc0611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_readline_clear_pending_input</definition>
+        <argsstring>(StreamDesc *s)</argsstring>
+        <name>Yap_readline_clear_pending_input</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="265" column="6" bodyfile="os/readline/readline.c" bodystart="265" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a9d33a7c58c05b8f22e9fe9ecc25b67c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_ReadlineOps</definition>
+        <argsstring>(StreamDesc *s)</argsstring>
+        <name>Yap_ReadlineOps</name>
+        <param>
+          <type><ref refid="structstream__desc" kindref="compound">StreamDesc</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="279" column="6" bodyfile="os/readline/readline.c" bodystart="279" bodyend="291"/>
+      </memberdef>
       <memberdef kind="function" id="readline_8c_1a11e29079b2628e02adb2c7345a4b32c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool Yap_InitReadline</definition>
@@ -465,7 +754,78 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/readline/readline.c" line="446" column="6" bodyfile="/home/vsc/github/yap/os/readline/readline.c" bodystart="446" bodyend="450"/>
+        <location file="os/readline/readline.c" line="294" column="6" bodyfile="os/readline/readline.c" bodystart="294" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a4d19915e2160a61569a705f185b2c8a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool getLine</definition>
+        <argsstring>(int inp)</argsstring>
+        <name>getLine</name>
+        <param>
+          <type>int</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="332" column="13" bodyfile="os/readline/readline.c" bodystart="332" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1af31a1f9d38867b524dc3ff7784ea916d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ReadlineGetc</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>ReadlineGetc</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+<para>reading from the console is complicated because we need to know whether to prompt and so on... </para>
+        </briefdescription>
+        <detaileddescription>
+<para>EOF must be handled by resetting the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="363" column="5" bodyfile="os/readline/readline.c" bodystart="363" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a524c763306bbaf20bd73a45f986c3b26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_ReadlinePeekChar</definition>
+        <argsstring>(int sno)</argsstring>
+        <name>Yap_ReadlinePeekChar</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <briefdescription>
+<para>Yap_ReadlinePeekChar peeks the next char from the readline buffer, but does not actually grab it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The idea is to take advantage of the buffering Special care must be taken with EOF, though </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="400" column="5" bodyfile="os/readline/readline.c" bodystart="400" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="readline_8c_1a72fec3a7271c42ad613f30cc81f290d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_ReadlineForSIGINT</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ReadlineForSIGINT</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/readline/readline.c" line="431" column="5" bodyfile="os/readline/readline.c" bodystart="431" bodyend="441"/>
       </memberdef>
       <memberdef kind="function" id="readline_8c_1a005f7680af420d3f96ef5131cdf928db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -481,7 +841,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/readline/readline.c" line="453" column="12" bodyfile="/home/vsc/github/yap/os/readline/readline.c" bodystart="453" bodyend="453"/>
+        <location file="os/readline/readline.c" line="453" column="12" bodyfile="os/readline/readline.c" bodystart="453" bodyend="453"/>
       </memberdef>
       <memberdef kind="function" id="readline_8c_1a31541046b58a0f610bc98829f929502e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -497,7 +857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/readline/readline.c" line="455" column="6" bodyfile="/home/vsc/github/yap/os/readline/readline.c" bodystart="455" bodyend="458"/>
+        <location file="os/readline/readline.c" line="455" column="6" bodyfile="os/readline/readline.c" bodystart="455" bodyend="458"/>
       </memberdef>
       <memberdef kind="function" id="readline_8c_1ace9a0bff39de7fcf006ab12a678ce405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -513,7 +873,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/readline/readline.c" line="460" column="6" bodyfile="/home/vsc/github/yap/os/readline/readline.c" bodystart="460" bodyend="465"/>
+        <location file="os/readline/readline.c" line="460" column="6" bodyfile="os/readline/readline.c" bodystart="460" bodyend="465"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -521,6 +881,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/os/readline/readline.c"/>
+    <location file="os/readline/readline.c"/>
   </compounddef>
 </doxygen>

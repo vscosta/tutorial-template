@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="unify_8c" kind="file" language="C++">
     <compoundname>unify.c</compoundname>
     <includes refid="absmi_8h" local="yes">absmi.h</includes>
     <includes refid="trim__trail_8h" local="yes">trim_trail.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/unify.c</label>
+        <label>C/unify.c</label>
         <link refid="unify_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -438,9 +438,39 @@
       </node>
     </incdepgraph>
       <sectiondef kind="define">
-      <member refid="group__Rational__Trees_1ga548edf10206b9c33c9c5262f53fcc13f" kind="define"><name>IN_UNIFY_C</name></member>
-      <member refid="group__Rational__Trees_1ga9529e916451e584e814efe1784cff21e" kind="define"><name>HAS_CACHE_REGS</name></member>
-      <member refid="group__Rational__Trees_1ga22b0fa1ad040118f91b30afb58b31faa" kind="define"><name>tovisit_base</name></member>
+      <memberdef kind="define" id="group__Rational__Trees_1ga548edf10206b9c33c9c5262f53fcc13f" prot="public" static="no">
+        <name>IN_UNIFY_C</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="47" column="9" bodyfile="C/unify.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Rational__Trees_1ga9529e916451e584e814efe1784cff21e" prot="public" static="no">
+        <name>HAS_CACHE_REGS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="49" column="9" bodyfile="C/unify.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Rational__Trees_1ga22b0fa1ad040118f91b30afb58b31faa" prot="public" static="no">
+        <name>tovisit_base</name>
+        <initializer>((struct <ref refid="structv__record" kindref="compound">v_record</ref> *)AuxSp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="61" column="9" bodyfile="C/unify.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="unify_8c_1afda6ea1fb708ffcd86f545922ba1be75" prot="public" static="no">
         <name>unif_base</name>
         <initializer>((struct <ref refid="structunif__record" kindref="compound">unif_record</ref> *)AuxBase)</initializer>
@@ -450,9 +480,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/unify.c" line="184" column="9"/>
+        <location file="C/unify.c" line="184" column="9"/>
       </memberdef>
-      <member refid="group__Rational__Trees_1ga2acf33526e6c9ff4531937552e62cb5a" kind="define"><name>UnifyAndTrailGlobalCells</name></member>
+      <memberdef kind="define" id="group__Rational__Trees_1ga2acf33526e6c9ff4531937552e62cb5a" prot="public" static="no">
+        <name>UnifyAndTrailGlobalCells</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>     if((a) &gt; (b)) {                                                  \
+       *(a) = (CELL)(b);                                              \
+        DO_TRAIL((a), (CELL)(b));                                     \
+     } else if((a) &lt; (b)){                                            \
+       *(b) = (CELL)(a);                                              \
+        DO_TRAIL((b), (CELL)(a));                                     \
+     }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="644" column="9" bodyfile="C/unify.c" bodystart="644" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="unify_8c_1afda6ea1fb708ffcd86f545922ba1be75" prot="public" static="no">
         <name>unif_base</name>
         <initializer>((struct <ref refid="structunif__record" kindref="compound">unif_record</ref> *)AuxBase)</initializer>
@@ -462,9 +510,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/unify.c" line="675" column="9"/>
+        <location file="C/unify.c" line="675" column="9"/>
       </memberdef>
-      <member refid="group__Rational__Trees_1ga22b0fa1ad040118f91b30afb58b31faa" kind="define"><name>tovisit_base</name></member>
+      <memberdef kind="define" id="group__Rational__Trees_1ga22b0fa1ad040118f91b30afb58b31faa" prot="public" static="no">
+        <name>tovisit_base</name>
+        <initializer>((struct <ref refid="structv__record" kindref="compound">v_record</ref> *)AuxSp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="676" column="9" bodyfile="C/unify.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="unify_8c_1a3c849c05e593682594d42a2fb4fa7677" prot="public" static="no">
         <name>saveregs</name>
         <param></param>
@@ -476,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/unify.c" line="1048" column="10"/>
+        <location file="C/unify.c" line="1048" column="10"/>
       </memberdef>
       <memberdef kind="define" id="unify_8c_1a11204e50175caee7f63f0c1de6fb02f9" prot="public" static="no">
         <name>setregs</name>
@@ -487,30 +545,310 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/unify.c" line="1052" column="10"/>
+        <location file="C/unify.c" line="1052" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__Rational__Trees_1gab371bc4f578cd4ad2a447b13c2fe261c" kind="function"><name>Yap_rational_tree_loop</name></member>
-      <member refid="group__Rational__Trees_1gad4cacb63a62d8ce907cc97eb880a8c8e" kind="function"><name>OCUnify_complex</name></member>
-      <member refid="group__Rational__Trees_1ga1555f992c5f36487943eeeb66dcb4a89" kind="function"><name>OCUnify</name></member>
-      <member refid="group__Rational__Trees_1gaee775be5098cfb0b2e9113196e58e7ab" kind="function"><name>p_ocunify</name></member>
-      <member refid="group__Rational__Trees_1ga37072722833b97c12b7f4f177bb397d7" kind="function"><name>rational_tree</name></member>
-      <member refid="group__Rational__Trees_1gac05a8caf6dbe4b0e331cb27d7fc26dbe" kind="function"><name>p_cyclic</name></member>
-      <member refid="group__Rational__Trees_1ga7c41e0690b66fd1c24052443f51b147a" kind="function"><name>Yap_IsAcyclicTerm</name></member>
-      <member refid="group__Rational__Trees_1ga52db84a2a9271d9dfd9e6b1093e2d491" kind="function"><name>p_acyclic</name></member>
-      <member refid="group__Rational__Trees_1gae7e3d7e49c2b197eb63f84712b6ee0c3" kind="function"><name>Yap_IUnify</name></member>
-      <member refid="group__Rational__Trees_1gaa24b08fe2c541220d6207d6f6e62b2c4" kind="function"><name>unifiable_complex</name></member>
-      <member refid="group__Rational__Trees_1gaa14b5274b128669099815528939b60c4" kind="function"><name>is_unifiable</name></member>
-      <member refid="group__Rational__Trees_1ga6520675ee8bfbaec4addac28ff3d3f40" kind="function"><name>unifiable</name></member>
-      <member refid="group__Rational__Trees_1ga3485ab095c4723b14bad0f50d1d9fb2f" kind="function"><name>Yap_Unifiable</name></member>
-      <member refid="group__Rational__Trees_1ga5b8d9c9855271c5ded74d350fbff29d4" kind="function"><name>Yap_InitAbsmi</name></member>
-      <member refid="group__Rational__Trees_1ga79a1fc58575c476817bb653415f7c741" kind="function"><name>Yap_TrimTrail</name></member>
+      <memberdef kind="function" id="group__Rational__Trees_1gab371bc4f578cd4ad2a447b13c2fe261c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_rational_tree_loop</definition>
+        <argsstring>(CELL *, CELL *, CELL **, CELL **)</argsstring>
+        <name>Yap_rational_tree_loop</name>
+        <param>
+          <type>CELL *</type>
+          <defname>pt0</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>pt0_end</defname>
+        </param>
+        <param>
+          <type>CELL **</type>
+          <defname>tovisit</defname>
+        </param>
+        <param>
+          <type>CELL **</type>
+          <defname>tovisit_max</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="64" column="1" bodyfile="C/unify.c" bodystart="64" bodyend="140" declfile="C/unify.c" declline="53" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1gad4cacb63a62d8ce907cc97eb880a8c8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int OCUnify_complex</definition>
+        <argsstring>(CELL *, CELL *, CELL *)</argsstring>
+        <name>OCUnify_complex</name>
+        <param>
+          <type>CELL *</type>
+          <defname>pt0</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>pt0_end</defname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <defname>pt1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="163" column="1" bodyfile="C/unify.c" bodystart="163" bodyend="356" declfile="C/unify.c" declline="55" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga1555f992c5f36487943eeeb66dcb4a89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int OCUnify</definition>
+        <argsstring>(register CELL, register CELL)</argsstring>
+        <name>OCUnify</name>
+        <param>
+          <type>register</type>
+          <declname>CELL</declname>
+          <defname>d0</defname>
+        </param>
+        <param>
+          <type>register</type>
+          <declname>CELL</declname>
+          <defname>d1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="359" column="1" bodyfile="C/unify.c" bodystart="359" bodyend="450" declfile="C/unify.c" declline="56" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1gaee775be5098cfb0b2e9113196e58e7ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_ocunify</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_ocunify</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="453" column="1" bodyfile="C/unify.c" bodystart="453" bodyend="456" declfile="C/unify.c" declline="57" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga37072722833b97c12b7f4f177bb397d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int rational_tree</definition>
+        <argsstring>(Term d0)</argsstring>
+        <name>rational_tree</name>
+        <param>
+          <type>Term</type>
+          <declname>d0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="143" column="1" bodyfile="C/unify.c" bodystart="143" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1gac05a8caf6dbe4b0e331cb27d7fc26dbe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_cyclic</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_cyclic</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="459" column="1" bodyfile="C/unify.c" bodystart="459" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga7c41e0690b66fd1c24052443f51b147a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_IsAcyclicTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_IsAcyclicTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="467" column="6" bodyfile="C/unify.c" bodystart="467" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga52db84a2a9271d9dfd9e6b1093e2d491" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_acyclic</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_acyclic</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="473" column="1" bodyfile="C/unify.c" bodystart="473" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1gae7e3d7e49c2b197eb63f84712b6ee0c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_IUnify</definition>
+        <argsstring>(register CELL d0, register CELL d1)</argsstring>
+        <name>Yap_IUnify</name>
+        <param>
+          <type>register CELL</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>register CELL</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="482" column="1" bodyfile="C/unify.c" bodystart="482" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1gaa24b08fe2c541220d6207d6f6e62b2c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int unifiable_complex</definition>
+        <argsstring>(CELL *pt0, CELL *pt0_end, CELL *pt1)</argsstring>
+        <name>unifiable_complex</name>
+        <param>
+          <type>CELL *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>pt0_end</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>pt1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="654" column="1" bodyfile="C/unify.c" bodystart="654" bodyend="841"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1gaa14b5274b128669099815528939b60c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_unifiable</definition>
+        <argsstring>(CELL d0, CELL d1)</argsstring>
+        <name>is_unifiable</name>
+        <param>
+          <type>CELL</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="849" column="1" bodyfile="C/unify.c" bodystart="849" bodyend="949"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga6520675ee8bfbaec4addac28ff3d3f40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int unifiable</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>unifiable</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="953" column="1" bodyfile="C/unify.c" bodystart="953" bodyend="970"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga3485ab095c4723b14bad0f50d1d9fb2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_Unifiable</definition>
+        <argsstring>(Term d0, Term d1)</argsstring>
+        <name>Yap_Unifiable</name>
+        <param>
+          <type>Term</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="973" column="1" bodyfile="C/unify.c" bodystart="973" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga5b8d9c9855271c5ded74d350fbff29d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitAbsmi</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitAbsmi</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="1033" column="1" bodyfile="C/unify.c" bodystart="1033" bodyend="1040"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Rational__Trees_1ga79a1fc58575c476817bb653415f7c741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_TrimTrail</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_TrimTrail</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/unify.c" line="1043" column="1" bodyfile="C/unify.c" bodystart="1043" bodyend="1059"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/unify.c"/>
+    <location file="C/unify.c"/>
   </compounddef>
 </doxygen>

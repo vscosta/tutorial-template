@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="format_8h" kind="file" language="C++">
     <compoundname>format.h</compoundname>
     <includes refid="Yap_8h" local="no">Yap.h</includes>
-    <includedby refid="fmem_8c" local="yes">/home/vsc/github/yap/os/fmem.c</includedby>
-    <includedby refid="format_8c" local="yes">/home/vsc/github/yap/os/format.c</includedby>
+    <includedby refid="fmem_8c" local="yes">os/fmem.c</includedby>
+    <includedby refid="format_8c" local="yes">os/format.c</includedby>
     <incdepgraph>
       <node id="21">
         <label>Atoms.h</label>
@@ -341,7 +341,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/format.h</label>
+        <label>os/format.h</label>
         <link refid="format_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -382,15 +382,15 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>/home/vsc/github/yap/os/fmem.c</label>
+        <label>os/fmem.c</label>
         <link refid="fmem_8c_source"/>
       </node>
       <node id="3">
-        <label>/home/vsc/github/yap/os/format.c</label>
+        <label>os/format.c</label>
         <link refid="format_8c"/>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/format.h</label>
+        <label>os/format.h</label>
         <link refid="format_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -410,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/format.h" line="2" column="9" bodyfile="/home/vsc/github/yap/os/format.h" bodystart="2" bodyend="-1"/>
+        <location file="os/format.h" line="2" column="9" bodyfile="os/format.h" bodystart="2" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="format_8h_1a811d727d0e7fce43f1b3021edbd5c28d" prot="public" static="no">
         <name>FORMAT_COPY_ARGS_ERROR</name>
@@ -421,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/format.h" line="28" column="9" bodyfile="/home/vsc/github/yap/os/format.h" bodystart="28" bodyend="-1"/>
+        <location file="os/format.h" line="28" column="9" bodyfile="os/format.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="format_8h_1af31934a433068077e423038de1444f62" prot="public" static="no">
         <name>FORMAT_COPY_ARGS_OVERFLOW</name>
@@ -432,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/format.h" line="29" column="9" bodyfile="/home/vsc/github/yap/os/format.h" bodystart="29" bodyend="-1"/>
+        <location file="os/format.h" line="29" column="9" bodyfile="os/format.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -447,17 +447,69 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/format.h" line="26" column="13"/>
+        <location file="os/format.h" line="26" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__MemoryIO_1gac0538bc88194b8742781f967128951f6" kind="function"><name>format_synch</name></member>
-      <member refid="group__MemoryIO_1ga7bec390ad91cf3c2910b7c61c1d45311" kind="function"><name>fill_pads</name></member>
+      <memberdef kind="function" id="group__MemoryIO_1gac0538bc88194b8742781f967128951f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int format_synch</definition>
+        <argsstring>(int sno, int sno0, format_info *fg)</argsstring>
+        <name>format_synch</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno0</declname>
+        </param>
+        <param>
+          <type><ref refid="structformat__status" kindref="compound">format_info</ref> *</type>
+          <declname>fg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.h" line="31" column="12" bodyfile="os/fmem.c" bodystart="331" bodyend="364" declfile="os/format.h" declline="31" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MemoryIO_1ga7bec390ad91cf3c2910b7c61c1d45311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fill_pads</definition>
+        <argsstring>(int sno, int sno0, int total, format_info *fg USES_REGS)</argsstring>
+        <name>fill_pads</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type><ref refid="structformat__status" kindref="compound">format_info</ref> *fg</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.h" line="32" column="12" bodyfile="os/fmem.c" bodystart="54" bodyend="116" declfile="os/format.h" declline="32" declcolumn="12"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/os/format.h"/>
+    <location file="os/format.h"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="terms_8c" kind="file" language="C++">
     <compoundname>terms.c</compoundname>
     <includes local="yes">utf8proc.h</includes>
@@ -19,7 +19,7 @@
         <link refid="term__visit_8h"/>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/C/terms.c</label>
+        <label>C/terms.c</label>
         <link refid="terms_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -531,20 +531,212 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="24" column="9" bodyfile="/home/vsc/github/yap/C/terms.c" bodystart="24" bodyend="-1"/>
+        <location file="C/terms.c" line="24" column="9" bodyfile="C/terms.c" bodystart="24" bodyend="-1"/>
       </memberdef>
-      <member refid="group__YAPTerms_1ga968dc816d760915f204e8066788a4a09" kind="define"><name>DEB_DOOBOUT</name></member>
-      <member refid="group__YAPTerms_1ga9207882be2e3ca2ae32dd175db462641" kind="define"><name>DEB_DOOBIN</name></member>
-      <member refid="group__YAPTerms_1ga8492fe9a11581bea557241c0bc182c49" kind="define"><name>DEB_DOOB</name></member>
-      <member refid="group__YAPTerms_1ga7aca2668b3b478bd235fa866e5d19609" kind="define"><name>push_sub_term</name></member>
-      <member refid="group__YAPTerms_1gae6406857e7bf20a22e81253d416711ff" kind="define"><name>pop_sub_term</name></member>
-      <member refid="group__YAPTerms_1ga22978b0d0fce17cbdf9060c7e9cf67c2" kind="define"><name>RESET_TERM_VISITOR_0</name></member>
-      <member refid="group__YAPTerms_1ga519d3fff1b850bc5dc2ca8ec6a23e86e" kind="define"><name>RESET_TERM_VISITOR_1</name></member>
-      <member refid="group__YAPTerms_1gabd05b5178f601fb0f6305c39d1afd76f" kind="define"><name>RESET_TERM_VISITOR_3</name></member>
-      <member refid="group__YAPTerms_1ga9cfca773157a05da13a50c07f587da22" kind="define"><name>RESET_TERM_VISITOR_4</name></member>
-      <member refid="group__YAPTerms_1ga26c622f608b33f8341f4efc6a714db31" kind="define"><name>RESET_TERM_VISITOR_5</name></member>
-      <member refid="group__YAPTerms_1ga63a9baaeda8955091ad3bb80609c3f7e" kind="define"><name>LIST_HOOK_CODE</name></member>
-      <member refid="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" kind="define"><name>COMPOUND_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1ga968dc816d760915f204e8066788a4a09" prot="public" static="no">
+        <name>DEB_DOOBOUT</name>
+        <param><defname>d0</defname></param>
+        <initializer>\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="56" column="9" bodyfile="C/terms.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga9207882be2e3ca2ae32dd175db462641" prot="public" static="no">
+        <name>DEB_DOOBIN</name>
+        <param><defname>d0</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="58" column="9" bodyfile="C/terms.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga8492fe9a11581bea557241c0bc182c49" prot="public" static="no">
+        <name>DEB_DOOB</name>
+        <param><defname>S</defname></param>
+        <param><defname>sp</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="59" column="9" bodyfile="C/terms.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga7aca2668b3b478bd235fa866e5d19609" prot="public" static="no">
+        <name>push_sub_term</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <param><defname>D</defname></param>
+        <param><defname>E</defname></param>
+        <initializer>  if (A-&gt;pt + 2 &gt; A-&gt;max) {\
+if (realloc_stack(stt) == 0) {			\
+      A-&gt;err = RESOURCE_ERROR_AUXILIARY_STACK;\
+      continue;\
+    }\
+}						\
+  push_sub_term__(A,B,C,D,<ref refid="YapErrors_8h_1a24e1d04742b1c8d479921c23ce325702" kindref="member">E</ref>);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="64" column="9" bodyfile="C/terms.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1gae6406857e7bf20a22e81253d416711ff" prot="public" static="no">
+        <name>pop_sub_term</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <initializer>( DEB_DOOB(&quot;-&quot;,A)   pop_sub_term__(A,B,C))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="72" column="9" bodyfile="C/terms.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga22978b0d0fce17cbdf9060c7e9cf67c2" prot="public" static="no">
+        <name>RESET_TERM_VISITOR_0</name>
+        <param></param>
+        <initializer>  if (stt-&gt;err){   Term* pt0,*pt0_end;\
+      while ((pop_sub_term(stt, &amp;pt0, &amp;pt0_end))){}	;				 \
+    stt-&gt;arenap= NULL;							\
+      stt-&gt;bindp = NULL;   \
+      HR = stt-&gt;hlow;                    \
+    t = term_error_handler(stt-&gt;bindp,t,stt);	\
+stt-&gt;err = 0;					\
+   }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="99" column="9" bodyfile="C/terms.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga519d3fff1b850bc5dc2ca8ec6a23e86e" prot="public" static="no">
+        <name>RESET_TERM_VISITOR_1</name>
+        <param><defname>v</defname></param>
+        <param><defname>v0</defname></param>
+        <initializer>  if (stt-&gt;err){   Term* pt0,*pt0_end;\
+      while ((pop_sub_term(stt, &amp;pt0, &amp;pt0_end))){}	;	 \
+    stt-&gt;arenap= NULL;							\
+      stt-&gt;bindp = NULL;   \
+      HR = stt-&gt;hlow;\
+yhandle_t yv = Yap_InitHandle(v0);		\
+    t = term_error_handler(stt-&gt;bindp,t,stt);	\
+stt-&gt;err = 0;\
+v = v0=Yap_PopHandle(yv);				\
+   }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="109" column="9" bodyfile="C/terms.c" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1gabd05b5178f601fb0f6305c39d1afd76f" prot="public" static="no">
+        <name>RESET_TERM_VISITOR_3</name>
+        <param><defname>first</defname></param>
+        <param><defname>tail</defname></param>
+        <param><defname>tail0</defname></param>
+        <param><defname>end</defname></param>
+        <initializer>  if (stt-&gt;err){   Term* pt0,*pt0_end;\
+    while ((pop_sub_term(stt, &amp;pt0, &amp;pt0_end))){};			\
+    stt-&gt;arenap= NULL;							\
+      stt-&gt;bindp = NULL;   \
+      HR = stt-&gt;hlow;                    \
+     yhandle_t yv = Yap_InitHandle(tail0);\
+     t = term_error_handler(stt-&gt;bindp,t,stt);	\
+     tail0 = Yap_PopHandle(yv);\
+     tail = tail0;\
+first = tail;\
+end = NULL;					\
+ stt-&gt;err = 0;					\
+   }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="123" column="9" bodyfile="C/terms.c" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga9cfca773157a05da13a50c07f587da22" prot="public" static="no">
+        <name>RESET_TERM_VISITOR_4</name>
+        <param></param>
+        <initializer>  if (stt-&gt;err){   Term* pt0,*pt0_end;\
+    while ((pop_sub_term(stt, &amp;pt0, &amp;pt0_end))){};            \
+    stt-&gt;arenap= NULL;                            \
+      stt-&gt;bindp = NULL;   \
+      HR = stt-&gt;hlow;                    \
+ stt-&gt;err = 0;                    \
+   }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="139" column="9" bodyfile="C/terms.c" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga26c622f608b33f8341f4efc6a714db31" prot="public" static="no">
+        <name>RESET_TERM_VISITOR_5</name>
+        <param><defname>first</defname></param>
+        <param><defname>tail</defname></param>
+        <param><defname>tail0</defname></param>
+        <initializer>  if (stt-&gt;err){   Term* pt0,*pt0_end;\
+    while ((pop_sub_term(stt, &amp;pt0, &amp;pt0_end))){};			\
+    stt-&gt;arenap= NULL;							\
+      stt-&gt;bindp = NULL;   \
+      HR = stt-&gt;hlow;                    \
+     yhandle_t yv = Yap_InitHandle(tail0);\
+     t = term_error_handler(stt-&gt;bindp,t,stt);	\
+     tail0 = Yap_PopHandle(yv);\
+     tail = tail0;\
+first = tail;\
+ stt-&gt;err = 0;					\
+   }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="149" column="9" bodyfile="C/terms.c" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga63a9baaeda8955091ad3bb80609c3f7e" prot="public" static="no">
+        <name>LIST_HOOK_CODE</name>
+        <initializer>if (IS_VISIT_MARKER(ptd1[0])) { goto found;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="212" column="9" bodyfile="C/terms.c" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" prot="public" static="no">
+        <name>COMPOUND_HOOK_CODE</name>
+        <initializer>if (IS_VISIT_MARKER(ptd1[0])) { goto found;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="213" column="9" bodyfile="C/terms.c" bodystart="1175" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_0();</initializer>
@@ -554,7 +746,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="220" column="9"/>
+        <location file="C/terms.c" line="220" column="9"/>
       </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
@@ -565,7 +757,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="239" column="9"/>
+        <location file="C/terms.c" line="239" column="9"/>
       </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
@@ -576,9 +768,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="259" column="9"/>
+        <location file="C/terms.c" line="259" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  while (pop_sub_term(stt, NULL, NULL)) ;\
+  stt-&gt;pt0=stt-&gt;pt=stt-&gt;max=NULL;\
+  return false;</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="272" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_0();</initializer>
@@ -588,9 +793,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="280" column="9"/>
+        <location file="C/terms.c" line="280" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  while (pop_sub_term(stt, NULL, NULL)) ;\
+  stt-&gt;pt0=stt-&gt;pt=stt-&gt;max=NULL;\
+  return ptd0;</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="323" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_0();</initializer>
@@ -600,9 +818,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="331" column="9"/>
+        <location file="C/terms.c" line="331" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  if (v == d0) {\
+    while (pop_sub_term(stt, NULL, NULL)) ;\
+    stt-&gt;pt0=stt-&gt;pt=stt-&gt;max=NULL;\
+    return true;\
+}</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="361" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_1(v,v0);</initializer>
@@ -612,9 +845,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="371" column="9"/>
+        <location file="C/terms.c" line="371" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  if (HR + 1024 &gt; ASP) {\
+    stt-&gt;err = RESOURCE_ERROR_STACK;\
+    continue;\
+  }\
+  if (end == NULL) {					\
+    first = AbsPair(HR);\
+  } else {\
+    end[0] = AbsPair(HR);\
+  }\
+  HR[0] = (CELL)ptd0;\
+  HR[1] = tail;\
+  end = (HR + 1);			\
+  HR += 2;\</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="391" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_3(first,tail,tail0,end)</initializer>
@@ -624,9 +880,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="433" column="9"/>
+        <location file="C/terms.c" line="433" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>mSET(ptd0, TermNone);</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="447" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_4()</initializer>
@@ -636,10 +903,44 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="457" column="9"/>
+        <location file="C/terms.c" line="457" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
-      <member refid="group__YAPTerms_1gaf84323b2014f38899a25eca0a0e43aeb" kind="define"><name>ATOMIC_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  mSET(pt0, TermNone);	\
+  if (HR + 1024 &gt; ASP) {\
+    stt-&gt;err = RESOURCE_ERROR_STACK;\
+    continue;\
+  }\
+  if (end == NULL) {\
+    first = AbsPair(HR);\
+  } else {\
+    end[0] = AbsPair(HR);\
+  }\
+  HR[0] = (CELL)ptd0;\
+  HR[1] = tail;\
+  end = (HR + 1);			\
+  HR += 2;\</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="464" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1gaf84323b2014f38899a25eca0a0e43aeb" prot="public" static="no">
+        <name>ATOMIC_HOOK_CODE</name>
+        <initializer>if (d0==TermNone) mSET(ptd0,(CELL)ptd0);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="503" column="9" bodyfile="C/terms.c" bodystart="523" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_0()</initializer>
@@ -649,9 +950,36 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="512" column="9"/>
+        <location file="C/terms.c" line="512" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaf84323b2014f38899a25eca0a0e43aeb" kind="define"><name>ATOMIC_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaf84323b2014f38899a25eca0a0e43aeb" prot="public" static="no">
+        <name>ATOMIC_HOOK_CODE</name>
+        <initializer> \
+  if (d0 == TermNone) {\
+  if (HR + 1024 &gt; ASP) {\
+    stt-&gt;err = RESOURCE_ERROR_STACK;\
+    continue;\
+  }\
+  if (end == NULL) {\
+    first = AbsPair(HR);\
+  } else {\
+    end[0] = AbsPair(HR);\
+  }\
+ /* next make sure noone will see this, *start = HRs as a variable again */\
+RESET_VARIABLE(ptd0);\
+  HR[0] = (CELL)ptd0;\
+  HR[1] = tail;\
+  end = HR + 1;\
+  HR += 2;\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="523" column="9" bodyfile="C/terms.c" bodystart="523" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_3(first,tail,tail0,end)</initializer>
@@ -661,9 +989,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="551" column="9"/>
+        <location file="C/terms.c" line="551" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  if (HR + 1024 &gt; ASP) {\
+    stt-&gt;err = RESOURCE_ERROR_STACK;\
+    continue;\
+  }\
+  if (end == NULL) {					\
+    first = AbsPair(HR);\
+  } else {\
+    end[0] = AbsPair(HR);\
+  }\
+  HR[0] = (CELL)ptd0;\
+  HR[1] = tail;\
+  end = (HR + 1);			\
+  HR += 2;\</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="610" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_3(first,tail,tail0,end)</initializer>
@@ -673,9 +1024,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="631" column="9"/>
+        <location file="C/terms.c" line="631" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  {								\
+   if (!IS_VISIT_MARKER(*ptd0) &amp;&amp; GlobalIsAttVar(ptd0)) {\
+     if (HR + 1024 &gt; ASP) {\
+       undo_vbindings(first, tail PASS_REGS);	\
+       stt-&gt;err = RESOURCE_ERROR_STACK;		\
+       continue;				\
+     }						\
+     if (end == NULL) {				\
+       first = AbsPair(HR);			\
+     } else {					\
+    end[0] = AbsPair(HR);\
+  }\
+  HR[0] = (CELL)ptd0;\
+  end = HR + 1;\
+  HR += 2;\
+  * ptd0 = TermNone;			\
+ptd0 += 2;					\
+dd0 = *ptd0;\
+ mderef_head(d0, dd0, var_in_term_unk);  \
+goto  var_in_term_nvar;\
+   }\
+    }</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="873" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_0()</initializer>
@@ -685,9 +1068,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="906" column="9"/>
+        <location file="C/terms.c" line="906" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  {								\
+   if (!IS_VISIT_MARKER(*ptd0) &amp;&amp; GlobalIsAttVar(ptd0)) {\
+     if (HR + 1024 &gt; ASP) {\
+       undo_vbindings(first, tail PASS_REGS);	\
+       stt-&gt;err = RESOURCE_ERROR_STACK;		\
+       continue;				\
+     }						\
+     if (end == NULL) {				\
+       first = AbsPair(HR);			\
+     } else {					\
+    end[0] = AbsPair(HR);\
+  }\
+  HR[0] = (CELL)ptd0;\
+  end = HR + 1;\
+  HR += 2;\
+  * ptd0 = TermNone;			\
+ptd0 += 2;					\
+dd0 = *ptd0;\
+ mderef_head(d0, dd0, var_in_term_unk);  \
+goto  var_in_term_nvar;\
+   }\
+    }</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="954" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_0()</initializer>
@@ -697,10 +1112,49 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="987" column="9"/>
+        <location file="C/terms.c" line="987" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" kind="define"><name>VAR_HOOK_CODE</name></member>
-      <member refid="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" kind="define"><name>COMPOUND_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1gaed9150aee3e01b6c09937323cf62053f" prot="public" static="no">
+        <name>VAR_HOOK_CODE</name>
+        <initializer>  {			\
+INC_H(2,ts);\
+ts[0] = (CELL)fvar;			\
+if ( handle_singles){				\
+    ts[1] = TermUnderscore;			\
+} \
+ else if (prefix) {				\
+ char *s = (char *)HR;\
+        utf8proc_ssize_t j = l, k=numbv++;\
+     while (k) {					\
+            s[j++] = k%26+&apos;A&apos;;\
+            k = k/26;\
+        }\
+        s[j] = &apos;\0&apos;;\
+	ts[1]=MkAtomTerm(Yap_LookupAtom(s));	\
+    } else {\
+      ts[1] = MkIntTerm(numbv++); \
+     }\
+ mBind(ptd0, AbsAppl(ts));\
+ }</initializer>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its application s </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1022" column="9" bodyfile="C/terms.c" bodystart="1022" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" prot="public" static="no">
+        <name>COMPOUND_HOOK_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1045" column="9" bodyfile="C/terms.c" bodystart="1175" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_0()</initializer>
@@ -710,9 +1164,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="1089" column="9"/>
+        <location file="C/terms.c" line="1089" column="9"/>
       </memberdef>
-      <member refid="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" kind="define"><name>COMPOUND_HOOK_CODE</name></member>
+      <memberdef kind="define" id="group__YAPTerms_1ga3950871d8f57dc2fcf34f76b9de2b3c1" prot="public" static="no">
+        <name>COMPOUND_HOOK_CODE</name>
+        <initializer>  if ( f == FunctorDollarVar  ) {	\
+  if ( ptd1[1] == TermUnderscore ) {\
+ mMaBind(ptd0,(CELL)ptd0);				\
+  goto loop;					\
+  }\
+    HR[0] = AbsPair(HR+2);		\
+    HR[1] = *bp; \
+*bp = AbsPair(HR);\
+HR[2] = ptd1[1]; /* key */			\
+ HR[3] = (CELL) ptd0; /* variable */		\
+ mMaBind(ptd0,(CELL)ptd0);				\
+ bp = HR+1;					\
+ HR+= 4;\
+  goto loop;					\
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1175" column="9" bodyfile="C/terms.c" bodystart="1175" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="terms_8c_1a56b48b991c778568f2a863b1a268f407" prot="public" static="no">
         <name>RESET_TERM_VISITOR</name>
         <initializer>RESET_TERM_VISITOR_4()</initializer>
@@ -722,7 +1200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="1201" column="9"/>
+        <location file="C/terms.c" line="1201" column="9"/>
       </memberdef>
       <memberdef kind="define" id="terms_8c_1af58c55f6ee79743773beb5c0a5fc194b" prot="public" static="no">
         <name>SAVE_EXTRA</name>
@@ -734,7 +1212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="1255" column="9"/>
+        <location file="C/terms.c" line="1255" column="9"/>
       </memberdef>
       <memberdef kind="define" id="terms_8c_1ae697c3949f3d7a8423c4fe25cbfd427e" prot="public" static="no">
         <name>RESTORE_EXTRA</name>
@@ -746,7 +1224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="1256" column="9"/>
+        <location file="C/terms.c" line="1256" column="9"/>
       </memberdef>
       <memberdef kind="define" id="terms_8c_1af58c55f6ee79743773beb5c0a5fc194b" prot="public" static="no">
         <name>SAVE_EXTRA</name>
@@ -758,7 +1236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="1262" column="11"/>
+        <location file="C/terms.c" line="1262" column="11"/>
       </memberdef>
       <memberdef kind="define" id="terms_8c_1ae697c3949f3d7a8423c4fe25cbfd427e" prot="public" static="no">
         <name>RESTORE_EXTRA</name>
@@ -770,64 +1248,922 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/terms.c" line="1263" column="9"/>
+        <location file="C/terms.c" line="1263" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <member refid="group__YAPTerms_1ga1946dcae4845817b7aeb748cdc481107" kind="typedef"><name>att_rec_t</name></member>
+      <memberdef kind="typedef" id="group__YAPTerms_1ga1946dcae4845817b7aeb748cdc481107" prot="public" static="no">
+        <type>struct <ref refid="structatt__rec" kindref="compound">att_rec</ref></type>
+        <definition>typedef struct att_rec att_rec_t</definition>
+        <argsstring></argsstring>
+        <name>att_rec_t</name>
+        <briefdescription>
+<para>routine to locate attributed variables </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="789" column="11"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__YAPTerms_1gac6e6d5daa7823a3d542e80ec73cde594" kind="function"><name>push_sub_term__</name></member>
-      <member refid="group__YAPTerms_1ga8ec4dc1f101b1716a38946b04bad1272" kind="function"><name>pop_sub_term__</name></member>
-      <member refid="group__YAPTerms_1ga75ab08f664fc559cbd2ea7e1ee35c01b" kind="function"><name>reset_list_of_term_vars</name></member>
-      <member refid="group__YAPTerms_1ga3f8810fdd63b35a27030571c8b49e597" kind="function"><name>term_error_handler</name></member>
-      <member refid="group__YAPTerms_1ga42d0581ae1562d2214e24cd84074e645" kind="function"><name>cyclic_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga055d18e3efaf723770083789e3234d5b" kind="function"><name>Yap_IsCyclicTerm</name></member>
-      <member refid="group__YAPTerms_1gac2f25dde1271b87a031a5af7f0d1ee30" kind="function"><name>cyclic_term</name></member>
-      <member refid="group__YAPTerms_1gad7f87ac9f87649bf4aa40685f372421a" kind="function"><name>ground_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga8b66fe01cb779592adfe55f4aeeab06d" kind="function"><name>Yap_IsGroundTerm</name></member>
-      <member refid="group__YAPTerms_1ga65129b56b2b2ad9cb0d9a9640026ebf2" kind="function"><name>ground</name></member>
-      <member refid="group__YAPTerms_1gaa944d77149a005dc3509f7d30b9f42d3" kind="function"><name>non_ground_complex_term</name></member>
-      <member refid="group__YAPTerms_1gaa245e27bd04ec10c1c3905499a8f8c0c" kind="function"><name>non_ground</name></member>
-      <member refid="group__YAPTerms_1ga52e1a6fdf929ffbf409c9ee4d7227cb2" kind="function"><name>var_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga9d63afc682e4e6761f82c0f7b7e8899e" kind="function"><name>var_in_term</name></member>
-      <member refid="group__YAPTerms_1ga9eebafd214ecbfabdb1f822acbde5999" kind="function"><name>vars_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga43f5b8f52f475f22e2f484bea7b9c0d6" kind="function"><name>mark_vars_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga7d739f8425fd93fdc00c00a0bebb33d0" kind="function"><name>unmark_vars_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga2663f8440857166b74b86de5e3bb31bf" kind="function"><name>marked_vars_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga50760c84e38a52c70b8d808dac1fc24a" kind="function"><name>variables_in_term</name></member>
-      <member refid="group__YAPTerms_1gaffdb74d03b75647f53612b954ef756c0" kind="function"><name>term_variables3</name></member>
-      <member refid="group__YAPTerms_1ga66eaff91454977d90fd8cd7d0f812e90" kind="function"><name>occurrences_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1gaa67a3d27dc004bf9a165cd07a2b12fd0" kind="function"><name>term_variable_occurrences</name></member>
-      <member refid="group__YAPTerms_1ga5291a1e919f6f5f54589c0b26e603d0d" kind="function"><name>term_variable_occurrences3</name></member>
-      <member refid="group__YAPTerms_1ga52339044cfc448d63c5f7049e9e00e0e" kind="function"><name>term_variables_union</name></member>
-      <member refid="group__YAPTerms_1gaa30b4b31ca52d163fc29624cf173582b" kind="function"><name>term_variables_difference</name></member>
-      <member refid="group__YAPTerms_1ga54633a43d7e4b492f3730642ed790c57" kind="function"><name>term_variables_intersection</name></member>
-      <member refid="group__YAPTerms_1ga564b726b1c192d4b6824b6e9db117bdd" kind="function"><name>Yap_TermVariables</name></member>
-      <member refid="group__YAPTerms_1ga6cb45358e8bd85cda70d6cfa66c29410" kind="function"><name>term_variables</name></member>
-      <member refid="group__YAPTerms_1ga7bdcde6bedd405a3de0466f959ed6af8" kind="function"><name>p_new_variables_in_term</name></member>
-      <member refid="group__YAPTerms_1ga0e782e3a011aa6562c6f043c278859a8" kind="function"><name>free_variables_in_term</name></member>
-      <member refid="group__YAPTerms_1ga5a1552944613d4ac11aaefea92b2452e" kind="function"><name>undo_vbindings</name></member>
-      <member refid="group__YAPTerms_1gaa357c0f224a478554dd2a949ee29bff7" kind="function"><name>attvars_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga197e52a273ba5c7a83ff79de74eb8c7b" kind="function"><name>term_attvars</name></member>
-      <member refid="group__YAPTerms_1ga41743a9eb6ba31056b6b1a6a1a226e6c" kind="function"><name>undo_vterms</name></member>
-      <member refid="group__YAPTerms_1gaa12cc6ffc37c456e9e5eae36213b500e" kind="function"><name>attterms_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga724898b7d1a276ae759d147f4c641566" kind="function"><name>term_attterms</name></member>
-      <member refid="group__YAPTerms_1ga5bcf334daa64726a459c35fbe3fd5849" kind="function"><name>numbervars_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga0ef5770cd70fa07496d0693364cde97a" kind="function"><name>Yap_NumberVars</name></member>
-      <member refid="group__YAPTerms_1ga6e2042ca47b23b52f2440fd4b2988d1b" kind="function"><name>numbervars</name></member>
-      <member refid="group__YAPTerms_1ga4b4d56995f6f7ae4cab01bede6d15176" kind="function"><name>singleton_vs_numbervars</name></member>
-      <member refid="group__YAPTerms_1ga9850aafc0c9e6f48d4f0e891e7d39b41" kind="function"><name>unnumbervars_in_complex_term</name></member>
-      <member refid="group__YAPTerms_1ga277b28d3f1a004d0931d8f0e134285da" kind="function"><name>unnumbervars</name></member>
-      <member refid="group__YAPTerms_1ga89e5b91221f1f3c32d772a49d5a9b334" kind="function"><name>Yap_UnNumberTerm</name></member>
-      <member refid="group__YAPTerms_1ga321e8240a6b9f127761b90889a01191b" kind="function"><name>varnumbers</name></member>
-      <member refid="group__YAPTerms_1gab0e2b5563a506dac5f23fdbdcb9b4847" kind="function"><name>Yap_InitTermCPreds</name></member>
+      <memberdef kind="function" id="group__YAPTerms_1gac6e6d5daa7823a3d542e80ec73cde594" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool push_sub_term__</definition>
+        <argsstring>(Ystack_t *sp, CELL d0, CELL *pt0, CELL *b, CELL *e)</argsstring>
+        <name>push_sub_term__</name>
+        <param>
+          <type><ref refid="structYstack__t" kindref="compound">Ystack_t</ref> *</type>
+          <declname>sp</declname>
+        </param>
+        <param>
+          <type>CELL</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>CELL *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="73" column="20" bodyfile="C/terms.c" bodystart="73" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga8ec4dc1f101b1716a38946b04bad1272" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool pop_sub_term__</definition>
+        <argsstring>(Ystack_t *sp, CELL **b, CELL **e)</argsstring>
+        <name>pop_sub_term__</name>
+        <param>
+          <type><ref refid="structYstack__t" kindref="compound">Ystack_t</ref> *</type>
+          <declname>sp</declname>
+        </param>
+        <param>
+          <type>CELL **</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>CELL **</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="85" column="20" bodyfile="C/terms.c" bodystart="85" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga75ab08f664fc559cbd2ea7e1ee35c01b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void reset_list_of_term_vars</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>reset_list_of_term_vars</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="163" column="13" bodyfile="C/terms.c" bodystart="163" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga3f8810fdd63b35a27030571c8b49e597" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term term_error_handler</definition>
+        <argsstring>(Term *bindp, Term t0, Ystack_t *stt)</argsstring>
+        <name>term_error_handler</name>
+        <param>
+          <type>Term *</type>
+          <declname>bindp</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type><ref refid="structYstack__t" kindref="compound">Ystack_t</ref> *</type>
+          <declname>stt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="175" column="13" bodyfile="C/terms.c" bodystart="175" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga42d0581ae1562d2214e24cd84074e645" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term cyclic_complex_term</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>cyclic_complex_term</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its applications </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="218" column="13" bodyfile="C/terms.c" bodystart="218" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga055d18e3efaf723770083789e3234d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_IsCyclicTerm</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>Yap_IsCyclicTerm</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="232" column="6" bodyfile="C/terms.c" bodystart="232" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gac2f25dde1271b87a031a5af7f0d1ee30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int cyclic_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>cyclic_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="254" column="12" bodyfile="C/terms.c" bodystart="254" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gad7f87ac9f87649bf4aa40685f372421a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool ground_complex_term</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>ground_complex_term</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="277" column="13" bodyfile="C/terms.c" bodystart="277" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga8b66fe01cb779592adfe55f4aeeab06d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_IsGroundTerm</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_IsGroundTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="286" column="6" bodyfile="C/terms.c" bodystart="286" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga65129b56b2b2ad9cb0d9a9640026ebf2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int ground</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>ground</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="305" column="12" bodyfile="C/terms.c" bodystart="305" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gaa944d77149a005dc3509f7d30b9f42d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CELL *</type>
+        <definition>static CELL * non_ground_complex_term</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>non_ground_complex_term</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="328" column="13" bodyfile="C/terms.c" bodystart="328" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gaa245e27bd04ec10c1c3905499a8f8c0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int non_ground</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>non_ground</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="342" column="12" bodyfile="C/terms.c" bodystart="342" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga52e1a6fdf929ffbf409c9ee4d7227cb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool var_in_complex_term</definition>
+        <argsstring>(Term t, Term v USES_REGS)</argsstring>
+        <name>var_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term v</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="369" column="13" bodyfile="C/terms.c" bodystart="369" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga9d63afc682e4e6761f82c0f7b7e8899e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int var_in_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>var_in_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="377" column="12" bodyfile="C/terms.c" bodystart="377" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga9eebafd214ecbfabdb1f822acbde5999" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term vars_in_complex_term</definition>
+        <argsstring>(Term t, Term tail USES_REGS)</argsstring>
+        <name>vars_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term tail</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its applications </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="428" column="13" bodyfile="C/terms.c" bodystart="428" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga43f5b8f52f475f22e2f484bea7b9c0d6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mark_vars_in_complex_term</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>mark_vars_in_complex_term</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its applications </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="452" column="13" bodyfile="C/terms.c" bodystart="452" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga7d739f8425fd93fdc00c00a0bebb33d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void unmark_vars_in_complex_term</definition>
+        <argsstring>(Term t USES_REGS)</argsstring>
+        <name>unmark_vars_in_complex_term</name>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its applications </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="510" column="13" bodyfile="C/terms.c" bodystart="510" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga2663f8440857166b74b86de5e3bb31bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term marked_vars_in_complex_term</definition>
+        <argsstring>(Term t, Term tail USES_REGS)</argsstring>
+        <name>marked_vars_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term tail</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its applications </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="546" column="13" bodyfile="C/terms.c" bodystart="546" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga50760c84e38a52c70b8d808dac1fc24a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int variables_in_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>variables_in_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="565" column="12" bodyfile="C/terms.c" bodystart="565" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gaffdb74d03b75647f53612b954ef756c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_variables3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_variables3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="589" column="12" bodyfile="C/terms.c" bodystart="589" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga66eaff91454977d90fd8cd7d0f812e90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term occurrences_in_complex_term</definition>
+        <argsstring>(Term t, Term tail USES_REGS)</argsstring>
+        <name>occurrences_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term tail</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="626" column="13" bodyfile="C/terms.c" bodystart="626" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gaa67a3d27dc004bf9a165cd07a2b12fd0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_variable_occurrences</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_variable_occurrences</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="646" column="12" bodyfile="C/terms.c" bodystart="646" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga5291a1e919f6f5f54589c0b26e603d0d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_variable_occurrences3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_variable_occurrences3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="663" column="12" bodyfile="C/terms.c" bodystart="663" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga52339044cfc448d63c5f7049e9e00e0e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_variables_union</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_variables_union</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="688" column="12" bodyfile="C/terms.c" bodystart="688" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gaa30b4b31ca52d163fc29624cf173582b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_variables_difference</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_variables_difference</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="704" column="12" bodyfile="C/terms.c" bodystart="704" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga54633a43d7e4b492f3730642ed790c57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_variables_intersection</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_variables_intersection</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="722" column="12" bodyfile="C/terms.c" bodystart="722" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga564b726b1c192d4b6824b6e9db117bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_TermVariables</definition>
+        <argsstring>(Term t, Term t0 USES_REGS)</argsstring>
+        <name>Yap_TermVariables</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term t0</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>Extends list with all the variables in a term. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[t]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the term </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>[list]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the original list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>[USES_REGS]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threading </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="743" column="6" bodyfile="C/terms.c" bodystart="743" bodyend="756"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga6cb45358e8bd85cda70d6cfa66c29410" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_variables</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_variables</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="765" column="12" bodyfile="C/terms.c" bodystart="765" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga7bdcde6bedd405a3de0466f959ed6af8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int p_new_variables_in_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>p_new_variables_in_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="805" column="1" bodyfile="C/terms.c" bodystart="805" bodyend="811"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga0e782e3a011aa6562c6f043c278859a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int free_variables_in_term</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>free_variables_in_term</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="814" column="1" bodyfile="C/terms.c" bodystart="814" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga5a1552944613d4ac11aaefea92b2452e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool undo_vbindings</definition>
+        <argsstring>(Term t, Term t0 USES_REGS)</argsstring>
+        <name>undo_vbindings</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term t0</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>all attributed variables </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="863" column="13" bodyfile="C/terms.c" bodystart="863" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gaa357c0f224a478554dd2a949ee29bff7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term attvars_in_complex_term</definition>
+        <argsstring>(Term t, Term tail USES_REGS)</argsstring>
+        <name>attvars_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term tail</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its applications </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="902" column="13" bodyfile="C/terms.c" bodystart="902" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga197e52a273ba5c7a83ff79de74eb8c7b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_attvars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_attvars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="922" column="12" bodyfile="C/terms.c" bodystart="922" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga41743a9eb6ba31056b6b1a6a1a226e6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool undo_vterms</definition>
+        <argsstring>(Term t, Term t0 USES_REGS)</argsstring>
+        <name>undo_vterms</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term t0</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>all attributed variables </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="943" column="13" bodyfile="C/terms.c" bodystart="943" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gaa12cc6ffc37c456e9e5eae36213b500e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term attterms_in_complex_term</definition>
+        <argsstring>(Term t, Term tail USES_REGS)</argsstring>
+        <name>attterms_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Term tail</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>routine to locate all variables in a term, and its applications </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="983" column="13" bodyfile="C/terms.c" bodystart="983" bodyend="994"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga724898b7d1a276ae759d147f4c641566" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int term_attterms</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>term_attterms</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1003" column="12" bodyfile="C/terms.c" bodystart="1003" bodyend="1014"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga5bcf334daa64726a459c35fbe3fd5849" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int numbervars_in_complex_term</definition>
+        <argsstring>(Term t, int numbv, Functor fvar, bool handle_singles, const char *prefix USES_REGS)</argsstring>
+        <name>numbervars_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numbv</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>fvar</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_singles</declname>
+        </param>
+        <param>
+          <type>const char *prefix</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1080" column="12" bodyfile="C/terms.c" bodystart="1080" bodyend="1093"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga0ef5770cd70fa07496d0693364cde97a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_NumberVars</definition>
+        <argsstring>(Term t, int numbv, Functor f, bool handle_singles, const char *prefix USES_REGS)</argsstring>
+        <name>Yap_NumberVars</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numbv</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_singles</declname>
+        </param>
+        <param>
+          <type>const char *prefix</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+<para>numbervariables in term t <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1096" column="5" bodyfile="C/terms.c" bodystart="1096" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga6e2042ca47b23b52f2440fd4b2988d1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int numbervars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>numbervars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1111" column="12" bodyfile="C/terms.c" bodystart="1111" bodyend="1136"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga4b4d56995f6f7ae4cab01bede6d15176" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int singleton_vs_numbervars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>singleton_vs_numbervars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1146" column="12" bodyfile="C/terms.c" bodystart="1146" bodyend="1169"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga9850aafc0c9e6f48d4f0e891e7d39b41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool unnumbervars_in_complex_term</definition>
+        <argsstring>(Term t, CELL *HLow USES_REGS)</argsstring>
+        <name>unnumbervars_in_complex_term</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>CELL *HLow</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1193" column="13" bodyfile="C/terms.c" bodystart="1193" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga277b28d3f1a004d0931d8f0e134285da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int unnumbervars</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>unnumbervars</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1229" column="12" bodyfile="C/terms.c" bodystart="1229" bodyend="1234"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga89e5b91221f1f3c32d772a49d5a9b334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_UnNumberTerm</definition>
+        <argsstring>(Term t, CELL *HLow USES_REGS)</argsstring>
+        <name>Yap_UnNumberTerm</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>CELL *HLow</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1240" column="5" bodyfile="C/terms.c" bodystart="1240" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1ga321e8240a6b9f127761b90889a01191b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int varnumbers</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>varnumbers</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1252" column="12" bodyfile="C/terms.c" bodystart="1252" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPTerms_1gab0e2b5563a506dac5f23fdbdcb9b4847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitTermCPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitTermCPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/terms.c" line="1270" column="6" bodyfile="C/terms.c" bodystart="1270" bodyend="1306"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>applications of the tree walker pattern </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/terms.c"/>
+    <location file="C/terms.c"/>
   </compounddef>
 </doxygen>

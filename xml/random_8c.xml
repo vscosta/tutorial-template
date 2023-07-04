@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="random_8c" kind="file" language="C++">
     <compoundname>random.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -382,7 +382,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/random.c</label>
+        <label>os/random.c</label>
         <link refid="random_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -449,6 +449,148 @@
         <label>wchar.h</label>
       </node>
     </incdepgraph>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="group__InputOutput_1ga47a24aa376c947304aa9b882ab24feae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Yap_random</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>@groupdef YAPRandom Interface to the OS number generators </para>
+        </briefdescription>
+        <detaileddescription>
+<para>` <linebreak/>
+</para>
+<para>Older versios of YAP supported random number access through the expression <computeroutput>X is random</computeroutput> This newer code supports:</para>
+<para><itemizedlist>
+<listitem><para>initialization;</para>
+</listitem><listitem><para>random numbers as integers (signed or absolute) or as floating points</para>
+</listitem></itemizedlist>
+</para>
+<para>By default YAP uses rand48, a pseudo-random number generator that uses linear congruence and 48-bit integers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="65" column="1" bodyfile="os/random.c" bodystart="65" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga39f05dfbd005cc633c0559f1f7df4f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>UInt Yap_unsigned_integer_random</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_unsigned_integer_random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="83" column="1" bodyfile="os/random.c" bodystart="83" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga00ae7a338a048caad0d3f446124e8039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_signed_integer_random</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_signed_integer_random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="100" column="1" bodyfile="os/random.c" bodystart="100" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga8a385bbbe678fc95ddcbc2278e9d646e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int Srandom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Srandom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="202" column="1" bodyfile="os/random.c" bodystart="202" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga8fd58575479ba9e3127f1ed38298939c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int URandom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>URandom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="233" column="12" bodyfile="os/random.c" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1gaca75abc0c6958fbe6f373b175eb4ef51" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int Random</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Random</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="245" column="12" bodyfile="os/random.c" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1gaffd8f097b0c6bbd9c904c0ac8f77070e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitRandom</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitRandom</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize the default random number generator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>uses the process&apos;s srand call </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="258" column="1" bodyfile="os/random.c" bodystart="258" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1gaf8c82d580948cdefe661fb44485d97fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitRandomPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitRandomPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="271" column="1" bodyfile="os/random.c" bodystart="271" bodyend="281"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="var">
       <memberdef kind="variable" id="random_8c_1a25eed6915e40becef1746b44da675684" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -461,7 +603,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/random.c" line="37" column="14" bodyfile="/home/vsc/github/yap/os/random.c" bodystart="37" bodyend="-1"/>
+        <location file="os/random.c" line="43" column="14" bodyfile="os/random.c" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -479,79 +621,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/os/random.c" line="39" column="12" declfile="/home/vsc/github/yap/os/random.c" declline="39" declcolumn="12"/>
-      </memberdef>
-      <memberdef kind="function" id="random_8c_1a47a24aa376c947304aa9b882ab24feae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double Yap_random</definition>
-        <argsstring>(void)</argsstring>
-        <name>Yap_random</name>
-        <param>
-          <type>void</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/vsc/github/yap/os/random.c" line="43" column="1" bodyfile="/home/vsc/github/yap/os/random.c" bodystart="43" bodyend="57"/>
-      </memberdef>
-      <memberdef kind="function" id="random_8c_1a8a385bbbe678fc95ddcbc2278e9d646e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>Int</type>
-        <definition>static Int Srandom</definition>
-        <argsstring>(USES_REGS1)</argsstring>
-        <name>Srandom</name>
-        <param>
-          <type>USES_REGS1</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/vsc/github/yap/os/random.c" line="120" column="1" bodyfile="/home/vsc/github/yap/os/random.c" bodystart="120" bodyend="143"/>
-      </memberdef>
-      <memberdef kind="function" id="random_8c_1affd8f097b0c6bbd9c904c0ac8f77070e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Yap_InitRandom</definition>
-        <argsstring>(void)</argsstring>
-        <name>Yap_InitRandom</name>
-        <param>
-          <type>void</type>
-        </param>
-        <briefdescription>
-<para>Initialize the defaulr tandom number generator. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>uses the process&apos;s tome call </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/vsc/github/yap/os/random.c" line="152" column="1" bodyfile="/home/vsc/github/yap/os/random.c" bodystart="152" bodyend="162"/>
-      </memberdef>
-      <memberdef kind="function" id="random_8c_1af8c82d580948cdefe661fb44485d97fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Yap_InitRandomPreds</definition>
-        <argsstring>(void)</argsstring>
-        <name>Yap_InitRandomPreds</name>
-        <param>
-          <type>void</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/vsc/github/yap/os/random.c" line="165" column="1" bodyfile="/home/vsc/github/yap/os/random.c" bodystart="165" bodyend="173"/>
+        <location file="os/random.c" line="45" column="12" declfile="os/random.c" declline="45" declcolumn="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>YAP interface to random number generators. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/os/random.c"/>
+    <location file="os/random.c"/>
   </compounddef>
 </doxygen>

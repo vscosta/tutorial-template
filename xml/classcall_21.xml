@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="classcall_21" kind="class" language="Prolog" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classcall_21" kind="predicate" language="Prolog" prot="public">
     <compoundname>call/1</compoundname>
     <briefdescription>
 <para><bold>call</bold>( 0:P ) </para>
@@ -8,13 +8,12 @@
     <detaileddescription>
 <para>defined in the <emphasis>ISO</emphasis> standard</para>
 <para>Meta-call predicate</para>
-<para>If <emphasis>P</emphasis> is instantiated to an atom or a compound term, the goal <computeroutput>call(
-_P_)</computeroutput> is executed as if the clause was originally written as <emphasis>P</emphasis> instead as call( <emphasis>P</emphasis> ), except that any &quot;cut&quot; occurring in <emphasis>P</emphasis> only cuts alternatives in the execution of <emphasis>P</emphasis></para>
+<para>If <emphasis>P</emphasis> is instantiated to an atom or a compound term, the goal <computeroutput>call( _P_)</computeroutput> is executed as if the clause was originally written as <emphasis>P</emphasis> instead as call( <emphasis>P</emphasis> ), except that any &quot;cut&quot; occurring in <emphasis>P</emphasis> only cuts alternatives in the execution of <emphasis>P</emphasis></para>
 <para>Defined as if:</para>
 <para><programlisting><codeline><highlight class="stringliteral"></highlight><highlight class="normal">call(</highlight><highlight class="charliteral">G</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">:-</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral"></highlight><highlight class="normal">&apos;$execute&apos;(</highlight><highlight class="charliteral">G</highlight><highlight class="normal">)</highlight><highlight class="keyword">.</highlight></codeline>
 </programlisting> </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/pl/builtins.yap" line="1" column="1" bodyfile="/home/vsc/github/yap/pl/builtins.yap" bodystart="1" bodyend="-1"/>
+    <location file="pl/builtins.yap" line="1" column="1" bodyfile="pl/builtins.yap" bodystart="1" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

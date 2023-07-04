@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="group__InputOutput" kind="group">
     <compoundname>InputOutput</compoundname>
     <title>Built-in that perform Input/Output</title>
     <innerclass refid="classsee_21" prot="public">see/1</innerclass>
-    <innergroup refid="group__absf">File Name Resolution</innergroup>
     <innergroup refid="group__Aliases">Aliases to Stream Names</innergroup>
     <innergroup refid="group__CharIO">Character-Based Input/Output</innergroup>
     <innergroup refid="group__CharacterCodes">Character Encoding and Manipulation.</innergroup>
@@ -16,7 +15,150 @@
     <innergroup refid="group__WriteTerm">Term Writing in Prolog.</innergroup>
     <innergroup refid="group__IOSockets">YAP Old Style Socket and Pipe Interface</innergroup>
     <innergroup refid="group__FilesM">File and Directory Operations</innergroup>
+    <innergroup refid="group__absf">File Name Resolution</innergroup>
     <innergroup refid="group__StreamM">StreamM</innergroup>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="group__InputOutput_1ga47a24aa376c947304aa9b882ab24feae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Yap_random</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>@groupdef YAPRandom Interface to the OS number generators </para>
+        </briefdescription>
+        <detaileddescription>
+<para>` <linebreak/>
+</para>
+<para>Older versios of YAP supported random number access through the expression <computeroutput>X is random</computeroutput> This newer code supports:</para>
+<para><itemizedlist>
+<listitem><para>initialization;</para>
+</listitem><listitem><para>random numbers as integers (signed or absolute) or as floating points</para>
+</listitem></itemizedlist>
+</para>
+<para>By default YAP uses rand48, a pseudo-random number generator that uses linear congruence and 48-bit integers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="65" column="1" bodyfile="os/random.c" bodystart="65" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga39f05dfbd005cc633c0559f1f7df4f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UInt</type>
+        <definition>UInt Yap_unsigned_integer_random</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_unsigned_integer_random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="83" column="1" bodyfile="os/random.c" bodystart="83" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga00ae7a338a048caad0d3f446124e8039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int Yap_signed_integer_random</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_signed_integer_random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="100" column="1" bodyfile="os/random.c" bodystart="100" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga8a385bbbe678fc95ddcbc2278e9d646e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int Srandom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Srandom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="202" column="1" bodyfile="os/random.c" bodystart="202" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1ga8fd58575479ba9e3127f1ed38298939c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int URandom</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>URandom</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="233" column="12" bodyfile="os/random.c" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1gaca75abc0c6958fbe6f373b175eb4ef51" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int Random</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>Random</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="245" column="12" bodyfile="os/random.c" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1gaffd8f097b0c6bbd9c904c0ac8f77070e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitRandom</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitRandom</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize the default random number generator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>uses the process&apos;s srand call </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="258" column="1" bodyfile="os/random.c" bodystart="258" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="group__InputOutput_1gaf8c82d580948cdefe661fb44485d97fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitRandomPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitRandomPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/random.c" line="271" column="1" bodyfile="os/random.c" bodystart="271" bodyend="281"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
 <para>Some of the Input/Output predicates described below will in certain conditions provide error messages and abort only if the file_errors flag is set. </para>
     </briefdescription>

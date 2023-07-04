@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="classconvlist_23" kind="class" language="Prolog" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="classconvlist_23" kind="predicate" language="Prolog" prot="public">
     <compoundname>convlist/3</compoundname>
     <briefdescription>
 <para><bold>convlist</bold>(: Pred, + ListIn, ? ListOut) </para>
@@ -9,7 +9,7 @@
 <para>A combination of <ref refid="classmaplist_23" kindref="compound">maplist/3</ref> and <ref refid="classselectlist_23" kindref="compound">selectlist/3</ref> : creates <emphasis>ListOut</emphasis> by applying the predicate <emphasis>Pred</emphasis> to all list elements on which <emphasis>Pred</emphasis> succeeds</para>
 <para>ROK: convlist(Rewrite, OldList, NewList) is a sort of hybrid of <ref refid="classmaplist_23" kindref="compound">maplist/3</ref> and sublist/3 Each element of NewList is the image under Rewrite of some element of OldList, and order is preserved, but elements of OldList on which Rewrite is undefined (fails) are not represented Thus if foo(X,Y) :- integer(X), Y is X+1 then convlist(foo, [1,a,0,joe(99),101], [2,1,102]) </para>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/library/maplist.yap" line="2" column="1" bodyfile="/home/vsc/github/yap/library/maplist.yap" bodystart="2" bodyend="-1"/>
+    <location file="library/maplist.yap" line="2" column="1" bodyfile="library/maplist.yap" bodystart="2" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

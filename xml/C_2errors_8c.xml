@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="C_2errors_8c" kind="file" language="C++">
     <compoundname>errors.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -18,7 +18,7 @@
     <includes refid="YapErrors_8h" local="yes">YapErrors.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/errors.c</label>
+        <label>C/errors.c</label>
         <link refid="C_2errors_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -551,137 +551,2391 @@
     </incdepgraph>
     <innerclass refid="structc__error__info" prot="public">c_error_info</innerclass>
       <sectiondef kind="define">
-      <member refid="group__YAPErrors_1gaf718f8e2d0817aab95d12c9f46ccba9d" kind="define"><name>set_key_b</name></member>
-      <member refid="group__YAPErrors_1gaea052a50cccdb78c11af29c0c52e761e" kind="define"><name>set_key_i</name></member>
-      <member refid="group__YAPErrors_1gab588b8ec1bde14f7d3cb09a378760c13" kind="define"><name>set_key_s</name></member>
-      <member refid="group__YAPErrors_1ga07dcea8abda07db444a7d9ada324a361" kind="define"><name>set_key_t</name></member>
-      <member refid="group__YAPErrors_1ga876e9d0ccf1fd4dde861719cdd73aa3a" kind="define"><name>query_key_b</name></member>
-      <member refid="group__YAPErrors_1ga352b7955c6f175c8f527cf8672a9ff1d" kind="define"><name>query_key_i</name></member>
-      <member refid="group__YAPErrors_1ga934600faadcb727a40fa24bf75b17f80" kind="define"><name>query_key_s</name></member>
-      <member refid="group__YAPErrors_1gaaef7e45e9030ab3403c677239751ecb7" kind="define"><name>query_key_t</name></member>
-      <member refid="group__YAPErrors_1gad8442e941d4159eeeef6273600e584d1" kind="define"><name>YAP_BUF_SIZE</name></member>
-      <member refid="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" kind="define"><name>BEGIN_ERROR_CLASSES</name></member>
-      <member refid="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" kind="define"><name>END_ERROR_CLASSES</name></member>
-      <member refid="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" kind="define"><name>ECLASS</name></member>
-      <member refid="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" kind="define"><name>BEGIN_ERRORS</name></member>
-      <member refid="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" kind="define"><name>END_ERRORS</name></member>
-      <member refid="group__YAPErrors_1ga11444c784c8512ffeec46b934a58df73" kind="define"><name>E0</name></member>
-      <member refid="group__YAPErrors_1ga270ad5f14284eb5ba569e84e1870edf8" kind="define"><name>E</name></member>
-      <member refid="group__YAPErrors_1ga295401ac1f092023dcb57f5413cf0af6" kind="define"><name>E1</name></member>
-      <member refid="group__YAPErrors_1ga22fa5233716ebbee17a6d992a8c981f4" kind="define"><name>ES</name></member>
-      <member refid="group__YAPErrors_1gab972fa0940fc08b062b6e90f285f6229" kind="define"><name>E2</name></member>
-      <member refid="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" kind="define"><name>BEGIN_ERROR_CLASSES</name></member>
-      <member refid="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" kind="define"><name>ECLASS</name></member>
-      <member refid="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" kind="define"><name>END_ERROR_CLASSES</name></member>
-      <member refid="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" kind="define"><name>BEGIN_ERRORS</name></member>
-      <member refid="group__YAPErrors_1ga809ce406facb750b7a5527a174bc68b4" kind="define"><name>E0</name></member>
-      <member refid="group__YAPErrors_1ga94349dda5a01546b896cdf5ec9355e3f" kind="define"><name>E</name></member>
-      <member refid="group__YAPErrors_1ga3f035db927ba20839eda7667b7162d2e" kind="define"><name>E1</name></member>
-      <member refid="group__YAPErrors_1ga825eefa74684d7e00ba7c2fd30f6f0e2" kind="define"><name>ES</name></member>
-      <member refid="group__YAPErrors_1ga2fb952e27d3903cf63d48f81be0cb00c" kind="define"><name>E2</name></member>
-      <member refid="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" kind="define"><name>END_ERRORS</name></member>
-      <member refid="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" kind="define"><name>BEGIN_ERROR_CLASSES</name></member>
-      <member refid="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" kind="define"><name>ECLASS</name></member>
-      <member refid="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" kind="define"><name>END_ERROR_CLASSES</name></member>
-      <member refid="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" kind="define"><name>BEGIN_ERRORS</name></member>
-      <member refid="group__YAPErrors_1ga809ce406facb750b7a5527a174bc68b4" kind="define"><name>E0</name></member>
-      <member refid="group__YAPErrors_1ga94349dda5a01546b896cdf5ec9355e3f" kind="define"><name>E</name></member>
-      <member refid="group__YAPErrors_1ga3f035db927ba20839eda7667b7162d2e" kind="define"><name>E1</name></member>
-      <member refid="group__YAPErrors_1ga825eefa74684d7e00ba7c2fd30f6f0e2" kind="define"><name>ES</name></member>
-      <member refid="group__YAPErrors_1ga2fb952e27d3903cf63d48f81be0cb00c" kind="define"><name>E2</name></member>
-      <member refid="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" kind="define"><name>END_ERRORS</name></member>
+      <memberdef kind="define" id="group__YAPErrors_1gaf718f8e2d0817aab95d12c9f46ccba9d" prot="public" static="no">
+        <name>set_key_b</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>t</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    i-&gt;k = (t == TermTrue ? true : false);                                     \
+    return t == TermTrue || t == TermFalse;                                             \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="100" column="9" bodyfile="C/errors.c" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gaea052a50cccdb78c11af29c0c52e761e" prot="public" static="no">
+        <name>set_key_i</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>t</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    i-&gt;k = IsIntegerTerm(t) ? IntegerOfTerm(t) : 0;                            \
+    return IsIntegerTerm(t);                                                   \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="106" column="9" bodyfile="C/errors.c" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gab588b8ec1bde14f7d3cb09a378760c13" prot="public" static="no">
+        <name>set_key_s</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>t</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    const char *s = IsAtomTerm(t) ? RepAtom(AtomOfTerm(t))-&gt;StrOfAE            \
+                                  : IsStringTerm(t) ? StringOfTerm(t) : NULL;  \
+    if (s &amp;&amp; s[0]) {                                                           \
+      char *tmp = calloc(1, strlen(s) + 1);                                    \
+      strcpy(tmp, s);                                                          \
+      i-&gt;k = tmp;                                                              \
+    }                                                                          \
+    return i-&gt;k != NULL;                                                       \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="112" column="9" bodyfile="C/errors.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga07dcea8abda07db444a7d9ada324a361" prot="public" static="no">
+        <name>set_key_t</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>t</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    i-&gt;k = Yap_SaveTerm(t);                                                    \
+    return i-&gt;k != 0L;                                                         \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="124" column="9" bodyfile="C/errors.c" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga876e9d0ccf1fd4dde861719cdd73aa3a" prot="public" static="no">
+        <name>query_key_b</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    return i-&gt;k ? TermTrue : TermFalse;                                        \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="163" column="9" bodyfile="C/errors.c" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga352b7955c6f175c8f527cf8672a9ff1d" prot="public" static="no">
+        <name>query_key_i</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    return MkIntegerTerm(i-&gt;k);                                                \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="168" column="9" bodyfile="C/errors.c" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga934600faadcb727a40fa24bf75b17f80" prot="public" static="no">
+        <name>query_key_s</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    if (i-&gt;k &amp;&amp; i-&gt;k[0] != &apos;\0&apos;)                                               \
+      return MkAtomTerm(Yap_LookupAtom(i-&gt;k));                                 \
+    else                                                                       \
+      return TermEmptyAtom;                                                    \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="173" column="9" bodyfile="C/errors.c" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gaaef7e45e9030ab3403c677239751ecb7" prot="public" static="no">
+        <name>query_key_t</name>
+        <param><defname>k</defname></param>
+        <param><defname>ks</defname></param>
+        <param><defname>q</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>  if (strcmp(ks, q) == 0) {                                                    \
+    Term t;                                                                    \
+    if ((t = i-&gt;k) == 0)                                                       \
+      return TermNil;                                                          \
+    return t;                                                                  \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="181" column="9" bodyfile="C/errors.c" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gad8442e941d4159eeeef6273600e584d1" prot="public" static="no">
+        <name>YAP_BUF_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="575" column="9" bodyfile="C/errors.c" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" prot="public" static="no">
+        <name>BEGIN_ERROR_CLASSES</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="599" column="9" bodyfile="C/errors.c" bodystart="1194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" prot="public" static="no">
+        <name>END_ERROR_CLASSES</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="600" column="9" bodyfile="C/errors.c" bodystart="1198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" prot="public" static="no">
+        <name>ECLASS</name>
+        <param><defname>CL</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="601" column="9" bodyfile="C/errors.c" bodystart="1196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" prot="public" static="no">
+        <name>BEGIN_ERRORS</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="603" column="9" bodyfile="C/errors.c" bodystart="1208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" prot="public" static="no">
+        <name>END_ERRORS</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="604" column="9" bodyfile="C/errors.c" bodystart="1214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga11444c784c8512ffeec46b934a58df73" prot="public" static="no">
+        <name>E0</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <initializer>  case A: {                                                                    \
+    ft0 = MkAtomTerm(Yap_LookupAtom(C &quot;_error&quot;));                            \
+  } break;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="606" column="9" bodyfile="C/errors.c" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga270ad5f14284eb5ba569e84e1870edf8" prot="public" static="no">
+        <name>E</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <initializer>  case A: {                                                                    \
+    Term nt[2];                                                         \
+    nt[0] = MkAtomTerm(Yap_LookupAtom(C ));                                     \
+    if (culprit) nt[1] = culprit; else nt[1] = MkVarTerm();		\
+    ft0 = <ref refid="Yapproto_8h_1a7f5a50b2910fe257ee5d3fef426cf3af" kindref="member">Yap_MkApplTerm</ref>(Yap_MkFunctor(Yap_LookupAtom(i-&gt;classAsText), 2), 2, nt);             \
+  }break;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="611" column="9" bodyfile="C/errors.c" bodystart="1210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga295401ac1f092023dcb57f5413cf0af6" prot="public" static="no">
+        <name>E1</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <initializer>  case A: {                                                                    \
+    Term nt = MkAtomTerm(Yap_LookupAtom(C));				\
+    ft0 = <ref refid="Yapproto_8h_1a7f5a50b2910fe257ee5d3fef426cf3af" kindref="member">Yap_MkApplTerm</ref>(Yap_MkFunctor(Yap_LookupAtom(i-&gt;classAsText), 1), 1, &amp;nt);        \
+  }break;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="619" column="9" bodyfile="C/errors.c" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga22fa5233716ebbee17a6d992a8c981f4" prot="public" static="no">
+        <name>ES</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <initializer>  case A: {                                                                    \
+    Term nt = MkAtomTerm(Yap_LookupAtom(i-&gt;culprit));			\
+    ft0 = <ref refid="Yapproto_8h_1a7f5a50b2910fe257ee5d3fef426cf3af" kindref="member">Yap_MkApplTerm</ref>(Yap_MkFunctor(Yap_LookupAtom(i-&gt;classAsText), 1), 1, &amp;nt);        \
+  }break;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="625" column="9" bodyfile="C/errors.c" bodystart="1212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gab972fa0940fc08b062b6e90f285f6229" prot="public" static="no">
+        <name>E2</name>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <param><defname>C</defname></param>
+        <param><defname>D</defname></param>
+        <initializer>  case A: {                                                                    \
+    Term nt[3];                                                         \
+    nt[0] = MkAtomTerm(Yap_LookupAtom(C));                                     \
+    nt[1] = MkAtomTerm(Yap_LookupAtom(D));                                     \
+    if (culprit) nt[2] = culprit; else nt[2] = MkVarTerm();                                                       \
+    ft0 = <ref refid="Yapproto_8h_1a7f5a50b2910fe257ee5d3fef426cf3af" kindref="member">Yap_MkApplTerm</ref>(Yap_MkFunctor(Yap_LookupAtom(i-&gt;classAsText), 3), 3, nt);             \
+  } break;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="631" column="9" bodyfile="C/errors.c" bodystart="1213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" prot="public" static="no">
+        <name>BEGIN_ERROR_CLASSES</name>
+        <param></param>
+        <initializer>typedef enum aux_class {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1165" column="9" bodyfile="C/errors.c" bodystart="1194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" prot="public" static="no">
+        <name>ECLASS</name>
+        <param><defname>CL</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <initializer>CL##__,</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1167" column="9" bodyfile="C/errors.c" bodystart="1196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" prot="public" static="no">
+        <name>END_ERROR_CLASSES</name>
+        <param></param>
+        <initializer>  }                                                                            \
+  aux_class_t;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1169" column="9" bodyfile="C/errors.c" bodystart="1198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" prot="public" static="no">
+        <name>BEGIN_ERRORS</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1173" column="9" bodyfile="C/errors.c" bodystart="1208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga809ce406facb750b7a5527a174bc68b4" prot="public" static="no">
+        <name>E0</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1174" column="9" bodyfile="C/errors.c" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga94349dda5a01546b896cdf5ec9355e3f" prot="public" static="no">
+        <name>E</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1175" column="9" bodyfile="C/errors.c" bodystart="1210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga3f035db927ba20839eda7667b7162d2e" prot="public" static="no">
+        <name>E1</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1176" column="9" bodyfile="C/errors.c" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga825eefa74684d7e00ba7c2fd30f6f0e2" prot="public" static="no">
+        <name>ES</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1177" column="9" bodyfile="C/errors.c" bodystart="1212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga2fb952e27d3903cf63d48f81be0cb00c" prot="public" static="no">
+        <name>E2</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <param><defname>W</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1178" column="9" bodyfile="C/errors.c" bodystart="1213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" prot="public" static="no">
+        <name>END_ERRORS</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1179" column="9" bodyfile="C/errors.c" bodystart="1214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga133910fdb35365c06c508702227f05c2" prot="public" static="no">
+        <name>BEGIN_ERROR_CLASSES</name>
+        <param></param>
+        <initializer>static const char *c_error_class_name[] = {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1194" column="9" bodyfile="C/errors.c" bodystart="1194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1gad7621d6b2a804c333ea19b58631f2de2" prot="public" static="no">
+        <name>ECLASS</name>
+        <param><defname>CL</defname></param>
+        <param><defname>A</defname></param>
+        <param><defname>B</defname></param>
+        <initializer>A,</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1196" column="9" bodyfile="C/errors.c" bodystart="1196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga227f790b9236019201491f20cf40ddd6" prot="public" static="no">
+        <name>END_ERROR_CLASSES</name>
+        <param></param>
+        <initializer>  NULL                                                                         \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1198" column="9" bodyfile="C/errors.c" bodystart="1198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga088de32d088c81b0bc4730c0280c190f" prot="public" static="no">
+        <name>BEGIN_ERRORS</name>
+        <param></param>
+        <initializer>static struct <ref refid="structc__error__info" kindref="compound">c_error_info</ref> c_error_list[] = {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1208" column="9" bodyfile="C/errors.c" bodystart="1208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga809ce406facb750b7a5527a174bc68b4" prot="public" static="no">
+        <name>E0</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>{X, Y, Z, NULL},</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1209" column="9" bodyfile="C/errors.c" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga94349dda5a01546b896cdf5ec9355e3f" prot="public" static="no">
+        <name>E</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>{X, Y, Z, NULL},</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1210" column="9" bodyfile="C/errors.c" bodystart="1210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga3f035db927ba20839eda7667b7162d2e" prot="public" static="no">
+        <name>E1</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>{X, Y, NULL, NULL},</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1211" column="9" bodyfile="C/errors.c" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga825eefa74684d7e00ba7c2fd30f6f0e2" prot="public" static="no">
+        <name>ES</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <initializer>{X, Y, NULL, NULL},</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1212" column="9" bodyfile="C/errors.c" bodystart="1212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga2fb952e27d3903cf63d48f81be0cb00c" prot="public" static="no">
+        <name>E2</name>
+        <param><defname>X</defname></param>
+        <param><defname>Y</defname></param>
+        <param><defname>Z</defname></param>
+        <param><defname>W</defname></param>
+        <initializer>{X, Y, Z , W},</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1213" column="9" bodyfile="C/errors.c" bodystart="1213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__YAPErrors_1ga78688cd47b7c2826ce854b94c54e9b2e" prot="public" static="no">
+        <name>END_ERRORS</name>
+        <param></param>
+        <initializer>  { 0, YAPC_NO_ERROR, &quot;&quot; }                                                     \
+  }                                                                            \
+  ;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1214" column="9" bodyfile="C/errors.c" bodystart="1214" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <member refid="group__YAPErrors_1ga09b53381e90cf6de8ce35646a52c1cf0" kind="typedef"><name>c_error_t</name></member>
+      <memberdef kind="typedef" id="group__YAPErrors_1ga09b53381e90cf6de8ce35646a52c1cf0" prot="public" static="no">
+        <type>struct <ref refid="structc__error__info" kindref="compound">c_error_info</ref></type>
+        <definition>typedef struct c_error_info c_error_t</definition>
+        <argsstring></argsstring>
+        <name>c_error_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1206" column="11"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <member refid="group__YAPErrors_1gaf5b80d2673b463e101f0affd89d9fb40" kind="variable"><name>tmpbuf</name></member>
+      <memberdef kind="variable" id="group__YAPErrors_1gaf5b80d2673b463e101f0affd89d9fb40" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char tmpbuf[YAP_BUF_SIZE]</definition>
+        <argsstring>[YAP_BUF_SIZE]</argsstring>
+        <name>tmpbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="577" column="13" bodyfile="C/errors.c" bodystart="577" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__YAPErrors_1ga589007d62586279d2e8b83bacf760f0a" kind="function"><name>Yap_RestartYap</name></member>
-      <member refid="group__YAPErrors_1ga44059d881b056e758c73daa2d7b1a38b" kind="function"><name>setErr</name></member>
-      <member refid="group__YAPErrors_1ga1795a1b63f9e8b55e272f27f1d98fc56" kind="function"><name>queryErr</name></member>
-      <member refid="group__YAPErrors_1ga3f894e761cbd7fb64ef4689f4656bac2" kind="function"><name>print_key_b</name></member>
-      <member refid="group__YAPErrors_1gae41e35ebe6c09a7491085d9097c9612a" kind="function"><name>print_key_i</name></member>
-      <member refid="group__YAPErrors_1gaa132d346aa9232bb82067646239a3f77" kind="function"><name>print_key_s</name></member>
-      <member refid="group__YAPErrors_1ga3e8f8e746366e3650160978b1cb20ea6" kind="function"><name>print_key_t</name></member>
-      <member refid="group__YAPErrors_1ga3c8622c6eabce10f77be4bf9b88e4d98" kind="function"><name>printErr</name></member>
-      <member refid="group__YAPErrors_1ga061f76775abb3d50abf3fd486bff4fac" kind="function"><name>add_key_b</name></member>
-      <member refid="group__YAPErrors_1ga80f8a204b7d82ffaf85bb4b73833dd82" kind="function"><name>add_key_i</name></member>
-      <member refid="group__YAPErrors_1ga8e2f3c2684a783244264459c3d8765e5" kind="function"><name>add_key_s</name></member>
-      <member refid="group__YAPErrors_1gaf82bfb78f31d1887ec3e11fac5826e42" kind="function"><name>add_key_t</name></member>
-      <member refid="group__YAPErrors_1gaa5ffdf8292343bc7214a8674d4dbcd65" kind="function"><name>err2list</name></member>
-      <member refid="group__YAPErrors_1ga33f8453365c1a778b0e6706883936e6e" kind="function"><name>Yap_do_warning__</name></member>
-      <member refid="group__YAPErrors_1gab9385131fd019c8b65e5c5aebc284efa" kind="function"><name>Yap_Warning</name></member>
-      <member refid="group__YAPErrors_1gad6673141a50187dc411005b86508337d" kind="function"><name>Yap_PrintWarning</name></member>
-      <member refid="group__YAPErrors_1ga26cb476983759fffa98bde148bbf7dda" kind="function"><name>Yap_HandleError__</name></member>
-      <member refid="group__YAPErrors_1ga0196d82843c0109456fd62d076fd2e4e" kind="function"><name>Yap_SWIHandleError</name></member>
-      <member refid="group__YAPErrors_1ga9815ffe569887fe5afb78d7f503e1031" kind="function"><name>error_exit_yap</name></member>
-      <member refid="group__YAPErrors_1gafb099b73b3f7c0f8fc7c03b6cfb63d1f" kind="function"><name>Yap_MkErrorTerm</name></member>
-      <member refid="group__YAPErrors_1gac51f64c5e17c150e6dd5a53b3a4d6d9a" kind="function"><name>Yap_pushErrorContext</name></member>
-      <member refid="group__YAPErrors_1ga12b8c0e921ee0e13a508b563a2bc9201" kind="function"><name>Yap_popErrorContext</name></member>
-      <member refid="group__YAPErrors_1ga8ae225428cf24b3bac9d00f529b57ae1" kind="function"><name>Yap_ThrowError__</name></member>
-      <member refid="group__YAPErrors_1ga0be57669942cb7dba6a7d9cb07ed4872" kind="function"><name>Yap_ThrowExistingError</name></member>
-      <member refid="group__YAPErrors_1gaa4a194e6bb9225accfdd809ebb2d3c88" kind="function"><name>MkSysError</name></member>
-      <member refid="group__YAPErrors_1ga5b7fdf2dcdae40c3b6289ebd1f08ee11" kind="function"><name>termToError</name></member>
-      <member refid="group__YAPErrors_1ga53c67c642a174bceb446f04ad2948645" kind="function"><name>Yap_MkErrorRecord</name></member>
-      <member refid="group__YAPErrors_1ga960be723836be8cdcae336bc1fe3ab80" kind="function"><name>Yap_MkFullError</name></member>
-      <member refid="group__YAPErrors_1ga4cdaeb67310eb3ef5b801233af95ebcb" kind="function"><name>Yap_Error__</name></member>
-      <member refid="group__YAPErrors_1ga8721f3648716186ad624ced99d12c011" kind="function"><name>close_error</name></member>
-      <member refid="group__YAPErrors_1ga50d283de0371f1a34e8c3237aa3260f2" kind="function"><name>Yap_errorName</name></member>
-      <member refid="group__YAPErrors_1ga73ee3d4af2a1b84ed818eeec7a08beaa" kind="function"><name>Yap_errorName2</name></member>
-      <member refid="group__YAPErrors_1gaf0b9e9309f24fd43955da026af49afee" kind="function"><name>Yap_errorClass</name></member>
-      <member refid="group__YAPErrors_1ga6330ca965b1934e72431fcc2d5ae4c09" kind="function"><name>Yap_errorClassNumber</name></member>
-      <member refid="group__YAPErrors_1ga517895b4996f69dee232f0778eeb8f53" kind="function"><name>Yap_errorClassName</name></member>
-      <member refid="group__YAPErrors_1ga5f01232fe71e61058143ab6c4dd3594d" kind="function"><name>reset_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1ga739b86419c074f47242d055446484a82" kind="function"><name>Yap_PeekException</name></member>
-      <member refid="group__ExceptionDescriptors_1gaf9baf98fc19fcd8dc4911370e9e3d042" kind="function"><name>Yap_GetException</name></member>
-      <member refid="group__ExceptionDescriptors_1ga5c48af7e0f0ebb396f1d5fac9823b90f" kind="function"><name>Yap_PrintException</name></member>
-      <member refid="group__ExceptionDescriptors_1ga7cbc225536c6eca32cae2659c3fb1814" kind="function"><name>Yap_RaiseException</name></member>
-      <member refid="group__ExceptionDescriptors_1ga1de83e1bd9791cd7755cc1823e73995f" kind="function"><name>Yap_ResetException</name></member>
-      <member refid="group__ExceptionDescriptors_1gac83dd1bf7cdf7db4aba4c50099dc3bf8" kind="function"><name>Yap_RestartException</name></member>
-      <member refid="group__ExceptionDescriptors_1ga9d7a974b631fa96be213131fa475b670" kind="function"><name>read_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1gacbaac84074c315c57f6b1f76b0131eef" kind="function"><name>print_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1ga20d46193fccccb0741f944e3576d3591" kind="function"><name>query_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1ga9dff473479147558289150943238cbb5" kind="function"><name>set_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1ga8889074e877dd1dc5c297b7f5b808860" kind="function"><name>drop_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1ga2f41cda50ed4179c215cea2e29a8ce92" kind="function"><name>new_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1gae2b1896a2bb302aa6852ee9b4a0c0bfc" kind="function"><name>user_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1gada64d5e97531bdb364db168a12af2ca5" kind="function"><name>Yap_get_exception</name></member>
-      <member refid="group__ExceptionDescriptors_1ga73cfd0e0589f0e716f37508ab7db7194" kind="function"><name>Yap_errorNumber</name></member>
-      <member refid="group__ExceptionDescriptors_1ga1f8c68bc74b8e666f2312f37875be34a" kind="function"><name>event</name></member>
-      <member refid="group__ErrorBuiltins_1ga7099067ea322b1a1eb72efa722e99d07" kind="function"><name>is_nonvar__</name></member>
-      <member refid="group__ErrorBuiltins_1ga5aba440144b108fc37fc3597f8f27b01" kind="function"><name>is_nonvar1</name></member>
-      <member refid="group__ErrorBuiltins_1ga09f1bb4ff199c8527b4073272ba4bee4" kind="function"><name>is_boolean__</name></member>
-      <member refid="group__ErrorBuiltins_1ga97a1f95218b82e7165307b56a8f19be7" kind="function"><name>is_codes__</name></member>
-      <member refid="group__ErrorBuiltins_1gafdb743ad7185398410c3f9060b490079" kind="function"><name>is_boolean1</name></member>
-      <member refid="group__ErrorBuiltins_1gafea136d95da7cf0e0120d628d79ab014" kind="function"><name>must_be_boolean__</name></member>
-      <member refid="group__ErrorBuiltins_1ga59d5a2af6496422d834aa1120d1c1c3d" kind="function"><name>must_be_boolean1</name></member>
-      <member refid="group__ErrorBuiltins_1ga7f10b006ab9ed4c2fba7762fdd5695c0" kind="function"><name>is_atom__</name></member>
-      <member refid="group__ErrorBuiltins_1ga29ba2cdb21c0affd18415ed6b4f42a78" kind="function"><name>is_atom1</name></member>
-      <member refid="group__ErrorBuiltins_1ga662e46cf5cc1e590eb8a28dfd25b30f7" kind="function"><name>must_be_atom__</name></member>
-      <member refid="group__ErrorBuiltins_1gadf83075b6d8c331261d4e6d305eb3657" kind="function"><name>must_be_atom1</name></member>
-      <member refid="group__ErrorBuiltins_1gac7a5deed25c080c310d9ec48a7aac038" kind="function"><name>is_list__</name></member>
-      <member refid="group__ErrorBuiltins_1ga0e883d9a4ef12a0454e0cdecef6d0f2e" kind="function"><name>is_list1</name></member>
-      <member refid="group__ErrorBuiltins_1gaae5638c6206e5fe2dc65f39785933544" kind="function"><name>must_be_list__</name></member>
-      <member refid="group__ErrorBuiltins_1gacc889b41755d9b8bcecde0db4d72b03d" kind="function"><name>must_be_list1</name></member>
-      <member refid="group__ErrorBuiltins_1ga2dace63b81bc4637ab3b4bd41d334c8e" kind="function"><name>callable</name></member>
-      <member refid="group__ErrorBuiltins_1ga859a0db5a192245d5b5dec38c013d841" kind="function"><name>is_callable__</name></member>
-      <member refid="group__ErrorBuiltins_1ga3a91a207cd07d3bdf325d5ad00be0092" kind="function"><name>is_callable1</name></member>
-      <member refid="group__ErrorBuiltins_1ga6b1f8b666d8850d3d06a4205b46b97a3" kind="function"><name>Yap_callable</name></member>
-      <member refid="group__ErrorBuiltins_1ga49ee288dbd5edc520b74d29d85771a19" kind="function"><name>Yap_must_be_callable</name></member>
-      <member refid="group__ErrorBuiltins_1gab5d22ecc80817e71415039c7f00e5fcd" kind="function"><name>must_be_callable1</name></member>
-      <member refid="group__ErrorBuiltins_1ga9fbfc6fc8608925ad7d7d28475581c30" kind="function"><name>Yap_must_be_list</name></member>
-      <member refid="group__ErrorBuiltins_1ga8365a0bbf5baf4aa8a709a41067f7f60" kind="function"><name>must_be_bound1</name></member>
-      <member refid="group__ErrorBuiltins_1gab0cf0df35861954b17baf0cc680dc18d" kind="function"><name>must_be_ground1</name></member>
-      <member refid="group__ErrorBuiltins_1gae8d3f28249def169ff2a40e51ca8f8a6" kind="function"><name>must_be_predicate_indicator1</name></member>
-      <member refid="group__ErrorBuiltins_1ga59b4762f7ed2427d616f663c9821c94f" kind="function"><name>Yap_InitErrorPreds</name></member>
+      <memberdef kind="function" id="group__YAPErrors_1ga589007d62586279d2e8b83bacf760f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_RestartYap</definition>
+        <argsstring>(int flag)</argsstring>
+        <name>Yap_RestartYap</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="90" column="6" bodyfile="C/errors.c" bodystart="90" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga44059d881b056e758c73daa2d7b1a38b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool setErr</definition>
+        <argsstring>(const char *q, yap_error_descriptor_t *i, Term t)</argsstring>
+        <name>setErr</name>
+        <param>
+          <type>const char *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="130" column="13" bodyfile="C/errors.c" bodystart="130" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga1795a1b63f9e8b55e272f27f1d98fc56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term queryErr</definition>
+        <argsstring>(const char *q, yap_error_descriptor_t *i)</argsstring>
+        <name>queryErr</name>
+        <param>
+          <type>const char *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="189" column="13" bodyfile="C/errors.c" bodystart="189" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga3f894e761cbd7fb64ef4689f4656bac2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_b</definition>
+        <argsstring>(FILE *of, const char *key, bool v)</argsstring>
+        <name>print_key_b</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="222" column="13" bodyfile="C/errors.c" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gae41e35ebe6c09a7491085d9097c9612a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_i</definition>
+        <argsstring>(FILE *of, const char *key, YAP_Int v)</argsstring>
+        <name>print_key_i</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="227" column="13" bodyfile="C/errors.c" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gaa132d346aa9232bb82067646239a3f77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_s</definition>
+        <argsstring>(FILE *of, const char *key, const char *v)</argsstring>
+        <name>print_key_s</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="231" column="13" bodyfile="C/errors.c" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga3e8f8e746366e3650160978b1cb20ea6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_key_t</definition>
+        <argsstring>(FILE *of, const char *key, YAP_Term v)</argsstring>
+        <name>print_key_t</name>
+        <param>
+          <type>FILE *</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="236" column="13" bodyfile="C/errors.c" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga3c8622c6eabce10f77be4bf9b88e4d98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void printErr</definition>
+        <argsstring>(yap_error_descriptor_t *i, FILE *out)</argsstring>
+        <name>printErr</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="243" column="13" bodyfile="C/errors.c" bodystart="243" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga061f76775abb3d50abf3fd486bff4fac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_b</definition>
+        <argsstring>(const char *key, bool v, YAP_Term o0)</argsstring>
+        <name>add_key_b</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="286" column="17" bodyfile="C/errors.c" bodystart="286" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga80f8a204b7d82ffaf85bb4b73833dd82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_i</definition>
+        <argsstring>(const char *key, YAP_Int v, YAP_Term o0)</argsstring>
+        <name>add_key_i</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="295" column="17" bodyfile="C/errors.c" bodystart="295" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga8e2f3c2684a783244264459c3d8765e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_s</definition>
+        <argsstring>(const char *key, const char *v, YAP_Term o0)</argsstring>
+        <name>add_key_s</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="303" column="17" bodyfile="C/errors.c" bodystart="303" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gaf82bfb78f31d1887ec3e11fac5826e42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YAP_Term</type>
+        <definition>static YAP_Term add_key_t</definition>
+        <argsstring>(const char *key, YAP_Term v, YAP_Term o0)</argsstring>
+        <name>add_key_t</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>YAP_Term</type>
+          <declname>o0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="314" column="17" bodyfile="C/errors.c" bodystart="314" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gaa5ffdf8292343bc7214a8674d4dbcd65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term err2list</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>err2list</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="326" column="13" bodyfile="C/errors.c" bodystart="326" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga33f8453365c1a778b0e6706883936e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_do_warning__</definition>
+        <argsstring>(const char *file, const char *function, int line, yap_error_number type, Term t, const char *fmt,...)</argsstring>
+        <name>Yap_do_warning__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>yap_error_number</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="363" column="6" bodyfile="C/errors.c" bodystart="363" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gab9385131fd019c8b65e5c5aebc284efa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_Warning</definition>
+        <argsstring>(const char *s,...)</argsstring>
+        <name>Yap_Warning</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="397" column="6" bodyfile="C/errors.c" bodystart="397" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gad6673141a50187dc411005b86508337d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_PrintWarning</definition>
+        <argsstring>(Term twarning)</argsstring>
+        <name>Yap_PrintWarning</name>
+        <param>
+          <type>Term</type>
+          <declname>twarning</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="436" column="6" bodyfile="C/errors.c" bodystart="436" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga26cb476983759fffa98bde148bbf7dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_HandleError__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, const char *s,...)</argsstring>
+        <name>Yap_HandleError__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="463" column="6" bodyfile="C/errors.c" bodystart="463" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga0196d82843c0109456fd62d076fd2e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_SWIHandleError</definition>
+        <argsstring>(const char *s,...)</argsstring>
+        <name>Yap_SWIHandleError</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="512" column="5" bodyfile="C/errors.c" bodystart="512" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga9815ffe569887fe5afb78d7f503e1031" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void error_exit_yap</definition>
+        <argsstring>(int value)</argsstring>
+        <name>error_exit_yap</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="551" column="13" bodyfile="C/errors.c" bodystart="551" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gafb099b73b3f7c0f8fc7c03b6cfb63d1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_MkErrorTerm</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>Yap_MkErrorTerm</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="640" column="6" bodyfile="C/errors.c" bodystart="640" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gac51f64c5e17c150e6dd5a53b3a4d6d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * Yap_pushErrorContext</definition>
+        <argsstring>(bool link, yap_error_descriptor_t *new_error, yap_error_descriptor_t *old_error)</argsstring>
+        <name>Yap_pushErrorContext</name>
+        <param>
+          <type>bool</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>new_error</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>old_error</declname>
+        </param>
+        <briefdescription>
+<para>add a new error descriptor, either to the top of the stack, or as the top; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="669" column="1" bodyfile="C/errors.c" bodystart="669" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga12b8c0e921ee0e13a508b563a2bc9201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * Yap_popErrorContext</definition>
+        <argsstring>(bool mdnew, bool pass, yap_error_descriptor_t *old_error)</argsstring>
+        <name>Yap_popErrorContext</name>
+        <param>
+          <type>bool</type>
+          <declname>mdnew</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>old_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="687" column="24" bodyfile="C/errors.c" bodystart="687" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga8ae225428cf24b3bac9d00f529b57ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ThrowError__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, yap_error_number type, Term where, const char *msg,...)</argsstring>
+        <name>Yap_ThrowError__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>yap_error_number</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Thow an error directly to the error handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>who </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>what, error code </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>how, user information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="711" column="6" bodyfile="C/errors.c" bodystart="711" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga0be57669942cb7dba6a7d9cb07ed4872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_ThrowExistingError</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ThrowExistingError</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>complete delayed error </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="731" column="6" bodyfile="C/errors.c" bodystart="731" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gaa4a194e6bb9225accfdd809ebb2d3c88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term MkSysError</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>MkSysError</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Wrap the error descriptor as exception/2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="738" column="6" bodyfile="C/errors.c" bodystart="738" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga5b7fdf2dcdae40c3b6289ebd1f08ee11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void termToError</definition>
+        <argsstring>(Term t1, Term user_info, yap_error_descriptor_t *i)</argsstring>
+        <name>termToError</name>
+        <param>
+          <type>Term</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>user_info</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="745" column="1" bodyfile="C/errors.c" bodystart="745" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga53c67c642a174bceb446f04ad2948645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_MkErrorRecord</definition>
+        <argsstring>(yap_error_descriptor_t *r, const char *file, const char *function, int lineno, yap_error_number type, Term where, Term extra, const char *s)</argsstring>
+        <name>Yap_MkErrorRecord</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>yap_error_number</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>extra</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="817" column="6" bodyfile="C/errors.c" bodystart="817" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga960be723836be8cdcae336bc1fe3ab80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_MkFullError</definition>
+        <argsstring>(yap_error_descriptor_t *i, yap_error_number type)</argsstring>
+        <name>Yap_MkFullError</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>yap_error_number</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>convert a C-error to a Prolog term: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>fill text fields</para>
+</listitem><listitem><para>wrap descriptor1240 </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="879" column="6" bodyfile="C/errors.c" bodystart="879" bodyend="906"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga4cdaeb67310eb3ef5b801233af95ebcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyami" kindref="compound">yamop</ref> *</type>
+        <definition>yamop * Yap_Error__</definition>
+        <argsstring>(bool throw, const char *file, const char *function, int lineno, yap_error_number type, Term where, const char *fmt,...)</argsstring>
+        <name>Yap_Error__</name>
+        <param>
+          <type>bool</type>
+          <declname>throw</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>yap_error_number</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Yap_Error() This function handles errors in the C code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check <ref refid="errors_8yap" kindref="compound">errors.yap</ref> for the corresponding Prolog code</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C source </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C exact line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the error ID (in YAP this is a single integer) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the culprit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>usually FAILCODE</para>
+</simplesect>
+In a good day, the error handler&apos;s job is to generate a throw This includes:<itemizedlist>
+<listitem><para>constructing an ISO style error term;</para>
+</listitem><listitem><para>constructing a list with all available info on the bug</para>
+</listitem><listitem><para>generating the throw</para>
+</listitem><listitem><para>forcing backtracking in order to restart</para>
+</listitem></itemizedlist>
+</para>
+<para>In a bad day, it has to deal with OOM, abort, and errors within errorts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="930" column="7" bodyfile="C/errors.c" bodystart="930" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga8721f3648716186ad624ced99d12c011" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int close_error</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>close_error</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1143" column="12" bodyfile="C/errors.c" bodystart="1143" bodyend="1152"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga50d283de0371f1a34e8c3237aa3260f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_errorName</definition>
+        <argsstring>(yap_error_number e)</argsstring>
+        <name>Yap_errorName</name>
+        <param>
+          <type>yap_error_number</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1222" column="6" bodyfile="C/errors.c" bodystart="1222" bodyend="1226"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga73ee3d4af2a1b84ed818eeec7a08beaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_errorName2</definition>
+        <argsstring>(yap_error_number e)</argsstring>
+        <name>Yap_errorName2</name>
+        <param>
+          <type>yap_error_number</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1228" column="7" bodyfile="C/errors.c" bodystart="1228" bodyend="1232"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1gaf0b9e9309f24fd43955da026af49afee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yap_error_class_number</type>
+        <definition>yap_error_class_number Yap_errorClass</definition>
+        <argsstring>(yap_error_number e)</argsstring>
+        <name>Yap_errorClass</name>
+        <param>
+          <type>yap_error_number</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1234" column="24" bodyfile="C/errors.c" bodystart="1234" bodyend="1236"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga6330ca965b1934e72431fcc2d5ae4c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yap_error_class_number</type>
+        <definition>yap_error_class_number Yap_errorClassNumber</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>Yap_errorClassNumber</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1238" column="24" bodyfile="C/errors.c" bodystart="1238" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga517895b4996f69dee232f0778eeb8f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * Yap_errorClassName</definition>
+        <argsstring>(yap_error_class_number e)</argsstring>
+        <name>Yap_errorClassName</name>
+        <param>
+          <type>yap_error_class_number</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1247" column="6" bodyfile="C/errors.c" bodystart="1247" bodyend="1249"/>
+      </memberdef>
+      <memberdef kind="function" id="group__YAPErrors_1ga5f01232fe71e61058143ab6c4dd3594d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int reset_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>reset_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1251" column="12" bodyfile="C/errors.c" bodystart="1251" bodyend="1251"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga739b86419c074f47242d055446484a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * Yap_PeekException</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_PeekException</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>is an error active? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1274" column="24" bodyfile="C/errors.c" bodystart="1274" bodyend="1280"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gaf9baf98fc19fcd8dc4911370e9e3d042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * Yap_GetException</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_GetException</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>clone Active Error </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1285" column="24" bodyfile="C/errors.c" bodystart="1285" bodyend="1291"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga5c48af7e0f0ebb396f1d5fac9823b90f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_PrintException</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>Yap_PrintException</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>print descriptor to user_output/stdout </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1296" column="6" bodyfile="C/errors.c" bodystart="1296" bodyend="1304"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga7cbc225536c6eca32cae2659c3fb1814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_RaiseException</definition>
+        <argsstring>()</argsstring>
+        <name>Yap_RaiseException</name>
+        <briefdescription>
+<para>let&apos;s go </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1309" column="6" bodyfile="C/errors.c" bodystart="1309" bodyend="1316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga1de83e1bd9791cd7755cc1823e73995f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_ResetException</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>Yap_ResetException</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>v * clean up (notice that the code ensures ActiveError exists on exit </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1321" column="6" bodyfile="C/errors.c" bodystart="1321" bodyend="1329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gac83dd1bf7cdf7db4aba4c50099dc3bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_RestartException</definition>
+        <argsstring>(yap_error_descriptor_t *i)</argsstring>
+        <name>Yap_RestartException</name>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>clean up (notice that the code ensures ActiveError exists on exit </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1334" column="6" bodyfile="C/errors.c" bodystart="1334" bodyend="1341"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga9d7a974b631fa96be213131fa475b670" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int read_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>read_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+<para>transform an exception into Prolog shape (dictionary or list) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1345" column="12" bodyfile="C/errors.c" bodystart="1345" bodyend="1358"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gacbaac84074c315c57f6b1f76b0131eef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int print_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>print_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1360" column="12" bodyfile="C/errors.c" bodystart="1360" bodyend="1383"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga20d46193fccccb0741f944e3576d3591" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int query_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>query_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1385" column="12" bodyfile="C/errors.c" bodystart="1385" bodyend="1403"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga9dff473479147558289150943238cbb5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int set_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>set_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1405" column="12" bodyfile="C/errors.c" bodystart="1405" bodyend="1424"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga8889074e877dd1dc5c297b7f5b808860" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int drop_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>drop_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1426" column="12" bodyfile="C/errors.c" bodystart="1426" bodyend="1438"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga2f41cda50ed4179c215cea2e29a8ce92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int new_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>new_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1440" column="12" bodyfile="C/errors.c" bodystart="1440" bodyend="1443"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gae2b1896a2bb302aa6852ee9b4a0c0bfc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int user_exception</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>user_exception</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1446" column="12" bodyfile="C/errors.c" bodystart="1446" bodyend="1465"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1gada64d5e97531bdb364db168a12af2ca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_get_exception</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_get_exception</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1467" column="6" bodyfile="C/errors.c" bodystart="1467" bodyend="1472"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga73cfd0e0589f0e716f37508ab7db7194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>yap_error_number</type>
+        <definition>yap_error_number Yap_errorNumber</definition>
+        <argsstring>(yap_error_class_number c, const char *s, const char *s2)</argsstring>
+        <name>Yap_errorNumber</name>
+        <param>
+          <type>yap_error_class_number</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>given a string(s, lookup for a corresponding error class r numbe </para>
+        </briefdescription>
+        <detaileddescription>
+<para>given a string(s) and class context, lookup for a corresponding error number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1478" column="18" bodyfile="C/errors.c" bodystart="1478" bodyend="1497"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ExceptionDescriptors_1ga1f8c68bc74b8e666f2312f37875be34a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+        <definition>yap_error_descriptor_t * event</definition>
+        <argsstring>(Term t, yap_error_descriptor_t *i)</argsstring>
+        <name>event</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ErrorC_1ga9fefa1a193287bea38ba6df038670c2f" kindref="member">yap_error_descriptor_t</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1499" column="24" bodyfile="C/errors.c" bodystart="1499" bodyend="1504"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga7099067ea322b1a1eb72efa722e99d07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int is_nonvar__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t USES_REGS)</argsstring>
+        <name>is_nonvar__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1516" column="5" bodyfile="C/errors.c" bodystart="1516" bodyend="1524"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga5aba440144b108fc37fc3597f8f27b01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_nonvar1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_nonvar1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1532" column="12" bodyfile="C/errors.c" bodystart="1532" bodyend="1535"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga09f1bb4ff199c8527b4073272ba4bee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_boolean__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t USES_REGS)</argsstring>
+        <name>is_boolean__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1537" column="6" bodyfile="C/errors.c" bodystart="1537" bodyend="1545"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga97a1f95218b82e7165307b56a8f19be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_codes__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t USES_REGS)</argsstring>
+        <name>is_codes__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1547" column="6" bodyfile="C/errors.c" bodystart="1547" bodyend="1559"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gafdb743ad7185398410c3f9060b490079" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_boolean1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_boolean1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1561" column="12" bodyfile="C/errors.c" bodystart="1561" bodyend="1564"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gafea136d95da7cf0e0120d628d79ab014" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool must_be_boolean__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t USES_REGS)</argsstring>
+        <name>must_be_boolean__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1566" column="6" bodyfile="C/errors.c" bodystart="1566" bodyend="1579"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga59d5a2af6496422d834aa1120d1c1c3d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_boolean1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_boolean1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1581" column="12" bodyfile="C/errors.c" bodystart="1581" bodyend="1584"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga7f10b006ab9ed4c2fba7762fdd5695c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_atom__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t USES_REGS)</argsstring>
+        <name>is_atom__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1586" column="6" bodyfile="C/errors.c" bodystart="1586" bodyend="1594"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga29ba2cdb21c0affd18415ed6b4f42a78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_atom1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_atom1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1596" column="12" bodyfile="C/errors.c" bodystart="1596" bodyend="1599"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga662e46cf5cc1e590eb8a28dfd25b30f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool must_be_atom__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t USES_REGS)</argsstring>
+        <name>must_be_atom__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1601" column="6" bodyfile="C/errors.c" bodystart="1601" bodyend="1614"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gadf83075b6d8c331261d4e6d305eb3657" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_atom1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_atom1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1616" column="12" bodyfile="C/errors.c" bodystart="1616" bodyend="1619"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gac7a5deed25c080c310d9ec48a7aac038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_list__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term list USES_REGS)</argsstring>
+        <name>is_list__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term list</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1628" column="6" bodyfile="C/errors.c" bodystart="1628" bodyend="1639"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga0e883d9a4ef12a0454e0cdecef6d0f2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_list1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_list1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1641" column="12" bodyfile="C/errors.c" bodystart="1641" bodyend="1644"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gaae5638c6206e5fe2dc65f39785933544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool must_be_list__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term list USES_REGS)</argsstring>
+        <name>must_be_list__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term list</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1646" column="6" bodyfile="C/errors.c" bodystart="1646" bodyend="1657"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gacc889b41755d9b8bcecde0db4d72b03d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_list1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_list1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1659" column="12" bodyfile="C/errors.c" bodystart="1659" bodyend="1662"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga2dace63b81bc4637ab3b4bd41d334c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>Int callable</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>callable</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1671" column="5" bodyfile="C/errors.c" bodystart="1671" bodyend="1702"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga859a0db5a192245d5b5dec38c013d841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_callable__</definition>
+        <argsstring>(const char *file, const char *function, int lineno, Term t USES_REGS)</argsstring>
+        <name>is_callable__</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineno</declname>
+        </param>
+        <param>
+          <type>Term t</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1711" column="6" bodyfile="C/errors.c" bodystart="1711" bodyend="1745"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga3a91a207cd07d3bdf325d5ad00be0092" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int is_callable1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>is_callable1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1747" column="12" bodyfile="C/errors.c" bodystart="1747" bodyend="1750"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga6b1f8b666d8850d3d06a4205b46b97a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_callable</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_callable</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1752" column="6" bodyfile="C/errors.c" bodystart="1752" bodyend="1778"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga49ee288dbd5edc520b74d29d85771a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Yap_must_be_callable</definition>
+        <argsstring>(Term G, Term mod)</argsstring>
+        <name>Yap_must_be_callable</name>
+        <param>
+          <type>Term</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1780" column="6" bodyfile="C/errors.c" bodystart="1780" bodyend="1811"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gab5d22ecc80817e71415039c7f00e5fcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_callable1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_callable1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1819" column="12" bodyfile="C/errors.c" bodystart="1819" bodyend="1823"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga9fbfc6fc8608925ad7d7d28475581c30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_must_be_list</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>Yap_must_be_list</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Dereferenced term t must start as a list: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para><computeroutput>[]</computeroutput></para>
+</listitem><listitem><para><computeroutput>[_|_]</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>no effort is made to verify if a true list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1830" column="6" bodyfile="C/errors.c" bodystart="1830" bodyend="1838"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga8365a0bbf5baf4aa8a709a41067f7f60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_bound1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_bound1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1844" column="12" bodyfile="C/errors.c" bodystart="1844" bodyend="1850"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gab0cf0df35861954b17baf0cc680dc18d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_ground1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_ground1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1856" column="12" bodyfile="C/errors.c" bodystart="1856" bodyend="1862"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1gae8d3f28249def169ff2a40e51ca8f8a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int must_be_predicate_indicator1</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>must_be_predicate_indicator1</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1879" column="12" bodyfile="C/errors.c" bodystart="1879" bodyend="1934"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ErrorBuiltins_1ga59b4762f7ed2427d616f663c9821c94f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitErrorPreds</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitErrorPreds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/errors.c" line="1936" column="6" bodyfile="C/errors.c" bodystart="1936" bodyend="1970"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>low-level error handling </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/errors.c"/>
+    <location file="C/errors.c"/>
   </compounddef>
 </doxygen>

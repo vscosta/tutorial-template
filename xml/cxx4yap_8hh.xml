@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="cxx4yap_8hh" kind="file" language="C++">
     <compoundname>cxx4yap.hh</compoundname>
     <includes local="no">iostream</includes>
@@ -23,7 +23,7 @@
     <includes refid="iopreds_8h" local="yes">iopreds.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/CXX/cxx4yap.hh</label>
+        <label>CXX/cxx4yap.hh</label>
         <link refid="cxx4yap_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -651,7 +651,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/cxx4yap.hh" line="8" column="9" bodyfile="/home/vsc/github/yap/CXX/cxx4yap.hh" bodystart="8" bodyend="-1"/>
+        <location file="CXX/cxx4yap.hh" line="8" column="9" bodyfile="CXX/cxx4yap.hh" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="cxx4yap_8hh_1a9b224d183c45cfb8fe3f6c110a59d06b" prot="public" static="no">
         <name>_EXPORT_KERNEL</name>
@@ -662,7 +662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/cxx4yap.hh" line="16" column="10" bodyfile="/home/vsc/github/yap/CXX/cxx4yap.hh" bodystart="16" bodyend="-1"/>
+        <location file="CXX/cxx4yap.hh" line="16" column="10" bodyfile="CXX/cxx4yap.hh" bodystart="16" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -677,7 +677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/cxx4yap.hh" line="97" column="28" bodyfile="/home/vsc/github/yap/CXX/cxx4yap.hh" bodystart="97" bodyend="-1"/>
+        <location file="CXX/cxx4yap.hh" line="97" column="28" bodyfile="CXX/cxx4yap.hh" bodystart="97" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -692,12 +692,36 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/cxx4yap.hh" line="99" column="11" bodyfile="/home/vsc/github/yap/CXX/cxx4yap.hh" bodystart="99" bodyend="-1"/>
+        <location file="CXX/cxx4yap.hh" line="99" column="11" bodyfile="CXX/cxx4yap.hh" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__slotInterface_1gaecdcff51105fb4b58b8858961b7e7b35" kind="function"><name>YAP_UserCPredicate</name></member>
-      <memberdef kind="function" id="cxx4yap_8hh_1ac3e790d04e0dcdbbfa4cadfdc9a8759a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__slotInterface_1gaecdcff51105fb4b58b8858961b7e7b35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void YAP_UserCPredicate</definition>
+        <argsstring>(const char *, YAP_UserCPred, YAP_Arity arity)</argsstring>
+        <name>YAP_UserCPredicate</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>arity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/cxx4yap.hh" line="73" column="19" bodyfile="C/c_interface.c" bodystart="2366" bodyend="2369" declfile="CXX/cxx4yap.hh" declline="73" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="cxx4yap_8hh_1gac3e790d04e0dcdbbfa4cadfdc9a8759a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>X_API void</type>
         <definition>X_API void YAP_UserCPredicateWithArgs</definition>
         <argsstring>(const char *, YAP_UserCPred, YAP_Arity, YAP_Term)</argsstring>
@@ -720,11 +744,79 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/cxx4yap.hh" line="79" column="19" declfile="/home/vsc/github/yap/CXX/cxx4yap.hh" declline="79" declcolumn="19"/>
+        <location file="CXX/cxx4yap.hh" line="79" column="19" declfile="CXX/cxx4yap.hh" declline="79" declcolumn="19"/>
       </memberdef>
-      <member refid="group__slotInterface_1ga9726c7cf513de86dda6500df20402856" kind="function"><name>YAP_UserBackCPredicate</name></member>
-      <member refid="group__slotInterface_1ga2641300a4a4bd11040ac2f95b762461d" kind="function"><name>YAP_UserBackCutCPredicate</name></member>
-      <memberdef kind="function" id="cxx4yap_8hh_1ac13efe46a914e3b625a6594cfdfb06ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__slotInterface_1ga9726c7cf513de86dda6500df20402856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void YAP_UserBackCPredicate</definition>
+        <argsstring>(const char *name, YAP_UserCPred init, YAP_UserCPred cont, YAP_Arity arity, YAP_Arity extra)</argsstring>
+        <name>YAP_UserBackCPredicate</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>cont</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>extra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/cxx4yap.hh" line="82" column="19" bodyfile="C/c_interface.c" bodystart="2385" bodyend="2390" declfile="CXX/cxx4yap.hh" declline="82" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__slotInterface_1ga2641300a4a4bd11040ac2f95b762461d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>X_API void</type>
+        <definition>X_API void YAP_UserBackCutCPredicate</definition>
+        <argsstring>(const char *name, YAP_UserCPred init, YAP_UserCPred cont, YAP_UserCPred cut, YAP_Arity arity, YAP_Arity extra)</argsstring>
+        <name>YAP_UserBackCutCPredicate</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>cont</declname>
+        </param>
+        <param>
+          <type>YAP_UserCPred</type>
+          <declname>cut</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type>YAP_Arity</type>
+          <declname>extra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CXX/cxx4yap.hh" line="86" column="19" bodyfile="C/c_interface.c" bodystart="2378" bodyend="2383" declfile="CXX/cxx4yap.hh" declline="86" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="cxx4yap_8hh_1gac13efe46a914e3b625a6594cfdfb06ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>X_API YAP_Term</type>
         <definition>X_API YAP_Term YAP_ReadBuffer</definition>
         <argsstring>(const char *s, YAP_Term *tp)</argsstring>
@@ -743,9 +835,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/cxx4yap.hh" line="92" column="23" declfile="/home/vsc/github/yap/CXX/cxx4yap.hh" declline="92" declcolumn="23"/>
+        <location file="CXX/cxx4yap.hh" line="92" column="23" declfile="CXX/cxx4yap.hh" declline="92" declcolumn="23"/>
       </memberdef>
-      <memberdef kind="function" id="cxx4yap_8hh_1adebb72837875d88c49f9f0778fe65bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="cxx4yap_8hh_1gadebb72837875d88c49f9f0778fe65bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>YAP_Term</type>
         <definition>YAP_Term YAP_MkcharPTerm</definition>
         <argsstring>(char *s)</argsstring>
@@ -760,13 +852,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/CXX/cxx4yap.hh" line="94" column="17" declfile="/home/vsc/github/yap/CXX/cxx4yap.hh" declline="94" declcolumn="17"/>
+        <location file="CXX/cxx4yap.hh" line="94" column="17" declfile="CXX/cxx4yap.hh" declline="94" declcolumn="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/CXX/cxx4yap.hh"/>
+    <location file="CXX/cxx4yap.hh"/>
   </compounddef>
 </doxygen>

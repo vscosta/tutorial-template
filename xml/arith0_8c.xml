@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="arith0_8c" kind="file" language="C++">
     <compoundname>arith0.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -8,7 +8,7 @@
     <includes refid="YapEval_8h" local="yes">YapEval.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/vsc/github/yap/C/arith0.c</label>
+        <label>C/arith0.c</label>
         <link refid="arith0_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -408,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/arith0.c" line="241" column="16"/>
+        <location file="C/arith0.c" line="257" column="16"/>
       </memberdef>
       <memberdef kind="variable" id="arith0_8c_1a5c7403134b6379e9b331f864c60a2bf3" prot="public" static="yes" mutable="no">
         <type><ref refid="structinit__const__eval" kindref="compound">InitConstEntry</ref></type>
@@ -416,12 +416,14 @@
         <argsstring>[]</argsstring>
         <name>InitConstTab</name>
         <initializer>= {
-  {&quot;pi&quot;, <ref refid="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cba27c6baf6193ff140f15c1832ffbebcd0" kindref="member">op_pi</ref>},
-  {&quot;e&quot;, <ref refid="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbacf80da57b067e9a8e06026cc32be7446" kindref="member">op_e</ref>},
-  {&quot;epsilon&quot;, <ref refid="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbaafc99a59ac7b9ee0dfec72d04bb01b27" kindref="member">op_epsilon</ref>},
-  {&quot;inf&quot;, <ref refid="group__Arithmetic_1ggabd82341cb7fc61c1880963eb8b1da8cbaeaa2c4799fc36266a85f729fb6c73d7a" kindref="member">op_inf</ref>},
+  {&quot;pi&quot;, op_pi},
+  {&quot;e&quot;, op_e},
+  {&quot;epsilon&quot;, op_epsilon},
+  {&quot;inf&quot;, op_inf},
   {&quot;nan&quot;, op_nan},
   {&quot;random&quot;, op_random},
+  {&quot;signed_integer_random&quot;, op_signed_integer_random},
+  {&quot;unsigned_integer_random&quot;, op_unsigned_integer_random},
   {&quot;cputime&quot;, op_cputime},
   {&quot;heapused&quot;, op_heapused},
   {&quot;local_sp&quot;, op_localsp},
@@ -437,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/arith0.c" line="243" column="23" bodyfile="/home/vsc/github/yap/C/arith0.c" bodystart="243" bodyend="-1"/>
+        <location file="C/arith0.c" line="259" column="23" bodyfile="C/arith0.c" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="arith0_8c_1a0f08b4bf42fe53123c8730c826279f31" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Term</type>
@@ -455,26 +457,11 @@
         <inbodydescription>
 <para><itemizedlist>
 <listitem><para>heapused Heap (data-base) space used, in bytes</para>
-</listitem></itemizedlist>
-</para>
-<para><itemizedlist>
-<listitem><para>local Local stack in use, in bytes</para>
-</listitem></itemizedlist>
-</para>
-<para><itemizedlist>
-<listitem><para>$b current choicepoint</para>
-</listitem></itemizedlist>
-</para>
-<para><itemizedlist>
-<listitem><para>$env Environment</para>
-</listitem></itemizedlist>
-</para>
-<para><itemizedlist>
-<listitem><para>$tr Trail in use</para>
-</listitem></itemizedlist>
-</para>
-<para><itemizedlist>
-<listitem><para>$free_stack</para>
+</listitem><listitem><para>local Local stack in use, in bytes</para>
+</listitem><listitem><para>$b current choicepoint</para>
+</listitem><listitem><para>$env Environment</para>
+</listitem><listitem><para>$tr Trail in use</para>
+</listitem><listitem><para>$free_stack</para>
 </listitem></itemizedlist>
 </para>
 <para>Not-a-number according to the IEEE Floating-Point standard Note that evaluating this term will generate a domain error in the <computeroutput>iso</computeroutput> language mode</para>
@@ -484,9 +471,25 @@
 </para>
 <para>end of switch</para>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/arith0.c" line="119" column="1" bodyfile="/home/vsc/github/yap/C/arith0.c" bodystart="119" bodyend="231"/>
+        <location file="C/arith0.c" line="127" column="1" bodyfile="C/arith0.c" bodystart="127" bodyend="247"/>
       </memberdef>
-      <member refid="group__Arithmetic_1gab77d5f3e796c5b89de09a8eb23b2dd14" kind="function"><name>Yap_eval_atom</name></member>
+      <memberdef kind="function" id="group__Arithmetic_1gab77d5f3e796c5b89de09a8eb23b2dd14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>Term Yap_eval_atom</definition>
+        <argsstring>(Int f)</argsstring>
+        <name>Yap_eval_atom</name>
+        <param>
+          <type>Int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/arith0.c" line="249" column="6" bodyfile="C/arith0.c" bodystart="249" bodyend="252"/>
+      </memberdef>
       <memberdef kind="function" id="arith0_8c_1a644020e1bb2f42a8d861679d6589e0e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
         <definition>static Int current_evaluable_property_0</definition>
@@ -501,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/arith0.c" line="262" column="1" bodyfile="/home/vsc/github/yap/C/arith0.c" bodystart="262" bodyend="269"/>
+        <location file="C/arith0.c" line="280" column="1" bodyfile="C/arith0.c" bodystart="280" bodyend="287"/>
       </memberdef>
       <memberdef kind="function" id="arith0_8c_1affd5d4725211d7e0422329fd76c928d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Int</type>
@@ -517,15 +520,45 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/vsc/github/yap/C/arith0.c" line="272" column="1" bodyfile="/home/vsc/github/yap/C/arith0.c" bodystart="272" bodyend="282"/>
+        <location file="C/arith0.c" line="290" column="1" bodyfile="C/arith0.c" bodystart="290" bodyend="300"/>
       </memberdef>
-      <member refid="group__Arithmetic_1ga77621760f918f068e3a989c77d5885bf" kind="function"><name>Yap_InitConstExps</name></member>
-      <member refid="group__Arithmetic_1ga9bc28bdb5acbedd220978ebc20da0fa5" kind="function"><name>Yap_ReInitConstExps</name></member>
+      <memberdef kind="function" id="group__Arithmetic_1ga77621760f918f068e3a989c77d5885bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitConstExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitConstExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/arith0.c" line="303" column="1" bodyfile="C/arith0.c" bodystart="303" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__Arithmetic_1ga9bc28bdb5acbedd220978ebc20da0fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Yap_ReInitConstExps</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_ReInitConstExps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C/arith0.c" line="333" column="1" bodyfile="C/arith0.c" bodystart="333" bodyend="336"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/C/arith0.c"/>
+    <location file="C/arith0.c"/>
   </compounddef>
 </doxygen>

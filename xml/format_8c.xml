@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
   <compounddef id="format_8c" kind="file" language="C++">
     <compoundname>format.c</compoundname>
     <includes refid="Yap_8h" local="yes">Yap.h</includes>
@@ -390,7 +390,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/home/vsc/github/yap/os/format.c</label>
+        <label>os/format.c</label>
         <link refid="format_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -488,27 +488,317 @@
       </node>
     </incdepgraph>
       <sectiondef kind="define">
-      <member refid="group__FormattedIO_1ga06f4fc64d85edc2647551a77b26d42dc" kind="define"><name>TMP_STRING_SIZE</name></member>
-      <member refid="group__FormattedIO_1ga1daf06052b1a24c7eb37c66025e4acd9" kind="define"><name>TOO_FEW_ARGUMENTS</name></member>
+      <memberdef kind="define" id="group__FormattedIO_1ga06f4fc64d85edc2647551a77b26d42dc" prot="public" static="no">
+        <name>TMP_STRING_SIZE</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="425" column="9" bodyfile="os/format.c" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__FormattedIO_1ga1daf06052b1a24c7eb37c66025e4acd9" prot="public" static="no">
+        <name>TOO_FEW_ARGUMENTS</name>
+        <param><defname>Needs</defname></param>
+        <param><defname>Has_Repeats</defname></param>
+        <initializer>  if (targ &gt; tnum - Needs || Has_Repeats) {\
+  format_clean_up(sno, sno0, finfo);\
+  Yap_ThrowError(DOMAIN_ERROR_FORMAT_CONTROL_SEQUENCE, MkIntTerm(fptr-fstr), &quot;command %c in format string %s has no arguments %s&quot;, ch,\
+		 fstr, fptr);\
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="450" column="9" bodyfile="os/format.c" bodystart="450" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <member refid="group__FormattedIO_1ga287c938730ea33d08381dea7237110ce" kind="function"><name>format_clean_up</name></member>
-      <member refid="group__FormattedIO_1ga32a9ef982e4454239c9e4f1b64809b5b" kind="function"><name>format_print_str</name></member>
-      <member refid="group__FormattedIO_1gaabb6b49011f0c299e747cbf98b584a12" kind="function"><name>format_copy_args</name></member>
-      <member refid="group__FormattedIO_1ga0816206871c6e0ced18e2b0ac7bb3aa8" kind="function"><name>fetch_index_from_args</name></member>
-      <member refid="group__FormattedIO_1ga103afb295dbc06a5ecc9d8ae9c97c968" kind="function"><name>base_dig</name></member>
-      <member refid="group__FormattedIO_1gab7d3120911c787bb90ff3b716593ec57" kind="function"><name>doformat</name></member>
-      <member refid="group__FormattedIO_1gaf702de6f24802f75cec28cebfb8120ac" kind="function"><name>memStreamToTerm</name></member>
-      <member refid="group__FormattedIO_1gad032cb7850bfbbd98646489d65b182e6" kind="function"><name>with_output_to</name></member>
-      <member refid="group__FormattedIO_1gaf8350e1c9455b953fd92509204a286e3" kind="function"><name>format</name></member>
-      <member refid="group__FormattedIO_1ga0ba2091f741410c8b061abc56c7be419" kind="function"><name>format2</name></member>
-      <member refid="group__FormattedIO_1gaa63bc26c14106da5480242419436800f" kind="function"><name>format3</name></member>
-      <member refid="group__FormattedIO_1gae0620f56bd7aea743bcca8f986e46c30" kind="function"><name>Yap_InitFormat</name></member>
+      <memberdef kind="function" id="group__FormattedIO_1ga287c938730ea33d08381dea7237110ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void format_clean_up</definition>
+        <argsstring>(int sno, int sno0, format_info *finfo)</argsstring>
+        <name>format_clean_up</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno0</declname>
+        </param>
+        <param>
+          <type><ref refid="structformat__status" kindref="compound">format_info</ref> *</type>
+          <declname>finfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="301" column="1" bodyfile="os/format.c" bodystart="301" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1ga32a9ef982e4454239c9e4f1b64809b5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int format_print_str</definition>
+        <argsstring>(int sno, Int size, Int has_size, Term args, int(*f_putc)(int, wchar_t), format_info *finfo)</argsstring>
+        <name>format_print_str</name>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>has_size</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>int(*)(int, wchar_t)</type>
+          <declname>f_putc</declname>
+        </param>
+        <param>
+          <type><ref refid="structformat__status" kindref="compound">format_info</ref> *</type>
+          <declname>finfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="309" column="12" bodyfile="os/format.c" bodystart="309" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1gaabb6b49011f0c299e747cbf98b584a12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int format_copy_args</definition>
+        <argsstring>(Term args, Term *targs, Int tsz, int sno, format_info *finfo)</argsstring>
+        <name>format_copy_args</name>
+        <param>
+          <type>Term</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>Term *</type>
+          <declname>targs</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>tsz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sno</declname>
+        </param>
+        <param>
+          <type><ref refid="structformat__status" kindref="compound">format_info</ref> *</type>
+          <declname>finfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="380" column="12" bodyfile="os/format.c" bodystart="380" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1ga0816206871c6e0ced18e2b0ac7bb3aa8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int fetch_index_from_args</definition>
+        <argsstring>(Term t)</argsstring>
+        <name>fetch_index_from_args</name>
+        <param>
+          <type>Term</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="403" column="12" bodyfile="os/format.c" bodystart="403" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1ga103afb295dbc06a5ecc9d8ae9c97c968" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wchar_t</type>
+        <definition>static wchar_t base_dig</definition>
+        <argsstring>(Int dig, Int ch)</argsstring>
+        <name>base_dig</name>
+        <param>
+          <type>Int</type>
+          <declname>dig</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="416" column="16" bodyfile="os/format.c" bodystart="416" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1gab7d3120911c787bb90ff3b716593ec57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int doformat</definition>
+        <argsstring>(volatile Term otail, volatile Term oargs, int l, int sno0 USES_REGS)</argsstring>
+        <name>doformat</name>
+        <param>
+          <type>volatile Term</type>
+          <declname>otail</declname>
+        </param>
+        <param>
+          <type>volatile Term</type>
+          <declname>oargs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int sno0</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="457" column="12" bodyfile="os/format.c" bodystart="457" bodyend="1063"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1gaf702de6f24802f75cec28cebfb8120ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Term</type>
+        <definition>static Term memStreamToTerm</definition>
+        <argsstring>(int output_stream, Functor f, Term inp)</argsstring>
+        <name>memStreamToTerm</name>
+        <param>
+          <type>int</type>
+          <declname>output_stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structFunctorEntryStruct" kindref="compound">Functor</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="1066" column="13" bodyfile="os/format.c" bodystart="1066" bodyend="1086"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1gad032cb7850bfbbd98646489d65b182e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int with_output_to</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>with_output_to</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="1135" column="12" bodyfile="os/format.c" bodystart="1135" bodyend="1174"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1gaf8350e1c9455b953fd92509204a286e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int format</definition>
+        <argsstring>(Term tf, Term tas, Term tout USES_REGS)</argsstring>
+        <name>format</name>
+        <param>
+          <type>Term</type>
+          <declname>tf</declname>
+        </param>
+        <param>
+          <type>Term</type>
+          <declname>tas</declname>
+        </param>
+        <param>
+          <type>Term tout</type>
+          <declname>USES_REGS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="1176" column="12" bodyfile="os/format.c" bodystart="1176" bodyend="1222"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1ga0ba2091f741410c8b061abc56c7be419" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int format2</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>format2</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="1228" column="12" bodyfile="os/format.c" bodystart="1228" bodyend="1235"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1gaa63bc26c14106da5480242419436800f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Int</type>
+        <definition>static Int format3</definition>
+        <argsstring>(USES_REGS1)</argsstring>
+        <name>format3</name>
+        <param>
+          <type>USES_REGS1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="1241" column="12" bodyfile="os/format.c" bodystart="1241" bodyend="1245"/>
+      </memberdef>
+      <memberdef kind="function" id="group__FormattedIO_1gae0620f56bd7aea743bcca8f986e46c30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Yap_InitFormat</definition>
+        <argsstring>(void)</argsstring>
+        <name>Yap_InitFormat</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="os/format.c" line="1247" column="6" bodyfile="os/format.c" bodystart="1247" bodyend="1251"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/vsc/github/yap/os/format.c"/>
+    <location file="os/format.c"/>
   </compounddef>
 </doxygen>
